@@ -103,18 +103,18 @@ for town, rs in by_town.items():
 out = gpd.GeoDataFrame(feats, crs=6675)
 zones = out.dissolve(by="district", as_index=False, aggfunc={"town": lambda s: sorted(set(s)), "method": lambda s: sorted(set(s))}) \
     if False else out.dissolve(by="district", as_index=False)[["district", "geometry"]]
-zones.to_crs(4326).to_file("out/kanazawa_zones.geojson", driver="GeoJSON")
-out.to_crs(4326).to_file("out/kanazawa_town_parts.geojson", driver="GeoJSON")
-
 city = unary_union(list(poly.geometry))
 covered = unary_union(list(out.geometry))
 overlap = sum(a.area for a in out.geometry) - covered.area
 rep.update({"towns_in_rules": len(by_town), "districts_out": len(zones),
             "area_coverage": round(covered.area / city.area, 4),
             "overlap_m2": round(overlap), "elapsed_s": round(time.time() - T0, 1)})
-json.dump({"stats": rep, "missing_poly": missing_poly, "unresolved": unresolved},
-          open("out/kanazawa_report.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-if HOLD is not None:
+if HOLD is None:        # --holdout は 80% の点で作った区域なので本番の成果物は書かない
+    zones.to_crs(4326).to_file("out/kanazawa_zones.geojson", driver="GeoJSON")
+    out.to_crs(4326).to_file("out/kanazawa_town_parts.geojson", driver="GeoJSON")
+    json.dump({"stats": rep, "missing_poly": missing_poly, "unresolved": unresolved},
+              open("out/kanazawa_report.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+else:
     H = HOLD[HOLD["ntown"].isin({t for t, rs in by_town.items() if {r['kind'] for r in rs} - {'town'}})].copy()
     H["truth"] = [match(by_town[t], b, n) if pd.notna(b) and pd.notna(n) else None
                   for t, b, n in zip(H.ntown, H.blk_i, H.num_i)]
@@ -125,6 +125,7 @@ if HOLD is not None:
     rep["holdout_n"] = len(j); rep["holdout_acc"] = round(ok / len(j), 4); rep["holdout_nozone"] = int(miss)
     bad = j[(j.truth != j.pred) & j.pred.notna()]
     rep["holdout_wrong_towns"] = bad.ntown.value_counts().head(8).to_dict()
+    json.dump(rep, open("out/kanazawa_holdout.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(json.dumps(rep, ensure_ascii=False))
 print("missing_poly", len(missing_poly))
 for m in missing_poly: print("  ", m)
