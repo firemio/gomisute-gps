@@ -91,6 +91,7 @@ python abr_check.py && python census_lineage.py
 
 ## 関連
 - [gps2city](https://github.com/firemio/gps2city) — 緯度経度 → 都道府県・市区町村 (国土数値情報 N03 を 0.1° タイル化した Cloudflare Worker、[稼働中](https://gps2city.firemio.workers.dev/))。
+  **Rust を WebAssembly にして Cloudflare Workers で動かし、全国のタイルを1本のパック (約23MB) にして Worker に埋め込んでいる**ので、初めて問い合わせる地点でも応答は中央値 11ms (外部読み込みだった頃は 250〜310ms、距離の誤差は最大 0.97m)。
   タイルの行政区域コードに検査数字を付けると ABR の市区町村コードと 1,898/1,905 件一致 (残り7件は所属未定地)。
   2026-10-17 から `POST /location` が `lg_code` (ABR と同じ6桁) と政令市の `ward` を返し、`/location2` は区ごとの境界距離 (`areas`) を返す。
   `/resolve` の入口 (GPS → 市区町村コード)、収集地区ポリゴンの配信 (同じタイル方式)、境界までの距離による確信度に使う
