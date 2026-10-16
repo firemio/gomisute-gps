@@ -106,6 +106,11 @@ python abr_check.py && python census_lineage.py
 
 `out/` の成果物は上記データからの加工物です。生データは `data/` に取得されます (リポジトリには含めません)。
 
+## ライセンス
+
+- ソースコードと文書: [MIT License](LICENSE) (Copyright (c) 2026 firemio)
+- `out/` などのデータ加工物: 上の「データ出典」の各データの利用条件に従います (出典の表示が必要です)
+
 ## 作者と関連プロジェクト
 
 作者は **firemio** ([GitHub @firemio](https://github.com/firemio)) です。gomisute-gps は、同じ作者 firemio がこれまでに作った次の2つを土台にしています。
