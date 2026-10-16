@@ -1,0 +1,17 @@
+# 取得した生データ (fetch*.py で再取得できる / 計 ~280MB)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# secrets
+.env
+**/.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

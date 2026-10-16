@@ -1,0 +1,462 @@
+{
+ "stats": {
+  "chome": 765,
+  "pts_total": 46074,
+  "pts_unmatched": 42,
+  "split_voronoi": 87,
+  "unresolved": 27,
+  "no_poly:census_outdated": 6,
+  "no_poly:chome_split_in_census": 3,
+  "no_poly:not_in_census": 23,
+  "split_single": 3,
+  "towns_in_rules": 914,
+  "districts_out": 71,
+  "area_coverage": 0.9657,
+  "overlap_m2": 0,
+  "elapsed_s": 4.0
+ },
+ "missing_poly": [
+  {
+   "town": "荒屋1丁目",
+   "reason": "census_outdated(parent=荒屋)",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "泉野町",
+   "reason": "chome_split_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "泉野出町",
+   "reason": "chome_split_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "糸田町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "いなほ3丁目",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "入江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "円光寺町",
+   "reason": "not_in_census",
+   "kinds": [
+    "aza"
+   ]
+  },
+  {
+   "town": "笠舞町",
+   "reason": "not_in_census",
+   "kinds": [
+    "aza"
+   ]
+  },
+  {
+   "town": "神田町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "北安江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "木ノ新保7番丁",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "窪町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "湖南第2区画整理地",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "古府西1丁目",
+   "reason": "census_outdated(parent=古府西)",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "西念町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "島田町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "新竪町3丁目",
+   "reason": "census_outdated(parent=新竪町)",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "千木1丁目",
+   "reason": "census_outdated(parent=千木)",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "太陽が丘",
+   "reason": "chome_split_in_census",
+   "kinds": [
+    "block"
+   ]
+  },
+  {
+   "town": "玉井町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "土清水町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "寺地町",
+   "reason": "not_in_census",
+   "kinds": [
+    "aza"
+   ]
+  },
+  {
+   "town": "直江北1丁目",
+   "reason": "census_outdated(parent=直江北)",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "西堀川町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "額新保町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "八幡町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "福久東1丁目",
+   "reason": "census_outdated(parent=福久東)",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "藤江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "南安江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "柳町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "山ノ上町5丁目",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  },
+  {
+   "town": "涌波町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ]
+  }
+ ],
+ "unresolved": [
+  {
+   "town": "赤土町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "二塚",
+    "大徳"
+   ]
+  },
+  {
+   "town": "泉本町6丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "三馬",
+    "野町"
+   ]
+  },
+  {
+   "town": "上野本町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "南小立野",
+    "小立野"
+   ]
+  },
+  {
+   "town": "畝田中3丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "大徳",
+    "木曳野"
+   ]
+  },
+  {
+   "town": "畝田中4丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "大徳",
+    "木曳野"
+   ]
+  },
+  {
+   "town": "大桑町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "十一屋",
+    "南小立野"
+   ]
+  },
+  {
+   "town": "神谷内町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "千坂",
+    "小坂"
+   ]
+  },
+  {
+   "town": "窪6丁目",
+   "reason": "aza/unparsed",
+   "districts": [
+    "伏見台",
+    "富樫"
+   ]
+  },
+  {
+   "town": "古府町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "二塚",
+    "西南部"
+   ]
+  },
+  {
+   "town": "三十苅町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "四十万",
+    "額"
+   ]
+  },
+  {
+   "town": "しじま台2丁目",
+   "reason": "aza/unparsed",
+   "districts": [
+    "四十万",
+    "額"
+   ]
+  },
+  {
+   "town": "下新町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "味噌蔵",
+    "材木"
+   ]
+  },
+  {
+   "town": "太陽が丘2丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "東浅川",
+    "田上"
+   ]
+  },
+  {
+   "town": "高柳町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "小坂",
+    "浅野町"
+   ]
+  },
+  {
+   "town": "竪町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "新竪町",
+    "長町"
+   ]
+  },
+  {
+   "town": "玉鉾町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "新神田",
+    "米丸"
+   ]
+  },
+  {
+   "town": "中屋町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "三和",
+    "安原（緑団地含む）"
+   ]
+  },
+  {
+   "town": "野田町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "十一屋",
+    "長坂台"
+   ]
+  },
+  {
+   "town": "福久町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "千坂",
+    "森本"
+   ]
+  },
+  {
+   "town": "福増町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "三和",
+    "安原（緑団地含む）"
+   ]
+  },
+  {
+   "town": "普正寺町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "木曳野",
+    "金石町"
+   ]
+  },
+  {
+   "town": "二ツ寺町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "二塚",
+    "大徳"
+   ]
+  },
+  {
+   "town": "大豆田本町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "戸板",
+    "新神田"
+   ]
+  },
+  {
+   "town": "湊2丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "大浦",
+    "浅野川"
+   ]
+  },
+  {
+   "town": "湊4丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "木曳野",
+    "鞍月"
+   ]
+  },
+  {
+   "town": "南御所町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "小坂",
+    "森山"
+   ]
+  },
+  {
+   "town": "もりの里2丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "材木",
+    "田上"
+   ]
+  }
+ ]
+}

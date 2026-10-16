@@ -1,0 +1,1663 @@
+{
+ "summary": {
+  "abr_town_rows": 6713,
+  "by_type": {
+   "3": 5787,
+   "2": 485,
+   "1": 441
+  },
+  "ablt_date_nonempty": 0,
+  "efct_date_top": {
+   "1947-04-17": 6681,
+   "1970-01-01": 21,
+   "2025-09-03": 8,
+   "2021-09-30": 2,
+   "2023-12-01": 1
+  },
+  "status_flg": {
+   "1": 6150,
+   "0": 563
+  },
+  "town_pos_rep_points": 906,
+  "parcels": 649655,
+  "parcels_with_pos": 287501,
+  "parcel_ablt_nonempty": 0,
+  "class_counts": {
+   "missing_poly": {
+    "PARCEL_AREA(地番区域)": 6,
+    "SPLIT_INTO_CHOME": 3,
+    "ABR_NOT_FOUND": 15,
+    "NEW_AFTER_CENSUS": 1,
+    "OLD_TOWN_REMNANT(旧町名+小字)": 3,
+    "LAND_READJUSTMENT(区画整理の仮称)": 1,
+    "AZA_AREA(小字あり)": 2,
+    "CURRENT_TOWN": 1
+   },
+   "unresolved": {
+    "AZA_AREA(小字あり)": 15,
+    "PARCEL_AREA(地番区域)": 11,
+    "CURRENT_TOWN": 1
+   }
+  }
+ },
+ "rows": [
+  {
+   "set": "missing_poly",
+   "town": "荒屋1丁目",
+   "reason": "census_outdated(parent=荒屋)",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "census_has_parent:荒屋",
+   "abr": [
+    {
+     "machiaza_id": "0015001",
+     "name": "荒屋１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 169,
+     "parcels_with_pos": 169
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "泉野町",
+   "reason": "chome_split_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "children_chome",
+   "class": "SPLIT_INTO_CHOME",
+   "census": "census_children:泉野町1丁目,泉野町2丁目,泉野町3丁目,泉野町4丁目,泉野町5丁目,泉野町6丁目",
+   "abr": [
+    {
+     "machiaza_id": "0032001",
+     "name": "泉野町１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 17,
+     "parcels": 393,
+     "parcels_with_pos": 0
+    },
+    {
+     "machiaza_id": "0032002",
+     "name": "泉野町２丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 18,
+     "parcels": 503,
+     "parcels_with_pos": 501
+    },
+    {
+     "machiaza_id": "0032003",
+     "name": "泉野町３丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 19,
+     "parcels": 482,
+     "parcels_with_pos": 445
+    },
+    {
+     "machiaza_id": "0032004",
+     "name": "泉野町４丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 21,
+     "parcels": 368,
+     "parcels_with_pos": 0
+    },
+    {
+     "machiaza_id": "0032005",
+     "name": "泉野町５丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 16,
+     "parcels": 249,
+     "parcels_with_pos": 249
+    },
+    {
+     "machiaza_id": "0032006",
+     "name": "泉野町６丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 19,
+     "parcels": 352,
+     "parcels_with_pos": 352
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "泉野出町",
+   "reason": "chome_split_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "children_chome",
+   "class": "SPLIT_INTO_CHOME",
+   "census": "census_children:泉野出町1丁目,泉野出町2丁目,泉野出町3丁目,泉野出町4丁目",
+   "abr": [
+    {
+     "machiaza_id": "0031001",
+     "name": "泉野出町１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 22,
+     "parcels": 431,
+     "parcels_with_pos": 431
+    },
+    {
+     "machiaza_id": "0031002",
+     "name": "泉野出町２丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 28,
+     "parcels": 398,
+     "parcels_with_pos": 398
+    },
+    {
+     "machiaza_id": "0031003",
+     "name": "泉野出町３丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 16,
+     "parcels": 275,
+     "parcels_with_pos": 261
+    },
+    {
+     "machiaza_id": "0031004",
+     "name": "泉野出町４丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 15,
+     "parcels": 254,
+     "parcels_with_pos": 225
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "糸田町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "いなほ3丁目",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "NEW_AFTER_CENSUS",
+   "census": "absent",
+   "abr": [
+    {
+     "machiaza_id": "0041003",
+     "name": "いなほ３丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "2021-09-30",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": false,
+     "rsdt_blocks": 0,
+     "parcels": 17,
+     "parcels_with_pos": 17
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "入江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "phantom_oaza",
+   "class": "OLD_TOWN_REMNANT(旧町名+小字)",
+   "census": "absent",
+   "abr": [
+    {
+     "name": "入江町",
+     "type": "phantom_oaza(小字のみ)",
+     "koaza_list": [
+      "ヘ"
+     ],
+     "rules_aza_letters": [],
+     "rules_letters_in_abr": []
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "円光寺町",
+   "reason": "not_in_census",
+   "kinds": [
+    "aza"
+   ],
+   "abr_match": "phantom_oaza",
+   "class": "OLD_TOWN_REMNANT(旧町名+小字)",
+   "census": "absent",
+   "abr": [
+    {
+     "name": "円光寺町",
+     "type": "phantom_oaza(小字のみ)",
+     "koaza_list": [
+      "チ"
+     ],
+     "rules_aza_letters": [
+      "ナ",
+      "ニ",
+      "ハ",
+      "ロ"
+     ],
+     "rules_letters_in_abr": []
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "笠舞町",
+   "reason": "not_in_census",
+   "kinds": [
+    "aza"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "神田町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "北安江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "木ノ新保7番丁",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "窪町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "phantom_oaza",
+   "class": "OLD_TOWN_REMNANT(旧町名+小字)",
+   "census": "absent",
+   "abr": [
+    {
+     "name": "窪町",
+     "type": "phantom_oaza(小字のみ)",
+     "koaza_list": [
+      "イ",
+      "チ",
+      "ト",
+      "ニ",
+      "ハ",
+      "ハバケ",
+      "ロ",
+      "六才",
+      "白金"
+     ],
+     "rules_aza_letters": [],
+     "rules_letters_in_abr": []
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "湖南第2区画整理地",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "LAND_READJUSTMENT(区画整理の仮称)",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "古府西1丁目",
+   "reason": "census_outdated(parent=古府西)",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "census_has_parent:古府西",
+   "abr": [
+    {
+     "machiaza_id": "0193001",
+     "name": "古府西１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 20,
+     "parcels_with_pos": 0
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "西念町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "島田町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "新竪町3丁目",
+   "reason": "census_outdated(parent=新竪町)",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "census_has_parent:新竪町",
+   "abr": [
+    {
+     "machiaza_id": "0253003",
+     "name": "新竪町３丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 283,
+     "parcels_with_pos": 0
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "千木1丁目",
+   "reason": "census_outdated(parent=千木)",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "census_has_parent:千木",
+   "abr": [
+    {
+     "machiaza_id": "0268001",
+     "name": "千木１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 275,
+     "parcels_with_pos": 275
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "太陽が丘",
+   "reason": "chome_split_in_census",
+   "kinds": [
+    "block"
+   ],
+   "abr_match": "children_chome",
+   "class": "SPLIT_INTO_CHOME",
+   "census": "census_children:太陽が丘1丁目,太陽が丘2丁目,太陽が丘3丁目,太陽が丘区画整理地内",
+   "abr": [
+    {
+     "machiaza_id": "0277001",
+     "name": "太陽が丘１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 37,
+     "parcels_with_pos": 31
+    },
+    {
+     "machiaza_id": "0277002",
+     "name": "太陽が丘２丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 350,
+     "parcels_with_pos": 350
+    },
+    {
+     "machiaza_id": "0277003",
+     "name": "太陽が丘３丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 531,
+     "parcels_with_pos": 531
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "玉井町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "土清水町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "absent",
+   "abr": [
+    {
+     "machiaza_id": "0315000",
+     "name": "土清水町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 11,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 91,
+     "parcels_with_pos": 0
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "寺地町",
+   "reason": "not_in_census",
+   "kinds": [
+    "aza"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "直江北1丁目",
+   "reason": "census_outdated(parent=直江北)",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "census_has_parent:直江北",
+   "abr": [
+    {
+     "machiaza_id": "0343001",
+     "name": "直江北１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 315,
+     "parcels_with_pos": 315
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "西堀川町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "額新保町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "八幡町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "福久東1丁目",
+   "reason": "census_outdated(parent=福久東)",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "census_has_parent:福久東",
+   "abr": [
+    {
+     "machiaza_id": "0423001",
+     "name": "福久東１丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 139,
+     "parcels_with_pos": 139
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "藤江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "南安江町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "柳町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "none",
+   "class": "ABR_NOT_FOUND",
+   "census": "absent",
+   "abr": []
+  },
+  {
+   "set": "missing_poly",
+   "town": "山ノ上町5丁目",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "CURRENT_TOWN",
+   "census": "absent",
+   "abr": [
+    {
+     "machiaza_id": "0523005",
+     "name": "山ノ上町５丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 0,
+     "parcels_with_pos": 0
+    }
+   ]
+  },
+  {
+   "set": "missing_poly",
+   "town": "涌波町",
+   "reason": "not_in_census",
+   "kinds": [
+    "town"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "absent",
+   "abr": [
+    {
+     "machiaza_id": "0553000",
+     "name": "涌波町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 8,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 48,
+     "parcels_with_pos": 28
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "赤土町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "二塚",
+    "大徳"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0004000",
+     "name": "赤土町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 11,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 1740,
+     "parcels_with_pos": 1699
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "泉本町6丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "三馬",
+    "野町"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0033006",
+     "name": "泉本町６丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 211,
+     "parcels_with_pos": 211
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "上野本町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "南小立野",
+    "小立野"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0048000",
+     "name": "上野本町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 2,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 27,
+     "parcels_with_pos": 0
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "畝田中3丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "大徳",
+    "木曳野"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0055003",
+     "name": "畝田中３丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 136,
+     "parcels_with_pos": 136
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "畝田中4丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "大徳",
+    "木曳野"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0055004",
+     "name": "畝田中４丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 479,
+     "parcels_with_pos": 479
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "大桑町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "十一屋",
+    "南小立野"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0076000",
+     "name": "大桑町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 63,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 3618,
+     "parcels_with_pos": 1629
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "神谷内町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "千坂",
+    "小坂"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0130000",
+     "name": "神谷内町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 29,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 3705,
+     "parcels_with_pos": 1262
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "窪6丁目",
+   "reason": "aza/unparsed",
+   "districts": [
+    "伏見台",
+    "富樫"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0163006",
+     "name": "窪６丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 443,
+     "parcels_with_pos": 431
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "古府町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "二塚",
+    "西南部"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0194000",
+     "name": "古府町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 4,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 1171,
+     "parcels_with_pos": 539
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "三十苅町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "四十万",
+    "額"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0212000",
+     "name": "三十苅町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 11,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 954,
+     "parcels_with_pos": 671
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "しじま台2丁目",
+   "reason": "aza/unparsed",
+   "districts": [
+    "四十万",
+    "額"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0216002",
+     "name": "しじま台２丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 400,
+     "parcels_with_pos": 400
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "下新町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "味噌蔵",
+    "材木"
+   ],
+   "abr_match": "exact",
+   "class": "CURRENT_TOWN",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0232000",
+     "name": "下新町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 6,
+     "parcels": 91,
+     "parcels_with_pos": 0
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "太陽が丘2丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "東浅川",
+    "田上"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0277002",
+     "name": "太陽が丘２丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 350,
+     "parcels_with_pos": 350
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "高柳町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "小坂",
+    "浅野町"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0291000",
+     "name": "高柳町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 36,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 1733,
+     "parcels_with_pos": 1636
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "竪町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "新竪町",
+    "長町"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0299000",
+     "name": "竪町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 129,
+     "parcels_with_pos": 0
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "玉鉾町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "新神田",
+    "米丸"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0304000",
+     "name": "玉鉾町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 7,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 187,
+     "parcels_with_pos": 185
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "中屋町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "三和",
+    "安原（緑団地含む）"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0359000",
+     "name": "中屋町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 10,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 630,
+     "parcels_with_pos": 411
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "野田町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "十一屋",
+    "長坂台"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0387000",
+     "name": "野田町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "1",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 31,
+     "rep_point": true,
+     "rsdt_blocks": 2,
+     "parcels": 756,
+     "parcels_with_pos": 632
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "福久町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "千坂",
+    "森本"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0424000",
+     "name": "福久町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 35,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 1949,
+     "parcels_with_pos": 1744
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "福増町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "三和",
+    "安原（緑団地含む）"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0425000",
+     "name": "福増町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 8,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 2222,
+     "parcels_with_pos": 1977
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "普正寺町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "木曳野",
+    "金石町"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0433000",
+     "name": "普正寺町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 23,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 1382,
+     "parcels_with_pos": 1089
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "二ツ寺町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "二塚",
+    "大徳"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0435000",
+     "name": "二ツ寺町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 4,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 919,
+     "parcels_with_pos": 571
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "大豆田本町",
+   "reason": "aza/unparsed",
+   "districts": [
+    "戸板",
+    "新神田"
+   ],
+   "abr_match": "exact",
+   "class": "AZA_AREA(小字あり)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0469000",
+     "name": "大豆田本町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "0",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 6,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 604,
+     "parcels_with_pos": 408
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "湊2丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "大浦",
+    "浅野川"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0487002",
+     "name": "湊２丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 619,
+     "parcels_with_pos": 619
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "湊4丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "木曳野",
+    "鞍月"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0487004",
+     "name": "湊４丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 137,
+     "parcels_with_pos": 96
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "南御所町",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "小坂",
+    "森山"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0488000",
+     "name": "南御所町",
+     "type": "oaza_cho",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 418,
+     "parcels_with_pos": 418
+    }
+   ]
+  },
+  {
+   "set": "unresolved",
+   "town": "もりの里2丁目",
+   "reason": "no_jukyo_points",
+   "districts": [
+    "材木",
+    "田上"
+   ],
+   "abr_match": "exact",
+   "class": "PARCEL_AREA(地番区域)",
+   "census": "in_census",
+   "abr": [
+    {
+     "machiaza_id": "0510002",
+     "name": "もりの里２丁目",
+     "type": "chome",
+     "status_flg": "1",
+     "rsdt_addr_flg": "0",
+     "wake_num_flg": "1",
+     "efct_date": "1947-04-17",
+     "ablt_date": "",
+     "src_code": "0",
+     "koaza": 0,
+     "rep_point": true,
+     "rsdt_blocks": 0,
+     "parcels": 314,
+     "parcels_with_pos": 314
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2071 @@
+{
+ "records": [
+  {
+   "town": "木ノ新保7番丁",
+   "status": "abolished",
+   "abolished_on": "2006-08-12",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "木ノ新保町",
+     "part": "part"
+    },
+    {
+     "name": "堀川新町",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "木ノ新保町",
+    "堀川新町"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/木ノ新保町",
+     "finding": "木ノ新保町 was created 2006-08-12 when the 金沢駅北土地区画整理 換地処分 and 住居表示 took effect. It took in parts of 木ノ新保七番丁, 南安江町 and others, plus all of 玉井町 (cites 石川県告示第432号, 2006-08-11). The infobox puts 木ノ新保町 in 此花地区."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/堀川新町",
+     "finding": "堀川新町 was created on the same date by the same event and took in a part of 木ノ新保七番丁, among others."
+    },
+    {
+     "source": "data\\estat_17201_2005 vs data\\estat_17201\\r2ka17201.shp",
+     "finding": "The census area 木の新保七番丁 (56,144 m2) appears in 2000 and 2005. By 2010 its area lies 63.6% in 木ノ新保町 and 35.7% in 堀川新町, with 0.7% in 昭和町, which looks like edge noise."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shiminkyodosuishinka/gyomuannai/3/1/4418.html",
+     "finding": "The city's old-name list has 木ノ新保一〜四・六番丁, which ended with the 1965 住居表示, but not 七番丁. So 七番丁 survived the 1960s and lasted until 2006."
+    },
+    {
+     "source": "data\\abr (town + parcel masters); geolonia japanese-addresses 金沢市.json (GSI-derived)",
+     "finding": "The name is not in either ABR master or in the GSI-derived town list. The ABR town master has only an unrelated remnant row, 木ノ新保 + 四番丁."
+    }
+   ],
+   "confidence": 0.85,
+   "open_questions": "I did not read the 2006 石川県告示 text itself; this relies on Wikipedia's citation of it. 木ノ新保町 has no row of its own in the garbage table, so the 此花 rule for this old name is probably what covers the station area. That fits 木ノ新保町 being in 此花地区."
+  },
+  {
+   "town": "西堀川町",
+   "status": "remnant",
+   "abolished_on": "2006-08-12",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "堀川新町",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "堀川新町"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/堀川新町",
+     "finding": "On 2006-08-12 堀川新町 was formed from part of 西堀川町 (金沢駅北土地区画整理 + 住居表示; 石川県告示第432号). The town as a whole was not absorbed."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/西堀川町",
+     "finding": "Wikipedia still calls it a 現行行政地名: a small strip under the IR いしかわ鉄道 and 新幹線 viaduct, with no postal code of its own (920-0000)."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "As of 2021-11-01 the template marks it ※, meaning only a tiny part remains and it has no postal code."
+    },
+    {
+     "source": "https://github.com/geolonia/japanese-addresses (api/ja/石川県/金沢市.json)",
+     "finding": "This GSI-derived town list still has 西堀川町 at 36.5828,136.6526, on top of the old census polygon."
+    },
+    {
+     "source": "data\\estat_17201_2000/2005",
+     "finding": "The census area 西堀川町 was already tiny in 2000 and 2005 (1,960 m2, population 0). In 2010 and 2020 that area falls 70% in 堀川新町 and 30% in the 北安江一丁目 polygon."
+    },
+    {
+     "source": "data\\abr",
+     "finding": "西堀川町 is in neither the ABR town master nor the parcel master."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "The garbage table maps 西堀川町 to 此花. 堀川新町 is also 此花, which fits; 北安江1丁目 is 諸江, which does not."
+    }
+   ],
+   "confidence": 0.6,
+   "open_questions": "The sources disagree on whether the name still legally exists. Wikipedia and the GSI-derived list keep it, but ABR does not. If a remnant exists it may be unnumbered railway or road land under the viaduct. The 30% of the old census area now in the 北安江一丁目 polygon may be that remnant, lumped in by the census. I found no legal transfer to 北安江1丁目. Most of the area had already gone before 2000, when the census area was 1,960 m2, and I found no record of earlier changes. If you treat the name as fully abolished, the date is still 2006-08-12."
+  },
+  {
+   "town": "南安江町",
+   "status": "abolished",
+   "abolished_on": "2006-08-12",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "堀川新町",
+     "part": "part"
+    },
+    {
+     "name": "木ノ新保町",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "堀川新町",
+    "木ノ新保町"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/堀川新町",
+     "finding": "堀川新町 was created 2006-08-12 and took in part of 南安江町 (金沢駅北土地区画整理 換地処分 + 住居表示)."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/木ノ新保町",
+     "finding": "木ノ新保町 was created 2006-08-12 and took in part of 南安江町."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+     "finding": "南安江町 is not in the city's list of names abolished by the 1963-70s 住居表示, so it was not abolished that way."
+    },
+    {
+     "source": "data\\estat_17201_2000..2020; ABR; geolonia japanese-addresses",
+     "finding": "It has no census area in 2000 or later (it was merged into neighbouring areas). It is absent from the ABR masters and from the GSI-derived town list, so it is likely fully gone."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "The garbage table maps it to 此花. 堀川新町 is 此花; 木ノ新保町 has no rule of its own and is in 此花地区."
+    }
+   ],
+   "confidence": 0.7,
+   "open_questions": "I found no web source on the extent of 南安江町 or on any earlier partial transfers, and there is no census polygon to check against. Some of it could have gone to 北安江 or 此花町 earlier. The 2006 告示 text was not checked directly. The two 2006 successors probably took the whole remaining town between them, but the share each took is unknown."
+  },
+  {
+   "town": "島田町",
+   "status": "abolished",
+   "abolished_on": "1993-01-09",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "昭和町",
+     "part": "part"
+    },
+    {
+     "name": "本町2丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "昭和町",
+    "本町2丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shiminkyodosuishinka/gyomuannai/3/1/4422.html",
+     "finding": "The city's old-name list maps 島田町 to 本町2丁目 and 昭和町, through the 住居表示 of 1965-09-01."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+     "finding": "The same list gives 島田町 → 本町2丁目・昭和町, S40.9.1, in 芳斎 校下."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市)",
+     "finding": "Parts went to 昭和町 in 1965-09-01 (住居表示) and 1992-06-10 (昭和町地区土地区画整理). On 1993-01-09 all of the remaining 島田町 went to 昭和町 (金沢駅南地区土地区画整理 + 住居表示; 石川県告示第4号)."
+    },
+    {
+     "source": "data\\estat_17201_2000; ABR; geolonia japanese-addresses",
+     "finding": "No census area exists in 2000 or later. The name is absent from ABR and from the GSI-derived list."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "The garbage table maps it to 芳斎. Both 昭和町 (芳斎 / 長田町 by block) and 本町2丁目 (芳斎 / 此花 by block) include 芳斎 blocks, which fits."
+    }
+   ],
+   "confidence": 0.8,
+   "open_questions": "The city's old-name list gives only the 1965 住居表示, but the last remnant disappeared with the 1993 換地処分 (per Wikipedia). I don't know which 昭和町 blocks came from 島田町. The city's school-district table still lists 島田町, so presence in a city table does not mean the name still exists."
+  },
+  {
+   "town": "玉井町",
+   "status": "abolished",
+   "abolished_on": "2006-08-12",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "本町2丁目",
+     "part": "part"
+    },
+    {
+     "name": "昭和町",
+     "part": "part"
+    },
+    {
+     "name": "木ノ新保町",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "本町2丁目",
+    "昭和町"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shiminkyodosuishinka/gyomuannai/3/1/4423.html",
+     "finding": "The city's old-name list maps 玉井町 (たまのいまち) to 本町2丁目 and 昭和町, through the 住居表示 of 1965-09-01."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+     "finding": "The same list puts 玉井町 in 芳斎 校下."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市)",
+     "finding": "Parts of 玉井町 went to 昭和町 in 1965-09-01 and 1992-06-10 (昭和町地区土地区画整理)."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/木ノ新保町",
+     "finding": "On 2006-08-12 all of the remaining 玉井町 went to 木ノ新保町 (金沢駅北土地区画整理 換地処分 + 住居表示; 石川県告示第432号)."
+    },
+    {
+     "source": "data\\abr; geolonia japanese-addresses; census 2000-2020",
+     "finding": "The name is absent from ABR and from the GSI-derived list. The census never had a separate area for it in 2000 or 2005."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "The garbage table maps it to 芳斎. 本町2丁目 and 昭和町 have 芳斎 blocks, which fits. 木ノ新保町 has no rows."
+    }
+   ],
+   "confidence": 0.8,
+   "open_questions": "The last piece (2006) went to 木ノ新保町, which is in 此花地区 and has no garbage rule of its own. So the 芳斎 rule may still apply to the former 玉井町 part of 木ノ新保町, near the 昭和町 side. I left 木ノ新保町 out of gomi_successors because its 此花 affiliation conflicts with 芳斎; check this if the station-side area matters."
+  },
+  {
+   "town": "柳町",
+   "status": "abolished",
+   "abolished_on": "1993-01-09",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "昭和町",
+     "part": "part"
+    },
+    {
+     "name": "本町1丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "昭和町",
+    "本町1丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shiminkyodosuishinka/gyomuannai/3/1/4424.html",
+     "finding": "The city's old-name list maps 柳町 (やなぎまち) to 本町1丁目 and 昭和町, through the 住居表示 of 1965-09-01."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+     "finding": "The same list gives 柳町 → 本町1丁目・昭和町, S40.9.1, in 芳斎 校下."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市)",
+     "finding": "Parts of 柳町 went to 昭和町 in 1965-09-01 (住居表示), 1992-06-10 (昭和町地区土地区画整理) and 1993-01-09 (金沢駅南地区土地区画整理). No later event mentions 柳町."
+    },
+    {
+     "source": "data\\abr; geolonia japanese-addresses; census 2000-2020",
+     "finding": "柳町 is absent everywhere: the ABR masters, the GSI-derived list, and the census areas from 2000 on. Only 柳橋町 and 高柳町 share the stem, and those are unrelated towns."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "The garbage table maps it to 芳斎. 本町1丁目 and 昭和町 both have 芳斎 blocks, which fits."
+    }
+   ],
+   "confidence": 0.6,
+   "open_questions": "The end date is less certain. Wikipedia describes both the 1992 and 1993 transfers as only part of 柳町, and I found no record of what happened to any remainder. I used 1993-01-09 as the last recorded event; the town is gone from all current datasets. The 2006 金沢駅北 change does not list 柳町."
+  },
+  {
+   "town": "八幡町",
+   "status": "remnant",
+   "abolished_on": "1966-09-01",
+   "precision": "day",
+   "event": "住居表示",
+   "successors": [
+    {
+     "name": "東山1丁目",
+     "part": "part"
+    },
+    {
+     "name": "東山2丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "東山1丁目",
+    "東山2丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shiminkyodosuishinka/gyomuannai/3/1/4417.html",
+     "finding": "The city's old-name list maps 八幡町 (はちまんまち) to 東山1・2丁目, through the 住居表示 of 1966-09-01. The name comes from 卯辰八幡宮, which stood on the 宇多須神社 site."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+     "finding": "The same list gives 八幡町 → 東山１・２丁目, S41.9.1, in 馬場 校下."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/東山_(金沢市)",
+     "finding": "On 1966-09-01 東山 was formed from parts of 八幡町, among others; only a part of 八幡町 went in (官報 自治省告示第176号)."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/八幡町_(金沢市)",
+     "finding": "Wikipedia describes it as an existing place name in an area where 住居表示 has not been carried out."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "As of 2021-11 the template marks it ※, meaning only a tiny part remains and it has no postal code."
+    },
+    {
+     "source": "https://github.com/geolonia/japanese-addresses (api/ja/石川県/金沢市.json)",
+     "finding": "The GSI-derived list has 八幡町 at 36.5728,136.6688. That point falls inside the 子来町 census polygon, next to 東山1丁目 and 東山2丁目."
+    },
+    {
+     "source": "data\\abr",
+     "finding": "八幡町 is in neither ABR master. 花園八幡町 is a different town in the 花園 district."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "The garbage table maps it to 馬場. 東山1丁目 (馬場 / 材木 by block), 東山2丁目 (馬場 / 森山 by block) and 子来町 (馬場) all fit."
+    }
+   ],
+   "confidence": 0.6,
+   "open_questions": "The sources disagree on whether a remnant still legally exists. Wikipedia and the GSI-derived list keep 八幡町, but ABR has no rows for it. The remnant may be unnumbered land near the 子来町 / 東山 boundary. 子来町 is not a documented successor, but the remnant sits inside its census polygon. I don't know which 東山1丁目 or 東山2丁目 blocks came from 八幡町."
+  },
+  {
+   "town": "北安江町",
+   "status": "remnant",
+   "abolished_on": "2001-06-02",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "北安江4丁目",
+     "part": "part"
+    },
+    {
+     "name": "北安江2丁目",
+     "part": "part"
+    },
+    {
+     "name": "諸江町",
+     "part": "part"
+    },
+    {
+     "name": "北安江1丁目",
+     "part": "part"
+    },
+    {
+     "name": "北安江3丁目",
+     "part": "part"
+    },
+    {
+     "name": "昭和町",
+     "part": "part"
+    },
+    {
+     "name": "木ノ新保町",
+     "part": "part"
+    },
+    {
+     "name": "堀川新町",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "北安江2丁目",
+    "北安江4丁目",
+    "諸江町",
+    "北安江1丁目",
+    "北安江3丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "data\\estat_17201_2000\\h12ka17201.shp + data\\estat_17201\\r2ka17201.shp (overlay)",
+     "finding": "In the 2000 census, 北安江町 was a small area of 235,035 m2 with 1,519 people. It is absent from 2005 on. By area, 66.1% now lies in 北安江4丁目 (new in 2005), 27.8% in 北安江2丁目 and 6.1% in 諸江町."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "City land-readjustment table: 金沢駅西第二 (市施行, 124.26ha, S54-H13) had its 換地処分公告 on H13(2001)-06-01. For 金沢駅北 the 公告 was H18(2006)-08-11. For 金沢駅西 (82) it was H8-10-01."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "Town-name index: 北安江4丁目 falls in 金沢駅西 + 金沢駅西第二, 北安江1丁目 in 金沢駅西 + 金沢駅北, and 北安江2・3丁目 in 金沢駅西. 北安江町 itself is not listed."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+     "finding": "1979-03-31: the 金沢駅西第2 区画整理 plan area included 北安江町 and 西念町."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市)",
+     "finding": "Parts of 北安江町 were merged into 昭和町 on 1992-06-10 (昭和町地区区画整理) and on 1993-01-09 (金沢駅南地区区画整理), per 石川県告示 references."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/堀川新町",
+     "finding": "2006-08-12 (金沢駅北区画整理, 石川県告示第432号): parts of 北安江町 and 北安江1丁目 went to 堀川新町. The 木ノ新保町 article also lists part of 北安江町 going to 木ノ新保町. The wording is 'part', not 'all'."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/鞍月",
+     "finding": "The effective-date rule checks out: 鞍月 was created 2002-10-26, the day after the 金沢西部地区 公告 of 2002-10-25. 堀川新町 shows the same day-after pattern (公告 2006-08-11, created 2006-08-12)."
+    },
+    {
+     "source": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=17&city=1172010",
+     "finding": "Japan Post still lists 北安江町 as 920-0023. Fully abolished names such as 玉井町, 南安江町 and 島田町 have been removed."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "As of 2021-11-01, 北安江町 is listed as a current town without the ※ mark (※ = tiny remnant with no postal code)."
+    },
+    {
+     "source": "data\\abr\\mt_town_fullset_city172014.csv; data\\kanazawa_rules.csv",
+     "finding": "ABR has no 北安江町 row. In the garbage table, 北安江町→諸江, 北安江1-3丁目 and 諸江町→諸江, and 北安江4丁目 is split 諸江/西 by block."
+    }
+   ],
+   "confidence": 0.6,
+   "open_questions": "Whether any land is still legally 北安江町 is unresolved. Japan Post 920-0023 and the Wikipedia template say yes. ABR, the census (2005+), the city school-district table and the 区画整理 index say no. Any remaining land may be railway land near 金沢駅. abolished_on is the date the bulk of the remaining (2000-census) area was converted: 金沢駅西第二, 公告 2001-06-01, effective the next day. The station-area parts went on 2006-08-12, and earlier parts on 1992-06-10 and 1993-01-09. The creation dates of 北安江1-3丁目 under the 金沢駅西 project (sections completed 1986-1996) are not pinned. Could not retrieve the 金沢市公報 2006 号外第24号 or the 2001 告示 to check 'all vs part'."
+  },
+  {
+   "town": "西念町",
+   "status": "remnant",
+   "abolished_on": "2001-06-02",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "西念3丁目",
+     "part": "part"
+    },
+    {
+     "name": "西念2丁目",
+     "part": "part"
+    },
+    {
+     "name": "西念4丁目",
+     "part": "part"
+    },
+    {
+     "name": "駅西新町3丁目",
+     "part": "part"
+    },
+    {
+     "name": "駅西本町4丁目",
+     "part": "part"
+    },
+    {
+     "name": "駅西新町1丁目",
+     "part": "part"
+    },
+    {
+     "name": "北安江4丁目",
+     "part": "part"
+    },
+    {
+     "name": "鞍月東1丁目",
+     "part": "part"
+    },
+    {
+     "name": "西念1丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "西念4丁目",
+    "駅西本町4丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/戸板村",
+     "finding": "On 1943-10-01, when 戸板村 merged into 金沢市, 大字西念新保 was renamed 西念町."
+    },
+    {
+     "source": "data\\estat_17201_2000\\h12ka17201.shp + data\\estat_17201\\r2ka17201.shp (overlay)",
+     "finding": "In the 2000 census, 西念町 covered 824,186 m2 with 3,730 people. It is absent from 2005 on. By area: 西念3丁目 25.5%, 2丁目 22.2%, 4丁目 21.9%, 駅西新町3丁目 8.9%, 駅西本町4丁目 8.2%, 駅西新町1丁目 7.2%, 北安江4丁目 4.2%, 鞍月東1丁目 1.2%."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "金沢駅西第二 換地処分公告 2001-06-01 (effective the next day). 金沢西部地区 (県) 公告 2002-10-25."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "西念町 is still listed as a current guide town name under 金沢駅西第二 and 金沢西部地区. 西念2-4丁目 fall in 金沢駅西 + 金沢駅西第二."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+     "finding": "Old-name table: 広岡町 became 広岡1-3丁目 and 西念1丁目 on S61.2.1 (1986-02-01). The 2000 census already had '西念' (= 西念1丁目) as a separate area."
+    },
+    {
+     "source": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=17&city=1172010",
+     "finding": "Japan Post still lists 西念町 as 920-0026, alongside 西念 920-0024."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "西念町 is listed as a current town under 旧戸板村 (as of 2021-11-01)."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "Garbage table: 西念町→戸板. In 西念4丁目, blocks 1, 7 and 23(1-15) map to 戸板 and the rest to 西. 駅西本町4丁目→戸板, 西念2・3丁目→西."
+    }
+   ],
+   "confidence": 0.65,
+   "open_questions": "The main conversion date is inferred from the 金沢駅西第二 換地処分公告 (2001-06-01) plus the day-after rule. The town-name 告示 itself was not seen. Where the surviving 西念町 parcels are (Japan Post code, city index) is unknown. The garbage 戸板 mapping suggests they are near western 西念4丁目, 駅西本町4丁目 or 西都. Parts of 西念町 probably went earlier to 西念1丁目 and 駅西本町1-3丁目 under the 金沢駅西 project (1986-1996), but the shares are unknown."
+  },
+  {
+   "town": "糸田町",
+   "status": "remnant",
+   "abolished_on": "1972-08-23",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "糸田1丁目",
+     "part": "part"
+    },
+    {
+     "name": "糸田2丁目",
+     "part": "part"
+    },
+    {
+     "name": "糸田新町",
+     "part": "part"
+    },
+    {
+     "name": "東力1丁目",
+     "part": "part"
+    },
+    {
+     "name": "東力2丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "糸田1丁目",
+    "糸田2丁目",
+    "糸田新町"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/米丸村",
+     "finding": "糸田村 became part of 米丸村 in 1889. 米丸村 was merged into 金沢市 on 1935-12-16."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "The 糸田 区画整理 (組合, 13.96ha, S45-S51) had its 換地処分公告 on S47(1972)-08-22. For 神田第二 the 公告 was 1968-03-31."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "糸田1丁目 falls in 神田第二 + 糸田, and 糸田2丁目 in 糸田. 東力1丁目 and 東力2丁目 also include 糸田 project land. 糸田新町 is in no project."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+     "finding": "'糸田町' is used through 1969. 糸田新町 appears by 1974-10. The 清掃基地 built in 糸田町 (1957, Taishō–Shōwa timeline) is at 糸田新町 by 1981."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "糸田町 is marked ※: 'only a tiny part remains, no postal code' (2021-11-01)."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/金沢市立新神田小学校",
+     "finding": "The 新神田小 school district still lists 糸田町, together with 糸田1・2丁目 and 糸田新町."
+    },
+    {
+     "source": "out\\lineage_evidence.json; data\\kanazawa_rules.csv",
+     "finding": "ABR has no 糸田町 and the census (2000+) has none. Garbage: 糸田町→新神田, and 糸田1・2丁目 and 糸田新町→新神田, while 東力1・2丁目→米丸."
+    }
+   ],
+   "confidence": 0.55,
+   "open_questions": "abolished_on is the bulk conversion date: 糸田 project 公告 1972-08-22, effective the next day. Part may already have changed on 1968-04-01 (神田第二). When and how 糸田新町 was created is unknown; it is outside every city 区画整理 project, and the only bound is 'by 1974'. Including 東力1・2丁目 rests only on project coverage. The remnant status rests on the Wikipedia template; ABR has no 糸田町 row, though the school table and garbage table still list it."
+  },
+  {
+   "town": "神田町",
+   "status": "remnant",
+   "abolished_on": "1968-04-01",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "新神田1丁目",
+     "part": "part"
+    },
+    {
+     "name": "新神田2丁目",
+     "part": "part"
+    },
+    {
+     "name": "新神田3丁目",
+     "part": "part"
+    },
+    {
+     "name": "新神田4丁目",
+     "part": "part"
+    },
+    {
+     "name": "新神田5丁目",
+     "part": "part"
+    },
+    {
+     "name": "神田1丁目",
+     "part": "part"
+    },
+    {
+     "name": "神田2丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "新神田1丁目",
+    "新神田2丁目",
+    "新神田3丁目",
+    "新神田4丁目",
+    "新神田5丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "神田第一 (組合, 12.63ha): 換地処分公告 1965-11-19. 神田第二 (組合, 45.43ha): 公告 1968-03-31."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "神田1・2丁目 come from 神田第一 and 新神田1-5丁目 from 神田第二. 神田第二 also covers parts of 糸田1丁目, 入江1・2丁目 and 東力1・3丁目."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_t.htm",
+     "finding": "1965-09-25: the city council approved creating a new town '神田町5丁目' by 区画整理."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+     "finding": "In 1971 the 神田交通公園 is described as in '神田3丁目' (it is now at 新神田3-7-1). 新神田5丁目 appears by 1975-11 and 新神田1丁目 by 1976."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "神田町 is marked ※ (tiny remnant, no postal code) under 旧米丸村, as of 2021-11-01."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "Garbage: 神田町→新神田 and 新神田1-5丁目→新神田, but 神田1・2丁目→中村町. So the rule fits the 新神田 side."
+    }
+   ],
+   "confidence": 0.5,
+   "open_questions": "Where 神田町 came from is unclear, since 米丸村 had no 大字神田. One possibility is that it was renamed in 1935 from 大字御供田 (神田 ≈ 御供田); this is unverified. There seems to have been an intermediate naming stage, '神田町○丁目' or '神田3-5丁目' (1965-1971), later renamed 新神田 at an unknown date before 1975-11. abolished_on uses the 神田第二 公告 (1968-03-31) plus the day-after rule. Land converted under 神田第二 that now lies in 糸田1丁目, 入江1・2丁目 or 東力 may have come from 神田町 or from neighbouring towns. The remnant status rests only on the Wikipedia template; ABR has no row."
+  },
+  {
+   "town": "入江町",
+   "status": "remnant",
+   "abolished_on": "1972-01-08",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "入江1丁目",
+     "part": "part"
+    },
+    {
+     "name": "入江2丁目",
+     "part": "part"
+    },
+    {
+     "name": "入江3丁目",
+     "part": "part"
+    },
+    {
+     "name": "新神田1丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "入江3丁目"
+   ],
+   "remnant_koaza": [
+    "ヘ"
+   ],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/米丸村",
+     "finding": "入江村 became part of 米丸村 in 1889 and was merged into 金沢市 on 1935-12-16."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "入江第一 (組合, 23.98ha): 換地処分公告 1972-01-07. 米丸 (共同, 2.35ha): 公告 1958-07-29. 神田第二: 公告 1968-03-31."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "入江1・2丁目 come from 神田第二 + 入江第一, and 入江3丁目 from 米丸 + 入江第一. 入江第一 also covers parts of 東力4丁目, 東力町 and 間明町2丁目."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+     "finding": "金沢競馬場 (入江町) closed in 1972. In 1977 a public housing estate was built at 新神田1丁目 on the former racecourse site."
+    },
+    {
+     "source": "data\\abr\\mt_town_fullset_city172014.csv; mt_parcel_city172014.csv",
+     "finding": "ABR has a row 入江町 + 小字ヘ (machiaza_id 0607101, status_flg 0) but 0 parcels in the parcel master. The same legacy ID block also contains wholly abolished names such as 堀川角場町."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "入江町 is not listed, even with ※; only 入江 is. Japan Post has no 入江町 code."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "Garbage: 入江町→米丸. Only 入江3丁目 maps to 米丸; 入江1・2丁目 and 新神田1丁目 map to 新神田."
+    }
+   ],
+   "confidence": 0.45,
+   "open_questions": "Remnant versus fully abolished is uncertain. The only remnant evidence is the ABR row 入江町ヘ, which has status_flg 0 and no parcels, plus legacy listings in the school and garbage tables. The Wikipedia template and Japan Post omit 入江町. abolished_on is the 入江第一 公告 (1972-01-07) plus one day. The racecourse land was still called 入江町 in 1972 and became 新神田1丁目 by 1976; the exact date is unknown. 東力4丁目, 東力町 and 間明町2丁目 may also contain former 入江町 land (入江第一 coverage); this is unverified."
+  },
+  {
+   "town": "藤江町",
+   "status": "abolished",
+   "abolished_on": "1970",
+   "precision": "decade",
+   "event": "町名地番変更",
+   "successors": [
+    {
+     "name": "藤江北1丁目",
+     "part": "part"
+    },
+    {
+     "name": "藤江北2丁目",
+     "part": "part"
+    },
+    {
+     "name": "藤江北3丁目",
+     "part": "part"
+    },
+    {
+     "name": "藤江北4丁目",
+     "part": "part"
+    },
+    {
+     "name": "藤江南1丁目",
+     "part": "part"
+    },
+    {
+     "name": "藤江南2丁目",
+     "part": "part"
+    },
+    {
+     "name": "藤江南3丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "藤江北1丁目",
+    "藤江北2丁目",
+    "藤江北3丁目",
+    "藤江北4丁目",
+    "藤江南1丁目",
+    "藤江南2丁目",
+    "藤江南3丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/大野村_(石川県)",
+     "finding": "大野村 (which included 藤江村) was merged into 金沢市 on 1943-12-01, and its 大字 became 金沢市 town names, so 藤江 became 藤江町."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+     "finding": "1971-12-25: the 金石高架橋 opened at an intersection described as '藤江町地内'. 1979-03-31: the 金沢駅西第2 plan area lists '藤江南1丁目', so the split had happened by then."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "藤江北1-4丁目 appear only under 金沢西部地区 (公告 2002-10-25) and 藤江南1丁目 under 戸板第二 (2014). No 1970s city 区画整理 covers 藤江, so the split was probably not a 区画整理."
+    },
+    {
+     "source": "data\\abr\\mt_town_fullset_city172014.csv",
+     "finding": "藤江北/藤江南 have rsdt_addr_flg=0, so they are not 住居表示 areas. ABR has no 藤江町 row."
+    },
+    {
+     "source": "data\\estat_17201_2000\\h12ka17201.shp",
+     "finding": "The 2000 census already has 藤江北1-4丁目 and 藤江南1-3丁目 and no 藤江町."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/鞍月",
+     "finding": "On 2002-10-26, part of 藤江北4丁目 (not 藤江町) went to 鞍月, which confirms 藤江北 existed before 2002."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "Garbage: 藤江町→大徳, and every 藤江北/南 丁目→大徳."
+    }
+   ],
+   "confidence": 0.5,
+   "open_questions": "The exact date and mechanism were not found. The bounds are after 1971-12-25 and by 1979-03-31; '1970' with precision 'decade' means 'the 1970s'. The event is inferred as 町名地番変更, possibly through 地籍調査 (the city did its first 地籍調査 town-area change in 1971 in 押野・安原), and was not seen in any source. Some former 藤江町 land may now be in 鞍月 via 藤江北4丁目 (2002) or in 畝田東; not checked."
+  },
+  {
+   "town": "額新保町",
+   "status": "abolished",
+   "abolished_on": "1984-05-16",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "額新保1丁目",
+     "part": "part"
+    },
+    {
+     "name": "額新保2丁目",
+     "part": "part"
+    },
+    {
+     "name": "額新保3丁目",
+     "part": "part"
+    },
+    {
+     "name": "額新町1丁目",
+     "part": "part"
+    },
+    {
+     "name": "額新町2丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "額新保2丁目",
+    "額新保3丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/額村",
+     "finding": "額新保村 became part of 額村 in 1889. 額村 was merged into 金沢市 on 1954-07-01, with its 大字 kept as town names (額新保町). Wikisource has 昭和29年石川県告示第733号 on the town-area setting."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_t.htm",
+     "finding": "1964-04-20: groundbreaking of the 額団地 in 額新保町."
+    },
+    {
+     "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+     "finding": "1967-06-14: the 額団地 (額新保町) town name was decided as 額新町."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "換地処分公告 dates: 額住宅団地 1967-09-22, 額新保 (1.83ha) 1974-10-08, 大額第一 第一工区 1976-03-30, and 額新保第二 (組合, 19.13ha) 1984-05-15."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "額新保1丁目 comes from 額新保 + 額新保第二, 2丁目 from 額新保第二, and 3丁目 from 大額第一 + 額新保第二. 額新町1・2丁目 come from 額住宅団地."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "Only 額新保 and 額新町 are listed, with no 額新保町 even with ※. Japan Post, ABR and the 2000+ census have no 額新保町."
+    },
+    {
+     "source": "data\\kanazawa_rules.csv",
+     "finding": "Garbage: 額新保町→額. 額新保2・3丁目→額, while 額新保1丁目 and 額新町1・2丁目→扇台."
+    }
+   ],
+   "confidence": 0.55,
+   "open_questions": "abolished_on assumes 額新保第二 (公告 1984-05-15, effective the next day) converted the last 額新保町 land; no 告示 confirms the whole town ended then. Earlier partial losses: 1967-09-23 (額新町), 1974-10-09 and 1976-03-31. 光が丘 (額第2団地, 額第二 project) may also be on former 額新保町 land; it was described as part of the 額新保町 団地 plan, but this is unverified, so it is excluded."
+  },
+  {
+   "town": "笠舞町",
+   "status": "remnant",
+   "abolished_on": "1973-06-01",
+   "precision": "day",
+   "event": "住居表示",
+   "successors": [
+    {
+     "name": "笠舞1丁目",
+     "part": "part"
+    },
+    {
+     "name": "笠舞2丁目",
+     "part": "part"
+    },
+    {
+     "name": "笠舞3丁目",
+     "part": "part"
+    },
+    {
+     "name": "笠舞本町1丁目",
+     "part": "part"
+    },
+    {
+     "name": "笠舞本町2丁目",
+     "part": "part"
+    },
+    {
+     "name": "小立野3丁目",
+     "part": "part"
+    },
+    {
+     "name": "城南1丁目",
+     "part": "part"
+    },
+    {
+     "name": "城南2丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "小立野3丁目",
+    "笠舞1丁目"
+   ],
+   "remnant_koaza": [
+    "ナ",
+    "ワ"
+   ],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/笠舞",
+     "finding": "笠舞1-3丁目 were created by 住居表示 on 1964-04-01 from parts of 笠舞町 (koaza タ, ヨ, リ, ヌ, ル, ツ, 東, ソ, ト, ヘ, チ, 甲, 子, 乙, ホ and others). On 1973-06-01 a second 住居表示 moved 笠舞町ヲ into 笠舞1丁目 (官報 自治省告示189号). No later change is recorded."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/小立野",
+     "finding": "On 1964-01-11 the 笠舞第四 区画整理 moved parts of 笠舞町ソ, レ, ワ and 戌 into 小立野3丁目 (石川県告示14号). This shows 笠舞町ワ bordered 小立野3丁目."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/城南_(金沢市)",
+     "finding": "城南 was formed on 1964-04-01 partly from 笠舞町. More of 笠舞町 (with 大桑町) was added on 1973-06-01 by 住居表示."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "The navbox (as of 2021-11-01) marks 笠舞町 with ※, meaning only a tiny part remains and it has no postal code."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kyoikusomuka/gyomuannai/3_1/3770.html",
+     "finding": "The current school-district table still lists 笠舞町ナ, ワ41-43, ワ64 and ワ65-1 to ワ65-6. These rows match the garbage table, so both tables use the same address list."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "The 笠舞第一 to 笠舞第五 区画整理 projects ran 1957-1972 (笠舞第五 換地処分 公告 1965-12-17). The city's town index (chochomeisakuin.pdf) maps them to 笠舞1丁目, 笠舞2丁目, 笠舞本町1丁目, 笠舞本町2丁目 and 小立野3丁目."
+    },
+    {
+     "source": "data/abr/mt_town_fullset_city172014.csv",
+     "finding": "ABR has no 笠舞町 row and no 笠舞町 parcel. ABR is current to at least 2025-09-03, and it does keep similar 1964/1973 remnants such as 上野本町丙/壬 and 涌波町."
+    },
+    {
+     "source": "data/kanazawa_rules.csv",
+     "finding": "小立野3丁目 7番29-44 maps to 南小立野 and the rest of 小立野3丁目 maps to 小立野. This matches the 笠舞町ワ41-43 to 南小立野 and ワ64/65 to 小立野 rules. 笠舞1丁目 also splits between 小立野 and 南小立野."
+    }
+   ],
+   "confidence": 0.5,
+   "open_questions": "Status is contested. The city's garbage and school tables and the 2021 Wikipedia navbox say small 笠舞町 remnants still exist, but the current ABR has no 笠舞町 at all, so it may have been converted after the tables were written or ABR may be missing it. 笠舞町ナ maps to the 十一屋 district, and none of the successors is in that district. It may be riverside land on the 犀川 near 大桑町 (城南 absorbed 笠舞町 and 大桑町 land together in 1973), but its location was not found. The split of 笠舞町 land between 城南1丁目 and 城南2丁目 is unknown. abolished_on is the last mass conversion; the bulk went on 1964-04-01."
+  },
+  {
+   "town": "円光寺町",
+   "status": "remnant",
+   "abolished_on": "1979-06",
+   "precision": "month",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "円光寺1丁目",
+     "part": "part"
+    },
+    {
+     "name": "円光寺2丁目",
+     "part": "part"
+    },
+    {
+     "name": "円光寺3丁目",
+     "part": "part"
+    },
+    {
+     "name": "円光寺本町",
+     "part": "part"
+    },
+    {
+     "name": "伏見台3丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "円光寺3丁目",
+    "円光寺本町",
+    "伏見台3丁目"
+   ],
+   "remnant_koaza": [
+    "チ"
+   ],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/富樫村",
+     "finding": "円光寺村 became an 大字 of 富樫村 in 1889 and the town 円光寺町 when 富樫村 joined 金沢市 on 1935-12-16. The successor 住居表示 towns include 円光寺本町 in full and parts of 円光寺, 富樫, 寺地, 伏見台 and 長坂台."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "Three 区画整理 projects covered the area. 円光寺 (換地処分 公告 1961-02-10) became 円光寺1丁目 and 2丁目. 長坂第一 (公告 1975-03-30 and 1977-03-31) produced part of 円光寺3丁目. 寺地第一 (公告 1979-06-29) produced 円光寺本町 and part of 円光寺3丁目 (per the town index chochomeisakuin.pdf)."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/115terajidaiichi_kanchizu.pdf",
+     "finding": "The 寺地第一 換地図 shows new 円光寺本町 and 円光寺3丁目. It labels strips left outside the project as 円光寺町ニノ部 (along the south edge of 伏見台1丁目 and 3丁目) and 円光寺町ハノ部 (south-east)."
+    },
+    {
+     "source": "data/abr/mt_town_fullset_city172014.csv",
+     "finding": "ABR has only the koaza row 円光寺町チ, and the parcel master holds one parcel, チ7-2. ABR has no ロ, ハ, ナ or ニ."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "The navbox (2021) marks 円光寺町 with ※ as a tiny remnant with no postal code."
+    },
+    {
+     "source": "data/kanazawa_rules.csv",
+     "finding": "円光寺町ロ, ハ and ナ map to 富樫, the same district as 円光寺3丁目 and 円光寺本町. 円光寺町ニ maps to 伏見台, the district of 伏見台3丁目, which borders the 円光寺町ニ strip on the 換地図. 円光寺1丁目 and 2丁目 map to 長坂台."
+    }
+   ],
+   "confidence": 0.55,
+   "open_questions": "The garbage and school tables list ロ, ハ, ナ and ニ, while ABR keeps only チ7-2. Either ロ/ハ/ナ/ニ were converted later or ABR is incomplete. When and into which towns those strips went is undocumented. 伏見台3丁目 as the successor for ニ is inferred from map adjacency and the 伏見台 district, not from a document. Parts of 富樫, 伏見台1丁目, 2丁目 and 長坂台 may also include former 円光寺町 land."
+  },
+  {
+   "town": "窪町",
+   "status": "remnant",
+   "abolished_on": "1979-03",
+   "precision": "month",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "窪1丁目",
+     "part": "part"
+    },
+    {
+     "name": "窪2丁目",
+     "part": "part"
+    },
+    {
+     "name": "窪3丁目",
+     "part": "part"
+    },
+    {
+     "name": "窪4丁目",
+     "part": "part"
+    },
+    {
+     "name": "窪5丁目",
+     "part": "part"
+    },
+    {
+     "name": "窪6丁目",
+     "part": "part"
+    },
+    {
+     "name": "窪7丁目",
+     "part": "part"
+    },
+    {
+     "name": "伏見台3丁目",
+     "part": "part"
+    },
+    {
+     "name": "久安1丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "窪1丁目",
+    "窪2丁目",
+    "窪6丁目"
+   ],
+   "remnant_koaza": [
+    "イ",
+    "チ",
+    "ト",
+    "ニ",
+    "ハ",
+    "ハバケ",
+    "ロ",
+    "六才",
+    "白金"
+   ],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/富樫村",
+     "finding": "窪村 became an 大字 of 富樫村 in 1889 and the town 窪町 in 1935. 窪 and 窪町 are listed as areas without 住居表示, which matches ABR's rsdt_addr_flg=0 for 窪1-7丁目."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "窪第一 is a 組合 project of 20.51 ha (S48-S57). Its 換地処分 was approved 1979-02-19 and announced 1979-03-02. The town index maps it to 窪4丁目, 窪5丁目, 窪7丁目, 伏見台3丁目 and 久安1丁目. 寺地第一 (1979-06) also covers 窪7丁目, and 高尾第三 (公告 1984-12-25) covers 窪3丁目."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/114kubodaiichi_kanchizu.pdf",
+     "finding": "The 換地図 is dated March 1979 (昭和54年3月作成). It shows new 窪4, 5 and 7丁目 with 伏見台小学校 in 窪5丁目. 窪3丁目 already appears outside the project, and the neighbours are 三馬町, 高尾町 and 円光寺町."
+    },
+    {
+     "source": "data/abr/mt_town_fullset_city172014.csv",
+     "finding": "ABR lists 窪町 koaza イ, チ, ト, ニ, ハ, ハバケ, ロ, 白金 and 六才 (all with rsdt_addr_flg 0) and 31 parcels: イ1-1 to 1-8, ロ1-1 to 4-3, 六才1-1 to 1-4, and others."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kyoikusomuka/gyomuannai/3_1/3770.html",
+     "finding": "The school table lists the whole of 窪町 under 富樫/高尾台. It puts 窪1, 2 and 6丁目 (outside 6丁目 219-294) under 富樫, and 窪3, 4, 5, 7丁目 under 伏見台. The garbage table agrees."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "The navbox (2021) lists both 窪町 and 窪 as current towns, so 窪町 survives alongside 窪1-7丁目."
+    }
+   ],
+   "confidence": 0.6,
+   "open_questions": "The city's 区画整理 index does not cover 窪1丁目, 2丁目 or 6丁目, so when and how they were created (probably a 町名地番変更) is unknown. 窪3丁目 already existed in March 1979. The date given is the 窪第一 換地処分, which is not proof that this was when most of the town converted. The locations of the remaining koaza are unknown. The whole-town garbage rule maps to 富樫, so they are probably next to 窪1, 2 or 6丁目."
+  },
+  {
+   "town": "寺地町",
+   "status": "abolished",
+   "abolished_on": "1979-06",
+   "precision": "month",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "寺地1丁目",
+     "part": "part"
+    },
+    {
+     "name": "寺地2丁目",
+     "part": "part"
+    },
+    {
+     "name": "伏見台1丁目",
+     "part": "part"
+    },
+    {
+     "name": "伏見台2丁目",
+     "part": "part"
+    },
+    {
+     "name": "久安4丁目",
+     "part": "part"
+    },
+    {
+     "name": "有松3丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "久安4丁目",
+    "有松3丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://ja.wikipedia.org/wiki/富樫村",
+     "finding": "寺地村 became an 大字 of 富樫村 in 1889 and the town 寺地町 in 1935. Its successor areas include parts of the 住居表示 town 寺地."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "寺地第一 is a 組合 project of 46.97 ha (S48-S56) with 換地処分 公告 1979-06-29. The town index maps it to 寺地1丁目, 寺地2丁目, 富樫1-3丁目, 伏見台1-3丁目, 円光寺本町, part of 円光寺3丁目, 窪7丁目, 久安1丁目, 久安4丁目 and 有松3丁目."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/115terajidaiichi_kanchizu.pdf",
+     "finding": "The 換地図 shows new 寺地1丁目 and 寺地2丁目. A strip labelled 寺地町ニノ部 lies outside the project on the west edge, between 久安4丁目 and 伏見台3丁目. Another strip, 寺地町ハノ部, lies on the north edge."
+    },
+    {
+     "source": "data/abr/mt_town_fullset_city172014.csv",
+     "finding": "ABR, current to 2025-09, has no 寺地町 row and no 寺地町 parcel. Only 寺地1丁目 and 2丁目 exist (住居表示)."
+    },
+    {
+     "source": "https://ja.wikipedia.org/wiki/Template:金沢市の町名",
+     "finding": "The 2021 navbox lists only 寺地, with no 寺地町, not even as a ※ remnant."
+    },
+    {
+     "source": "data/kanazawa_rules.csv",
+     "finding": "寺地町ニ maps to 三馬, the district of 久安4丁目 and 有松3丁目, which border 寺地2丁目 and the ニ strip. 寺地1丁目 and 2丁目 map to 富樫. The school table still lists 寺地町ニ under 三馬/清泉, so the entry is probably stale."
+    }
+   ],
+   "confidence": 0.5,
+   "open_questions": "The bulk of 寺地町 went in 1979-06 (寺地第一), but the ニ and ハ strips survived beyond that, and their final conversion is undocumented. Candidates are 有松第一 (公告 1982-05-31), 久安第二 (公告 1990-11-06) or a later 住居表示/町名地番変更. Which towns besides 寺地1丁目 and 2丁目 took former 寺地町 land is inferred from the project's town list and map adjacency."
+  },
+  {
+   "town": "湖南第2区画整理地",
+   "status": "not_a_town",
+   "abolished_on": "2002-02-06",
+   "precision": "day",
+   "event": "土地区画整理",
+   "successors": [
+    {
+     "name": "みずき1丁目",
+     "part": "part"
+    },
+    {
+     "name": "みずき2丁目",
+     "part": "part"
+    },
+    {
+     "name": "みずき3丁目",
+     "part": "part"
+    },
+    {
+     "name": "みずき4丁目",
+     "part": "part"
+    }
+   ],
+   "gomi_successors": [
+    "みずき1丁目",
+    "みずき2丁目",
+    "みずき3丁目",
+    "みずき4丁目"
+   ],
+   "remnant_koaza": [],
+   "evidence": [
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+     "finding": "Project 176 湖南第二 is a 個人施行 project of 40.35 ha (H5-H23). 換地処分 was announced for 第一工区 on 1998-12-04 and for 第二工区 on 2002-02-05. The project closed in 2012-03."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+     "finding": "The town index maps みずき1丁目, 2丁目, 3丁目 and 4丁目 to project 176 湖南第二."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/176konandaini_kanchizu.pdf",
+     "finding": "The 換地図 is headed 金沢市湖南第二土地区画整理事業 and dated H14.2.6現在 (2002-02-06). It labels みずき一丁目 to 四丁目, with 木越一丁目 next to it."
+    },
+    {
+     "source": "https://www.mizukidanchi.com/gaiyo/",
+     "finding": "The みずき団地 was developed by 金沢市 itself, covers about 40.3 ha and is located at みずき3丁目133番地. Its area matches the 40.35 ha of the 湖南第二 project."
+    },
+    {
+     "source": "data/estat_17201_2000 and estat_17201_2005",
+     "finding": "みずき1丁目 and 2丁目 already appear in the 2000 census, and みずき3丁目 and 4丁目 first appear in 2005. An overlay shows 3丁目 came about 88% from 木越町 and 12% from 大場町, and 4丁目 100% from 木越町. This fits 第一工区 in 1998 and 第二工区 in 2002."
+    },
+    {
+     "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kyoikusomuka/gyomuannai/3_1/3770.html",
+     "finding": "The school table no longer has the placeholder label and lists みずき1-4丁目 under 大浦. The garbage table maps みずき1-4丁目 to 大浦, the same district as the label."
+    },
+    {
+     "source": "data/abr/mt_town_fullset_city172014.csv",
+     "finding": "ABR's 湖南町 (コナンマチ, 920-3107, parcels 1-421) is unrelated. It is the 河北潟干拓地 farmland with zero census population, its nearest areas are 才田町 and 二日市町, and the garbage table puts it in 森本."
+    }
+   ],
+   "confidence": 0.85,
+   "open_questions": "The garbage label may refer only to 第二工区 (みずき3丁目 and 4丁目, named 2002-02-06) or to the whole project, including 第一工区 (みずき1丁目 and 2丁目, named about 1998-12-05 after the 1998-12-04 公告). All four みずき 丁目 are in the 大浦 district, so either reading gives the same garbage mapping."
+  }
+ ],
+ "verdict": {
+  "verdicts": [
+   {
+    "town": "木ノ新保7番丁",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. Spelling note for normalization: the census writes 木の新保七番丁 (の), the legal and ABR stem is 木ノ新保 (ノ), and the garbage table writes the number as 7. The 2006 換地図 shows no 七番丁 strip left outside the project, so the two 'part' transfers (木ノ新保町 and 堀川新町) together took the whole town.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "Project 181 金沢駅北 (市, 11.92ha): 換地処分 approved H18-05-08, 公告 H18-08-11, so it took effect 2006-08-12."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/181kanazawaekikita_kanchizu.pdf",
+      "finding": "The 換地図 shows new 木ノ新保町 and 堀川新町. Labels outside the project are only 広岡町ロ, 北安江町ト, 昭和町, 本町二丁目, 此花町, 堀川町, 淵上町, 西堀川町, 七ツ屋町, 北安江一・二丁目 and 広岡一丁目. No 七番丁 remains."
+     },
+     {
+      "source": "local census overlay (data/estat_17201_2005 vs 2010)",
+      "finding": "69.4% of the 2010 木ノ新保町 area comes from the 2005 木の新保七番丁 area, and 21.5% of 2010 堀川新町 does too."
+     },
+     {
+      "source": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=17&city=1172010 ; geolonia japanese-addresses 金沢市.json ; Template:金沢市の町名",
+      "finding": "The name is in none of the three; 木ノ新保町 is 920-0858."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+      "finding": "The old-name list has only 木ノ新保一〜四・六番丁 (S40.9.1). Missing 五番丁 and 七番丁 fits their survival until 2006."
+     }
+    ]
+   },
+   {
+    "town": "西堀川町",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. A primary city map now supports the remnant claim directly. The 30% of the old census area that falls in the 北安江一丁目 polygon is most likely this remnant strip, lumped in by the census. It is not a legal transfer.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/181kanazawaekikita_kanchizu.pdf",
+      "finding": "The 2006 換地図 labels a strip '西堀川町' outside the project's east boundary, along the rail corridor between 七ツ屋町 and 淵上町. Part of the town was left out of the 2006 change."
+     },
+     {
+      "source": "https://raw.githubusercontent.com/geolonia/japanese-addresses/master/api/ja/石川県/金沢市.json",
+      "finding": "The list has 西堀川町 at 36.582815,136.652588. That point is in the 2020 堀川新町 polygon and the 2000 西堀川町 polygon."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kyoikusomuka/gyomuannai/3_1/3770.html",
+      "finding": "The school table lists 西堀川町 (明成/長町). Japan Post has no code for it, which fits the navbox's ※ (no postal code)."
+     },
+     {
+      "source": "local census overlay",
+      "finding": "The 2005 西堀川町 area (1,960 m2) splits 69.7% into 2010 堀川新町 and 30.3% into 北安江１丁目. 北安江１丁目 itself is otherwise unchanged (99.2%)."
+     }
+    ]
+   },
+   {
+    "town": "南安江町",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. The 2006 換地図 labels no 南安江町 strip outside the project, which supports full absorption into 堀川新町 and 木ノ新保町 on 2006-08-12. The census never had a separate area for it; the 2005 '広岡町' area probably held the station-side slivers, including 南安江町.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/181kanazawaekikita_kanchizu.pdf",
+      "finding": "No 南安江町 label appears among the neighbouring towns outside the project boundary."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "金沢駅北 公告 H18-08-11, so the change took effect 2006-08-12."
+     },
+     {
+      "source": "Japan Post Kanazawa list; geolonia; school table 3770.html; ABR",
+      "finding": "南安江町 is absent from all four. The school table drops it even though it keeps other abolished names."
+     },
+     {
+      "source": "local census overlay 2005->2010",
+      "finding": "2010 木ノ新保町 is 27.6% and 2010 堀川新町 is 16.0% from the 2005 '広岡町' area, which absorbed the station-area slivers."
+     }
+    ]
+   },
+   {
+    "town": "島田町",
+    "verdict": "confirmed",
+    "corrections": "No changes to the record itself. Refinement for gomi_successors: the garbage rule most plausibly covers the land that kept the name until 1992/1993, which is now in 昭和町. 本町2丁目 got its part in 1965 and has had its own addresses since then. Separate caution: the city table gives 昭和町地区's 換地処分 公告 as 1998-08-31, but Wikipedia dates the town-area change to 1992-06-10 (石川県告示第322号). Town-area changes can therefore come before the 換地処分.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "171 金沢駅南地区 (県, 3.55ha): 換地処分公告 H5-01-08, effective 1993-01-09. 172 昭和町地区 公告 H10-08-31."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+      "finding": "島田町 → 本町２丁目・昭和町, S40.9.1, 芳斎."
+     },
+     {
+      "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市) (raw wikitext)",
+      "finding": "Gives 1993-01-09 'all of 島田町' going to 昭和町, citing 石川県告示第4号."
+     },
+     {
+      "source": "Japan Post; geolonia; Template; census 2000-2020; ABR",
+      "finding": "Absent from all of them. The school table still lists 島田町 (中央小) as a legacy row."
+     }
+    ]
+   },
+   {
+    "town": "玉井町",
+    "verdict": "corrected",
+    "corrections": "Status, date, event and successors are confirmed. gomi_successors is wrong to leave out 木ノ新保町. From 1992 to 2006 the land that still carried the name 玉井町 lay entirely in what is now 木ノ新保町 ('玉井町の全部' went there in 2006). The 1965 and 1992 parts in 本町2丁目 and 昭和町 have their own garbage rows. 木ノ新保町 has no garbage row at all, so its station area can only be resolved through old-name rows such as 玉井町→芳斎. 木ノ新保町 should therefore be the primary gomi successor.",
+    "independent_evidence": [
+     {
+      "source": "https://ja.wikipedia.org/wiki/木ノ新保町 (raw)",
+      "finding": "2006-08-12: 木ノ新保町 formed from 'all of 玉井町' plus parts of other towns (石川県告示第432号)."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+      "finding": "玉井町 (たまのいまち) → 本町２丁目・昭和町, S40.9.1, 芳斎."
+     },
+     {
+      "source": "data/kanazawa_rules.csv",
+      "finding": "There is no row for 木ノ新保町. The station area is covered only through old names (玉井町→芳斎, 木ノ新保7番丁→此花, 南安江町→此花)."
+     },
+     {
+      "source": "school table 3770.html",
+      "finding": "玉井町 → 中央 and 木ノ新保町 → 明成. The city keeps a legacy row for the old name instead of mapping it to the new town."
+     }
+    ],
+    "corrected_record": {
+     "town": "玉井町",
+     "status": "abolished",
+     "abolished_on": "2006-08-12",
+     "precision": "day",
+     "event": "土地区画整理",
+     "successors": [
+      {
+       "name": "本町2丁目",
+       "part": "part"
+      },
+      {
+       "name": "昭和町",
+       "part": "part"
+      },
+      {
+       "name": "木ノ新保町",
+       "part": "part"
+      }
+     ],
+     "gomi_successors": [
+      "木ノ新保町",
+      "昭和町",
+      "本町2丁目"
+     ],
+     "remnant_koaza": [],
+     "evidence": [
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+       "finding": "Parts went to 本町2丁目 and 昭和町 by the 住居表示 of 1965-09-01."
+      },
+      {
+       "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市)",
+       "finding": "Further parts went to 昭和町 on 1992-06-10 (石川県告示第322号)."
+      },
+      {
+       "source": "https://ja.wikipedia.org/wiki/木ノ新保町",
+       "finding": "On 2006-08-12 all of the remaining 玉井町 went to 木ノ新保町 (金沢駅北 換地処分 + 住居表示; 石川県告示第432号)."
+      },
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+       "finding": "金沢駅北 公告 2006-08-11, effective the next day."
+      },
+      {
+       "source": "data/kanazawa_rules.csv",
+       "finding": "玉井町→芳斎. 木ノ新保町 has no row, so the 芳斎 rule is the only rule for the former 玉井町 part of 木ノ新保町."
+      }
+     ],
+     "confidence": 0.85,
+     "open_questions": "The table may never have been updated for 木ノ新保町, so the district actually serving the former 玉井町 part of the station area (芳斎 vs 此花) should be checked with the city. 本町2丁目 and 昭和町 are kept as secondary successors."
+    }
+   },
+   {
+    "town": "柳町",
+    "verdict": "insufficient",
+    "corrections": "The end date and status cannot be settled. Every recorded event (1965, 1992, 1993) is 'part' only, and no source found describes 柳町 being absorbed in full. The 1993 金沢駅南 換地図 does not label 柳町 among its neighbours: the labels are 中橋町, 日吉町, 折違町, 昭和町 and 北安江町ト/ヘ. A 2023 Wikipedia stub, 柳町 (金沢市), calls it a 現行行政地名 and lists three rail lines under transport, which would suggest a strip under the tracks like 西堀川町. That stub is tagged for missing sources and notability, and the 2021 navbox omits 柳町. Japan Post, ABR, geolonia and the 2000+ census all lack it. 'Abolished by 2000, last documented 1993-01-09' is the best-supported reading, but a remnant cannot be ruled out.",
+    "independent_evidence": [
+     {
+      "source": "https://ja.wikipedia.org/wiki/柳町_(金沢市) (raw)",
+      "finding": "A stub tagged 出典の明記/特筆性 (2023-12). It calls 柳町 現行行政地名 and lists 浅野川線, IR and 新幹線; it has no history section."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/171kanazawaekiminamichiku_kanchizu.pdf",
+      "finding": "The 1993 換地図's neighbouring labels are 大和町, 元菊町, 三社町, 中橋町, 日吉町, 折違町, 昭和町, 北安江町ト and 北安江町ヘ. There is no 柳町."
+     },
+     {
+      "source": "Wikipedia 中橋町 / 日吉町 (金沢市) / 木ノ新保町 / 堀川新町 (raw)",
+      "finding": "None of the 1993, 1996 or 2006 events in these articles mention 柳町."
+     },
+     {
+      "source": "Japan Post; geolonia; Template; ABR; census 2000-2020",
+      "finding": "柳町 is absent from all of them. The school table lists 柳町 (中央), but it also lists abolished towns such as 島田町, so this proves nothing."
+     }
+    ],
+    "corrected_record": {
+     "town": "柳町",
+     "status": "abolished",
+     "abolished_on": "1993-01-09",
+     "precision": "day",
+     "event": "土地区画整理",
+     "successors": [
+      {
+       "name": "昭和町",
+       "part": "part"
+      },
+      {
+       "name": "本町1丁目",
+       "part": "part"
+      }
+     ],
+     "gomi_successors": [
+      "昭和町",
+      "本町1丁目"
+     ],
+     "remnant_koaza": [],
+     "evidence": [
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+       "finding": "柳町 → 本町１丁目・昭和町, S40.9.1, 芳斎."
+      },
+      {
+       "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市)",
+       "finding": "Parts went to 昭和町 in 1965, 1992-06-10 and 1993-01-09. Every event says 'part'."
+      },
+      {
+       "source": "https://ja.wikipedia.org/wiki/柳町_(金沢市)",
+       "finding": "A dissenting stub claims 柳町 is current; it is unsourced."
+      }
+     ],
+     "confidence": 0.5,
+     "open_questions": "Is there a small 柳町 strip under the station tracks (cf. 西堀川町)? The 1993 告示 (石川県告示第4号) text or a 2006 map neighbour label would settle it. If the town was fully abolished, 1993-01-09 is only the last documented partial transfer."
+    }
+   },
+   {
+    "town": "八幡町",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. 子来町 is a plausible host of the remnant, but no document makes it a successor.",
+    "independent_evidence": [
+     {
+      "source": "https://ja.wikipedia.org/wiki/東山_(金沢市) (町域の変遷 table, raw)",
+      "finding": "1966-09-01: 東山1丁目 and 東山2丁目 each took 'part of 八幡町' (官報 自治省告示第176号)."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/39/kyuuchoumeiitiranr3.pdf",
+      "finding": "八幡町 → 東山１・２丁目, S41.9.1, 馬場."
+     },
+     {
+      "source": "geolonia 金沢市.json + local census",
+      "finding": "八幡町 is at 36.572799,136.668755, inside the 子来町 polygon and within 150 m of 東山一・二丁目."
+     },
+     {
+      "source": "school table 3770.html",
+      "finding": "八幡町 → 明成. 子来町 and 東山2丁目 1-10 also → 明成 (the former 馬場 school area), which fits the garbage district 馬場."
+     }
+    ]
+   },
+   {
+    "town": "北安江町",
+    "verdict": "corrected",
+    "corrections": "The remnant status is now backed by primary maps, and a remnant koaza can be added: 'ト'. The 2006 金沢駅北 換地図 labels a strip '北安江町ト' outside the project's west end, next to '広岡町ロ', between 広岡一丁目 and 昭和町. The 1993 金沢駅南 換地図 labels 北安江町ト and 北安江町ヘ at its east end. geolonia's 北安江町 point falls inside the 広岡町 census polygon near 昭和町/木ノ新保町, the same spot. Japan Post still lists 920-0023. The date and successors are confirmed: 金沢駅西第二 公告 2001-06-01, and the census shows 北安江4丁目 as 81.7% former 北安江町. Caveat for the garbage rule: the 諸江 rule matches the pre-2001 bulk, not the surviving ト strip by the station, whose neighbours are in other districts (広岡町/昭和町 長田町・芳斎; 木ノ新保町 none).",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/181kanazawaekikita_kanchizu.pdf",
+      "finding": "The 2006 map labels '北安江町ト' and '広岡町ロ' as strips outside the project's west boundary."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/171kanazawaekiminamichiku_kanchizu.pdf",
+      "finding": "The 1993 map labels '北安江町ト' (north) and '北安江町ヘ' (east) outside the project's east end."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "136 金沢駅西第二: 換地処分 approved H13-04-23, 公告 H13-06-01."
+     },
+     {
+      "source": "local census overlay 2000->2005",
+      "finding": "The 2005 北安江４丁目 area is 81.7% 北安江町 and 18.3% 西念町. 北安江２丁目 is 39.8% from 北安江町, and 諸江町 is 7.3% from 北安江町."
+     },
+     {
+      "source": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=17&city=1172010",
+      "finding": "The live list still has 北安江町 920-0023, next to 北安江 920-0022."
+     },
+     {
+      "source": "geolonia 金沢市.json",
+      "finding": "北安江町 is at 36.577115,136.647052, inside the 広岡町 census polygon and within 150 m of 昭和町, 折違町, 広岡一丁目 and 木ノ新保町."
+     }
+    ],
+    "corrected_record": {
+     "town": "北安江町",
+     "status": "remnant",
+     "abolished_on": "2001-06-02",
+     "precision": "day",
+     "event": "土地区画整理",
+     "successors": [
+      {
+       "name": "北安江4丁目",
+       "part": "part"
+      },
+      {
+       "name": "北安江2丁目",
+       "part": "part"
+      },
+      {
+       "name": "諸江町",
+       "part": "part"
+      },
+      {
+       "name": "北安江1丁目",
+       "part": "part"
+      },
+      {
+       "name": "北安江3丁目",
+       "part": "part"
+      },
+      {
+       "name": "昭和町",
+       "part": "part"
+      },
+      {
+       "name": "木ノ新保町",
+       "part": "part"
+      },
+      {
+       "name": "堀川新町",
+       "part": "part"
+      }
+     ],
+     "gomi_successors": [
+      "北安江2丁目",
+      "北安江4丁目",
+      "諸江町",
+      "北安江1丁目",
+      "北安江3丁目"
+     ],
+     "remnant_koaza": [
+      "ト"
+     ],
+     "evidence": [
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+       "finding": "金沢駅西第二 公告 2001-06-01 (effective 06-02). 金沢駅南 公告 1993-01-08. 金沢駅北 公告 2006-08-11."
+      },
+      {
+       "source": "local census overlay h12ka17201 -> h17ka17201",
+       "finding": "The 2000 北安江町 area (235,035 m2) went 66.1% to 北安江４丁目, 27.8% to 北安江２丁目 and 6.1% to 諸江町."
+      },
+      {
+       "source": "https://ja.wikipedia.org/wiki/昭和町_(金沢市) ; 堀川新町 ; 木ノ新保町",
+       "finding": "Parts went to 昭和町 on 1992-06-10 and 1993-01-09, and to 堀川新町 and 木ノ新保町 on 2006-08-12."
+      },
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/181kanazawaekikita_kanchizu.pdf",
+       "finding": "A strip '北安江町ト' survives outside the 2006 project at the station's west end."
+      },
+      {
+       "source": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=17&city=1172010",
+       "finding": "北安江町 920-0023 is still listed."
+      }
+     ],
+     "confidence": 0.7,
+     "open_questions": "The creation dates of 北安江1-3丁目 (金沢駅西 工区 stages, 1986-1996) are not pinned down. 北安江町ヘ (1993) appears absorbed by 2006, since only ト is labelled then. The garbage rule (諸江) probably does not suit an address in the ト strip next to 広岡町/昭和町, so the city should be asked which district serves it."
+    }
+   },
+   {
+    "town": "西念町",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. Optional addition: 西都1丁目 (0.5% of the old area in the census overlay) is a minor 2002 successor. geolonia's 西念町 point lies within 150 m of 西都一丁目, 二ツ屋町 and 西念四丁目, all of which are 戸板 garbage blocks. That fits the remnant being on the western, 戸板 side, as the record guessed.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "金沢駅西第二 公告 H13-06-01. 金沢西部地区 (県) 公告 H14-10-25. 戸板第一 公告 H12-07-11."
+     },
+     {
+      "source": "local census overlay 2000->2005",
+      "finding": "The 2005 西念４丁目 area is 97.7% former 西念町, 駅西本町４丁目 63.8%, and 鞍月東１丁目 14.5% (金沢西部, 2002). The old area also touches 西都１丁目 (0.5%)."
+     },
+     {
+      "source": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?pref=17&city=1172010",
+      "finding": "西念町 920-0026 is still listed (live)."
+     },
+     {
+      "source": "geolonia 金沢市.json + census",
+      "finding": "西念町 is at 36.59158,136.631014, inside the 2020 駅西新町三丁目 polygon. Neighbours are 二ツ屋町 (戸板), 西念四丁目, 鞍月東一丁目 and 西都一丁目 (戸板)."
+     },
+     {
+      "source": "https://ja.wikipedia.org/wiki/戸板村 (raw)",
+      "finding": "1943-10-01: 西念新保 → 西念町."
+     }
+    ]
+   },
+   {
+    "town": "糸田町",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. Additional primary evidence: the 1972 糸田 換地図 labels '糸田町ナの部' (west) and '糸田町アの部' (south-east) outside the project. Those strips are the likely source of 糸田新町 (a 住居表示 town in no project) and of the surviving ※ remnant. geolonia's 糸田町 point sits inside the 糸田新町 polygon.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/090itoda_kanchizu.pdf",
+      "finding": "The map shows new 糸田1丁目, 糸田2丁目 and 東力1丁目. Outside labels include 保古町地内, 米泉町地内, 新神田3・4丁目地内, 糸田町ナの部 and 糸田町アの部地内."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/052kandadaini_kanchizu.pdf",
+      "finding": "The 1968 神田第二 map already labels '糸田町カの部' and '糸田町アの部' next to new 新神田."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "90 糸田: 公告 S47-08-22. 85 東力: 公告 S48-02-27."
+     },
+     {
+      "source": "geolonia 金沢市.json",
+      "finding": "糸田町 is at 36.557863,136.628403, inside the 糸田新町 polygon."
+     },
+     {
+      "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+      "finding": "'糸田町' still appears 1969-12-01. '糸田新町' appears 1974-10-27."
+     }
+    ]
+   },
+   {
+    "town": "神田町",
+    "verdict": "confirmed",
+    "corrections": "No changes to the claims. New primary evidence: the 神田第二 換地図 (two 工区, dated 1967-01-12, 公告 1968-03-31) creates 新神田一〜五丁目 and 入江一丁目 directly. So the chronology's '神田3丁目' (1971) is loose usage, not an intermediate legal name. The same maps label surviving '神田町ハの部/ニの部/ホの部' strips and a town '神田町五丁目' east of the railway. That fits a 1965 entry in the city chronology saying the 区画整理 created a new town '神田町5丁目'. This intermediate name, probably from 神田第一 (公告 1965-11-19), likely became today's 神田1・2丁目, so normalization should accept it. Origin: 米丸村 had no 大字神田 but did have 御供田. The 1930 racecourse site was described as at '米丸村字御供田 / 増泉糸田', and the 1968 map puts 金沢競馬場 next to 神田町ニの部. Both support 神田町 being 大字御供田 renamed in 1935; this is still not proven by a 告示.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/052kandadaini_kanchizu.pdf",
+      "finding": "工区1 creates 新神田一・二丁目. 工区2 creates 新神田三・四・五丁目 and 入江一丁目. Outside labels include 神田町ハ/ニ/ホの部, 神田町五丁目, 入江町, 入江町ハの部, 東力町, 大豆田町 and 金沢競馬場."
+     },
+     {
+      "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_t.htm",
+      "finding": "1965-09-25: by 区画整理, new towns '神田町5丁目', 三口新町1・2丁目 and 花里町 were set up. 1930-10-11: the racecourse site is at 米丸村字御供田 / 増泉糸田."
+     },
+     {
+      "source": "https://ja.wikipedia.org/wiki/米丸村 (raw)",
+      "finding": "The 1889 villages are 中, 増泉, 御供田, 東力, 糸田, 保古, 黒田, 間明, 高畠, 玉鉾 and 入江. There is no 神田."
+     },
+     {
+      "source": "geolonia 金沢市.json",
+      "finding": "神田町 is at 36.559864,136.631322, inside the 神田二丁目 polygon and next to 新神田三丁目 and 糸田一丁目."
+     }
+    ]
+   },
+   {
+    "town": "入江町",
+    "verdict": "corrected",
+    "corrections": "Two errors. (1) The date is wrong. The 1972 入江第一 換地図 does not convert the area into 丁目. It lays the new blocks out in 字 zones 'イ', 'ロの部', 'ハ', 'ホの部' and so on, separated by red 字界 lines. Only the edge strips became 間明町1・2丁目, and 入江一丁目 was already outside the project (created 1968 by 神田第二). So 入江町 survived the 1972-01-08 換地処分 with new koaza, and the chronology still calls the racecourse 入江町 on 1972-12-04. 入江2・3丁目 were created later, at an unknown date before the 2000 census. (2) The remnant claim is too weak. The only support is the ABR row 入江町ヘ (machiaza_id 0607101, status_flg 0, 0 parcels). It sits in the legacy 06xxxxx block next to rows for names that are certainly dead: 木ノ新保四番丁 (住居表示 1965) and 堀川角場町 (all of it went to 堀川新町 in 2006). The navbox, Japan Post, geolonia (MLIT-derived) and the 2000+ census all omit 入江町; the navbox does mark sibling remnants 神田町 and 糸田町 with ※. Status should be abolished, end date unknown.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/081iriedaiichi_kanchizu.pdf",
+      "finding": "Post-換地 blocks are labelled by 字 zones (イ, ロの部, ハ, ホの部, ...). The edge strips are 間明町一・二丁目. Outside labels: 玉鉾町, 東力町, 入江一丁目, 新神田五丁目."
+     },
+     {
+      "source": "data/abr/mt_town_fullset_city172014.csv + mt_parcel_city172014.csv",
+      "finding": "入江町ヘ is in the 06xxxxx legacy block with 木ノ新保四番丁 and 堀川角場町(丙), all status_flg 0. It has 0 parcels."
+     },
+     {
+      "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+      "finding": "1972-12-04: '金沢競馬場（入江町）' closed, after the 1972-01-07 公告."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/052kandadaini_kanchizu.pdf",
+      "finding": "入江一丁目 was created by 神田第二 (effective 1968-04-01). 入江町 and 入江町ハの部 are neighbours."
+     },
+     {
+      "source": "Template:金沢市の町名 ; Japan Post ; geolonia",
+      "finding": "入江町 is absent from all three. Only 入江 is listed."
+     }
+    ],
+    "corrected_record": {
+     "town": "入江町",
+     "status": "abolished",
+     "abolished_on": null,
+     "precision": "unknown",
+     "event": "unknown",
+     "successors": [
+      {
+       "name": "入江1丁目",
+       "part": "part"
+      },
+      {
+       "name": "入江2丁目",
+       "part": "part"
+      },
+      {
+       "name": "入江3丁目",
+       "part": "part"
+      },
+      {
+       "name": "新神田1丁目",
+       "part": "part"
+      }
+     ],
+     "gomi_successors": [
+      "入江3丁目"
+     ],
+     "remnant_koaza": [],
+     "evidence": [
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/052kandadaini_kanchizu.pdf",
+       "finding": "1968-04-01 (神田第二): 入江一丁目 was created next to 入江町."
+      },
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/081iriedaiichi_kanchizu.pdf",
+       "finding": "1972-01-08 (入江第一, 公告 1972-01-07): the land was reorganized but kept 字 zones イ〜ホ, so 入江町 still existed."
+      },
+      {
+       "source": "local census h12ka17201",
+       "finding": "The 2000 census has 入江1-3丁目 and no 入江町, so the name was gone by 2000-10."
+      },
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/chochomeisakuin.pdf",
+       "finding": "入江2丁目 = 神田第二 + 入江第一. 入江3丁目 = 米丸 + 入江第一. 東力4丁目, 東力町 and 間明町2丁目 also include 入江第一 land."
+      },
+      {
+       "source": "data/kanazawa_rules.csv",
+       "finding": "入江町→米丸. 入江3丁目, 東力4丁目, 東力町 and 間明町2丁目 are 米丸; 入江1・2丁目 and 新神田1丁目 are 新神田."
+      }
+     ],
+     "confidence": 0.5,
+     "open_questions": "When and how 入江町イ〜ホ became 入江2・3丁目 (between 1972 and 2000) is unknown; the 東力 project (公告 1973-02-27) is one candidate. 東力4丁目, 東力町 and 間明町2丁目 (all 米丸) may also hold former 入江町 land; this is unverified. The racecourse land's naming 1972→1977 (入江町 → 新神田1丁目) is unclear."
+    }
+   },
+   {
+    "town": "藤江町",
+    "verdict": "confirmed",
+    "corrections": "No changes to the claims. The bounds hold: '藤江町地内' appears 1971-12-25 and '藤江南1丁目' appears 1979-03-31. The 町名地番変更 event is still inferred. A 地籍調査-based 町区域変更, like the 押野・安原 one of 1971-09-01 that abolished イロハ koaza, is the most plausible mechanism. No city 区画整理 of the 1970s covers 藤江北 or 藤江南.",
+    "independent_evidence": [
+     {
+      "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+      "finding": "1971-09-01: the first 地籍調査-based 町区域変更 (押野・安原, 15 towns). 1971-12-25: '藤江町地内'. 1979-03-31: 金沢駅西第2 area includes '藤江南1丁目'. 1987-06-29: 金沢西部 area includes '藤江'."
+     },
+     {
+      "source": "https://ja.wikipedia.org/wiki/鞍月 (raw)",
+      "finding": "2002-10-26: 鞍月 formed partly from 藤江北4丁目 (石川県告示第558/560号)."
+     },
+     {
+      "source": "Japan Post live list; Template; geolonia",
+      "finding": "Only 藤江北 (920-0351) and 藤江南 (920-0345) appear. There is no 藤江町."
+     },
+     {
+      "source": "data/abr/mt_town_fullset_city172014.csv",
+      "finding": "藤江北1-4丁目 and 藤江南1-3丁目 exist with rsdt_addr_flg 0 (地番 areas)."
+     }
+    ]
+   },
+   {
+    "town": "額新保町",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. One discrepancy to note: geolonia lists 額新保町, but at 36.49024,136.650702, which is inside the 坪野町 polygon about 4 km from 額新保1-3丁目. That looks like a coordinate artefact, not evidence of a remnant. The record's exclusion of 光が丘 is supported: the chronology puts 額第2住宅団地 (光が丘) on 馬替町/大額町 land.",
+    "independent_evidence": [
+     {
+      "source": "https://ja.wikisource.org/wiki/町の区域設定の届出_(昭和29年石川県告示第733号)",
+      "finding": "額新保町 was created 1954-07-01 from 額村字額新保."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "134 額新保第二: 公告 S59-05-15. 105 額新保: 公告 S49-10-08. 41 額住宅団地: 公告 S42-09-22."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/134nukashinbodaini_kanchizu.pdf",
+      "finding": "The map labels 額新保1・2・3丁目 with neighbours 野々市町粟田, 野々市町矢作 and 額乙丸町. No 額新保町 is labelled outside."
+     },
+     {
+      "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+      "finding": "1967: 額第2住宅団地 is in '馬替町、大額町地内'. 1970-02-25: it is named 光が丘2・3丁目."
+     },
+     {
+      "source": "geolonia 金沢市.json + census",
+      "finding": "The 額新保町 point falls inside 坪野町. The 額新保1-3丁目 centroids are around 36.515-36.520 N, 136.616-136.617 E."
+     }
+    ]
+   },
+   {
+    "town": "笠舞町",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. geolonia supports the remnant: its 笠舞町 point is inside the 小立野三丁目 polygon, next to 笠舞一丁目, which matches the ワ rows. For 笠舞町ナ (十一屋), 大桑町 is a consistent candidate host: it has 十一屋 garbage blocks and was absorbed together with 笠舞町 into 城南 in 1973. Note that the school and garbage tables share one source list, so they are not independent of each other.",
+    "independent_evidence": [
+     {
+      "source": "https://ja.wikipedia.org/wiki/笠舞 ; 小立野 ; 城南_(金沢市) (raw)",
+      "finding": "笠舞一・二丁目 were created 1964-01-11 (石川県告示14号). 住居表示 followed 1964-04-01. 笠舞町ヲ went to 笠舞1丁目 on 1973-06-01. 笠舞町ソ/レ/ワ/戌 went to 小立野3丁目 on 1964-01-11. 城南 took 笠舞町 and 大桑町 parts in 1973."
+     },
+     {
+      "source": "geolonia 金沢市.json + census",
+      "finding": "笠舞町 is at 36.548892,136.675319, inside the 小立野三丁目 polygon and next to 笠舞一丁目."
+     },
+     {
+      "source": "school table 3770.html",
+      "finding": "Lists 笠舞町 ナ (十一屋), ワ41-43 (南小立野) and ワ64/ワ65-1〜6 (小立野). 大桑町 rows map to 十一屋 and 南小立野."
+     }
+    ]
+   },
+   {
+    "town": "円光寺町",
+    "verdict": "confirmed",
+    "corrections": "The key claims stand. Fixes to the evidence: the 富樫村 article's town list describes the whole former village, not 円光寺町's successors, so that finding is misattributed. The date can be given as 1979-06-30 (公告 1979-06-29 + 1 day). The 1979 寺地第一 換地図 confirms 円光寺町ニノ部 (a diagonal strip and a strip by 伏見台3丁目) and 円光寺町ハノ部 (south-east) outside the project. geolonia's 円光寺町 point is near 円光寺一丁目, 山科 and 長坂台, a third remnant area that may be the parcel-backed チ (チ7-2).",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/115terajidaiichi_kanchizu.pdf",
+      "finding": "Labels: '円光寺町ニノ部' (two places, next to 伏見台3丁目), '円光寺町ハノ部', '寺地町ニノ部' and '寺地町ハノ部' outside the new blocks."
+     },
+     {
+      "source": "data/abr/mt_parcel_city172014.csv",
+      "finding": "円光寺町チ (machiaza_id 0070102) has one parcel, チ7-2 (rsdt 0). It has no position in mt_parcel_pos."
+     },
+     {
+      "source": "geolonia 金沢市.json + census",
+      "finding": "円光寺町 is at 36.530681,136.65342, inside the 山科町 polygon and near 円光寺一丁目, 長坂台 and 長坂町."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "Project 11 円光寺: 公告 S36-02-10. 96 長坂第一: S50-03-30 and S52-03-31. 115 寺地第一: S54-06-29."
+     }
+    ]
+   },
+   {
+    "town": "窪町",
+    "verdict": "corrected",
+    "corrections": "Status and successors are confirmed. The remnant is parcel-backed: ABR has 31 parcels under イ(8), チ(2), ト(2), ハ(1), ハバケ(3), ロ(11) and 六才(4). ニ and 白金 exist only as koaza rows in the town master, with 0 parcels. The month precision of '1979-03' overstates what is known. 窪3丁目 already existed outside the 窪第一 project, and 窪1, 2 and 6丁目 belong to no project. The city chronology uses '窪5丁目' in 1974 and 1977, before the 1979 換地処分, and '窪町' for 宮園団地 in 1977. So the 丁目 conversion was spread across the 1970s. Some of it may have come before the 換地処分 by a town-area change, as happened with 昭和町 (1992 change, 1998 換地処分). Changed to decade precision.",
+    "independent_evidence": [
+     {
+      "source": "data/abr/mt_parcel_city172014.csv",
+      "finding": "窪町 has 31 parcels across 7 koaza. ニ and 白金 have 0. None has a position."
+     },
+     {
+      "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+      "finding": "1974-09-02: '伏見台小学校（窪5丁目）'. 1977-03-01: '窪5丁目' 公民館. 1977-03-19: '窪町の宮園団地'. 1981-12-22: '窪3丁目'."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "114 窪第一: approved S54-02-19, 公告 S54-03-02. 135 高尾第三: 公告 S59-12-25 (the index maps it to 窪3丁目)."
+     },
+     {
+      "source": "geolonia 金沢市.json",
+      "finding": "窪町 is at 36.514226,136.652698, inside the 窪三丁目 polygon near 高尾町. That is a 伏見台-district location, while the garbage rule for 窪町 is 富樫, so the remnant location is unresolved."
+     },
+     {
+      "source": "Japan Post live list",
+      "finding": "Only 窪 (921-8151) is listed; there is no 窪町 code. The navbox lists 窪町 without ※, which is inconsistent with Japan Post."
+     }
+    ],
+    "corrected_record": {
+     "town": "窪町",
+     "status": "remnant",
+     "abolished_on": "1970",
+     "precision": "decade",
+     "event": "土地区画整理",
+     "successors": [
+      {
+       "name": "窪1丁目",
+       "part": "part"
+      },
+      {
+       "name": "窪2丁目",
+       "part": "part"
+      },
+      {
+       "name": "窪3丁目",
+       "part": "part"
+      },
+      {
+       "name": "窪4丁目",
+       "part": "part"
+      },
+      {
+       "name": "窪5丁目",
+       "part": "part"
+      },
+      {
+       "name": "窪6丁目",
+       "part": "part"
+      },
+      {
+       "name": "窪7丁目",
+       "part": "part"
+      },
+      {
+       "name": "伏見台3丁目",
+       "part": "part"
+      },
+      {
+       "name": "久安1丁目",
+       "part": "part"
+      }
+     ],
+     "gomi_successors": [
+      "窪1丁目",
+      "窪2丁目",
+      "窪6丁目"
+     ],
+     "remnant_koaza": [
+      "イ",
+      "チ",
+      "ト",
+      "ニ",
+      "ハ",
+      "ハバケ",
+      "ロ",
+      "六才",
+      "白金"
+     ],
+     "evidence": [
+      {
+       "source": "data/abr/mt_town_fullset_city172014.csv + mt_parcel_city172014.csv",
+       "finding": "There are 9 koaza rows under 窪町; 7 of them have registered parcels (31 in total)."
+      },
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/114kubodaiichi_kanchizu.pdf",
+       "finding": "The 窪第一 換地 (effective 1979-03-03) created 窪4, 5 and 7丁目. 窪3丁目 already existed."
+      },
+      {
+       "source": "https://www2.lib.kanazawa.ishikawa.jp/reference/shishinenpyou_s.htm",
+       "finding": "'窪5丁目' was already in use in 1974, and '窪町' still in 1977."
+      },
+      {
+       "source": "https://ja.wikipedia.org/wiki/富樫村",
+       "finding": "窪村 became an 大字 of 富樫村 in 1889 and the town 窪町 in 1935. 窪 and 窪町 are 住居表示未実施."
+      }
+     ],
+     "confidence": 0.6,
+     "open_questions": "The creation dates and mechanism for 窪1, 2, 3 and 6丁目 are unknown. Possibly a 1970s 町名地番変更 / 地籍調査. The 窪第一 date is 1979-03-03. Where the parcel-backed koaza lie is unknown: geolonia suggests near 窪3丁目/高尾町 (伏見台), while the garbage rule suggests 富樫."
+    }
+   },
+   {
+    "town": "寺地町",
+    "verdict": "corrected",
+    "corrections": "The 1979-06 date is when most of the town converted, but it cannot be the abolition date: the 1979 換地図 itself shows 寺地町ニノ部 and ハノ部 left outside. The 1990 久安第二 換地図 extends 久安四丁目's east arm right up to the 寺地二丁目/伏見台二丁目 line, exactly where the 1979 map had the 寺地町ニノ部 strip next to 久安4丁目. No 寺地町 label remains anywhere on it. So the ニ strip most likely went into 久安4丁目 via 久安第二 (公告 1990-11-06), which fits the garbage rule 寺地町ニ→三馬 (久安4丁目 = 三馬). The ハ strip on the north edge probably went to 有松3丁目 via 有松第一 (公告 1982-05-31); this is unverified. The final abolition is therefore about 1990, not 1979.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/115terajidaiichi_kanchizu.pdf",
+      "finding": "The 1979 map labels '寺地町ニノ部' at the west edge next to '久安4丁目' and '寺地町ハノ部' at the north edge, both outside the new blocks."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/147hisayasudaini_kanchizu.pdf",
+      "finding": "The 1990 map shows 久安四丁目's eastern arm (road 438/523) reaching the boundary with 寺地二丁目 and 伏見台二・三丁目. No 寺地町 label remains."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "115 寺地第一: 公告 S54-06-29. 147 久安第二: 公告 H2-11-06. 129 有松第一: 公告 S57-05-31."
+     },
+     {
+      "source": "ABR; Japan Post; geolonia; Template",
+      "finding": "寺地町 is absent from all four. The school and garbage tables keep the legacy row 寺地町ニ (三馬)."
+     }
+    ],
+    "corrected_record": {
+     "town": "寺地町",
+     "status": "abolished",
+     "abolished_on": "1990",
+     "precision": "year",
+     "event": "土地区画整理",
+     "successors": [
+      {
+       "name": "寺地1丁目",
+       "part": "part"
+      },
+      {
+       "name": "寺地2丁目",
+       "part": "part"
+      },
+      {
+       "name": "伏見台1丁目",
+       "part": "part"
+      },
+      {
+       "name": "伏見台2丁目",
+       "part": "part"
+      },
+      {
+       "name": "久安4丁目",
+       "part": "part"
+      },
+      {
+       "name": "有松3丁目",
+       "part": "part"
+      }
+     ],
+     "gomi_successors": [
+      "久安4丁目",
+      "有松3丁目"
+     ],
+     "remnant_koaza": [],
+     "evidence": [
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+       "finding": "The bulk went on 1979-06-30 (寺地第一 公告 1979-06-29)."
+      },
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/115terajidaiichi_kanchizu.pdf",
+       "finding": "Strips 寺地町ニノ部 (by 久安4丁目) and ハノ部 (north edge) were left outside the 1979 project."
+      },
+      {
+       "source": "https://www4.city.kanazawa.lg.jp/material/files/group/73/147hisayasudaini_kanchizu.pdf",
+       "finding": "By the 1990 久安第二 換地 (effective about 1990-11-07), the ニ-strip area is part of 久安四丁目. No 寺地町 is labelled."
+      },
+      {
+       "source": "data/kanazawa_rules.csv",
+       "finding": "寺地町ニ, 久安4丁目 and 有松3丁目 are all 三馬, which is consistent."
+      }
+     ],
+     "confidence": 0.45,
+     "open_questions": "The 1990 end date is inferred from map adjacency, not from a 告示. The ハ strip's fate (有松第一 1982?) has not been checked. If either strip survived later, the date moves forward; ABR (2025) has no 寺地町."
+    }
+   },
+   {
+    "town": "湖南第2区画整理地",
+    "verdict": "confirmed",
+    "corrections": "No changes needed. The day-after rule is supported elsewhere (2006-08-12, 1993-01-09, 2002-10-26 and 1996-10-02 all match their 公告+1), so 2002-02-06 for 第二工区 is sound; 第一工区 would be 1998-12-05. ABR itself holds a similar placeholder row, '近岡町土地区画整理地' (0638000), so labels like this appear in official data too.",
+    "independent_evidence": [
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/shigaichisaiseika/gyomuannai/2/2/1/29195.html",
+      "finding": "176 湖南第二 (個人, 40.35ha, H5-H23): 第一工区 公告 H10-12-04, 第二工区 公告 H14-02-05."
+     },
+     {
+      "source": "local census 2000/2005",
+      "finding": "The 2000 census has みずき１・２丁目. みずき３・４丁目 first appear in 2005."
+     },
+     {
+      "source": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kyoikusomuka/gyomuannai/3_1/3770.html",
+      "finding": "The school table has みずき1-4丁目 (大浦) and no placeholder label. 湖南町 is 森本."
+     },
+     {
+      "source": "data/abr/mt_parcel_city172014.csv",
+      "finding": "湖南町 has 442 parcels and is a real, unrelated town (河北潟 farmland)."
+     }
+    ]
+   }
+  ],
+  "cross_cutting_findings": "1) ABR as evidence. efct_date is the 1947-04-17 default everywhere, so it carries no history. The legacy machiaza_id block 06xxxxx (status_flg 0) mixes names that are certainly dead (木ノ新保四番丁, gone 1965; 堀川角場町, wholly absorbed 2006) with 入江町ヘ. Treat a type-3 koaza row as a real remnant only when mt_parcel has parcels under it: 窪町 (31 parcels in 7 koaza) and 円光寺町チ7-2 qualify. The reverse also holds: ABR lacks every ※ remnant that has no registered parcels (西堀川町, 八幡町, 笠舞町, 糸田町, 神田町), and also 北安江町 and 西念町, which still have postal codes. So 'not in ABR' does not mean 'abolished'.\n2) Sources for whether a name still exists. Japan Post (live): 北安江町 920-0023 and 西念町 920-0026 are listed, and ※ remnants are left out by design. The Wikipedia navbox (2021-11-01) marks ※ = 'tiny remnant with no postal code'. geolonia japanese-addresses (MLIT-derived) has points for most remnants, and point-in-polygon on the 2020 census areas locates them roughly. Watch for artefacts: geolonia's 額新保町 point lies 4 km away inside 坪野町. The city school-district table and the garbage table share the same legacy town list, which still includes fully abolished names (島田町, 玉井町, 柳町, 藤江町, 額新保町, 入江町, 木ノ新保7番丁). Neither proves existence, and they are not independent of each other.\n3) Best primary sources are the city's 換地図 PDFs (image-only; render with PyMuPDF and read the labels). They name the remnant strips left outside each project, for example: 北安江町ト and 広岡町ロ, plus 西堀川町 (2006); 北安江町ト/ヘ (1993); 寺地町ニ/ハノ部 and 円光寺町ニ/ハノ部 (1979); 神田町ハ/ニ/ホの部 and 入江町ハの部 (1968); 糸田町ナ/アの部 (1972). This gives remnant koaza and approximate locations for district assignment.\n4) Dates. The city 区画整理 table gives 換地処分公告 dates; the town change takes effect the next day, which checks out four times (2006-08-12, 1993-01-09, 2002-10-26, 1996-10-02). Pitfalls: (a) multi-工区 projects show only the final 公告 (金沢駅西 had 1986, 1992 and 1996 stages). (b) A town-area change can come before the 換地処分: 昭和町地区's change was 1992-06-10 (石川県告示第322号), but its 公告 was 1998-08-31. (c) A 換地処分 can keep the old town name with new 字 zones (入江第一 1972 → 入江町イ〜ホ), so its date is not an abolition date. (d) Wikipedia town articles cite exact 石川県公報 告示 numbers (reliable), but some stubs (柳町, 堀川町) are unsourced copy-paste. (e) The 金沢市立図書館 市史年表 gives dated usage bounds, but its naming is sometimes loose ('神田3丁目' in 1971 for 新神田3丁目).\n5) Relation types for the normalization table: whole absorption (玉井町→木ノ新保町; 島田町→昭和町); a split between two new towns (七番丁→木ノ新保町 + 堀川新町); staged attrition over decades (柳町 1965/1992/1993; 北安江町 1992-2006); a surviving koaza strip; intermediate or transitional names (神田町5丁目 in 1965; 入江町イ〜ホ in 1972; 笠舞一丁目/小立野三丁目 between 1964-01 and 1964-04); placeholder labels (湖南第2区画整理地, and ABR's own 近岡町土地区画整理地); and revived names (旧町名復活, e.g. 観音町1-3丁目 in 2019, so a dead name can return with a different extent). Store abolished_on separately for the date most of the town converted and the date the name finally disappeared. Records currently mix the two (寺地町, 柳町).\n6) gomi_successors. An old-name garbage rule applies to the land that still carried the name when the table was compiled, i.e. the successors of the latest event, not the 1960s pieces that have long had their own rows. 木ノ新保町 has no garbage row at all, so the station area resolves only through old-name rows (玉井町→芳斎, 木ノ新保7番丁/南安江町→此花). Surviving strips can sit in a different district from the old-name rule (北安江町ト by 広岡町/昭和町, while the rule says 諸江).\n7) Spelling and normalization. Handle ノ/の (木ノ新保 vs census 木の新保). Number styles differ: garbage 7番丁 vs legal 七番丁; census 2000-2015 uses full-width １丁目, 2020 uses 一丁目, ABR uses chome_number. Watch ケ/ヶ and 斉/斎 (芳斉 vs 芳斎). A census area can hide tiny towns inside a neighbour (南安江町 and 玉井町 had no area of their own in 2000/2005), and remnants vanish from the census while still legally alive. Use census overlays only for the main conversions."
+ }
+}
