@@ -29,7 +29,7 @@
 
 - 914町のうち町丁目まるごと 793 (86.8%)、残りは住居表示点のボロノイ分割
 - 面積カバー率 96.6% / 重なり 0 / 全市 4 秒
-- **20% ホールドアウト精度 96.1%** (分割町のみ、n=9,309)
+- **20% ホールドアウト精度 96.1%** (分割町のみ、n=9,309、`out/kanazawa_holdout.json`)
 
 ![金沢市 収集地区](out/kanazawa_map.png)
 
@@ -59,7 +59,7 @@ Python 3.11+ / pandas / geopandas / shapely 2 / python-dateutil
 python fetch.py https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html data/kanazawa_rules.html
 python fetch_geo.py 17201          # 国勢調査2020 小地域
 python kz_tables.py && python kz_rules.py
-python split_blocks.py [--holdout]
+python split_blocks.py             # --holdout で 20% 点ホールドアウト精度 → out/kanazawa_holdout.json
 # 旧町名の検証
 python fetch_abr.py 172014 --all   # ABR (町字・地番・住居表示)
 for y in 2000 2005 2010 2015; do python fetch_geo.py 17201 $y; done
@@ -80,6 +80,8 @@ python abr_check.py && python census_lineage.py
 ## 関連
 - [gps2city](https://github.com/firemio/gps2city) — 緯度経度 → 都道府県・市区町村 (国土数値情報 N03 を 0.1° タイル化した Cloudflare Worker、[稼働中](https://gps2city.firemio.workers.dev/))。
   タイルの行政区域コードに検査数字を付けると ABR の市区町村コードと 1,898/1,905 件一致 (残り7件は所属未定地)。
-  `/resolve` の入口 (GPS → 市区町村コード)、収集地区ポリゴンの配信 (同じタイル方式)、境界までの距離による確信度に使う予定
-- address2houmukyoku (別プロジェクト・非公開) — 住所 → 管轄法務局。市区町村の旧名→現名対応表 (1985年以降の合併・市制施行) を address-normalize の市区町村層として共有予定
+  2026-10-17 から `POST /location` が `lg_code` (ABR と同じ6桁) と政令市の `ward` を返し、`/location2` は区ごとの境界距離 (`areas`) を返す。
+  `/resolve` の入口 (GPS → 市区町村コード)、収集地区ポリゴンの配信 (同じタイル方式)、境界までの距離による確信度に使う
+- address2houmukyoku (同じ作者の別プロジェクト・非公開) — 住所 → 管轄法務局。旧市町村→現市町村 1,801件 (1986〜2019) を address-normalize の市区町村層の下地にする。
+  照合・正規化・12万件の郵便番号回帰検証・ハッシュ差分 LLM 抽出・特殊分割 (のうち/を除く/の一部) から得た知見は [docs/prior-art-address2houmukyoku.md](docs/prior-art-address2houmukyoku.md) にまとめた (コードは転載していない)
 - 引き継ぎメモ: [HANDOFF.md](HANDOFF.md)

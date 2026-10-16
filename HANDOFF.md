@@ -1,7 +1,8 @@
-# ごみ収集日GPSサービス — 引き継ぎ (2026-10-16)
+# gomisute-gps (ごみ収集日GPS) — 引き継ぎ (2026-10-16 → 10-17 更新)
 
 元セッション: https://claude.ai/code/session_01X7VLku4og8FfR6suhQ1WNy (claude.ai上)
-ローカル作業場: C:\firemio\gomi-gps (2026-10-16 夜〜)
+ローカル作業場: C:\firemio\gomi-gps (2026-10-16 夜〜。プロジェクト名は 2026-10-17 に **gomisute-gps** へ改名、フォルダ名は未変更)
+GitHub: https://github.com/firemio/gomisute-gps (public) — Built with Claude: Japan 2026 応募作品 (応募締切 10/26、開発期間 11/2〜11/10)
 
 ## 構想
 行政が統一しないので、民間側で全国1,741自治体のごみ収集日データをクローリング→LLM/GISで構造化→GPS一発回答するサービス。正確性と最新性が最優先。工数はLLMで吸収。
@@ -61,6 +62,11 @@
 - kz_tables.py → kz_rules.py — 金沢区域表HTML → data/kanazawa_rules.csv
 - split_blocks.py [--holdout] — 金沢ポリゴン生成・評価 / render.py — 確認用PNG
 - out/ — setagaya.json, nagano.json, kanazawa_zones.geojson, kanazawa_town_parts.geojson, kanazawa_report.json, kanazawa_map.png
+- townnorm.py — 町名正規化 norm_town (表示用) / match_key (照合キー、ノ/の も畳む)
+- fetch_abr.py [lg_code] [--all] — ABR 取得 / fetch_geo.py <code> [year] — 国勢調査 小地域 (2000〜2020)
+- abr_check.py — 32町+27町の ABR 照合 → out/abr_check.{json,md}
+- census_lineage.py — 国勢調査差分で旧町名→後継 → out/census_lineage.json
+- lineage_report.py — 系譜 → out/kanazawa_town_alias*.csv, docs/abr_check.md
 
 ## ローカル実行メモ
 - win-cli コネクタは ; | $ 等のシェル演算子を弾く。処理は .py を置いて `python xxx.py` 単発で回す
@@ -71,9 +77,44 @@
 - 新規に address-normalize Worker を別デプロイ:
   1. 市区町村層: address2houmukyoku の旧市町村対応表を共有
   2. 町字層: デジタル庁ABR町字マスター (廃止町字・効力発生日/廃止日) + norm_town (漢数字丁目・異体字)
+     → 2026-10-17 の検証で ABR に廃止町字・廃止日は無いと判明。旧町名は国勢調査差分＋文献調査で自前に持つ (下の「最初のタスクの結果」)
 - 連携は Service Binding。URL統一は将来ルート振り分けで
 - 字・地番型は法務省 登記所備付地図 (G空間) の筆ポリゴンで別途
 
 ## 最初のタスク (Claude Code)
 ABR町字マスターを取得し、out/kanazawa_report.json の missing_poly 32町が
 旧町字/廃止町字として引けるか検証。結果で address-normalize のスキーマを決める。
+
+## 最初のタスクの結果 (2026-10-17, Claude Code)
+詳細: docs/abr_check.md / スキーマ: docs/address-normalize-schema.md
+
+### ABR は旧町字を引けない (上の「追加決定」2. の前提は誤りだった)
+- ABR の配布元は catalog.registries.digital.go.jp (消滅) → **data.address-br.digital.go.jp** (索引 dataset.address-br.digital.go.jp/api/feed/dcat-us/1.1.json)。fetch_abr.py
+- 全国 727,467 行で `ablt_date` 0件・`alias_*` 0件。`efct_date` は 98.6% が 1947-04-17、8,384 行が 1970-01-01 (どちらも仮置き)。**ABR は現行台帳であって履歴台帳ではない**
+- しかも **ABR に無い ≠ 廃止**: 郵便番号が現役の北安江町・西念町、地番登記の無い残存地 (西堀川町・八幡町・笠舞町・糸田町・神田町) が ABR に無い
+- 大字行の無い小字行 (幽霊大字) が全国 383自治体・5,379件。地番マスターに筆がある時だけ本物の残存 (窪町 31筆 ○ / 入江町ヘ 0筆 ×)
+- ノ/の・ヶ/ケ を畳むと同一自治体内で 17件衝突 → 照合キー専用 (townnorm.match_key)。表示名には使わない
+
+### 32町の内訳
+ABR にも国勢調査2020にも無い 15 / 小字行だけ残る 3 / 区画整理の仮称 1 / 区域表が丁目省略 3 / ABR に現存・国勢調査2020に無い 10
+
+### 旧町名の系譜
+- 国勢調査小地域 2000/2005/2010/2015/2020 の差分を面積按分 → 消えた町名と後継 (金沢10件)。census_lineage.py
+- 2000年以前は Claude 調査 (市の換地図PDF・県公報告示番号・郵便番号簿・旧町名一覧PDF) → 別エージェントで反証検証: 19町 確認13 / 訂正5 / 根拠不足1。out/old_town_lineage.json → lineage_report.py → out/kanazawa_town_alias*.csv (後継91件すべて ABR machiaza_id に解決)
+- 一番の一次資料は市の換地図PDF (区画整理の外に残った「北安江町ト」等の帯が描かれている)。換地処分公告日+1日 = 町名変更の効力日 (4件で一致)
+- 町名は段階的に消え (柳町 1965→1992→1993)、主な転換日と最終消滅日がずれ (寺地町 1979/1990)、中間町名を経て (神田町5丁目)、別の範囲で復活する (観音町 2019) → **町名→町名の表ではなく変更イベントの履歴で持つ**
+- ごみ区域表の旧町名行は「その時点でまだ旧町名だった土地」= 最後のイベントの後継を指す (玉井町→木ノ新保町)。どの後継に当てるかは gomisute-gps 側の責務
+
+### gps2city (緯度経度→市区町村) を入口に使う
+- https://gps2city.firemio.workers.dev/ (repo firemio/gps2city, 2026-10-17 public 化)。N03 を 0.1°タイル化した Rust Worker
+- タイルの5桁コード+検査数字 = ABR lg_code: 1,898/1,905 一致 (7 = 所属未定地)
+- 2026-10-17 改修・デプロイ: `/location` が `code`・`lg_code`・`ward` (政令市の区) を返す。`/location2` は各行に `areas` (区ごとの code/lg_code/境界距離)
+- 使い道: /resolve の入口 / 収集地区ポリゴンも同じタイル方式で配る / `nearby()` の境界距離を confidence に
+
+## 次にやること (2026-10-17 更新。上の「次にやること」を置き換え)
+1. address-normalize Worker v0.1 を D1 で実装 (docs/address-normalize-schema.md の DDL)。金沢の旧町名19件 + 国勢調査差分10件を投入
+2. ABR 地番マスター位置参照 (金沢 28.7万筆の代表点、登記所備付地図由来) で字・地番型 unresolved 27町を分割 → 登記所備付地図の筆ポリゴン取得より先にこれを試す
+3. 収集地区ポリゴンを gps2city と同じタイル形式にして `/resolve` (gps2city → 地区タイル → 境界距離 confidence)
+4. 金沢の校下→収集曜日 schedule 化 / 長野 町丁目→地区 PDF の VLM 構造化
+5. 自治体公式ドメイン 1,741件シード → 取得パイプライン (address2houmukyoku のハッシュ差分抽出を流用)
+6. ハッカソン: 11/2 開始時点で `pre-hackathon` タグを打ち、期間中の作業と区別できるようにする
