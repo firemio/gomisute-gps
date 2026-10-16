@@ -1,0 +1,176 @@
+FK violations: []
+
+### 寺地町 as_of=1981-04-01 authored: unique auto=True kind=old_name t*=1981-04-01 warn=[] q=[]
+   cand: [('172014-X00003', '寺地町', 'abolished', 'unknown')]
+    {'town': '寺地１丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '寺地２丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '伏見台１丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '伏見台２丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '久安４丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz147'], 'left': ('1990-11-07', '1990-11-07'), 'via_child': '寺地町ニ', 'share': None, 'conf': 0.45}
+    {'town': '有松３丁目', 'role': 'successor', 'primary': True, 'stage': 'intermediate', 'via': ['kz129'], 'left': ('1982-06-01', '1982-06-01'), 'via_child': '寺地町ハ', 'share': None, 'conf': 0.3}
+
+### 観音町 as_of=2016-04-01 authored: unique auto=True kind=old_name t*=2016-04-01 warn=['NAME_REUSED'] q=[]
+   cand: [('172014-X00012', '観音町', 'abolished', 'unknown')]
+    {'town': '観音町３丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kannon-revival'], 'left': ('2019-01-01', '2019-12-31'), 'via_child': None, 'share': 0.987, 'conf': 0.7}
+
+### 木ノ新保7番丁 as_of=2025-04-01 authored: unique auto=True kind=old_name t*=2006-08-12 warn=[] q=[]
+   cand: [('172014-X00001', '木ノ新保七番丁', 'abolished', 'no')]
+    {'town': '木ノ新保町', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.636, 'conf': 0.85}
+    {'town': '堀川新町', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.357, 'conf': 0.85}
+
+### 木ノ新保7番丁 as_of=None unknown: unique auto=True kind=old_name t*=2006-08-12 warn=[] q=[]
+   cand: [('172014-X00001', '木ノ新保七番丁', 'abolished', 'no')]
+    {'town': '木ノ新保町', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.636, 'conf': 0.85}
+    {'town': '堀川新町', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.357, 'conf': 0.85}
+
+### 木の新保七番丁 as_of=None unknown: unique auto=True kind=old_name t*=2006-08-12 warn=[] q=[]
+   cand: [('172014-X00001', '木ノ新保七番丁', 'abolished', 'no')]
+    {'town': '木ノ新保町', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.636, 'conf': 0.85}
+    {'town': '堀川新町', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.357, 'conf': 0.85}
+
+### 柳町 as_of=None unknown: unique auto=True kind=uncertain t*=1993-01-09 warn=[] q=[]
+   cand: [('172014-X00006', '柳町', 'uncertain', 'unknown')]
+    {'town': '柳町', 'role': 'self', 'primary': False}
+    {'town': '昭和町', 'role': 'successor', 'primary': True, 'stage': 'latest', 'via': ['jukyo-hosai', 'kz172', 'kz171'], 'left': ('1993-01-09', '1993-01-09'), 'via_child': None, 'share': None, 'conf': 0.8}
+    {'town': '本町１丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['jukyo-hosai'], 'left': ('1965-09-01', '1965-09-01'), 'via_child': None, 'share': None, 'conf': 0.8}
+
+### 寺地町 as_of=None unknown: unique auto=True kind=old_name t*=1979-07-01 warn=[] q=[]
+   cand: [('172014-X00003', '寺地町', 'abolished', 'no')]
+    {'town': '寺地１丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '寺地２丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '伏見台１丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '伏見台２丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '久安４丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz147'], 'left': ('1990-11-07', '1990-11-07'), 'via_child': '寺地町ニ', 'share': None, 'conf': 0.45}
+    {'town': '有松３丁目', 'role': 'successor', 'primary': True, 'stage': 'intermediate', 'via': ['kz129'], 'left': ('1982-06-01', '1982-06-01'), 'via_child': '寺地町ハ', 'share': None, 'conf': 0.3}
+
+### 寺地町ニ as_of=None unknown: unique auto=True kind=old_name t*=1979-07-01 warn=[] q=[]
+   cand: [('172014-X00004', '寺地町ニ', 'abolished', 'no')]
+    {'town': '久安４丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz147'], 'left': ('1990-11-07', '1990-11-07'), 'via_child': None, 'share': None, 'conf': 0.45}
+
+### 寺地町 as_of=1985-04-01 authored: unique auto=True kind=old_name t*=1985-04-01 warn=[] q=[]
+   cand: [('172014-X00003', '寺地町', 'abolished', 'unknown')]
+    {'town': '寺地１丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '寺地２丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '伏見台１丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '伏見台２丁目', 'role': 'successor', 'primary': False, 'stage': 'bulk', 'via': ['kz115'], 'left': ('1979-06-30', '1979-06-30'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '久安４丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz147'], 'left': ('1990-11-07', '1990-11-07'), 'via_child': '寺地町ニ', 'share': None, 'conf': 0.45}
+    {'town': '有松３丁目', 'role': 'successor', 'primary': False, 'stage': 'intermediate', 'via': ['kz129'], 'left': ('1982-06-01', '1982-06-01'), 'via_child': '寺地町ハ', 'share': None, 'conf': 0.3}
+
+### 窪町 as_of=None unknown: unique auto=True kind=remnant t*=None warn=[] q=[]
+   cand: [('172014-P0164', '窪町', 'remnant', 'yes')]
+    {'town': '窪町', 'role': 'self', 'primary': True}
+    {'town': '窪４丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz114'], 'left': ('1979-03-03', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '窪５丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz114'], 'left': ('1979-03-03', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '窪７丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz114'], 'left': ('1979-03-03', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '久安１丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz114'], 'left': ('1979-03-03', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '伏見台３丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz114'], 'left': ('1979-03-03', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '窪１丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kubo-chome'], 'left': ('1970-01-01', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '窪２丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kubo-chome'], 'left': ('1970-01-01', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '窪３丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kubo-chome'], 'left': ('1970-01-01', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '窪６丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kubo-chome'], 'left': ('1970-01-01', '1979-03-03'), 'via_child': None, 'share': None, 'conf': 0.5}
+
+### 窪町ロ as_of=None unknown: unique auto=True kind=current t*=None warn=[] q=[]
+   cand: [('172014-0164110', '窪町ロ', 'current', 'yes')]
+    {'town': '窪町ロ', 'role': 'self', 'primary': True}
+
+### 窪町ニ as_of=None unknown: unique auto=True kind=koaza_uncertain t*=None warn=['PARENT_ALIVE'] q=[]
+   cand: [('172014-0164106', '窪町ニ', 'uncertain', 'unknown')]
+    {'town': '窪町ニ', 'role': 'self', 'primary': False}
+    {'town': '窪町', 'role': 'parent', 'primary': True}
+
+### 入江町ヘ as_of=None unknown: unique auto=True kind=old_name t*=1972-12-05 warn=['INHERITED_FROM_PARENT'] q=[]
+   cand: [('172014-0607101', '入江町ヘ', 'abolished', 'no')]
+    {'town': '入江１丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz052'], 'left': ('1968-04-01', '1968-04-01'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '間明町１丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz081'], 'left': ('1972-01-08', '1972-01-08'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '間明町２丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz081'], 'left': ('1972-01-08', '1972-01-08'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '入江２丁目', 'role': 'successor', 'primary': True, 'stage': 'latest', 'via': ['irie-chome'], 'left': ('1972-12-05', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '入江３丁目', 'role': 'successor', 'primary': True, 'stage': 'latest', 'via': ['irie-chome'], 'left': ('1972-12-05', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '新神田１丁目', 'role': 'successor', 'primary': True, 'stage': 'latest', 'via': ['irie-racecourse'], 'left': ('1972-12-05', '1977-12-31'), 'via_child': None, 'share': None, 'conf': 0.4}
+
+### 入江町 as_of=None unknown: unique auto=True kind=old_name t*=1972-12-05 warn=[] q=[]
+   cand: [('172014-P0607', '入江町', 'abolished', 'no')]
+    {'town': '入江１丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz052'], 'left': ('1968-04-01', '1968-04-01'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '間明町１丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz081'], 'left': ('1972-01-08', '1972-01-08'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '間明町２丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz081'], 'left': ('1972-01-08', '1972-01-08'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '入江２丁目', 'role': 'successor', 'primary': True, 'stage': 'latest', 'via': ['irie-chome'], 'left': ('1972-12-05', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '入江３丁目', 'role': 'successor', 'primary': True, 'stage': 'latest', 'via': ['irie-chome'], 'left': ('1972-12-05', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.5}
+    {'town': '新神田１丁目', 'role': 'successor', 'primary': True, 'stage': 'latest', 'via': ['irie-racecourse'], 'left': ('1972-12-05', '1977-12-31'), 'via_child': None, 'share': None, 'conf': 0.4}
+
+### 西堀川町 as_of=None unknown: unique auto=True kind=remnant t*=None warn=[] q=[]
+   cand: [('172014-X00002', '西堀川町', 'remnant', 'yes')]
+    {'town': '西堀川町', 'role': 'self', 'primary': True}
+    {'town': '堀川新町', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.697, 'conf': 0.8}
+
+### 西堀川町 as_of=2000-04-01 authored: unique auto=True kind=remnant t*=2000-04-01 warn=[] q=[]
+   cand: [('172014-X00002', '西堀川町', 'remnant', 'yes')]
+    {'town': '西堀川町', 'role': 'self', 'primary': True}
+    {'town': '堀川新町', 'role': 'context', 'primary': True, 'stage': 'latest', 'via': ['kz181'], 'left': ('2006-08-12', '2006-08-12'), 'via_child': None, 'share': 0.697, 'conf': 0.8}
+
+### 湖南第2区画整理地 as_of=None unknown: unique auto=True kind=provisional t*=2002-02-06 warn=[] q=[]
+   cand: [('172014-X00011', '湖南第2区画整理地', 'abolished', 'no')]
+    {'town': 'みずき１丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz176-1'], 'left': ('1998-12-05', '1998-12-05'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': 'みずき２丁目', 'role': 'successor', 'primary': False, 'stage': 'earlier', 'via': ['kz176-1'], 'left': ('1998-12-05', '1998-12-05'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': 'みずき３丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz176-2'], 'left': ('2002-02-06', '2002-02-06'), 'via_child': None, 'share': None, 'conf': 0.85}
+    {'town': 'みずき４丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz176-2'], 'left': ('2002-02-06', '2002-02-06'), 'via_child': None, 'share': None, 'conf': 0.85}
+
+### 近岡町土地区画整理地 as_of=None unknown: unique auto=True kind=current t*=None warn=[] q=[]
+   cand: [('172014-0638000', '近岡町土地区画整理地', 'current', 'yes')]
+    {'town': '近岡町土地区画整理地', 'role': 'self', 'primary': True}
+
+### 観音町 as_of=None unknown: ambiguous auto=False kind=None t*=None warn=['NAME_REUSED'] q=[]
+   cand: [('172014-P0138', '観音町', 'current', 'yes'), ('172014-X00012', '観音町', 'abolished', 'no')]
+
+### 観音町 as_of=2018-04-01 authored: unique auto=True kind=old_name t*=2018-04-01 warn=['NAME_REUSED'] q=[]
+   cand: [('172014-X00012', '観音町', 'abolished', 'unknown')]
+    {'town': '観音町３丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kannon-revival'], 'left': ('2019-01-01', '2019-12-31'), 'via_child': None, 'share': 0.987, 'conf': 0.7}
+
+### 観音町 as_of=2025-04-01 authored: unique auto=True kind=current_group t*=None warn=['NAME_REUSED'] q=[]
+   cand: [('172014-P0138', '観音町', 'current', 'yes')]
+    {'town': '観音町１丁目', 'role': 'group_member', 'primary': True}
+    {'town': '観音町２丁目', 'role': 'group_member', 'primary': True}
+    {'town': '観音町３丁目', 'role': 'group_member', 'primary': True}
+
+### 観音町 as_of=2019-06-01 authored: ambiguous auto=False kind=None t*=None warn=['NAME_REUSED'] q=[]
+   cand: [('172014-P0138', '観音町', 'current', 'unknown'), ('172014-X00012', '観音町', 'abolished', 'unknown')]
+
+### 神田町5丁目 as_of=None unknown: unique auto=True kind=transitional t*=1967-01-13 warn=[] q=[]
+   cand: [('172014-X00014', '神田町5丁目', 'abolished', 'no')]
+    {'town': '神田１丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kanda5-rename'], 'left': ('1967-01-13', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.4}
+    {'town': '神田２丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kanda5-rename'], 'left': ('1967-01-13', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.4}
+
+### 神田町五丁目 as_of=None unknown: unique auto=True kind=transitional t*=1967-01-13 warn=[] q=[]
+   cand: [('172014-X00014', '神田町5丁目', 'abolished', 'no')]
+    {'town': '神田１丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kanda5-rename'], 'left': ('1967-01-13', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.4}
+    {'town': '神田２丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kanda5-rename'], 'left': ('1967-01-13', '2000-10-01'), 'via_child': None, 'share': None, 'conf': 0.4}
+
+### 神田町 as_of=None unknown: unique auto=True kind=remnant t*=None warn=[] q=[]
+   cand: [('172014-X00013', '神田町', 'remnant', 'yes')]
+    {'town': '神田町', 'role': 'self', 'primary': True}
+    {'town': '新神田１丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz052'], 'left': ('1968-04-01', '1968-04-01'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '新神田２丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz052'], 'left': ('1968-04-01', '1968-04-01'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '新神田３丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz052'], 'left': ('1968-04-01', '1968-04-01'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '新神田４丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz052'], 'left': ('1968-04-01', '1968-04-01'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '新神田５丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kz052'], 'left': ('1968-04-01', '1968-04-01'), 'via_child': None, 'share': None, 'conf': 0.6}
+    {'town': '神田１丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kanda5-rename'], 'left': ('1967-01-13', '2000-10-01'), 'via_child': '神田町5丁目', 'share': None, 'conf': 0.4}
+    {'town': '神田２丁目', 'role': 'context', 'primary': False, 'stage': 'latest', 'via': ['kanda5-rename'], 'left': ('1967-01-13', '2000-10-01'), 'via_child': '神田町5丁目', 'share': None, 'conf': 0.4}
+
+### 山の上町 as_of=None unknown: preferred auto=True kind=current t*=None warn=['FOLD_COLLISION'] q=[]
+   cand: [('172014-0522000', '山の上町', 'current', 'yes')]
+    {'town': '山の上町', 'role': 'self', 'primary': True}
+
+### 山ノ上町 as_of=None unknown: ambiguous auto=False kind=None t*=None warn=['FOLD_COLLISION'] q=[]
+   cand: [('172014-P0523', '山ノ上町', 'current', 'yes')]
+
+### 山ノ上町5丁目 as_of=None unknown: unique auto=True kind=current t*=None warn=[] q=[]
+   cand: [('172014-0523005', '山ノ上町５丁目', 'current', 'yes')]
+    {'town': '山ノ上町５丁目', 'role': 'self', 'primary': True}
+
+### 山の上町5丁目 as_of=None unknown: unique auto=True kind=current t*=None warn=['MATCH_FOLDED'] q=[]
+   cand: [('172014-0523005', '山ノ上町５丁目', 'current', 'yes')]
+    {'town': '山ノ上町５丁目', 'role': 'self', 'primary': True}
+
+### 寺地町ニノ部 as_of=None unknown: unique auto=True kind=old_name t*=1979-07-01 warn=[] q=['ノ部']
+   cand: [('172014-X00004', '寺地町ニ', 'abolished', 'no')]
+    {'town': '久安４丁目', 'role': 'successor', 'primary': True, 'stage': 'final', 'via': ['kz147'], 'left': ('1990-11-07', '1990-11-07'), 'via_child': None, 'share': None, 'conf': 0.45}
+
+DB size MB 296.3

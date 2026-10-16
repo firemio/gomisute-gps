@@ -45,10 +45,22 @@
 
 詳細は [docs/abr_check.md](docs/abr_check.md)、系譜データは `out/kanazawa_town_alias*.csv`。
 
-## スキーマ (v0.1)
+## スキーマ
+### 収集区域と収集日 (v0.1)
 - `zone`: zone_id, muni_code, members (町丁目コード), exceptions[], geom (MultiPolygon), confidence, source{url, fetched_at, hash}
 - `schedule`: zone_id, category, rule_kind (`rrule` | `segments` | `explicit`), rrule, exdates, rdates, valid_from/to, source
 - API 案: `GET /resolve?lat&lng&date` → zone_id, confidence, today[], tomorrow[] (confidence < 0.7 なら境界候補を返して利用者に選ばせる)
+- 経路: gps2city (緯度経度 → lg_code・区) → 収集地区タイル → 境界までの距離で confidence
+
+### 町名の正規化: address-normalize (v0.2 設計、[docs/address-normalize-schema.md](docs/address-normalize-schema.md))
+自治体の資料に書かれた町名 (旧町名を含む) を現行の町字 ID に寄せる別 Worker (Cloudflare D1)。
+
+- 町名をキーにせず、**町字の実体・表記・変更イベント・土地の移転**を分けて持つ (段階的な消滅・中間町名・復活に対応)
+- 有効期間の境界は lo / hi / best の幅で持ち、「大半が移った日」と「名前が最後に消えた日」を分ける
+- すべての事実に確信度・反証検証の結果・出典 (同じ元リスト由来の資料は1票) を付ける
+- 照合キーは canon (同一視してよい) と fold (ノ/の など衝突しうる) の2段。fold で複数に当たったら自動で選ばない
+- 設計は方針の違う3案を Claude に独立に作らせ、審査役が採点・統合 (16表、[DDL](docs/address-normalize-schema.sql))。
+  全国 ABR 749,603 行 (296MB) と金沢の10ケースで検証済み ([prototypes/address-normalize/](prototypes/address-normalize/))
 
 ## 再現手順
 

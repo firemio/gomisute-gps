@@ -112,7 +112,9 @@ ABR にも国勢調査2020にも無い 15 / 小字行だけ残る 3 / 区画整�
 - 使い道: /resolve の入口 / 収集地区ポリゴンも同じタイル方式で配る / `nearby()` の境界距離を confidence に
 
 ## 次にやること (2026-10-17 更新。上の「次にやること」を置き換え)
-1. address-normalize Worker v0.1 を D1 で実装 (docs/address-normalize-schema.md の DDL)。金沢の旧町名19件 + 国勢調査差分10件を投入
+1. address-normalize Worker を D1 で実装。設計は docs/address-normalize-schema.md (v0.2、16表、§13 に 11/2〜10 の工程)、DDL は docs/address-normalize-schema.sql。
+   試作 prototypes/address-normalize/ (build_check.py → cases_check.py) が全国 ABR 749,603行・296MB と金沢10ケース (30通り、cases_out.txt) を再現する。
+   未決事項は同文書 §14 (Workers Paid、旧市町村表の公開可否、調査レコードの公開、HTTP 匿名公開、事前成果物の申告、自動採用の閾値、筆0の扱い)
 2. ABR 地番マスター位置参照 (金沢 28.7万筆の代表点、登記所備付地図由来) で字・地番型 unresolved 27町を分割 → 登記所備付地図の筆ポリゴン取得より先にこれを試す
 3. 収集地区ポリゴンを gps2city と同じタイル形式にして `/resolve` (gps2city → 地区タイル → 境界距離 confidence)
 4. 金沢の校下→収集曜日 schedule 化 / 長野 町丁目→地区 PDF の VLM 構造化
