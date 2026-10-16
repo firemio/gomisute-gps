@@ -120,7 +120,7 @@ python abr_check.py && python census_lineage.py
 | [gps2city](https://github.com/firemio/gps2city) | ソース公開・[サービス稼働中](https://gps2city.firemio.workers.dev/) | GPS → 市区町村コードの入口 |
 | [address2houmukyoku](https://address2houmukyoku.souzoku-tsumugiai.net/) (法務局検索) | [サービス公開中](https://address2houmukyoku.souzoku-tsumugiai.net/)・ソースは非公開 | 旧市町村→現市町村の対応表と、住所照合・回帰検証の知見 |
 
-- [gps2city](https://github.com/firemio/gps2city) (作者: firemio) — 緯度経度 → 都道府県・市区町村 (国土数値情報 N03 を 0.1° タイル化した Cloudflare Worker、[稼働中](https://gps2city.firemio.workers.dev/))。
+- [gps2city](https://github.com/firemio/gps2city) (作者: firemio) — 緯度経度 → 都道府県・市区町村 (国土数値情報 N03-2026 を 0.1° タイル化した Cloudflare Worker。能登半島地震の隆起でできた陸地も反映済み。[稼働中](https://gps2city.firemio.workers.dev/))。
   **Rust を WebAssembly にして Cloudflare Workers で動かし、全国のタイルを1本のパック (約23MB) にして Worker に埋め込んでいる**ので、初めて問い合わせる地点でも応答は中央値 11ms (外部読み込みだった頃は 250〜310ms、距離の誤差は最大 0.97m)。
   タイルの行政区域コードに検査数字を付けると ABR の市区町村コードと 1,898/1,905 件一致 (残り7件は所属未定地)。
   2026-10-17 から `POST /location` が `lg_code` (ABR と同じ6桁) と政令市の `ward` を返し、`/location2` は区ごとの境界距離 (`areas`) を返す。

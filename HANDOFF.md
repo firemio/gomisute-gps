@@ -116,6 +116,8 @@ ABR にも国勢調査2020にも無い 15 / 小字行だけ残る 3 / 区画整�
 - 2026-10-17: 全国タイルを1本のパック (約23MB) にして Worker に埋め込み (44bfaee、初回地点 TTFB 250〜310ms → 11ms)。
   main を Cloudflare 版だけに整理 (dccad44): worker/ (Rust→Wasm) + tools/build_tiles/ (N03 → パック)。旧 Docker/actix 版は削除 (履歴は 44bfaee まで)。
   同じ N03-20240101.geojson から作ったパックがデプロイ中のものと SHA-256 一致。gps2city は今も全部 Rust
+- 2026-10-17: 行政区域データを N03-2026 (2026-01-01 時点) に更新・デプロイ (1a51281)。市区町村の増減・改称は無し。全国619万点比較で458点の所属変化。
+  能登半島地震の隆起で陸化した輪島市 +2.78km²・珠洲市 +1.72km² が国土地理院の公表値と一致。手元の worker/data/tiles.pack も 2026 版 (708d497f…)
 
 ## 次にやること (2026-10-17 更新。上の「次にやること」を置き換え)
 1. address-normalize Worker を D1 で実装。設計は docs/address-normalize-schema.md (v0.2、16表、§13 に 11/2〜10 の工程)、DDL は docs/address-normalize-schema.sql。
