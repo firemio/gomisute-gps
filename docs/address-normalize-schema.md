@@ -63,7 +63,7 @@
 - 設計への影響: 代表点・位置参照コード・KEY_CODE・筆数を返す。ポリゴンは持たない。
 
 **F10. 市区町村層の材料**
-- ABR mt_city (6 桁コード) と、address2houmukyoku の旧市町村表 (名前ベース、LLM 抽出、1985 年以降、非公開リポジトリ)。
+- ABR mt_city (6 桁コード) と、address2houmukyoku (作者 firemio の [法務局検索](https://address2houmukyoku.souzoku-tsumugiai.net/)。サービスは公開、ソースは非公開) の旧市町村表 (名前ベース、LLM 抽出、1986〜2019 年)。
 - 設計への影響: muni と muni_name の 2 表にする。
 
 ### 1.2 2026-10-17 の追加計測
@@ -1260,7 +1260,7 @@ gomisute-gps の census_lineage.py を一般化して使います。v0.1 は金�
    - geolonia: CC BY 4.0。
    - Wikipedia: CC BY-SA なので転載しない。
    - 換地図: 市の著作物なので、読み取った事実だけを持つ。
-   - address2houmukyoku: 非公開リポジトリ。
+   - address2houmukyoku: 同じ作者 firemio のサービス。ソースは非公開なので、データは取り込み結果 (旧名 → lg_code) だけを持つ。
 10. **プライバシー**
     - 対策: 番地以降は保存しません。ログは町字までに切ります。
 11. **スコープが膨らむ**
@@ -1299,7 +1299,7 @@ gomisute-gps の census_lineage.py を一般化して使います。v0.1 は金�
 所有者の判断が要るものです (2026-10-17 時点)。
 
 1. Workers Paid ($5/月) を使うか。全国 ABR の初回投入 (本体と索引で数百万行の書込み) と blue/green の 2 DB に必要。使わない場合は、v0.1 で公開する範囲を石川県か金沢に絞る。
-2. address2houmukyoku (非公開、LLM 抽出) から作った旧市町村 → lg_code の対応を、公開 HTTP API で返してよいか。だめなら、muni_name の former は Service Binding (gomisute-gps) にだけ出す。
+2. address2houmukyoku (ソース非公開、LLM 抽出) から作った旧市町村 → lg_code の対応を、公開 HTTP API で返してよいか。だめなら、muni_name の former は Service Binding (gomisute-gps) にだけ出す。
 3. address-normalize のリポジトリと research/ の調査レコードを公開するか。gomisute-gps は公開している。調査レコードには、Wikipedia と市の換地図から読み取った事実の要約が入る。公開するなら、調査レコード自体のライセンス表記も決める。
 4. HTTP API をビルドウィーク中に匿名で公開するか、Service Binding だけにするか。レート制限、負荷、出典表示の責任が関わる。
 5. ハッカソンの規約に照らして、事前に作った成果物 (10/16〜17 の調査データ old_town_lineage.json、ABR の取得物、この設計文書) を申告する必要があるか。どこまで流用してよいかも確認する。

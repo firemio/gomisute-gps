@@ -5,7 +5,10 @@
 GitHub: https://github.com/firemio/gomisute-gps (public) — Built with Claude: Japan 2026 応募作品 (応募締切 10/26、開発期間 11/2〜11/10)
 
 ## 構想
-行政が統一しないので、民間側で全国1,741自治体のごみ収集日データをクローリング→LLM/GISで構造化→GPS一発回答するサービス。正確性と最新性が最優先。工数はLLMで吸収。
+- **目的: LLM が唯一確かな情報源として使えるごみ収集データと API を作る** (2026-10-17 作者 firemio の言葉)。すべての答えに出典と確信度を付ける
+- そもそもの問題: ごみ出しのルールは、各自治体が別々の事業者とアプリ・カレンダー・Web を個別に IT 契約して配っているので、まとまりがない。LLM が参照できる確かな情報源が無い (README 冒頭に明記)
+- 行政が統一しないので、民間側で全国1,741自治体のごみ収集日データをクローリング→LLM/GISで構造化→GPS一発回答するサービス。正確性と最新性が最優先。工数はLLMで吸収。
+- 作者: firemio (GitHub @firemio)。関連する自作: gps2city (public)、address2houmukyoku (https://address2houmukyoku.souzoku-tsumugiai.net/ で公開中、ソースは非公開)。第三者にも同じ作者と分かるよう、文書では「同じ作者」ではなく firemio と書く
 
 ## ここまでの結論
 - 12自治体サンプル、9自治体判定済
@@ -73,7 +76,7 @@ GitHub: https://github.com/firemio/gomisute-gps (public) — Built with Claude: 
 
 ## 追加決定 (2026-10-16 22:50)
 - ごみGPS化には旧地名の正規化が前提として必要と判明
-- address2houmukyoku (C:\firemio\address2houmukyoku / 市区町村レベルの旧名→現名・管轄法務局) は流用元。拡張しない
+- address2houmukyoku (C:\firemio\address2houmukyoku / 市区町村レベルの旧名→現名・管轄法務局) は流用元。拡張しない。作者 firemio のサービスとして https://address2houmukyoku.souzoku-tsumugiai.net/ で公開中 (ソースは private repo)。知見は docs/prior-art-address2houmukyoku.md
 - 新規に address-normalize Worker を別デプロイ:
   1. 市区町村層: address2houmukyoku の旧市町村対応表を共有
   2. 町字層: デジタル庁ABR町字マスター (廃止町字・効力発生日/廃止日) + norm_town (漢数字丁目・異体字)
@@ -110,6 +113,9 @@ ABR にも国勢調査2020にも無い 15 / 小字行だけ残る 3 / 区画整�
 - タイルの5桁コード+検査数字 = ABR lg_code: 1,898/1,905 一致 (7 = 所属未定地)
 - 2026-10-17 改修・デプロイ: `/location` が `code`・`lg_code`・`ward` (政令市の区) を返す。`/location2` は各行に `areas` (区ごとの code/lg_code/境界距離)
 - 使い道: /resolve の入口 / 収集地区ポリゴンも同じタイル方式で配る / `nearby()` の境界距離を confidence に
+- 2026-10-17: 全国タイルを1本のパック (約23MB) にして Worker に埋め込み (44bfaee、初回地点 TTFB 250〜310ms → 11ms)。
+  main を Cloudflare 版だけに整理 (dccad44): worker/ (Rust→Wasm) + tools/build_tiles/ (N03 → パック)。旧 Docker/actix 版は削除 (履歴は 44bfaee まで)。
+  同じ N03-20240101.geojson から作ったパックがデプロイ中のものと SHA-256 一致。gps2city は今も全部 Rust
 
 ## 次にやること (2026-10-17 更新。上の「次にやること」を置き換え)
 1. address-normalize Worker を D1 で実装。設計は docs/address-normalize-schema.md (v0.2、16表、§13 に 11/2〜10 の工程)、DDL は docs/address-normalize-schema.sql。

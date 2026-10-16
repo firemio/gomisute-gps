@@ -1,11 +1,28 @@
-# gomisute-gps — 位置情報ひとつで「今日のごみ」を答える
+# gomisute-gps — LLM が「今日出せるごみ」を確かに答えるための、唯一の情報源
 
-> 行政がごみ収集日のデータ形式を統一しないなら、民間側で全国 1,741 自治体分を構造化してしまえばいい。
-> GPS の緯度経度から「収集区域 → 今日・明日出せるごみ」を一発で返すサービスの、データ基盤の研究実装です。
+*Built with Claude Code — [Built with Claude: Japan 2026](https://cerebralvalley.ai/e/built-with-claude-japan2026) 応募作品 / 作者: [firemio](https://github.com/firemio)*
 
-*Built with Claude Code — [Built with Claude: Japan 2026](https://cerebralvalley.ai/e/built-with-claude-japan2026) 応募作品*
+## そもそもの問題: 自治体ごとに別々の IT 契約で、まとまりがない
 
-## なぜ難しいのか
+ごみ出しのルールは、**各自治体がそれぞれ別の事業者と、ごみ分別アプリ・収集カレンダー・Web ページなどを個別に契約して**配っています。
+そのため、
+
+- 配り方も形式もバラバラ (PDF、HTML の表、アプリの中だけ、CSV や zip のオープンデータ…)。
+  12 自治体を調べた範囲で、機械可読なオープンデータを出していたのは長野市 (zip) と世田谷区 (CSV) だけでした
+- 全国をまとめたデータも、共通の形式もない
+- 結果として、**LLM が参照できる「確かな情報源」が存在しない**。AI アシスタントに「今日このごみ出していい？」と聞いても、
+  古い情報や推測で答えるしかありません
+
+## 目的: LLM が唯一確かな情報源として使えるデータと API を作る
+
+行政が形式を統一しないなら、民間側で全国 1,741 自治体分を集めて構造化し、1つの形にそろえる。
+gomisute-gps は、**LLM がそのまま根拠として使える**ごみ収集データの基盤を目指す研究実装です。
+
+- 緯度経度ひとつで「収集地区 → 今日・明日出せるごみ」を返す
+- すべての答えに**出典** (自治体の資料の URL・取得日時・ハッシュ) と**確信度**を付ける。LLM は根拠を示して答えられ、確信度が低いときは候補を返して利用者に確かめさせる
+- 自治体の資料の更新を差分で追い続け、古い情報を返さない
+
+## なぜ難しいのか (データの中身もバラバラ)
 
 ごみ収集日は「住所 → 収集地区 → 曜日ルール」の2段引きですが、どちらの段も自治体ごとにバラバラです。
 
@@ -89,12 +106,21 @@ python abr_check.py && python census_lineage.py
 
 `out/` の成果物は上記データからの加工物です。生データは `data/` に取得されます (リポジトリには含めません)。
 
-## 関連
-- [gps2city](https://github.com/firemio/gps2city) — 緯度経度 → 都道府県・市区町村 (国土数値情報 N03 を 0.1° タイル化した Cloudflare Worker、[稼働中](https://gps2city.firemio.workers.dev/))。
+## 作者と関連プロジェクト
+
+作者は **firemio** ([GitHub @firemio](https://github.com/firemio)) です。gomisute-gps は、同じ作者 firemio がこれまでに作った次の2つを土台にしています。
+
+| プロジェクト | 公開状況 | gomisute-gps での使い方 |
+|---|---|---|
+| [gps2city](https://github.com/firemio/gps2city) | ソース公開・[サービス稼働中](https://gps2city.firemio.workers.dev/) | GPS → 市区町村コードの入口 |
+| [address2houmukyoku](https://address2houmukyoku.souzoku-tsumugiai.net/) (法務局検索) | [サービス公開中](https://address2houmukyoku.souzoku-tsumugiai.net/)・ソースは非公開 | 旧市町村→現市町村の対応表と、住所照合・回帰検証の知見 |
+
+- [gps2city](https://github.com/firemio/gps2city) (作者: firemio) — 緯度経度 → 都道府県・市区町村 (国土数値情報 N03 を 0.1° タイル化した Cloudflare Worker、[稼働中](https://gps2city.firemio.workers.dev/))。
   **Rust を WebAssembly にして Cloudflare Workers で動かし、全国のタイルを1本のパック (約23MB) にして Worker に埋め込んでいる**ので、初めて問い合わせる地点でも応答は中央値 11ms (外部読み込みだった頃は 250〜310ms、距離の誤差は最大 0.97m)。
   タイルの行政区域コードに検査数字を付けると ABR の市区町村コードと 1,898/1,905 件一致 (残り7件は所属未定地)。
   2026-10-17 から `POST /location` が `lg_code` (ABR と同じ6桁) と政令市の `ward` を返し、`/location2` は区ごとの境界距離 (`areas`) を返す。
   `/resolve` の入口 (GPS → 市区町村コード)、収集地区ポリゴンの配信 (同じタイル方式)、境界までの距離による確信度に使う
-- address2houmukyoku (同じ作者の別プロジェクト・非公開) — 住所 → 管轄法務局。旧市町村→現市町村 1,801件 (1986〜2019) を address-normalize の市区町村層の下地にする。
-  照合・正規化・12万件の郵便番号回帰検証・ハッシュ差分 LLM 抽出・特殊分割 (のうち/を除く/の一部) から得た知見は [docs/prior-art-address2houmukyoku.md](docs/prior-art-address2houmukyoku.md) にまとめた (コードは転載していない)
+- [address2houmukyoku](https://address2houmukyoku.souzoku-tsumugiai.net/) (作者: firemio。サービスは公開中、ソースコードのリポジトリは非公開) — 住所 → 管轄法務局 (不動産登記・法人登記)。
+  旧市町村→現市町村 1,801件 (1986〜2019) を address-normalize の市区町村層の下地にする。
+  照合・正規化・12万件の郵便番号回帰検証・ハッシュ差分 LLM 抽出・特殊分割 (のうち/を除く/の一部) から得た知見は [docs/prior-art-address2houmukyoku.md](docs/prior-art-address2houmukyoku.md) にまとめた (ソースは非公開なのでコードは転載していない)
 - 引き継ぎメモ: [HANDOFF.md](HANDOFF.md)
