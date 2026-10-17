@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 5384,
+ "stop_reason": "end_turn",
+ "session_id": "5f5e9a34-da6e-4247-adcd-ef90f0b0bb3e",
+ "total_cost_usd": 0.0365234,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3170,
+  "cache_read_input_tokens": 11037,
+  "output_tokens": 447,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3170,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 342,
+    "cache_read_input_tokens": 6152,
+    "cache_creation_input_tokens": 1903,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1903
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 447,
+   "cacheReadInputTokens": 11037,
+   "cacheCreationInputTokens": 3170,
+   "webSearchRequests": 0,
+   "costUSD": 0.0365234,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2026年10月28日(水)に出せるのは「びん」です。**\n\n- お住まいの地区は、金沢市の収集カレンダーでは**浅野町地区**です。\n- びんは通常どおり**毎月第4水曜日**の収集です。\n- **収集日の午前8時30分まで**に出してください。\n\nその後の収集日は次のとおりです。\n- 燃やすごみ：10月29日(木)\n- 資源（あき缶・ペットボトル・プラスチック資源など）：11月3日(火・文化の日)。金沢市では祝日も収集があります。\n- 燃やさないごみ：11月11日(水)\n\n分け方とごみ集積所の場所は、このデータでは調べられません。分からないときは、金沢市ごみ減量推進課（076-220-2302）に聞いてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その1) — 浅野町（東部管理センター）2026年度版」、金沢市「ごみの出し方のルール」",
+ "ttft_ms": 1800,
+ "type": "result",
+ "duration_ms": 10173,
+ "uuid": "28b57f9a-f963-4e67-a3fa-9280de2e1d81",
+ "ttft_stream_ms": 874,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 874,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 11.6,
+ "stderr": "",
+ "question": "石川県金沢市浅野本町二丁目18番21号 に住んでいます。2026年10月28日(水)にはどのごみを出せますか？"
+}

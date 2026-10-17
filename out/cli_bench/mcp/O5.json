@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 7784,
+ "stop_reason": "end_turn",
+ "session_id": "b2345c95-1acf-458f-a4cc-f554b1dc9954",
+ "total_cost_usd": 0.047299,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3977,
+  "cache_read_input_tokens": 11035,
+  "output_tokens": 663,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3977,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 568,
+    "cache_read_input_tokens": 6150,
+    "cache_creation_input_tokens": 2712,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2712
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 663,
+   "cacheReadInputTokens": 11035,
+   "cacheCreationInputTokens": 3977,
+   "webSearchRequests": 0,
+   "costUSD": 0.047299,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "女川町竹浦では、2026年11月23日(月)に次のごみを出せます。この日は祝日（勤労感謝の日）ですが、女川町は祝日もカレンダーどおりに収集します。\n\n1. **缶・びん ペットボトル**\n2. **ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油**\n   この名前は4月に印刷されたカレンダーのものです。2026年10月1日から、この日の出し方は次のように変わっています。\n   - **赤色のかご**：ペットボトル以外のプラスチック容器・製品（プラスチック100%のものすべて。発泡スチロール、色や模様のついたトレイ、ペットボトルのキャップとラベルも入ります）\n   - **緑色のかご**：紙パック、白色トレイ\n   - **かごに入れず直接出すもの**：段ボール、新聞紙、雑誌類、雑紙、布類、剪定枝、廃食油\n3. **燃やせないごみ**\n\n**出す時間：** 収集日の朝8時までに出してください。\n\n**ほかのごみの次の収集日**\n- 燃やせるごみ：11月24日(火)\n- 粗大ごみ：12月11日(金)\n\nごみ集積所の場所と粗大ごみの申し込み方法は、このデータに含まれていません。女川町クリーンセンター（0225-53-3549）に問い合わせてください。\n\n出典：女川町「令和８年度 おながわ町民カレンダー」、女川町「環境・ごみ」、女川町「家庭ごみの分け方・出し方（2026-10-01版）」",
+ "ttft_ms": 2372,
+ "type": "result",
+ "duration_ms": 12573,
+ "uuid": "6a909fba-bf35-411b-9190-c029d27b8b18",
+ "ttft_stream_ms": 1378,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 1378,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 14.1,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町竹浦 に住んでいます。2026年11月23日(月)にはどのごみを出せますか？"
+}

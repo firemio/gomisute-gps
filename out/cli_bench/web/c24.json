@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 136294,
+ "stop_reason": "end_turn",
+ "session_id": "ea4bc025-e028-4d1a-9191-18c4764c437a",
+ "total_cost_usd": 0.17543029999999998,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 7485,
+  "cache_read_input_tokens": 47255,
+  "output_tokens": 3327,
+  "output_tokens_details": {
+   "thinking_tokens": 1176
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7485,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1639,
+    "cache_read_input_tokens": 9856,
+    "cache_creation_input_tokens": 1200,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1200
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 3327,
+   "cacheReadInputTokens": 47255,
+   "cacheCreationInputTokens": 7485,
+   "webSearchRequests": 0,
+   "costUSD": 0.13592700000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1176,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 107598,
+   "outputTokens": 17487,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.039503300000000005,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 13985,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2027年1月29日(金)に出せるのは**資源（あき缶・ペットボトル・プラスチック資源など）**です。燃やすごみ、燃やさないごみ、びんはこの日は回収がありません。\n\n**調べた内容**\n- 市の町名一覧では、泉野町2丁目は番地の区別なく全域が**泉野地区（西部管理センター）**です。\n- 泉野地区の2026年度カレンダーでは、2027年1月の日付は次のとおりです。\n\n| 品目 | いつもの収集日 | 2027年1月 |\n|---|---|---|\n| 燃やすごみ | 毎週月曜・木曜 | （金曜は回収なし） |\n| 燃やさないごみ | 第3金曜 | 1/22（※） |\n| 資源（あき缶・ペットボトル・プラスチック資源など） | 第2・第4金曜 | 1/15（※）、**1/29（※）** |\n| 資源（プラスチック資源のみ） | 第5金曜 | なし（※） |\n| びん | 第1水曜 | 1/6 |\n\n（※）は年末年始の影響で収集日が変わる日です。いつもなら1/29は第5金曜でプラスチック資源だけの日ですが、2027年1月は4回目の資源回収が1/29に移っています。\n\n**ご注意**\n- 取得したページのテキストは表の形が崩れていました。そのため、どの日付がどの品目かは、曜日と日付の並びから判断しています。判断に無理はないと考えていますが、念のため[泉野地区のカレンダー](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html#izumino)で表を見て確かめてください。\n- ごみは収集日の**午前8時30分まで**に出してください。\n- わからないときは、金沢市ごみ減量推進課（076-220-2302）に聞くか、市のLINE公式アカウントで地区を設定して確認できます。\n\nSources:\n- [2026年度地区別収集カレンダー（トップページ）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [泉野地区 収集カレンダー](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html)\n- [燃やすごみ 週2回収集](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7591.html)\n- [金沢市LINE案内チラシ](https://www4.city.kanazawa.lg.jp/material/files/group/68/LINE202508chirasi.pdf)",
+ "ttft_ms": 6427,
+ "type": "result",
+ "duration_ms": 137137,
+ "uuid": "1b1e076c-98b1-4db0-afbe-187a84733876",
+ "ttft_stream_ms": 5267,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 5267,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 138.2,
+ "stderr": "",
+ "question": "石川県金沢市泉野町二丁目12番22号 に住んでいます。2027年1月29日(金)にはどのごみを出せますか？"
+}

@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 5651,
+ "stop_reason": "end_turn",
+ "session_id": "99c4288f-404a-4f83-b615-5588b3d7cba1",
+ "total_cost_usd": 0.037987,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3168,
+  "cache_read_input_tokens": 11035,
+  "output_tokens": 521,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3168,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 418,
+    "cache_read_input_tokens": 6150,
+    "cache_creation_input_tokens": 1903,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1903
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 521,
+   "cacheReadInputTokens": 11035,
+   "cacheCreationInputTokens": 3168,
+   "webSearchRequests": 0,
+   "costUSD": 0.037987,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2026年12月8日(火)に出せるのは**燃やすごみ**です。\n\n- お住まいの地区: 金沢市の**金石町地区**（金石東1丁目）\n- 出す時刻: **収集日の午前8時30分まで**\n- この地区の燃やすごみは、いつも火曜日と金曜日です。\n\n**12月8日のあとの収集日**\n- 12月9日(水): びん\n- 12月11日(金): 燃やすごみ\n- 12月21日(月): 資源（あき缶・ペットボトル、プラスチック資源など）\n- 12月28日(月): 燃やさないごみ\n\n12月と1月は年末年始のため、いつもの曜日の決まりと違う日があります。上の日付は、市の収集カレンダーに載っている日付です。\n\n分別の仕方と集積所の場所はこのデータで調べられません。分からないときは、金沢市ごみ減量推進課（076-220-2302）に聞いてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その2) — 金石町（東部管理センター）2026年度版」、「2026年度地区別収集カレンダー — 町名一覧表 (区域表)」、「ごみの出し方のルール」",
+ "ttft_ms": 1598,
+ "type": "result",
+ "duration_ms": 10504,
+ "uuid": "f052e4d1-efb7-474b-bd41-445a29e660bb",
+ "ttft_stream_ms": 736,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 736,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 12.0,
+ "stderr": "",
+ "question": "石川県金沢市金石東一丁目4番20号 に住んでいます。2026年12月8日(火)にはどのごみを出せますか？"
+}

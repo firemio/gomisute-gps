@@ -1,4 +1,4 @@
-# gomisute-gps (ごみ収集日GPS) — 引き継ぎ (2026-10-16 → 10-17 更新)
+# gomisute-gps (ごみ収集日GPS) — 引き継ぎ (2026-10-16 → 10-18 更新)
 
 元セッション: https://claude.ai/code/session_01X7VLku4og8FfR6suhQ1WNy (claude.ai上)
 ローカル作業場: C:\firemio\gomi-gps (2026-10-16 夜〜。プロジェクト名は 2026-10-17 に **gomisute-gps** へ改名、フォルダ名は未変更)
@@ -141,6 +141,18 @@ ABR にも国勢調査2020にも無い 15 / 小字行だけ残る 3 / 区画整�
 3a. **比較実験 (2026-10-17、docs/llm-baseline.md)**: ウェブ検索だけの AI (Claude Opus 5.5) に金沢の 28問を聞くと、品目 28/28・地区 28/28 正解。
    付随情報 521件の誤り 5件 (何を・いつ出すかには関係しない)。gomisute-gps の「出す時刻は記載なし」は誤りだった (直した)。
    → 金沢では正確さは売りにならない。
+3c. **LLM が確かな答えとして使う場所 (2026-10-18)**: mcp_server.py (標準入出力の MCP、.mcp.json。ツール: 住所 / 緯度経度 / 分け方。
+   Claude Desktop の設定例は docs/mcp-tool.md)、住所の文字列を区域表に直接当てる kzaddress.py + resolve.resolve_address、
+   女川町のデータ (onagawa.py、out/onagawa_data.json。Opus 2人の独立読みで日付のマス 324 は全一致)、公式ページの変更監視 monitor.py
+   (変わったら source_changed で確定しない。確認が7日より古い・結果が無いときは answerable=false)。
+   **実際の MCP での計測** (docs/mcp-bench.md §1、bench/cli_bench.py、方式を伏せた採点 bench/grading/): 同じ 38問を `claude -p` (Opus) に
+   MCP だけ / ウェブだけ で聞いた。金沢 28問: MCP 28/28・付随情報の誤り 0/220・13秒・$0.04 (ウェブ 27/28・6/205・129秒・$0.21。1月だけ規則と違う日を外した)。
+   女川 10問: MCP 10/10・0/100・16秒・$0.04 (ウェブ 3/10。CLI の WebFetch はカレンダーの PDF を読めず、日付 6問は「確認できなかった」)。
+   住所の評価 bench/eval_address.py: 約3万通りの書き方で確定 23,769件・誤り 0。独立した検証役 3人 (MCP・金沢の住所・女川と文書) の指摘
+   (空白区切りの番地をつなげて読む、町名だけで確定、短い品目名が長い品目名の一部に当たって確定、サロゲートでサーバーが落ちる、など) は直した。
+   起動は約5秒 (norm_town のキャッシュ)。
+   → 次: Cloudflare Worker に載せる (Streamable HTTP の MCP) / 自治体を増やす (Opus 2人の独立読みの手順を build_<自治体>.py に) /
+     monitor.py を毎日動かす仕組み (今は手で動かす。7日を過ぎると answerable=false になる)
 3b. **比較実験 2 (2026-10-17、docs/llm-baseline-hard.md)**: カレンダーが PDF・画像だけの5自治体 (村上・旭川・宮崎・女川・東海村) の 30問。
    Opus 30/30 (PDF をページの画像として読む)、Haiku 14/30 (誤り 1・答えられず 13)。Opus も女川町の10月の分別変更は拾えなかった。
    正解は Opus のエージェント2人の独立した読みが 30問すべてで一致したもの (人間の目では未確認)。

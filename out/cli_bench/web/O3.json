@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 92065,
+ "stop_reason": "end_turn",
+ "session_id": "64a0251c-80dc-4709-bac3-ea0468269cee",
+ "total_cost_usd": 0.22739180000000003,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 10766,
+  "cache_read_input_tokens": 68953,
+  "output_tokens": 2545,
+  "output_tokens_details": {
+   "thinking_tokens": 319
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10766,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 804,
+    "cache_read_input_tokens": 12879,
+    "cache_creation_input_tokens": 1458,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1458
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 2545,
+   "cacheReadInputTokens": 68953,
+   "cacheCreationInputTokens": 10766,
+   "webSearchRequests": 0,
+   "costUSD": 0.15089059999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 319,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 225142,
+   "outputTokens": 7974,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 5,
+   "costUSD": 0.07650119999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3743,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "申し訳ありませんが、**針浜で2026年12月31日(木)に出せるごみの種類は確認できませんでした**。推測でお答えするのは避けます。\n\n**わかったこと**\n- 女川町では、地区ごとの収集日を「おながわ町民カレンダー」に載せています。公式サイトの[環境・ごみ](https://www.town.onagawa.miyagi.jp/05_05.html)ページには、地区別の収集日も年末年始の収集予定も書かれていません。\n- 公式の[令和8年度 おながわ町民カレンダー（PDF）](https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)に該当する情報が載っているはずです。ただ、このPDFは文字として読み取れない形式だったため、12月31日の内容は確認できませんでした。\n- ごみは**収集日の朝8時まで**に出す決まりです。\n- 2026年10月から、プラスチックは製品プラスチック（ハンガーやバケツなど）も含めて「ペットボトル以外のプラスチックの日（赤かごの日）」に出すようになりました。\n- 民間のごみカレンダーサイトにも、女川町の収集日はまだ載っていませんでした。\n\n**確認方法**\n1. 上の町民カレンダーPDFを開き、12月のページで針浜の地区の12/31の欄を見る\n2. 女川町クリーンセンター（0225-53-3549）に電話で聞く\n3. 紙のカレンダーは役場の企画課でもらえます（0225-54-3131）\n\nPDFの12月のページをスクリーンショットやテキストで貼っていただければ、針浜でその日に出せるごみを読み取ってお伝えします。\n\nSources:\n- [環境・ごみ ｜ 女川町](https://www.town.onagawa.miyagi.jp/05_05.html)\n- [おながわ町民カレンダー ｜ 女川町](https://www.town.onagawa.miyagi.jp/chomin_calendar.html)\n- [ごみ.com 女川町ページ](https://xn--38j9d.com/areas/miyagi/04581-onagawa)",
+ "ttft_ms": 1792,
+ "type": "result",
+ "duration_ms": 79685,
+ "uuid": "26bd7d88-e14e-4239-90ac-aebbae29eccb",
+ "ttft_stream_ms": 1414,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1414,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 80.8,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町針浜 に住んでいます。2026年12月31日(木)にはどのごみを出せますか？"
+}

@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 6089,
+ "stop_reason": "end_turn",
+ "session_id": "91645d9f-ff82-408b-be29-d96ab5ab023f",
+ "total_cost_usd": 0.0385712,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3261,
+  "cache_read_input_tokens": 11036,
+  "output_tokens": 513,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3261,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 409,
+    "cache_read_input_tokens": 6151,
+    "cache_creation_input_tokens": 1995,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1995
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 513,
+   "cacheReadInputTokens": 11036,
+   "cacheCreationInputTokens": 3261,
+   "webSearchRequests": 0,
+   "costUSD": 0.0385712,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2027年1月29日(金)に出せるのは「資源 あき缶・ペットボトル プラスチック資源など」です。**\n\n- お住まいは金沢市の**泉野地区**になります。\n- この品目はふだん「第2・4金曜日」に集められます。1月29日は第5金曜日なので、いつもの決まりとは違う日です。市の収集カレンダーにこの日が載っています。\n- **収集日の朝8時30分まで**に出してください。\n\nこの後の収集日は次のとおりです。\n- 燃やすごみ：2月1日(月)\n- びん：2月3日(水)\n- 資源 あき缶・ペットボトル プラスチック資源など：2月12日(金)\n- 燃やさないごみ：2月19日(金)\n\n分け方や集積所の場所は、このデータでは分かりません。気になることがあれば、金沢市 ごみ減量推進課（076-220-2302）に聞いてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その1) — 泉野（西部管理センター）2026年度版」、「2026年度地区別収集カレンダー — 町名一覧表 (区域表)」、「ごみの出し方のルール」",
+ "ttft_ms": 1677,
+ "type": "result",
+ "duration_ms": 10879,
+ "uuid": "f7e6aa93-d0db-45f2-8cfb-34014dee4035",
+ "ttft_stream_ms": 1227,
+ "time_to_request_ms": 44,
+ "first_content_frame_ms": 1228,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 12.3,
+ "stderr": "",
+ "question": "石川県金沢市泉野町二丁目12番22号 に住んでいます。2027年1月29日(金)にはどのごみを出せますか？"
+}

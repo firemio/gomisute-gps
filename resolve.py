@@ -2,6 +2,7 @@
 """緯度経度 + 日付 → 収集地区 → その日に出せるごみ (金沢市。参照実装 v5)
 
   python resolve.py 36.481532 136.703003 [2026-10-20] [--days 2] [--accuracy 30 [--confidence 0.95]] [--offline]
+  python resolve.py --address 金沢市笠舞2丁目29番5号 [2026-10-20] [--days 2]
 
 目的: LLM が「今日ここで何のごみを出せるか」を答えるときの、唯一確かな情報源にする。
 地区の決め方:
@@ -19,11 +20,11 @@
   分別方法・集積所の場所などデータに無いことは not_covered に明示。
 評価: python eval_resolve.py (区域も作り直す完全ホールドアウト・街区ホールドアウト・地番ホールドアウト・GPS のずれ)
 """
-import collections, copy, csv, datetime as dt, hashlib, json, math, numbers, re, sys, urllib.request
+import collections, copy, csv, datetime as dt, hashlib, json, math, numbers, re, sys, unicodedata, urllib.request
 import numpy as np, pandas as pd, geopandas as gpd, shapely
 from shapely.geometry import Point
 from dateutil.rrule import rrulestr
-from townnorm import norm_town
+from townnorm import norm_town, kan2num
 from kzrules import load_rules, load_jukyo, match_row, load_parcels, table_town, match_parcel, mark_stale_rows
 
 JST = dt.timezone(dt.timedelta(hours=9))
@@ -56,16 +57,67 @@ GPS2CITY = "https://gps2city.firemio.workers.dev/location"
 UA = {"Content-Type": "application/json", "User-Agent": "gomisute-gps/0.5 (+https://github.com/firemio/gomisute-gps)"}
 SRC_JUKYO = "国土地理院 電子国土基本図 (地名情報) 住居表示住所"
 SRC_PARCEL = "デジタル庁 アドレス・ベース・レジストリ 地番マスター (代表点)"
-BASIS_JA = {"address_row": "最寄りの住所が区域表の行に当たる", "parcel_row": "最寄りの地番が区域表の行に当たる", "zone_polygon": "区域表から作った区域",
+BASIS_JA = {"given_address_row": "伝えられた住所が区域表の行に当たる", "address_row": "最寄りの住所が区域表の行に当たる", "parcel_row": "最寄りの地番が区域表の行に当たる", "zone_polygon": "区域表から作った区域",
             "near_address": "近くの住所の区域表の行", "near_parcel": "近くの地番の区域表の行",
             "near_boundary": "近くに別の地区の区域", "unindexed_row": "住居表示住所の無い区域表の行 (位置は ABR の街区代表点など)",
             "town_row": "区域表のこの町の行 (一部の場合あり)", "census_town_row": "この地点を含む国勢調査の町の行 (一部の場合あり)",
             "town_row_prefix": "よく似た町名の区域表の行 (町全体) からの推定", "conditional_similar_row": "よく似た町名の条件付きの行",
             "inferred_lineage": "旧町名の系譜からの推定"}
-DECIDING = {"address_row", "parcel_row", "zone_polygon", "town_row", "census_town_row", "town_row_prefix"}   # この場所を直接指す根拠
-RANK = {"address_row": 100, "zone_polygon": 90, "parcel_row": 85, "census_town_row": 75, "town_row": 70, "town_row_prefix": 60,
+DECIDING = {"given_address_row", "address_row", "parcel_row", "zone_polygon", "town_row", "census_town_row", "town_row_prefix"}   # この場所を直接指す根拠
+RANK = {"given_address_row": 110, "address_row": 100, "zone_polygon": 90, "parcel_row": 85, "census_town_row": 75, "town_row": 70, "town_row_prefix": 60,
         "unindexed_row": 55, "near_address": 50, "near_parcel": 45, "near_boundary": 40, "conditional_similar_row": 35, "inferred_lineage": 30}
 SHOW_DETAIL = {"near_address", "near_parcel", "unindexed_row", "conditional_similar_row", "inferred_lineage"}
+
+STATUS_MAX_AGE_DAYS = 7     # 変更監視の確認がこれより古ければ「確かめていない」とみなす
+
+def load_source_status(path="out/source_status.json"):
+    """monitor.py が書いた公式ページの変更監視の結果 (無ければ None)。呼ぶたびに読み直す (動いているサーバーにも変更が届く)"""
+    try: return json.load(open(path, encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError): return None
+
+def freshness(status, urls):
+    """答えの元にした公式ページが、データを作ったときから変わっていないか。
+    source_changed (変わった・消えた) / stale (確認が古い) / partly_unchecked (取れなかった・監視していないページがある) / unchanged /
+    unchecked (監視の結果が無い・読めない)"""
+    if not status or not isinstance(status.get("sources"), list) or not status.get("checked_at"):
+        return {"status": "unchecked", "note": "公式ページの変更監視 (monitor.py) の結果がありません"}
+    by = {x["url"]: x for x in status["sources"]}
+    want = list(dict.fromkeys(u.split("#")[0] for u in urls))
+    used = [by[u] for u in want if u in by]
+    untracked = [u for u in want if u not in by]
+    gone = lambda x: x["status"].startswith("error") and any(c in x["status"] for c in ("404", "410"))
+    changed = [{"url": x["url"], "title": x["title"], "recorded_at": x["recorded_at"], **({"gone": True} if gone(x) else {})}
+               for x in used if x["status"] == "changed" or gone(x)]
+    errors = [x["url"] for x in used if x["status"].startswith("error") and not gone(x)]
+    if changed: return {"status": "source_changed", "checked_at": status["checked_at"], "changed": changed, "simulated": status.get("simulated", False)}
+    age = (dt.datetime.now(JST) - dt.datetime.fromisoformat(status["checked_at"])).total_seconds() / 86400
+    if age > STATUS_MAX_AGE_DAYS:
+        return {"status": "stale", "checked_at": status["checked_at"], "note": f"公式ページの確認が {int(age)} 日前で古い (monitor.py を毎日動かす前提)"}
+    if not used:
+        return {"status": "unchecked", "checked_at": status["checked_at"], "note": "この答えの元にした公式ページは、変更監視の対象に入っていません", "untracked": untracked}
+    return {"status": "unchanged" if not (errors or untracked) else "partly_unchecked", "checked_at": status["checked_at"], "sources_checked": len(used),
+            **({"errors": errors} if errors else {}), **({"untracked": untracked} if untracked else {})}
+
+def apply_freshness(res, fr):
+    """元のページが変わっていたら、確かな答えとして返さない (作り直して確かめるまで)。候補で返す答え、もともと決められない答えの日付も返さない。
+    確認が古い・取れなかったページがある・監視の結果が無いときは answerable を false にする"""
+    res["freshness"] = fr
+    if fr["status"] == "source_changed" and res.get("status") in ("ok", "ambiguous", "unresolved"):
+        loc = res.setdefault("location", {})
+        if res.get("status") == "ok":
+            loc["collection_district_before_change"] = loc.get("collection_district")
+            loc["collection_district"] = None
+        before = loc.get("decision_blocked_by")
+        res["status"], res["answerable"] = "unresolved", False
+        loc["decision_blocked_by"] = {"reason": "source_changed", "town": None, "changed": fr["changed"], "checked_at": fr["checked_at"],
+                                      **({"also": before} if before else {})}
+        loc["district_confidence"] = 0.0
+        for k in ("days", "next_after_date", "consensus", "groups"): res.pop(k, None)
+        for c in res.get("candidates", []): c.pop("days", None)
+        if "holiday_policy" in res: res["holiday_policy"] = "元の公式資料が変わったため、日付は返しません"
+    elif fr["status"] in ("stale", "partly_unchecked", "unchecked"):
+        res["answerable"] = False
+    return res
 
 def search_radius(accuracy_m, confidence=ACC_CONF, target=0.99):
     """端末の精度 (確率 confidence の半径) → 本当の位置が確率 target で入る半径。誤差を2次元正規分布とみなす
@@ -196,11 +248,12 @@ class Kanazawa:
     def _addr_district(self, i):
         """住所 i (索引の行番号) → (区域表の行 or None, 町が表にあるか)"""
         if i in self._row_cache: return self._row_cache[i]
-        a = self.jukyo.iloc[i]
-        rs = self.by_town.get(a.ntown)
+        if not self._row_cache: self._jcols = (list(self.jukyo.ntown), self.jukyo.blk_i.to_numpy(float), self.jukyo.num_i.to_numpy(float))
+        t, b, n = self._jcols[0][i], self._jcols[1][i], self._jcols[2][i]
+        rs = self.by_town.get(t)
         if not rs: res = (None, False)
-        elif np.isnan(a.blk_i) or np.isnan(a.num_i): res = (None, True)
-        else: res = (match_row(rs, int(a.blk_i), int(a.num_i)), True)
+        elif np.isnan(b) or np.isnan(n): res = (None, True)
+        else: res = (match_row(rs, int(b), int(n)), True)
         self._row_cache[i] = res
         return res
 
@@ -428,6 +481,97 @@ class Kanazawa:
                 "candidates": ordered, "notes": notes,
                 "town_rows": (self._rows(rows_town) or sim_rows)[:12]}
 
+    # ---------------- 住所の文字列 ----------------
+    def locate_address(self, text):
+        """利用者が伝えた住所の文字列 → locate() と同じ形の dict (読み方は kzaddress)。金沢市以外なら {"out_of_coverage": 名前}"""
+        import kzaddress
+        if not hasattr(self, "_addr_index"): self._addr_index = kzaddress.AddressIndex(self)
+        ax = self._addr_index
+        s, stated, other = kzaddress.clean(text)
+        if other and (stated or not ax.town_of(s)[0]): return {"out_of_coverage": other}
+        readings, town = ax.readings(s)
+        readings = list({tuple(sorted(r.items())): r for r in readings}.values())          # 同じ読み方は1つに
+        label = ("金沢市" if stated else "") + s           # 市町村名が書かれていなければ、勝手に「金沢市」を付けない
+        cands, notes = collections.OrderedDict(), []
+        def add(d, kind, evidence, rows=(), official=True):
+            c = cands.setdefault(d, {"collection_district": d, "basis": [], "official": False, "evidence": [], "how_to_confirm": []})
+            c["basis"].append({"kind": kind, "official": official, "label": BASIS_JA[kind], "detail": evidence})
+            c["official"] = any(b["official"] for b in c["basis"])
+            c["evidence"].append(evidence)
+            for r in rows:
+                h = self._row(r)
+                if h not in c["how_to_confirm"] and len(c["how_to_confirm"]) < 8: c["how_to_confirm"].append(h)
+        tt = table_town(town, self.by_town) if town else None
+        addr = {"input": str(text), "label": label, "readings": [{k: v for k, v in r.items()} for r in readings], "in_rules_table": bool(tt),
+                "municipality_stated": stated}
+        status, district, conf, method, blocked = "ambiguous", None, 0.4, "address_candidates", None
+        evals = [(r, *ax.evaluate(r)) for r in readings]
+        c = (ax.collisions.get(town) or ax.collisions.get(tt or "")) if town and not stated else None
+        collision = (f"市町村名が書かれていません。{town} は金沢市のほか {'・'.join(c['examples'][:3])}{' など' if c['count'] > 3 else ''} にもあります"
+                     f" (全国で {c['count'] + 1} か所)。") if c else None
+        valid = [(r, ds, rows, desc, ex) for r, ds, rows, desc, ex in evals if ds and ex]
+        no_row = [(r, desc) for r, ds, rows, desc, ex in evals if ex == "no_row"]          # 実在するが区域表に町の行が無い読み方: 確定させない
+        if not town:
+            status, conf, method = "unresolved", 0.0, "address_not_found"
+            blocked = {"reason": "address_not_found", "town": None, "label": label}
+            head = re.match(r"^[^\d\-]{2,}", s)                                   # 笠舞29番5号 → 笠舞1丁目・笠舞2丁目… (丁目が抜けている)
+            similar = sorted((t for t in ax.known if head and t.startswith(head[0]) and t != head[0]), key=lambda t: (len(t), t))[:10] if head else []
+            if similar: blocked["similar_towns"] = similar
+        elif not tt:
+            status, conf, method = "unresolved", 0.0, "place_town_not_in_rules_table"
+            blocked = {"reason": "place_town_not_in_rules_table", "town": town, "source": "住所", "label": label, "distance_m": 0.0}
+            for a_, r in self.via_old.get(town, []):
+                add(r["district"], "inferred_lineage", f"区域表に {town} の行が無い。旧町名 {a_['alias_name']} の行から推定 (系譜の確信度 {a_['confidence']})", official=False)
+        elif not valid and no_row:
+            nt = no_row[0][0]["town"]
+            status, conf, method = "unresolved", 0.0, "place_town_not_in_rules_table"
+            blocked = {"reason": "place_town_not_in_rules_table", "town": nt, "source": "住所", "label": label, "distance_m": 0.0}
+            notes += [d for _, d in no_row]
+        elif not valid:
+            # どの読み方でも実在しない (住居表示の番号が無い、など): 町の行を候補にして聞き返す
+            method = "address_not_in_registry"
+            notes.append(f"住所 {label} は、国土地理院・デジタル庁 ABR の住所データに見つかりません ({'; '.join(d for _, _, _, d, _ in evals)})")
+            for dd in sorted({r["district"] for r in self.by_town[tt]}):
+                add(dd, "town_row", f"区域表で {tt} の一部が {dd}", rows=[r for r in self.by_town[tt] if r["district"] == dd])
+        else:
+            for r, ds, rows, desc, ex in valid:
+                kind = "given_address_row" if ex is True and len(ds) == 1 and r["kind"] in ("jukyo", "chiban") else "town_row"
+                for dd in sorted(ds):
+                    add(dd, kind, desc + (f" → {dd}" if len(ds) > 1 else ""), rows=[x for x in rows if x["district"] == dd] or rows[:2])
+                if ex is not True or "国土地理院の住所に無い" in desc: notes.append(desc)
+            alld = {d for _, ds, _, _, _ in valid for d in ds}
+            sure = all(ex is True for *_, ex in valid) and not no_row
+            if no_row: notes += [d + "。この読み方の地区は区域表で決められない" for _, d in no_row]
+            if len(valid) > 1 and len(alld) > 1:
+                notes.insert(0, f"住所 {label} は " + " とも ".join(f"「{d}」" for _, _, _, d, _ in valid) + " とも読めます。番地・号まで正確に書いてください")
+            if len(alld) == 1 and sure:
+                district = next(iter(alld))
+                rowsd = [x for _, _, rows, _, _ in valid for x in rows if x["district"] == district]
+                noted = next((x for x in rowsd if x["note"]), None)
+                if noted:
+                    status, conf, method = "unresolved", 0.0, "rules_table_note"
+                    blocked = {"reason": "rules_table_note", "town": noted["town"], "district": noted["district"], "note": "(注意)" + noted["note"]}
+                    district = None
+                elif collision:
+                    method = "municipality_not_stated"
+                    notes.insert(0, collision + f"金沢市の{town}なら {district} 地区です")
+                    district = None
+                else:
+                    status, conf = "ok", 0.98
+                    method = {"jukyo": "address_table_row", "chiban": "address_parcel_row", "block": "address_block", "town": "address_town_whole"}[valid[0][0]["kind"]]
+            else:
+                method = "address_needs_detail" if any(ex in ("needs_koaza", "needs_chome") for *_, ex in valid) else (
+                    "address_two_readings" if len(valid) > 1 else "address_row_not_decided")
+        if collision and method != "municipality_not_stated" and status != "ok":
+            notes.insert(0, collision.rstrip("。") + "。金沢市の住所かどうかも確かめてください")      # 押野2丁目1番1号 (番号が無い・決まらない場合も)
+        for c in cands.values(): c["rank"] = max(RANK[b["kind"]] * (1 if b["official"] else 0.5) for b in c["basis"])
+        ordered = sorted(cands.values(), key=lambda c: -c["rank"])
+        for c in ordered: c.pop("rank")
+        return {"status": status, "collection_district": district, "district_confidence": conf, "method": method,
+                "census_town": None, "place_name": town, "inference": None, "nearest_address": None, "nearest_parcel": None,
+                "address": addr, "decision_blocked_by": blocked, "distance_to_municipal_border_m": None, "evidence_radii_m": None,
+                "candidates": ordered, "notes": notes, "town_rows": (self._rows(tt) if tt else [])[:12]}
+
     # ---------------- 収集日 ----------------
     @staticmethod
     def _occurrences(s):
@@ -599,15 +743,19 @@ def _resolve(k, lat, lng, date, days, online, accuracy_m, accuracy_confidence):
                 "coverage": [{"lg_code": LG, "name": MUNI, "calendar": "2026-04-01〜2027-03-31"}],
                 "summary_ja": (f"この場所は{name}で、gomisute-gps はまだ対応していません (対応: {MUNI})。{name}の公式サイトで確認してください。"
                                if name else f"この場所は対応地域 ({MUNI}) の町の区域 (国勢調査の小地域) の外です (市外か、市内の海岸など)。")}
+    return _answer(k, loc, date, days, base, "gps2city" if in_city else "census_polygons")
+
+def _answer(k, loc, date, days, base, checked_by):
+    """地区の判定 (loc) → 日ごとの答え・出典・要約"""
     for c in loc["candidates"]:
         c["days"] = k.days(c["collection_district"], date, days)
     anyd = loc["collection_district"] or (loc["candidates"][0]["collection_district"] if loc["candidates"] else None)
     lo, hi = k.calendar_range(anyd) if anyd else (None, None)
     res = {**base, "status": loc["status"],
-           "location": {"municipality": {"lg_code": LG, "name": MUNI, "checked_by": "gps2city" if in_city else "census_polygons"},
-                        **{x: loc[x] for x in ("collection_district", "district_confidence", "method", "census_town", "place_name",
-                                               "inference", "nearest_address", "nearest_parcel", "decision_blocked_by",
-                                               "distance_to_municipal_border_m", "evidence_radii_m")}},
+           "location": {"municipality": {"lg_code": LG, "name": MUNI, "checked_by": checked_by},
+                        **{x: loc.get(x) for x in ("collection_district", "district_confidence", "method", "census_town", "place_name",
+                                                   "inference", "nearest_address", "nearest_parcel", "address", "decision_blocked_by",
+                                                   "distance_to_municipal_border_m", "evidence_radii_m")}},
            "candidates": loc["candidates"], "town_rows": loc["town_rows"], "notes": loc["notes"], "holiday_policy": HOLIDAY_POLICY,
            "calendar": {"valid_from": str(lo) if lo else None, "valid_to": str(hi) if hi else None}}
     # 区域表の注記: 確定なら確定した地区の行、そうでなければ全候補の行から
@@ -625,8 +773,38 @@ def _resolve(k, lat, lng, date, days, online, accuracy_m, accuracy_confidence):
         # unresolved では正しい地区が候補に無いことがあるので、「どの候補でも同じ」は出さない
         res["consensus"] = consensus(loc["candidates"]) if loc["status"] == "ambiguous" else None
         res["sources"] = [RULES_SOURCE] + [s for c in loc["candidates"] for s in k.sources(c["collection_district"])[1:2]] + [PUT_OUT_RULES]
+    apply_freshness(res, freshness(load_source_status(), [x["url"] for x in res["sources"]]))
     res["summary_ja"] = summarize(res)
     return res
+
+def resolve_address(k, address, date=None, days=2):
+    """住所の文字列 + 日付 → LLM 向けの JSON (resolve と同じ形)。住所を区域表の行に直接当てる"""
+    return copy.deepcopy(_resolve_address(k, address, date, days))
+
+def _resolve_address(k, address, date, days):
+    now = dt.datetime.now(JST)
+    base = {"data_version": k.data_version, "generated_at": now.isoformat(timespec="seconds"), "put_out_by": PUT_OUT_BY,
+            "not_covered": NOT_COVERED, "contact": CONTACT}
+    bad = lambda q, msg: {**base, "query": q, "status": "invalid_input", "answerable": False, "summary_ja": msg}
+    if not isinstance(address, str) or not address.strip() or len(address) > 200:
+        return bad({"address": repr(address)[:60]}, "address は住所の文字列 (200文字まで) で指定してください。")
+    if date is not None:
+        try: date = _date(date)
+        except (TypeError, ValueError):
+            return bad({"address": address, "date": repr(date)[:40]}, "date は日本時間の日付 (YYYY-MM-DD、2000〜2099年) で指定してください。")
+    days_ok = isinstance(days, numbers.Integral) and not isinstance(days, (bool, np.bool_)) and 1 <= int(days) <= 14
+    q = {"address": address, "timezone": "Asia/Tokyo", "days": int(days) if days_ok else repr(days)[:20],
+         "date": str(date or now.date()), "date_basis": "user" if date else "server_today_jst"}
+    base["query"] = q
+    if not days_ok: return bad(q, "days は 1〜14 の整数で指定してください。")
+    date, days = date or now.date(), int(days)
+    loc = k.locate_address(address)
+    if loc.get("out_of_coverage"):
+        name = loc["out_of_coverage"]
+        return {**base, "status": "out_of_coverage", "answerable": False, "location": {"municipality": {"lg_code": None, "name": name}},
+                "coverage": [{"lg_code": LG, "name": MUNI, "calendar": "2026-04-01〜2027-03-31"}],
+                "summary_ja": f"この住所は{name}で、gomisute-gps はまだ対応していません (対応: {MUNI})。{name}の公式サイトで確認してください。"}
+    return _answer(k, loc, date, days, base, "address_text")
 
 def consensus(cands):
     """候補が2つ以上のとき、どの候補の地区でも同じになる答え (候補が1つなら null)"""
@@ -671,6 +849,7 @@ def _cands_text(cands):
     return t + (f"、ほか {len(cands) - MAX_CANDS_TEXT} 地区 (candidates に全部)" if len(cands) > MAX_CANDS_TEXT else "")
 
 def _where(loc):
+    if loc.get("address"): return f"住所 {loc['address']['label']}"
     a, p = loc.get("nearest_address"), loc.get("nearest_parcel")
     here = min([x for x in (a, p) if x], key=lambda x: x["distance_m"], default=None)
     if here: return f"最寄りの{'住所' if here is a else '地番'} {here['label']} から約{round(here['distance_m'])}m"
@@ -681,8 +860,23 @@ def _sentences(*xs):
     return re.sub(r"[ 　]{2,}", " ", s)
 
 def summarize(res):
+    text = _summarize(res)
+    fr = (res.get("freshness") or {}).get("status")
+    if fr == "stale": text += "公式ページの変更の確認が古いので、念のため公式ページでも確かめてください。"
+    if fr == "partly_unchecked": text += "元にした公式ページの一部を確認できなかったので、念のため公式ページでも確かめてください。"
+    if fr == "unchecked": text += "元にした公式ページが変わっていないかを確かめられていないので、念のため公式ページでも確かめてください。"
+    return text
+
+def _summarize(res):
     st, loc = res["status"], res["location"]
-    days0 = res.get("days") or (res["candidates"][0]["days"] if res.get("candidates") else [])
+    b0 = loc.get("decision_blocked_by") or {}
+    if b0.get("reason") == "source_changed":          # 元の公式ページが変わった: 日付は言わない
+        ch = "、".join(f"「{x['title']}」" + ("(ページが無くなった)" if x.get("gone") else "") for x in b0["changed"][:3])
+        before = loc.get("collection_district_before_change")
+        return (f"このデータの元にした公式ページ {ch} が、{b0['checked_at'][:10]} の確認で、データを作ったときから変わっていました。"
+                f"作り直して確かめるまでは確かな答えとして返しません" + (f" (変更前のデータでは {before}地区)" if before else "") + "。"
+                f"公式ページで確かめるか、{CONTACT['name']} ({CONTACT['phone']}) に確認してください。")
+    days0 = res.get("days") or (res["candidates"][0].get("days", []) if res.get("candidates") else [])
     out_of_range = any(not d["in_calendar_range"] for d in days0)
     year = bool(days0) and (out_of_range or len({d["date"][:4] for d in days0}) > 1)
     onotes = "".join(f"{n}。" for n in res.get("official_notes", []))
@@ -721,15 +915,28 @@ def summarize(res):
     if st == "ambiguous" and len(cands) == 1 and loc.get("method") == "area_only_evidence":
         return _sentences(f"この地点の近くに住所・地番の位置データが無く、町の区域 (国勢調査の小地域) だけでは地区を確定できません。候補は {cand_text} です。",
                           per_day, tip, confirm, fy, onotes)
+    if st == "ambiguous" and len(cands) == 1 and loc.get("address"):
+        why = "".join(n.rstrip("。") + "。" for n in res.get("notes", [])[:2])
+        return _sentences(why, f"地区を確定できません。候補は {cand_text} です。", per_day, tip, confirm, fy, onotes)
     if st == "ambiguous" and len(cands) == 1:
         return _sentences(f"この地点を直接示す区域表の根拠が無く、地区を確定できません。近くの根拠からの候補は {cand_text} だけです。",
                           per_day, tip, confirm, fy, onotes)
     if st == "ambiguous":
-        return _sentences(f"地区を1つに決められません。候補: {cand_text}。", per_day, ye_text, tip, confirm, fy, onotes)
+        why = "".join(n.rstrip("。") + "。" for n in res["notes"][:2]) if loc.get("method", "").startswith("address_") or loc.get("method") == "municipality_not_stated" else ""
+        return _sentences(why, f"地区を1つに決められません。候補: {cand_text}。", per_day, ye_text, tip, confirm, fy, onotes)
     if st == "unresolved":
         b = loc.get("decision_blocked_by") or {}
         contact = f"{CONTACT['name']} ({CONTACT['phone']}) に確認してください。"
-        if b.get("reason") == "nearby_town_not_in_rules_table":
+        if b.get("reason") == "source_changed":
+            ch = "、".join(f"「{x['title']}」" for x in b["changed"][:3])
+            head = (f"このデータの元にした公式ページ {ch} が、{b['checked_at'][:10]} の確認で、データを作ったときから変わっていました。"
+                    f"作り直して確かめるまでは確かな答えとして返しません (変更前のデータでは {loc.get('collection_district_before_change')}地区)。公式ページで確かめてください。")
+        elif b.get("reason") == "address_not_found":
+            head = f"住所 ({b.get('label')}) の町名を、金沢市の町名として見つけられませんでした。" + (
+                f"よく似た町名は {'・'.join(b['similar_towns'])} です。丁目まで含めて町名を確かめてください。" if b.get("similar_towns") else "町名の書き方を確かめてください。")
+        elif b.get("reason") == "place_town_not_in_rules_table" and b.get("source") == "住所":
+            head = f"住所 {b['label']} の町名 {b['town']} は金沢市の収集区域表に載っていません。"
+        elif b.get("reason") == "nearby_town_not_in_rules_table":
             w = _where(loc)
             head = ((f"{w.replace('から約', ' (約').replace('m', 'm)', 1)} の町は区域表にありますが、" if w.startswith("最寄り") else "")
                     + (f"約{round(b['distance_m'])}m 先に、区域表に載っていない町 ({b['town']}、国勢調査の町名) があり、"
@@ -765,5 +972,10 @@ if __name__ == "__main__":
     if "--accuracy" in args: del args[args.index("--accuracy"):args.index("--accuracy") + 2]
     conf = float(args[args.index("--confidence") + 1]) if "--confidence" in args else ACC_CONF
     if "--confidence" in args: del args[args.index("--confidence"):args.index("--confidence") + 2]
+    if "--address" in args:
+        addr = args[args.index("--address") + 1]; del args[args.index("--address"):args.index("--address") + 2]
+        a = [x for x in args if not x.startswith("--")]
+        print(json.dumps(resolve_address(Kanazawa(), addr, a[0] if a else None, n), ensure_ascii=False, indent=1))
+        sys.exit()
     a = [x for x in args if not x.startswith("--")]
     print(json.dumps(resolve(Kanazawa(), a[0], a[1], a[2] if len(a) > 2 else None, n, online="--offline" not in args, accuracy_m=acc, accuracy_confidence=conf), ensure_ascii=False, indent=1))

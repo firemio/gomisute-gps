@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 12351,
+ "stop_reason": "end_turn",
+ "session_id": "0e8f0027-04f1-434b-8a2c-fa8883674cbd",
+ "total_cost_usd": 0.0384744,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3214,
+  "cache_read_input_tokens": 11032,
+  "output_tokens": 527,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3214,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 427,
+    "cache_read_input_tokens": 6147,
+    "cache_creation_input_tokens": 1952,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1952
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 527,
+   "cacheReadInputTokens": 11032,
+   "cacheCreationInputTokens": 3214,
+   "webSearchRequests": 0,
+   "costUSD": 0.0384744,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "金沢市長坂台7番38号は、収集カレンダーでは**長坂台地区**です。\n\n**2026年12月4日(金)に出せるごみ**\n- **資源 あき缶・ペットボトル プラスチック資源など**（いつもの「第1・3金曜日」の収集日です）\n\n**出す時刻：** 収集日の**午前8時30分まで**に出してください。\n\n**その後の収集日（12月）**\n- 燃やすごみ：12月7日(月)\n- びん：12月9日(水)\n- 資源 あき缶・ペットボトル プラスチック資源など：12月18日(金)\n- 燃やさないごみ：12月23日(水)\n\n12月は年末年始があるため、いつもの曜日と違う日になることがあります。上の日付は、カレンダーに載っている日付そのままです。分け方や集積所の場所は、このデータでは分かりません。\n\n**出典：** 金沢市「2026年度地区・校下別収集カレンダー(その5) — 長坂台（西部管理センター）2026年度版」、「2026年度地区別収集カレンダー — 町名一覧表 (区域表)」、「ごみの出し方のルール」\nお問い合わせ：金沢市 ごみ減量推進課（076-220-2302）",
+ "ttft_ms": 4750,
+ "type": "result",
+ "duration_ms": 17226,
+ "uuid": "211c7865-4e14-4c6f-bc26-222cb2202c9e",
+ "ttft_stream_ms": 3738,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 3739,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 18.5,
+ "stderr": "",
+ "question": "石川県金沢市長坂台7番38号 に住んでいます。2026年12月4日(金)にはどのごみを出せますか？"
+}

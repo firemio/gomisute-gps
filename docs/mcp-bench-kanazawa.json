@@ -1,0 +1,1659 @@
+{
+ "experiment": "同じ 28問 (金沢) を、ウェブ検索だけの AI と gomisute-gps のツールだけの AI に聞いた (どちらも Claude Opus 5.5、1問ずつ別のエージェント)",
+ "run_date": "2026-10-17/18",
+ "tool_access": "MCP ツールと同じ JSON を返すコマンド (bench/gomisute_cli.py) を、データを読み込んだままのローカルサーバー (bench/serve_local.py) 経由で",
+ "summary": {
+  "web_only": {
+   "items_correct": 28,
+   "district_correct": 28,
+   "usage": {
+    "n": 28,
+    "seconds": {
+     "mean": 231.8,
+     "median": 236.5
+    },
+    "model_turns": {
+     "mean": 32.5,
+     "median": 32.0
+    },
+    "tool_calls": {
+     "mean": 17.5,
+     "median": 17.5
+    },
+    "final_context_tokens": {
+     "mean": 79122.5,
+     "median": 78820.5
+    },
+    "input_tokens_all_turns": {
+     "mean": 2235876.1,
+     "median": 2190678.5
+    },
+    "output_tokens": {
+     "mean": 9207.2,
+     "median": 9637.0
+    }
+   }
+  },
+  "tool_only": {
+   "items_correct": 28,
+   "district_correct": 28,
+   "usage": {
+    "n": 28,
+    "seconds": {
+     "mean": 9.7,
+     "median": 9.6
+    },
+    "model_turns": {
+     "mean": 2.5,
+     "median": 2.5
+    },
+    "tool_calls": {
+     "mean": 1,
+     "median": 1.0
+    },
+    "final_context_tokens": {
+     "mean": 59939.3,
+     "median": 59932.0
+    },
+    "input_tokens_all_turns": {
+     "mean": 142843.6,
+     "median": 142486.0
+    },
+    "output_tokens": {
+     "mean": 860.4,
+     "median": 933.0
+    }
+   }
+  }
+ },
+ "cases": [
+  {
+   "id": "c01",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市二ツ屋町9番3号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？",
+   "truth": {
+    "district": "戸板",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c01",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 241.0,
+     "model_turns": 30,
+     "tool_calls": 17,
+     "final_context_tokens": 78679,
+     "input_tokens_all_turns": 2061322,
+     "output_tokens": 10469
+    },
+    "answer_ja": "2026年11月12日(木)は「資源回収」の日です。あき缶、ペットボトル、プラスチック資源などを出せます。燃やすごみは出せません。\n\n【お住まいの地区】\n金沢市の「住所から地区・校下検索」では、二ツ屋町は町全体が「戸板」地区（東部管理センター）です。番地による分かれ目はないので、9番3号も戸板地区になります。\n\n【戸板地区の収集日（2026年度カレンダーより）】\n・燃やすごみ：毎週 火曜日・金曜日\n・燃やさないごみ：第3木曜日（11月は19日）\n・資源（あき缶・ペットボトル・プラスチック資源など）：第2・4木曜日（11月は12日と26日）\n・資源（プラスチック資源のみ）：第5木曜日（11月は第5木曜日がないので収集なし）\n・びん：第1水曜日（11月は4日）\n\n11月12日は第2木曜日なので、資源回収の日にあたります。\n\n【この日に出せるもの】\n・あき缶\n・ペットボトル\n・プラスチック資源（容器包装プラスチックと製品プラスチック）\n・スプレー缶・カセットボンベ\n・乾電池・水銀含有製品\n・フロン回収製品\n資源回収の品目は指定ごみ袋がいりません。ただし品目ごとに出し方が違います。あき缶はつぶさずに出し、ペットボトルは中をひと洗いします。プラスチック資源は半透明の袋に入れて口をしばります。詳しくは市の各品目のページで確認してください。\n\n【前後の日程】\n・燃やすごみ：前は11月10日(火)、次は11月13日(金)\n・燃やさないごみ：11月19日(木)\n・びん：次は12月の第1水曜日\n\n収集日一覧は、金沢市公式サイトの「2026年度地区・校下別収集カレンダー(その4)」の戸板の欄に載っています。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c01",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.2,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59967,
+     "input_tokens_all_turns": 115000,
+     "output_tokens": 937
+    },
+    "answer_ja": "石川県金沢市二ツ屋町9番3号は、金沢市の収集カレンダーで「戸板」地区にあたります。\n\n2026年11月12日(木)に出せるのは次のとおりです。\n・資源(あき缶・ペットボトル、プラスチック資源など)\n※この地区では第2・第4木曜日に収集されます。\n\n出す時間：収集日の午前8時30分までに出してください。\n\n参考として、この日より後の収集日は次のとおりです。\n・燃やすごみ：11月13日(金)\n・燃やさないごみ：11月19日(木)\n・資源(あき缶・ペットボトル、プラスチック資源など)：11月26日(木)\n・びん：12月2日(水)\n\n品目ごとの細かい分け方や袋のこと、集積所の場所はこのツールでは確認できません。わからない点は金沢市ごみ減量推進課(076-220-2302)にお問い合わせください。\n出典：金沢市「2026年度地区・校下別収集カレンダー(その4) 戸板」「ごみの出し方のルール」",
+    "items": [
+     "資源(あき缶・ペットボトル、プラスチック資源など)"
+    ],
+    "district": "戸板",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html#toita",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c02",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市金石東一丁目4番20号 に住んでいます。2026年12月8日(火)にはどのごみを出せますか？",
+   "truth": {
+    "district": "金石町",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c02",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 136.2,
+     "model_turns": 23,
+     "tool_calls": 12,
+     "final_context_tokens": 69940,
+     "input_tokens_all_turns": 1465489,
+     "output_tokens": 5470
+    },
+    "answer_ja": "2026年12月8日(火)に出せるのは「燃やすごみ」だけです。\n\n【調べ方】\n・金沢市の「住所から地区・校下検索」では、金石東1丁目は「金石町」の地区(校下)に入っています。番地による分け方はありません。\n・金沢市公式の「2026年度地区・校下別収集カレンダー」で金石町(東部管理センター)の欄を見ると、収集日は次のとおりです。\n - 燃やすごみ：毎週 火曜日・金曜日\n - 燃やさないごみ：第4月曜日\n - 資源(あき缶・ペットボトル・プラスチック資源など)：第1・第3月曜日\n - 資源(プラスチック資源)：第5月曜日\n - びん：第2水曜日\n\n12月8日は火曜日なので、燃やすごみの日です。そのほかの品目はこの日には集められません。\n\n【12月のほかの収集日(金石町)】\n・資源(あき缶・ペットボトル等)：12月7日(月)、21日(月)\n・びん：12月9日(水)\n・燃やさないごみ：12月28日(月)\n・資源(プラスチック資源)：12月は第5月曜日がないので、収集はありません。\n・年末の燃やすごみは12月29日(火)が最後で、年始は1月5日(火)から始まります。\n\n燃やすごみは、金沢市の指定ごみ袋に入れて、いつものごみステーションに出してください。\n出典：金沢市公式ホームページ「2026年度地区・校下別収集カレンダー」「住所から地区・校下検索」。わからないことは、金沢市ごみ減量推進課(076-220-2302)に聞くことができます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c02",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.6,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59913,
+     "input_tokens_all_turns": 114946,
+     "output_tokens": 949
+    },
+    "answer_ja": "石川県金沢市金石東一丁目4番20号は、金沢市の収集カレンダーでは「金石町」地区です。\n\n2026年12月8日(火)は「燃やすごみ」の日です（この地区の燃やすごみは毎週火曜日と金曜日）。\n収集日の午前8時30分までに出してください。\n\nこの後の収集日は次のとおりです。\n・12月9日(水) びん\n・12月11日(金) 燃やすごみ\n・12月21日(月) 資源（あき缶・ペットボトル・プラスチック資源など）\n・12月28日(月) 燃やさないごみ\n\n12月は年末年始の変更があります。年末の収集は地区により12月28日か29日までなので、その前後はカレンダーの日付で確かめてください。分別のしかたやごみ集積所の場所はこのツールでは分かりません。わからない点は、金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その2) 金石町（東部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "金石町",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19364.html#kanaiwamachi",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c03",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市増泉一丁目34番24号 に住んでいます。2026年10月23日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "中村町",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c03",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 193.9,
+     "model_turns": 28,
+     "tool_calls": 17,
+     "final_context_tokens": 75019,
+     "input_tokens_all_turns": 1871177,
+     "output_tokens": 6723
+    },
+    "answer_ja": "金沢市の公式情報で確認しました。\n\n【お住まいの地区】\n金沢市の「住所から地区・校下検索」と2026年度版の地区別収集カレンダーでは、増泉1丁目は「中村町」校下・地区（西部管理センター）です。増泉1丁目は街区や番地による分け方がないので、34番24号もこの地区になります。\n\n【2026年10月23日（金）に出せるごみ】\n燃やすごみ（中村町地区の収集日は毎週火曜日と金曜日）\n\nこの日、ほかの品目の収集はありません。\n\n参考までに、中村町地区の10月の収集日は次のとおりです（2026年度版カレンダーより）。\n・燃やすごみ：毎週火・金曜日（10月は2・6・9・13・16・20・23・27・30日）\n・資源（あき缶・ペットボトル、プラスチック資源など）：第1・3木曜日（10月1日、15日）\n・びん：第2水曜日（10月14日）\n・燃やさないごみ：第4水曜日（10月28日）\n・資源（プラスチック資源）：第5木曜日（10月29日）\n\nご不明な点は、金沢市ごみ減量推進課（076-220-2302）に問い合わせるか、金沢市公式LINEで地区を設定してカレンダーを確認できます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c03",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.8,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59912,
+     "input_tokens_all_turns": 114945,
+     "output_tokens": 823
+    },
+    "answer_ja": "石川県金沢市増泉一丁目34番24号は、金沢市の収集カレンダーでは「中村町」地区（西部管理センター）にあたります。\n\n2026年10月23日(金)に出せるのは「燃やすごみ」です（この地区の燃やすごみは毎週火曜日と金曜日）。\n\n・出す時間：収集日の午前8時30分まで\n・この地区の次の収集日：\n  - 10月27日(火)：燃やすごみ\n  - 10月28日(水)：燃やさないごみ\n  - 10月29日(木)：資源（プラスチック資源）\n  - 11月5日(木)：資源（あき缶・ペットボトル・プラスチック資源など）\n  - 11月11日(水)：びん\n\n品目ごとの分け方や出し方（袋・容器など）と、ごみ集積所の場所はこのツールではわかりません。必要なら金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その5) 中村町」、「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "中村町",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html#nakamuramachi",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c04",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市天神町一丁目5番44号 に住んでいます。2026年10月20日(火)にはどのごみを出せますか？",
+   "truth": {
+    "district": "味噌蔵",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c04",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 234.4,
+     "model_turns": 35,
+     "tool_calls": 19,
+     "final_context_tokens": 80701,
+     "input_tokens_all_turns": 2427565,
+     "output_tokens": 9720
+    },
+    "answer_ja": "2026年10月20日（火）は、天神町1丁目の地区では「資源回収」の日です。\n\n【お住まいの地区】\n金沢市の「2026年度地区別収集カレンダー」の町名一覧では、天神町1丁目は番地による分かれ目がなく、全域が「味噌蔵」地区（東部管理センター）です。\n\n【10月20日に出せるもの】\n味噌蔵地区では、毎月第1・第3火曜日が「資源（あき缶・ペットボトル・プラスチック資源など）」の日です。10月20日はちょうど第3火曜日にあたります。\n・あき缶\n・ペットボトル\n・プラスチック資源（容器包装プラスチックと、長辺50cm以下の製品プラスチック）\n・スプレー缶・カセットボンベ\n・乾電池・水銀含有製品\n・フロン回収製品\n収集日は同じですが、出し方は品目ごとに違います。たとえばプラスチック資源は、中身の見える半透明の袋に入れて口をしばります。指定ごみ袋は不要で、袋は二重にしないでください。他の品目は市の品目別ページで確認してください。\n\n【この日には出せないもの】\n・燃やすごみ：毎週月曜日と木曜日です（直近は10/19（月）と10/22（木））\n・びん：第2水曜日です（10月は14日）\n・燃やさないごみ：第4水曜日です（10月は28日）\n\n参考：金沢市「2026年度地区別収集カレンダー」の味噌蔵地区のページ\nhttps://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html#misogura\nカレンダーは市のLINE公式アカウントや「5374App」でも見られます。問い合わせ先は金沢市ごみ減量推進課（076-220-2302）です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c04",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.1,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59950,
+     "input_tokens_all_turns": 114983,
+     "output_tokens": 928
+    },
+    "answer_ja": "石川県金沢市天神町一丁目5番44号は、金沢市の「味噌蔵」地区（収集カレンダー上の地区名）です。\n\n2026年10月20日(火)に出せるのは次のごみです。\n・資源 あき缶・ペットボトル プラスチック資源など（第1・3火曜日の収集）\n\n当日の午前8時30分までに出してください（金沢市「ごみの出し方のルール」）。\n\nこの地区の次の収集日は次のとおりです。\n・燃やすごみ：10月22日(木)\n・燃やさないごみ：10月28日(水)\n・びん：11月11日(水)\n\n品目ごとの分け方や出し方（袋・容器など）と、ごみ集積所の場所は今回の情報には入っていません。わからない点は金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その6) — 味噌蔵（東部管理センター）2026年度版」",
+    "items": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "district": "味噌蔵",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html#misogura",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c05",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市三口新町四丁目15番16号 に住んでいます。2026年12月4日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "南小立野",
+    "collections": [
+     "燃やさないごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c05",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 238.6,
+     "model_turns": 34,
+     "tool_calls": 19,
+     "final_context_tokens": 80819,
+     "input_tokens_all_turns": 2365841,
+     "output_tokens": 10290
+    },
+    "answer_ja": "2026年12月4日(金)に出せるのは「燃やさないごみ」(埋立ごみ・金属ごみ)です。\n\n【調べた手順】\n1. 金沢市の「住所から地区・校下検索」で見ると、三口新町1〜4丁目は番地に関係なく、すべて「南小立野」地区です。\n2. 金沢市「2026年度地区・校下別収集カレンダー」の南小立野(西部管理センター)の欄はこうなっています。\n ・燃やすごみ：毎週月曜日・木曜日\n ・燃やさないごみ：第1金曜日(12月は4日)\n ・資源(あき缶・ペットボトル・プラスチック資源など)：第2・4金曜日(12月は11日・25日)\n ・資源(プラスチック資源)：第5金曜日(12月はなし)\n ・びん：第3水曜日(12月は16日)\n\n12月4日は12月の第1金曜日なので、燃やさないごみの日です。燃やすごみ・資源・びんはこの日には出せません。\n\n【前後の日程】\n・燃やすごみ：12月3日(木)と7日(月)\n・資源：12月11日(金)\n・びん：12月16日(水)\n\n【年末年始】\n燃やすごみの年末最終日は12月28日(月)、年始は1月4日(月)からです。\n\n市のLINE公式アカウント「金沢市」で地区を「南小立野」に設定しておくと、前日の夜に翌日のごみの種類が通知されます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c05",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 10.1,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59953,
+     "input_tokens_all_turns": 114987,
+     "output_tokens": 846
+    },
+    "answer_ja": "石川県金沢市三口新町四丁目15番16号は、金沢市の収集カレンダーでは「南小立野」地区にあたります。\n\n2026年12月4日(金)に出せるのは「燃やさないごみ」です(第1金曜日の収集)。\n\n・出す時間: 収集日の午前8時30分まで\n・次の収集予定(参考): 燃やすごみは12月7日(月)、資源(あき缶・ペットボトル・プラスチック資源など)は12月11日(金)、びんは12月16日(水)、次の燃やさないごみは2027年1月8日(金)です。\n\n12月と1月は年末年始があるため、いつもの「第N曜日」と違う日になることがあります。年末年始の前後はカレンダーで日付を確かめてください。ここでは分別のしかたや集積所の場所まではわからないので、金沢市の「ごみの出し方のルール」を見るか、金沢市 ごみ減量推進課(076-220-2302)に聞いてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その7) 南小立野(西部管理センター)」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やさないごみ"
+    ],
+    "district": "南小立野",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html#minamikodatsuno",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c06",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市田井町11番18号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？",
+   "truth": {
+    "district": "味噌蔵",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c06",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 199.6,
+     "model_turns": 30,
+     "tool_calls": 16,
+     "final_context_tokens": 79169,
+     "input_tokens_all_turns": 2061901,
+     "output_tokens": 7903
+    },
+    "answer_ja": "2026年11月12日(木)に出せるのは「燃やすごみ」です。\n\n【調べた内容】\n・金沢市の「住所から地区・校下検索」で確認すると、田井町は番地による区分がなく、町全体が「味噌蔵」地区・校下(東部管理センター)です。\n・金沢市の「2026年度地区・校下別収集カレンダー」によると、味噌蔵地区の収集日は次のとおりです。\n - 燃やすごみ:毎週 月曜日・木曜日\n - 資源(あき缶・ペットボトル・プラスチック資源など):第1・第3火曜日(11月は3日・17日)\n - 資源(プラスチック資源):第5火曜日(11月はなし)\n - 月1回の品目:第2水曜日(11月11日)と第4水曜日(11月25日)\n   ※この2日が「燃やさないごみ」と「びん」で、カレンダーの並びから見ると、燃やさないごみが第4水曜日、びんが第2水曜日と思われます。\n・11月12日は第2木曜日で、祝日でもありません。この日は燃やすごみの日にだけ当たり、ほかの品目の収集はありません。\n\n【出し方】\n燃やすごみは金沢市指定ごみ袋に入れ、口をしばって、いつものごみステーションに出してください。\nびん・缶などの資源や燃やさないごみは、11月12日には出さないでください。\n前日の11月11日(水)は月1回の品目の日です。11月はこの日を逃すと、次は12月9日(第2水曜日)になります。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c06",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.6,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59911,
+     "input_tokens_all_turns": 169969,
+     "output_tokens": 963
+    },
+    "answer_ja": "金沢市田井町11番18号は、金沢市の収集カレンダーで「味噌蔵地区」にあたります。\n\n2026年11月12日(木)に出せるのは「燃やすごみ」です(この地区の燃やすごみは毎週月曜日・木曜日)。\n・出す時間: 収集日の午前8時30分までに出してください。\n\nこの日はほかの品目の収集はありません。近いうちのほかの収集日は次のとおりです。\n・燃やすごみ: 11月16日(月)\n・資源(あき缶・ペットボトル・プラスチック資源など): 11月17日(火)\n・燃やさないごみ: 11月25日(水)\n・びん: 12月9日(水)\n\n品目ごとの分け方や出し方(袋・容器など)、ごみ集積所の場所はこのツールでは分かりません。分からないときは、金沢市 ごみ減量推進課(076-220-2302)に問い合わせてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その6) 味噌蔵(東部管理センター)」と「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "味噌蔵",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html#misogura",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c07",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市浅野本町二丁目18番21号 に住んでいます。2026年10月28日(水)にはどのごみを出せますか？",
+   "truth": {
+    "district": "浅野町",
+    "collections": [
+     "びん"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c07",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 307.9,
+     "model_turns": 36,
+     "tool_calls": 18,
+     "final_context_tokens": 84942,
+     "input_tokens_all_turns": 2542005,
+     "output_tokens": 12055
+    },
+    "answer_ja": "浅野本町二丁目は、金沢市の地区別収集カレンダーでは丁目・番地による分割がなく、町全体が「浅野町」地区（東部管理センター）です。\n\n2026年10月28日（水）は10月の第4水曜日です。浅野町地区では第4水曜日が「びん」（あきびん）の日なので、この日に出せるのは **びん（あきびん）だけ** です。\n\n■ 出し方\n・収集日の朝8時30分までに、決められたごみステーションに出してください。\n・中身を使い切り、軽くすすいでください。\n・キャップは外してください。プラスチック製はプラスチック資源、金属製はあき缶として出します。\n・ステーションのコンテナに、無色・茶色・その他の色に分けて入れてください。指定ごみ袋はいりません。\n・割れたびん、化粧品や薬品のびん、耐熱ガラス、コップなどは「びん」に出せません。埋立ごみ（燃やさないごみ）として出してください。\n\n■ 10月28日（水）に出せないもの\n・燃やすごみ：浅野町地区は毎週月曜日と木曜日です。10月28日の前後なら26日（月）と29日（木）です。\n・燃やさないごみ（埋立ごみ・金属類）：第2水曜日です。10月は14日でした。次は11月11日（水）です。\n・資源（あき缶・ペットボトル・プラスチック資源など）：第1・第3火曜日です。次は11月3日（火）です。\n・プラスチック資源のみの第5火曜日の収集：10月は第5火曜日がないので、ありません。\n\n※年末年始は収集日が変わります（年末は12月28日まで、年始は1月4日から）。\n\n出典：金沢市「2026年度地区別収集カレンダー」"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c07",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.1,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59924,
+     "input_tokens_all_turns": 169994,
+     "output_tokens": 942
+    },
+    "answer_ja": "石川県金沢市浅野本町二丁目18番21号は、金沢市の収集カレンダーでは「浅野町」地区にあたります。\n\n2026年10月28日(水)に出せるのは「びん」です（第4水曜日の収集）。\n収集日の午前8時30分までに出してください。\n\nこの日はほかの品目の収集はありません。参考までに、この後の収集日は次のとおりです。\n・燃やすごみ：10月29日(木)\n・資源（あき缶・ペットボトル・プラスチック資源など）：11月3日(火・祝)\n・燃やさないごみ：11月11日(水)\n・びん（次回）：11月25日(水)\n\n品目ごとの細かい分け方や出し方（袋・容器など）と、ごみ集積所の場所はこの情報には含まれていません。必要なら、金沢市 ごみ減量推進課（076-220-2302）に確認してください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その1) 浅野町（東部管理センター）」と「ごみの出し方のルール」",
+    "items": [
+     "びん"
+    ],
+    "district": "浅野町",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html#asanomachi",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c08",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市長坂台7番38号 に住んでいます。2026年12月4日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "長坂台",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c08",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 187.7,
+     "model_turns": 25,
+     "tool_calls": 13,
+     "final_context_tokens": 74921,
+     "input_tokens_all_turns": 1659466,
+     "output_tokens": 7026
+    },
+    "answer_ja": "金沢市長坂台は、市のごみ収集では「長坂台」地区（西部管理センターの担当）に入ります。長坂台は町名一覧表で番地による区分けがないので、7番38号も同じ地区です。\n\n**2026年12月4日（金）は12月の第1金曜日で、資源回収の日です（長坂台の資源回収は第1・第3金曜日）。この日に出せるのは次のものです。**\n- プラスチック資源（容器包装プラスチックと製品プラスチックをまとめて半透明の袋に入れ、口をしばる。指定ごみ袋は不要）\n- あき缶\n- ペットボトル\n- 乾電池・水銀含有製品\n- スプレー缶・カセットボンベ\n- フロン回収製品\n\n**この日に出せないもの**\n- 燃やすごみ：長坂台は毎週月曜日と木曜日。前後は12月3日（木）と12月7日（月）です。\n- 燃やさないごみ（埋立ごみ、金属・小型家電類、ライター）：第4水曜日なので、12月は23日（水）です。\n- あきびん：第2水曜日なので、12月は9日（水）です。\n\n12月の次の資源回収は18日（金）です。12月には第5金曜日がないので、プラスチック資源だけを集める日はありません。年末の収集は12月28日（月）までで、年始は1月4日（月）から再開します。\n\n出す時刻や細かいルールは、市の「2026年度地区・校下別収集カレンダー」の長坂台の欄か、市の公式LINE「ごみ出しサポート」で確認できます。問い合わせ先は金沢市ごみ減量推進課（076-220-2302）です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c08",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 11.8,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59957,
+     "input_tokens_all_turns": 174944,
+     "output_tokens": 1190
+    },
+    "answer_ja": "石川県金沢市長坂台7番38号は、金沢市の収集カレンダーでは「長坂台」地区です。\n\n2026年12月4日(金)に出せるのは次のごみです。\n・資源 あき缶・ペットボトル プラスチック資源など（第1・3金曜日の収集日）\n\n収集日の午前8時30分までに出してください（金沢市「ごみの出し方のルール」）。\n\nこの日に燃やすごみ、びん、燃やさないごみは出せません。次の収集日は以下のとおりです。\n・燃やすごみ：12月7日(月)\n・びん：12月9日(水)\n・資源 あき缶・ペットボトル プラスチック資源など：12月18日(金)\n・燃やさないごみ：12月23日(水)\n\n12月と1月は年末年始のため、いつもの曜日どおりにならない日があります。この期間はカレンダーの日付で確認してください。品目ごとの分け方や出し方（袋・容器など）と、ごみ集積所の場所はここでは分かりません。必要なら金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その5) 長坂台（西部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "district": "長坂台",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html#nagasakadai",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c09",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市小立野四丁目6番10号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？",
+   "truth": {
+    "district": "小立野",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c09",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 241.9,
+     "model_turns": 36,
+     "tool_calls": 19,
+     "final_context_tokens": 80670,
+     "input_tokens_all_turns": 2493047,
+     "output_tokens": 10091
+    },
+    "answer_ja": "小立野四丁目は、金沢市の地区別収集カレンダーでは「小立野」校下（東部管理センター）に入ります。小立野4丁目は番地による分かれ目がなく、丁目全体がこの地区です。\n\n2026年11月12日(木)は第2木曜日なので、**「資源（あき缶・ペットボトル・プラスチック資源など）」の日**です。出せるものは次のとおりです。\n・あき缶（中をすすいで、つぶさずに出す）\n・ペットボトル（キャップを外して中をすすぎ、なるべくつぶす。キャップとはがせるラベルはプラスチック資源へ）\n・プラスチック資源（容器包装プラと製品プラ。中が見える半透明の袋にまとめて入れる）\n・乾電池・水銀含有製品、スプレー缶・カセットボンベ、フロン回収製品（ステーションの回収箱へ。スプレー缶は使い切ってから出す）\n\nこの日は燃やすごみの日ではありません。\n\n【参考】小立野地区の2026年11月のほかの収集日\n・燃やすごみ：毎週火曜・金曜（11月12日の前後なら10日(火)と13日(金)）\n・びん：第1水曜（11月4日）\n・燃やさないごみ：第3水曜（11月18日）\n・資源（缶・ペット・プラなど）：第2・第4木曜（11月12日と26日）\n・プラスチック資源だけの日：第5木曜（11月はありません）\n\nごみは収集日の朝8時30分までに、決められたごみステーションに出してください。市の公式アプリ「いいね金沢5374App」やLINE「ごみ出しサポート」に地区を設定すると、日ごとの収集品目を確認でき、前日の通知も受け取れます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c09",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.5,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59970,
+     "input_tokens_all_turns": 115003,
+     "output_tokens": 960
+    },
+    "answer_ja": "石川県金沢市小立野四丁目6番10号は、金沢市の収集カレンダーでは「小立野」地区に当たります。\n\n2026年11月12日(木)に出せるのは次のごみです。\n・資源(あき缶・ペットボトル・プラスチック資源など)。この地区では第2・第4木曜日が収集日です。\n\n収集日の午前8時30分までに出してください。\n\nこの日は燃やすごみ・燃やさないごみ・びんの収集日ではありません。次の収集日は以下のとおりです。\n・燃やすごみ：11月13日(金)\n・燃やさないごみ：11月18日(水)\n・資源(あき缶・ペットボトル・プラスチック資源など)：11月26日(木)\n・びん：12月2日(水)\n\n品目ごとの分け方・袋の種類やごみ集積所の場所は、このツールの情報には入っていません。わからないときは金沢市ごみ減量推進課(076-220-2302)に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その3) 小立野(東部管理センター)」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "district": "小立野",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#kodatuno",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c10",
+   "kind": "address_ordinary",
+   "question": "石川県金沢市並木町2番21号 に住んでいます。2026年10月20日(火)にはどのごみを出せますか？",
+   "truth": {
+    "district": "材木",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c10",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 273.9,
+     "model_turns": 35,
+     "tool_calls": 18,
+     "final_context_tokens": 81182,
+     "input_tokens_all_turns": 2441375,
+     "output_tokens": 9855
+    },
+    "answer_ja": "金沢市並木町は、金沢市のごみ収集では「材木」地区（校下）にあたります。市の「2026年度地区別収集カレンダー」の町名一覧で、並木町は番地による分け方がなく、町全体が材木地区です。\n\n2026年10月20日（火）は10月の第3火曜日です。この日に出せるのは次のごみです。\n\n■ 資源（あき缶・ペットボトル・プラスチック資源など）\n→ 材木地区では毎月第1・第3火曜日が収集日で、2026年10月は6日と20日です。\n\nこの日には出せないごみ（材木地区の10月の予定）:\n・燃やすごみ：毎週月曜日・木曜日（20日の前後なら19日（月）か22日（木））\n・燃やさないごみ：第4水曜日（10月28日）\n・びん：第2水曜日（10月14日）\n・資源（プラスチック資源のみ）：第5火曜日（10月は第5火曜日がないので収集なし）\n\nごみを出す時間や細かい分け方は、市の公式カレンダーか、金沢市公式LINEの「ごみ出しサポート」で確認できます。LINEで地区を「材木」に設定すると、前日の夜に翌日のごみを知らせてくれます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c10",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.7,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59912,
+     "input_tokens_all_turns": 114941,
+     "output_tokens": 976
+    },
+    "answer_ja": "石川県金沢市並木町2番21号は、金沢市の「材木」地区（収集カレンダー上の地区名）にあたります。\n\n2026年10月20日(火)に出せるのは次のごみです。\n・資源（あき缶・ペットボトル・プラスチック資源など）\n※この地区の「第1・3火曜日」の収集日です。\n\n出す時間：収集日の午前8時30分までに出してください。\n\nその後の収集日（参考）\n・燃やすごみ：10月22日(木)\n・燃やさないごみ：10月28日(水)\n・資源（あき缶・ペットボトル・プラスチック資源など）：11月3日(火・祝)。祝日も収集があります\n・びん：11月11日(水)\n\n品目ごとの分け方・出し方（袋や容器など）とごみ集積所の場所は、この情報に含まれていません。金沢市の「ごみの出し方のルール」で確認するか、金沢市 ごみ減量推進課（076-220-2302）にお問い合わせください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その3) 材木（東部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "資源（あき缶・ペットボトル・プラスチック資源など）"
+    ],
+    "district": "材木",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#zaimoku",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c11",
+   "kind": "address_split_town",
+   "question": "石川県金沢市駅西本町六丁目6番27号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？",
+   "truth": {
+    "district": "戸板",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c11",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 338.0,
+     "model_turns": 43,
+     "tool_calls": 25,
+     "final_context_tokens": 88597,
+     "input_tokens_all_turns": 3182972,
+     "output_tokens": 13198
+    },
+    "answer_ja": "2026年11月12日(木)は「資源回収」の日です。出せるのはプラスチック資源、あき缶、ペットボトル、スプレー缶・カセットボンベ、乾電池・水銀含有製品、フロン回収製品です。\n\n■ お住まいの地区\n金沢市の「住所から地区・校下検索」では、駅西本町6丁目の1〜14番が「戸板」地区（東部管理センター管内）になっています。6番27号もここに入ります。（6丁目15番6〜17号だけは大徳地区ですが、今回の住所は該当しません。）\n\n■ 戸板地区の収集日（2026年度カレンダー）\n・燃やすごみ：毎週火曜日・金曜日\n・燃やさないごみ（埋立ごみ・金属・小型家電類・ライター）：第3木曜日（11月は19日）\n・資源回収（プラスチック資源・あき缶・ペットボトルなど）：第2・第4木曜日（11月は12日と26日）\n・第5週のプラスチック資源の日：第5木曜日（11月は第5木曜日がないのでありません）\n・びん：第1水曜日（11月は4日）\n\n11月12日は第2木曜日なので、資源回収の日にあたります。\n\n■ 11/12に出せるもの\n・プラスチック資源（容器包装プラスチックと製品プラスチック。中身の見える半透明の袋にまとめ、口をしばって出します。指定ごみ袋は使いません。汚れは軽く洗うかふき取ります）\n・あき缶\n・ペットボトル\n・スプレー缶・カセットボンベ\n・乾電池・水銀含有製品\n・フロン回収製品\n\n■ この日に出せないもの\n・燃やすごみ：次は11月13日(金)です\n・燃やさないごみ：11月19日(木)です\n・びん：11月分は4日(水)に終わっていて、次は12月の第1水曜日です\n\n当日の朝8時30分までに、決められたごみステーションに出してください。分からないことがあれば、金沢市ごみ減量推進課（076-220-2302）に問い合わせるか、金沢市LINE公式アカウントの「ごみ出しサポート」で戸板地区を登録すると、通知を受け取れて便利です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c11",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.4,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59990,
+     "input_tokens_all_turns": 170060,
+     "output_tokens": 179
+    },
+    "answer_ja": "石川県金沢市駅西本町六丁目6番27号は、金沢市の収集カレンダーでは「戸板」地区です。\n\n2026年11月12日(木)に出せるのは次のごみです。\n・資源(あき缶・ペットボトル・プラスチック資源など)　※この地区は毎月第2・第4木曜日の収集です\n\n出す時間：収集日の午前8時30分までに出してください。\n\n次の収集予定：\n・燃やすごみ：11月13日(金)\n・燃やさないごみ：11月19日(木)\n・資源(あき缶・ペットボトル・プラスチック資源など)の次回：11月26日(木)\n・びん：12月2日(水)\n\nなお、品目ごとの分け方や出し方(袋・容器など)と、ごみ集積所の場所はこの情報には含まれていません。分からないときは、金沢市 ごみ減量推進課(076-220-2302)に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その4) 戸板」、「ごみの出し方のルール」",
+    "items": [
+     "資源(あき缶・ペットボトル・プラスチック資源など)"
+    ],
+    "district": "戸板",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html#toita",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c12",
+   "kind": "address_split_town",
+   "question": "石川県金沢市尾張町一丁目1番16号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？",
+   "truth": {
+    "district": "味噌蔵",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c12",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 274.8,
+     "model_turns": 37,
+     "tool_calls": 20,
+     "final_context_tokens": 79988,
+     "input_tokens_all_turns": 2567023,
+     "output_tokens": 9748
+    },
+    "answer_ja": "2026年11月12日(木)に出せるのは「燃やすごみ」だけです。\n\n【調べ方】\n・金沢市の「住所から地区・校下検索」(2026年度版)を見ると、尾張町1丁目は1番1〜9号が「松ヶ枝」、1番10号以降が「味噌蔵」です。1番16号なので、お住まいは「味噌蔵」地区(東部管理センター)になります。\n・2026年度の味噌蔵地区の収集カレンダーは次のとおりです。\n  - 燃やすごみ：毎週月曜日・木曜日\n  - 燃やさないごみ：第4水曜日(11月は25日)\n  - 資源(あき缶・ペットボトル・プラスチック資源など)：第1・3火曜日(11月は3日・17日)\n  - 資源(プラスチック資源)：第5火曜日(11月は該当日なし)\n  - びん：第2水曜日(11月は11日)\n\n11月12日は木曜日なので、燃やすごみの日です。ほかの分別は収集日ではありません。この日について、カレンダーに収集日の変更(※)は出ていません。\n\n燃やすごみは、市の指定ごみ袋に入れて地域のごみステーションに出してください。くわしくは金沢市の地区別収集カレンダー(味噌蔵)をご覧ください。問い合わせ先は金沢市ごみ減量推進課(076-220-2302)です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c12",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.2,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59940,
+     "input_tokens_all_turns": 170008,
+     "output_tokens": 799
+    },
+    "answer_ja": "石川県金沢市尾張町一丁目1番16号は、金沢市の「味噌蔵」地区（東部管理センター）の収集カレンダーに当たります。\n\n2026年11月12日(木)に出せるのは「燃やすごみ」です。この地区の燃やすごみは毎週月曜日と木曜日に収集されます。\n\n収集日の午前8時30分までに出してください。\n\n次の収集日は以下のとおりです。\n・燃やすごみ：11月16日(月)\n・資源（あき缶・ペットボトル、プラスチック資源など）：11月17日(火)\n・燃やさないごみ：11月25日(水)\n・びん：12月9日(水)\n\n品目ごとの分け方や袋・容器の使い方、ごみ集積所の場所はこの結果には含まれていません。必要なら金沢市ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その6) 味噌蔵（東部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "味噌蔵",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html#misogura",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c13",
+   "kind": "address_split_town",
+   "question": "石川県金沢市東山三丁目26番11号 に住んでいます。2026年10月26日(月)にはどのごみを出せますか？",
+   "truth": {
+    "district": "馬場",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c13",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 248.8,
+     "model_turns": 23,
+     "tool_calls": 13,
+     "final_context_tokens": 76547,
+     "input_tokens_all_turns": 1537670,
+     "output_tokens": 8505
+    },
+    "answer_ja": "2026年10月26日(月)に出せるのは「燃やすごみ」だけです。\n\n東山三丁目26番11号は「馬場」地区(東部管理センター)にあたります。金沢市の町名対応表では、東山3丁目のうち6番12号だけが森山地区で、それ以外はすべて馬場地区です。\n\n馬場地区の燃やすごみは毎週月曜日と木曜日に収集されます。10月26日は第4月曜日なので、燃やすごみの日です。燃やすごみは指定ごみ袋に入れて、いつものごみステーションに出してください。\n\nこの日は燃やさないごみ、資源(あき缶・ペットボトル、プラスチック資源など)、びんは収集しません。馬場地区では、これらは火曜日か第3水曜日に収集されます。10月の場合は6日・13日・27日(火)と21日(水)です。品目ごとの日付は、市の地区別収集カレンダーで確認してください。\n\n参考: 金沢市「2026年度地区・校下別収集カレンダー(馬場)」\nhttps://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html#baba\n問い合わせ先: 金沢市ごみ減量推進課 076-220-2302"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c13",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.4,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59911,
+     "input_tokens_all_turns": 169975,
+     "output_tokens": 916
+    },
+    "answer_ja": "金沢市東山三丁目26番11号は、金沢市の収集カレンダーで「馬場」地区になります。\n\n2026年10月26日(月)に出せるのは「燃やすごみ」です。この地区の燃やすごみは月曜日と木曜日に収集されます。\n収集日の午前8時30分までに、決められたごみ集積所へ出してください。\n\nこの先の収集予定です。\n・10月27日(火)：資源(あき缶・ペットボトル、プラスチック資源など)\n・10月29日(木)：燃やすごみ\n・11月3日(火)：燃やさないごみ\n・11月18日(水)：びん\n\n分け方や出し方(袋・容器など)と、集積所の場所はこの情報には含まれていません。分からないときは、金沢市のごみ減量推進課(076-220-2302)に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その5) 馬場(東部管理センター)」、「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "馬場",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html#baba",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c14",
+   "kind": "address_split_town",
+   "question": "石川県金沢市菊川二丁目26番20号 に住んでいます。2026年11月3日(火)にはどのごみを出せますか？",
+   "truth": {
+    "district": "菊川",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c14",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "medium",
+     "hedged": true
+    },
+    "usage": {
+     "seconds": 285.9,
+     "model_turns": 43,
+     "tool_calls": 26,
+     "final_context_tokens": 82992,
+     "input_tokens_all_turns": 3042878,
+     "output_tokens": 9452
+    },
+    "answer_ja": "2026年11月3日(火・文化の日)に出せるのは「燃やすごみ」だけです。\n\n【お住まいの地区】\n金沢市の「住所から地区・校下検索」では、菊川2丁目は番地によって「菊川」と「新竪町」に分かれます。26番は「17～32番＝菊川」の範囲なので、ごみ収集の地区は「菊川」です。\n\n【菊川地区の収集ルール(2026年度・市の地区別収集カレンダー)】\n・燃やすごみ：毎週火曜日・金曜日\n・燃やさないごみ：第2月曜日(11月は9日)\n・資源回収(あき缶・ペットボトル・プラスチック資源など)：第1・第3月曜日(11月は2日・16日)\n・資源(プラスチック資源)の第5週収集：第5月曜日(11月は30日)\n・びん：第4水曜日(11月は25日)\n\n11月3日は火曜日なので、燃やすごみの日にあたります。燃やさないごみ・資源・びんは出せません。\n\n【祝日について】\n11月3日は文化の日(祝日)です。市のカレンダーのページで収集日の変更として載っているのは年末年始(年末は12月29日まで、年始は1月4日から)だけでした。ほかの祝日は曜日どおりに収集されると考えられます。ただし「祝日も収集」とはっきり書いた記載は見つけられませんでした。心配な場合は、市の地区別収集カレンダーか金沢市公式LINEのごみ出しサポートで確認するか、ごみ減量推進課(076-220-2302)に問い合わせてください。\n燃やすごみは指定ごみ袋に入れて、収集日の朝に決められたごみステーションへ出してください。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c14",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.5,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59921,
+     "input_tokens_all_turns": 169987,
+     "output_tokens": 1010
+    },
+    "answer_ja": "石川県金沢市菊川二丁目26番20号は、金沢市の「菊川」地区の収集カレンダーが適用されます。\n\n2026年11月3日(火)に出せるのは「燃やすごみ」です。菊川地区の燃やすごみは毎週火曜日と金曜日に収集されます。11月3日は文化の日（祝日）ですが、金沢市は祝日も通常どおり収集します（年末年始を除く月〜金）。\n\n収集日の午前8時30分までに出してください。\n\nこの後の主な収集日は次のとおりです。\n- 11月6日(金)：燃やすごみ\n- 11月9日(月)：燃やさないごみ\n- 11月16日(月)：資源（あき缶・ペットボトル、プラスチック資源など）\n- 11月25日(水)：びん\n- 11月30日(月)：資源（プラスチック資源）\n\n品目ごとの分け方や袋の種類、集積所の場所は今回確認した情報には含まれていません。必要なら金沢市ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その2) 菊川（西部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "菊川",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19364.html#kikugawa",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c15",
+   "kind": "address_split_town",
+   "question": "石川県金沢市長田二丁目1番16号 に住んでいます。2026年11月23日(月)にはどのごみを出せますか？",
+   "truth": {
+    "district": "長田町",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c15",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 250.5,
+     "model_turns": 39,
+     "tool_calls": 21,
+     "final_context_tokens": 82296,
+     "input_tokens_all_turns": 2766097,
+     "output_tokens": 9554
+    },
+    "answer_ja": "2026年11月23日(月・勤労感謝の日)に出せるのは「燃やすごみ」です。\n\n【お住まいの収集地区】\n金沢市の「地区別収集カレンダー」の町名一覧を見ると、長田2丁目は1〜25番が「長田町」地区です。1番16号はここに入ります。\n\n【長田町地区(東部管理センター)2026年度の収集ルール】\n・燃やすごみ:毎週月曜日・木曜日\n・燃やさないごみ:第4水曜日(11月は25日)\n・資源(あき缶・ペットボトル・プラスチック資源など):第1・第3火曜日(11月は3日と17日)\n・資源(プラスチック資源):第5火曜日(11月はありません)\n・びん:第2水曜日(11月は11日)\n\n【11月23日について】\nこの日は祝日ですが、金沢市は年末年始を除き、月曜〜金曜は祝日も収集しています。この日は月曜日なので、燃やすごみの日です。ほかの区分(燃やさないごみ・資源・びん)はこの日には収集されません。\n\n【出し方】\n・収集日の午前8時30分までに出してください。\n・燃やすごみは指定ごみ袋に入れ、口をしばって出してください。\n\nほかの日の予定は、市の「2026年度地区別収集カレンダー」の長田町のページか、金沢市LINE公式アカウントの「ごみ出しサポート」で確認できます。わからないことは金沢市ごみ減量推進課(076-220-2302)に問い合わせてください。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c15",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 10.0,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59904,
+     "input_tokens_all_turns": 174840,
+     "output_tokens": 141
+    },
+    "answer_ja": "石川県金沢市長田二丁目1番16号は、金沢市の収集カレンダーで「長田町」地区（東部管理センター）にあたります。\n\n2026年11月23日(月)に出せるのは「燃やすごみ」です。この地区の燃やすごみは毎週月曜日と木曜日に収集されます。\n\n・出す時間：収集日の朝8時30分までに出してください。\n・この日は勤労感謝の日（祝日）ですが、金沢市は年末年始を除いて祝日も収集します（「ごみの出し方のルール」より）。普段どおり出して大丈夫です。\n\nこの日以降のほかの収集日は次のとおりです。\n・燃やさないごみ：11月25日(水)\n・燃やすごみ：11月26日(木)\n・資源（あき缶・ペットボトル・プラスチック資源など）：12月1日(火)\n・びん：12月9日(水)\n\nごみ集積所の場所と、品目ごとの分け方・出し方（袋など）は、このツールでは確認できません。わからないときは、町会や金沢市ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その4) 長田町（東部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "長田町",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html#nagatamachi",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c16",
+   "kind": "address_split_town",
+   "question": "石川県金沢市弥生二丁目15番1号 に住んでいます。2026年12月8日(火)にはどのごみを出せますか？",
+   "truth": {
+    "district": "弥生",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c16",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 181.4,
+     "model_turns": 28,
+     "tool_calls": 15,
+     "final_context_tokens": 75720,
+     "input_tokens_all_turns": 1878087,
+     "output_tokens": 6550
+    },
+    "answer_ja": "金沢市弥生二丁目15番1号は、金沢市の「住所から地区・校下検索」で見ると「弥生」地区（西部管理センター）になります。弥生2丁目は9街区の一部（26〜32番）が「三馬」地区ですが、15街区はすべて「弥生」地区です。\n\n2026年12月8日（火）に出せるのは「燃やすごみ」だけです。\n\n弥生地区の2026年度の収集日は次のとおりです。\n・燃やすごみ：毎週火曜日・金曜日\n・燃やさないごみ：第4水曜日（12月は23日）\n・資源（あき缶・ペットボトル・プラスチック資源など）：第1・第3月曜日（12月は7日・21日）\n・プラスチック資源：第5月曜日（12月は該当日なし）\n・びん：第2水曜日（12月は9日）\n\n12月8日は火曜日なので燃やすごみの日です。月曜や水曜に出す燃やさないごみ・缶・ペットボトル・プラスチック資源・びんは、この日には出せません。\n\n出し方\n・燃やすごみは金沢市指定ごみ袋に入れて、口をしばって出してください。\n・収集日の午前8時30分までに、ごみステーションへ出してください。\n・年末年始の収集は、弥生地区では12月29日（火）までで、年始は1月5日（火）からです。12月8日には影響しません。\n\n確認したのは市のページに載っている2026年度の地区別収集カレンダーです。不安な場合は、市のごみ分別アプリ「5374（ゴミナシ）」や金沢市ごみ減量推進課（076-220-2302）で確かめることもできます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c16",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 10.0,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59908,
+     "input_tokens_all_turns": 114941,
+     "output_tokens": 991
+    },
+    "answer_ja": "石川県金沢市弥生二丁目15番1号は、金沢市の収集カレンダーでは「弥生」地区です。\n\n2026年12月8日(火)に出せるのは「燃やすごみ」です（この地区の燃やすごみは毎週火曜日と金曜日です）。\n収集日の午前8時30分までに出してください。\n\nこの後の収集予定は次のとおりです。\n・12月9日(水): びん\n・12月11日(金): 燃やすごみ\n・12月21日(月): 資源（あき缶・ペットボトル、プラスチック資源など）\n・12月23日(水): 燃やさないごみ\n\n12月と1月は年末年始の関係で、品目によっては通常の曜日とは違う日に収集されます。年末の収集は12月28日か29日まで（地区によって違います）なので、年末に出す場合はカレンダーで日付を確かめてください。\n品目ごとの分け方や出し方、ごみ集積所の場所はこの情報には含まれていません。詳しくは金沢市ごみ減量推進課（076-220-2302）に問い合わせるか、市の収集カレンダーで確認してください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その7) 弥生（西部管理センター）」、「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "弥生",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html#yayoi",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c17",
+   "kind": "address_year_end",
+   "question": "石川県金沢市平和町二丁目4番13号 に住んでいます。2026年12月31日(木)にはどのごみを出せますか？",
+   "truth": {
+    "district": "十一屋",
+    "collections": [],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c17",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 144.0,
+     "model_turns": 24,
+     "tool_calls": 12,
+     "final_context_tokens": 71805,
+     "input_tokens_all_turns": 1559903,
+     "output_tokens": 5455
+    },
+    "answer_ja": "2026年12月31日（木）は、ごみの収集はありません。ごみは出さないでください。\n\n【お住まいの地区】\n金沢市の「2026年度地区別収集カレンダー」の町名一覧では、平和町2丁目は「十一屋」地区（西部管理センター）です。ちなみに、平和町1丁目・3丁目は「長坂台」地区で、2丁目とは地区が違います。\n\n【年末年始の収集】\n・十一屋地区のカレンダーには「年末は12月28日（月）まで、年始は1月4日（月）から」と書かれています。\n・市のトップページにも、2026年度の年末年始は「12月29日（火）まで／1月4日（月）より」と載っています。29日（火）までなのは、収集曜日が違うほかの地区の分と思われます。\n・どちらにしても、12月29日〜1月3日の間に31日（木）が入るので、収集はお休みです。\n\n【出し方の目安】\n・年内に出したいごみは、12月28日（月）の収集までに出してください。\n・31日は出さずに年明けまで保管し、1月4日（月）以降の収集日に出してください。\n・1月はいくつかの品目で、年末年始に合わせて収集日が変わっています（カレンダーに※印があります）。年明けの各品目の日にちは、十一屋地区のカレンダーで確認してください。\n\n確認先：金沢市ごみ減量推進課（076-220-2302）。市の公式LINEでも収集日を調べられます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c17",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.5,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59950,
+     "input_tokens_all_turns": 114983,
+     "output_tokens": 961
+    },
+    "answer_ja": "石川県金沢市平和町二丁目4番13号は、金沢市の収集カレンダーでは「十一屋」地区です。\n\n2026年12月31日(木)は年末年始の休みのため、ごみの収集はありません。どの品目も出さないでください。\n\n十一屋地区の年末年始の収集予定は次のとおりです。\n- 燃やすごみ: 年内は2026年12月28日(月)が最後で、年明けは2027年1月4日(月)から\n- 年明け最初の収集日\n  - 燃やすごみ: 1月4日(月)\n  - 資源(あき缶・ペットボトル・プラスチック資源など): 1月8日(金)\n  - 燃やさないごみ: 1月19日(火)\n  - びん: 1月27日(水)\n\n12月と1月は、いつもの曜日どおりではない日があります。この2か月は、カレンダーに書かれた日付を確認してください。\n\nごみは収集日の午前8時30分までに出してください。\n\n出典は金沢市の「2026年度地区・校下別収集カレンダー(その3) 十一屋」と「ごみの出し方のルール」です。わからないことは、金沢市ごみ減量推進課(076-220-2302)に問い合わせてください。",
+    "items": [],
+    "district": "十一屋",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#juuichiya",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c18",
+   "kind": "address_year_end",
+   "question": "石川県金沢市広坂一丁目2番17号 に住んでいます。2027年1月1日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "新竪町",
+    "collections": [],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c18",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 226.2,
+     "model_turns": 32,
+     "tool_calls": 18,
+     "final_context_tokens": 77177,
+     "input_tokens_all_turns": 2145340,
+     "output_tokens": 8365
+    },
+    "answer_ja": "2027年1月1日（金）には、ごみの収集はありません。ごみステーションには何も出さないでください。\n\n【調べた内容】\n・金沢市の「住所から地区・校下検索」によると、広坂1丁目は街区や番地による区分がなく、丁目全体が「新竪町」地区です。\n・新竪町地区（西部管理センター）の2026年度収集カレンダーでは、燃やすごみの収集日は毎週火曜日と金曜日です。1月1日は本来なら燃やすごみの曜日にあたります。ただし、カレンダーには「年末は12月29日（火曜日）まで」「年始は1月5日（火曜日）から」と書かれていて、元日は年末年始のお休みに入ります。\n・同じ地区の1月の日付が入った収集日（第1月曜・第2/4月曜・第3水曜の分）は、4日・11日・25日・20日です。1月1日に収集されるごみの種類はありません。\n\n【年末年始の目安】\n・燃やすごみ：年内の最終日は12月29日（火）、年明けの最初は1月5日（火）です。\n・1月4日（月）は第1月曜日にあたるので、この列のごみ（カレンダーの並びでは燃やさないごみ）の収集日です。\n\nステーションごとの細かいルールや当日の変更は、金沢市LINE公式アカウントの「ごみ出しサポート」で確認できます。問い合わせ先は、金沢市ごみ減量推進課（076-220-2302）です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c18",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 10.2,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59920,
+     "input_tokens_all_turns": 114953,
+     "output_tokens": 876
+    },
+    "answer_ja": "お住まいの金沢市広坂一丁目2番17号は、収集カレンダー上は「新竪町」地区（西部管理センター管内）です。\n\n2027年1月1日(金)は年末年始のため、ごみの収集はありません。どのごみも出さないでください。\n\n年末年始の収集は次のとおりです。\n・燃やすごみ：年内は2026年12月29日(火)まで、年明けは2027年1月5日(火)から\n・1月1日以降の最初の収集日：\n　- 燃やさないごみ：1月4日(月)\n　- 燃やすごみ：1月5日(火)\n　- 資源（あき缶・ペットボトル・プラスチック資源など）：1月11日(月)\n　- びん：1月20日(水)\n\n出す時間は、収集日の朝8時30分までです。\n\n12月と1月は、いつもの「第○曜日」の決まりと違う日に収集されることがあります。この2か月はカレンダーに書かれた日付で確認してください。\n\n出典は金沢市の「2026年度地区・校下別収集カレンダー（新竪町）」と「ごみの出し方のルール」です。分別の方法やごみ集積所の場所はこのツールではわからないため、金沢市ごみ減量推進課（076-220-2302）か市のホームページで確認してください。",
+    "items": [],
+    "district": "新竪町",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#shintatemachi",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c19",
+   "kind": "address_year_end",
+   "question": "石川県金沢市寺町三丁目1番13号 に住んでいます。2026年12月31日(木)にはどのごみを出せますか？",
+   "truth": {
+    "district": "泉野",
+    "collections": [],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c19",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 207.6,
+     "model_turns": 28,
+     "tool_calls": 15,
+     "final_context_tokens": 77120,
+     "input_tokens_all_turns": 1881274,
+     "output_tokens": 7431
+    },
+    "answer_ja": "2026年12月31日(木)は、どのごみも出せません。年末年始で収集が休みの日です。\n\n【あなたの地区】\n金沢市の「2026年度地区別収集カレンダー」の町名一覧では、寺町3丁目は番地にかかわらず全域が「泉野」地区(西部管理センター)です。寺町4・5丁目は番地によって地区が分かれますが、3丁目は分かれていません。\n\n【12月31日に出せない理由】\n泉野地区のカレンダーには、年末の収集は12月28日(月)まで、年始は1月4日(月)からと書かれています。泉野地区はふだん月曜と木曜が燃やすごみの日なので、31日(木)も本来なら収集日ですが、今年は年末年始の休みにあたります。\n\n【どうすればよいか】\n・年内の最後の収集日は12月28日(月)の燃やすごみです。年末の大掃除のごみなどは28日の朝8時30分までに、いつものごみステーションへ出してください。\n・28日に出せなかった燃やすごみは、年明けの1月4日(月)まで家で保管してください。\n・燃やさないごみと資源(缶・ペットボトル・プラスチック・びん)は、年明けに日程が一部変わっています。カレンダーで(※)が付いている日です。1月分の日付は、市のカレンダーで確認してから出してください。\n・収集日でない日にステーションへ出すのはやめてください。\n\n出典:金沢市公式ホームページ「2026年度地区別収集カレンダー」と「泉野」地区のページ。\nhttps://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html\nhttps://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html\nわからないことは、金沢市ごみ減量推進課(076-220-2302)に問い合わせてください。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c19",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 8.9,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59944,
+     "input_tokens_all_turns": 114977,
+     "output_tokens": 911
+    },
+    "answer_ja": "石川県金沢市寺町三丁目1番13号は、金沢市の収集カレンダーでは「泉野」地区です。\n\n2026年12月31日(木)は年末年始のため、ごみの収集はありません。この日には何も出さないでください。\n・燃やすごみの年内最後の収集は2026年12月28日(月)で、年明けは2027年1月4日(月)から再開します。\n\n年明け最初の収集日は次のとおりです。\n・燃やすごみ: 2027年1月4日(月)\n・びん: 2027年1月6日(水)\n・資源(あき缶・ペットボトル、プラスチック資源など): 2027年1月15日(金)\n・燃やさないごみ: 2027年1月22日(金)\n\nごみは収集日の午前8時30分までに出してください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その1) 泉野(西部管理センター)」、金沢市「ごみの出し方のルール」\n問い合わせ先: 金沢市 ごみ減量推進課 076-220-2302",
+    "items": [],
+    "district": "泉野",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html#izumino",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c20",
+   "kind": "address_year_end",
+   "question": "石川県金沢市御影町9番30号 に住んでいます。2027年1月1日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "中村町",
+    "collections": [],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c20",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 251.7,
+     "model_turns": 33,
+     "tool_calls": 17,
+     "final_context_tokens": 78426,
+     "input_tokens_all_turns": 2240646,
+     "output_tokens": 9803
+    },
+    "answer_ja": "2027年1月1日(金・元日)は、ごみの収集はありません。家庭ごみは何も出せない日です。\n\n【調べた内容】\n・金沢市の「2026年度 地区別収集カレンダー」の町名一覧では、御影町は「中村町」校下(西部管理センター管内)に入っています。番地による分割はないので、御影町9番30号も中村町校下のカレンダーで見ます。\n・金沢市の収集は年末年始を除く月～金曜日です。2026年度の市のオープンデータでは、年末年始の休止期間が2026年12月30日～2027年1月3日になっています。\n・中村町校下のカレンダーには「年末は12月29日(火)まで、年始は1月5日(火)から」と書かれています。\n\n【おすすめ】\n・年内に出したいごみは、12月29日(火)までに出してください。\n・年明けは1月5日(火)から収集が始まります。それまでは自宅で保管してください。\n・休み中にごみステーションへ出すのはやめましょう。\n\n燃やすごみ以外(びん・缶・ペットボトル・プラスチック資源・埋立ごみなど)の年明けの日程は、市の「中村町」校下の収集カレンダーか、金沢市公式LINEの収集日通知で確認できます。問い合わせ先は金沢市ごみ減量推進課(076-220-2302)です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c20",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.4,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59935,
+     "input_tokens_all_turns": 169993,
+     "output_tokens": 949
+    },
+    "answer_ja": "石川県金沢市御影町9番30号は、金沢市の収集カレンダーでは「中村町」地区にあたります。\n\n2027年1月1日(金)は年末年始のお休みのため、ごみの収集はありません。どの種類のごみも出さないでください。\n\n年末年始の収集は次のとおりです。\n- 年内最後の燃やすごみ：2026年12月29日(火)\n- 年明け最初の収集\n  - 燃やすごみ：2027年1月5日(火)\n  - 資源（あき缶・ペットボトル・プラスチック資源など）：1月7日(木)\n  - びん：1月13日(水)\n  - 燃やさないごみ：1月27日(水)\n\n出すときは、収集日の午前8時30分までに出してください。\n\n12月と1月は、いつもの曜日のきまりとは違う日に収集する品目があります。年末年始は、上の日付か地区のカレンダーで確認してください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー（中村町）」、「ごみの出し方のルール」\n問い合わせ先：金沢市 ごみ減量推進課（076-220-2302）",
+    "items": [],
+    "district": "中村町",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html#nakamuramachi",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c21",
+   "kind": "address_shifted_day",
+   "question": "石川県金沢市三口新町一丁目16番24号 に住んでいます。2027年1月8日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "南小立野",
+    "collections": [
+     "燃やさないごみ"
+    ],
+    "is_exception": [
+     "燃やさないごみ"
+    ]
+   },
+   "web_only": {
+    "score": {
+     "id": "c21",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 120.8,
+     "model_turns": 16,
+     "tool_calls": 8,
+     "final_context_tokens": 67832,
+     "input_tokens_all_turns": 1004112,
+     "output_tokens": 4172
+    },
+    "answer_ja": "2027年1月8日(金)は「燃やさないごみ」を出せる日です。出せるのはこの1種類だけです。\n\n【お住まいの地区】\n金沢市の「2026年度地区別収集カレンダー」の町名一覧では、三口新町1丁目は丁目全体が「南小立野」地区(西部管理センター)に入っています。街区や番地による分かれ目はありません。\n\n【南小立野地区の通常の収集日】\n・燃やすごみ:毎週月曜日・木曜日\n・燃やさないごみ:第1金曜日\n・資源(あき缶・ペットボトル・プラスチック資源など):第2・第4金曜日\n・資源(プラスチック資源):第5金曜日\n・びん:第3水曜日\n\n【1月8日に燃やさないごみを出せる理由】\n2027年1月1日が第1金曜日で元日にあたるため、年末年始の影響で収集日が変わっています。2026年度版カレンダーの1月の欄には、次のように「※」付きで載っています。\n・燃やさないごみ:1月8日(金)\n・資源(あき缶・ペットボトル・プラスチック資源など):1月15日(金)と1月29日(金)\n・資源(プラスチック資源):1月はなし\n・びん:1月20日(水)\nカレンダーの注記には「年末年始の影響で、収集日を変更しています。ご注意ください。」とあります。\n\n【その日に出せないもの】\n・燃やすごみ:金曜日は収集日ではありません。年始は1月4日(月)から始まるので、8日の前後では7日(木)か11日(月)に出してください。\n・資源(あき缶・ペットボトルなど):1月8日は第2金曜日ですが、今回は1月15日(金)にずれています。8日には出さないでください。\n\n出典は金沢市公式ホームページ「2026年度地区・校下別収集カレンダー」の南小立野のページです。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c21",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 10.4,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59995,
+     "input_tokens_all_turns": 170063,
+     "output_tokens": 893
+    },
+    "answer_ja": "石川県金沢市三口新町一丁目16番24号は、金沢市の収集カレンダー上では「南小立野」地区にあたります。\n\n2027年1月8日(金)に出せるのは「燃やさないごみ」です。\n- 燃やさないごみは普段「第1金曜日」の収集ですが、年始は通常と違う日程になっています。1月8日の収集は市のカレンダーの表で決められた日です。\n- 収集日の午前8時30分までに出してください。\n\n次の収集日(参考):\n- 燃やすごみ: 1月11日(月)\n- 資源(あき缶・ペットボトル・プラスチック資源など): 1月15日(金)\n- びん: 1月20日(水)\n- 燃やさないごみ(次回): 2月5日(金)\n\n12月と1月は、年末年始のため品目ごとの曜日の決まりと違う日に収集することがあります。この時期はカレンダーに書かれた日付で確認してください。分け方・袋の種類・集積所の場所はこの情報に含まれていません。わからないときは金沢市 ごみ減量推進課(076-220-2302)に問い合わせてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その7) 南小立野」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やさないごみ"
+    ],
+    "district": "南小立野",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html#minamikodatsuno",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c22",
+   "kind": "address_shifted_day",
+   "question": "石川県金沢市旭町二丁目12番4号 に住んでいます。2027年1月15日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "田上",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ]
+   },
+   "web_only": {
+    "score": {
+     "id": "c22",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 223.9,
+     "model_turns": 32,
+     "tool_calls": 18,
+     "final_context_tokens": 78883,
+     "input_tokens_all_turns": 2193708,
+     "output_tokens": 10243
+    },
+    "answer_ja": "金沢市旭町二丁目は、市のごみ収集区分では丁目全体が「田上（たがみ）」校下・地区です（東部管理センター管内）。番地による分かれはないので、12番4号も田上地区になります。\n\n■ 2027年1月15日(金)に出せるもの\n資源回収の日です。出せるのは次のとおりです。\n・あき缶\n・ペットボトル\n・プラスチック資源\n・スプレー缶・カセットボンベ（中身を使い切ってから）\n・乾電池・水銀を含む製品など\n\n収集日の朝8時30分までに、決められたごみステーションに出してください。指定袋ではなく半透明の袋に入れます（専用の回収箱がある品目はそちらへ）。\n\n■ この日に出せないもの\n・燃やすごみ：田上地区は毎週月曜・木曜です（直近は1月14日(木)と18日(月)）。\n・燃やさないごみ（埋立ごみ・金属・小型家電類・ライター）：1月は22日(金)です。\n・びん：1月は6日(水)です。\n\n■ 注意\n1月は年末年始の休み（2026年12月30日〜2027年1月3日は収集なし）のため、日程がいつもと違います。田上地区はふだん「第3金曜日＝燃やさないごみ」ですが、2027年1月だけは第3金曜の15日が資源回収、燃やさないごみは22日に変わります。1月の資源回収は15日と29日です。いつもの曜日の感覚で出すと間違えやすいので気をつけてください。\n\n（出典：金沢市公式ホームページ「2026年度地区・校下別収集カレンダー」の田上の欄と、市のオープンデータ「2026地区別ごみ収集カレンダー」）"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c22",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 10.6,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 60008,
+     "input_tokens_all_turns": 170074,
+     "output_tokens": 1066
+    },
+    "answer_ja": "石川県金沢市旭町二丁目12番4号は、金沢市の「田上」地区（収集カレンダー上の地区名）です。\n\n2027年1月15日(金)に出せるのは、\n・資源（あき缶・ペットボトル・プラスチック資源など）\nです。\n\nこの地区の資源の収集日は、ふだんは「第2・4金曜日」です。ただ、2026年12月と2027年1月は、市のカレンダーの表に載っている日がこのルールと違うことがあります。この日はカレンダーの表で資源の収集日になっています。\n\n・出す時間：収集日の午前8時30分まで\n・燃やすごみ・燃やさないごみ・びんは、この日には出せません。この日より後の収集日は次のとおりです。\n  - 燃やすごみ：1月18日(月)\n  - 燃やさないごみ：1月22日(金)\n  - 次の資源（あき缶・ペットボトル・プラスチック資源など）：1月29日(金)\n  - びん：2月3日(水)\n\n品目ごとの分け方や袋、ごみ集積所の場所は、このデータに入っていません。わからないときは、金沢市ごみ減量推進課（076-220-2302）に聞いてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その4) 田上（東部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "資源（あき缶・ペットボトル・プラスチック資源など）"
+    ],
+    "district": "田上",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html#tagami",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c23",
+   "kind": "address_shifted_day",
+   "question": "石川県金沢市旭町三丁目14番10号 に住んでいます。2027年1月22日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "田上",
+    "collections": [
+     "燃やさないごみ"
+    ],
+    "is_exception": [
+     "燃やさないごみ"
+    ]
+   },
+   "web_only": {
+    "score": {
+     "id": "c23",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "medium",
+     "hedged": true
+    },
+    "usage": {
+     "seconds": 282.3,
+     "model_turns": 32,
+     "tool_calls": 18,
+     "final_context_tokens": 85969,
+     "input_tokens_all_turns": 2230883,
+     "output_tokens": 15065
+    },
+    "answer_ja": "金沢市旭町三丁目は、市の「地区別収集カレンダー」では町全体が「田上」地区（校下）に入っています（番地による区分けはありません）。\n\n2027年1月22日（金）は「燃やさないごみ」の日です。\n・燃やさないごみ（埋立ごみ／金属・小型家電類）：1月22日（金）\n　田上地区は本来「第3金曜日」ですが、2027年1月は年末年始の影響で日程が変わり、カレンダーに22日（※付き）と載っています。\n\nこの日に出せないごみは次のとおりです。\n・燃やすごみ：田上地区は月曜と木曜です。前後の収集日は1月21日（木）と1月25日（月）です。\n・資源（あき缶・ペットボトル・プラスチック資源など）：1月は15日（金）と29日（金）です。どちらも年末年始の影響で変更されています。\n・びん：1月6日（水）です。\n・資源（プラスチック資源のみの第5金曜日）：1月はありません。\n\n出し方\n・収集日の朝8時30分までに、決められたごみステーションに出してください。\n・埋立ごみ（ガラス・陶磁器など）は指定ごみ袋に入れて出します。\n・金属・小型家電類は指定袋は要りません。半透明の袋に入れて出してください。\n・埋立ごみと金属類は別の車で回収するので、分けて出してください。\n\nご注意\nカレンダーは表の形でしか載っていないため、品目の割り当ては表の並びから私が読み取りました。1月は通常の曜日ルールから変更された月でもあります。出す前に、金沢市公式サイトの「2026年度地区・校下別収集カレンダー」の田上の表で、1月の欄を一度見ておいてください。わからないときは、金沢市ごみ減量推進課（076-220-2302）に問い合わせると確実です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c23",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.6,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59964,
+     "input_tokens_all_turns": 114997,
+     "output_tokens": 160
+    },
+    "answer_ja": "石川県金沢市旭町三丁目14番10号は、金沢市の収集カレンダーで「田上」地区にあたります。\n\n2027年1月22日(金)に出せるのは「燃やさないごみ」です。\n※ふだんの燃やさないごみは「第3金曜日」ですが、1月は年末年始の関係でカレンダー上の日付が通常と違います。この日はカレンダーの表のとおり燃やさないごみの日です。\n\n出す時間は収集日の午前8時30分までです。\n\n参考に、この後の収集予定です。\n・燃やすごみ: 1月25日(月)\n・資源(あき缶・ペットボトル・プラスチック資源など): 1月29日(金)\n・びん: 2月3日(水)\n・燃やさないごみ(次回): 2月19日(金)\n\n※分別のしかたやごみ集積所の場所はこのツールでは分かりません。ご不明な点は金沢市 ごみ減量推進課(076-220-2302)へお問い合わせください。\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その4) 田上（東部管理センター）」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やさないごみ"
+    ],
+    "district": "田上",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html#tagami",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c24",
+   "kind": "address_shifted_day",
+   "question": "石川県金沢市泉野町二丁目12番22号 に住んでいます。2027年1月29日(金)にはどのごみを出せますか？",
+   "truth": {
+    "district": "泉野",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ]
+   },
+   "web_only": {
+    "score": {
+     "id": "c24",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 300.0,
+     "model_turns": 51,
+     "tool_calls": 27,
+     "final_context_tokens": 89400,
+     "input_tokens_all_turns": 3682049,
+     "output_tokens": 11784
+    },
+    "answer_ja": "泉野町2丁目は、金沢市のごみ収集では「泉野」地区（校下）にあたります（西部管理センター管内）。市の「住所から地区・校下検索」で、泉野町2丁目は番地に関係なく全体が泉野になっています。\n\n2027年1月29日（金）に出せるのは次の1種類です。\n・資源（あき缶・ペットボトル・プラスチック資源など）\n\n【理由】\n市の「2026年度地区・校下別収集カレンダー」の泉野地区の決まりは次のとおりです。\n・燃やすごみ：毎週月曜日・木曜日\n・燃やさないごみ：第3金曜日\n・資源（あき缶・ペットボトル・プラスチック資源など）：第2・4金曜日\n・資源（プラスチック資源）：第5金曜日\n・びん：第1水曜日\n\n2027年1月は、1月1日（金）が年始休みにあたるため、日付がずらされています（カレンダーに※印あり）。\n・燃やさないごみ：1月22日\n・資源（あき缶・ペットボトル等）：1月15日と1月29日\n・第5金曜日の資源（プラスチック資源）：1月はなし\n・びん：1月6日\n\n1月29日は暦の上では第5金曜日ですが、1月は第5金曜日の収集がありません。この日は「資源（あき缶・ペットボトル・プラスチック資源など）」の日です。燃やすごみは月・木曜日なので、29日（金）には出せません。前日の28日（木）に出してください。\n\n出典は金沢市公式サイトの2026年度地区別収集カレンダー（泉野）です。予定が変わることもあるので、直前に市の「5374（ゴミナシ）App」か公式LINEの「ごみ出しサポート」で確認しておくと安心です。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c24",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 10.3,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 60017,
+     "input_tokens_all_turns": 170085,
+     "output_tokens": 1040
+    },
+    "answer_ja": "石川県金沢市泉野町二丁目12番22号は、金沢市の収集カレンダーでは「泉野」地区です。\n\n2027年1月29日(金)に出せるごみは次のとおりです。\n・資源(あき缶・ペットボトル・プラスチック資源など)\n\nこの日は特別な収集日です。この品目はふだん「第2・4金曜日」ですが、年末年始の時期はカレンダーの表に書かれた日に変わり、1月29日は第5金曜日にあたります。12月と1月はいつもの「第○曜日」のルールで判断せず、カレンダーの日付を見てください。\n\n・出す時間：収集日の朝8時30分まで\n・この日の後の収集日：燃やすごみは2月1日(月)、びんは2月3日(水)、資源(あき缶・ペットボトル・プラスチック資源など)は2月12日(金)、燃やさないごみは2月19日(金)\n\n分け方や袋の種類、ごみ集積所の場所は、この情報には入っていません。わからないことは、金沢市 ごみ減量推進課(076-220-2302)に聞いてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その1) 泉野(西部管理センター)」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "district": "泉野",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html#izumino",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c25",
+   "kind": "latlng_only",
+   "question": "今いる場所は 緯度 36.591999、経度 136.641164 です (石川県金沢市内)。ここで2026年10月22日(木)に出せるごみ (家庭ごみの収集) は何ですか？",
+   "truth": {
+    "district": "諸江",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c25",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 203.5,
+     "model_turns": 32,
+     "tool_calls": 16,
+     "final_context_tokens": 75663,
+     "input_tokens_all_turns": 2120744,
+     "output_tokens": 7711
+    },
+    "answer_ja": "2026年10月22日(木)に出せるのは「燃やすごみ」だけです。\n\n【場所と地区】\n緯度36.591999・経度136.641164は、金沢市の諸江町と駅西新町1丁目の境目あたりです。金沢市の「2026年度地区別収集カレンダー」の町名一覧では、ここは「諸江」地区(東部管理センター)になります。駅西新町1丁目側だった場合は「西」地区になる番地もあります。ただ、どちらの地区で調べても10月22日の答えは同じでした。\n\n【10月22日(木)の収集】\n・燃やすごみ:どちらの地区も毎週月曜日と木曜日に収集しています。22日は木曜日なので出せます。\n・燃やさないごみ、資源(あき缶・ペットボトル・プラスチック資源など)、資源(プラスチック資源)、びん:どちらの地区も10月の収集日に22日は入っていません。この日は出せません。\n\n(参考:諸江地区の10月のほかの収集日は7日・13日・21日・27日です。どの品目がどの日かは、市の地区別カレンダーで確かめてください。)\n\n出す時間や出し方は、いつも使っているごみステーションのルールに合わせてください。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c25",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 8.7,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59890,
+     "input_tokens_all_turns": 114948,
+     "output_tokens": 872
+    },
+    "answer_ja": "今いる場所は金沢市の諸江町（諸江地区）です。2026年10月22日(木)に出せる家庭ごみは「燃やすごみ」です（諸江地区の燃やすごみの日は毎週月曜・木曜）。\n\n出すのは収集日の午前8時30分までです。\n\n参考までに、この後の収集予定は次のとおりです。\n・10月26日(月) 燃やすごみ\n・10月27日(火) 資源（あき缶・ペットボトル・プラスチック資源など）\n・11月4日(水) 燃やさないごみ\n・11月18日(水) びん\n\n分別の方法やごみ集積所の場所は、この情報には含まれていません。わからないときは、金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その7) 諸江（東部管理センター）」と、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やすごみ"
+    ],
+    "district": "諸江",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html#moroe",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html"
+    ]
+   }
+  },
+  {
+   "id": "c26",
+   "kind": "latlng_only",
+   "question": "今いる場所は 緯度 36.579859、経度 136.649776 です (石川県金沢市内)。ここで2026年10月23日(金)に出せるごみ (家庭ごみの収集) は何ですか？",
+   "truth": {
+    "district": "此花",
+    "collections": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c26",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 276.0,
+     "model_turns": 41,
+     "tool_calls": 22,
+     "final_context_tokens": 85628,
+     "input_tokens_all_turns": 2909015,
+     "output_tokens": 11195
+    },
+    "answer_ja": "その地点(緯度36.579859・経度136.649776)は金沢市堀川新町で、金沢駅のすぐ北東です。金沢市の「住所から地区・校下検索」では、堀川新町は町全体が「此花」地区に入っています。\n\n2026年10月23日(金)は10月の第4金曜日です。此花地区(東部管理センター)の2026年度カレンダーでは、第2・第4金曜日が【資源回収】の日なので(10月は9日と23日)、この日に出せるのは次のものです。\n\n・プラスチック資源\n・あき缶\n・ペットボトル\n・乾電池・水銀含有製品\n・スプレー缶・カセットボンベ\n・フロン回収製品\n\nこの日に出せないもの:\n・燃やすごみ:此花地区は毎週月曜日・木曜日です(直前は10月22日(木)、次は26日(月))。\n・燃やさないごみ(埋立ごみ・金属・小型家電類など)とあきびん:どちらも月1回で、10月は2日(金)と21日(水)でした。\n・10月30日(第5金曜日)は、プラスチック資源だけの収集日です。\n\n出すのは収集日の朝8時30分までに、決められたごみステーションへ出してください。あき缶はつぶさずに出し、ペットボトルはキャップを外して軽く洗ってから出します。なお、お店や事務所から出るごみ(事業系ごみ)は、この家庭ごみの収集には出せません。\n\n出典:金沢市「2026年度地区・校下別収集カレンダー(此花)」、「住所から地区・校下検索」、「家庭ごみ 分け方・出し方」"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c26",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.8,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59929,
+     "input_tokens_all_turns": 170045,
+     "output_tokens": 980
+    },
+    "answer_ja": "お伝えいただいた位置 (最寄りの住所は堀川新町3番27号) は金沢市の「此花」地区にあたります。\n\n2026年10月23日(金)に出せるのは次の資源ごみです。\n・資源 あき缶・ペットボトル プラスチック資源など (此花地区は第2・4金曜日に収集)\n\n当日の午前8時30分までに出してください。\n\nこの日は燃やすごみの収集はありません。このあとの収集予定は次のとおりです。\n・燃やすごみ: 10月26日(月)\n・資源 プラスチック資源: 10月30日(金)\n・燃やさないごみ: 11月6日(金)\n・びん: 11月18日(水)\n\n補足: 地区の判定は住所と区域の両方で一致しています (確信度 0.93)。それぞれの品目の分け方や袋、ごみ集積所の場所はこのツールでは調べられません。わからない場合は金沢市 ごみ減量推進課 (076-220-2302) に問い合わせてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その3) 此花(東部管理センター)」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "資源 あき缶・ペットボトル プラスチック資源など"
+    ],
+    "district": "此花",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#konohana",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c27",
+   "kind": "latlng_only",
+   "question": "今いる場所は 緯度 36.544944、経度 136.682585 です (石川県金沢市内)。ここで2026年10月21日(水)に出せるごみ (家庭ごみの収集) は何ですか？",
+   "truth": {
+    "district": "小立野",
+    "collections": [
+     "燃やさないごみ"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c27",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": true
+    },
+    "usage": {
+     "seconds": 205.9,
+     "model_turns": 31,
+     "tool_calls": 15,
+     "final_context_tokens": 76586,
+     "input_tokens_all_turns": 2085294,
+     "output_tokens": 9528
+    },
+    "answer_ja": "お調べしました。\n\n■ 場所\n緯度36.544944・経度136.682585は、国土地理院とOpenStreetMapの逆ジオコーディングで、どちらも「金沢市 小立野一丁目」と出ました。金沢市の町名一覧では、小立野1丁目は丁目全体が「小立野」校下・地区(東部管理センター)に入っています。\n\n■ 2026年10月21日(水)に出せるもの\n**燃やさないごみ**です(小立野地区は「第3水曜日」の収集で、10/21は第3水曜日にあたります)。\n\n燃やすごみ・びん・資源は、この日は出せません。\n\n■ 小立野地区の2026年度の収集日(市の公式カレンダーより)\n・燃やすごみ:毎週 火曜日・金曜日(10月21日に一番近いのは10/20(火)と10/23(金))\n・燃やさないごみ:第3水曜日(10月は21日)\n・資源(あき缶・ペットボトル・プラスチック資源など):第2・4木曜日(10月は8日・22日)\n・資源(プラスチック資源):第5木曜日(10月は29日)\n・びん:第1水曜日(10月は7日)\n\n■ ご注意\n今いる場所は「南小立野」地区との境目に近いです。たとえば上野本町の一部は南小立野地区になります。南小立野地区だと燃やすごみは月・木で、第3水曜日は「びん」の日になります。念のため、お住まいの町名・番地が小立野1丁目(小立野地区)で合っているかだけ、市の「地区別収集カレンダー」の町名一覧で確かめてください。出し方の細かいルール(指定袋・出す時間など)は、お住まいのごみステーションの表示や市のガイドに従ってください。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c27",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 9.7,
+     "model_turns": 2,
+     "tool_calls": 1,
+     "final_context_tokens": 59900,
+     "input_tokens_all_turns": 114958,
+     "output_tokens": 929
+    },
+    "answer_ja": "その場所(最寄りの住所: 金沢市小立野一丁目8番12号)は、金沢市の収集カレンダーでは「小立野」地区になります。\n\n2026年10月21日(水)に出せるのは「燃やさないごみ」です(この地区は毎月第3水曜日)。\n\n・出す時間: 収集日の午前8時30分まで\n・この日はほかの品目の収集はありません。参考までに、この後の収集日は次のとおりです。\n  - 10月22日(木): 資源(あき缶・ペットボトル・プラスチック資源など)\n  - 10月23日(金): 燃やすごみ\n  - 10月29日(木): 資源(プラスチック資源)\n  - 11月4日(水): びん\n\n※品目ごとの分け方(袋・容器など)やごみ集積所の場所はこの情報に含まれていません。わからないときは金沢市ごみ減量推進課(076-220-2302)に問い合わせてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その3) 小立野(東部管理センター)」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "燃やさないごみ"
+    ],
+    "district": "小立野",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#kodatuno",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  },
+  {
+   "id": "c28",
+   "kind": "latlng_only",
+   "question": "今いる場所は 緯度 36.586638、経度 136.668033 です (石川県金沢市内)。ここで2026年10月28日(水)に出せるごみ (家庭ごみの収集) は何ですか？",
+   "truth": {
+    "district": "小坂",
+    "collections": [
+     "びん"
+    ],
+    "is_exception": []
+   },
+   "web_only": {
+    "score": {
+     "id": "c28",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": true
+    },
+    "usage": {
+     "seconds": 214.1,
+     "model_turns": 32,
+     "tool_calls": 17,
+     "final_context_tokens": 78758,
+     "input_tokens_all_turns": 2187649,
+     "output_tokens": 10440
+    },
+    "answer_ja": "その地点は金沢市 神宮寺2丁目です。国土地理院とOpenStreetMapの逆ジオコーディングで、どちらも同じ結果でした。金沢市の町名一覧では、神宮寺2丁目のごみ収集は「小坂」校下（東部管理センター）に入ります。\n\n2026年10月28日（水）は第4水曜日です。小坂校下で出せるのは次の1種類です。\n\n■ びん\n\nこの日は、ほかの品目は収集がありません。\n・燃やすごみ：毎週火曜日・金曜日なので、次は10/30（金）です。\n・燃やさないごみ：第2月曜日です（10月は12日）。\n・資源（あき缶・ペットボトル・プラスチック資源など）：第1・3月曜日です（10月は5日・19日）。\n・資源（プラスチック資源）：第5月曜日だけの収集で、10月はありません。\n\nひとつだけ確認してください。神宮寺「1丁目」は小坂ではなく「森山」校下で、10/28は収集がありません（森山のびんは第3水曜日の10/21）。住所表示が1丁目の場合は、こちらの日程が当てはまります。\n\n出す時間や場所は、お住まいのごみステーションのルールに従ってください。最新の日程は、金沢市公式サイトの「2026年度地区・校下別収集カレンダー」でも確認できます。"
+   },
+   "tool_only": {
+    "score": {
+     "id": "c28",
+     "items_correct": true,
+     "district_correct": true,
+     "confidence": "high",
+     "hedged": false
+    },
+    "usage": {
+     "seconds": 8.7,
+     "model_turns": 3,
+     "tool_calls": 1,
+     "final_context_tokens": 59905,
+     "input_tokens_all_turns": 170021,
+     "output_tokens": 903
+    },
+    "answer_ja": "その場所(最寄りの住所: 金沢市神宮寺二丁目24番18号付近)は、金沢市の収集カレンダーでは「小坂」地区です。\n\n2026年10月28日(水)に出せるのは「びん」です(第4水曜日の収集)。\n収集日の午前8時30分までに出してください。\n\n参考として、この後の収集予定は次のとおりです。\n- 10月30日(金): 燃やすごみ\n- 11月2日(月): 資源(あき缶・ペットボトル、プラスチック資源など)\n- 11月9日(月): 燃やさないごみ\n- 11月25日(水): びん\n\n※品目ごとの細かい分別方法やごみ集積所の場所は、このツールでは確認できません。分からないときは金沢市 ごみ減量推進課(076-220-2302)にお問い合わせください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その2) 小坂(東部管理センター)」、金沢市「ごみの出し方のルール」",
+    "items": [
+     "びん"
+    ],
+    "district": "小坂",
+    "sources": [
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19364.html#kosaka",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html",
+     "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html"
+    ]
+   }
+  }
+ ]
+}

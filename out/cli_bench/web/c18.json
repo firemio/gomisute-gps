@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 97956,
+ "stop_reason": "end_turn",
+ "session_id": "d6b16f38-3767-4285-9476-3ba2d6f4092b",
+ "total_cost_usd": 0.19062330000000005,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 9165,
+  "cache_read_input_tokens": 66703,
+  "output_tokens": 2658,
+  "output_tokens_details": {
+   "thinking_tokens": 484
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9165,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 901,
+    "cache_read_input_tokens": 12167,
+    "cache_creation_input_tokens": 569,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 569
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 16,
+   "outputTokens": 2658,
+   "cacheReadInputTokens": 66703,
+   "cacheCreationInputTokens": 9165,
+   "webSearchRequests": 0,
+   "costUSD": 0.1398846,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 484,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 148922,
+   "outputTokens": 11693,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.050738700000000005,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 7533,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2027年1月1日（金）に出せるごみはありません。** 金沢市はこの日、どの種類のごみも収集しません。\n\n- **地区:** 市の「住所から地区・校下検索」で調べると、広坂1丁目は「新竪町」の校下・地区です。番地による区分はないので、2番17号も同じ地区です。\n- **年末年始の休み:** 新竪町地区の2026年度カレンダーには「年末は12月29日（火）まで」「年始は1月5日（火）から」と書かれています。その間の1月1日には収集がありません。いつもは収集のある金曜日でも休みです。\n- **出すタイミング:**\n  - 年末に出したいごみは、12月29日（火）の朝までに出してください。\n  - それ以降のごみは、1月5日（火）の再開日以降の収集日まで家で保管してください。\n\nなお、ページの読み取りで、地区のふだんの収集曜日（燃やすごみ・びんなど）がうまく取れず、資料と食い違う部分がありました。そのため、ここでは年末年始の休みの期間だけを書いています。1月の細かい日程は、市のカレンダーページかExcel版で確認してください。わからない点は、ごみ減量推進課（076-220-2302）に問い合わせることもできます。\n\nSources:\n- [住所から地区・校下検索｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3691.html)\n- [2026年度地区・校下別収集カレンダー（新竪町）｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#shintatemachi)\n- [2026年度地区別収集カレンダー トップ｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度版カレンダー（Excel）](https://www4.city.kanazawa.lg.jp/material/files/group/68/2026tikubetsu.xls)",
+ "ttft_ms": 3356,
+ "type": "result",
+ "duration_ms": 91147,
+ "uuid": "2a8064dd-9900-4544-896b-b91c02c3d0da",
+ "ttft_stream_ms": 1569,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 1569,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 92.1,
+ "stderr": "",
+ "question": "石川県金沢市広坂一丁目2番17号 に住んでいます。2027年1月1日(金)にはどのごみを出せますか？"
+}

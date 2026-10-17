@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 7886,
+ "stop_reason": "end_turn",
+ "session_id": "c4bd8dcf-0e5a-4185-822f-5d327a77c9aa",
+ "total_cost_usd": 0.049067200000000005,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3958,
+  "cache_read_input_tokens": 11036,
+  "output_tokens": 759,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3958,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 663,
+    "cache_read_input_tokens": 6151,
+    "cache_creation_input_tokens": 2692,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2692
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 759,
+   "cacheReadInputTokens": 11036,
+   "cacheCreationInputTokens": 3958,
+   "webSearchRequests": 0,
+   "costUSD": 0.049067200000000005,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "女川町の行政区「旭が丘」では、**2026年12月3日(木)** に次の2つを出せます。\n\n### 1. ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\nこの名前は、4月に印刷されたカレンダーの表記のままです。**2026年10月1日から出し方が変わりました。** 今は次のように出します。\n- **赤色のかご**：ペットボトル以外のプラスチック容器と製品。プラスチックだけでできている物はすべてここです。発泡スチロール、色や模様のついたトレイ、ペットボトルのキャップとラベルもここに入れます。\n- **緑色のかご**：紙パック、白色トレイ\n- **かごに入れず、そのまま出す物**：段ボール、新聞紙、雑誌、雑紙、布類、剪定枝、廃食油\n\n### 2. 燃やせないごみ\n\n**出す時間：収集日の朝8時まで**\n\n### 12月のこの後の収集日\n- 燃やせるごみ：12月4日(金)。年内は12月29日(火)が最後です。\n- 缶・びん・ペットボトル：12月10日(木)。年内は12月24日(木)が最後です。\n- 上の1と燃やせないごみ：年内は12月17日(木)が最後です。年明けは2027年1月7日(木)からです。\n- 粗大ごみ：12月23日(水)\n\nごみ集積所の場所と粗大ごみの申し込み方法は、このデータに含まれていません。女川町クリーンセンター（0225-53-3549）にお問い合わせください。ある品物をどのかごに入れるか分からないときは、品物の名前を教えていただければ調べます。\n\n出典：女川町「令和８年度 おながわ町民カレンダー」、女川町「環境・ごみ」、「家庭ごみの分け方・出し方」（2026年10月1日版）",
+ "ttft_ms": 1723,
+ "type": "result",
+ "duration_ms": 12754,
+ "uuid": "4aad7bcb-87c9-48e7-a36c-7ad492a780d4",
+ "ttft_stream_ms": 804,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 804,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 14.2,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町旭が丘 に住んでいます。2026年12月3日(木)にはどのごみを出せますか？"
+}

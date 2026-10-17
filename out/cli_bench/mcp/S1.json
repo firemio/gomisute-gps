@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 7230,
+ "stop_reason": "end_turn",
+ "session_id": "edef8274-b6a3-4836-bd9d-ad168143085a",
+ "total_cost_usd": 0.030703600000000004,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2332,
+  "cache_read_input_tokens": 11058,
+  "output_tokens": 491,
+  "output_tokens_details": {
+   "thinking_tokens": 54
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2332,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 315,
+    "cache_read_input_tokens": 6173,
+    "cache_creation_input_tokens": 1044,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1044
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 491,
+   "cacheReadInputTokens": 11058,
+   "cacheCreationInputTokens": 2332,
+   "webSearchRequests": 0,
+   "costUSD": 0.030703600000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 54,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2026年10月20日(火)の時点では、ペットボトルからはずしたキャップは**「その他のプラスチック」として赤色のかご**に出してください。\n\n- **出し方:** キャップを袋にまとめてから、赤色のかごに入れます。\n- **ラベルも同じ:** ペットボトルのラベルもはがして、赤色のかごに出します。\n- **9月までと違います:** 2026年10月1日から分け方が変わりました。9月30日までは、キャップをビニール袋にまとめてペットボトルと同じ灰色のかごに入れていました。今はキャップを灰色のかごに入れないよう気をつけてください。\n\n出典は、女川町の「20261001_gomi_itiran.pdf」(灰色のかごの欄)と「ごみ分別事典」p11です。\n\n分からないことがあれば、女川町クリーンセンター(電話 0225-53-3549)に問い合わせてください。",
+ "ttft_ms": 2952,
+ "type": "result",
+ "duration_ms": 11905,
+ "uuid": "47a31189-aa1d-4c71-b324-7920a26bb33e",
+ "ttft_stream_ms": 1735,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 1735,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 13.4,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町に住んでいます。今日は2026年10月20日(火)です。ペットボトルからはずしたキャップは、どのごみ・どのかごに出せばいいですか？"
+}

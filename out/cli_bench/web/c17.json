@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 78307,
+ "stop_reason": "end_turn",
+ "session_id": "658f57e6-2e8f-4d6a-b0db-4ea62e326af1",
+ "total_cost_usd": 0.1538958,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 7103,
+  "cache_read_input_tokens": 41978,
+  "output_tokens": 1867,
+  "output_tokens_details": {
+   "thinking_tokens": 370
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7103,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 728,
+    "cache_read_input_tokens": 9944,
+    "cache_creation_input_tokens": 730,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 730
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1867,
+   "cacheReadInputTokens": 41978,
+   "cacheCreationInputTokens": 7103,
+   "webSearchRequests": 0,
+   "costUSD": 0.1026076,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 370,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 171602,
+   "outputTokens": 8256,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.051288200000000006,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 5414,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "金沢市の公式カレンダーで確認しました。\n\n**2026年12月31日(木)は収集がないので、どのごみも出せません。**\n\n- **地区：** 市の町名一覧では、平和町2丁目は「十一屋」地区（西部管理センター管轄）です。一覧は丁目単位で、「4番」だけ別の地区になるという記載はありませんでした。\n- **年末の最終日：** 十一屋地区の2026年度カレンダーには「年末は12月28日（月曜日）まで」とあります。一方、カレンダーのトップページには「12月29日（火曜日）まで」と書かれています。どちらの場合も12月29〜31日に十一屋地区の収集日はありません。\n- **年始：** 「1月4日（月曜日）から」再開します。\n\n年末のうちに出したい場合は、12月28日(月)ごろまでの地区の収集日に間に合わせてください。私が取得したページの内容では、地区ごとの細かい曜日の対応が乱れていて信頼できませんでした。そのため、具体的な曜日は公式ページの十一屋の表で直接確認するか、ごみ減量推進課（076-220-2302）に問い合わせるのが確実です。市の公式LINEでも地区を登録すると収集カレンダーを見られます。\n\nSources:\n- [2026年度地区別収集カレンダー(トップページ)](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー（十一屋 掲載ページ）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html)",
+ "ttft_ms": 3559,
+ "type": "result",
+ "duration_ms": 75011,
+ "uuid": "196bfef8-5264-49af-8f99-0bed5c41b716",
+ "ttft_stream_ms": 1591,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 1591,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 76.1,
+ "stderr": "",
+ "question": "石川県金沢市平和町二丁目4番13号 に住んでいます。2026年12月31日(木)にはどのごみを出せますか？"
+}

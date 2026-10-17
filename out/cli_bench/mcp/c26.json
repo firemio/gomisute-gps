@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 8463,
+ "stop_reason": "end_turn",
+ "session_id": "db37cd35-42a2-421a-b4b4-1b163993636e",
+ "total_cost_usd": 0.040984,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3242,
+  "cache_read_input_tokens": 11060,
+  "output_tokens": 641,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3242,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 521,
+    "cache_read_input_tokens": 6175,
+    "cache_creation_input_tokens": 1952,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1952
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 641,
+   "cacheReadInputTokens": 11060,
+   "cacheCreationInputTokens": 3242,
+   "webSearchRequests": 0,
+   "costUSD": 0.040984,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2026年10月23日(金)にこの場所で出せるのは、**「資源 あき缶・ペットボトル プラスチック資源など」** です。\n\n- **場所**: 金沢市 堀川新町（いちばん近い住所は 堀川新町3番27号、距離は約0m）。収集カレンダーでは **此花地区** に入ります。\n- **曜日の決まり**: この品目は毎月の第2・第4金曜日に収集されます。10月23日は第4金曜日なので、いつもの決まりどおりです。\n- **出す時刻**: 収集日の **午前8時30分まで** に出してください。\n\n**この後の収集日**\n| 日付 | 品目 |\n|---|---|\n| 10/26(月) | 燃やすごみ |\n| 10/30(金) | 資源 プラスチック資源 |\n| 11/6(金) | 燃やさないごみ |\n| 11/13(金) | 資源 あき缶・ペットボトル プラスチック資源など |\n| 11/18(水) | びん |\n\n品目ごとの分け方（袋や容器など）と、ごみ集積所の場所はこのデータに入っていません。分からないときは、金沢市 ごみ減量推進課（076-220-2302）に確かめてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その3) — 此花（東部管理センター）2026年度版」、「2026年度地区別収集カレンダー(トップページ) — 町名一覧表 (区域表)」、「ごみの出し方のルール」",
+ "ttft_ms": 3381,
+ "type": "result",
+ "duration_ms": 13510,
+ "uuid": "f2bf9901-2b3f-4783-8c66-139018628708",
+ "ttft_stream_ms": 2335,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 2335,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 15.1,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.579859、経度 136.649776 です (石川県金沢市内)。ここで2026年10月23日(金)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

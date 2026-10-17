@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 18180,
+ "stop_reason": "end_turn",
+ "session_id": "f0201553-004a-44e5-a3ad-7dc9c591d097",
+ "total_cost_usd": 0.0390184,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3154,
+  "cache_read_input_tokens": 11052,
+  "output_tokens": 578,
+  "output_tokens_details": {
+   "thinking_tokens": 61
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3154,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 279,
+    "cache_read_input_tokens": 6167,
+    "cache_creation_input_tokens": 1872,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1872
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 578,
+   "cacheReadInputTokens": 11052,
+   "cacheCreationInputTokens": 3154,
+   "webSearchRequests": 0,
+   "costUSD": 0.0390184,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 61,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 3,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "おっしゃった2026年9月15日(火)の時点では、ペットボトルからはがしたラベルは**「燃やせるごみ」**に出します。\n（出典：女川町 町民カレンダー p31）\n\n**2026年10月1日から分け方が変わります**\n10月1日からは、ラベルは**「赤色のかご（その他のプラスチック）」**に**袋にまとめて**出します。キャップも同じ赤かごです。\n（出典：20261001_gomi_itiran.pdf、ごみ分別事典 p11）\n\nなお、こちらのシステムでは今日の日付が2026年10月18日になっています。もし今日が10月以降なら、新しい分け方の「赤色のかご」で出してください。\n\n詳しくは女川町クリーンセンター（0225-53-3549）に問い合わせられます。",
+ "ttft_ms": 12778,
+ "type": "result",
+ "duration_ms": 22030,
+ "uuid": "0047d9b4-fa9d-4d56-a068-39b0cf471956",
+ "ttft_stream_ms": 11732,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 11732,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 23.3,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町に住んでいます。今日は2026年9月15日(火)です。ペットボトルからはがしたラベルは、どのごみに出せばいいですか？"
+}

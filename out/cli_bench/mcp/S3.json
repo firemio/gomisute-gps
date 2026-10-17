@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 7347,
+ "stop_reason": "end_turn",
+ "session_id": "3972cc5d-7dc8-4fc0-a529-7a31332f2f21",
+ "total_cost_usd": 0.0335882,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2358,
+  "cache_read_input_tokens": 11041,
+  "output_tokens": 625,
+  "output_tokens_details": {
+   "thinking_tokens": 161
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2358,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 427,
+    "cache_read_input_tokens": 6156,
+    "cache_creation_input_tokens": 1087,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1087
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 625,
+   "cacheReadInputTokens": 11041,
+   "cacheCreationInputTokens": 2358,
+   "webSearchRequests": 0,
+   "costUSD": 0.0335882,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 161,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "女川町では、**発泡スチロールは「赤色のかご（他プラ）」に出します**。\n\n- 水で軽くすすいでから出してください。\n- 赤色のかごには、色のついたトレイも出せます。\n\n**注意：** 2026年10月1日から分け方が変わりました。9月30日までは、発泡スチロールは「その他の資源ごみ・燃やせないごみの日」に、段ボールや紙類と一緒にかごを使わずに出していました。以前の出し方に慣れている場合は気をつけてください。\n\nなお、端末の日付は10月18日になっていますが、どちらの日付でも10月1日以降なので答えは同じです。\n\n赤色のかごの収集日や集積所の場所は、今回は調べていません。収集日が知りたいときは、お住まいの行政区か地名を教えてください。\n\n出典：女川町「20261001_gomi_itiran.pdf」、「ごみ分別事典」p10\n問い合わせ先：女川町クリーンセンター（0225-53-3549）",
+ "ttft_ms": 1976,
+ "type": "result",
+ "duration_ms": 12059,
+ "uuid": "2daa4956-71f5-48b0-83e3-71b769ba3af3",
+ "ttft_stream_ms": 772,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 773,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 13.5,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町に住んでいます。今日は2026年10月20日(火)です。発泡スチロールはどう出せばいいですか？"
+}

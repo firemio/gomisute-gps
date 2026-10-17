@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 92711,
+ "stop_reason": "end_turn",
+ "session_id": "deb97cb2-3519-470d-973b-a9712a6adff1",
+ "total_cost_usd": 0.2037932,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 9082,
+  "cache_read_input_tokens": 69437,
+  "output_tokens": 2426,
+  "output_tokens_details": {
+   "thinking_tokens": 394
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9082,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 947,
+    "cache_read_input_tokens": 12078,
+    "cache_creation_input_tokens": 575,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 575
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 2426,
+   "cacheReadInputTokens": 69437,
+   "cacheCreationInputTokens": 9082,
+   "webSearchRequests": 0,
+   "costUSD": 0.13513540000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 394,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 346038,
+   "outputTokens": 8108,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.0686578,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3914,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**おそらく「ペットボトル以外のプラスチックの日（赤かごの日）」に、赤かごへ出すことになります。** ただ、キャップについて町が書いた記述そのものは確認できていません。\n\n**わかったこと（女川町の公式サイト「環境・ごみ」ページより）**\n- 2026年10月から、プラスチックごみの新しい分別収集が始まっています。\n- 「ペットボトル以外のプラスチックの日（赤かごの日）」には、容器包装プラスチック（シャンプーボトル、洗剤ボトルなど）と製品プラスチック（ハンガー、バケツなど）を袋にまとめて出します。\n- ごみは収集日の朝8時までに出します。\n\n**確認できなかったこと**\n- ペットボトルのキャップは普通プラスチック製の容器包装なので、本体（ペットボトルの日）とは分けて、赤かごの日に出す扱いだと考えられます。ただ、町のウェブページにはキャップについての記述がありませんでした。詳しい資料（出し方の概要版、分別一覧表、ごみ分別辞典）はPDFで、こちらでは中身を読み取れませんでした。\n- 赤かごの日が何曜日かも、お住まいの地区によって違うため確認できていません。「おながわ町民カレンダー」で確認してください。\n\n**確実に知る方法**\n- 町サイトの「プラスチックごみの出し方（概要版）」PDF、または「家庭ごみの出し方・分け方一覧表（2026年10月版）」で「キャップ」の欄を見る\n- 電話で聞く：女川町クリーンセンター 0225-53-3549（ごみについて）、町民生活課 環境係 0225-54-3131\n\nSources:\n- [女川町 環境・ごみ（ごみ収集）](https://www.town.onagawa.miyagi.jp/05_05.html)\n- [女川町 プラスチックごみの出し方（概要版）PDF](https://www.town.onagawa.miyagi.jp/pdf/05_05/plastic_gomi.pdf)\n- [女川町 家庭ごみの出し方・分け方一覧表 PDF](https://www.town.onagawa.miyagi.jp/pdf/gomi/20261001_gomi_itiran.pdf)",
+ "ttft_ms": 2076,
+ "type": "result",
+ "duration_ms": 87913,
+ "uuid": "6224492f-d32d-47dd-9cd0-07b71a1d49cb",
+ "ttft_stream_ms": 1716,
+ "time_to_request_ms": 39,
+ "first_content_frame_ms": 1716,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 89.1,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町に住んでいます。今日は2026年10月20日(火)です。ペットボトルからはずしたキャップは、どのごみ・どのかごに出せばいいですか？"
+}

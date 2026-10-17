@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 76791,
+ "stop_reason": "end_turn",
+ "session_id": "f8131324-fd02-4db2-974e-a0cf6492b6e6",
+ "total_cost_usd": 0.19402599999999998,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 8931,
+  "cache_read_input_tokens": 64263,
+  "output_tokens": 2156,
+  "output_tokens_details": {
+   "thinking_tokens": 156
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8931,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 768,
+    "cache_read_input_tokens": 11069,
+    "cache_creation_input_tokens": 1433,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1433
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 2156,
+   "cacheReadInputTokens": 64263,
+   "cacheCreationInputTokens": 8931,
+   "webSearchRequests": 0,
+   "costUSD": 0.1274926,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 156,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 232494,
+   "outputTokens": 6568,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.06653339999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3249,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 10,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "旭が丘で2026年12月3日（木）に出せるごみの種類は、確認できませんでした。\n\n**わかったこと**\n- 女川町のごみ収集日は、町が配布する「令和8年度 おながわ町民カレンダー」に載っています（[町民カレンダーのページ](https://www.town.onagawa.miyagi.jp/chomin_calendar.html)）。\n- ごみは**収集日の朝8時まで**に出すことになっています（[環境・ごみ ｜ 女川町](https://www.town.onagawa.miyagi.jp/05_05.html)）。\n- 2026年10月から、製品プラスチックも「ペットボトル以外のプラスチックの日（赤かごの日）」に出せるようになりました。\n\n**確認できなかったこと**\n収集日は町民カレンダーのPDFと画像にしか載っておらず、ネット上には文字のページがありません。そのPDFと画像を私の取得方法では読み込めませんでした。そのため、旭が丘がどの収集地区に入るかも、12月3日の品目もわかりませんでした。推測でお答えすることは控えます。\n\n**確認する方法**\n1. 次のPDFをブラウザで開いて、12月のページと地区の区分を見る\n   [令和8年度 おながわ町民カレンダー（PDF）](https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)\n2. 電話で問い合わせる\n   - 女川町役場（代表）：0225-54-3131\n   - 女川町クリーンセンター：0225-53-3549\n\nカレンダーの12月の部分を画像か文字で貼っていただければ、12月3日に出せるごみを読み取ってお伝えします。\n\nSources:\n- [環境・ごみ ｜ 女川町](https://www.town.onagawa.miyagi.jp/05_05.html)\n- [おながわ町民カレンダー ｜ 女川町](https://www.town.onagawa.miyagi.jp/chomin_calendar.html)\n- [宮城県女川町の粗大ゴミ処分方法（宮城片付け110番）](https://miyagi-kataduke110ban.com/onagawa-town)",
+ "ttft_ms": 1654,
+ "type": "result",
+ "duration_ms": 73166,
+ "uuid": "e2d4162b-ecae-45e7-9d8e-9ef1ab1e5c44",
+ "ttft_stream_ms": 1317,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 1317,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 74.2,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町旭が丘 に住んでいます。2026年12月3日(木)にはどのごみを出せますか？"
+}

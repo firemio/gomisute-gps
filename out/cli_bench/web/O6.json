@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 92529,
+ "stop_reason": "end_turn",
+ "session_id": "910195f8-4907-46bc-b3d4-122d00563beb",
+ "total_cost_usd": 0.22784160000000003,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 10724,
+  "cache_read_input_tokens": 68996,
+  "output_tokens": 2665,
+  "output_tokens_details": {
+   "thinking_tokens": 356
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10724,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 847,
+    "cache_read_input_tokens": 12532,
+    "cache_creation_input_tokens": 1763,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1763
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 2665,
+   "cacheReadInputTokens": 68996,
+   "cacheCreationInputTokens": 10724,
+   "webSearchRequests": 0,
+   "costUSD": 0.15296320000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 356,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 307479,
+   "outputTokens": 8261,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 4,
+   "costUSD": 0.07487840000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 4165,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 12,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2027年1月5日(火)に石浜で出せるごみの種類は、確認できませんでした。\n\n女川町は地区ごとの収集日を、令和8年度版の「おながわ町民カレンダー」(2026年4月〜2027年3月)だけで案内しています。2027年1月もこのカレンダーの対象期間です。ただ、このPDFは画像と圧縮されたデータでできていて、私の環境では中身を読み取れませんでした。ほかの公式ページや外部サイトも探しましたが、石浜地区の曜日や年末年始の収集予定は見つかりませんでした。1月5日は年明けすぐなので、いつもの曜日どおりに収集されない可能性もあります。\n\n**確認する方法**\n1. [令和8年度 おながわ町民カレンダー(PDF)](https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)の2027年1月のページで、石浜地区の1月5日の欄を見る。町から配られた冊子版でも同じ内容です。\n2. 電話で聞く:\n   - 女川町クリーンセンター(ごみ担当):0225-53-3549\n   - 町民生活課(環境担当):0225-54-3131\n\n**出すときの決まり**(町の公式ページより)\n- 収集日の**朝8時まで**に出してください。\n- 2026年10月から、プラスチック製のハンガーやバケツなどの製品プラスチックも、「ペットボトル以外のプラスチックの日(赤かごの日)」に出せるようになりました。\n- 紙類とリチウムイオン電池は「資源ごみの日」に出します。\n\nカレンダーの1月のページの文字を貼り付けるか画像で送っていただければ、1月5日に出せるごみを読み取ってお伝えします。\n\nSources:\n- [環境・ごみ｜女川町](https://www.town.onagawa.miyagi.jp/05_05.html)\n- [おながわ町民カレンダー｜女川町](https://www.town.onagawa.miyagi.jp/chomin_calendar.html)\n- [令和8年度 おながわ町民カレンダー(PDF)](https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)",
+ "ttft_ms": 1542,
+ "type": "result",
+ "duration_ms": 80478,
+ "uuid": "f9e78391-ad83-4b98-95fd-1c7f83155556",
+ "ttft_stream_ms": 1111,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1112,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 81.6,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町石浜 に住んでいます。2027年1月5日(火)にはどのごみを出せますか？"
+}

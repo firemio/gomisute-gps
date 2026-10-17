@@ -1,0 +1,92 @@
+{
+ "n_sample": 2000,
+ "by_form": {
+  "jukyo_canonical": {
+   "ok_correct": 1994,
+   "ambiguous": 2,
+   "unresolved": 4
+  },
+  "jukyo_hyphen": {
+   "ambiguous": 25,
+   "ok_correct": 1971,
+   "unresolved": 4
+  },
+  "jukyo_kanji": {
+   "ok_correct": 1994,
+   "ambiguous": 2,
+   "unresolved": 4
+  },
+  "jukyo_banchi_form": {
+   "ambiguous": 25,
+   "ok_correct": 1971,
+   "unresolved": 4
+  },
+  "jukyo_with_room": {
+   "ambiguous": 25,
+   "ok_correct": 1971,
+   "unresolved": 4
+  },
+  "jukyo_no_city": {
+   "ok_correct": 1233,
+   "ambiguous": 763,
+   "unresolved": 4
+  },
+  "jukyo_space_separated": {
+   "ambiguous": 25,
+   "ok_correct": 1971,
+   "unresolved": 4
+  },
+  "jukyo_postal_code": {
+   "ok_correct": 1994,
+   "ambiguous": 2,
+   "unresolved": 4
+  },
+  "jukyo_other_dash": {
+   "ambiguous": 25,
+   "ok_correct": 1971,
+   "unresolved": 4
+  },
+  "town_only": {
+   "ok_correct": 1211,
+   "ambiguous": 785,
+   "unresolved": 4
+  },
+  "jukyo_chome_dropped": {
+   "unresolved": 1404,
+   "ambiguous": 140
+  },
+  "jukyo_chome_dropped_hyphen": {
+   "unresolved": 1116,
+   "ambiguous": 176,
+   "ok_correct": 252
+  },
+  "chiban_canonical": {
+   "ok_correct": 1849,
+   "ambiguous": 131,
+   "unresolved": 20
+  },
+  "chiban_hyphen": {
+   "ok_correct": 1849,
+   "ambiguous": 131,
+   "unresolved": 20
+  },
+  "chiban_aza": {
+   "ok_correct": 1525,
+   "ambiguous": 34
+  },
+  "chiban_koaza_dropped": {
+   "ambiguous": 1559
+  },
+  "chiban_chome_dropped_hyphen": {
+   "unresolved": 337,
+   "ok_correct": 13,
+   "ambiguous": 23
+  }
+ },
+ "wrong_examples": {},
+ "total": {
+  "ok_correct": 23769,
+  "ambiguous": 3873,
+  "unresolved": 2937
+ }
+}

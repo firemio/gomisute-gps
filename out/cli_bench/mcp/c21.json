@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 6307,
+ "stop_reason": "end_turn",
+ "session_id": "322741f6-6c28-42be-b9fb-aefc1db56f9b",
+ "total_cost_usd": 0.0390032,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3240,
+  "cache_read_input_tokens": 11036,
+  "output_tokens": 543,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3240,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 439,
+    "cache_read_input_tokens": 6151,
+    "cache_creation_input_tokens": 1974,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1974
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 543,
+   "cacheReadInputTokens": 11036,
+   "cacheCreationInputTokens": 3240,
+   "webSearchRequests": 0,
+   "costUSD": 0.0390032,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "金沢市三口新町一丁目16番24号は、収集カレンダーでは**南小立野地区**に入ります。\n\n**2027年1月8日(金)に出せるごみ：燃やさないごみ**\n- この地区の燃やさないごみは、ふだんは「第1金曜日」です。1月8日はその決まりとは違う日ですが、カレンダーの表にこの日付で載っています。\n- **収集日の朝8時30分まで**に出してください。\n\n参考に、この日の後の収集日です。\n- 燃やすごみ：1月11日(月)\n- 資源（あき缶・ペットボトル、プラスチック資源など）：1月15日(金)\n- びん：1月20日(水)\n- 次の燃やさないごみ：2月5日(金)\n\n分け方や袋の決まり、ごみ集積所の場所は、この情報に入っていません。分からないときは金沢市ごみ減量推進課（076-220-2302）に聞いてください。\n\n出典：\n- 金沢市「2026年度地区・校下別収集カレンダー(その7) — 南小立野（西部管理センター）2026年度版」\n- 金沢市「2026年度地区別収集カレンダー(トップページ) — 町名一覧表 (区域表)」\n- 金沢市「ごみの出し方のルール」",
+ "ttft_ms": 1923,
+ "type": "result",
+ "duration_ms": 11002,
+ "uuid": "42a1fbca-bc18-4ca9-a31a-b242d631d743",
+ "ttft_stream_ms": 962,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 962,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 12.5,
+ "stderr": "",
+ "question": "石川県金沢市三口新町一丁目16番24号 に住んでいます。2027年1月8日(金)にはどのごみを出せますか？"
+}

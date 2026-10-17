@@ -1,5 +1,5 @@
 """町名正規化 (ごみ区域表 / e-Stat / 地理院 / ABR の表記ゆれ吸収)"""
-import re
+import functools, re
 
 KAN = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9, "十": 10}
 
@@ -9,6 +9,7 @@ def kan2num(s):
     if "十" in s: a, b = s.split("十"); return KAN[a] * 10 + KAN.get(b, 0)
     return None
 
+@functools.lru_cache(maxsize=None)          # 同じ町名を何十万回も正規化するので覚えておく (起動を速くする)
 def norm_town(s):
     s = s.translate(str.maketrans("０１２３４５６７８９", "0123456789")).replace(" ", "").replace("　", "")
     s = s.replace("ヶ", "ケ").replace("ヵ", "ケ").replace("之", "の")

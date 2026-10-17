@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 7432,
+ "stop_reason": "end_turn",
+ "session_id": "58962cdb-f366-4fee-8e26-7fd54fa5c01c",
+ "total_cost_usd": 0.03909939999999999,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3262,
+  "cache_read_input_tokens": 11037,
+  "output_tokens": 539,
+  "output_tokens_details": {
+   "thinking_tokens": 109
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3262,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 442,
+    "cache_read_input_tokens": 6152,
+    "cache_creation_input_tokens": 1995,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1995
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 539,
+   "cacheReadInputTokens": 11037,
+   "cacheCreationInputTokens": 3262,
+   "webSearchRequests": 0,
+   "costUSD": 0.03909939999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 109,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2026年12月22日(火)に出せるのは**缶・びん ペットボトル**です。\n\n- **出す時刻:** 収集日の朝8時までに出してください。\n- **行政区について:** 「浦宿浜」という地名は、町の資料から見ると行政区「大沢」か「浦宿全区」のどちらかにあたります。ただし、地名と行政区を結びつける公式の表はありません。この日はどちらの行政区でも同じ答えなので、そのまま出して大丈夫です。\n- **ほかの日を調べるとき:** 行政区によって答えが変わるかもしれません。町民カレンダーの凡例でお住まいの行政区を確かめて教えていただければ、行政区を指定して調べ直します。\n- **問い合わせ先:** 女川町クリーンセンター（0225-53-3549）\n\n出典：令和８年度 おながわ町民カレンダー（令和８年４月〜令和９年３月）、環境・ごみ｜女川町",
+ "ttft_ms": 2316,
+ "type": "result",
+ "duration_ms": 12136,
+ "uuid": "e4c54af3-63f5-410a-8414-0ae6953d02e9",
+ "ttft_stream_ms": 1412,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1412,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 13.6,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町浦宿浜 に住んでいます。2026年12月22日(火)にはどのごみを出せますか？"
+}

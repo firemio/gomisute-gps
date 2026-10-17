@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 78530,
+ "stop_reason": "end_turn",
+ "session_id": "e9979264-da8c-4eba-9ba1-dc306f01ba29",
+ "total_cost_usd": 0.1407433,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 6072,
+  "cache_read_input_tokens": 37552,
+  "output_tokens": 2162,
+  "output_tokens_details": {
+   "thinking_tokens": 153
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6072,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 927,
+    "cache_read_input_tokens": 9177,
+    "cache_creation_input_tokens": 466,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 466
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 2162,
+   "cacheReadInputTokens": 37552,
+   "cacheCreationInputTokens": 6072,
+   "webSearchRequests": 0,
+   "costUSD": 0.0993744,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 153,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 169459,
+   "outputTokens": 8846,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.0413689,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 6421,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2026年11月12日(木)に出せるのは**資源（あき缶・ペットボトル・プラスチック資源など）**です。燃やすごみは出せません。\n\n**地区：** 金沢市の町名一覧では、小立野4丁目は番地による分け方がなく、全体が「小立野」地区（東部管理センター）です。\n\n**小立野地区の2026年11月の収集日**（2026年度カレンダーより）\n\n| 品目 | 曜日 | 11月の日付 |\n|---|---|---|\n| 燃やすごみ | 毎週火・金 | 3, 6, 10, 13, 17, 20, 24, 27日 |\n| **資源（あき缶・ペットボトル・プラスチック資源など）** | 第2・第4木 | **12日**, 26日 |\n| 燃やさないごみ | 第3水 | 18日 |\n| びん | 第1水 | 4日 |\n\n- 燃やすごみなら前日の11日(水)は収集がないので、翌日の13日(金)に出してください。\n- 市のページの表は列が入り組んでいて、品目と日付の対応は並び順から読み取っています。市のオープンデータのCSVでも確かめようとしましたが、文字化けしていて照合できませんでした。確実に知りたい場合は、金沢市ごみ減量推進課（076-220-2302）か、[収集日のページ](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#kodatuno)で確認してください。\n- 金沢市公式LINEの「ごみ出しサポート」で地区を登録すると、前日の19時に翌日出せるごみを知らせてくれます。\n\nSources:\n- [2026年度地区別収集カレンダー(トップページ)／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー（小立野）／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html)\n- [金沢市 地区別ごみ収集カレンダー - 金沢市オープンデータポータル](https://catalog-data.city.kanazawa.ishikawa.jp/dataset/172014-chikubetu)\n- [金沢市LINE ごみ出しサポート案内](https://www4.city.kanazawa.lg.jp/material/files/group/68/LINE202508chirasi.pdf)",
+ "ttft_ms": 3063,
+ "type": "result",
+ "duration_ms": 72132,
+ "uuid": "c3943592-7e13-4ed1-be3b-b79fe5e7c492",
+ "ttft_stream_ms": 1729,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1729,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 73.2,
+ "stderr": "",
+ "question": "石川県金沢市小立野四丁目6番10号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？"
+}

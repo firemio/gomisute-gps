@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 8864,
+ "stop_reason": "end_turn",
+ "session_id": "54ebbd45-f028-4ab9-9a64-c5e0ebdf0acd",
+ "total_cost_usd": 0.0323548,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2106,
+  "cache_read_input_tokens": 11054,
+  "output_tokens": 664,
+  "output_tokens_details": {
+   "thinking_tokens": 128
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2106,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 469,
+    "cache_read_input_tokens": 6169,
+    "cache_creation_input_tokens": 822,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 822
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 664,
+   "cacheReadInputTokens": 11054,
+   "cacheCreationInputTokens": 2106,
+   "webSearchRequests": 0,
+   "costUSD": 0.0323548,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 128,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "女川町の分別表で確認したところ、「色や模様のついた肉や魚のトレイ」とまったく同じ名前の品目は載っていないため、まだはっきりとはお答えできません。\n\nいちばん近い品目は次のとおりです（2026年10月1日からの分け方）。\n\n- **「色・模様つきトレイ」→ 赤色のかご（プラスチックごみ）**\n  - 表には「※色や模様のついたトレイは、赤かご（プラスチックごみ）へ」と書かれています。\n  - 赤色のかごの欄にも「発泡スチロールや色のついたトレイも出せます」とあります。\n  - 出典：女川町「20261001_gomi_itiran.pdf」（ごみ一覧）、「ごみ分別事典」9ページ\n\nお持ちのトレイがこれに当たるか、次の点を教えてください。\n- **材質**：プラスチック（発泡スチロールを含む）でできていますか？紙のトレイなど、ほかの材質ではありませんか？\n- **状態**：中身や汚れが残っていませんか？\n\n迷うときは、女川町クリーンセンター（電話 0225-53-3549）に問い合わせると確実です。",
+ "ttft_ms": 3158,
+ "type": "result",
+ "duration_ms": 13561,
+ "uuid": "fb8f9f17-79b8-4658-a146-e4221da31957",
+ "ttft_stream_ms": 1333,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 1333,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 15.1,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町に住んでいます。今日は2026年11月5日(木)です。色や模様のついた肉や魚のトレイは、どう分けて出せばいいですか？"
+}

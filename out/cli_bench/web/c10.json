@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 139938,
+ "stop_reason": "end_turn",
+ "session_id": "1ad78dc3-58f2-4541-9531-dda2b5f4e857",
+ "total_cost_usd": 0.2300855,
+ "usage": {
+  "input_tokens": 20,
+  "cache_creation_input_tokens": 9988,
+  "cache_read_input_tokens": 85704,
+  "output_tokens": 3934,
+  "output_tokens_details": {
+   "thinking_tokens": 1090
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9988,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1846,
+    "cache_read_input_tokens": 12602,
+    "cache_creation_input_tokens": 957,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 957
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 20,
+   "outputTokens": 3934,
+   "cacheReadInputTokens": 85704,
+   "cacheCreationInputTokens": 9988,
+   "webSearchRequests": 0,
+   "costUSD": 0.17580479999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1090,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 161972,
+   "outputTokens": 16167,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.0542807,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 11666,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2026年10月20日(火)は、**資源ごみ（あき缶・ペットボトル・プラスチック資源など）**を出せる日です。燃やすごみの日ではありません。\n\n**調べた方法**\n1. 金沢市の[住所から地区・校下検索](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3691.html)では、並木町は番地による区分がなく、町全体が「**材木**」地区（東部管理センター）です。\n2. [2026年度 材木地区の収集カレンダー](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html#zaimoku)を確認しました。\n\n**注意：** 取得したページでは、表の見出しと日付の列が1列ずつずれていました。そのままだと「燃やすごみは月1回」という不自然な内容になります。そこで、各月の日付を2026年の実際の暦と照らし合わせて、次のように判断しました。\n\n| 品目 | 収集日 | 2026年10月 |\n|---|---|---|\n| 燃やすごみ | 毎週 月曜・木曜 | 毎週月・木（20日は対象外） |\n| 燃やさないごみ | 第4水曜 | 28日 |\n| 資源（あき缶・ペットボトル・プラスチック資源など） | 第1・第3火曜 | 6日、**20日** |\n| 資源（プラスチック資源） | 第5火曜 | なし |\n| びん | 第2水曜 | 14日 |\n\n10月20日は第3火曜日なので、資源ごみの日になります。日付はどれも曜日の規則とぴったり合っていますが、表の見出しがずれていたので、念のため市の公式LINEかごみ減量推進課（076-220-2302）で確かめると安心です。\n\n出すときは、**当日の朝8時30分まで**に決められた集積場所へ出してください（[金沢市の案内](https://www.kanazawa-gwa.or.jp/household_wastes/)より）。\n\nSources:\n- [住所から地区・校下検索｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3691.html)\n- [2026年度地区・校下別収集カレンダー(その3)｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html)\n- [2026年度地区別収集カレンダー(トップページ)｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [収集日(地区別収集カレンダー)｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/7597.html)\n- [家庭ごみについて｜金沢市](https://www.kanazawa-gwa.or.jp/household_wastes/)",
+ "ttft_ms": 4027,
+ "type": "result",
+ "duration_ms": 137587,
+ "uuid": "d1c66ce8-fbcd-480b-8281-0d3267b86a33",
+ "ttft_stream_ms": 2520,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 2520,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 138.6,
+ "stderr": "",
+ "question": "石川県金沢市並木町2番21号 に住んでいます。2026年10月20日(火)にはどのごみを出せますか？"
+}

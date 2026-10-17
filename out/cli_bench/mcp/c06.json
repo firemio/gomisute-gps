@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 5291,
+ "stop_reason": "end_turn",
+ "session_id": "a33fa2f5-858e-4dd7-a178-9a1ba421fb4c",
+ "total_cost_usd": 0.0376382,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3157,
+  "cache_read_input_tokens": 11031,
+  "output_tokens": 508,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3157,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 409,
+    "cache_read_input_tokens": 6146,
+    "cache_creation_input_tokens": 1896,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1896
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 508,
+   "cacheReadInputTokens": 11031,
+   "cacheCreationInputTokens": 3157,
+   "webSearchRequests": 0,
+   "costUSD": 0.0376382,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "金沢市田井町11番18号は、ごみ収集カレンダーでは**味噌蔵地区**に入ります。2026年11月12日(木)に出せるのは**燃やすごみ**です（味噌蔵地区では、燃やすごみの収集日は毎週月曜日と木曜日です）。\n\n- **出す時刻:** 収集日の午前8時30分まで\n- **この日のあとの収集日:**\n  - 燃やすごみ：11月16日(月)\n  - 資源（あき缶・ペットボトル、プラスチック資源など）：11月17日(火)\n  - 燃やさないごみ：11月25日(水)\n  - びん：12月9日(水)\n\nこのツールでは、ごみの分け方や出し方（袋や容器）と、ごみ集積所の場所は調べられません。分からないときは、金沢市 ごみ減量推進課（電話 076-220-2302）に聞いてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その6) — 味噌蔵（東部管理センター）2026年度版」、「2026年度地区別収集カレンダー — 町名一覧表 (区域表)」、「ごみの出し方のルール」",
+ "ttft_ms": 1624,
+ "type": "result",
+ "duration_ms": 10048,
+ "uuid": "5ab79a2f-79ac-4bc9-a580-81b2f14d2532",
+ "ttft_stream_ms": 739,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 739,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 11.5,
+ "stderr": "",
+ "question": "石川県金沢市田井町11番18号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？"
+}

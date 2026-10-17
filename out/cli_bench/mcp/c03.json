@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 9053,
+ "stop_reason": "end_turn",
+ "session_id": "bf1a86a0-3ab7-4f6c-a1e3-e5c665d074e4",
+ "total_cost_usd": 0.037959,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3167,
+  "cache_read_input_tokens": 11035,
+  "output_tokens": 520,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3167,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 417,
+    "cache_read_input_tokens": 6150,
+    "cache_creation_input_tokens": 1902,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1902
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 520,
+   "cacheReadInputTokens": 11035,
+   "cacheCreationInputTokens": 3167,
+   "webSearchRequests": 0,
+   "costUSD": 0.037959,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2026年10月23日(金)に出せるのは「燃やすごみ」です。**\n\n- 収集日の**午前8時30分まで**に出してください。\n- お住まいの住所は、金沢市の収集カレンダーでは**中村町地区**に入ります。この地区の燃やすごみは毎週火曜日と金曜日です。\n\n**この日の後の収集日**\n| 日付 | 品目 |\n|---|---|\n| 10月27日(火) | 燃やすごみ |\n| 10月28日(水) | 燃やさないごみ |\n| 10月29日(木) | 資源 プラスチック資源 |\n| 11月5日(木) | 資源 あき缶・ペットボトル プラスチック資源など |\n| 11月11日(水) | びん |\n\n分け方・袋の種類やごみ集積所の場所は、このツールでは分かりません。分からないことは金沢市 ごみ減量推進課（076-220-2302）に聞いてください。\n\n出典：金沢市「2026年度地区・校下別収集カレンダー(その5) — 中村町（西部管理センター）2026年度版」、「2026年度地区別収集カレンダー — 町名一覧表 (区域表)」、「ごみの出し方のルール」",
+ "ttft_ms": 4565,
+ "type": "result",
+ "duration_ms": 13795,
+ "uuid": "c026e300-0720-494b-8429-ae4732a54817",
+ "ttft_stream_ms": 3647,
+ "time_to_request_ms": 50,
+ "first_content_frame_ms": 3648,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 15.2,
+ "stderr": "",
+ "question": "石川県金沢市増泉一丁目34番24号 に住んでいます。2026年10月23日(金)にはどのごみを出せますか？"
+}

@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 145784,
+ "stop_reason": "end_turn",
+ "session_id": "8b6cf3a9-8f56-4977-b493-77bd4b4f053b",
+ "total_cost_usd": 0.2176995,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 9741,
+  "cache_read_input_tokens": 68730,
+  "output_tokens": 3775,
+  "output_tokens_details": {
+   "thinking_tokens": 1368
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9741,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1081,
+    "cache_read_input_tokens": 11251,
+    "cache_creation_input_tokens": 2061,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2061
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 3775,
+   "cacheReadInputTokens": 68730,
+   "cacheCreationInputTokens": 9741,
+   "webSearchRequests": 0,
+   "costUSD": 0.167246,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1368,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 128875,
+   "outputTokens": 15132,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.050453500000000005,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 11062,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2026年11月12日(木)に出せるのは「資源(あき缶・ペットボトル・プラスチック資源など)」です。** 燃やすごみの日ではありません。\n\n**地区の確認**\n金沢市の町名一覧では、駅西本町6丁目のうち6番を含む区域は**戸板地区**です。15番の6〜17だけが大徳地区です。\n\n**戸板地区の収集ルール(2026年度)**\n\n| 品目 | 収集日 | 2026年11月 |\n|---|---|---|\n| 燃やすごみ | 毎週 火・金 | 火・金曜日 |\n| 燃やさないごみ | 第3木曜日 | 11月19日 |\n| 資源(あき缶・ペットボトル・プラスチック資源など) | 第2・第4木曜日 | **11月12日**・26日 |\n| プラスチック資源のみ | 第5木曜日 | 11月はなし |\n| びん | 第1水曜日 | 11月4日 |\n\n11月12日は第2木曜日なので、あき缶・ペットボトル・プラスチック資源の日です。朝8時30分までに出してください。\n\n**注意点**\n市のページの表は、取得したときにレイアウトが崩れていました。11月の日付(19・12・26・4)と各曜日ルールは確認できましたが、どの品目にどのルールが当たるかは私が組み立てたものです。根拠は、燃やすごみが週2回であることと、市の資料にある「プラスチック資源は月2回＋第5週目」という説明です。念のため、市の地区別カレンダーの戸板のページを見るか、ごみ減量推進課(076-220-2302)に確認してください。\n\nSources:\n- [2026年度地区別収集カレンダー(トップページ)／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [地区別収集カレンダー(戸板ほか)／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html)\n- [燃やすごみ 週2回収集／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7591.html)\n- [ごみの出し方のルール／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html)\n- [R06-05 概要資料／金沢市](https://www4.city.kanazawa.lg.jp/material/files/group/12/R06-05_gaiyou.pdf)",
+ "ttft_ms": 6690,
+ "type": "result",
+ "duration_ms": 146359,
+ "uuid": "89696b55-f202-4fba-9432-aa0bac570ba7",
+ "ttft_stream_ms": 5511,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 5511,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 147.4,
+ "stderr": "",
+ "question": "石川県金沢市駅西本町六丁目6番27号 に住んでいます。2026年11月12日(木)にはどのごみを出せますか？"
+}

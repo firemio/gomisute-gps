@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 167594,
+ "stop_reason": "end_turn",
+ "session_id": "9599be59-e8d1-4c1f-a08b-d46ea0dd0f02",
+ "total_cost_usd": 0.23740900000000004,
+ "usage": {
+  "input_tokens": 20,
+  "cache_creation_input_tokens": 11466,
+  "cache_read_input_tokens": 90231,
+  "output_tokens": 3368,
+  "output_tokens_details": {
+   "thinking_tokens": 764
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11466,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 892,
+    "cache_read_input_tokens": 12952,
+    "cache_creation_input_tokens": 2085,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2085
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 20,
+   "outputTokens": 3368,
+   "cacheReadInputTokens": 90231,
+   "cacheCreationInputTokens": 11466,
+   "webSearchRequests": 0,
+   "costUSD": 0.17721420000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 764,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 197838,
+   "outputTokens": 20822,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.06019480000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 14909,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 11,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**結論：2026年12月31日（木）は、どのごみも出せません。** 年末年始の収集休止期間に入っているためです。\n\n**根拠**\n- **地区：** 市の町名一覧では、寺町3丁目は番地に関係なく全域が「泉野」地区です。寺町4・5丁目は番地によって地区が分かれますが、3丁目は分かれていません。\n- **市のオープンデータ（2026年度 地区別収集カレンダー）：** 全地区とも、休止期間が「2026/12/30〜2027/1/3」となっています。\n- **泉野地区のカレンダーページ：** 「年末は12月28日（月）まで」「年始は1月4日（月）から」と書かれています。\n\n2つの資料で休止の始まり（12/28までの収集か、12/30からの休止か）が少し違って読めます。ただ、どちらでも12月31日に収集がないことは同じです。\n\n**注意点**\n- 泉野地区の「どのごみを何曜日に出すか」も確認しようとしましたが、取得したページの表の読み取りが不安定で、曜日とごみの種類の対応を正しく確かめられませんでした。年末の最終収集日は、下のカレンダーページや金沢市公式LINEで確認してください。\n- 年明けの収集は1月4日（月）から始まります。1月はいくつかの品目で収集日が変わります。\n- 確実に知りたい場合は、ごみ減量推進課（TEL 076-220-2302）に問い合わせてください。\n\nSources:\n- [2026年度地区別収集カレンダー（トップページ・町名一覧）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー（泉野）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html#izumino)\n- [金沢市 地区別ごみ収集カレンダー（オープンデータ）](https://catalog-data.city.kanazawa.ishikawa.jp/en/dataset/172014-chikubetu)",
+ "ttft_ms": 7310,
+ "type": "result",
+ "duration_ms": 163195,
+ "uuid": "dc4db4a4-613e-4e93-862e-8a0bdaf3380a",
+ "ttft_stream_ms": 5476,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 5476,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 164.3,
+ "stderr": "",
+ "question": "石川県金沢市寺町三丁目1番13号 に住んでいます。2026年12月31日(木)にはどのごみを出せますか？"
+}

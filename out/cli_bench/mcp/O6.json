@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 7420,
+ "stop_reason": "end_turn",
+ "session_id": "a71d0247-19b1-4580-9955-c75f82f1daf5",
+ "total_cost_usd": 0.042554800000000004,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3389,
+  "cache_read_input_tokens": 11034,
+  "output_tokens": 661,
+  "output_tokens_details": {
+   "thinking_tokens": 36
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3389,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 567,
+    "cache_read_input_tokens": 6149,
+    "cache_creation_input_tokens": 2125,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2125
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 661,
+   "cacheReadInputTokens": 11034,
+   "cacheCreationInputTokens": 3389,
+   "webSearchRequests": 0,
+   "costUSD": 0.042554800000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 36,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2027年1月5日(火)に出せるのは「燃やせるごみ」です。**\n\n- 石浜地区の燃やせるごみは「水色の日」(火・金) で、1月5日が年明け最初の収集日です\n- 収集日の**朝8時まで**に出してください\n\n**参考: その後の年明け最初の収集日**\n- 1月7日(木): 燃やせないごみ\n- 1月7日(木): ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\n  - この見出しは4月に印刷されたカレンダーのままです。2026年10月1日から出し方が次のように変わっています。\n    - **赤色のかご**: ペットボトル以外のプラスチック容器・製品 (プラスチック100%のものすべて。発泡スチロール、色・模様つきのトレイ、ペットボトルのキャップ・ラベルも含む)\n    - **緑色のかご**: 紙パック・白色トレイ\n    - **かごに入れずに出すもの**: 段ボール・新聞紙・雑誌類・雑紙・布類・剪定枝・廃食油\n- 1月14日(木): 缶・びん ペットボトル\n- 1月27日(水): 粗大ごみ\n\nごみ集積所の場所や粗大ごみの申し込み方法は、女川町クリーンセンター (0225-53-3549) に確かめてください。\n\n出典: 女川町「令和８年度 おながわ町民カレンダー」、女川町「環境・ごみ」",
+ "ttft_ms": 1781,
+ "type": "result",
+ "duration_ms": 12104,
+ "uuid": "8473741d-6b2f-4cd1-b5ad-94bbebcd284a",
+ "ttft_stream_ms": 1395,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1395,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 13.6,
+ "stderr": "",
+ "question": "宮城県牡鹿郡女川町石浜 に住んでいます。2027年1月5日(火)にはどのごみを出せますか？"
+}
