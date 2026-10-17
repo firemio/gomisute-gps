@@ -1,0 +1,287 @@
+{
+ "mode": "jitter 3000x5 within 30m (production model)",
+ "queries": 15000,
+ "decided_by_table": 14910,
+ "counts": {
+  "ambiguous_truth_absent": 1,
+  "ambiguous_truth_in": 2286,
+  "not_in_table:unresolved": 65,
+  "ok_correct": 12506,
+  "ok_wrong_truth_absent": 35,
+  "undecided:ambiguous": 20,
+  "undecided:unresolved": 5,
+  "unresolved_truth_in": 82
+ },
+ "ok_rate": 0.8411,
+ "ok_precision": 0.99721,
+ "ok_on_addresses_not_decided_by_table": 0,
+ "ok_precision_strict": 0.99721,
+ "by_confidence": {
+  "0.7": {
+   "correct": 1,
+   "wrong": 0
+  },
+  "0.85": {
+   "correct": 1326,
+   "wrong": 6
+  },
+  "0.9": {
+   "correct": 1582,
+   "wrong": 6
+  },
+  "0.93": {
+   "correct": 6502,
+   "wrong": 21
+  },
+  "0.95": {
+   "correct": 962,
+   "wrong": 2
+  },
+  "0.97": {
+   "correct": 2133,
+   "wrong": 0
+  }
+ },
+ "wrong_or_undecided_ok_by_town": {
+  "笠舞二丁目": 3,
+  "西念四丁目": 3,
+  "野町五丁目": 2,
+  "金石北三丁目": 2,
+  "富樫一丁目": 2,
+  "笠舞本町一丁目": 2,
+  "旭町一丁目": 1,
+  "寺町四丁目": 1,
+  "駅西新町一丁目": 1,
+  "元町二丁目": 1,
+  "増泉四丁目": 1,
+  "有松一丁目": 1,
+  "平和町三丁目": 1,
+  "三口新町一丁目": 1,
+  "北安江四丁目": 1,
+  "弥生一丁目": 1,
+  "緑が丘": 1,
+  "三社町": 1,
+  "泉三丁目": 1,
+  "笠市町": 1,
+  "清川町": 1,
+  "寺町一丁目": 1,
+  "小立野一丁目": 1,
+  "鳴和二丁目": 1,
+  "笠舞本町二丁目": 1,
+  "玉川町": 1,
+  "長田二丁目": 1
+ },
+ "wrong_examples": [
+  [
+   "笠舞二丁目6-23",
+   "菊川",
+   "小立野",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "笠舞二丁目6-23",
+   "菊川",
+   "小立野",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "旭町一丁目20-31",
+   "小立野",
+   "田上",
+   "zone_polygon",
+   0.9
+  ],
+  [
+   "西念四丁目14-11",
+   "戸板",
+   "西",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "西念四丁目14-11",
+   "戸板",
+   "西",
+   "zone_polygon",
+   0.85
+  ],
+  [
+   "西念四丁目14-11",
+   "戸板",
+   "西",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "寺町四丁目10-16",
+   "野町",
+   "泉野",
+   "zone_polygon",
+   0.95
+  ],
+  [
+   "駅西新町一丁目8-7",
+   "諸江",
+   "西",
+   "zone_polygon",
+   0.9
+  ],
+  [
+   "元町二丁目19-22",
+   "森山",
+   "浅野町",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "野町五丁目19-2",
+   "中村町",
+   "野町",
+   "zone_polygon",
+   0.9
+  ],
+  [
+   "金石北三丁目16-26",
+   "木曳野",
+   "金石町",
+   "parcel_and_zone_agree",
+   0.93
+  ],
+  [
+   "笠舞二丁目24-16",
+   "小立野",
+   "菊川",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "増泉四丁目5-30",
+   "米泉",
+   "中村町",
+   "zone_polygon",
+   0.9
+  ],
+  [
+   "有松一丁目6-10",
+   "弥生",
+   "三馬",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "野町五丁目18-125",
+   "中村町",
+   "野町",
+   "zone_polygon",
+   0.9
+  ],
+  [
+   "平和町三丁目3-22",
+   "十一屋",
+   "長坂台",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "三口新町一丁目22-26",
+   "小立野",
+   "南小立野",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "北安江四丁目21-10",
+   "西",
+   "諸江",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "弥生一丁目16-17",
+   "弥生",
+   "野町",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "緑が丘21-20",
+   "長坂台",
+   "泉野",
+   "zone_polygon",
+   0.95
+  ],
+  [
+   "三社町6-23",
+   "長田町",
+   "芳斎",
+   "zone_polygon",
+   0.85
+  ],
+  [
+   "泉三丁目6-85",
+   "三馬",
+   "弥生",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "富樫一丁目2-14",
+   "泉野",
+   "富樫",
+   "zone_polygon",
+   0.85
+  ],
+  [
+   "富樫一丁目3-7",
+   "弥生",
+   "富樫",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "笠市町9-13",
+   "瓢箪",
+   "此花",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "金石北三丁目16-30",
+   "木曳野",
+   "金石町",
+   "parcel_and_zone_agree",
+   0.93
+  ],
+  [
+   "清川町1-1",
+   "野町",
+   "新竪町",
+   "zone_polygon",
+   0.85
+  ],
+  [
+   "寺町一丁目8-10",
+   "十一屋",
+   "泉野",
+   "zone_polygon",
+   0.9
+  ],
+  [
+   "小立野一丁目1-75",
+   "南小立野",
+   "小立野",
+   "address_and_zone_agree",
+   0.93
+  ],
+  [
+   "鳴和二丁目7-4",
+   "森山",
+   "小坂",
+   "address_and_zone_agree",
+   0.93
+  ]
+ ],
+ "seconds": 60
+}

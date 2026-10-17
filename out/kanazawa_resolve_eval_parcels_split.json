@@ -1,0 +1,60 @@
+{
+ "mode": "split-town parcel holdout (地区が分かれる町の筆 25%, seed 11)",
+ "seed": 11,
+ "holdout_parcels": 4473,
+ "runs": [
+  {
+   "PARCEL_NEAR_M": 80,
+   "decided_by_table": 2908,
+   "counts": {
+    "ambiguous_truth_in": 2904,
+    "ok_wrong_truth_absent": 1,
+    "undecided:ambiguous": 1560,
+    "undecided:ok": 2,
+    "undecided:unresolved": 3,
+    "unresolved_truth_in": 3
+   },
+   "ok_rate": 0.0003,
+   "ok_precision": 0.0,
+   "ok_on_addresses_not_decided_by_table": 2,
+   "ok_precision_strict": 0.0,
+   "by_confidence": {
+    "0.95": {
+     "correct": 0,
+     "wrong": 1
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {
+    "畝田中": 1,
+    "大桑町開": 1,
+    "大桑町坊山": 1
+   },
+   "wrong_examples": [
+    [
+     "畝田中３丁目110",
+     "(表で決まらない住所)",
+     "木曳野",
+     "UNDECIDED",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "大桑町開1",
+     "内川",
+     "十一屋",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "大桑町坊山1",
+     "(表で決まらない住所)",
+     "内川",
+     "UNDECIDED",
+     "zone_polygon",
+     0.95
+    ]
+   ]
+  }
+ ],
+ "seconds": 22
+}

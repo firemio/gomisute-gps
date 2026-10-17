@@ -1,0 +1,268 @@
+{
+ "mode": "parcel holdout (ABR 地番代表点 10%, 住居表示の無い筆)",
+ "seed": 7,
+ "holdout_parcels": 23981,
+ "runs": [
+  {
+   "PARCEL_NEAR_M": 30,
+   "decided_by_table": 23191,
+   "counts": {
+    "ambiguous_truth_absent": 1,
+    "ambiguous_truth_in": 2091,
+    "not_in_table:ambiguous": 1,
+    "not_in_table:unresolved": 108,
+    "ok_correct": 20988,
+    "ok_wrong_truth_absent": 12,
+    "out_of_coverage_truth_absent": 7,
+    "undecided:ambiguous": 677,
+    "undecided:ok": 1,
+    "undecided:out_of_coverage": 1,
+    "undecided:unresolved": 2,
+    "unresolved_truth_in": 92
+   },
+   "ok_rate": 0.9055,
+   "ok_precision": 0.99943,
+   "ok_on_addresses_not_decided_by_table": 1,
+   "ok_precision_strict": 0.99938,
+   "by_confidence": {
+    "0.7": {
+     "correct": 1,
+     "wrong": 0
+    },
+    "0.85": {
+     "correct": 413,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 558,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 19616,
+     "wrong": 4
+    },
+    "0.95": {
+     "correct": 399,
+     "wrong": 8
+    },
+    "0.97": {
+     "correct": 1,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {
+    "四王寺町ヌ": 3,
+    "上辰巳町拾字": 1,
+    "上中町己": 1,
+    "高柳町十字": 1,
+    "俵町ル": 1,
+    "銚子町ニ": 1,
+    "梨木町五字": 1,
+    "梨木町弐字": 1,
+    "福増町ハ": 1,
+    "不動寺町チ": 1,
+    "森戸": 1
+   },
+   "wrong_examples": [
+    [
+     "上辰巳町拾字238",
+     "東浅川",
+     "犀川",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "上中町己19",
+     "犀川",
+     "東浅川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "四王寺町ヌ17",
+     "森本",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "四王寺町ヌ21",
+     "森本",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "四王寺町ヌ32",
+     "森本",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "高柳町十字101",
+     "(表で決まらない住所)",
+     "小坂",
+     "UNDECIDED",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "俵町ル201",
+     "東浅川",
+     "俵",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "銚子町ニ27",
+     "犀川",
+     "東浅川",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "梨木町五字15",
+     "不動寺",
+     "三谷",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "梨木町弐字52",
+     "不動寺",
+     "三谷",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "福増町ハ71",
+     "三和",
+     "安原（緑団地含む）",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "不動寺町チ336",
+     "三谷",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "森戸２丁目99",
+     "二塚",
+     "三和",
+     "zone_polygon",
+     0.95
+    ]
+   ]
+  },
+  {
+   "PARCEL_NEAR_M": 50,
+   "decided_by_table": 23191,
+   "counts": {
+    "ambiguous_truth_in": 2920,
+    "not_in_table:ambiguous": 1,
+    "not_in_table:unresolved": 108,
+    "ok_correct": 20170,
+    "ok_wrong_truth_absent": 2,
+    "out_of_coverage_truth_absent": 7,
+    "undecided:ambiguous": 678,
+    "undecided:out_of_coverage": 1,
+    "undecided:unresolved": 2,
+    "unresolved_truth_in": 92
+   },
+   "ok_rate": 0.8698,
+   "ok_precision": 0.9999,
+   "ok_on_addresses_not_decided_by_table": 0,
+   "ok_precision_strict": 0.9999,
+   "by_confidence": {
+    "0.85": {
+     "correct": 405,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 515,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 18859,
+     "wrong": 0
+    },
+    "0.95": {
+     "correct": 390,
+     "wrong": 2
+    },
+    "0.97": {
+     "correct": 1,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {
+    "上中町己": 1,
+    "不動寺町チ": 1
+   },
+   "wrong_examples": [
+    [
+     "上中町己19",
+     "犀川",
+     "東浅川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "不動寺町チ336",
+     "三谷",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ]
+   ]
+  },
+  {
+   "PARCEL_NEAR_M": 80,
+   "decided_by_table": 23191,
+   "counts": {
+    "ambiguous_truth_in": 4182,
+    "not_in_table:ambiguous": 1,
+    "not_in_table:unresolved": 108,
+    "ok_correct": 18910,
+    "out_of_coverage_truth_absent": 7,
+    "undecided:ambiguous": 678,
+    "undecided:out_of_coverage": 1,
+    "undecided:unresolved": 2,
+    "unresolved_truth_in": 92
+   },
+   "ok_rate": 0.8154,
+   "ok_precision": 1.0,
+   "ok_on_addresses_not_decided_by_table": 0,
+   "ok_precision_strict": 1.0,
+   "by_confidence": {
+    "0.85": {
+     "correct": 397,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 464,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 17678,
+     "wrong": 0
+    },
+    "0.95": {
+     "correct": 370,
+     "wrong": 0
+    },
+    "0.97": {
+     "correct": 1,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {},
+   "wrong_examples": []
+  }
+ ],
+ "seconds": 189
+}

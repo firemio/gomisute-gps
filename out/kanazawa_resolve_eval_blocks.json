@@ -1,0 +1,449 @@
+{
+ "mode": "full holdout (blocks)",
+ "runs": [
+  {
+   "seed": 314,
+   "holdout_addresses": 11563,
+   "NEAR_M": 10,
+   "BLIND_M": 120,
+   "decided_by_table": 11530,
+   "counts": {
+    "ambiguous_truth_in": 2870,
+    "not_in_table:unresolved": 33,
+    "ok_correct": 8520,
+    "unresolved_truth_in": 140
+   },
+   "ok_rate": 0.7389,
+   "ok_precision": 1.0,
+   "ok_on_addresses_not_decided_by_table": 0,
+   "ok_precision_strict": 1.0,
+   "by_confidence": {
+    "0.85": {
+     "correct": 759,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 854,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 5028,
+     "wrong": 0
+    },
+    "0.95": {
+     "correct": 436,
+     "wrong": 0
+    },
+    "0.97": {
+     "correct": 1443,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {},
+   "wrong_examples": []
+  },
+  {
+   "seed": 1,
+   "holdout_addresses": 12183,
+   "NEAR_M": 10,
+   "BLIND_M": 120,
+   "decided_by_table": 12008,
+   "counts": {
+    "ambiguous_truth_in": 2703,
+    "not_in_table:ambiguous": 25,
+    "not_in_table:ok": 81,
+    "not_in_table:unresolved": 68,
+    "ok_correct": 9209,
+    "undecided:ambiguous": 1,
+    "unresolved_truth_in": 96
+   },
+   "ok_rate": 0.7669,
+   "ok_precision": 1.0,
+   "ok_on_addresses_not_decided_by_table": 81,
+   "ok_precision_strict": 0.99128,
+   "by_confidence": {
+    "0.85": {
+     "correct": 457,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 1196,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 5312,
+     "wrong": 0
+    },
+    "0.95": {
+     "correct": 659,
+     "wrong": 0
+    },
+    "0.97": {
+     "correct": 1585,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {
+    "木ノ新保町": 47,
+    "金石下寺町": 33,
+    "金石上浜町": 1
+   },
+   "wrong_examples": [
+    [
+     "金石上浜町4-3",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-1",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-2",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-3",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-4",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-5",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-26",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-27",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-28",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-29",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-30",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-31",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-32",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-33",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-34",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-35",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-36",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-37",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-38",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-39",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-40",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-41",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-42",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-43",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-44",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-45",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-46",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-47",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "zone_polygon",
+     0.9
+    ],
+    [
+     "金石下寺町1-48",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石下寺町1-49",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ]
+   ]
+  },
+  {
+   "seed": 2,
+   "holdout_addresses": 12388,
+   "NEAR_M": 10,
+   "BLIND_M": 120,
+   "decided_by_table": 12358,
+   "counts": {
+    "ambiguous_truth_in": 2769,
+    "not_in_table:ok": 5,
+    "not_in_table:unresolved": 24,
+    "ok_correct": 9473,
+    "undecided:ambiguous": 1,
+    "unresolved_truth_in": 116
+   },
+   "ok_rate": 0.7665,
+   "ok_precision": 1.0,
+   "ok_on_addresses_not_decided_by_table": 5,
+   "ok_precision_strict": 0.99947,
+   "by_confidence": {
+    "0.85": {
+     "correct": 798,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 883,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 5452,
+     "wrong": 0
+    },
+    "0.95": {
+     "correct": 785,
+     "wrong": 0
+    },
+    "0.97": {
+     "correct": 1555,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {
+    "金石浜町": 5
+   },
+   "wrong_examples": [
+    [
+     "金石浜町1-1",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石浜町1-2",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石浜町4-6",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石浜町4-7",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "金石浜町4-8",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ]
+   ]
+  }
+ ],
+ "pooled": {
+  "seeds": [
+   314,
+   1,
+   2
+  ],
+  "wrong_or_undecided_ok_by_town": {
+   "木ノ新保町": 47,
+   "金石下寺町": 33,
+   "金石浜町": 5,
+   "金石上浜町": 1
+  },
+  "decided_by_table": 35896,
+  "counts": {
+   "ambiguous_truth_in": 8342,
+   "not_in_table:ambiguous": 25,
+   "not_in_table:ok": 86,
+   "not_in_table:unresolved": 125,
+   "ok_correct": 27202,
+   "undecided:ambiguous": 2,
+   "unresolved_truth_in": 352
+  },
+  "ok_rate": 0.7578,
+  "ok_precision": 1.0,
+  "ok_on_addresses_not_decided_by_table": 86,
+  "ok_precision_strict": 0.99685
+ },
+ "seconds": 129
+}

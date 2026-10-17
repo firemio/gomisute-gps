@@ -1,0 +1,42 @@
+{
+ "mode": "jitter 3000x5 within 30m (production model), accuracy_m=30 (confidence 0.99)",
+ "queries": 15000,
+ "decided_by_table": 14910,
+ "counts": {
+  "ambiguous_truth_in": 5713,
+  "not_in_table:unresolved": 65,
+  "ok_correct": 9045,
+  "undecided:ambiguous": 20,
+  "undecided:unresolved": 5,
+  "unresolved_truth_in": 152
+ },
+ "ok_rate": 0.6066,
+ "ok_precision": 1.0,
+ "ok_on_addresses_not_decided_by_table": 0,
+ "ok_precision_strict": 1.0,
+ "by_confidence": {
+  "0.85": {
+   "correct": 752,
+   "wrong": 0
+  },
+  "0.9": {
+   "correct": 1253,
+   "wrong": 0
+  },
+  "0.93": {
+   "correct": 4549,
+   "wrong": 0
+  },
+  "0.95": {
+   "correct": 746,
+   "wrong": 0
+  },
+  "0.97": {
+   "correct": 1745,
+   "wrong": 0
+  }
+ },
+ "wrong_or_undecided_ok_by_town": {},
+ "wrong_examples": [],
+ "seconds": 82
+}

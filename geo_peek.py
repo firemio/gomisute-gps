@@ -6,8 +6,8 @@ with zipfile.ZipFile("data/gsi_jukyo_17201.zip") as z:
 for enc in ("utf-8-sig", "cp932"):
     try: txt = raw.decode(enc); break
     except UnicodeDecodeError: pass
-df = pd.read_csv(io.StringIO(txt), dtype=str)
-df.to_csv("data/gsi_jukyo_17201.csv", index=False, encoding="utf-8")
+df = pd.read_csv(io.StringIO(txt), dtype=str, header=None)          # 元の CSV に見出し行は無い
+df.to_csv("data/gsi_jukyo_17201.csv", index=False, header=False, encoding="utf-8")
 print("GSI", enc, df.shape); print(df.head(5)); print(df.columns.tolist())
 g = gpd.read_file("data/estat_17201/r2ka17201.shp")
 print("ESTAT", g.shape, g.crs); print(g.drop(columns="geometry").head(5))

@@ -1,0 +1,277 @@
+{
+ "mode": "koaza-group parcel holdout (町+小字の 10% を丸ごと, seed 5)",
+ "seed": 5,
+ "holdout_parcels": 19705,
+ "runs": [
+  {
+   "PARCEL_NEAR_M": 80,
+   "decided_by_table": 18914,
+   "counts": {
+    "ambiguous_truth_absent": 12,
+    "ambiguous_truth_in": 2414,
+    "not_in_table:ambiguous": 2,
+    "ok_correct": 16211,
+    "ok_wrong_truth_absent": 47,
+    "out_of_coverage_truth_absent": 16,
+    "undecided:ambiguous": 789,
+    "unresolved_truth_absent": 13,
+    "unresolved_truth_in": 201
+   },
+   "ok_rate": 0.8596,
+   "ok_precision": 0.99711,
+   "ok_on_addresses_not_decided_by_table": 0,
+   "ok_precision_strict": 0.99711,
+   "by_confidence": {
+    "0.7": {
+     "correct": 222,
+     "wrong": 0
+    },
+    "0.85": {
+     "correct": 32,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 327,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 3707,
+     "wrong": 13
+    },
+    "0.95": {
+     "correct": 11917,
+     "wrong": 34
+    },
+    "0.97": {
+     "correct": 6,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {
+    "福久町弐字": 14,
+    "住吉町オ": 12,
+    "浅川町ハ": 4,
+    "上涌波町ヲ": 4,
+    "銚子町ウ": 4,
+    "田中町に": 3,
+    "小野町ル": 2,
+    "銚子町ニ": 2,
+    "末町弐拾七字": 1,
+    "深谷町ヘ": 1
+   },
+   "wrong_examples": [
+    [
+     "浅川町ハ5",
+     "犀川",
+     "東浅川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "浅川町ハ9",
+     "犀川",
+     "東浅川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "浅川町ハ12",
+     "犀川",
+     "東浅川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "浅川町ハ15",
+     "犀川",
+     "東浅川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "上涌波町ヲ29",
+     "夕日寺",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "上涌波町ヲ30",
+     "夕日寺",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "上涌波町ヲ32",
+     "夕日寺",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "上涌波町ヲ34",
+     "夕日寺",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "小野町ル22",
+     "三谷",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "小野町ル23",
+     "三谷",
+     "不動寺",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "末町弐拾七字4",
+     "内川",
+     "犀川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ112",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ116",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ117",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ118",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ119",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ120",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ121",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ123",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ124",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ126",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ127",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "住吉町オ128",
+     "倉ヶ嶽",
+     "内川",
+     "zone_polygon",
+     0.95
+    ],
+    [
+     "田中町に75",
+     "諸江",
+     "浅野町",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "田中町に76",
+     "諸江",
+     "浅野町",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "田中町に79",
+     "諸江",
+     "浅野町",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "銚子町ウ16",
+     "犀川",
+     "東浅川",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "銚子町ウ17",
+     "犀川",
+     "東浅川",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "銚子町ウ17",
+     "犀川",
+     "東浅川",
+     "parcel_and_zone_agree",
+     0.93
+    ],
+    [
+     "銚子町ウ17",
+     "犀川",
+     "東浅川",
+     "parcel_and_zone_agree",
+     0.93
+    ]
+   ]
+  }
+ ],
+ "seconds": 58
+}

@@ -18,3 +18,14 @@ Thumbs.db
 
 # address-normalize 試作の検証 DB (約300MB)
 prototypes/**/*.sqlite
+
+# 評価用 (split_blocks.py --holdout が生成)
+out/kanazawa_town_parts_holdout.geojson
+out/kanazawa_holdout_ids.json
+out/kanazawa_town_parts_holdout_blocks.geojson
+out/kanazawa_holdout_blocks_ids.json
+out/kanazawa_town_parts_holdout_blocks_s*.geojson
+out/kanazawa_holdout_blocks_s*_ids.json
+out/kanazawa_holdout_parcels_ids.json
+out/kanazawa_holdout_parcels_split_ids.json
+out/kanazawa_holdout_parcels*_ids.json

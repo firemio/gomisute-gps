@@ -12,7 +12,7 @@ def kan2num(s):
 def norm_town(s):
     s = s.translate(str.maketrans("０１２３４５６７８９", "0123456789")).replace(" ", "").replace("　", "")
     s = s.replace("ヶ", "ケ").replace("ヵ", "ケ").replace("之", "の")
-    s = s.translate(str.maketrans("舘薮刈嶽", "館藪苅岳"))          # 異体字ゆれ
+    s = s.translate(str.maketrans("舘薮刈嶽傅", "館藪苅岳伝"))      # 異体字ゆれ (ABR 傅燈寺町 ⇔ 区域表 伝燈寺町)
     s = re.sub(r"(\d+)丁$", r"\1丁目", s)                         # 鞍月東1丁
     s = re.sub(r"([^\d丁番])(\d+)$", r"\1\2丁目", s)              # もりの里1
     s = re.sub(r"([一二三四五六七八九十]+)丁目", lambda m: f"{kan2num(m[1])}丁目", s)

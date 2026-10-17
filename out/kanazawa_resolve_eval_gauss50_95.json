@@ -1,0 +1,43 @@
+{
+ "mode": "gauss 3000x5, accuracy_m=50.0 at confidence 0.95 (sigma 20.4m)",
+ "queries": 15000,
+ "outside_reported_radius": 0.0494,
+ "decided_by_table": 14910,
+ "counts": {
+  "ambiguous_truth_in": 8013,
+  "not_in_table:unresolved": 65,
+  "ok_correct": 6665,
+  "undecided:ambiguous": 20,
+  "undecided:unresolved": 5,
+  "unresolved_truth_in": 232
+ },
+ "ok_rate": 0.447,
+ "ok_precision": 1.0,
+ "ok_on_addresses_not_decided_by_table": 0,
+ "ok_precision_strict": 1.0,
+ "by_confidence": {
+  "0.85": {
+   "correct": 448,
+   "wrong": 0
+  },
+  "0.9": {
+   "correct": 960,
+   "wrong": 0
+  },
+  "0.93": {
+   "correct": 3218,
+   "wrong": 0
+  },
+  "0.95": {
+   "correct": 630,
+   "wrong": 0
+  },
+  "0.97": {
+   "correct": 1409,
+   "wrong": 0
+  }
+ },
+ "wrong_or_undecided_ok_by_town": {},
+ "wrong_examples": [],
+ "seconds": 84
+}

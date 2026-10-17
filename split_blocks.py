@@ -15,12 +15,10 @@ sys.stdout.reconfigure(encoding="utf-8")
 T0 = time.time()
 from townnorm import norm_town
 
+from kzrules import load_rules, load_jukyo, match
+
 # ---- 入力 ----
-rules = list(csv.DictReader(open("data/kanazawa_rules.csv", encoding="utf-8")))
-for r in rules:
-    r["ntown"] = norm_town(r["town"])
-    for k in ("blk_from", "blk_to", "ban_from", "ban_to"):
-        r[k] = int(r[k]) if r[k] else None
+rules, by_town = load_rules()
 
 poly = gpd.read_file("data/estat_17201/r2ka17201.shp")
 poly = poly[poly["HCODE"] == 8101]                         # 8154 = 水面等を除外
@@ -28,38 +26,21 @@ poly["ntown"] = poly["S_NAME"].map(norm_town)
 poly = poly.dissolve(by="ntown", as_index=False)[["ntown", "geometry"]].to_crs(6675)
 P = dict(zip(poly["ntown"], poly["geometry"]))
 
-pts = pd.read_csv("data/gsi_jukyo_17201.csv", header=None, dtype=str, skiprows=1)
-pts.columns = ["muni", "town", "blk", "num", "uri", "x5", "lon", "lat", "scale"][:len(pts.columns)]
-pts["ntown"] = pts["town"].map(norm_town)
-pts["blk_i"] = pd.to_numeric(pts["blk"].str.extract(r"^(\d+)")[0], errors="coerce")
-pts["num_i"] = pd.to_numeric(pts["num"].str.extract(r"^(\d+)")[0], errors="coerce")
+pts = load_jukyo()
 gpts = gpd.GeoDataFrame(pts, geometry=gpd.points_from_xy(pts.lon.astype(float), pts.lat.astype(float)), crs=6668).to_crs(6675)
-HOLD = None
-if "--holdout" in sys.argv:
+HOLD, SUFFIX = None, ""
+if "--holdout" in sys.argv:                 # 住居表示住所の 20% を無作為に除く
     HOLD = gpts.sample(frac=0.2, random_state=42)
+elif "--holdout-blocks" in sys.argv:        # 街区 (町名+街区) の 10% を丸ごと除く (利用者の街区に住所が1つも無い場合の評価)。--seed N でシードを変える
+    SEED = int(sys.argv[sys.argv.index("--seed") + 1]) if "--seed" in sys.argv else 314   # 314 は BLIND_M を決めたときのシード。報告は複数シードで
+    keys = gpts[["ntown", "blk"]].drop_duplicates().sample(frac=0.1, random_state=SEED)
+    HOLD = gpts[gpts.set_index(["ntown", "blk"]).index.isin(pd.MultiIndex.from_frame(keys))]
+    SUFFIX = "_blocks" if SEED == 314 else f"_blocks_s{SEED}"
+if HOLD is not None:
     gpts = gpts.drop(HOLD.index)
 PTS = {t: g for t, g in gpts.groupby("ntown")}
 print(f"load {time.time()-T0:.1f}s  polys={len(P)} points={len(gpts)} towns_in_points={len(PTS)}")
 
-# ---- ルールを町ごとに ----
-by_town = collections.defaultdict(list)
-for r in rules: by_town[r["ntown"]].append(r)
-
-def match(rs, blk, num):
-    """最も具体的に当たるルールの地区。default は最後"""
-    best = None
-    for r in rs:
-        if r["kind"] in ("banchi", "block"):
-            if r["blk_from"] is not None and not (r["blk_from"] <= blk <= r["blk_to"]): continue
-            if r["ban_from"] is not None:
-                if r["blk_from"] is None: continue          # 地番型(街区なし番地) は住居表示点に当てない
-                if not (r["ban_from"] <= num <= r["ban_to"]): continue
-            spec = (r["blk_from"] is not None) + (r["ban_from"] is not None)
-            if best is None or spec > best[0]: best = (spec, r["district"])
-    if best: return best[1]
-    for r in rs:
-        if r["kind"] in ("default", "town"): return r["district"]
-    return None
 
 feats, rep = [], collections.Counter()
 missing_poly, unresolved = [], []
@@ -125,7 +106,10 @@ else:
     rep["holdout_n"] = len(j); rep["holdout_acc"] = round(ok / len(j), 4); rep["holdout_nozone"] = int(miss)
     bad = j[(j.truth != j.pred) & j.pred.notna()]
     rep["holdout_wrong_towns"] = bad.ntown.value_counts().head(8).to_dict()
-    json.dump(rep, open("out/kanazawa_holdout.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(rep, open(f"out/kanazawa_holdout{SUFFIX}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    # resolve.py の完全ホールドアウト評価用: 除外した住所の行番号と、それ抜きで作った区域 (git 管理外)
+    json.dump(sorted(int(i) for i in HOLD.index), open(f"out/kanazawa_holdout{SUFFIX}_ids.json", "w"))
+    out.to_crs(4326).to_file(f"out/kanazawa_town_parts_holdout{SUFFIX}.geojson", driver="GeoJSON")
 print(json.dumps(rep, ensure_ascii=False))
 print("missing_poly", len(missing_poly))
 for m in missing_poly: print("  ", m)

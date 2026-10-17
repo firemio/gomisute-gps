@@ -1,0 +1,30 @@
+{
+ "mode": "jitter 3000x10 within 10m (production model)",
+ "queries": 30000,
+ "decided_by_table": 29820,
+ "counts": {
+  "ambiguous_truth_in": 4650,
+  "not_in_table:unresolved": 130,
+  "ok_correct": 24972,
+  "undecided:ambiguous": 40,
+  "undecided:unresolved": 10,
+  "unresolved_truth_in": 198
+ },
+ "ok_rate": 0.8374,
+ "ok_precision": 1.0,
+ "ok_on_addresses_not_decided_by_table": 0,
+ "ok_precision_strict": 1.0,
+ "by_confidence": {
+  "0.93": {
+   "correct": 18778,
+   "wrong": 0
+  },
+  "0.97": {
+   "correct": 6194,
+   "wrong": 0
+  }
+ },
+ "wrong_or_undecided_ok_by_town": {},
+ "wrong_examples": [],
+ "seconds": 91
+}

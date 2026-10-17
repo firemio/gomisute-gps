@@ -1,0 +1,71 @@
+{
+ "mode": "full holdout (random)",
+ "runs": [
+  {
+   "seed": null,
+   "holdout_addresses": 24159,
+   "NEAR_M": 10,
+   "BLIND_M": 120,
+   "decided_by_table": 23953,
+   "counts": {
+    "ambiguous_truth_in": 3835,
+    "not_in_table:ok": 1,
+    "not_in_table:unresolved": 151,
+    "ok_correct": 19967,
+    "undecided:ambiguous": 51,
+    "undecided:ok": 1,
+    "undecided:unresolved": 2,
+    "unresolved_truth_in": 151
+   },
+   "ok_rate": 0.8336,
+   "ok_precision": 1.0,
+   "ok_on_addresses_not_decided_by_table": 2,
+   "ok_precision_strict": 0.9999,
+   "by_confidence": {
+    "0.85": {
+     "correct": 435,
+     "wrong": 0
+    },
+    "0.9": {
+     "correct": 592,
+     "wrong": 0
+    },
+    "0.93": {
+     "correct": 13934,
+     "wrong": 0
+    },
+    "0.95": {
+     "correct": 471,
+     "wrong": 0
+    },
+    "0.97": {
+     "correct": 4535,
+     "wrong": 0
+    }
+   },
+   "wrong_or_undecided_ok_by_town": {
+    "金石御船町": 1,
+    "大和町": 1
+   },
+   "wrong_examples": [
+    [
+     "金石御船町7-1",
+     "(表で決まらない住所)",
+     "金石町",
+     "NOT_IN_TABLE",
+     "address_and_zone_agree",
+     0.93
+    ],
+    [
+     "大和町3-41",
+     "(表で決まらない住所)",
+     "長土塀",
+     "UNDECIDED",
+     "address_and_zone_agree",
+     0.93
+    ]
+   ]
+  }
+ ],
+ "seconds": 71
+}
