@@ -1,0 +1,4500 @@
+{
+ "experiment": "LLMs (Claude Opus 5.5 and Claude Haiku 5.5) with web search/fetch only, no gomisute-gps data, answering garbage-day questions in 5 municipalities whose collection calendars are published only as PDF/image (colors, icons, scans) — follow-up to llm-baseline.json (Kanazawa)",
+ "run_date": "2026-10-17",
+ "n_questions": 30,
+ "models": [
+  "claude-opus-5-5",
+  "claude-haiku-5-5"
+ ],
+ "conditions": {
+  "question_form": "「<住所> に住んでいます。<YYYY>年<M>月<D>日(<曜>)にはどのごみを出せますか？」, one independent agent per question and model, asked once",
+  "allowed_tools": "WebSearch and WebFetch (loaded via ToolSearch). In this harness WebFetch returns only raw bytes for a PDF (tested on Murakami 74793.pdf: no legend, no dates) but saves the file locally; agents were allowed to open exactly that saved file (or a saved image) with Read, which shows PDF pages as images. No Bash, no other files, no gomisute-gps data.",
+  "audit": "All Read calls in the 60 runs opened files that WebFetch had saved (tool-results/webfetch-*). Two runs also called a UI-only tool once (Z4 opus: wrap_up; O5 haiku: update_plan); this did not affect answers. WebFetch caches by URL, so runs that fetched the same URL opened the same saved file.",
+  "output": "user-facing Japanese answer plus JSON {items, no_collection, district, confidence, hedged, sources, tools_used, files_opened}"
+ },
+ "ground_truth_method": "For each question one reader (the experimenter, a Claude Opus 5.5 session) rendered the official PDF/image as zoomed crops (one month or table at a time, about 2–3x) and read the cell, legend and notes; a second, independent agent (Claude Opus 5.5) answered the same questions without seeing the first reading, also from the official files. All 30 questions agreed and were kept. The second reader caught one misreading by the first reader (Murakami 74793, 11/23 shaded light blue = collected) on a date that was not used as a question. Districts come from the municipality's own tables where they exist (Asahikawa HTML table, Miyazaki area PDF, Murakami r8 page lists for 荒川/神林, Tokai footnotes and 住居表示 image, Onagawa 行政区 legend); for 村上地域 (M1–M4) no official street→district list exists, so the calendar titles and the city's 2020 census table (52831.pdf) were used.",
+ "scoring": {
+  "collections": "correct = the answer states exactly the categories collected that day (or that nothing is collected); wrong = states a different set; abstain = says it could not determine the answer; guess_correct = says it could not read the current calendar but offers the right answer as 'likely' from old documents",
+  "district": "correct = names the collection district/pattern/area the truth uses; none = gives no district",
+  "claim_check": "one fact-check agent per municipality listed every factual claim in all 12 answers (surrounding dates, year-end days, rules, bags, times, phone numbers, URLs) and checked each against the official PDFs/pages"
+ },
+ "municipalities": [
+  {
+   "id": "murakami",
+   "name": "新潟県村上市",
+   "kind": "city",
+   "population_approx": 55000,
+   "official_pages": [
+    "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html"
+   ],
+   "format": "13 district calendars, 2-page PDF each (Illustrator). 燃やすごみ is only a cell fill color (light blue / pink / yellow depending on the area), プラ is an icon image; other categories are small text labels. Holiday handling differs by district and by date (村上地区: 10/12 and 1/11 moved to Tuesday, 11/23 and 3/22 collected, 10/19 moved to 10/20).",
+   "text_layer": "yes, but only day numbers and some labels; no trace of 燃やすごみ days or the プラ icon",
+   "address_lookup": "荒川・神林: 大字 lists on the HTML page. 村上地域 (村上地区 vs 岩船・瀬波・山辺里・上海府) and 朝日・山北: area names only, no street list. 緑町 is geographically 瀬波 but uses the 村上地区 calendar (titles 「緑町含む」「緑町除く」).",
+   "app": "none found"
+  },
+  {
+   "id": "asahikawa",
+   "name": "北海道旭川市",
+   "kind": "city",
+   "population_approx": 315000,
+   "official_pages": [
+    "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+    "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html"
+   ],
+   "format": "11 patterns, A2 PDF per half-year (8–9 MB) plus monthly A4 PDFs for patterns 1-A…4-B. Everything is outlined drawing: 0 characters of text. Categories by cell color with small drawn labels; 休 marks for year-end.",
+   "text_layer": "none (0 characters)",
+   "address_lookup": "HTML table 地域→パターン, some towns split by 条・丁目・番 (e.g. 永山9条2丁目 1番 = 4-A, 2–10番 = 1-B; 春光台 = 1-B vs 春光 = 2-A). 'Ask the clean center' for unclear areas.",
+   "app": "さんあ〜る (since 2024-09)"
+  },
+  {
+   "id": "miyazaki",
+   "name": "宮崎県宮崎市",
+   "kind": "city",
+   "population_approx": 400000,
+   "official_pages": [
+    "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html"
+   ],
+   "format": "12 area calendars, one A3 page each = one embedded image plus outlined drawing (0 characters). Categories are colored badges; rules by nth weekday (第5週は収集しません); one-off notes printed inside month boxes (北A: 1/1 の代わりに 1/29 に古布・古紙).",
+   "text_layer": "none (0 characters)",
+   "address_lookup": "7-page text PDF (ごみ収集エリア検索表, 50音順) 町名→エリア; some 町 split by 国道10号/269号; 橘通西 = 北A vs 橘通東 = 北B. 清武 is split by 自治会 name, not by address (stated on the calendar). File metadata says R1 revision.",
+   "app": "さんあ〜る (app and web version)"
+  },
+  {
+   "id": "onagawa",
+   "name": "宮城県牡鹿郡女川町",
+   "kind": "town",
+   "population_approx": 5650,
+   "official_pages": [
+    "https://www.town.onagawa.miyagi.jp/05_05.html",
+    "https://www.town.onagawa.miyagi.jp/chomin_calendar.html"
+   ],
+   "format": "No garbage calendar of its own: dates are inside the 32-page, 8.4 MB 町民カレンダー (nuclear-safety information, taxes, events). 燃やせるごみ = yellow or light-blue cell fill on the grid page (行政区 legend on the facing page); 資源ごみ・燃やせないごみ・粗大ごみ = boxed dates in a table, some cells merged across columns.",
+   "text_layer": "yes, but the grid page has only day numbers and 六曜; two-digit dates in the table come out as private-use glyphs (e.g. '8 ⨬' for 8・22)",
+   "address_lookup": "only the 行政区 names in the legend; no address table (大字 names such as 浦宿浜, 高白浜 must be matched by hand)",
+   "app": "none found"
+  },
+  {
+   "id": "tokai",
+   "name": "茨城県那珂郡東海村",
+   "kind": "village",
+   "population_approx": 38000,
+   "official_pages": [
+    "https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html",
+    "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html"
+   ],
+   "format": "One A3 PDF that is a single flattened image (0 characters): a date table per 地域 group for 資源物 and 燃えないごみ・粗大ごみ, weekday groups for 燃えるごみ, rules (holidays collected; no collection on weekends and 12/31–1/3). The same table is also published as a PNG on the village's search page.",
+   "text_layer": "none (0 characters)",
+   "address_lookup": "住居表示→地域名 table as a JPG image, with entries like 「舟石川1 または 舟石川2※ (詳細は電話)」; district map JPG described as a rough guide; footnotes say parts of some 大字 belong to other 地域.",
+   "app": "none found"
+  }
+ ],
+ "summary": {
+  "opus": {
+   "all": {
+    "n": 30,
+    "collections": {
+     "correct": 30,
+     "wrong": 0,
+     "abstained": 0,
+     "guessed_correct_without_reading": 0
+    },
+    "district": {
+     "correct": 30,
+     "wrong": 0,
+     "not_given": 0
+    },
+    "confidence": {
+     "high": 27,
+     "medium": 3
+    },
+    "hedged": 3,
+    "claims": {
+     "checked": 395,
+     "correct": 385,
+     "wrong": 8,
+     "unverifiable": 2,
+     "wrong_misleading_what_or_when": 4,
+     "answers_checked": 30
+    },
+    "usage": {
+     "agents": 30,
+     "tool_uses": 292,
+     "agent_tokens": 2699126,
+     "mean_tool_uses": 9.7,
+     "mean_agent_tokens": 89971,
+     "mean_duration_s": 84
+    }
+   },
+   "by_municipality": {
+    "murakami": {
+     "n": 6,
+     "collections": {
+      "correct": 6,
+      "wrong": 0,
+      "abstained": 0,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "high": 3,
+      "medium": 3
+     },
+     "hedged": 3,
+     "claims": {
+      "checked": 89,
+      "correct": 86,
+      "wrong": 1,
+      "unverifiable": 2,
+      "wrong_misleading_what_or_when": 0,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 60,
+      "agent_tokens": 461929,
+      "mean_tool_uses": 10,
+      "mean_agent_tokens": 76988,
+      "mean_duration_s": 94
+     }
+    },
+    "asahikawa": {
+     "n": 6,
+     "collections": {
+      "correct": 6,
+      "wrong": 0,
+      "abstained": 0,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "high": 6
+     },
+     "hedged": 0,
+     "claims": {
+      "checked": 62,
+      "correct": 60,
+      "wrong": 2,
+      "unverifiable": 0,
+      "wrong_misleading_what_or_when": 1,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 56,
+      "agent_tokens": 410139,
+      "mean_tool_uses": 9.3,
+      "mean_agent_tokens": 68356,
+      "mean_duration_s": 83
+     }
+    },
+    "miyazaki": {
+     "n": 6,
+     "collections": {
+      "correct": 6,
+      "wrong": 0,
+      "abstained": 0,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "high": 6
+     },
+     "hedged": 0,
+     "claims": {
+      "checked": 85,
+      "correct": 84,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_misleading_what_or_when": 0,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 63,
+      "agent_tokens": 558876,
+      "mean_tool_uses": 10.5,
+      "mean_agent_tokens": 93146,
+      "mean_duration_s": 78
+     }
+    },
+    "onagawa": {
+     "n": 6,
+     "collections": {
+      "correct": 6,
+      "wrong": 0,
+      "abstained": 0,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "high": 6
+     },
+     "hedged": 0,
+     "claims": {
+      "checked": 85,
+      "correct": 81,
+      "wrong": 4,
+      "unverifiable": 0,
+      "wrong_misleading_what_or_when": 3,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 39,
+      "agent_tokens": 817702,
+      "mean_tool_uses": 6.5,
+      "mean_agent_tokens": 136284,
+      "mean_duration_s": 58
+     }
+    },
+    "tokai": {
+     "n": 6,
+     "collections": {
+      "correct": 6,
+      "wrong": 0,
+      "abstained": 0,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "high": 6
+     },
+     "hedged": 0,
+     "claims": {
+      "checked": 74,
+      "correct": 74,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_misleading_what_or_when": 0,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 74,
+      "agent_tokens": 450480,
+      "mean_tool_uses": 12.3,
+      "mean_agent_tokens": 75080,
+      "mean_duration_s": 104
+     }
+    }
+   }
+  },
+  "haiku": {
+   "all": {
+    "n": 30,
+    "collections": {
+     "correct": 14,
+     "wrong": 1,
+     "abstained": 13,
+     "guessed_correct_without_reading": 2
+    },
+    "district": {
+     "correct": 22,
+     "wrong": 0,
+     "not_given": 8
+    },
+    "confidence": {
+     "medium": 5,
+     "high": 10,
+     "low": 15
+    },
+    "hedged": 22,
+    "claims": {
+     "checked": 287,
+     "correct": 272,
+     "wrong": 7,
+     "unverifiable": 8,
+     "wrong_misleading_what_or_when": 6,
+     "answers_checked": 30
+    },
+    "usage": {
+     "agents": 30,
+     "tool_uses": 517,
+     "agent_tokens": 2782927,
+     "mean_tool_uses": 17.2,
+     "mean_agent_tokens": 92764,
+     "mean_duration_s": 201
+    }
+   },
+   "by_municipality": {
+    "murakami": {
+     "n": 6,
+     "collections": {
+      "correct": 4,
+      "wrong": 1,
+      "abstained": 1,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "medium": 3,
+      "high": 2,
+      "low": 1
+     },
+     "hedged": 4,
+     "claims": {
+      "checked": 62,
+      "correct": 56,
+      "wrong": 4,
+      "unverifiable": 2,
+      "wrong_misleading_what_or_when": 4,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 90,
+      "agent_tokens": 547408,
+      "mean_tool_uses": 15,
+      "mean_agent_tokens": 91235,
+      "mean_duration_s": 178
+     }
+    },
+    "asahikawa": {
+     "n": 6,
+     "collections": {
+      "correct": 1,
+      "wrong": 0,
+      "abstained": 3,
+      "guessed_correct_without_reading": 2
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "low": 5,
+      "high": 1
+     },
+     "hedged": 5,
+     "claims": {
+      "checked": 61,
+      "correct": 58,
+      "wrong": 0,
+      "unverifiable": 3,
+      "wrong_misleading_what_or_when": 0,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 128,
+      "agent_tokens": 558177,
+      "mean_tool_uses": 21.3,
+      "mean_agent_tokens": 93030,
+      "mean_duration_s": 279
+     }
+    },
+    "miyazaki": {
+     "n": 6,
+     "collections": {
+      "correct": 3,
+      "wrong": 0,
+      "abstained": 3,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 3,
+      "wrong": 0,
+      "not_given": 3
+     },
+     "confidence": {
+      "high": 2,
+      "low": 3,
+      "medium": 1
+     },
+     "hedged": 6,
+     "claims": {
+      "checked": 51,
+      "correct": 50,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_misleading_what_or_when": 0,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 118,
+      "agent_tokens": 610695,
+      "mean_tool_uses": 19.7,
+      "mean_agent_tokens": 101782,
+      "mean_duration_s": 208
+     }
+    },
+    "onagawa": {
+     "n": 6,
+     "collections": {
+      "correct": 1,
+      "wrong": 0,
+      "abstained": 5,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 1,
+      "wrong": 0,
+      "not_given": 5
+     },
+     "confidence": {
+      "low": 5,
+      "medium": 1
+     },
+     "hedged": 6,
+     "claims": {
+      "checked": 55,
+      "correct": 52,
+      "wrong": 1,
+      "unverifiable": 2,
+      "wrong_misleading_what_or_when": 1,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 87,
+      "agent_tokens": 560920,
+      "mean_tool_uses": 14.5,
+      "mean_agent_tokens": 93487,
+      "mean_duration_s": 155
+     }
+    },
+    "tokai": {
+     "n": 6,
+     "collections": {
+      "correct": 5,
+      "wrong": 0,
+      "abstained": 1,
+      "guessed_correct_without_reading": 0
+     },
+     "district": {
+      "correct": 6,
+      "wrong": 0,
+      "not_given": 0
+     },
+     "confidence": {
+      "high": 5,
+      "low": 1
+     },
+     "hedged": 1,
+     "claims": {
+      "checked": 58,
+      "correct": 56,
+      "wrong": 1,
+      "unverifiable": 1,
+      "wrong_misleading_what_or_when": 1,
+      "answers_checked": 6
+     },
+     "usage": {
+      "agents": 6,
+      "tool_uses": 94,
+      "agent_tokens": 505727,
+      "mean_tool_uses": 15.7,
+      "mean_agent_tokens": 84288,
+      "mean_duration_s": 183
+     }
+    }
+   }
+  }
+ },
+ "cases": [
+  {
+   "id": "M1",
+   "municipality": "新潟県村上市",
+   "kind": "color_only_ordinary",
+   "question": "新潟県村上市三之町1番1号 に住んでいます。2026年11月13日(金)にはどのごみを出せますか？",
+   "date": "2026-11-13",
+   "address": "新潟県村上市三之町1番1号",
+   "truth": {
+    "district": "村上地区（緑町含む）",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+    "pdf_page": 2,
+    "what_the_source_shows": "light-blue shaded, no label (燃やすごみ = color only). Regular Mon/Fri.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年11月13日(金)は「燃やすごみ」の日です。**\n\n三之町は村上市の中心市街地にあるので、「村上地区【緑町含む】」の収集カレンダーが当てはまります。村上市の「令和8年度 村上地域ごみ収集カレンダー（村上地区【緑町含む】）」の11月分では、13日(金)が燃やすごみの日になっています。\n\n- **出せるもの:** 燃やすごみ\n- **出し方:**\n  - 市の指定ごみ袋か、中型ごみ用処理券を必ず使ってください。袋の口はしっかり縛ってください。\n  - **当日の午前8時まで**に、ごみステーションに出してください。\n\nこの週のほかの日（参考）:\n- 11月9日(月): 燃やすごみ\n- 11月10日(火): 新聞\n- 11月11日(水): 燃やさないごみ\n- 11月12日(木): プラスチック製容器包装・発泡スチロール・トレイ\n\n缶・びん・ペットボトル・有害ごみなどは13日には出せません。カレンダーに書かれたそれぞれの日に出してください。\n\n問い合わせ先: 村上市環境課 0254-53-2111、エコパークむらかみ 0254-60-2430\n\n出典:\n- [村上市「令和8年度 ごみ収集カレンダー」](https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html)\n- [令和8年度 村上地域ごみ収集カレンダー（村上地区【緑町含む】）PDF](https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf)\n\n2. JSON",
+      "items": [
+       "燃やすごみ"
+      ],
+      "no_collection": false,
+      "district": "村上地区【緑町含む】",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 2,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 72990,
+      "tool_uses": 8,
+      "duration_ms": 79066
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 15,
+      "correct": 15,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (11/13 Fri = 燃やすごみ) and district (村上地区【緑町含む】, 74793) match truth. Surrounding days on 74793 p2 all verified: 11/9 Mon shaded (燃やす), 11/10 新聞, 11/11 不燃, 11/12 プラ, and no 缶/びん/ペット/有害 on 11/13. Bag rule (指定袋 or 中型ごみ用処理券, tie the bag), 8:00 deadline, 環境課 53-2111 and エコパーク 60-2430 match the calendar footer and notes. Both URLs are correct. No errors."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2026年11月13日(金)は、**燃やすごみ**の収集日です。\n\n- 出せるごみ：燃やすごみ（市の指定袋または中型ごみ用処理券を使用）\n- 出す時間：午前8時までにごみステーションへ\n- この日は、燃やさないごみ、ペットボトル、資源ごみ、有害ごみなどの収集はありません。\n\nこの案内は「令和8年度 村上地域ごみ収集カレンダー（村上地区【緑町含む】）」をもとにしています。三之町は村上市役所（三之町1番1号）がある村上地区の中心部ですが、カレンダーに町名の一覧はなく、三之町が村上地区に含まれることは直接確認できていません。念のため村上市環境課（電話 53-2111）で、お住まいの地区の収集日をご確認ください。",
+      "items": [
+       "燃やすごみ"
+      ],
+      "no_collection": false,
+      "district": "村上地区",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 8,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf",
+      "webfetch-1792240742041-cywi6i.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 84174,
+      "tool_uses": 15,
+      "duration_ms": 122454
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "hedged: could not confirm 三之町 is in 村上地区"
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 10,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct main answer (燃やすごみ) and correct calendar (74793). Correctly says the calendar has no town-name list. 三之町1番1号 is the city hall address (matches the site footer). Bag rule, 8:00 deadline, 'no 不燃/ペット/資源/有害 that day', and 環境課 53-2111 are all on the calendar. It hedges on the district assignment, but the assignment is right. No errors."
+     }
+    }
+   }
+  },
+  {
+   "id": "M2",
+   "municipality": "新潟県村上市",
+   "kind": "district_trap",
+   "question": "新潟県村上市緑町4丁目 に住んでいます。2026年11月25日(水)にはどのごみを出せますか？",
+   "date": "2026-11-25",
+   "address": "新潟県村上市緑町4丁目",
+   "truth": {
+    "district": "村上地区（緑町含む）",
+    "collections": [
+     "雑がみ（チラシ・本類・紙パック）"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+    "pdf_page": 2,
+    "what_the_source_shows": "white, label 雑がみ. Trap: 緑町 is geographically 瀬波 but uses 村上地区 calendar; 74794 (岩船・瀬波（緑町除く）…) shows 不燃 on 11/25.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年11月25日（水）に出せるのは「雑がみ（チラシ・本類・紙パック）」です。**\n\n緑町は瀬波地区に含まれますが、村上市の案内では、ごみの収集日は「村上地区（緑町含む）」のカレンダーで決まっています。この「令和8年度 村上地域ごみ収集カレンダー（村上地区【緑町含む】）」では、11月25日（水）は「雑がみ」の日です。\n\n- **出せるもの**：雑がみ（チラシ、本類、紙パック）\n- **出せないもの**：燃やすごみ、燃やさないごみ、プラスチック製容器包装、ダンボール、新聞、びん、缶、ペットボトル、有害ごみ\n\n**出し方の注意**\n- 当日の**午前8時まで**に、ごみステーションに出してください。\n\n**前後の収集日（11月の村上地区カレンダーより）**\n- 11月23日（月・祝）：燃やすごみ\n- 11月24日（火）：ダンボール\n- 11月26日（木）：プラスチック製容器包装・発泡スチロール・トレイ\n- 11月27日（金）：燃やすごみ\n- 燃やすごみは、11月は毎週月曜日と金曜日です。燃やすごみは市の指定袋か処理券を使ってください。\n\n問い合わせ先：村上市環境課（電話 0254-53-2111）、エコパークむらかみ（電話 0254-60-2430）\n\n出典：\n- [令和8年度 ごみ収集カレンダー（村上市公式サイト）](https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html)\n- [村上地区（緑町含む）カレンダー PDF](https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf)\n\n2. JSON",
+      "items": [
+       "雑がみ（チラシ・本類・紙パック）"
+      ],
+      "no_collection": false,
+      "district": "村上地区（緑町含む）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 2,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 70751,
+      "tool_uses": 7,
+      "duration_ms": 56240
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 14,
+      "correct": 14,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Avoided the 緑町 trap: 11/25 = 雑がみ（チラシ・本類・紙パック） from 74793. The 74794 title '瀬波（緑町除く）' supports '緑町 is in 瀬波 but uses the 村上地区 calendar'. Note that the 2020 census table 52831 lists 緑町 under the 村上小 block, but this does not contradict the garbage assignment. Verified surrounding days: 11/23 Mon(祝) shaded, 11/24 ダンボール, 11/26 プラ, 11/27 shaded, and every Mon/Fri in November shaded. The not-collected list, 8:00 deadline, bag rule, phone numbers and URLs are all correct."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "新潟県村上市緑町4丁目は「村上地区（緑町含む）」の収集カレンダーに含まれています。令和8年度のカレンダーでは、2026年11月25日(水)は**雑がみ**(チラシ・本類・紙パック)の収集日です。燃やすごみと燃やさないごみは、この日は収集がありません。\n\n出し方:\n- ごみは当日の午前8時までにごみステーションに出してください。収集時間は道路状況やごみの量によって変わります。\n- 雑がみは資源ごみです。出し方の詳細は「ごみの分け方・出し方(分別冊子)」をご覧ください。\n- ご不明な点は村上市環境課(電話 53-2111)へ問い合わせてください。\n\n出典: 村上市「令和8年度 村上地域ごみ収集カレンダー(村上地区 【緑町含む】)」 https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+      "items": [
+       "雑がみ"
+      ],
+      "no_collection": false,
+      "district": "村上地区 【緑町含む】",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 7,
+      "WebFetch": 3,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf",
+      "webfetch-1792240742041-cywi6i.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 91625,
+      "tool_uses": 13,
+      "duration_ms": 200244
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 9,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct district (村上地区【緑町含む】) and correct item (雑がみ). The 8:00 deadline, the note that collection times vary with road conditions and garbage volume, the reference to the 分別冊子, 環境課 53-2111 and the 74793 URL all match the calendar. Calling 雑がみ a 資源ごみ is consistent with city usage. No errors."
+     }
+    }
+   }
+  },
+  {
+   "id": "M3",
+   "municipality": "新潟県村上市",
+   "kind": "holiday_shift",
+   "question": "新潟県村上市大町 に住んでいます。2027年1月12日(火)にはどのごみを出せますか？",
+   "date": "2027-01-12",
+   "address": "新潟県村上市大町",
+   "truth": {
+    "district": "村上地区（緑町含む）",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+    "pdf_page": 2,
+    "what_the_source_shows": "Tuesday 1/12 shaded light blue, no label. 1/11 (Mon, 成人の日) not shaded. Same pattern 10/12->10/13 and 10/19->10/20 (no holiday). But 11/23 (祝) and 3/22 (振替) ARE shaded (collected). Checked at zoom 2.5-3.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2027年1月12日(火)に出せるのは「燃やすごみ」です。**\n\n- 1月11日(月)は成人の日で、燃やすごみは集めません。代わりに村上地区のカレンダーでは、翌日の12日(火)が燃やすごみの日になっています。\n- 燃やすごみは、市の指定袋か中型ごみ用処理券を使ってください。袋の口はきちんと縛ってください。\n- **午前8時まで**にごみステーションに出してください。\n\nその週のほかの収集日(村上地区)は次のとおりです。12日にはこれらは出せません。\n- 1月13日(水):燃やさないごみ(不燃)\n- 1月14日(木):新聞\n- 1月15日(金):燃やすごみ\n- 1月16日(土):有害ごみ(乾電池、蛍光灯、水銀体温計、ボタン電池)\n\n※大町は旧村上町の中心部なので、村上市の「村上地区(緑町含む)」のカレンダーで答えています。市のページには、村上地区に入る町名の一覧が載っていません。地区がはっきりしない場合は、村上市環境課(0254-53-2111)かエコパークむらかみ(0254-60-2430)に確認してください。\n\n参照:村上市「令和8年度 ごみ収集カレンダー」\nhttps://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html\n村上地区のPDF: https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf\n\n2.",
+      "items": [
+       "燃やすごみ"
+      ],
+      "no_collection": false,
+      "district": "村上地区（緑町含む）",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74794.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 6,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf",
+      "webfetch-1792240944463-ubnrts.pdf",
+      "webfetch-1792240944463-ubnrts.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 85547,
+      "tool_uses": 14,
+      "duration_ms": 138492
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 16,
+      "correct": 16,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct: 1/11 (Mon, 成人の日) is unshaded and 1/12 (Tue) is shaded, so 1/12 = 燃やすごみ (pixel-checked on 74793 p2). Week context verified: 1/13 不燃, 1/14 新聞, 1/15 shaded, 1/16 (Sat) 有害. The 有害 item list matches the legend. Correct that the city page lists no town names for 村上地域. 大町 is in the 村上小 block of the census table, so 'central old 村上町' holds. Phones, bag rule and 8:00 deadline are correct. No errors."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2027年1月12日(火)に出せるごみは、カレンダー上では見当たりません。この日は収集がない日として載っています。\n\n- 大町は、村上市の「村上地区（緑町含む）」のごみ収集カレンダー（令和8年度、2027年3月まで有効）の区域に入ると考えています。このカレンダーの令和9年1月欄では、1月12日(火)に収集の表示がありません。\n- 同じカレンダーでは、燃やすごみは月曜と金曜に収集されます。次の燃やすごみは1月8日(金)です。\n- 1月11日(月)は祝日ですが、カレンダーに振替の表示はありません。\n- 注意点として、公式資料に「大町」という地名は見つかりませんでした。地区の割り当ては推測です。また、収集日は変更されることがあります。確実に確認するには、村上市環境課（0254-53-2111）に問い合わせてください。",
+      "items": [],
+      "no_collection": true,
+      "district": "村上地区（緑町含む）",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 5,
+      "WebFetch": 4,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf",
+      "webfetch-1792240742041-cywi6i.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 93078,
+      "tool_uses": 12,
+      "duration_ms": 194957
+     },
+     "score": {
+      "collections": "wrong",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "said nothing is collected on 1/12; the Tuesday cell is shaded (燃やすごみ moved from the 1/11 holiday). Also claimed the calendar shows no substitute day"
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 5,
+      "wrong": 3,
+      "unverifiable": 1,
+      "wrong_claims": [
+       {
+        "claim": "2027年1月12日(火)は収集の表示がなく、収集なし（no_collection: true）",
+        "truth": "On 74793 p2, 1/12 (Tue) is shaded light blue = 燃やすごみ. Only 1/11 (祝) is unshaded.",
+        "misleads_what_or_when": true
+       },
+       {
+        "claim": "次の燃やすごみは1月8日(金)です",
+        "truth": "1/8 is a 燃やすごみ day, but it is before the asked date. 1/12 itself is 燃やすごみ, and the next one after it is 1/15 (Fri).",
+        "misleads_what_or_when": true
+       },
+       {
+        "claim": "1月11日(月)は祝日ですが、カレンダーに振替の表示はありません",
+        "truth": "The calendar shows the substitute by color: 1/11 is unshaded and 1/12 (Tue) is shaded 燃やすごみ. No text label is used for any collection day.",
+        "misleads_what_or_when": true
+       }
+      ],
+      "notes": "Right calendar (74793), but it missed the light-blue shading on Tue 1/12 and answered 'no collection'. The answer is wrong, and the user would hold burnable garbage until 1/15. The 'next 燃やすごみ is 1/8' remark points to a past date. Correct: R8 calendar runs to March 2027, regular days are Mon/Fri, 1/11 is a holiday, and the 環境課 number. Unverifiable: 'no official document mentions 大町' (true of the garbage pages, but the city's census table 52831 does list 大町 under 村上小)."
+     }
+    }
+   }
+  },
+  {
+   "id": "M4",
+   "municipality": "新潟県村上市",
+   "kind": "year_end_extra_day",
+   "question": "新潟県村上市羽黒町 に住んでいます。2026年12月30日(水)にはどのごみを出せますか？",
+   "date": "2026-12-30",
+   "address": "新潟県村上市羽黒町",
+   "truth": {
+    "district": "村上地区（緑町含む）",
+    "collections": [
+     "燃やすごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+    "pdf_page": 2,
+    "what_the_source_shows": "Wednesday shaded light blue (year-end extra). 12/31 and 1/1 none; next 1/4 (Mon).",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月30日（水）は「燃やすごみ」の日です。**\n\n羽黒町は村上市の「村上地区」に入るため、市の「令和8年度 村上地域ごみ収集カレンダー（村上地区【緑町含む】）」で確認しました。\n\n- **出せるもの：燃やすごみ**（生ごみなど）\n  - 市の指定袋か、中型ごみ用処理券を使ってください。袋の口はしっかり縛ってください。\n  - 朝8時までに、いつものごみステーションに出してください。\n- **出せないもの：** 燃やさないごみ、プラスチック製容器包装、びん・缶・ペットボトル、新聞・ダンボール・雑がみ、有害ごみは、この日は収集がありません。\n\n**年末年始の前後の収集日（村上地区）**\n- 12月28日（月）：燃やすごみ\n- 12月29日（火）：収集なし\n- 12月30日（水）：燃やすごみ（年内最後の収集です）\n- 12月31日（木）〜1月3日（日）：収集なし（1月1日は祝日のため収集なし）\n- 1月4日（月）：燃やすごみ（年明け最初の収集）\n\nカレンダーでは、30日（水）が燃やすごみの日になっています。いつもの燃やすごみの日は月曜と金曜ですが、1月1日（金）が祝日で収集がないための日程と思われます。\n\nこの日付はPDFカレンダーの色分けを読み取ったものです。念のため、市のカレンダーか、年末年始のお知らせでも確認してください。\n\n- 村上市環境課：0254-53-2111\n- エコパークむらかみ（ごみ処理場）：0254-60-2430\n\n出典：\n- [令和8年度 ごみ収集カレンダー（村上市公式サイト）](https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html)\n- [村上地区（緑町含む）カレンダーPDF](https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf)\n- [羽黒町が村上地区に入ることを確認した市の資料](https://www.city.murakami.lg.jp/uploaded/attachment/71647.pdf)\n\n2. JSON",
+      "items": [
+       "燃やすごみ"
+      ],
+      "no_collection": false,
+      "district": "村上地域 村上地区（緑町含む）",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/71647.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 6,
+      "WebFetch": 2,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 75319,
+      "tool_uses": 10,
+      "duration_ms": 92651
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 19,
+      "correct": 17,
+      "wrong": 1,
+      "unverifiable": 1,
+      "wrong_claims": [
+       {
+        "claim": "羽黒町が村上地区に入ることを確認した市の資料: attachment/71647.pdf",
+        "truth": "71647.pdf is a 空き家バンク property listing (No.204, 羽黒町). Its location map uses '村上地区' for the whole former 村上 area (one of five areas, next to 山北/朝日/神林/荒川). That area also contains 岩船・瀬波・山辺里・上海府, which use calendar 74794. So the document does not show which 村上地域 calendar applies. The conclusion is still right: the census table 52831 puts 羽黒町 in the 村上小 block.",
+        "misleads_what_or_when": false
+       }
+      ],
+      "notes": "Main answer (12/30 Wed = 燃やすごみ) is correct. The year-end sequence is fully verified on 74793 p2 by pixel color: 12/28 shaded, 12/29 white, 12/30 shaded, 12/31 white, 1/1 (祝) white, 1/2–1/3 white, 1/4 shaded. 燃やすごみ includes 生ごみ (city 燃やすごみ page). Bag rule, 8:00, phones and URLs are correct. Unverifiable: the explanation that 12/30 is extra because 1/1 (Fri) is a holiday (labeled as a guess). Wrong: the description of 71647.pdf as proof of the district (see above). This does not change the answer."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2026年12月30日(水)に羽黒町で出せるごみは、確認できませんでした。どのごみが出せるとも、出せないとも言えません。\n\n**確認できたこと**\n- 村上市の令和8年度ごみ収集カレンダー一覧に羽黒町は町名として載っていません。2020年の国勢調査の集計表では、羽黒町は村上小学校区(村上地区)の中に並んでいます。そのため対象は「村上地区(緑町含む)」のカレンダーである可能性が高いと考えます。ただし、このカレンダーの本文を読み取れなかったため、羽黒町が含まれるかは確認できていません。\n- 上記カレンダーの12月の収集曜日と品目も、PDFの本文が読めず確認できませんでした。\n- 年末年始の収集日について、市の公式サイトには該当する記載が見つかりませんでした。\n\n**12月30日(水)について参考になること**\n- ごみ処理場「エコパークむらかみ」への直接持ち込みは、12月30日(水)は受け付けています(月〜土・祝日 8時30分〜16時)。日曜と12月31日〜1月3日は休みです。資源ごみは受け入れていません。電話 0254-60-2430\n- 集積所に出す場合は、当日の朝8時までに出す決まりです。\n\n**確認先**\n村上市環境課に、羽黒町の住所(町名・丁目まで)を伝えて、12月30日の収集品目を確認してください。公式サイトには環境課の番号として0254-75-8932、市役所代表は0254-53-2111の記載があります。",
+      "items": [],
+      "no_collection": false,
+      "district": "村上地区（緑町含む）",
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74793.pdf",
+       "https://www.city.murakami.lg.jp/site/gomi-bunbetsu/zikohannyu.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 8,
+      "WebFetch": 10,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240749139-49eo59.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 90082,
+      "tool_uses": 20,
+      "duration_ms": 225923
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "could not read the calendar; gave no answer (district stated as probable 村上地区)"
+     },
+     "claim_check": {
+      "claims_checked": 12,
+      "correct": 11,
+      "wrong": 0,
+      "unverifiable": 1,
+      "wrong_claims": [],
+      "notes": "Gave up on the main question; the truth is 燃やすごみ. Every factual claim it did make is right. 羽黒町 is not listed on the calendar page. The 2020 census table puts 羽黒町 in the 村上小 block of 村上地区. Per the zikohannyu page, エコパーク accepts drop-offs on 12/30: Mon–Sat incl. holidays, 8:30–16:00, closed Sundays and 12/31–1/3, no 資源ごみ, tel 0254-60-2430. The 8:00 deadline, 環境課 0254-75-8932 (direct line on the r8 page) and 代表 0254-53-2111 are correct. Unverifiable: 'the official site has no year-end notice'. There is no text notice, but the cited 74793 calendar encodes the year-end schedule by color (12/30 extra 燃やすごみ)."
+     }
+    }
+   }
+  },
+  {
+   "id": "M5",
+   "municipality": "新潟県村上市",
+   "kind": "new_year_skip",
+   "question": "新潟県村上市坂町1795-2 に住んでいます。2027年1月2日(土)にはどのごみを出せますか？",
+   "date": "2027-01-02",
+   "address": "新潟県村上市坂町1795-2",
+   "truth": {
+    "district": "荒川地域 3地区",
+    "collections": [],
+    "no_collection": true,
+    "source_pdf": "https://www.city.murakami.lg.jp/uploaded/attachment/74797.pdf",
+    "pdf_page": 2,
+    "what_the_source_shows": "Saturday 1/2 NOT shaded (燃やすごみ = pink, normally Wed/Sat). 1/4 (Mon) pink instead.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2027年1月2日(土)は、ごみの収集はありません(年始の休み)。**\n\n- 村上市坂町は、市の令和8年度ごみ収集カレンダーで「荒川地域(3地区)」に入っています。\n- このカレンダーでは、燃やすごみは毎週水曜と土曜です。ただし2027年1月2日(土)の欄には燃やすごみの色付けがなく、資源ごみ(プラ・びん・かん・ペット・紙類など)の表示もありません。\n- 市のごみ処理場「エコパークむらかみ」も、12月31日から1月3日まで受付を休みます。そのため、この日にごみステーションへ出すことはできません。\n- 年末の最後の燃やすごみは12月30日(水)です。年明けは、カレンダーを見る限り1月4日(月)に燃やすごみが入っています。その後は1月5日(火)がペットボトル、1月6日(水)が燃やすごみ、1月8日(金)がプラスチック製容器包装です。\n- ごみは収集日の朝8時までに出してください。\n\nカレンダーの色付けから読み取った部分(特に1月4日の収集)があるので、念のため村上市荒川支所 市民生活室(電話 0254-62-3103)でも確認してください。\n\n2. JSON",
+      "items": [],
+      "no_collection": true,
+      "district": "荒川地域(3地区)",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74797.pdf",
+       "https://www.city.murakami.lg.jp/site/gomi-bunbetsu/zikohannyu.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 4,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792240871053-unmfe4.pdf",
+      "webfetch-1792240871053-unmfe4.pdf",
+      "webfetch-1792240871053-unmfe4.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 82889,
+      "tool_uses": 12,
+      "duration_ms": 117830
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 12,
+      "correct": 12,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct: no collection on Sat 1/2 (74797 p2; pixel-checked white, while 1/4, 1/6 and 1/9 are pink). 坂町 is in 荒川3地区 (r8 page and calendar header). Regular 燃やすごみ days are Wed/Sat. 12/30 (Wed) is the last 燃やすごみ of the year. 1/4 (Mon) is 燃やすごみ, 1/5 ペット, 1/6 燃やすごみ, 1/8 プラ. エコパーク is closed 12/31–1/3 (zikohannyu page). The 8:00 deadline and 荒川支所市民生活室 62-3103 are correct. The reasoning link 'エコパーク closed, therefore no station collection' is a non-sequitur, but the conclusion is right. No errors."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "1. 回答\n\n2027年1月2日（土）は、坂町のごみ収集はありません。\n\n村上市の「令和8年度 荒川地域（3地区）ごみ収集カレンダー」では、坂町は「（3地区）梨木・切田・十文字・野口・坂町住宅・坂町・坂町駅前・名割・中野・長政・堤下団地」に含まれています。このカレンダーで1月2日には収集の印がありません。1月1日（祝日）も同様です。\n\n同じカレンダーで直近の収集日を見ると、1月8日（金）がプラスチック製容器包装、1月9日（土）が燃やすごみ（市の指定袋または中型ごみ用処理券を使用）です。収集は午前8時までにごみステーションへ出してください。\n\nカレンダーに記載の問い合わせ先は、村上市荒川支所市民生活室（電話 62-3103）と、エコパークむらかみ（電話 60-2430）です。",
+      "items": [],
+      "no_collection": true,
+      "district": "荒川地域（3地区）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74797.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 6,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240871053-unmfe4.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 83695,
+      "tool_uses": 12,
+      "duration_ms": 113324
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 9,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "同じカレンダーで直近の収集日を見ると、1月8日（金）がプラ、1月9日（土）が燃やすごみ",
+        "truth": "Both dates are correct, but they are not the nearest. On 74797, 1/4 (Mon) is 燃やすごみ (pink), 1/5 is ペット and 1/6 (Wed) is 燃やすごみ.",
+        "misleads_what_or_when": true
+       }
+      ],
+      "notes": "Main answer (no collection on 1/2) and district (exact 3地区 list incl. 坂町) are correct, and 1/1 is also unmarked. The 8:00 deadline, bag rule and phones (荒川支所 62-3103, エコパーク 60-2430) are correct. Error: it calls 1/8–1/9 the nearest collections and skips the special Monday 1/4 燃やすごみ and 1/6. A user would wait until 1/9 to put out burnable garbage."
+     }
+    }
+   }
+  },
+  {
+   "id": "M6",
+   "municipality": "新潟県村上市",
+   "kind": "district_trap_multi_item",
+   "question": "新潟県村上市岩船駅前56 に住んでいます。2026年11月25日(水)にはどのごみを出せますか？",
+   "date": "2026-11-25",
+   "address": "新潟県村上市岩船駅前56",
+   "truth": {
+    "district": "神林地域 南部地区",
+    "collections": [
+     "有害ごみ",
+     "プラスチック製容器包装"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.murakami.lg.jp/uploaded/attachment/74798.pdf",
+    "pdf_page": 2,
+    "what_the_source_shows": "blue cell labeled 有害 プラ. Trap: 岩船駅前 is 神林南部 (listed), not 村上地域 岩船 (74794 shows 不燃 on 11/25).",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年11月25日（水）に出せるごみ（村上市 岩船駅前）**\n\n「岩船駅前」は、村上市の **神林地域（南部地区）** の収集カレンダーに入っています。名前は似ていますが、村上地域の「岩船地区」とは別のカレンダーです。\n\n令和8年度のこのカレンダーでは、11月25日（水）に出せるのは次の2種類です。\n\n- **有害ごみ**：乾電池、蛍光灯、水銀体温計、ボタン電池\n- **プラ**：プラスチック製の容器・包装、発泡スチロール、トレイ\n\n**この日は出せないもの**\n- 燃やすごみ：この週は23日（月・祝）と26日（木）です。\n- 燃やさないごみ：11月は6日（金）です。\n- 缶類・びん類・ペットボトル・新聞雑誌・ダンボール\n\n**出し方**\n- 当日の **午前8時まで** に、決められたごみステーションへ出してください。\n- 乾電池などの有害ごみは、ほかのごみと混ぜないでください。\n\n問い合わせ先：村上市神林支所 市民生活室（電話 66-6112）、エコパークむらかみ（電話 60-2430）\n\n出典：村上市公式サイト「令和8年度 ごみ収集カレンダー」の神林地域（南部地区）カレンダー\n- https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html\n- https://www.city.murakami.lg.jp/uploaded/attachment/74798.pdf\n\n2. JSON",
+      "items": [
+       "有害ごみ（乾電池、蛍光灯、水銀体温計、ボタン電池）",
+       "プラ（プラスチック製容器包装、発泡スチロール・トレイ）"
+      ],
+      "no_collection": false,
+      "district": "神林地域（南部地区）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74798.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240764580-wwzjz8.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 74433,
+      "tool_uses": 9,
+      "duration_ms": 81459
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 12,
+      "wrong": 0,
+      "unverifiable": 1,
+      "wrong_claims": [],
+      "notes": "Avoided the 岩船 trap: 岩船駅前 is on the 神林南部 list (r8 page and 74798 header). 11/25 is a blue cell labeled 有害/プラ. Week context verified: 燃やすごみ (yellow) on 11/23 (祝) and 11/26 (Thu), 不燃 in November only on 11/6 (Fri), and 缶類/びん類/ペット/新聞雑誌/ダンボール on other days. Item lists match the legend. The legend omits the R8 addition of lithium-ion batteries to 有害ごみ (city 有害ごみ page); this is incomplete, not wrong. Phones and URLs are correct. Unverifiable: 'don't mix 有害ごみ with other garbage'. The city says only that in 神林 it goes directly into the station container."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "**2026年11月25日（水）に出せるごみ**\n\n岩船駅前56にお住まいの場合、11月25日（水）の収集は次の2種類です。\n\n- **有害ごみ**（乾電池、蛍光灯、水銀体温計、ボタン電池）\n- **プラスチック製容器包装**（発泡スチロール、トレイを含む）\n\n燃やすごみ、燃やさないごみ、びん、缶、ペットボトル、新聞・雑誌、ダンボールは、この日は収集日ではありません。\n\n**出し方**\n- 午前8時までに、決められたごみステーションに出してください。収集時間は道路状況やごみの量により変わることがあります。\n\n**ご注意**\n- 岩船駅前は、村上市の「神林地域（南部地区）」のごみ収集カレンダーに含まれています。\n- 村上市には別に「岩船・瀬波（緑町除く）・山辺里・上海府地区」のカレンダーもあります。そちらでは11月25日は不燃ごみの日と読めました。どちらが住所に当たるかは市に確認してください。\n- 確認先は、村上市神林支所市民生活室（0254-66-6112）、村上市環境課（0254-53-2111）、エコパークむらかみ（0254-60-2430）です。",
+      "items": [
+       "有害ごみ",
+       "プラスチック製容器包装"
+      ],
+      "no_collection": false,
+      "district": "神林地域（南部地区）",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.city.murakami.lg.jp/site/gomi-recycle/r8-gomikare.html",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74798.pdf",
+       "https://www.city.murakami.lg.jp/uploaded/attachment/74794.pdf"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 5,
+      "WebFetch": 9,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792240742041-cywi6i.pdf",
+      "webfetch-1792241106871-rvuhe2.pdf",
+      "webfetch-1792240944463-ubnrts.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 104754,
+      "tool_uses": 18,
+      "duration_ms": 212437
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "hedged: told the user to ask which of two calendars applies"
+     },
+     "claim_check": {
+      "claims_checked": 12,
+      "correct": 12,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct items (有害 + プラ) and district (神林南部). Correctly notes that the other calendar 74794 (岩船・瀬波（緑町除く）…) shows 不燃 on 11/25, verified. It needlessly tells the user to confirm which calendar applies, but the facts are right. The 8:00 deadline, the variable collection time, the not-collected list and the phones (神林支所 66-6112, 環境課 53-2111, エコパーク 60-2430) all match. No errors."
+     }
+    }
+   }
+  },
+  {
+   "id": "A1",
+   "municipality": "北海道旭川市",
+   "kind": "year_end_off",
+   "question": "北海道旭川市6条通9丁目46番地 に住んでいます。2026年12月30日(水)にはどのごみを出せますか？",
+   "date": "2026-12-30",
+   "address": "北海道旭川市6条通9丁目46番地",
+   "truth": {
+    "district": "パターン1-A (1条通から10条通の1丁目から25丁目)",
+    "collections": [],
+    "no_collection": true,
+    "source_pdf": "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/1-A_b.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "12/30 (Wed) marked 休 in red circle; normal Wed = 缶・びん・家庭金物・紙パック. 12/31 also 休; 1/1, 1/4 休; 1/5 resumes.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. 回答\n\n**2026年12月30日(水)は、ごみの収集はありません(年末休み)。**\n\n- **地区:** 旭川市の家庭ごみ分別収集カレンダーでは、「1条通から10条通の1丁目から25丁目」は**パターン1-A**です。6条通9丁目もここに入ります。\n- **12月30日(水)と31日(木):** パターン1-Aの令和8年12月のカレンダーでは、どちらも「休」です。\n- **年内最後の収集:** 12月29日(火)の「燃やせるごみ」です。\n- **年内最終日が早いもの:** 紙製容器包装と段ボールは、12月21日(月)が年内最後の収集日です。\n- **年明けの収集:** 1月5日(火)の「燃やせるごみ」から始まります。1月1日と4日も休みです。\n- **1月第1週の予定(パターン1-A):**\n  - 1月5日(火):燃やせるごみ\n  - 1月6日(水):缶・びん・家庭金物・紙パック\n  - 1月7日(木):プラ製容器包装・ペットボトル\n  - 1月8日(金):燃やせるごみ\n\n30日にごみを出すと、年明けまで集積所に残ってしまいます。29日までに出すか、年明けの収集日まで家で保管してください。\n\n出典:\n- [旭川市 家庭ごみ分別収集カレンダー(地区とパターンの一覧)](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html)\n- [旭川市 令和8年度 月別収集カレンダー](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html)\n- [パターン1-A 12月分(PDF)](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_12.pdf)\n- [パターン1-A 1月分(PDF)](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_1.pdf)\n\n2. JSON",
+      "items": [],
+      "no_collection": true,
+      "district": "1条通から10条通の1丁目から25丁目(パターン1-A)",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_12.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_1.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 5,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240914955-3emdre.pdf",
+      "webfetch-1792240910818-smvyld.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 70060,
+      "tool_uses": 11,
+      "duration_ms": 82284
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 10,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All 10 claims match the 1-A monthly calendars (p005911 1a_12.pdf / 1a_1.pdf) and the A2 sheet 1-A_b.pdf: 6条通9丁目 is in 1-A (1条通から10条通の1丁目から25丁目); 12/30 and 12/31 are 休; the last collection of the year is 12/29 燃やせる; the last 紙製容器包装・段ボール is 12/21 (red notice on the calendar); 1/1 and 1/4 are 休 and collection restarts 1/5 with 燃やせる; then 1/6 缶・びん・家庭金物・紙パック, 1/7 プラ・ペット, 1/8 燃やせる. The main answer (no collection) is correct. No errors found."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "**回答: 2026年12月30日(水)に出せるごみは、確認できませんでした。** 市の2026年度の日程を読めなかったため、推測では答えられません。\n\n**分かったこと**\n- 旭川市の家庭ごみ分別収集カレンダー(令和8年度)では、6条通9丁目は**パターン1-A**に当たると読めます。1-Aの対象は「1条通から10条通の1丁目から25丁目」です。46番地ごとの区分までは確認していません。\n- 1-Aの12月カレンダー(https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_12.pdf)は見つかりましたが、PDFの中身を読み取れず、12月30日の収集内容は分かりませんでした。\n- 12月30日から1月4日は年末年始の休みです。2013年・2014年の町内会回覧(検索結果の要約で確認。本文は未読)では、原則として年末年始はごみ収集を休むとされ、火・金に燃やせるごみを出す地区(1-Aを含む)だけは12月30日に出せた、とあります。ただし、これは当時の日程です。2026年は12月30日が水曜日なので、同じ扱いになるとは限りません。\n\n**確認方法**\n1. 上記の1-A・12月カレンダーを確認する。文字が小さい場合は印刷して使うよう市が案内しています。\n2. 「さんあ～る」アプリで地区を設定し、12月30日を確認する。市は収集曜日をこのアプリで確認できるとしています。\n3. 旭川市環境部クリーンセンター(0166-36-2213)に問い合わせる。12月30日から1月4日は受付が休みなので、12月29日までか1月5日以降にかけてください。\n\n**補足**\n- 燃やせるごみ・燃やせないごみは、8月31日収集分から市の指定ごみ袋で出す必要があるとされています(検索結果の要約で確認)。\n- 検索の上限に達したため、これ以上は調べていません。",
+      "items": [],
+      "no_collection": false,
+      "district": "1-A（1条通から10条通の1丁目から25丁目）",
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_12.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/1000/1001/1017/10180/p003467.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/299/300/d081548_d/fil/gomizeroasahikawa_haru.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/279/p005737_d/fil/h26_no28.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/osirasegomi/d084252.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 10,
+      "WebFetch": 14,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241032837-8zxumy.pdf",
+      "webfetch-1792241283003-9zxczj.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 100847,
+      "tool_uses": 27,
+      "duration_ms": 354574
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "could not read the PDF; pattern 1-A identified"
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 8,
+      "wrong": 0,
+      "unverifiable": 2,
+      "wrong_claims": [],
+      "notes": "Gave up on the main question. Correct claims: the 1-A assignment and its area wording; the 1a_12.pdf URL is the 1-A December calendar; 12/30-1/4 is the year-end break (for 1-A in 2026-27 there is in fact no collection on any of these days, so this statement alone already answered the question); 2026-12-30 is a Wednesday; the city tells users to print the monthly calendars if the A2 sheet is hard to read (p005911); the さんあ～る app shows collection days (d080561); Clean Center 0166-36-2213 and its office closure 12/30-1/4 (p005888). Unverifiable: (1) the claim that the 2013/2014 町内会回覧 let 火・金 areas including 1-A put garbage out on 12/30 (h26_no28.pdf and the p005737 page now return the site's 'renewed' placeholder and are not archived); (2) '8月31日収集分から指定ごみ袋が必要' (the source page d084252 has been removed; the current p005888 does require yellow/green 指定袋, so the gist is consistent, but the date cannot be checked). No wrong claims."
+     }
+    }
+   }
+  },
+  {
+   "id": "A2",
+   "municipality": "北海道旭川市",
+   "kind": "split_block",
+   "question": "北海道旭川市永山9条2丁目5番 に住んでいます。2026年12月10日(木)にはどのごみを出せますか？",
+   "date": "2026-12-10",
+   "address": "北海道旭川市永山9条2丁目5番",
+   "truth": {
+    "district": "パターン1-B (永山9条2丁目2番から10番)",
+    "collections": [
+     "プラ製容器包装・ペットボトル"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/1-B_b.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "pink, label プラ製容器 ペットボトル. Trap: 永山9条2丁目1番 is 4-A, where 12/10 is 燃やせない＋乾電池・蛍光管・ガス缶・ライター.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月10日(木)に出せるのは「プラスチック製容器包装」と「ペットボトル」です。**\n\n- **お住まいの地区の区分は「1-B」です。** 旭川市の「家庭ごみ分別収集カレンダー」の区分表では、「永山9条2丁目2番から10番」が「1-B」となっています。5番はこの範囲に入ります。\n  - 同じ永山9条2丁目でも、**1番だけは「4-A」**で収集日が異なります。\n- **12月10日(木)の収集品目は次のとおりです。** 市の「令和8年度 月別収集カレンダー」の「1-B」の12月分で確認しました。\n  - 10日(木)：プラ製容器・ペットボトル\n  - この日は燃やせるごみ、燃やせないごみ、缶・びん・家庭金物・紙パックは出せません。\n\n**12月の「1-B」の主な収集日（参考）**\n- 燃やせるごみ：毎週火曜・金曜(1・4・8・11・15・18・22・25・29日)\n- 缶・びん・家庭金物・紙パック：毎週水曜(2・9・16・23日)\n- プラ製容器・ペットボトル：毎週木曜(3・10・17・24日)\n- 燃やせないごみ、乾電池・蛍光管・ガス缶・ライター：7日(月)・21日(月)\n  - 燃やせないごみは21日(月)が年内最後の収集日です。\n- 紙製容器包装・段ボール：14日(月)・28日(月)\n- 30日(水)・31日(木)は収集がお休みです。\n\n出典：\n- [旭川市 家庭ごみ分別収集カレンダー（地区と区分の対応表）](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html)\n- [旭川市 令和8年度 月別収集カレンダー](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html)\n- [区分1-B 令和8年12月カレンダー(PDF)](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1b_12.pdf)\n\n2. JSON",
+      "items": [
+       "プラスチック製容器包装",
+       "ペットボトル"
+      ],
+      "no_collection": false,
+      "district": "1-B",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1b_12.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240924177-vlcqxm.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 67680,
+      "tool_uses": 8,
+      "duration_ms": 80353
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 11,
+      "correct": 11,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All claims match p005710 and the 1-B December calendar (1b_12.pdf, also the A2 sheet): 永山9条2丁目2番から10番 = 1-B and 1番 = 4-A; 12/10 (Thu) = プラ製容器・ペットボトル; 燃やせる Tue/Fri 1,4,8,11,15,18,22,25,29; 缶・びん Wed 2,9,16,23; プラ Thu 3,10,17,24; 燃やせない + 乾電池・蛍光管・ガス缶・ライター on 7 and 21 (21 = last 燃やせない of the year per the calendar notice); 紙製容器・段ボール 14 and 28; 30/31 休. No errors."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "**1. 回答**\n\n北海道旭川市永山9条2丁目5番は、旭川市の公式情報では収集区分「パターン1-B」に当たると確認できました。ただし、**2026年12月10日(木)に何のごみを出せるかは確認できませんでした。**\n\n確認できたこと:\n- 令和8年度の[家庭ごみ分別収集カレンダー](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html)では、永山9条2丁目は2番～10番がパターン1-B、1番がパターン4-Aです。5番は2～10番の範囲に入るため1-Bとなります。個別の番地の記載はないので、念のため市に確認してください。\n- 収集日当日の午前6時から9時の間に出します。燃やせるごみは黄色の指定袋です([出し方](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005888.html))。\n- 燃やせないごみ、紙製容器包装、段ボールは隔週(2週に1回)の収集です。\n\n確認できなかったこと:\n- パターン1-Bの曜日表。公式の[月別カレンダー](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html)はPDFで、この環境ではPDFの中身を読めませんでした。\n- 平成30年の[年末年始の案内](https://www.city.asahikawa.hokkaido.jp/700/723/724/d065461.html)の断片には、パターン1-Bの燃やせるごみを火・金曜に収集するという記載がありました。ただし古い年度の情報で、令和8年度に当てはまるかは確認できていません。当てはまるなら12月10日(木)は燃やせるごみの日ではないことになりますが、確証はありません。\n\n確認方法:\n1. 12月のカレンダー(パターン1-B)を直接見てください: https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1b_12.pdf\n2. 公式アプリ「さんあ～る」で地域を登録すると、収集日をカレンダーで確認できます。\n3. 確実な回答は旭川市環境部クリーンセンター(0166-36-2213、受付8時45分～17時15分、土日祝と12月30日～1月4日を除く)に問い合わせてください。\n\n(今回は検索の上限に達したため、追加の検索はできませんでした。)\n\n**2. JSON**",
+      "items": [],
+      "no_collection": false,
+      "district": "パターン1-B（永山9条2丁目2番～10番）",
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005888.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005767.html",
+       "https://www.city.asahikawa.hokkaido.jp/700/723/724/d065461.html"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 8,
+      "WebFetch": 12,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241032837-8zxumy.pdf",
+      "webfetch-1792241163009-40ea8f.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 92210,
+      "tool_uses": 23,
+      "duration_ms": 306955
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "could not read the PDF; pattern 1-B identified; guessed from a 2018 notice that 木 is not a burnable day"
+     },
+     "claim_check": {
+      "claims_checked": 11,
+      "correct": 11,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Gave up on the item, but every factual claim it made is correct: 永山9条2丁目2番から10番 = 1-B (so 5番 = 1-B) and 1番 = 4-A (p005710); garbage goes out 6:00-9:00 on collection day, 燃やせるごみ goes in the yellow 指定袋, and 燃やせない/紙製容器包装/段ボール are biweekly (p005888); the H30 年末年始 page (d065461) does list 1-B among the 火・金 燃やせるごみ areas, and the inference that 12/10 (Thu) is not a 燃やせる day is right; 1b_12.pdf is the 1-B December calendar; さんあ～る app; Clean Center 0166-36-2213, 8:45-17:15, closed 土日祝 and 12/30-1/4. No wrong claims."
+     }
+    }
+   }
+  },
+  {
+   "id": "A3",
+   "municipality": "北海道旭川市",
+   "kind": "holiday_collected",
+   "question": "北海道旭川市旭町2条5丁目 に住んでいます。2026年11月23日(月)にはどのごみを出せますか？",
+   "date": "2026-11-23",
+   "address": "北海道旭川市旭町2条5丁目",
+   "truth": {
+    "district": "パターン3-B (旭町)",
+    "collections": [
+     "燃やせるごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/3-B_b.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "yellow, 勤労感謝の日 small red label, 燃やせる. Holiday collected. 3-B: Mon/Thu 燃やせる, Wed 缶, Fri プラ, Tue alternating.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n---\n\n**2026年11月23日(月・勤労感謝の日)に出せるのは「燃やせるごみ」です。**\n\n- 旭川市のカレンダーでは、旭町は丁目による区分がなく、全体が**パターン3-B**(燃やせるごみが週2回の地区)です。\n- 3-Bの令和8年11月のカレンダーでは、23日(月)は祝日ですが**「燃やせる」(燃やせるごみ)の日**になっています。旭川市は、収集日が祝日に当たってもごみを収集します(年末年始の一定期間を除く)。\n- 同じ週のほかの日の予定は次のとおりです。\n  - 24日(火):紙製容器・段ボール\n  - 25日(水):缶・びん・家庭金物・紙パック\n  - 26日(木):燃やせるごみ\n  - 27日(金):プラ製容器・ペットボトル\n- 燃やせないごみと、乾電池・蛍光管・ガス缶・ライターは23日には出せません。11月の収集日は17日(火)でした。\n\n出典:旭川市「家庭ごみ分別収集カレンダー」(令和8年度、パターン3-B)\n\n---\n\n2. JSON",
+      "items": [
+       "燃やせるごみ"
+      ],
+      "no_collection": false,
+      "district": "パターン3-B(旭町)",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/3-B_b.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/3b_11.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 5,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792240921663-wy1vxo.pdf",
+      "webfetch-1792240921663-wy1vxo.pdf",
+      "webfetch-1792240947623-zrqk4a.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 69686,
+      "tool_uses": 12,
+      "duration_ms": 97031
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 11,
+      "correct": 10,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "燃やせないごみと乾電池・蛍光管・ガス缶・ライターの「11月の収集日は17日(火)でした」",
+        "truth": "The 3-B November 2026 calendar (3b_11.pdf / 3-B_b.pdf) has 燃やせない + 乾電池・蛍光管・ガス缶・ライター on both 11/3 (Tue, 文化の日) and 11/17 (Tue); the answer omits 11/3.",
+        "misleads_what_or_when": false
+       }
+      ],
+      "notes": "The main answer is correct: 旭町 is listed without 条/丁目 subdivisions under 3-B (p005710, p005911); 3-B is a twice-weekly 燃やせる area; 11/23 (勤労感謝の日) is a 燃やせる day, and the city collects on holidays except over the year-end period (A2 sheet note, p005888). The surrounding days are all correct: 24 紙製容器・段ボール, 25 缶・びん, 26 燃やせる, 27 プラ・ペット. 燃やせない is indeed not collected on 11/23. One minor error: it says November's 燃やせない day 'was 17日', but there were two (11/3 and 11/17). Both dates were already past on the question date, so this does not change what or when to put out."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "**回答**\n\n旭町2条5丁目（市の一覧では「旭町」）は、2026年11月23日（月）に**燃やせるごみ**を出せる可能性が高いです。ただし、令和8年度の曜日は確認できていないため、出す前に必ずご確認ください。\n\n- **地区**: 旭川市の「令和8年度 月別収集カレンダー」と「家庭ごみ分別収集カレンダー」では、「旭町」は収集パターン3-Bです。「旭町2条」という表記は一覧にないため、「旭町」として扱いました。\n- **祝日**: 11月23日は勤労感謝の日ですが、市は「祝日・振替休日もごみの収集があります」（年末年始と土日を除く）と案内しています。\n- **燃やせるごみ**: パターン3-Bは燃やせるごみが週2回の地区です。2014年・2015年の町内会回覧（年末年始の収集案内）では、月・木曜に燃やせるごみを集める地区としてパターン3-Bが挙げられていました。このため月曜の収集と推定しました。ただし、これは検索結果の要約に基づく古い資料からの推定で、PDFカレンダーの中身は読み取れていません。\n- **確認できなかったこと**: 燃やせないごみ、紙製容器包装、段ボールは隔週収集です。11月23日がその収集週かどうかは確認できませんでした。また、「旭町2条」が別の区分に入る可能性も否定できません。\n\n**出し方**: 燃やせるごみは黄色の指定袋に入れ、収集日当日の午前6時から9時の間に出してください。\n\n**確認方法**:\n- スマートフォンアプリ「さんあ～る」で「北海道」「旭川市」を選び、住所の地域を設定すると、収集日がカレンダーで見られます。\n- 旭川市クリーンセンター（0166-36-2213）に住所を伝えて確認するのが確実です。受付は平日8時45分から17時15分で、11月23日は祝日のため電話受付がありません。前日までに確認してください。\n\nなお、今回の検索は上限に達したため、これ以上の確認はできませんでした。",
+      "items": [
+       "燃やせるごみ"
+      ],
+      "no_collection": false,
+      "district": "旭町",
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005888.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/279/p005737_d/fil/h27_no32.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/279/p005737_d/fil/h26_no28.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 11,
+      "WebFetch": 10,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241032837-8zxumy.pdf",
+      "webfetch-1792241180180-67yo2r.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 97395,
+      "tool_uses": 24,
+      "duration_ms": 302970
+     },
+     "score": {
+      "collections": "guess_correct",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "said 燃やせるごみ is 'likely', inferred from 2014/2015 町内会回覧, without reading the FY2026 calendar"
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 13,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Hedged ('可能性が高い'), but the answer 燃やせるごみ is correct and every claim checks out: 旭町 = 3-B in both p005710 and p005911, and '旭町2条' is indeed not a separate row; 11/23 is 勤労感謝の日, and p005888 says 祝日・振替休日も収集 (except 年末年始・土日); 3-B is a twice-weekly area; its 燃やせる days are Mon/Thu (the cited 2014/2015 回覧 PDFs are no longer online, but the official H30 page d065461 and the current 3-B calendar both confirm Mon/Thu). The other claims are also right: biweekly items, yellow bag, 6:00-9:00, さんあ～る setup (北海道→旭川市→地域), Clean Center 0166-36-2213, and weekday hours 8:45-17:15 with no phone service on the 11/23 holiday. No wrong claims."
+     }
+    }
+   }
+  },
+  {
+   "id": "A4",
+   "municipality": "北海道旭川市",
+   "kind": "alternating_week_multi_item",
+   "question": "北海道旭川市永山4条19丁目 に住んでいます。2026年12月24日(木)にはどのごみを出せますか？",
+   "date": "2026-12-24",
+   "address": "北海道旭川市永山4条19丁目",
+   "truth": {
+    "district": "パターン4-A (永山1条から6条の1丁目から24丁目)",
+    "collections": [
+     "燃やせないごみ",
+     "乾電池・蛍光管・ガス缶・ライター"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/4-A_b.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "green 燃やせない with gray sub-box 乾電池・蛍光管 ガス缶・ライター. 4-A Thu alternates 燃やせない / 紙製容器・段ボール (last 紙製容器 of year 12/17).",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月24日(木)に出せるのは「燃やせないごみ」と「乾電池・蛍光管・ガスボンベ・ライター」です。**\n\n旭川市の「令和8年度 家庭ごみ分別収集カレンダー」で調べました。永山4条19丁目は**パターン「4-A」**(永山1条から6条の1丁目から24丁目)の地区です。\n\n**12月24日(木)に出せるもの**\n- 燃やせないごみ\n- 乾電池・蛍光管・ガスボンベ・ライター(燃やせないごみと同じ日の収集です)\n\n**出すときの注意**\n- 収集日の朝6時から9時の間に出してください。\n- 燃やせないごみは緑色の指定ごみ袋に入れてください。\n- 4-A地区では、木曜日に「燃やせないごみ」と「紙製容器包装・段ボール」が1週おきに交互に収集されます。12月の木曜日は次のとおりです。\n  - 3日：紙製容器包装・段ボール\n  - 10日：燃やせないごみ\n  - 17日：紙製容器包装・段ボール(年内最後)\n  - 24日：燃やせないごみ\n  - 31日：収集なし\n- 紙製容器包装と段ボールは、24日には出せません。\n- 燃やせるごみ(黄色の指定袋)は24日には出せません。前後の日は12月22日(火)と25日(金)です。\n\n問い合わせ先：旭川市クリーンセンター 0166-36-2213(平日 8:45〜17:15)\n\n2. JSON",
+      "items": [
+       "燃やせないごみ",
+       "乾電池・蛍光管・ガスボンベ・ライター"
+      ],
+      "no_collection": false,
+      "district": "4-A",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/4-A_b.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005888.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240937314-s9yu70.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 70043,
+      "tool_uses": 9,
+      "duration_ms": 105148
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 14,
+      "correct": 13,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "12月24日に出せるのは「燃やせないごみ」と「乾電池・蛍光管・ガスボンベ・ライター」",
+        "truth": "The category collected with 燃やせないごみ on 12/24 is 「乾電池・蛍光管・ガス缶・ライター」 (4a_12.pdf and 4-A_b.pdf). The city's 処理困難物 page (p005903) lists ガスボンベ among items the city does NOT collect ('ごみステーションには出さないでください'; return it to the dealer or the LPガス協会). Only ガス缶・スプレー缶 (used up, in a clear bag) go out on 燃やせない day (p005727).",
+        "misleads_what_or_when": true
+       }
+      ],
+      "notes": "The date and the other categories are right: 永山4条19丁目 is in 4-A (永山1条から6条の1丁目から24丁目); 12/24 = 燃やせない plus the hazardous-item collection; 4-A Thursdays alternate between 燃やせない and 紙製容器・段ボール (12/3 紙, 12/10 燃やせない, 12/17 紙 = last of the year per the calendar notice, 12/24 燃やせない, 12/31 休); 燃やせる is Tue/Fri (22 and 25); 6:00-9:00; green bag for 燃やせない, yellow for 燃やせる; Clean Center 0166-36-2213, weekdays 8:45-17:15. The one error is the label 'ガスボンベ' instead of 'ガス缶'. In Asahikawa a ガスボンベ (gas cylinder) is a 処理困難物 that the city refuses, so this wording could lead a user to put out something that must not go to the station."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "永山4条19丁目は旭川市の家庭ごみ収集カレンダーで「4-A」地区です。2026年12月24日(木)に出せるのは次のごみです。\n\n- 燃やせないごみ\n- 乾電池・蛍光管・ガス缶・ライター\n\n燃やせるごみ、資源物(プラ製容器包装・ペットボトル、缶・びん・家庭金物・紙パック)、紙製容器包装・段ボールは、この日は収集がありません。なお、紙製容器包装と段ボールの年内最終収集日は12月17日(木)で、12月30日・31日は収集休みです。",
+      "items": [
+       "燃やせないごみ",
+       "乾電池・蛍光管・ガス缶・ライター"
+      ],
+      "no_collection": false,
+      "district": "永山地区 4-A",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/4a_12.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/4-A_b.pdf"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 4,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241131510-dri80p.pdf",
+      "webfetch-1792241136024-ovq7vq.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 84971,
+      "tool_uses": 11,
+      "duration_ms": 168612
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 9,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Fully correct against 4a_12.pdf / 4-A_b.pdf and p005710: 4-A; 12/24 = 燃やせない + 乾電池・蛍光管・ガス缶・ライター (official label used); no 燃やせる, プラ・ペット, 缶・びん・家庭金物・紙パック or 紙製容器・段ボール that day; the last 紙製容器・段ボール is 12/17 (Thu); 12/30 and 12/31 are 休. No errors."
+     }
+    }
+   }
+  },
+  {
+   "id": "A5",
+   "municipality": "北海道旭川市",
+   "kind": "holiday_collected",
+   "question": "北海道旭川市3条通8丁目 に住んでいます。2027年1月11日(月)にはどのごみを出せますか？",
+   "date": "2027-01-11",
+   "address": "北海道旭川市3条通8丁目",
+   "truth": {
+    "district": "パターン1-A",
+    "collections": [
+     "紙製容器包装・段ボール"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/1-A_b.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "tan, 成人の日 label, 紙製容器 段ボール. Holiday collected.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2027年1月11日(月・成人の日)に出せるのは「紙製容器・段ボール」です。**\n\n- 旭川市の「3条通8丁目」は、収集カレンダーの **パターン1-A**（1条通から10条通の1丁目から25丁目）に入ります。\n- 令和8年度の月別カレンダー（1-A、令和9年1月）では、1月11日は成人の日ですが、**紙製容器・段ボール**の収集日になっています。祝日でも収集があります。\n- 参考までに、同じ週は次のとおりです。\n  - 12日(火)：燃やせるごみ\n  - 13日(水)：缶・びん・家庭金物・紙パック\n  - 14日(木)：プラ製容器・ペットボトル\n  - 15日(金)：燃やせるごみ\n- 1月のごみ収集は5日(火)から始まります（1月1日と4日は休み）。\n\n出典：旭川市「令和8年度 月別収集カレンダー」パターン1-A 1月\nhttps://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html\n\n2. JSON",
+      "items": [
+       "紙製容器・段ボール"
+      ],
+      "no_collection": false,
+      "district": "パターン1-A（1条通から10条通1丁目から25丁目）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_1.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240910818-smvyld.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 65904,
+      "tool_uses": 8,
+      "duration_ms": 48591
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 9,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All claims match 1a_1.pdf (and the A2 sheet 1-A_b.pdf): 3条通8丁目 is in 1-A; 1/11 is 成人の日 and still a 紙製容器・段ボール day; 12 燃やせる, 13 缶・びん・家庭金物・紙パック, 14 プラ・ペット, 15 燃やせる; the calendar notice says January collection starts 5日(火), with 1/1 and 1/4 marked 休. No errors."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "3条通8丁目は、旭川市の家庭ごみ分別収集カレンダーで「パターン1-A」に当たると考えられます。公式ページの地区例に「1～10条通の1～25丁目」とあり、3条通8丁目はこの範囲に入ります。\n\nただし、2027年1月11日(月)に何のごみを出せるかは確認できませんでした。1-Aの令和8年度1月分カレンダーはPDFで公開されていますが、私の環境ではPDFの中身を読み取れず、日付ごとの収集品目を確認できなかったためです。\n\nまた、1月11日は成人の日（祝日）です。祝日の収集の扱いはカレンダーで必ず確認してください。\n\n確認方法は次のとおりです。\n1. 旭川市の月別収集カレンダーで、1-Aの1月分(https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_1.pdf)を開き、1月11日の欄を見てください。\n2. ごみ分別アプリ「さんあ～る」では、旭川市を選んで地域を設定すると、収集日をカレンダーで確認できます。住所は入力せず、地域のみの設定です。\n3. 迷う場合は旭川市環境部クリーンセンター（0166-36-2213、平日8:45～17:15）に問い合わせてください。1月11日は祝日で休みのため、それより前に連絡してください。\n\n古い資料（2013年度頃）では、1-Aの燃やせるごみは火曜と金曜に収集するとされていました。現在の曜日とは限らないため、判断材料にはしないでください。",
+      "items": [],
+      "no_collection": false,
+      "district": "パターン1-A",
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911_d/fil/1a_1.pdf",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/d080561.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 8,
+      "WebFetch": 11,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241050949-uj2t8s.pdf",
+      "webfetch-1792241250900-mai8de.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 94992,
+      "tool_uses": 22,
+      "duration_ms": 280600
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "could not read the PDF; pattern 1-A identified"
+     },
+     "claim_check": {
+      "claims_checked": 7,
+      "correct": 7,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Gave up on the item, but its claims are correct: 3条通8丁目 falls in 1-A (1条通から10条通の1丁目から25丁目); 1a_1.pdf is the 1-A January calendar; 2027-01-11 is 成人の日; さんあ～る is set up by choosing 旭川市 and an area (d080561); Clean Center 0166-36-2213, weekdays 8:45-17:15, closed on the 1/11 holiday; 1-A 燃やせる days are Tue/Fri (the 2013 回覧 it cites is offline, but the H30 official page and the current calendar confirm Tue/Fri, so its warning that this may be outdated was unnecessary). It told the user to check how holidays are handled without saying that the city collects on holidays; that is an omission, not a false statement. No wrong claims."
+     }
+    }
+   }
+  },
+  {
+   "id": "A6",
+   "municipality": "北海道旭川市",
+   "kind": "new_year_off",
+   "question": "北海道旭川市春光台3条5丁目 に住んでいます。2027年1月4日(月)にはどのごみを出せますか？",
+   "date": "2027-01-04",
+   "address": "北海道旭川市春光台3条5丁目",
+   "truth": {
+    "district": "パターン1-B (春光台)",
+    "collections": [],
+    "no_collection": true,
+    "source_pdf": "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/1-B_b.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "1/4 (Mon) 休. Note: 1月のごみ収集は5日(火)から.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2027年1月4日（月）は、どのごみも収集されません。** その日はごみを出さないでください。\n\n- 旭川市の「家庭ごみ分別収集カレンダー」の地区一覧では、**春光台はパターン「1-B」** です。春光台には条・丁目による区分がないので、春光台3条5丁目も1-Bになります。「春光各条」の地区は名前が似ていますが別の地域です。\n- 1-B地区のカレンダー（令和8年10月〜令和9年3月）では、1月4日（月）は年末年始のお休みを示す「休」になっています。カレンダーには「1月のごみ収集は5日（火）から始まります」とも書かれています。\n- 年明け最初の収集は **1月5日（火）の「燃やせるごみ」** です。\n\n出典:\n- [旭川市 家庭ごみ分別収集カレンダー（地区別パターン一覧）](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html)\n- [パターン1-B 収集カレンダー（令和8年10月〜令和9年3月）PDF](https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/1-B_b.pdf)\n\n2. JSON",
+      "items": [],
+      "no_collection": true,
+      "district": "1-B（春光台）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710_d/fil/1-B_b.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792240940666-rt4yds.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 66766,
+      "tool_uses": 8,
+      "duration_ms": 87130
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 7,
+      "correct": 7,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All claims verified: 春光台 is a single row (no 条/丁目 split) under 1-B in p005710, and 春光各条 is a different area (2-A for 5-9丁目, 3-B for 1-4丁目); the 1-B Oct-Mar A2 sheet (1-B_b.pdf) and 1b_1.pdf mark 1/4 as 休 with the notice 「1月のごみ収集は5日(火)から始まります」; the first collection is 1/5 燃やせる. No errors."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "1. 回答\n\n2027年1月4日（月）に出せるごみは、確実に確認できませんでした。現時点では出さないでください。\n\n- 春光台は、旭川市の分別収集カレンダーで「パターン1-B」（燃やせるごみ週2回の地区）に割り当てられています。\n- 1月4日は年末年始にあたります。市の案内では年末・年始は通常の収集がないとされています。検索結果の要約では、平成26年・27年の町内会回覧で1月4日が全地域で休みだったことが示されていましたが、原文は開けていません。2026～27年度の年末年始の収集日は確認できませんでした。\n- 1-Bの1月分カレンダーはPDFで公開されていますが、PDFの中身を読み取れなかったため、曜日や品目は確認できていません。\n- 燃やせないごみ、紙製容器包装、段ボールは隔週収集です。\n\n以上から、1月4日は収集がない可能性が高いと考えられます。出す前に次の方法で確認してください。\n\n- ごみ分別促進アプリ「さんあ～る」: 都道府県「北海道」、自治体「旭川市」を選んで地域を設定すると、週ごと・月ごとの収集日がカレンダーで見られます。\n- 旭川市クリーンセンター（0166-36-2213、受付時間 8:45～17:15）: 土日祝日と12月30日～1月4日は休みです。1月4日当日は電話がつながらないので、年内に確認してください。\n- 家庭ごみ分別収集カレンダー（令和8年度）: https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+      "items": [],
+      "no_collection": false,
+      "district": "春光台",
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005710.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005911.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/p005888.html",
+       "https://www.city.asahikawa.hokkaido.jp/1000/1001/1017/10180/p003467.html",
+       "https://www.city.asahikawa.hokkaido.jp/kurashi/271/272/273/d080561.html"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 8,
+      "WebFetch": 10,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241032837-8zxumy.pdf",
+      "webfetch-1792241123022-c48bvd.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 87762,
+      "tool_uses": 21,
+      "duration_ms": 261603
+     },
+     "score": {
+      "collections": "guess_correct",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "could not confirm; said no collection is 'likely' (from old notices) and told the user not to put garbage out"
+     },
+     "claim_check": {
+      "claims_checked": 11,
+      "correct": 10,
+      "wrong": 0,
+      "unverifiable": 1,
+      "wrong_claims": [],
+      "notes": "Did not commit (no_collection=false), but it advised not putting garbage out and said no collection was likely, which is correct. Verified: 春光台 = 1-B, a twice-weekly 燃やせる area; the city says there is no regular collection over 年末年始 (p005888); the 1-B January calendar exists as a PDF; 燃やせない/紙製容器包装/段ボール are biweekly; さんあ～る setup; Clean Center 0166-36-2213, 8:45-17:15, closed 土日祝 and 12/30-1/4, so it cannot be called on 1/4; p005710 is the R8 calendar page. Unverifiable: that the H26/H27 町内会回覧 showed 1/4 as a holiday for all areas (those PDFs are offline and not archived). No wrong claims."
+     }
+    }
+   }
+  },
+  {
+   "id": "Z1",
+   "municipality": "宮崎県宮崎市",
+   "kind": "printed_exception_note",
+   "question": "宮崎県宮崎市橘通西1丁目1番1号 に住んでいます。2027年1月29日(金)にはどのごみを出せますか？",
+   "date": "2027-01-29",
+   "address": "宮崎県宮崎市橘通西1丁目1番1号",
+   "truth": {
+    "district": "北A",
+    "collections": [
+     "プラスチック製容器包装",
+     "古布",
+     "古紙"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/8/_/01_A_____8__.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "プラ + 布 + 紙 badges. 5th Friday normally 布紙 not collected (第5週は収集しません), but note in Jan box: 1月1日の代わりに1月29日は古布・古紙を収集します. Trap: 橘通東 is 北B (1/29 = プラ only).",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. 回答（ユーザー向け）\n\n**2027年1月29日(金)に出せるのは「プラスチック製容器包装」と「古布・古紙」です。**\n\n宮崎市の「ごみ・資源物収集日程区域一覧表」で見ると、橘通西1丁目は**北A**エリア（地区名は中央東（分割））です。北Aの令和8年度収集日程カレンダーでは、1月29日(金)の収集は次の2つです。\n\n| 出せるもの | 出し方 |\n|---|---|\n| **プラスチック製容器包装** | 45L以下の無色透明の袋か、無色半透明のレジ袋に入れて出します。 |\n| **古布・古紙**（新聞紙、ダンボール、紙パック、雑がみ） | 種類ごとにひもでしばって出します。雑がみは紙袋に入れてしばって出してもかまいません。 |\n\n- 古布・古紙はふだんは第1〜第4金曜日の収集で、第5週は収集しません。1月29日は第5金曜日ですが、**1月1日(金)が休みになる代わりに、1月29日に古布・古紙を収集します**（カレンダーにそう書かれています）。\n- 「燃やせるごみ」はこの地区では月曜と木曜の収集なので、29日(金)には出せません。近い日だと1月28日(木)か2月1日(月)です。\n- 燃やせないごみ、金属類、ペットボトル、空き缶・空きびん、その他資源物も、この日は収集がありません。\n- ごみは**収集日の朝8時30分まで**に、決められた集積所に出してください。\n\n市の公式アプリ「さんあ～る」でも、北Aの収集日を確認したり通知を受けたりできます。\n\n2. JSON",
+      "items": [
+       "プラスチック製容器包装",
+       "古布・古紙（新聞紙・ダンボール・紙パック・雑がみ）"
+      ],
+      "no_collection": false,
+      "district": "北A（中央東（分割））",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/8/_/01_A_____8__.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 7,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240942644-wjsguu.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 96406,
+      "tool_uses": 13,
+      "duration_ms": 113344
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 14,
+      "correct": 14,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All claims verified against the area table (橘通西1丁目 = 北A, 中央東（分割）) and the 北A R8 calendar: 1/29 shows プラ + 布 + 紙, the January box note says 1月1日の代わりに1月29日は古布・古紙を収集します, 1/29 is the 5th Friday, 可燃 is Mon/Thu (1/28 and 2/1 both 可燃), and no other category falls on 1/29. Bag rule (45ℓ以下の無色透明袋 or 無色半透明のレジ袋), tie-by-type and 雑がみ-in-paper-bag rules match the calendar legend and guide; 8:30 matches the calendar header and city page; the さんあ～る app intro page confirms calendar display and ごみ出し notifications."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "1. 2027年1月29日(金)に出せるのは次の2種類です。\n\n- プラスチック製容器包装（プラ）\n- 古布・古紙（新聞紙、ダンボール、紙パック、雑がみ、古布）\n\n橘通西1丁目は、宮崎市の収集区域一覧表で「北A・中央東（分割）」に当たります。令和8年度の北A地区カレンダーでは、1月1日が休みのため、その代わりに1月29日に古布・古紙を収集すると注記されています。\n\n燃やせるごみ、燃やせないごみ、金属類、ペットボトル、空き缶・空きびん、蛍光灯・乾電池等（その他資源）は、この日は収集がありません。\n\n出し方は収集日の朝8時30分までに指定の場所へ出し、紙類は種類ごとにひもでしばってください。収集日は変わることがあるため、念のため宮崎市の公式情報（ごみ分別アプリ「さんあ〜る」や、環境部 循環社会推進課 0985-21-1761）でも確認してください。\n\n出典: 宮崎市「ごみ・資源物収集日程区域一覧表（50音順）」、宮崎市「令和8年度 家庭ごみ・資源物収集日程カレンダー（北A）」",
+      "items": [
+       "プラスチック製容器包装",
+       "古布・古紙"
+      ],
+      "no_collection": false,
+      "district": "北A 中央東（分割）",
+      "confidence": "high",
+      "hedged": true,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/8/_/01_A_____8__.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 7,
+      "WebFetch": 9,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792241195291-ubkj8z.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 124279,
+      "tool_uses": 20,
+      "duration_ms": 264454
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "hedged"
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 9,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct main answer (プラ + 古布・古紙), correct 北A/中央東（分割） assignment and correct citation of the 1/1→1/29 substitution note. The list of categories not collected that day, the 8:30 deadline, the tie-by-type rule, the さんあ〜る app and the 循環社会推進課 number all check out. Phone note: 0985-21-1761 is correct for 環境部 循環社会推進課 (the listed contact on the calendar pages and for the app), although the 13【家庭ごみの出し方など】 guide routes collection/集積所 questions to 環境業務課 0985-21-1762 and sorting questions to コールセンター 0985-25-2111."
+     }
+    }
+   }
+  },
+  {
+   "id": "Z2",
+   "municipality": "宮崎県宮崎市",
+   "kind": "street_split_nth_week",
+   "question": "宮崎県宮崎市橘通東3丁目 に住んでいます。2027年1月26日(火)にはどのごみを出せますか？",
+   "date": "2027-01-26",
+   "address": "宮崎県宮崎市橘通東3丁目",
+   "truth": {
+    "district": "北B",
+    "collections": [
+     "ペットボトル",
+     "古布",
+     "古紙"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/9/_/02_B_____8__.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "ペット + 布 + 紙 badges (4th Tuesday). 北A on 1/26 = 缶・びん.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n---\n\n**2027年1月26日（火）に出せるのは「ペットボトル」と「古布・古紙」です。**\n\n**お住まいの地区**\n宮崎市の「ごみ・資源物収集日程区域一覧表」では、橘通東3丁目は**「北B」エリア（中央東（分割）地区）**です。\n\n**1月26日に出せるもの（北Bの令和8年度カレンダーより）**\n1月26日は1月の第4火曜日にあたり、次のものが収集されます。\n\n- **ペットボトル**：第2・第4火曜日に収集されます。\n- **古布**：第1〜第4火曜日に収集されます。\n- **古紙**：新聞紙・ダンボール・紙パック・雑がみが対象です。古布と同じく第1〜第4火曜日に収集されます。\n\n**この日に出せないもの**\n- 燃やせるごみ：月曜日と木曜日です。前日の1月25日（月）、または1月28日（木）に出してください。\n- 燃やせないごみ・金属類：第2水曜日で、1月は13日です。\n- プラスチック製容器包装：金曜日です。\n- 空き缶・空きびん：第1・第3火曜日で、1月は5日と19日です。\n- その他資源（蛍光管・乾電池など）：第4水曜日で、翌日の1月27日です。\n\n**出し方の注意**\n- 収集日の**朝8時30分まで**に、決められた場所に出してください。\n- ペットボトルは「45ℓ以下の無色透明袋」か「無色半透明のレジ袋」に入れて出します。\n- 古紙・古布は種類ごとにひもでしばって出します。雑がみは紙袋に入れてしばっても出せます。\n\n参考：宮崎市「ごみカレンダー」ページ（令和8年度 北Bカレンダー、ごみ・資源物収集日程区域一覧表）\nhttps://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html\n\n---\n\n2. JSON",
+      "items": [
+       "ペットボトル",
+       "古布",
+       "古紙（新聞紙・ダンボール・紙パック・雑がみ）"
+      ],
+      "no_collection": false,
+      "district": "北B（中央東（分割））",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/9/_/02_B_____8__.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 7,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240957007-70knu7.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 94847,
+      "tool_uses": 13,
+      "duration_ms": 92233
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 14,
+      "correct": 14,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "橘通東3丁目 = 北B (中央東（分割）) per area table. 北B calendar: 1/26 (4th Tuesday) shows ペット + 布 + 紙. Every surrounding date is right: 可燃 Mon/Thu (1/25, 1/28), 不燃・金属 第2水 = 1/13, プラ Fri, 缶・びん 第1・3火 = 1/5 and 1/19, その他資源 第4水 = 1/27. Bag rule, tie-by-type, 雑がみ paper-bag rule and 8:30 match the legend."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2027年1月26日(火)に出せるごみは、確認できませんでした。現時点では回答できません。\n\n- 2027年1月は、宮崎市の「令和8年度」(2026年4月〜2027年3月)の収集日程に含まれています。この日程は2026年3月4日付けで掲載されています。\n- 旧宮崎市域は「北A」「北B」「南A」「南B」の4地区に分かれています。橘通東3丁目がどの地区に入るかは確認できませんでした。地区ごとの収集カレンダーはPDFで公開されていますが、この環境ではPDFの中身を読み取れず、曜日も確認できていません。\n- 検索の上限に達したため、これ以上の検索はできませんでした。\n\n確実に確認する方法は次のとおりです。\n\n1. 宮崎市公式サイトの「ごみと資源物の収集日程」(https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/) を開き、「ごみ収集エリア検索表(50音順)」で橘通東3丁目の地区を調べてください。そのうえで、該当地区の令和8年度カレンダーで1月26日を確認してください。\n2. ごみ分別アプリ「さんあ〜る」、またはWEB版では、お住まいの地域を選ぶと収集日カレンダーが表示されます。\n3. 宮崎市 循環社会推進課(0985-21-1761)に問い合わせると確実です。\n\nなお、2027年1月26日は火曜日です。",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 11,
+      "WebFetch": 11,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792241195291-ubkj8z.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 89571,
+      "tool_uses": 25,
+      "duration_ms": 232076
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": "could not determine area or read the PDF"
+     },
+     "claim_check": {
+      "claims_checked": 8,
+      "correct": 8,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Abstained (no district, no items), so the question goes unanswered, but every factual statement it makes is correct: 令和8年度 covers Apr 2026-Mar 2027, the schedule page is dated 2026年3月4日, 旧宮崎市 has 4 areas (北A/北B/南A/南B), calendars and the 50音順 area table are PDFs reachable from the trash_calendar pages, the さんあ〜る app/WEB版 shows calendars by area, and 2027-01-26 is a Tuesday. Phone note: 0985-21-1761 is correct for 環境部 循環社会推進課 (the listed contact on the calendar pages and for the app), although the 13【家庭ごみの出し方など】 guide routes collection/集積所 questions to 環境業務課 0985-21-1762 and sorting questions to コールセンター 0985-25-2111."
+     }
+    }
+   }
+  },
+  {
+   "id": "Z3",
+   "municipality": "宮崎県宮崎市",
+   "kind": "nth_week_multi_item",
+   "question": "宮崎県宮崎市青島2丁目 に住んでいます。2026年11月16日(月)にはどのごみを出せますか？",
+   "date": "2026-11-16",
+   "address": "宮崎県宮崎市青島2丁目",
+   "truth": {
+    "district": "南A",
+    "collections": [
+     "燃やせないごみ",
+     "金属類",
+     "古布",
+     "古紙"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/4/0/_/03_A_____8__.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "不燃 + 金属 + 布 + 紙 badges (3rd Monday).",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年11月16日(月)に宮崎市青島2丁目で出せるごみ**\n\n青島2丁目は、宮崎市の収集区分では「**南A**」エリア（青島地区）に入ります。\n\n令和8年度の南Aカレンダーでは、11月16日(月)は**第3月曜日**です。この日に出せるのは次の4種類です。\n\n| 種類 | 出し方 |\n|---|---|\n| **燃やせないごみ** | 指定袋（青色）に入れて出します |\n| **金属類** | 45ℓ以下の無色透明袋か、無色半透明のレジ袋に入れて出します |\n| **古布** | 種類ごとにひもでしばって出します |\n| **古紙**（新聞紙・ダンボール・紙パック・雑がみ） | 種類ごとにひもでしばって出します。雑がみは紙袋に入れてしばっても出せます（本や冊子は除きます） |\n\n- 収集日の**朝8時30分まで**に、お住まいの地域で決められた場所に出してください。\n- 燃やせないごみと金属類は、毎月**第3月曜日**だけの収集です。古布・古紙は第1〜4月曜日に収集があり、第5月曜日はありません。\n- 「燃やせるごみ」はこの日は出せません。南Aエリアでは火曜日と金曜日に、指定袋（赤色）で出します。\n\n2. JSON",
+      "items": [
+       "燃やせないごみ",
+       "金属類",
+       "古布",
+       "古紙（新聞紙・ダンボール・紙パック・雑がみ）"
+      ],
+      "no_collection": false,
+      "district": "南A（青島地区）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/4/0/_/03_A_____8__.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 2,
+      "WebFetch": 4,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240927164-4l5qhs.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 91970,
+      "tool_uses": 9,
+      "duration_ms": 61803
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 13,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "青島2丁目 = 南A (青島) per area table. 南A calendar: 11/16 (3rd Monday) shows 不燃 + 金属 + 布 + 紙. Legend confirms 不燃・金属 第3月, 布紙 第1〜4月 with 第5週は収集しません, 可燃 火・金 with 指定袋（赤色）, 不燃 指定袋（青色）, 金属 45ℓ無色透明袋/無色半透明レジ袋, 布紙 tied by type; guide confirms 雑がみ in paper bag excluding 本や冊子. 8:30 correct."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "宮崎市青島2丁目の2026年11月16日(月)に出せるごみは、調べても特定できませんでした。収集日は地区(収集エリア)ごとに違うため、お住まいの地区の収集日程表で確認してください。\n\n- 宮崎市は旧宮崎市域を北A・北B・南A・南Bの4エリアに分けています。このうち青島2丁目がどのエリアに入るかは確認できませんでした。\n- 地区別の収集日程表(令和8年度版)はPDFで公開されていますが、この環境ではPDFの中身を読み取れず、11月16日の収集品目は判断できませんでした。\n\n確認方法は次のとおりです。\n\n1. 宮崎市の[ごみカレンダー](https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/)から令和8年度の地区別収集日程表を開き、お住まいの地区のカレンダーで11月16日を確認してください。地区が分からない場合は、同じページにある「ごみ収集エリア検索表(50音順)」で町名から調べられます。\n2. スマートフォンアプリ「ごみ分別アプリ『さんあーる』」で地域を選ぶと収集日カレンダーが表示されます。Webでは同ページで案内されている「ごみ出しカレンダー」から地域を選べます。\n3. それでも分からない場合は、宮崎市環境部 循環社会推進課(0985-21-1761)に問い合わせてください。\n\nなお、ごみは収集日の朝8時30分までに指定の場所へ出すとされています。地区によっては時間が変わる場合があります。",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 13,
+      "WebFetch": 8,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241099091-6ur9ll.pdf",
+      "webfetch-1792240926133-b4gjok.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 88804,
+      "tool_uses": 24,
+      "duration_ms": 199372
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": "opened PDFs but said it could not read them; no area"
+     },
+     "claim_check": {
+      "claims_checked": 7,
+      "correct": 7,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Abstained, without naming a district or items. Its supporting statements are correct: 4 areas, R8 PDFs, the 50音順 area table for lookup by town name, the さんあーる app and Web ごみ出しカレンダー, the 8:30 deadline, and that collection times may vary by district (the page says routes changed, so 収集時間 may differ by 地区). Phone note: 0985-21-1761 is correct for 環境部 循環社会推進課 (the listed contact on the calendar pages and for the app), although the 13【家庭ごみの出し方など】 guide routes collection/集積所 questions to 環境業務課 0985-21-1762 and sorting questions to コールセンター 0985-25-2111."
+     }
+    }
+   }
+  },
+  {
+   "id": "Z4",
+   "municipality": "宮崎県宮崎市",
+   "kind": "fifth_week",
+   "question": "宮崎県宮崎市船塚2丁目 に住んでいます。2026年10月30日(金)にはどのごみを出せますか？",
+   "date": "2026-10-30",
+   "address": "宮崎県宮崎市船塚2丁目",
+   "truth": {
+    "district": "北A",
+    "collections": [
+     "プラスチック製容器包装"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/8/_/01_A_____8__.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "プラ only; 5th Friday so no 布紙.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n宮崎市船塚2丁目は、宮崎市のごみ・資源物の収集エリアでは**「北A」（地区：中央西）**にあたります。\n\n**2026年10月30日（金）に出せるのは「プラスチック製容器包装」だけです。**\n\n- 北Aでは、金曜日は「プラスチック製容器包装」と「古布・古紙」の日です。\n- 古布・古紙（新聞紙、ダンボール、紙パック、雑がみ、古布）を集めるのは第1～第4金曜日だけで、**第5金曜日は収集がありません**。\n- 10月30日は10月の第5金曜日です。市の令和8年度カレンダーでも、この日の表示は「プラ」だけです。\n\n**出し方**\n- 収集日の**朝8時30分まで**に、お住まいの地域で決められた場所に出してください。\n- 袋は「45リットル以下の無色透明の袋」か「無色半透明のレジ袋」を使ってください。\n\n**参考：北Aのそのほかの収集日**\n- 燃やせるごみ：毎週月曜・木曜（10月29日（木）は燃やせるごみの日です）\n- 燃やせないごみ・金属類：第1水曜\n- ペットボトル：第1・第3火曜\n- 空き缶・空きびん：第2・第4火曜\n- その他資源（蛍光管、破砕困難物、乾電池など）：第3水曜\n- 古布・古紙：第1～第4金曜\n\n参照元：宮崎市「令和8年度 家庭ごみ・資源物収集日程表」（北Aのカレンダー）、「ごみ・資源物収集日程区域 一覧表」\n\n2. JSON",
+      "items": [
+       "プラスチック製容器包装"
+      ],
+      "no_collection": false,
+      "district": "北A（中央西）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/8/_/01_A_____8__.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 4,
+      "Read": 2,
+      "mcp__ccd_turn__wrap_up": 1
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240942644-wjsguu.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 91924,
+      "tool_uses": 11,
+      "duration_ms": 65534
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 14,
+      "correct": 14,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "船塚2丁目 = 北A (中央西) per area table. 北A October: 10/30 (5th Friday) shows only プラ, and 10/29 (Thu) is 可燃. The full 北A weekly rule list matches the legend exactly: 可燃 月・木, 不燃・金属 第1水, ペット 第1・3火, 缶・びん 第2・4火, その他資源 第3水, 布紙 第1〜4金 with 第5週なし. Bag rule and 8:30 correct."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "1. 2026年10月30日（金）に船塚2丁目で出せるごみは、確認できませんでした。そのため、出せる品目はお伝えできません。\n\n宮崎市では収集日が地区ごとに違い、船塚2丁目がどの地区かを調べる必要があります。市の公式サイトには、地区別の令和8年度収集カレンダーと「ごみ収集エリア検索表(50音順)」がPDFで掲載されていますが、今回の環境ではPDFの中身を読み取れず、船塚2丁目の地区と10月30日の収集品目を特定できませんでした。推測での回答は控えます。なお、検索回数の上限に達したため、追加の検索もできませんでした。\n\n確実に確認する方法は次のとおりです。\n- ごみ分別アプリ「さんあ〜る」で宮崎市を選び、お住まいの地域を選択すると収集日カレンダーが表示されます。パソコンの場合は、WEB版の「ごみ出しカレンダー」(https://manage.delight-system.com/threeR/web/calendar?menu=calendar&jichitaiId=miyazakishi) で地域を選べます。\n- 公式の「ごみと資源物の収集日程」ページ (https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/) から、地区別カレンダーを開けます。旧宮崎市は北A・北B・南A・南Bの4地区に分かれています。\n- 地区がわからない場合や不明点がある場合は、宮崎市環境部 循環社会推進課（0985-21-1761）に問い合わせてください。\n\nなお、2026年10月30日は金曜日です。\n\n2.",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 8,
+      "WebFetch": 9,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792241195291-ubkj8z.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 83463,
+      "tool_uses": 20,
+      "duration_ms": 194781
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": "no area, no answer"
+     },
+     "claim_check": {
+      "claims_checked": 7,
+      "correct": 7,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Abstained. Its factual statements are correct: 4 areas, R8 PDFs plus the 50音順 area table, the さんあ〜る app, the exact WEB版 ごみ出しカレンダー URL (manage.delight-system.com ... jichitaiId=miyazakishi), the trash_calendar page, and that 2026-10-30 is a Friday. Phone note: 0985-21-1761 is correct for 環境部 循環社会推進課 (the listed contact on the calendar pages and for the app), although the 13【家庭ごみの出し方など】 guide routes collection/集積所 questions to 環境業務課 0985-21-1762 and sorting questions to コールセンター 0985-25-2111."
+     }
+    }
+   }
+  },
+  {
+   "id": "Z5",
+   "municipality": "宮崎県宮崎市",
+   "kind": "year_end_off",
+   "question": "宮崎県宮崎市大塚町 に住んでいます。2026年12月30日(水)にはどのごみを出せますか？",
+   "date": "2026-12-30",
+   "address": "宮崎県宮崎市大塚町",
+   "truth": {
+    "district": "南A",
+    "collections": [],
+    "no_collection": true,
+    "source_pdf": "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/4/0/_/03_A_____8__.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "休 (red). Normal Wed = プラ. 12/31 blank, 1/1 休.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月30日(水)は、宮崎市大塚町ではごみの収集がありません。どのごみも出せません。**\n\n- 宮崎市の「ごみ収集エリア検索表」では、大塚町は町全体が**南Aエリア（大塚地区）**です。\n- 南Aの「令和8年度 家庭ごみ・資源物収集日程カレンダー」を見ると、12月30日(水)は**「休」**となっています。いつもの水曜日なら「プラスチック製容器包装」の日ですが、この日は年末のため収集がお休みです。\n\n**年末年始の前後の予定（南A）**\n| 日付 | 収集されるごみ |\n|---|---|\n| 12月28日(月) | 布・紙（古布・古紙） |\n| 12月29日(火) | 燃やせるごみ（年内最後） |\n| 12月30日(水) | **収集なし（休み）** |\n| 12月31日(木) | 収集なし |\n| 1月1日(金) | 収集なし（休み） |\n| 1月4日(月) | 布・紙（年明け最初の収集） |\n| 1月5日(火) | 燃やせるごみ |\n| 1月6日(水) | プラスチック製容器包装、その他資源（蛍光管・乾電池など） |\n\nごみは収集日の**朝8時30分まで**に、決められた場所へ出してください。\n燃やせるごみは、年内なら29日(火)までに出してください。間に合わなければ年明けの1月5日(火)まで家で保管してください。\n\n出典：\n- [宮崎市 令和8年度「家庭ごみ・資源物収集日程表」](https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html)\n- [ごみ収集エリア検索表（50音順）PDF](https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf)\n- [南A 令和8年度 収集日程カレンダー PDF](https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/4/0/_/03_A_____8__.pdf)\n\n2. JSON",
+      "items": [],
+      "no_collection": true,
+      "district": "南A（大塚）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/4/0/_/03_A_____8__.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 2,
+      "WebFetch": 3,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240927164-4l5qhs.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 91545,
+      "tool_uses": 8,
+      "duration_ms": 63932
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 13,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "大塚町 = 南A (大塚); the area table has no split note. 南A calendar: 12/30 is marked 休 (normal Wed = プラ). The year-end table matches cell by cell: 12/28 布紙, 12/29 可燃 (last 可燃 of the year), 12/31 blank (5th Thursday), 1/1 休, 1/4 布紙, 1/5 可燃, 1/6 プラ + その他資源. 8:30 correct."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "宮崎市大塚町は「南A」エリア(地区は「大塚」)です。2026年12月30日(水)は、家庭ごみ・資源物の収集が**休みです**。\n\n令和8年度の南Aエリアのカレンダーでは、12月30日に「休」と表示されています。この曜日は通常プラスチック製容器包装の収集日ですが、今回は出せません。\n\n- 12月30日(水): 出せるごみはありません。\n- 前後の予定: 12月29日(火)は燃やせるごみ(可燃ごみ)の収集日です。1月1日(金)も休みです。\n- 次のプラスチック製容器包装の収集は、通常どおりなら2027年1月6日(水)と見込まれます。\n\nカレンダーの表示は画像から読み取ったものです。年末年始の日程変更や天候による変更がないか、宮崎市の公式「ごみカレンダー」(さんあ〜るアプリまたはWEB版)か、宮崎市役所 循環社会推進課(0985-21-1761)で最終確認してください。",
+      "items": [],
+      "no_collection": true,
+      "district": "南A 大塚",
+      "confidence": "high",
+      "hedged": true,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/4/0/_/03_A_____8__.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/5/0/_/13______________8__.pdf"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 5,
+      "WebFetch": 5,
+      "Read": 4
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792241208765-ox5r3c.pdf",
+      "webfetch-1792241208765-ox5r3c.pdf",
+      "webfetch-1792241263981-2a10i8.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 113165,
+      "tool_uses": 15,
+      "duration_ms": 195522
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "hedged"
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 10,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct: 南A/大塚, 12/30 休 (normally プラ), 12/29 可燃, 1/1 休, next プラ on 2027-01-06. The さんあ〜る/WEB版 references and the 循環社会推進課 number are correct. Phone note: 0985-21-1761 is correct for 環境部 循環社会推進課 (the listed contact on the calendar pages and for the app), although the 13【家庭ごみの出し方など】 guide routes collection/集積所 questions to 環境業務課 0985-21-1762 and sorting questions to コールセンター 0985-25-2111."
+     }
+    }
+   }
+  },
+  {
+   "id": "Z6",
+   "municipality": "宮崎県宮崎市",
+   "kind": "fifth_week_empty",
+   "question": "宮崎県宮崎市曽師町 に住んでいます。2026年12月29日(火)にはどのごみを出せますか？",
+   "date": "2026-12-29",
+   "address": "宮崎県宮崎市曽師町",
+   "truth": {
+    "district": "北B",
+    "collections": [],
+    "no_collection": true,
+    "source_pdf": "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/9/_/02_B_____8__.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "blank (5th Tuesday: 布紙 第1〜4火 only, ペット 第2・4火, 缶びん 第1・3火). 12/31 休.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月29日(火)は、曽師町ではごみ・資源物の収集がありません。**\n\n- 曽師町は、宮崎市の区域一覧表では「北B」エリア（檍地区）です。町内でエリアが分かれる注記はありません。\n- 北Bエリアの火曜日は、空き缶・空きびん（第1・3火）、ペットボトル（第2・4火）、古布・古紙（第1～4火）の日です。カレンダーには「第5週は収集しません」と書かれています。\n- 12月29日は12月の第5火曜日です（火曜日は1日・8日・15日・22日・29日）。令和8年度の北Bカレンダーでも、この日は空欄になっています。\n\n**年末年始の前後の収集日（北B）**\n- 12月25日(金)：プラスチック製容器包装（年内最後）\n- 12月28日(月)：燃やせるごみ（年内最後）\n- 12月29日(火)・30日(水)：収集なし\n- 12月31日(木)・1月1日(金)：燃やせるごみの日ですが休み\n- 1月4日(月)：燃やせるごみ（年明け最初）\n- 1月5日(火)：空き缶・空きびん、古布・古紙\n- 1月8日(金)：プラスチック製容器包装\n\n収集日の朝8時30分までに、決められた場所に出してください。\n\n出典：宮崎市「令和8年度 家庭ごみ・資源物収集日程表」のページ、ごみ収集エリア検索表（50音順）、北Bエリアのカレンダー（PDF）\n\n2. JSON",
+      "items": [],
+      "no_collection": true,
+      "district": "北B（檍）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html",
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/9/_/02_B_____8__.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 3,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240957007-70knu7.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 92184,
+      "tool_uses": 9,
+      "duration_ms": 71245
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 17,
+      "correct": 16,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "12月31日(木)・1月1日(金)：燃やせるごみの日ですが休み",
+        "truth": "In 北B 燃やせるごみ is 月・木 only, so 12/31 (Thu) is a 可燃 day marked 休, but 1/1 (Fri) is normally a プラ day (プラ = 金). Both days are 休, so only the category label for 1/1 is wrong.",
+        "misleads_what_or_when": false
+       }
+      ],
+      "notes": "Main answer is correct: 曽師町 = 北B (檍), no split note; 12/29 is the 5th Tuesday and blank on the 北B calendar; the Tuesday rules (缶・びん 第1・3, ペット 第2・4, 布紙 第1〜4, 第5週は収集しません) are right. Surrounding dates 12/25 プラ (last of year), 12/28 可燃 (last of year), 12/30 blank, 1/4 可燃, 1/5 缶・びん + 布紙 and 1/8 プラ are correct. The one slip calls 1/1 (Fri) a 燃やせるごみ day when it is normally a プラ day. It is 休 either way, so the slip does not change what to put out or when."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2026年12月29日(火)に曽師町で収集されるごみはありません。\n\n- 曽師町は宮崎市のごみ収集区域「北B」の「檍（あおぎ）」地区です。\n- 令和8年度の北B地区「家庭ごみ・資源物収集日程カレンダー」で12月を見ると、29日(火)には収集品目が記載されていません。\n- 火曜日に収集する缶・びん、ペットボトル、布・紙は、いずれも月の第5火曜日には収集しない決まりです。12月29日は第5火曜日にあたります。\n- 参考として、12月28日(月)は燃やせるごみの収集日です。12月31日(木)は「休」と表示されています。\n- 年末年始は収集予定が変わることがあるため、ごみを出す前に宮崎市 循環社会推進課(0985-21-1761)でご確認ください。カレンダーはPDFの画像を目視で読み取った内容です。\n\n出典:\n- [ごみ収集エリア検索表（50音順）](https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf)\n- [令和8年度 北B 家庭ごみ・資源物収集日程カレンダー](https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/9/_/02_B_____8__.pdf)\n- [宮崎市 ごみカレンダー（地区別の案内）](https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html)",
+      "items": [],
+      "no_collection": true,
+      "district": "檍（エリア: 北B）",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.city.miyazaki.miyazaki.jp/fs/7/4/8/9/0/5/_/732054.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/fs/8/7/3/7/3/9/_/02_B_____8__.pdf",
+       "https://www.city.miyazaki.miyazaki.jp/life/trash/trash_calendar/339776.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 6,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792240926133-b4gjok.pdf",
+      "webfetch-1792241239960-zst9fq.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 111413,
+      "tool_uses": 14,
+      "duration_ms": 164542
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "hedged"
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 9,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "曽師町は…「檍（あおぎ）」地区",
+        "truth": "檍 is read あおき (city usage: 広報あおき, まちづくりの祭典 inあおき, あおき子育て交流ひろば), not あおぎ.",
+        "misleads_what_or_when": false
+       }
+      ],
+      "notes": "Correct main answer (no collection) and correct 北B/檍 assignment. Verified: 12/29 blank, 5th-Tuesday rule for 缶・びん/ペット/布紙, 12/28 可燃, 12/31 休. Only the furigana for 檍 is wrong (あおぎ vs official あおき), which has no effect on what or when. Phone note: 0985-21-1761 is correct for 環境部 循環社会推進課 (the listed contact on the calendar pages and for the app), although the 13【家庭ごみの出し方など】 guide routes collection/集積所 questions to 環境業務課 0985-21-1762 and sorting questions to コールセンター 0985-25-2111."
+     }
+    }
+   }
+  },
+  {
+   "id": "O1",
+   "municipality": "宮城県牡鹿郡女川町",
+   "kind": "color_group_and_table",
+   "question": "宮城県牡鹿郡女川町旭が丘 に住んでいます。2026年12月3日(木)にはどのごみを出せますか？",
+   "date": "2026-12-03",
+   "address": "宮城県牡鹿郡女川町旭が丘",
+   "truth": {
+    "district": "旭が丘（燃やせる=水色の日 火・金／資源=旭が丘・宮ケ崎・石浜）",
+    "collections": [
+     "その他の資源ごみ",
+     "燃やせないごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+    "pdf_page": "20 (table), 21 (grid)",
+    "what_the_source_shows": "Dec table row 旭が丘・宮ケ崎・石浜: 缶・びん・ペット 10,24; プラ等+燃やせない (merged cell) 3,17. Grid 12/3 is yellow (Mon/Thu group) — not 旭が丘's burnable day.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月3日（木）、女川町旭が丘で出せるのは「その他の資源ごみ・燃やせないごみ」です。**\n\n女川町の「令和8年度 おながわ町民カレンダー」12月のページで、旭が丘・宮ケ崎・石浜地区のこの区分の収集日は12月3日と17日になっています。\n\n**この日に出せるもの**\n- プラスチック製の容器包装（赤色のかご）：中を空にして軽くすすぐ。外したふたやポンプは燃やせるごみへ。\n- 紙パック・白色トレイ（緑色のかご）\n  - 紙パックは洗って切り開き、乾かしてから紙ひもで縛る。\n  - 白色トレイは洗って乾かし、ビニール袋にまとめる。色や模様のあるトレイは燃やせるごみへ。\n- 燃やせないごみ（黄色のかご）：割れたガラスや刃物など危ないものは紙に包み、「危険」と書く。\n- 段ボール・雑誌・新聞紙などの紙類、発泡スチロール、布類、剪定枝、廃食油\n  - 紙類は種類ごとに紙ひもで縛る。\n  - 剪定枝は50cmくらいに切って縛る。\n  - 廃食油はペットボトルに入れてふたをする。\n\n**この日に出せないもの**\n- 燃やせるごみ：旭が丘は「水色の日」（火曜・金曜）の地区です。12月3日（木）は黄色の日で、別の地区の収集日です。12月3日の前後では、12月1日（火）と4日（金）が旭が丘の収集日です。\n- びん・缶・ペットボトル：12月は10日（木）と24日（木）です。\n- 粗大ごみ：12月は23日（水）です。\n\nごみの出し方で分からないことは、女川町クリーンセンター（電話 53-3549）が問い合わせ先です。\n\n出典：[女川町「令和8年度 おながわ町民カレンダー」](https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)\n\n2. JSON",
+      "items": [
+       "プラスチック製容器包装",
+       "紙パック・白色トレイ",
+       "燃やせないごみ",
+       "段ボール・雑誌・新聞紙などの紙類",
+       "発泡スチロール",
+       "布類",
+       "剪定枝",
+       "廃食油"
+      ],
+      "no_collection": false,
+      "district": "旭が丘・宮ケ崎・石浜（燃やせるごみは水色の日の地区）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 2,
+      "WebFetch": 1,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240927187-fkedk9.pdf",
+      "webfetch-1792240927187-fkedk9.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 135602,
+      "tool_uses": 6,
+      "duration_ms": 56637
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 16,
+      "correct": 14,
+      "wrong": 2,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "プラスチック容器包装：外したふたやポンプは燃やせるごみへ",
+        "truth": "Calendar p.31 (printed for April 2026) says this, but the current 2026-10-01 一覧表 (pdf/gomi/20261001_gomi_itiran.pdf, linked from 05_05.html) supersedes it: plastic items that are 100% plastic (caps) go in the 赤かご; anything with metal parts (pumps with springs) goes in the 黄色かご (燃やせないごみ). Nothing here goes to 燃やせるごみ.",
+        "misleads_what_or_when": true
+       },
+       {
+        "claim": "色や模様のあるトレイは燃やせるごみへ",
+        "truth": "Outdated rule from calendar p.31. 2026-10-01 一覧表 (pdf/gomi/20261001_gomi_itiran.pdf, linked from 05_05.html) says 色や模様のついたトレイは赤かご（プラスチックごみ）へ, so they now go out on the plastics day (12/3 and 12/17 for this district), not on burnable days.",
+        "misleads_what_or_when": true
+       }
+      ],
+      "notes": "Main answer is correct: 旭が丘 is in the 旭が丘・宮ケ崎・石浜 row, and 12/3 is in the merged プラ等/燃やせないごみ cell (3, 17). The other dates are also correct: 水色の日 Tue/Fri, burnable days 12/1 and 12/4, cans/bottles 12/10 and 12/24, 粗大 12/23, and 12/3 is a yellow cell. Basket colours and the クリーンセンター number are correct. The two errors come from following the calendar's back-page sorting guide, which the 1 Oct 2026 一覧表 replaced: coloured trays and plastic caps now go in the red basket. The answer also never mentions that 製品プラスチック is accepted from Oct 2026. That is an omission, not counted as an error."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2026年12月3日(木)に旭が丘で出せるごみは、確認できませんでした。収集日が載った資料を読み取れなかったため、推測でお答えするのは避けます。\n\n確認できたこと\n- 女川町は、ごみの収集日程を「おながわ町民カレンダー」で案内しています。公式サイトの該当ページにも、地区別の曜日は載っていませんでした。\n- 令和8年度の町民カレンダーのPDF(https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)は、この環境では内容を開けませんでした。表紙の画像は確認しましたが、収集日は載っていませんでした。\n- ごみは収集日の朝8時までに出す必要があります。\n- 2026年10月から「ペットボトル以外のプラスチックの日(赤かごの日)」の分別収集が始まっています。\n\n確認方法\n- おながわ町民カレンダー(令和8年度)の12月のページで、「旭が丘」の欄を確認してください。紙の冊子は役場の企画課で受け取れますが、数に限りがあります。\n- 女川町クリーンセンター(0225-53-3549)に問い合わせると、旭が丘の12月3日に出せるごみを直接確認できます。\n- 役場代表(0225-54-3131)でも案内してもらえます。",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.town.onagawa.miyagi.jp/05_05.html",
+       "https://www.town.onagawa.miyagi.jp/chomin_calendar.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 7,
+      "WebFetch": 5,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241183179-vfzk3s.pdf",
+      "webfetch-1792241261608-6sxywj.jpg"
+     ],
+     "usage": {
+      "agent_tokens": 79870,
+      "tool_uses": 15,
+      "duration_ms": 150633
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": "could not read the 32-page town calendar"
+     },
+     "claim_check": {
+      "claims_checked": 8,
+      "correct": 8,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Gave up without naming any waste type. The side claims it does make are correct: dates are in the おながわ町民カレンダー and the PDF URL is right; the web pages do not list weekdays by district; waste must be out by 8:00; paper copies are at 企画課 and supplies are limited; クリーンセンター 0225-53-3549 and 役場代表 0225-54-3131. The claim that the 赤かごの日 plastic separation 'started' in Oct 2026 repeats the 05_05.html heading ('令和8年10月から分別収集開始') and was accepted. Strictly, container plastics already went in the red basket from April 2026 (calendar column and p.31); Oct 2026 added product plastics."
+     }
+    }
+   }
+  },
+  {
+   "id": "O2",
+   "municipality": "宮城県牡鹿郡女川町",
+   "kind": "color_group_and_table",
+   "question": "宮城県牡鹿郡女川町浦宿浜 に住んでいます。2026年12月22日(火)にはどのごみを出せますか？",
+   "date": "2026-12-22",
+   "address": "宮城県牡鹿郡女川町浦宿浜",
+   "truth": {
+    "district": "浦宿全区（黄色の日 月・木／資源=大沢・浦宿全区・針浜）",
+    "collections": [
+     "びん・缶・ペットボトル"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+    "pdf_page": "20, 21",
+    "what_the_source_shows": "Dec row 大沢・浦宿全区・針浜: 缶 8,22; プラ等 1,15. 12/22 is blue in grid (Tue) — not 浦宿's burnable day.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月22日（火）に浦宿浜で出せるのは「びん・缶・ペットボトル」です。**\n\n女川町の「令和8年度 おながわ町民カレンダー」で確認しました。浦宿浜は「大沢・浦宿全区・針浜」の地区に入ります。12月の「缶・びん・ペットボトル」の収集日は **8日と22日** です。\n\n**出せるもの（かごの色ごとに分けて出します）**\n- **びん**：青色のかご\n- **缶・なべなどの金属類・乾電池**：茶色のかご（乾電池とリチウムイオン電池は、それぞれ別のビニール袋に入れる）\n- **ペットボトル**：灰色のかご（ラベルははがして燃やせるごみへ。キャップはまとめてビニール袋に入れ、同じかごへ）\n- 容器は空にして軽くすすいでください。中にたばこの吸い殻などを入れないでください。\n\n**この日は出せないもの**\n- **燃やせるごみ**：12月22日（火）は女川全区などの「水色の日」で、浦宿は対象外です。浦宿全区は「黄色の日」の地区で、12月は月曜日と木曜日です。22日の前後では **12月21日（月）と24日（木）** に出せます。\n- **プラスチック製容器包装・紙パック・白色トレイ・紙類・布類・発泡スチロール・剪定枝・廃食油・燃やせないごみ**：この地区の12月の収集日は1日と15日です。\n- **粗大ごみ**：この地区の12月の収集日は2日です。\n\n収集日以外の日や、収集が終わった後には出さないでください。ごみの出し方の質問は、女川町クリーンセンター（電話 0225-53-3549）が受け付けています。\n\n2. JSON",
+      "items": [
+       "びん",
+       "缶・なべなどの金属類・乾電池",
+       "ペットボトル"
+      ],
+      "no_collection": false,
+      "district": "大沢・浦宿全区・針浜（燃やせるごみは黄色の日の地区）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 2,
+      "WebFetch": 1,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240927187-fkedk9.pdf",
+      "webfetch-1792240927187-fkedk9.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 134675,
+      "tool_uses": 6,
+      "duration_ms": 50061
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 15,
+      "correct": 14,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "ペットボトル：ラベルははがして燃やせるごみへ。キャップはまとめてビニール袋に入れ、同じかご（灰色）へ",
+        "truth": "This is the calendar p.31 rule. For a December 2026 date the 2026-10-01 一覧表 (pdf/gomi/20261001_gomi_itiran.pdf, linked from 05_05.html) applies: '※キャップやラベルは赤かご（その他のプラスチック）へ'. Caps and labels go out on the plastics day (12/1 and 12/15 for this district), not with PET on 12/22 and not with burnables.",
+        "misleads_what_or_when": true
+       }
+      ],
+      "notes": "Main answer is correct: 浦宿浜 is in 大沢・浦宿全区・針浜, cans/bottles/PET are on 12/8 and 12/22, and 12/22 is a blue (水色) day, so no burnables for this yellow district. The other dates are all correct: burnables 12/21 and 12/24, プラ等/燃やせない 12/1 and 12/15, 粗大 12/2. Basket colours, the battery bag rule, rinsing, and the クリーンセンター number are correct. The one error is the pre-October PET cap and label rule taken from the calendar's back page."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "12月22日(火)に浦宿浜で出せるごみは「びん・缶・ペットボトル」です。\n\n- **出せるごみ:** びん・缶・ペットボトル(青・茶・灰色のかご)。収集日の朝8時までに出します。\n- **出せないごみ(この日は収集なし):**\n  - 燃やせるごみ: 浦宿全区は「黄色の日」の地区で、黄色の日は月曜・木曜です。12月22日は「水色の日」(火曜・金曜)なので対象外です。\n  - 粗大ごみ: 12月2日(水)の収集です。\n  - プラ容器・紙・布などのその他の資源ごみと燃やせないごみ: 表では12月1日・15日です。表の列の読み取りに自信が低いため、念のため役場で確認してください。\n\n**確度について:** 使った区分は「大沢・浦宿全区・針浜」です。浦宿浜は「浦宿」「十二神」「寄木」などの字(あざ)からなる地域で、住所検索サイトの情報をもとに浦宿全区に含まれると判断しました。字ごとの区分表は公式資料にないため、確実ではありません。\n\n**補足:**\n- 令和8年10月から、ペットボトル以外のプラスチックの分別収集が始まっています。プラの出し方は変わっていますが、12月22日はプラの日ではありません。\n- 町の公式ページには、令和8年度版カレンダーの訂正情報は見当たりませんでした。\n- 問い合わせ先: 女川町クリーンセンター 0225-53-3549、町民生活課 環境係 0225-54-3131\n\n出典:\n- [おながわ町民カレンダー(令和8年度)](https://www.town.onagawa.miyagi.jp/chomin_calendar.html)\n- [令和8年度 おながわ町民カレンダー(PDF)](https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)\n- [女川町 環境・ごみ](https://www.town.onagawa.miyagi.jp/05_05.html)\n- [Mapion 浦宿浜の字構成](https://www.mapion.co.jp/address/04581/22::9/)",
+      "items": [
+       "びん・缶・ペットボトル"
+      ],
+      "no_collection": false,
+      "district": "大沢・浦宿全区・針浜",
+      "confidence": "medium",
+      "hedged": true,
+      "sources": [
+       "https://www.town.onagawa.miyagi.jp/chomin_calendar.html",
+       "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+       "https://www.town.onagawa.miyagi.jp/05_05.html",
+       "https://www.mapion.co.jp/address/04581/22::9/"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 5,
+      "WebFetch": 3,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241236880-an961f.pdf",
+      "webfetch-1792241236880-an961f.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 168717,
+      "tool_uses": 11,
+      "duration_ms": 214256
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "hedged (district via Mapion 字 list)"
+     },
+     "claim_check": {
+      "claims_checked": 15,
+      "correct": 14,
+      "wrong": 0,
+      "unverifiable": 1,
+      "wrong_claims": [],
+      "notes": "Fully correct on the main answer (びん・缶・ペットボトル), the district, the yellow Mon/Thu rule, 12/22 being a blue day, 粗大 12/2(水), プラ等/燃やせない 12/1 and 12/15, the 8:00 deadline, the basket colours, and both phone numbers with the right offices (クリーンセンター 53-3549; 町民生活課環境係 54-3131). The claim that 浦宿浜 is made up of the 字 浦宿, 十二神 and 寄木 comes from Mapion and cannot be checked against official sources (unverifiable). The 05_05 page does show no R8 calendar correction; the only correction notice is an old one hidden in an HTML comment. The Oct 2026 plastic statement echoes the official heading."
+     }
+    }
+   }
+  },
+  {
+   "id": "O3",
+   "municipality": "宮城県牡鹿郡女川町",
+   "kind": "year_end_off",
+   "question": "宮城県牡鹿郡女川町針浜 に住んでいます。2026年12月31日(木)にはどのごみを出せますか？",
+   "date": "2026-12-31",
+   "address": "宮城県牡鹿郡女川町針浜",
+   "truth": {
+    "district": "針浜（黄色の日）",
+    "collections": [],
+    "no_collection": true,
+    "source_pdf": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+    "pdf_page": "20, 21",
+    "what_the_source_shows": "12/31 (Thu) uncolored in grid (yellow normally Mon/Thu); not in resource table. Year-end.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月31日(木)は、針浜ではごみの収集がありません。**\n\n女川町の「令和8年度 おながわ町民カレンダー」で確認しました。\n\n- **燃やせるごみ**：針浜は「黄色の日」の地区で、ふだんは月曜と木曜に収集されます。12月31日は木曜日ですが、カレンダーで色が付いておらず、年末のため収集はありません。\n  - 年内の最終日は**12月28日(月)**、年明けは**2027年1月4日(月)**からです。\n- **資源ごみ・燃やせないごみ・粗大ごみ**：「大沢・浦宿全区・針浜」の12月の収集日は次のとおりで、31日は入っていません。\n  - 缶・びん・ペットボトル：12月8日(火)、22日(火)\n  - ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油・燃やせないごみ：12月1日(火)、15日(火)\n  - 粗大ごみ：12月2日(水)\n\n町は、収集日以外や収集が終わった後には絶対にごみを出さないよう呼びかけています。年末の大掃除のごみは12月28日(月)までに出すか、年明けまで保管してください。\n\nごみ処理についての問い合わせ先は女川町クリーンセンター（0225-53-3549）です。\n\n出典：[令和8年度 おながわ町民カレンダー（女川町）](https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)\n\n2. JSON",
+      "items": [],
+      "no_collection": true,
+      "district": "燃やせるごみ：黄色の日（針浜）／資源ごみ等：大沢・浦宿全区・針浜",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 2,
+      "WebFetch": 1,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240927187-fkedk9.pdf",
+      "webfetch-1792240927187-fkedk9.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 134381,
+      "tool_uses": 6,
+      "duration_ms": 47394
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 11,
+      "correct": 11,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All claims are correct. 12/31 (Thu) has no colour on the December grid, so there is no collection. 針浜 is a yellow Mon/Thu district. The last yellow day of the year is 12/28(月) and the first of the new year is 1/4(月) on the January grid. The 大沢・浦宿全区・針浜 dates are right: cans 12/8 and 12/22, プラ等/燃やせない 12/1 and 12/15, 粗大 12/2. The 'do not put out on non-collection days' notice and the クリーンセンター number are also correct. The answer infers 'year-end' as the reason for the blank cell; the calendar shows only the missing colour, which is consistent."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2026年12月31日(木)に針浜で出せるごみは、確認できませんでした。日付と地区が一致する収集日の情報を見つけられなかったため、出せる品目はお伝えできません。\n\n- 女川町の収集日程は「おながわ町民カレンダー」(令和8年度版PDF)に掲載されています。\n- 公式サイトの「環境・ごみ」ページやカレンダーのページには、地区別の曜日や12月の収集日は載っていませんでした。\n- PDFの中身は、今回の環境では読み取れませんでした。\n- 針浜がどの収集区分に入るかも確認できませんでした。\n\n確認方法:\n1. 令和8年度おながわ町民カレンダーのPDF(https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)を開き、ごみ収集日程の欄で針浜の区分と12月31日を確認してください。\n2. 2024年に町民カレンダーの収集日程の訂正が出ています。最新版を使ってください。\n3. 年末年始は収集が休みになったり日程がずれたりすることがあります。12月31日の扱いは町の案内で確認してください。\n4. 不明な点は、町民生活課 環境係(0225-54-3131)または女川町クリーンセンター(0225-53-3549)に問い合わせてください。\n\nごみを出す際の注意:\n- 収集日の朝8時までに出してください。\n- 令和8年10月から、ペットボトル以外のプラスチックは「赤かごの日」に袋にまとめて出す分別が始まっています。",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.town.onagawa.miyagi.jp/chomin_calendar.html",
+       "https://www.town.onagawa.miyagi.jp/05_05.html",
+       "https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 8,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792241183179-vfzk3s.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 77484,
+      "tool_uses": 13,
+      "duration_ms": 129582
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 8,
+      "wrong": 0,
+      "unverifiable": 1,
+      "wrong_claims": [],
+      "notes": "Gave up. Its general claims are correct: the calendar URL; the web pages have no per-district days; the 8:00 deadline; plastics go out on the 赤かごの日 in bags (05_05.html); 町民生活課環境係 0225-54-3131; クリーンセンター 0225-53-3549. The year-end hedge is consistent with 12/31 being blank. The claim '2024年に町民カレンダーの収集日程の訂正が出ています' is unverifiable. It matches a notice that is now inside an HTML comment on 05_05.html (a correction to the August page of an earlier calendar). The year is only implied by the file name 202408_gomi_syusyu_teisei.pdf, which now returns 404, and the notice does not concern the R8 calendar."
+     }
+    }
+   }
+  },
+  {
+   "id": "O4",
+   "municipality": "宮城県牡鹿郡女川町",
+   "kind": "multi_item",
+   "question": "宮城県牡鹿郡女川町高白浜 に住んでいます。2026年12月14日(月)にはどのごみを出せますか？",
+   "date": "2026-12-14",
+   "address": "宮城県牡鹿郡女川町高白浜",
+   "truth": {
+    "district": "高白（黄色の日／資源=高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取）",
+    "collections": [
+     "燃やせるごみ",
+     "びん・缶・ペットボトル",
+     "その他の資源ごみ",
+     "燃やせないごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+    "pdf_page": "20, 21",
+    "what_the_source_shows": "Grid 12/14 yellow (Mon). Table row 高白…: one merged cell over all 資源 + 燃やせない columns with 14, 28.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月14日(月)、女川町高白浜(行政区「高白」)で出せるごみ**\n\nこの日は燃やせるごみの日で、資源ごみと燃やせないごみの日も重なっています。出せるのは粗大ごみ以外のほぼすべてです。\n\n| 種類 | 出し方 |\n|---|---|\n| **燃やせるごみ** | 高白地区は「黄色の日」で、12月14日はその黄色の日です。透明か半透明の袋に入れ、生ごみは水をよく切ってください。 |\n| **びん** | 青色のかご |\n| **空き缶・なべなどの金属類・乾電池** | 茶色のかご。乾電池とリチウムイオン電池は、それぞれ別のビニール袋に入れます。 |\n| **ペットボトル** | 灰色のかご。ラベルとキャップは外してください。 |\n| **ペットボトル以外のプラスチック** | 赤色のかご。2026年10月からは、プラスチック100%のハンガーやバケツなどの「製品プラスチック」も出せます。 |\n| **紙パック・白色トレイ** | 緑色のかご |\n| **段ボール・新聞・雑誌・雑紙、布類、発泡スチロール、剪定枝、廃食油** | かごに入れず、そのまま出します。紙類は種類ごとに紙ひもで縛ります。剪定枝は50cmくらいに切って縛ります。廃食油はペットボトルに入れて出します。 |\n| **燃やせないごみ** | 黄色のかご。割れ物は紙に包んで「危険」と書いてください。 |\n\n**この日は出せないもの**\n- 粗大ごみ：高白地区の12月の収集日は12月4日(金)なので、14日には出せません。\n\n**出すときの注意**\n- 収集日の朝8時までに出してください。\n- 町の令和8年度「おながわ町民カレンダー」では、高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取の地区は12月の資源ごみ・燃やせないごみの日が14日と28日です。\n- 分け方で迷ったときは、女川町クリーンセンター(0225-53-3549)に問い合わせできます。\n\n出典：女川町「おながわ町民カレンダー(令和8年度)」、女川町「家庭ごみの分け方・出し方(令和8年10月1日版)」\n\n2. JSON",
+      "items": [
+       "燃やせるごみ",
+       "びん",
+       "空き缶・金属類・乾電池",
+       "ペットボトル",
+       "ペットボトル以外のプラスチック(容器包装・製品プラスチック)",
+       "紙パック・白色トレイ",
+       "紙類(段ボール・新聞・雑誌・雑紙)",
+       "布類",
+       "発泡スチロール",
+       "剪定枝",
+       "廃食油",
+       "燃やせないごみ"
+      ],
+      "no_collection": false,
+      "district": "高白(高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取／燃やせるごみは黄色の日)",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.town.onagawa.miyagi.jp/chomin_calendar.html",
+       "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+       "https://www.town.onagawa.miyagi.jp/05_05.html",
+       "https://www.town.onagawa.miyagi.jp/pdf/gomi/20261001_gomi_itiran.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 2,
+      "WebFetch": 4,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240955289-526wzl.pdf",
+      "webfetch-1792240955725-7ipcsf.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 142421,
+      "tool_uses": 9,
+      "duration_ms": 81966
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 16,
+      "correct": 15,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "段ボール・新聞・雑誌・雑紙、布類、発泡スチロール、剪定枝、廃食油はかごに入れず、そのまま出す",
+        "truth": "In the 2026-10-01 一覧表 (pdf/gomi/20261001_gomi_itiran.pdf, linked from 05_05.html), 発泡スチロール is no longer in the '直接出してください' group; it goes in the 赤かご ('発泡スチロールや色のついたトレイも出せます'). The other items are put out directly; 雑紙 goes in a paper bag and 布類 in a bag.",
+        "misleads_what_or_when": false
+       }
+      ],
+      "notes": "Main answer is correct. The 高白 district is yellow, and 12/14 (Mon) is both a yellow day and a date in the merged all-resource/燃やせないごみ cell (14, 28). The answer correctly excludes 粗大 (12/4(金)). Basket colours, PET prep, the Oct 2026 product-plastic rule (100% plastic, hangers and buckets), the 8:00 deadline and the クリーンセンター number are all correct. The one error is placing 発泡スチロール among the items put out directly, when the new list puts it in the red basket. Because every resource type is collected on the same day here, this does not change what or when."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "宮城県女川町高白浜の2026年12月14日(月)に出せるごみは、確認できませんでした。推測では回答しません。\n\n女川町の公式サイトでは、ごみの収集日程は「おながわ町民カレンダー」に載せるとされています。令和8年度版(令和8年4月〜令和9年3月)のPDFは見つかりましたが、私の環境ではPDFの中身を読めませんでした。また、公式ページの中に「高白浜」という地区名は見当たりませんでした。\n\n次の方法で確認してください。\n- 町民カレンダーPDF(https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)の12月のページで、高白浜の地区区分と12月14日の欄を見てください。\n- 女川町役場(代表 0225-54-3131)に、高白浜の12月14日の収集内容を問い合わせてください。\n\n参考として、ごみは収集日の朝8時までに出すこととされています。2026年10月からは「ペットボトル以外のプラスチックの日(赤かごの日)」が始まっており、12月にこの日があるかどうかもカレンダーで確認してください。",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.town.onagawa.miyagi.jp/chomin_calendar.html",
+       "https://www.town.onagawa.miyagi.jp/05_05.html"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 8,
+      "WebFetch": 6,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792241236880-an961f.pdf",
+      "webfetch-1792241261608-6sxywj.jpg",
+      "webfetch-1792241236880-an961f.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 78666,
+      "tool_uses": 18,
+      "duration_ms": 157962
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": "said 高白浜 does not appear on the official pages"
+     },
+     "claim_check": {
+      "claims_checked": 7,
+      "correct": 7,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Gave up. Its claims are correct: dates are in the おながわ町民カレンダー (FY R8 covers April 2026 to March 2027) and the PDF URL is right; '高白浜' does not appear on the official pages (the calendar uses the 行政区 name 高白); 役場代表 0225-54-3131; the 8:00 deadline. The statement that the 赤かごの日 'started' in Oct 2026 echoes the official heading. Strictly, a red-basket plastics day already existed and Oct 2026 extended it to product plastics."
+     }
+    }
+   }
+  },
+  {
+   "id": "O5",
+   "municipality": "宮城県牡鹿郡女川町",
+   "kind": "holiday_collected",
+   "question": "宮城県牡鹿郡女川町竹浦 に住んでいます。2026年11月23日(月)にはどのごみを出せますか？",
+   "date": "2026-11-23",
+   "address": "宮城県牡鹿郡女川町竹浦",
+   "truth": {
+    "district": "竹浦（水色の日／資源=桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間）",
+    "collections": [
+     "びん・缶・ペットボトル",
+     "その他の資源ごみ",
+     "燃やせないごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+    "pdf_page": "18, 19",
+    "what_the_source_shows": "Nov table row 桐ケ崎…: merged cell 9, 23 (23 in red = holiday 勤労感謝の日). Grid 11/23 yellow (Mon) — not 竹浦's burnable day.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年11月23日(月・勤労感謝の日)、竹浦地区で出せるごみ**\n\n女川町の「令和8年度 おながわ町民カレンダー」で確認しました。竹浦は「桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間」の地区に入ります。11月の資源ごみと燃やせないごみの収集日は **9日と23日** です。23日は祝日ですが、収集があります(カレンダーでは赤字で載っています)。\n\n**出せるもの(資源ごみ・燃やせないごみ)**\n- びん(青色のかご)\n- 缶・なべなどの金属類・乾電池(茶色のかご)\n  - 乾電池やリチウムイオン電池は、それぞれ別のビニール袋に入れてください。\n- ペットボトル(灰色のかご)\n  - ラベルははがします。外したふたはまとめてビニール袋に入れてください。\n- プラスチック製の容器包装(赤色のかご)\n- 紙パック・白色トレイ(緑色のかご)\n- 燃やせないごみ(黄色のかご)\n  - ガラスなど危ないものは紙に包み、「危険」と書いてください。\n- 段ボール・雑誌・新聞紙などの紙類、発泡スチロール、布類、剪定枝、廃食油(天ぷら油など)\n  - 紙類は種類ごとにひもで縛ります。剪定枝は50cmくらいに切って縛ります。廃食油はペットボトルに入れてふたをします。\n\n**この日は出せないもの**\n- **燃やせるごみ**:竹浦は「水色の日」の地区で、収集は火曜日と金曜日です。23日は「黄色の日」の地区の収集日です。11月の竹浦は3・6・10・13・17・20・24・27日です。\n- **粗大ごみ**:竹浦地区の11月の収集日は13日(金)です。\n\nごみの出し方で分からないことは、女川町クリーンセンター(電話 0225-53-3549)にお問い合わせください。\n\n出典:[令和8年度 おながわ町民カレンダー(女川町)](https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)\n\n2. JSON",
+      "items": [
+       "びん",
+       "缶・なべなどの金属類・乾電池",
+       "ペットボトル",
+       "プラスチック製容器包装",
+       "紙パック・白色トレイ",
+       "段ボール・雑誌・新聞紙などの紙類",
+       "発泡スチロール",
+       "布類",
+       "剪定枝",
+       "廃食油",
+       "燃やせないごみ"
+      ],
+      "no_collection": false,
+      "district": "桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間(燃やせるごみは水色の日)",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 1,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240927187-fkedk9.pdf",
+      "webfetch-1792240927187-fkedk9.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 137271,
+      "tool_uses": 7,
+      "duration_ms": 69341
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 16,
+      "correct": 16,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All claims are correct. 竹浦 is in the 桐ケ崎・竹浦… row, whose merged resource/燃やせないごみ cell for November is 9 and 23 (23 printed in red because it is a holiday, 勤労感謝の日). 竹浦 is blue Tue/Fri, so 11/23 (a yellow day) has no burnables for it. The November blue days are 3, 6, 10, 13, 17, 20, 24 and 27, and 粗大 is 13日(金). Basket colours and prep rules match both the calendar and the Oct 2026 list; the PET cap advice does not name a basket, so it does not conflict. The answer omits Oct 2026 product plastics, which is an omission rather than an error."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "竹浦にお住まいの方向けに、2026年11月23日(月)に出せるごみを特定することはできませんでした。推測でお伝えすると誤った案内になるおそれがあるため、ここでは回答を控えます。\n\n女川町では収集日が地区ごとに決まっています。町のページによると、収集日は「令和8年度 おながわ町民カレンダー」に掲載されています。ただ、今回の調査では、そのPDFの本文を読み取ることができませんでした。竹浦の収集曜日も11月23日の収集内容も確認できていません。\n\n確実に確認する方法は次のとおりです。\n- おながわ町民カレンダー(PDF版: https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)を開き、竹浦の地区欄で11月の収集日を見てください。カレンダーの案内ページは https://www.town.onagawa.miyagi.jp/chomin_calendar.html です。\n- 女川町役場の企画課原子力対策係(0225-54-3131)に、竹浦地区の11月の収集日をお尋ねください。ごみの分け方・出し方は町清掃センター(0225-53-3549)でも案内しています。\n\n参考までに、町のページには次の内容がありました。ごみは収集日の朝8時までに出すこと、2026年10月から「ペットボトル以外のプラスチック」の分別が始まり、「赤かごの日」に出すことです。",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.town.onagawa.miyagi.jp/chomin_calendar.html",
+       "https://www.town.onagawa.miyagi.jp/05_05.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read",
+       "mcp__ccd_turn__update_plan"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "mcp__ccd_turn__update_plan": 1,
+      "WebSearch": 6,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792241183179-vfzk3s.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 74033,
+      "tool_uses": 12,
+      "duration_ms": 107287
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 7,
+      "correct": 7,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Gave up. Its claims are correct: collection days differ by district and are in the R8 calendar, with the right URLs; the 8:00 deadline; the Oct 2026 plastics heading. The phone numbers are correct, with two caveats. 企画課原子力対策係 0225-54-3131 is the contact for the calendar page, not for waste questions. '町清掃センター' is a loose name for 女川町クリーンセンター, but the number 0225-53-3549 is right."
+     }
+    }
+   }
+  },
+  {
+   "id": "O6",
+   "municipality": "宮城県牡鹿郡女川町",
+   "kind": "new_year_first_day",
+   "question": "宮城県牡鹿郡女川町石浜 に住んでいます。2027年1月5日(火)にはどのごみを出せますか？",
+   "date": "2027-01-05",
+   "address": "宮城県牡鹿郡女川町石浜",
+   "truth": {
+    "district": "石浜（水色の日／資源=旭が丘・宮ケ崎・石浜）",
+    "collections": [
+     "燃やせるごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+    "pdf_page": "22, 23",
+    "what_the_source_shows": "Grid 1/5 blue (Tue). Jan row 旭が丘…: 缶 14,28; プラ等 7,21. First blue day after 1/1 (Fri, uncolored).",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. 回答（ユーザーへの表示内容）\n\n**2027年1月5日（火）に石浜で出せるのは「燃やせるごみ」だけです。**\n\n女川町の「令和8年度 おながわ町民カレンダー」によると、次のとおりです。\n\n- **燃やせるごみ（一般家庭用）：出せます**\n  - 石浜は「水色の日」の地区です。1月5日（火）はカレンダーで水色になっています。\n  - 年明けの元日（1月1日・金）は収集がないため、石浜ではこの日が年明け最初の燃やせるごみの日です。\n  - 生ごみは水分をよく切り、透明か半透明の袋に入れてください。\n- **資源ごみ・燃やせないごみ・粗大ごみ：出せません**\n  - 2027年1月の「旭が丘・宮ケ崎・石浜」の収集日は次のとおりです。\n    - 缶・びん・ペットボトル：14日（木）、28日（木）\n    - ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油・燃やせないごみ：7日（木）、21日（木）\n    - 粗大ごみ：27日（水）\n\n収集日以外の日や、収集が終わった後には出さないでください。分け方などは女川町クリーンセンター（電話 0225-53-3549）に問い合わせることができます。\n\n出典：[令和8年度 おながわ町民カレンダー（女川町）](https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf)\n\n2. JSON",
+      "items": [
+       "燃やせるごみ"
+      ],
+      "no_collection": false,
+      "district": "旭が丘・宮ケ崎・石浜（燃やせるごみは水色の日）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 1,
+      "WebFetch": 1,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792240927187-fkedk9.pdf",
+      "webfetch-1792240927187-fkedk9.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 133352,
+      "tool_uses": 5,
+      "duration_ms": 42030
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 11,
+      "correct": 11,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "All claims are correct. 石浜 is a blue district; 1/5 (Tue) is blue on the January grid, and 1/1 (Fri) is blank, so 1/5 is the first burnable day of the year. The 旭が丘・宮ケ崎・石浜 January dates are right: cans 14 and 28 (木), プラ等/燃やせない 7 and 21 (木), 粗大 27(水). So only 燃やせるごみ goes out on 1/5. Bag and food-waste rules and the クリーンセンター number are correct."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2027年1月5日(火)に石浜で出せるごみは、確認できませんでした。地区別の収集日を示す情報が見つからず、どのごみが収集対象かは特定できていません。\n\n- 女川町の公式サイトは、ごみの収集日を「おながわ町民カレンダー」に載せていると案内しています。令和8年度版(2026年4月〜2027年3月)は1月を含むため、このカレンダーに1月5日の収集日が載っている可能性があります。\n- ただし、そのカレンダーのPDFは今回の確認環境では中身を読み取れませんでした。公式サイトのページにも、地区別の収集曜日、石浜の記載、年末年始の収集休みの扱いは見当たりませんでした。\n- 町のページには、燃やせるごみ、不燃ごみ、資源ごみの日(紙ごみ、リチウムイオン電池など)、ペットボトル以外のプラスチックの日(赤かご、2026年10月から分別収集開始)、生ごみといった区分があります。ごみは収集日の朝8時までに出すこととされています。\n\n確認方法としては、次のいずれかをおすすめします。\n- おながわ町民カレンダー(令和8年度版)で令和9年1月の収集日欄を見る。カレンダーは https://www.town.onagawa.miyagi.jp/chomin_calendar.html から取得できます。\n- 町民生活課 環境係(0225-54-3131)、または女川町クリーンセンター(0225-53-3549)に石浜の収集日を問い合わせる。",
+      "items": [],
+      "no_collection": false,
+      "district": null,
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.town.onagawa.miyagi.jp/05_05.html",
+       "https://www.town.onagawa.miyagi.jp/chomin_calendar.html"
+      ],
+      "tools_used": [
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 9,
+      "WebFetch": 6,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241183179-vfzk3s.pdf",
+      "webfetch-1792241294245-wkc28m.jpg"
+     ],
+     "usage": {
+      "agent_tokens": 82150,
+      "tool_uses": 18,
+      "duration_ms": 171288
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "none",
+      "district_correct": false,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 8,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "町のページには…生ごみといった区分があります",
+        "truth": "Onagawa has no separate 生ごみ collection category. 05_05.html only has an article on draining food waste, and both the calendar p.31 and the 2026-10-01 list put 生ごみ in 燃やせるごみ (drain it well, clear or translucent bag). On 1/5, 生ごみ goes out with the burnables.",
+        "misleads_what_or_when": true
+       }
+      ],
+      "notes": "Gave up, although 1/5 is simply a burnable day for 石浜. Most of its claims are correct: dates are in the R8 calendar (April 2026 to March 2027); the web pages have no per-district days; 紙ごみ and Li-ion batteries go out on the 資源ごみの日; the 赤かご plastics heading; the 8:00 deadline; both phone numbers with the right offices. '不燃ごみ' does not appear on 05_05.html, but the category exists as 燃やせないごみ, so it was accepted. Listing 生ごみ as its own category is wrong and could lead a user to keep food waste back from the burnable collection."
+     }
+    }
+   }
+  },
+  {
+   "id": "T1",
+   "municipality": "茨城県那珂郡東海村",
+   "kind": "year_end_off",
+   "question": "茨城県那珂郡東海村照沼 に住んでいます。2026年12月31日(木)にはどのごみを出せますか？",
+   "date": "2026-12-31",
+   "address": "茨城県那珂郡東海村照沼",
+   "truth": {
+    "district": "照沼（資源=船場／照沼、燃えない=原子力機構箕輪／宿／川根／照沼／押延／須和間／フローレスタ須和間、燃える=月・木）",
+    "collections": [],
+    "no_collection": true,
+    "source_pdf": "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "燃える 月・木 but 「土・日と12月31日から1月3日までの収集業務は行いません」. 資源 Dec 1,15; 燃えない Dec 11,25.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月31日(木)は、照沼地区ではどのごみも収集されません。**\n\n東海村の「令和8年度 資源物・ごみ収集日割表」で照沼地区を確認しました。\n\n- **燃えるごみ**：照沼は月曜・木曜の地区です。ただし村は「12月31日から1月3日まで」収集を行わないため、12月31日は木曜でも収集がありません。\n- **燃えないごみ・粗大ごみ**：照沼の12月の収集日は11日(金)と25日(金)です。31日は収集日ではありません。\n- **資源物**（船場／照沼）：12月の収集日は1日(火)と15日(火)です。31日は収集日ではありません。\n\n**前後の収集日**\n- 年内の燃えるごみは、**12月28日(月)**が最後です。\n- 年明けは**2027年1月4日(月)**から再開します。この日は燃えるごみと資源物（船場／照沼）の両方の収集日です。\n\n燃えるごみと燃えないごみ・粗大ごみは、当日の朝8時30分までに集積所へ出してください。資源物は、当日の朝7時から8時30分までに指定の資源物ステーションへ出してください。資源物はごみ集積所には出せません。\n\nなお、12月31日から1月3日までは、東海村清掃センターとひたちなか・東海クリーンセンターへの自己搬入もできません。\n\n出典：東海村「ごみの分別収集について」（令和8年度 資源物・ごみ収集日割表）\nhttps://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html\n\n2. JSON",
+      "items": [],
+      "no_collection": true,
+      "district": "照沼（燃えるごみ：月・木地区／資源物：船場／照沼／燃えないごみ・粗大ごみ：原子力機構箕輪／川根／照沼／押延／須和間／フローレスタ須和間）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html",
+       "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 2,
+      "WebFetch": 3,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792241066975-fi4hcx.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 66094,
+      "tool_uses": 7,
+      "duration_ms": 60749
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 13,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (no collection on Thu 12/31) is correct: 照沼 is 月・木 for 燃えるごみ but the table says 土・日と12月31日から1月3日までの収集業務は行いません. 資源物 row 船場／照沼 Dec 1/15 (Tue), 燃えない・粗大 row Dec 11/25 (Fri), last 燃えるごみ of the year Mon 12/28, restart Mon 1/4 with both 燃えるごみ and 資源物 (船場／照沼 Jan 4), 8:30 / 7:00-8:30 rules, 資源物 not at 集積所, and the 12/31-1/3 closure of both 清掃センター and ひたちなか・東海クリーンセンター (page 674) all match. Only blemish: the JSON names the 燃えない row without 宿 (incomplete label, dates correct), not counted as wrong. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "**1. 回答**\n\n茨城県那珂郡東海村照沼にお住まいの場合、2026年12月31日(木)に出せるごみはありません。収集がない日です。\n\n- 燃えるごみは照沼の収集曜日が月・木ですが、割表に「土・日と12月31日から1月3日までの収集業務は行いません」とあるため、大晦日は収集されません。\n- 資源物は照沼の12月の収集日が1日と15日、燃えないごみ・粗大ごみは11日と25日です。どちらも12月31日ではありません。\n- 次の収集は2027年1月4日(月)です。割表では、燃えるごみと資源物(1月の照沼の資源物の収集日は4日と18日)が出せます。燃えないごみは1月15日と29日です。\n- 年末年始はひたちなか・東海クリーンセンターと東海村清掃センターへの直接搬入もできません。\n\n上の内容は令和8年度(2026年4月から2027年3月)の「資源物・ごみ収集日割表」に基づいています。\n\n出典:\n- [令和8年度 資源物・ごみ収集日割表(画像)](https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png)\n- [地域別収集日の案内(東海村)](https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html)\n- [ごみの分別収集について(東海村)](https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/gomirisaikuru/5382.html)\n\n**2. JSON**",
+      "items": [],
+      "no_collection": true,
+      "district": "照沼",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/gomirisaikuru/5382.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 7,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241066975-fi4hcx.pdf",
+      "webfetch-1792241307765-b900mu.png"
+     ],
+     "usage": {
+      "agent_tokens": 82190,
+      "tool_uses": 14,
+      "duration_ms": 154838
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 12,
+      "correct": 12,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Correct no-collection answer, with an exact quote of the 土・日と12月31日から1月3日まで note. 資源物 Dec 1/15 and Jan 4/18, 燃えない・粗大 Dec 11/25 and Jan 15/29, next collection Mon 1/4 (燃える + 資源物), FY2026 = Apr 2026-Mar 2027 all match the table. 'Direct delivery to both centers is not possible over 年末年始' is correct for 12/31-1/3 (page 674); the Clean Center also lists 年末年始 as reservation-required days, so the phrase is slightly broad but not wrong for the date asked. Source label for 2131 ('地域別収集日の案内') paraphrases the real title 地域別収集日検索. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    }
+   }
+  },
+  {
+   "id": "T2",
+   "municipality": "茨城県那珂郡東海村",
+   "kind": "two_tables",
+   "question": "茨城県那珂郡東海村竹瓦 に住んでいます。2026年12月25日(金)にはどのごみを出せますか？",
+   "date": "2026-12-25",
+   "address": "茨城県那珂郡東海村竹瓦",
+   "truth": {
+    "district": "竹瓦（資源=竹瓦、燃えない=原子力機構長堀／舟石川3／外宿1／外宿2／竹瓦、燃える=火・金）",
+    "collections": [
+     "燃えるごみ",
+     "資源物"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "資源 竹瓦 Dec 11,25; 燃えない Dec 3,17; 燃える 火・金.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. 回答\n\n**2026年12月25日（金）に竹瓦で出せるごみは「燃えるごみ」と「資源物」の2つです。**\n\n東海村の「令和8年度 資源物・ごみ収集日割表」で、竹瓦の欄を確認しました。\n\n| 種類 | 竹瓦の収集日 | 12月25日（金） |\n|---|---|---|\n| 燃えるごみ | 毎週 火・金 | **出せます** |\n| 資源物 | 12月は 11日・25日 | **出せます** |\n| 燃えないごみ・粗大ごみ | 12月は 3日・17日 | 出せません |\n\n**出し方**\n- **燃えるごみ**：当日の午前8時30分までに、いつものごみ集積所へ出してください。村の指定袋を使います。指定袋以外の袋に入れたものは収集されません。\n- **資源物**：当日の午前7時から8時30分までに、決められた資源物ステーションへ出してください。ごみ集積所には出せません。\n\n**年末年始の注意**\n- 12月31日から1月3日までは収集がありません。土曜・日曜も収集はありません。\n- 年内に燃えるごみを出せる最後の日は12月29日（火）です。\n- 年明けの燃えるごみは1月5日（火）からです。\n- 燃えないごみ・粗大ごみは、12月はもう17日で終わっています。次は1月4日（月）です。\n\n問い合わせ先：東海村清掃センター（029-282-7289）\n\n出典：東海村「ごみ出し検索」ページ（https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/index.html）に載っている令和8年度の収集日割表\n\n2. JSON",
+      "items": [
+       "燃えるごみ",
+       "資源物"
+      ],
+      "no_collection": false,
+      "district": "竹瓦",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/index.html",
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html",
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/20230330-jyuukyohyouji4.jpg"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 8,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241087363-jx070a.jpg",
+      "webfetch-1792241095218-rm84h8.png"
+     ],
+     "usage": {
+      "agent_tokens": 78862,
+      "tool_uses": 15,
+      "duration_ms": 116171
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "used the PNG copy of the FY2026 table on the village's search page"
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 13,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (燃えるごみ + 資源物 on Fri 12/25) correct. 竹瓦 燃える 火・金, 資源物 竹瓦 Dec 11/25, 燃えない・粗大 (原子力機構長堀／舟石川3／外宿1／外宿2／竹瓦) Dec 3/17 and next Jan 4, last 燃えるごみ of the year Tue 12/29, restart Tue 1/5, no collection on 土・日 and 12/31-1/3, 指定袋以外は収集されない, 8:30 and 7:00-8:30 rules, and 東海村清掃センター 029-282-7289 all verified. The cited ごみ出し検索 index page does embed the FY2026 table (gomihiwarihyou.png). Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "竹瓦にお住まいの場合、2026年12月25日(金)は次のごみを出せます。\n\n- **燃えるごみ**: 指定袋に入れ、当日午前8時30分までにごみ集積所へ出してください。\n- **資源物**(ペットボトル・びん・かん・古紙など): ごみ集積所ではなく、指定された資源物ステーションへ、当日午前7時から8時30分までに出してください。\n\n**燃えないごみ・粗大ごみは出せません。** 竹瓦の燃えないごみ・粗大ごみの12月の収集日は12月3日と12月17日です。\n\n出典は東海村公式サイトの「令和8年度 資源物・ごみ収集日割表」(画像版)です。",
+      "items": [
+       "燃えるごみ",
+       "資源物"
+      ],
+      "no_collection": false,
+      "district": "竹瓦",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/index.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 7,
+      "WebFetch": 5,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241066975-fi4hcx.pdf",
+      "webfetch-1792241307765-b900mu.png"
+     ],
+     "usage": {
+      "agent_tokens": 83632,
+      "tool_uses": 15,
+      "duration_ms": 158027
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 7,
+      "correct": 7,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Short answer, all correct: 燃えるごみ (指定袋, by 8:30 at 集積所) and 資源物 (ペットボトル・びん・かん・古紙 etc., 7:00-8:30 at 資源物ステーション, not 集積所) on Fri 12/25; 燃えない・粗大 for 竹瓦 are Dec 3/17. Cited the FY2026 PNG table. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    }
+   }
+  },
+  {
+   "id": "T3",
+   "municipality": "茨城県那珂郡東海村",
+   "kind": "holiday_collected",
+   "question": "茨城県那珂郡東海村亀下 に住んでいます。2026年11月23日(月)にはどのごみを出せますか？",
+   "date": "2026-11-23",
+   "address": "茨城県那珂郡東海村亀下",
+   "truth": {
+    "district": "亀下（資源=内宿1／亀下、燃えない=緑ヶ丘／南台／豊岡／亀下、燃える=月・木）",
+    "collections": [
+     "燃えるごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "Holiday (勤労感謝の日): 祝日・振替休日も収集業務を行います. 資源 Nov 5,12,19,26; 燃えない Nov 6,20.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年11月23日（月・勤労感謝の日）に東海村亀下で出せるのは「燃えるごみ」だけです。**\n\n東海村の「令和8年度 資源物・ごみ収集日割表」で確認した内容です。\n\n- **燃えるごみ：出せます。**\n  - 亀下の収集日は毎週**月曜と木曜**です。\n  - この日は祝日ですが、燃えるごみは祝日・振替休日も収集されます。\n  - 当日の朝8時30分までに、指定袋に入れて集積所へ出してください。\n- **燃えないごみ・粗大ごみ：出せません。**\n  - 亀下は「緑ヶ丘／南台／豊岡／亀下」の地区で、11月の収集日は**6日（金）と20日（金）**です。\n- **資源物：出せません。**\n  - 亀下は「内宿1／亀下」の地区で、11月の収集日は**5日・12日・19日・26日（すべて木曜）**です。\n  - 資源物は集積所ではなく、指定の資源物ステーションに当日の朝7時〜8時30分に出します。\n\n参考：[令和8年度 東海村 資源物・ごみ収集日割表（PDF）](https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf)／[東海村「ごみの分別収集について」](https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html)\n\n2. JSON",
+      "items": [
+       "燃えるごみ"
+      ],
+      "no_collection": false,
+      "district": "燃えるごみ：月・木地区（亀下）／燃えないごみ・粗大ごみ：緑ヶ丘／南台／豊岡／亀下／資源物：内宿1／亀下",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+       "https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 4,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792241066975-fi4hcx.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 70307,
+      "tool_uses": 9,
+      "duration_ms": 94118
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 10,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (only 燃えるごみ on Mon 11/23 勤労感謝の日) correct: 亀下 is 月・木 and the table says 祝日・振替休日も収集業務を行います. 燃えない・粗大 row 緑ヶ丘／南台／豊岡／亀下 Nov 6/20 (Fri), 資源物 row 内宿1／亀下 Nov 5/12/19/26 (all Thu), 8:30 with 指定袋, and 資源物 7:00-8:30 at the station all match. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2026年11月23日(月)は、亀下では**燃えるごみ**の収集日です。\n\n- 出せるもの: 燃えるごみ(指定袋または粗大ごみ処理券を使用)\n- 出せないもの: 資源物、燃えないごみ・粗大ごみ(この日は収集日ではありません)\n- 11月23日は勤労感謝の日(祝日)ですが、東海村は祝日も収集を行うため、通常どおり収集があります。\n- 出す時間は当日午前8時30分までに集積所へ。\n\n参考: 亀下の次の資源物収集は11月26日(木)、次の燃えないごみ・粗大ごみ収集は12月4日(金)です。\n\n出典: 東海村「令和8年度 資源物・ごみ収集日割表」(東海村清掃センター)",
+      "items": [
+       "燃えるごみ"
+      ],
+      "no_collection": false,
+      "district": "亀下",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 5,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792241307765-b900mu.png"
+     ],
+     "usage": {
+      "agent_tokens": 76789,
+      "tool_uses": 10,
+      "duration_ms": 117842
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 9,
+      "correct": 8,
+      "wrong": 1,
+      "unverifiable": 0,
+      "wrong_claims": [
+       {
+        "claim": "燃えるごみ(指定袋または粗大ごみ処理券を使用) — i.e. on 11/23 燃えるごみ may go out in a 指定袋 or with a 粗大ごみ処理券",
+        "truth": "燃えるごみ must be in the 燃えるごみ指定袋 (handbook p.4). 粗大ごみ処理券 is for 粗大ごみ (items that do not fit a 45L 指定袋), which is collected only on the 燃えないごみ・粗大ごみ days (亀下: Nov 6/20, next Dec 4), not on 11/23 (handbook p.7; 日割表 note 指定袋・粗大ごみ処理券をご利用ください applies to 燃えないごみ・粗大ごみ).",
+        "misleads_what_or_when": true
+       }
+      ],
+      "notes": "Main answer (燃えるごみ only) and the holiday rule, 8:30 deadline, next 資源物 Thu 11/26 and next 燃えない・粗大 Fri 12/4 are correct. One wrong claim: it attaches '指定袋または粗大ごみ処理券' to 燃えるごみ, which suggests a large burnable item with a 処理券 can go out on 11/23; such 粗大ごみ is only taken on the 燃えない・粗大 days. The answer separately says 粗大ごみ cannot go out that day, so the error is internally inconsistent but could still mislead about what to put out. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    }
+   }
+  },
+  {
+   "id": "T4",
+   "municipality": "茨城県那珂郡東海村",
+   "kind": "address_table_image",
+   "question": "茨城県那珂郡東海村舟石川駅西二丁目 に住んでいます。2026年12月28日(月)にはどのごみを出せますか？",
+   "date": "2026-12-28",
+   "address": "茨城県那珂郡東海村舟石川駅西二丁目",
+   "truth": {
+    "district": "舟石川2（住居表示表: 舟石川駅西二丁目→舟石川2; 燃えない=舟石川2／舟石川中丸; 燃える=火・金）",
+    "collections": [
+     "資源物",
+     "燃えないごみ",
+     "粗大ごみ"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "資源 舟石川2 Dec 7,14,21,28; 燃えない・粗大 Dec 14,28; Monday so no 燃える.",
+    "district_certainty": "sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年12月28日(月)に出せるのは「資源物」と「燃えないごみ・粗大ごみ」です。燃えるごみは出せません。**\n\n舟石川駅西二丁目は、東海村の収集地域では全域が「舟石川2」に入ります。村の「住居表示/地域対照表」と、収集日割表の注記(舟石川駅西二丁目全域)で確認しました。\n\n令和8年度 東海村資源物・ごみ収集日割表の「舟石川2」の収集日は次のとおりです。\n\n| 種類 | 12月の収集日 | 12/28(月) |\n|---|---|---|\n| 資源物(ペットボトル・びん・かん・古紙など) | 12/7・14・21・28 | 出せます |\n| 燃えないごみ・粗大ごみ | 12/14・28 | 出せます |\n| 燃えるごみ | 毎週火曜・金曜 | 出せません(月曜のため) |\n\n出すときの決まり\n- 資源物は当日の午前7時〜8時30分に、指定の**資源物ステーション**に出してください。ごみ集積所には出せません。\n- 燃えないごみ・粗大ごみは当日の午前8時30分までに**ごみ集積所**に出してください。指定袋を使い、粗大ごみには粗大ごみ処理券を貼ってください。\n- 年末年始の休みは12月31日〜1月3日なので、12/28は通常どおり収集があります。燃えるごみはその前の12/29(火)が年内最後です。\n\n問い合わせ先は東海村清掃センター(環境政策課ごみゼロ推進室)、電話029-282-7289です。\n\n2. JSON",
+      "items": [
+       "資源物",
+       "燃えないごみ",
+       "粗大ごみ"
+      ],
+      "no_collection": false,
+      "district": "舟石川2",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/index.html",
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html",
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/20230330-jyuukyohyouji4.jpg",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/gomirisaikuru/5382.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 3,
+      "WebFetch": 8,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792241087363-jx070a.jpg",
+      "webfetch-1792241095218-rm84h8.png",
+      "webfetch-1792241066975-fi4hcx.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 80922,
+      "tool_uses": 15,
+      "duration_ms": 124390
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "used the PNG copy and the 住居表示 table image"
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 13,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (資源物 + 燃えないごみ・粗大ごみ on Mon 12/28, no 燃えるごみ) correct. 舟石川駅西二丁目 → 舟石川2 is confirmed both by the 住居表示/地域対照表 and footnote ※5 (舟石川駅西二丁目全域). 資源物 舟石川2 Dec 7/14/21/28, 燃えない・粗大 (舟石川2／舟石川中丸) Dec 14/28, 燃える 火・金, last 燃えるごみ Tue 12/29, 12/31-1/3 break, 指定袋 and 粗大ごみ処理券, 8:30 / 7:00-8:30 and 東海村清掃センター (環境政策課ごみゼロ推進室) 029-282-7289 all verified. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "**1. 回答**\n\n2026年12月28日(月)に出せるごみは、次の2種類です。\n\n- **資源物**: 指定の資源物ステーションへ、当日午前7時から8時30分までに出してください。資源物は集積所には出せません。\n- **燃えないごみ・粗大ごみ**: 当日午前8時30分までに集積所へ出してください。指定袋または粗大ごみ処理券が必要です。\n\n**燃えるごみは出せません。** 舟石川駅西二丁目は「舟石川2」地区で、燃えるごみの収集日は火曜と金曜です。\n\n12月28日は祝日や振替休日ではなく、収集休止期間(12月31日から1月3日)にも当たりません。\n\n出典:\n- 東海村「令和8年度 資源物・ごみ収集日割表」 https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png\n- 東海村「住居表示／地域対照表」(2023年3月版) https://www.vill.tokai.ibaraki.jp/material/images/group/1/20230330-jyuukyohyouji4.jpg\n\n**2. JSON**",
+      "items": [
+       "資源物",
+       "燃えないごみ・粗大ごみ"
+      ],
+      "no_collection": false,
+      "district": "舟石川2",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/20230330-jyuukyohyouji4.jpg",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/index.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 5,
+      "WebFetch": 6,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241307765-b900mu.png",
+      "webfetch-1792241396823-fr1pen.jpg"
+     ],
+     "usage": {
+      "agent_tokens": 88647,
+      "tool_uses": 14,
+      "duration_ms": 170329
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 10,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (資源物 + 燃えないごみ・粗大ごみ, no 燃えるごみ) correct. 舟石川駅西二丁目 = 舟石川2 matches the 住居表示/地域対照表 (file dated 20230330), 燃える 火・金, 12/28 is neither a holiday nor inside 12/31-1/3, and the station/集積所 times and 指定袋/粗大ごみ処理券 rule match. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    }
+   }
+  },
+  {
+   "id": "T5",
+   "municipality": "茨城県那珂郡東海村",
+   "kind": "new_year_first_day",
+   "question": "茨城県那珂郡東海村真崎 に住んでいます。2027年1月4日(月)にはどのごみを出せますか？",
+   "date": "2027-01-04",
+   "address": "茨城県那珂郡東海村真崎",
+   "truth": {
+    "district": "真崎（資源=真崎／村松北／舟石川中丸／外宿2、燃えない=真崎／村松北／権現山寮／原子力機構荒谷台、燃える=月・木）",
+    "collections": [
+     "燃えるごみ",
+     "資源物"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "資源 Jan 4,11,18,25; 燃えない Jan 5,19; 燃える Mon (1/4 is after 1/3).",
+    "district_certainty": "likely-sure",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2027年1月4日(月)に真崎で出せるごみは「燃えるごみ」と「資源物」の2種類です。**\n\n東海村の「令和8年度 資源物・ごみ収集日割表」での真崎の予定は次のとおりです。\n\n| 種類 | 真崎の収集日 | 1月4日(月) |\n|---|---|---|\n| **燃えるごみ** | 毎週 月曜・木曜 | **出せます** |\n| **資源物**（真崎／村松北／舟石川中丸／外宿2） | 2027年1月は 4日・11日・18日・25日 | **出せます** |\n| 燃えないごみ・粗大ごみ（真崎／村松北／権現山寮／原子力機構荒谷台） | 2027年1月は 5日(火)・19日(火) | 出せません |\n\n**出し方**\n- **燃えるごみ**：当日の朝8時30分までに、いつものごみ集積所に指定袋で出してください。\n- **資源物**：当日の朝7時から8時30分までに、決められた**資源物ステーション**に出してください。ごみ集積所には出せません。\n- 燃えるごみの収集は12月31日から1月3日までお休みです。1月4日(月)が年明け最初の収集日になるので、年末年始にたまったごみを出せます。\n- 燃えないごみ・粗大ごみを出したい場合は、翌日の1月5日(火)です。\n\n問い合わせ先：東海村清掃センター（029-282-7289）\n\n参照元：\n- 東海村「令和8年度 資源物・ごみ収集日割表」 https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf （英語版 https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026gomisyuusyuuhiwarihyoueigo.pdf でも同じ日付でした）\n- 東海村「ごみの分別収集について」 https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html\n\n2. JSON",
+      "items": [
+       "燃えるごみ",
+       "資源物"
+      ],
+      "no_collection": false,
+      "district": "真崎（資源物：真崎／村松北／舟石川中丸／外宿2、燃えるごみ：月・木地区）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+       "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026gomisyuusyuuhiwarihyoueigo.pdf",
+       "https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 7,
+      "Read": 3
+     },
+     "files_read": [
+      "webfetch-1792241066975-fi4hcx.pdf",
+      "webfetch-1792241122988-za5nyd.pdf",
+      "webfetch-1792241133929-e826mp.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 80327,
+      "tool_uses": 15,
+      "duration_ms": 112212
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 12,
+      "correct": 12,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (燃えるごみ + 資源物 on Mon 1/4/2027) correct. 真崎 月・木, 資源物 row 真崎／村松北／舟石川中丸／外宿2 Jan 4/11/18/25, 燃えない・粗大 row 真崎／村松北／権現山寮／原子力機構荒谷台 Jan 5/19 (Tue), 12/31-1/3 break so 1/4 is the first collection, and 029-282-7289 verified. The claim that the English FY2026 edition shows the same dates was checked (Masaki row Jan 4/11/18/25, unburnable Jan 5/19). Caveat not mentioned by the answer: the 原子力機構荒谷台 dorm inside 真崎 uses a different 資源物 row. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "2027年1月4日(月)に真崎で出せるのは「燃えるごみ」と「資源物」です。\n\n- 燃えるごみ: 真崎は「月・木」の収集地域なので、月曜の1月4日が収集日です。当日午前8時30分までに指定袋に入れて集積所へ出してください。年末年始の収集休みは12月31日～1月3日のため、1月4日は通常どおり収集されます。\n- 資源物: 真崎の1月の資源物収集日は4日、11日、18日、25日です。1月4日は収集日です。資源物は集積所ではなく、指定された資源物ステーションへ当日午前7時から8時30分までに出してください。\n\n燃えないごみ・粗大ごみは真崎の場合1月5日と19日なので、1月4日は出せません。\n\n出典は東海村の「令和8年度 資源物・ごみ収集日割表」です。収集日の変更など不明な点は東海村清掃センター(029-282-7289)へお問い合わせください。",
+      "items": [
+       "燃えるごみ",
+       "資源物"
+      ],
+      "no_collection": false,
+      "district": "真崎",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/index.html",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 5,
+      "WebFetch": 5,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792241307765-b900mu.png"
+     ],
+     "usage": {
+      "agent_tokens": 79219,
+      "tool_uses": 12,
+      "duration_ms": 147773
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": ""
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 10,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (燃えるごみ + 資源物) correct with correct 資源物 Jan 4/11/18/25, 燃えない・粗大 Jan 5/19, 月・木 for 真崎, 12/31-1/3 break, 8:30 / 7:00-8:30 rules and 東海村清掃センター 029-282-7289. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    }
+   }
+  },
+  {
+   "id": "T6",
+   "municipality": "茨城県那珂郡東海村",
+   "kind": "holiday_collected",
+   "question": "茨城県那珂郡東海村須和間 に住んでいます。2026年11月3日(火)にはどのごみを出せますか？",
+   "date": "2026-11-03",
+   "address": "茨城県那珂郡東海村須和間",
+   "truth": {
+    "district": "須和間（資源=原子力機構（長堀・荒谷台・箕輪寮）／須和間／フローレスタ須和間、燃えない=…須和間…, 燃える=月・木）",
+    "collections": [
+     "資源物"
+    ],
+    "no_collection": false,
+    "source_pdf": "https://www.vill.tokai.ibaraki.jp/material/files/group/8/2026hiwarihyounihonngo.pdf",
+    "pdf_page": 1,
+    "what_the_source_shows": "資源 Nov 3,10,17,24 (11/3 文化の日, holidays collected); 燃えない Nov 13,27; Tue so no 燃える.",
+    "district_certainty": "likely",
+    "second_reader_agrees": true
+   },
+   "runs": {
+    "opus": {
+     "model": "claude-opus-5-5",
+     "llm": {
+      "answer_ja": "1. ユーザーへの回答\n\n**2026年11月3日(火・文化の日)に須和間で出せるのは「資源物」です。**\n\n東海村の「令和8年度 資源物・ごみ収集日割表」で調べた結果です。\n\n| 種類 | 須和間の収集日 | 11月3日(火) |\n|---|---|---|\n| **資源物** | 11月は 3日・10日・17日・24日 | **出せます** |\n| 燃えるごみ | 毎週 月曜・木曜 | 出せません |\n| 燃えないごみ・粗大ごみ | 11月は 13日(金)・27日(金) | 出せません |\n\n**資源物の出し方**\n- 当日の**午前7時〜8時30分**に、決められた**資源物ステーション**へ出してください。ふだんのごみ集積所には出せません。\n- 資源物はペットボトル、びん、かん、古紙など16種類です。\n- 11月3日は祝日の文化の日ですが、東海村は祝日・振替休日も収集します。\n\n**次に出せる日**\n- 燃えるごみ:11月5日(木)\n- 燃えないごみ・粗大ごみ:11月13日(金)。8時30分までに集積所へ、指定袋または粗大ごみ処理券を付けて出してください。\n\n問い合わせ先:東海村清掃センター 029-282-7289\n\n2. JSON",
+      "items": [
+       "資源物"
+      ],
+      "no_collection": false,
+      "district": "原子力機構（長堀・荒谷台・箕輪寮）／須和間／フローレスタ須和間（資源物）、原子力機構箕輪／宿／川根／照沼／押延／須和間／フローレスタ須和間（燃えないごみ・粗大ごみ）、月・木地区（燃えるごみ）",
+      "confidence": "high",
+      "hedged": false,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/index.html",
+       "https://www.vill.tokai.ibaraki.jp/material/images/group/1/gomihiwarihyou.png",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html",
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/gomirisaikuru/5382.html"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 4,
+      "WebFetch": 7,
+      "Read": 1
+     },
+     "files_read": [
+      "webfetch-1792241095218-rm84h8.png"
+     ],
+     "usage": {
+      "agent_tokens": 73968,
+      "tool_uses": 13,
+      "duration_ms": 115645
+     },
+     "score": {
+      "collections": "correct",
+      "collections_correct": true,
+      "district": "correct",
+      "district_correct": true,
+      "note": "used the PNG copy only"
+     },
+     "claim_check": {
+      "claims_checked": 13,
+      "correct": 13,
+      "wrong": 0,
+      "unverifiable": 0,
+      "wrong_claims": [],
+      "notes": "Main answer (資源物 only on Tue 11/3 文化の日) correct. 資源物 row 原子力機構（長堀・荒谷台・箕輪寮）／須和間／フローレスタ須和間 Nov 3/10/17/24, 燃える 月・木, 燃えない・粗大 Nov 13/27 (Fri), next 燃えるごみ Thu 11/5, holiday collection, 資源物16種類 (ペットボトル,びん,かん,古紙等 per page 674), 指定袋/粗大ごみ処理券, times and phone all verified. Caveat (not an error): the 南台 estate next to 須和間 uses other rows; the village calls its district map only a rough guide. Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    },
+    "haiku": {
+     "model": "claude-haiku-5-5",
+     "llm": {
+      "answer_ja": "茨城県那珂郡東海村須和間にお住まいの場合、2026年11月3日(火)に出せるごみは確実には特定できませんでした。\n\n確認できたこと\n- 須和間は、東海村公式サイトの「地域別収集日検索」の地域名一覧に載っています。\n- 11月3日は火曜日で、文化の日(祝日)です。\n- 検索結果の断片(令和7年度版の収集日割表)では、須和間の燃えるごみは「月・木」の区分に含まれているように読めます。その場合、火曜日は燃えるごみの収集日ではない可能性が高いです。ただし、表を読み取れておらず断片的な情報なので、確定ではありません。\n- 祝日も収集するという記載も検索結果の断片にありましたが、これも令和7年度版の情報です。\n\n確認できなかったこと\n- 令和8年度(2026年度)の収集日割表はPDFで、中身が画像のため読み取れませんでした。\n- 燃えないごみ、資源物、枝葉などの曜日は確認できていません。\n- 資源物は資源物ステーションに当日午前7時から8時30分までに、燃えるごみなどは当日午前8時30分までに集積所へ出すことになっています。\n\n確実な確認方法\n- 東海村公式サイトの「地域別収集日検索」で須和間を選び、11月の収集日を確認してください。 https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html\n- それでも不明な点は、東海村 ごみゼロ推進室(029-282-7289)にお問い合わせください。",
+      "items": [],
+      "no_collection": false,
+      "district": "須和間",
+      "confidence": "low",
+      "hedged": true,
+      "sources": [
+       "https://www.vill.tokai.ibaraki.jp/common_pages/gomi_kensaku/chikubetsu/2131.html",
+       "https://www.vill.tokai.ibaraki.jp/soshikikarasagasu/somminseikatsubu/kankyoseisakuka/1/1/674.html",
+       "https://www.vill.tokai.ibaraki.jp/material/files/group/8/070303.pdf"
+      ],
+      "tools_used": [
+       "ToolSearch",
+       "WebSearch",
+       "WebFetch",
+       "Read"
+      ]
+     },
+     "tool_calls": {
+      "ToolSearch": 1,
+      "WebSearch": 9,
+      "WebFetch": 17,
+      "Read": 2
+     },
+     "files_read": [
+      "webfetch-1792241066975-fi4hcx.pdf",
+      "webfetch-1792241452267-qwmda9.pdf"
+     ],
+     "usage": {
+      "agent_tokens": 95250,
+      "tool_uses": 29,
+      "duration_ms": 349022
+     },
+     "score": {
+      "collections": "abstain",
+      "collections_correct": false,
+      "district": "correct",
+      "district_correct": true,
+      "note": "could not read the FY2026 PDF (image); looked at FY2025 snippets; named 地域 須和間 and its 月・木 group"
+     },
+     "claim_check": {
+      "claims_checked": 10,
+      "correct": 9,
+      "wrong": 0,
+      "unverifiable": 1,
+      "wrong_claims": [],
+      "notes": "Gave up (no items), although the correct answer is 資源物. Its factual statements check out: 須和間 is listed on the 地域別収集日検索 page (2131), 11/3 is Tue and 文化の日, the FY2025 table (070303.pdf, checked) puts 須和間 in 月・木 and has the 祝日・振替休日も収集 note (both unchanged in FY2026), the FY2026 PDF really is a single image with no text layer, the 8:30 / 7:00-8:30 rules and ごみゼロ推進室 029-282-7289 are correct. Unverifiable: that choosing 須和間 on the 地域別収集日検索 page shows the November dates (results are rendered by a JS API; the static HTML has no dates and the page was last updated 2023-03-30). Checked against the FY2026 日割表 PDF (rendered at zoom 2.0; same table as gomihiwarihyou.png, header 令和8年度), page 674/5382 (times, self-delivery closures, 資源物16種類, contact), handbook pp.4/6/7 and back cover (指定袋, 粗大ごみ処理券, 清掃センター TEL 029-282-7289) and the 住居表示/地域対照表 (20230330-jyuukyohyouji4.jpg)."
+     }
+    }
+   }
+  }
+ ],
+ "limits": [
+  "30 questions in 5 municipalities, each asked once per model; no repeated runs, so variance is unknown",
+  "Questions deliberately over-sample exceptions (holiday shifts, year-end, 5th-week rules, district traps); accuracy on random days would be higher",
+  "Allowing Read on WebFetch-saved PDFs gives the assistant page images; an assistant whose fetch only extracts PDF text would see no garbage information in these calendars (measured text layers), but that condition was not run",
+  "Ground truth was produced by Claude agents (two independent readings, all agreed), not checked by a human",
+  "For 村上地域 addresses (M1–M4) there is no official street→district list; districts rest on calendar titles and the 2020 census table. T5/T6 (東海村 真崎/須和間) have possible exceptions (a dorm, a neighboring estate)",
+  "No municipality from Kinki, Chugoku or Shikoku; only Claude models"
+ ]
+}
