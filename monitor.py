@@ -5,6 +5,9 @@
   python monitor.py              # 今の内容と基準を比べる → out/source_status.json (resolve.py / onagawa.py が読む)
   python monitor.py --simulate-change <url の一部>   # 変更があったことにして書く (動作確認用)
 
+MCP サーバー (mcp_server.py) は、起動したときと動いている間、確認が 24時間より古ければ check() を自分で呼ぶ
+(環境変数 GOMISUTE_AUTO_MONITOR=0 で止められる)。手で動かすのは、サーバーを使わないとき・確かめたいときだけでよい。
+
 HTML は本文 (金沢市は div#contents-in、ほかは body) の文字だけを、更新日などを除いて空白を詰めてからハッシュする。
 PDF などはファイルのバイト列のハッシュ。変更があった公式ページに基づく答えは、作り直して確かめるまで「確かな答え」として返さない。
 """
@@ -62,8 +65,13 @@ def main():
         with open(REGISTRY + ".tmp", "w", encoding="utf-8") as f: json.dump(reg, f, ensure_ascii=False, indent=1)
         os.replace(REGISTRY + ".tmp", REGISTRY)
         return
-    reg = json.load(open(REGISTRY, encoding="utf-8"))
     sim = args[args.index("--simulate-change") + 1] if "--simulate-change" in args else None
+    check(sim, verbose=True)
+
+def check(sim=None, verbose=False, keep_if_all_failed=False):
+    """基準を記録した公式ページを取り直して比べ、out/source_status.json に書く → 書いた内容 (書かなかったときは None)。
+    keep_if_all_failed: 1つも取れなかった (ネットにつながっていない) ときは、前の確認の結果を残して書かない"""
+    reg = json.load(open(REGISTRY, encoding="utf-8"))
     res = []
     for u, r in reg.items():
         try:
@@ -74,10 +82,13 @@ def main():
         if sim and sim in u: st, h = "changed", "simulated"
         res.append({"url": u, "municipality": r["municipality"], "kind": r["kind"], "title": r["title"], "status": st,
                     "recorded_sha256": r["content_sha256"], "current_sha256": h, "recorded_at": r["recorded_at"]})
-        print(st, r["municipality"], r["kind"], u)
+        if verbose: print(st, r["municipality"], r["kind"], u)
+    if keep_if_all_failed and res and all(x["status"].startswith("error") for x in res) and os.path.exists(STATUS): return None
+    status = {"checked_at": now(), "simulated": bool(sim), "sources": res}
     tmp = STATUS + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f: json.dump({"checked_at": now(), "simulated": bool(sim), "sources": res}, f, ensure_ascii=False, indent=1)
+    with open(tmp, "w", encoding="utf-8") as f: json.dump(status, f, ensure_ascii=False, indent=1)
     os.replace(tmp, STATUS)                         # 書いている途中で落ちても、壊れたファイルを残さない
+    return status
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")

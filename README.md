@@ -200,7 +200,9 @@ $ python resolve.py 36.481532 136.703003 2026-10-20
 - **女川町**: カレンダーが PDF だけの町のデータを、Opus のエージェント2人の独立した読みで作った ([docs/onagawa-data.md](docs/onagawa-data.md))。
   日付のマス 324 (日付 742件) は2人の読みが全部一致。比較実験 2 の別の正解 6問とも一致。10月1日に変わった分け方は有効期間つきで、
   10月1日より後の日の答えには「カレンダーの見出しは4月印刷のまま。今の出し方は…」という注 (`label_note`) を付ける
-- **公式ページの変更監視** ([`monitor.py`](monitor.py)): 元にしたページが変わったら、作り直して確かめるまで確かな答えとして返さない
+- **公式ページの変更監視** ([`monitor.py`](monitor.py)): 元にしたページが変わったら、作り直して確かめるまで確かな答えとして返さない。
+  MCP サーバーは、起動したときと動いている間 (1時間ごとに見て)、確認が 24時間より古ければ自分で取り直す (約6秒。ネットにつながらなければ前の結果のまま)。
+  確認が 7日より古い・無いと、答えは `answerable=false` (「念のため公式ページでも確かめて」) になる
 - **計測** ([docs/mcp-bench.md](docs/mcp-bench.md)): 同じ 38問を Claude Code の CLI (`claude -p`、Opus 5.5) に、
   gomisute-gps の MCP サーバーだけ / ウェブ検索だけ で聞き、答えた方式を伏せて採点した (採点者2人 + 食い違いの裁定。[bench/cli_bench.py](bench/cli_bench.py)・[bench/grading/](bench/grading/))
 
@@ -270,7 +272,8 @@ python mcp_server.py                 # 標準入出力の MCP サーバー (.mcp
 python resolve.py --address 金沢市笠舞2丁目29番5号 2026-10-20
 python build_onagawa.py <読み取りワークフローの結果.json> && python onagawa.py 浦宿浜 2026-12-22
 python monitor.py --record           # データを作り直した直後だけ: 元にした公式ページの今の内容を記録する
-python monitor.py                    # 毎日: 記録と比べる (変わったページに基づく答えは確定しない)
+python monitor.py                    # 記録と比べる (変わったページに基づく答えは確定しない)。MCP サーバーを使うなら自動で動くので不要
+                                     # (サーバーの自動確認を止めるときは GOMISUTE_AUTO_MONITOR=0)
 python bench/cli_bench.py mcp && python bench/cli_bench.py web --jobs 4   # 計測: claude CLI に MCP だけ / ウェブだけで同じ質問をする
 python bench/eval_address.py         # 住所の書き方を変えて約3万通り解析し直す
 ```

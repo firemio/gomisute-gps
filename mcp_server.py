@@ -8,9 +8,11 @@ LLM が「この場所・この住所で、この日に何のごみを出せる�
 答えは公式の資料から作ったデータだけに基づき、決められないときは決められないと返す (status / decision_blocked_by)。
 既定では LLM が読む量を減らした要約 JSON を返し、detail="full" で resolve.py の JSON を全部返す。
 """
-import json, math, os, re, sys, threading, traceback
+import datetime as dt, json, math, os, re, sys, threading, time, traceback
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+try: sys.stderr.reconfigure(encoding="utf-8")              # ログ (標準エラー) は UTF-8
+except (AttributeError, ValueError): pass
 os.chdir(HERE)
 sys.path.insert(0, HERE)
 PROTOCOL = "2025-06-18"
@@ -51,6 +53,42 @@ def _load():
         _ready.set()
 
 threading.Thread(target=_load, daemon=True).start()
+
+# 公式ページの変更確認 (monitor.py) を、起動したときと動いている間 1時間ごとに見て、24時間より古ければ取り直す。
+# 確認が 7日より古い・無いと答えは answerable=false になるので、サーバーを使う人が何もしなくても新しく保つ。GOMISUTE_AUTO_MONITOR=0 で止める
+AUTO_MONITOR = os.environ.get("GOMISUTE_AUTO_MONITOR", "1") != "0"
+REFRESH_HOURS = 24
+_fresh_ready = threading.Event()
+
+def _status_age_hours():
+    try:
+        st = json.load(open(os.path.join(HERE, "out", "source_status.json"), encoding="utf-8"))
+        return (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(st["checked_at"])).total_seconds() / 3600
+    except Exception:
+        return None                                         # 無い・壊れている
+
+def refresh_sources(force=False):
+    """確認が REFRESH_HOURS より古ければ (無ければ) 公式ページを取り直す → "fresh" / "checked" / "offline" (1つも取れず、前の結果を残した)"""
+    age = _status_age_hours()
+    if not force and age is not None and age < REFRESH_HOURS: return "fresh"
+    import monitor
+    res = monitor.check(keep_if_all_failed=True)
+    if res is None: return "offline"
+    bad = [x for x in res["sources"] if x["status"] != "unchanged"]
+    print(f"gomisute-gps: 公式ページを確認した ({len(res['sources'])}件、変わった・取れなかった {len(bad)}件)", file=sys.stderr, flush=True)
+    return "checked"
+
+def _monitor_loop():
+    try: refresh_sources()
+    except Exception: traceback.print_exc(file=sys.stderr)
+    finally: _fresh_ready.set()                             # 最初の確認が終わるまで (約6秒) は、答えを待たせる
+    while True:
+        time.sleep(3600)
+        try: refresh_sources()
+        except Exception: traceback.print_exc(file=sys.stderr)
+
+if AUTO_MONITOR: threading.Thread(target=_monitor_loop, daemon=True).start()
+else: _fresh_ready.set()
 
 DATE = {"type": "string", "description": "日本時間の日付 YYYY-MM-DD。省略で今日"}
 DAYS = {"type": "integer", "minimum": 1, "maximum": 14, "description": "何日分 (既定 1)"}
@@ -162,6 +200,7 @@ OTHER_TOWN_KEYS = ("put_out_by", "contact", "not_covered", "holiday_policy", "ca
 def call(name, a):
     if not _ready.wait(120): raise RuntimeError("データの読み込みが終わっていません。少し待ってからもう一度呼んでください")
     if _state["err"]: raise RuntimeError("データの読み込みに失敗しました: " + _state["err"][-400:])
+    _fresh_ready.wait(60)                                   # 起動したときの公式ページの確認を待つ (取れなければ前の結果のまま答える)
     r, k, ona, om = _state["resolve"], _state["k"], _state.get("onagawa"), _state.get("onagawa_mod")
     a, bad = check_args(name, a)
     if bad: return {"status": "invalid_input", "answerable": False, "summary_ja": bad}

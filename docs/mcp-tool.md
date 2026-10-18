@@ -21,6 +21,9 @@ pandas・geopandas・shapely 2・python-dateutil が入っているもの (READM
 ```
 
 起動してからデータを読み込み終わるまで約5秒かかる (その間に来た呼び出しは、読み込みが終わるまで待つ)。
+公式ページの変更確認 (`monitor.py` と同じもの) も、起動したときと動いている間 (1時間ごとに見て) 確認が 24時間より古ければサーバーが自分で取り直す
+(約6秒、ネットが要る)。ネットにつながらず1つも取れなければ、前の確認の結果のまま答える。止めるときは環境変数 `GOMISUTE_AUTO_MONITOR=0`
+(Claude Desktop の設定では `"env": {"GOMISUTE_AUTO_MONITOR": "0"}`)。止めたときは `python monitor.py` を毎日動かす。
 
 | ツール | 入力 | 対応 |
 |---|---|---|
@@ -40,7 +43,7 @@ pandas・geopandas・shapely 2・python-dateutil が入っているもの (READM
   市町村名が無く、同じ町名が金沢市の外にもある (例: 押野2丁目は野々市市にもある) ときは確定しない
 - 女川町は、「女川町」のあとがカレンダーの凡例の行政区の名前そのもの (「女川町針浜」「女川町清水区」。「女川針浜」も可) なら確定、大字などの地名 (「浦宿浜」) は町の資料から推定した行政区を候補にして聞き返す
   (どの候補でも同じ日は `consensus` で答えられる)。江島は町のカレンダーに日程が無いので `schedule_not_published`
-- `freshness`: 元にした公式ページを [`monitor.py`](../monitor.py) で取り直した結果。変わっていたら (消えたページを含む) `status=unresolved`・
+- `freshness`: 元にした公式ページを [`monitor.py`](../monitor.py) で取り直した結果 (MCP サーバーは、確認が 24時間より古ければ自分で取り直す)。変わっていたら (消えたページを含む) `status=unresolved`・
   `decision_blocked_by.reason=source_changed` にして、作り直して確かめるまで確かな答えとして返さない (候補の日付も返さない)。
   確認が 7日より古い (`stale`)、一部のページを取れなかった・監視していない (`partly_unchecked`)、監視の結果が無い (`unchecked`) ときは
   `answerable=false` にして、要約に「念のため公式ページでも確かめて」と添える (分別の `garbage_sorting` も同じ)
