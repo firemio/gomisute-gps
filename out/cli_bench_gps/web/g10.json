@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 73175,
+ "stop_reason": "end_turn",
+ "session_id": "e64861da-cc8e-4dcc-8c53-9eae7b9ae55a",
+ "total_cost_usd": 0.1621511,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 7275,
+  "cache_read_input_tokens": 44657,
+  "output_tokens": 2160,
+  "output_tokens_details": {
+   "thinking_tokens": 403
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7275,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 802,
+    "cache_read_input_tokens": 9645,
+    "cache_creation_input_tokens": 1199,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1199
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 2160,
+   "cacheReadInputTokens": 44657,
+   "cacheCreationInputTokens": 7275,
+   "webSearchRequests": 0,
+   "costUSD": 0.1103874,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 403,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 171642,
+   "outputTokens": 9199,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.051763699999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 6527,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 8,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2026年10月26日（月）に出せるのは「燃やすごみ」だけです。**\n\n- **場所**：緯度36.575059、経度136.664887は石川県金沢市東山三丁目で、収集区分は「馬場」です。ただし東山3丁目6番12号だけは「森山」の区分になります。\n- **馬場の2026年度の収集日**（金沢市の2026年度地区別収集カレンダーより）\n  - 燃やすごみ：毎週月曜・木曜\n  - 燃やさないごみ：第1火曜（10月は6日）\n  - 資源（あき缶・ペットボトル・プラスチック資源など）：第2・第4火曜（10月は13日・27日）\n  - びん：第3水曜（10月は21日）\n- **出す時間**：収集日の朝8時30分までです。\n\n市のページの表は列がずれて読みにくかったので、品目と曜日の対応は日付から照らし合わせて確かめました。缶・ペットボトルなどは翌日の27日（火）に出せます。\n\nSources:\n- [2026年度地区別収集カレンダー（トップページ）／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [馬場地区 収集カレンダー／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html#baba)\n- [ごみの出し方のルール／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html)\n- [燃やすごみ 週2回収集／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7591.html)",
+ "ttft_ms": 4937,
+ "type": "result",
+ "duration_ms": 71619,
+ "uuid": "07a4ef21-34c9-468b-bff4-3f6493e999e2",
+ "ttft_stream_ms": 1193,
+ "time_to_request_ms": 51,
+ "first_content_frame_ms": 1194,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 72.7,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.575059、経度 136.664887 です。ここで2026年10月26日(月)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

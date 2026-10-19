@@ -1,0 +1,7 @@
+node_modules/
+.wrangler/
+dist/
+.dev.vars
+
+# パック (R2 に置くもの)。nationwide/packs/build_packs.py が作る (約 9MB。作り方は README.md)
+/packs/

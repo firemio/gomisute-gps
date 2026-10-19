@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 8249,
+ "stop_reason": "end_turn",
+ "session_id": "e8be435d-d67c-4714-ae4a-4d891a67a1de",
+ "total_cost_usd": 0.04217,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3438,
+  "cache_read_input_tokens": 11050,
+  "output_tokens": 622,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3438,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 502,
+    "cache_read_input_tokens": 6165,
+    "cache_creation_input_tokens": 2158,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2158
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 622,
+   "cacheReadInputTokens": 11050,
+   "cacheCreationInputTokens": 3438,
+   "webSearchRequests": 0,
+   "costUSD": 0.04217,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**2026年10月29日(木)に出せるのは「資源 プラスチック資源」です。**\n\n- **場所:** 石川県金沢市 笠舞二丁目（最寄りの住所は 笠舞二丁目26番5号、距離約0m）。収集カレンダーでは **小立野地区** です。\n- **出す時刻:** 収集日の **午前8時30分まで**\n- **規則:** この日は「第5木曜日」の収集です。\n\n**この日の後の収集日**\n- 燃やすごみ：10月30日(金)\n- びん：11月4日(水)\n- 資源 あき缶・ペットボトル プラスチック資源など：11月12日(木)\n- 燃やさないごみ：11月18日(水)\n\n地区は位置情報から判定しています（確信度0.93）。住所が笠舞2丁目の8〜23街区、25〜26街区、30〜37街区のどれか、または6街区の1〜18番・22〜33番なら、小立野地区で確定です。\n\n分け方・袋や、ごみを置く場所はこのデータに含まれていません。分からないときは金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n**出典:** 金沢市「2026年度地区・校下別収集カレンダー(その3) — 小立野（東部管理センター）2026年度版」、「2026年度地区別収集カレンダー(トップページ) — 町名一覧表 (区域表)」、「ごみの出し方のルール」",
+ "ttft_ms": 2582,
+ "type": "result",
+ "duration_ms": 13619,
+ "uuid": "4d30b3a0-192d-4949-b4a3-638784833b52",
+ "ttft_stream_ms": 1622,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1622,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 15.0,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.550451、経度 136.670407 です。ここで2026年10月29日(木)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

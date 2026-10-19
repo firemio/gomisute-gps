@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 6925,
+ "stop_reason": "end_turn",
+ "session_id": "187105b0-c49c-44cf-af1c-5a6c5c84075f",
+ "total_cost_usd": 0.040026000000000006,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3330,
+  "cache_read_input_tokens": 11050,
+  "output_tokens": 558,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3330,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 438,
+    "cache_read_input_tokens": 6165,
+    "cache_creation_input_tokens": 2050,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2050
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 558,
+   "cacheReadInputTokens": 11050,
+   "cacheCreationInputTokens": 3330,
+   "webSearchRequests": 0,
+   "costUSD": 0.040026000000000006,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "その場所 (金沢市 長町一丁目付近、収集地区は「長町」) では、**2026年10月30日(金) は「資源 プラスチック資源」の収集日**です。この月は金曜日が5回あり、「第5金曜日」の決まった収集にあたります。\n\n- **出す時刻:** 収集日の**午前8時30分まで**です。\n- **次の収集日:**\n  - 燃やすごみ: 11月2日(月)\n  - びん: 11月4日(水)\n  - 資源 あき缶・ペットボトル プラスチック資源など: 11月13日(金)\n  - 燃やさないごみ: 11月18日(水)\n- **地区の確かさ:** 長町地区と判断した確信度は0.93です。長町1丁目でも、4番の地点では番号によって地区が分かれます。番号が1〜27または54〜60なら長町地区です。表示されている住所が違う場合はお知らせください。\n\n分別のしかたやごみ集積所の場所はこの情報に含まれていません。金沢市 ごみ減量推進課 (076-220-2302) に確認してください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その5) — 長町（西部管理センター）2026年度版」、「ごみの出し方のルール」",
+ "ttft_ms": 2030,
+ "type": "result",
+ "duration_ms": 12288,
+ "uuid": "5d493dba-f2d2-469c-b5d7-9b1b48b3f3ee",
+ "ttft_stream_ms": 916,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 916,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 13.8,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.563606、経度 136.651137 です。ここで2026年10月30日(金)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 233470,
+ "stop_reason": "end_turn",
+ "session_id": "1b0b4192-b73f-4a8f-9d8c-7d1a6fbe75ee",
+ "total_cost_usd": 0.36604649999999994,
+ "usage": {
+  "input_tokens": 28,
+  "cache_creation_input_tokens": 14980,
+  "cache_read_input_tokens": 149030,
+  "output_tokens": 7517,
+  "output_tokens_details": {
+   "thinking_tokens": 3085
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14980,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2620,
+    "cache_read_input_tokens": 17548,
+    "cache_creation_input_tokens": 1001,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1001
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 28,
+   "outputTokens": 7517,
+   "cacheReadInputTokens": 149030,
+   "cacheCreationInputTokens": 14980,
+   "webSearchRequests": 0,
+   "costUSD": 0.30009800000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3085,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 216385,
+   "outputTokens": 28620,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.0659485,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 21991,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 20,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "その地点は**金沢市本町一丁目**です。ただ、本町一丁目は街区・番地によって校下（地区）が分かれていて、地区ごとに収集日が違います。地図データで見ると、今いる場所は本町一丁目の1番か2番あたりの東寄り（安江町との境の近く）です。この辺りは**芳斎・松ヶ枝・此花の3地区の境目**にあたり、位置の誤差が約30mあるので、どの地区かは決められませんでした。\n\n**2026年11月5日(木)に出せるもの（地区別）**\n\n| 校下 | 対象の番地（本町一丁目） | 11/5(木)の収集 |\n|---|---|---|\n| **芳斎** | 1番5〜38、2番5〜46、3番4〜24 | **燃やさないごみ**（毎月第1木曜） |\n| **松ヶ枝** | 1番1〜4、1番39〜44 | **資源（あき缶・ペットボトル・プラスチック資源など）**（第1・3木曜） |\n| **此花** | 2番1〜4・47〜61、3番1〜3・25〜52、4〜11番 | **燃やすごみ**（毎週月・木曜） |\n\nほかの区分の11月の収集日は次のとおりです。\n- **芳斎**：燃やすごみは毎週火・金、資源（あき缶・ペットボトルなど）は12日・26日、びんは18日(水)。\n- **松ヶ枝**：燃やすごみは毎週火・金、燃やさないごみは12日、びんは25日(水)。\n- **此花**：燃やさないごみは6日(金)、資源（あき缶・ペットボトルなど）は13日・27日、びんは18日(水)。\n\n**住居表示の番地（例：本町1-○-△）で上の表の行を選んでください。**ごみステーションに貼ってある収集日の表示でも確かめられます。わからなければ、金沢市ごみ減量推進課（076-220-2302）か、金沢市公式LINEの収集日検索で確認できます。\n\nなお、市のページは表の列の対応が読み取りにくい形式でした。そのため、各日付の曜日が収集パターン（第1木曜など）と合うかを照らし合わせて、区分と日付を対応させています。\n\n出典:\n- [2026年度地区別収集カレンダー（町名一覧）｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [芳斎・松ヶ枝 収集カレンダー｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html)\n- [此花 収集カレンダー｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html)\n- [国土地理院 逆ジオコーダ](https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat=36.573748&lon=136.652852) / [国土地理院 住所検索](https://msearch.gsi.go.jp/address-search/AddressSearch?q=金沢市本町一丁目1)\n- [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/reverse?lat=36.573748&lon=136.652852&format=json&zoom=18&accept-language=ja)\n- [金沢市LINEチラシ](https://www4.city.kanazawa.lg.jp/material/files/group/68/LINE202508chirasi.pdf)",
+ "ttft_ms": 3172,
+ "type": "result",
+ "duration_ms": 197764,
+ "uuid": "100b2894-7880-45ce-8f6a-d939c1970e4e",
+ "ttft_stream_ms": 1356,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 1356,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 199.0,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.573748、経度 136.652852 です (スマートフォンの位置の精度は約30m)。ここで2026年11月5日(木)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

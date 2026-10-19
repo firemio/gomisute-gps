@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 233423,
+ "stop_reason": "end_turn",
+ "session_id": "485d75fa-dfac-4ab8-bd92-6fe549a5f17b",
+ "total_cost_usd": 0.3623992000000001,
+ "usage": {
+  "input_tokens": 24,
+  "cache_creation_input_tokens": 14625,
+  "cache_read_input_tokens": 118213,
+  "output_tokens": 7807,
+  "output_tokens_details": {
+   "thinking_tokens": 3874
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14625,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2434,
+    "cache_read_input_tokens": 17137,
+    "cache_creation_input_tokens": 1057,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1057
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 24,
+   "outputTokens": 7807,
+   "cacheReadInputTokens": 118213,
+   "cacheCreationInputTokens": 14625,
+   "webSearchRequests": 0,
+   "costUSD": 0.2968786,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3874,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 213336,
+   "outputTokens": 28374,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.0655206,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 22382,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 17,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**ほぼ確実に「野町校下」にあたり、10月26日(月)に出せるのは「燃やさないごみ」だけです。** 燃やすごみは出せません(野町校下では火曜・金曜)。ただ、地点が町の境界のすぐそばなので、住所(番地)で一度確認してください。\n\n**場所:** 金沢市の寺町4丁目と寺町5丁目の境目あたりで、立像寺(寺町4-1-2)の西側、寺町5丁目小緑地の東側です。国土地理院のデータでは「寺町五丁目」、OpenStreetMapでは「寺町四丁目」(中川除町に近い)と出て、判定が分かれました。\n\n**町名と校下の対応(金沢市の2026年度一覧より):**\n- 寺町5丁目1番 → 野町\n- 寺町4丁目1番1〜19・37〜46 → 野町\n- 寺町4丁目1番20〜36 → 泉野\n- 中川除町 → 新竪町\n\n**10月26日(月)に出せるもの(校下別):**\n\n| 校下 | 10/26(月) | 燃やすごみの曜日 |\n|---|---|---|\n| **野町(いちばん可能性が高い)** | **燃やさないごみ**(第4月曜) | 火・金 |\n| 泉野(寺町4-1-20〜36の場合) | 燃やすごみ | 月・木 |\n| 新竪町(中川除町の場合) | 資源(あき缶・ペットボトル・プラスチック資源など)(第2・4月曜) | 火・金 |\n\n**読み取りについての注意:** 市のページは、文字として取り出すと品目名と日付の並びがずれていました。そこで、燃やすごみが週2回、びんが月1回の水曜という、ほかの校下と同じ形に合わせて対応を判断しています。番地をお知らせいただければ校下を確定できます。確実に確かめるなら、市のカレンダーを直接見るか、ごみ減量推進課(076-220-2302)に問い合わせてください。\n\nSources:\n- [2026年度地区別収集カレンダー(トップページ)/金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [野町ほか 収集カレンダー](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html)\n- [泉野ほか 収集カレンダー](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html)\n- [新竪町ほか 収集カレンダー](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html)\n- [ごみの出し方のルール/金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html)\n- [mapple(立像寺 住所)](https://www.mapple.net/region/a0401030104_s-season=autumn/spot/)",
+ "ttft_ms": 5239,
+ "type": "result",
+ "duration_ms": 265079,
+ "uuid": "6e3aa74b-3b48-4893-a2c3-a52fab259186",
+ "ttft_stream_ms": 1789,
+ "time_to_request_ms": 36,
+ "first_content_frame_ms": 1789,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 266.1,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.552304、経度 136.652202 です (スマートフォンの位置の精度は約30m)。ここで2026年10月26日(月)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

@@ -1,0 +1,55 @@
+{
+ "model": "deepseek-flash",
+ "readers": {
+  "A": {
+   "burnable_ok": false,
+   "columns_ok": true,
+   "rows_ok": true,
+   "merged_ok": false
+  },
+  "B": {
+   "burnable_ok": false,
+   "columns_ok": true,
+   "rows_ok": false,
+   "merged_ok": false
+  }
+ },
+ "two_reader_agree": {
+  "burnable": false,
+  "columns": true,
+  "rows": false,
+  "merged": false
+ },
+ "usage": [
+  {
+   "prompt_tokens": 1408,
+   "completion_tokens": 11371,
+   "total_tokens": 12779,
+   "prompt_tokens_details": {
+    "cached_tokens": 1152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 10900
+   },
+   "prompt_cache_hit_tokens": 1152,
+   "prompt_cache_miss_tokens": 256,
+   "seconds": 46.4,
+   "model": "deepseek-flash"
+  },
+  {
+   "prompt_tokens": 1379,
+   "completion_tokens": 30398,
+   "total_tokens": 31777,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 29726
+   },
+   "prompt_cache_hit_tokens": 0,
+   "prompt_cache_miss_tokens": 1379,
+   "seconds": 120.4,
+   "model": "deepseek-flash"
+  }
+ ]
+}

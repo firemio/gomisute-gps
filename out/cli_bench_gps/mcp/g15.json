@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 8043,
+ "stop_reason": "end_turn",
+ "session_id": "222147c3-f7a7-4b3c-bce0-d67c6c7acfd8",
+ "total_cost_usd": 0.0424336,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3428,
+  "cache_read_input_tokens": 11068,
+  "output_tokens": 639,
+  "output_tokens_details": {
+   "thinking_tokens": 43
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3428,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 493,
+    "cache_read_input_tokens": 6183,
+    "cache_creation_input_tokens": 2130,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2130
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 639,
+   "cacheReadInputTokens": 11068,
+   "cacheCreationInputTokens": 3428,
+   "webSearchRequests": 0,
+   "costUSD": 0.0424336,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 43,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "その場所が泉野地区か長坂台地区か決められないため、2026年11月4日(水)に出せるごみはまだお答えできません。\n\n石川県金沢市の泉野出町一丁目と泉野出町二丁目の境目に近い場所です。この2地区は収集日が違い、11月4日も地区によって答えが変わります。位置の誤差は約30mですが、約24m先の泉野出町二丁目7番3号はもう長坂台地区に入ります。\n\n**お住まいの住所の町名・丁目・街区（番地）を教えてください。**\n- **泉野出町1丁目**の場合は泉野地区です。\n- **泉野出町2丁目の3〜12街区**の場合は長坂台地区です。\n- 住居表示の「○番○号」まで分かれば、そのまま送っていただいて大丈夫です。\n\n住所が分かれば、11月4日に出せるごみをはっきりお答えします。収集日のごみは、当日の**午前8時30分まで**に出してください。\n\n住所がすぐに分からない場合は、金沢市 ごみ減量推進課（076-220-2302）でも確かめられます。\n\n出典：金沢市「2026年度地区別収集カレンダー」（町名一覧表と、泉野・長坂台の各カレンダー）、金沢市「ごみの出し方のルール」",
+ "ttft_ms": 2257,
+ "type": "result",
+ "duration_ms": 13508,
+ "uuid": "8ce97b1d-3529-4dd6-a6aa-e3ade3dfc68e",
+ "ttft_stream_ms": 944,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 944,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 15.0,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.538829、経度 136.655861 です (スマートフォンの位置の精度は約30m)。ここで2026年11月4日(水)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

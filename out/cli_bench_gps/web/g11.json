@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 210333,
+ "stop_reason": "end_turn",
+ "session_id": "ae12f660-2da7-4bce-839c-6ff6609996e1",
+ "total_cost_usd": 0.2897546,
+ "usage": {
+  "input_tokens": 22,
+  "cache_creation_input_tokens": 12776,
+  "cache_read_input_tokens": 99609,
+  "output_tokens": 5048,
+  "output_tokens_details": {
+   "thinking_tokens": 1473
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12776,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1692,
+    "cache_read_input_tokens": 15577,
+    "cache_creation_input_tokens": 768,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 768
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 22,
+   "outputTokens": 5048,
+   "cacheReadInputTokens": 99609,
+   "cacheCreationInputTokens": 12776,
+   "webSearchRequests": 0,
+   "costUSD": 0.22317779999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1473,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 257483,
+   "outputTokens": 21657,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 3,
+   "costUSD": 0.0665768,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 15523,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 14,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "10月27日(火)に出せるかどうかは、住所の番地で決まります。この地点は金沢市の香林坊2丁目・高岡町・南町が接するあたりです。ここは2つの収集地区(校下)の境目になっていて、どちらの地区かで答えが変わります。\n\n**番地ごとの所属地区(金沢市の町名一覧より)**\n- **長町地区**:香林坊2丁目1〜3・9・11〜14街区、4-1〜16・4-22〜36、5-11〜17、10-1〜21・10-28〜31、高岡町19街区\n- **松ヶ枝地区**:香林坊2丁目6〜8街区、4-17〜21、5-1〜10・5-18〜43、10-22〜27、高岡町1〜18・20〜23街区、南町全域\n\n**10月27日(火)に出せるごみ**\n\n| 地区 | 10/27(火) | 参考:この地区の燃やすごみの日 |\n|---|---|---|\n| **松ヶ枝** | **燃やすごみ**(毎週火・金) | 火・金 |\n| **長町** | **なし** | 月・木(前日の10/26(月)か10/29(木)に出す) |\n\n- 松ヶ枝地区の10月のほかの収集日は10/1、8、15、28、29です。\n- 長町地区の10月のほかの収集日は10/7、9、21、23、30です。どちらの地区も、27日に燃やすごみ以外の収集はありません。\n- 出す時間は、収集日の朝8時30分までです。袋は金沢市指定ごみ袋を使ってください。\n\n**一番近い番地からの推定**\nOpenStreetMapで一番近くにある登録地点は「香林坊2丁目11-5」で、ここは長町地区です。その場合、27日は何も出せません。ただし指定の座標はそこから東に30mほどずれていて、位置の誤差も約30mあります。東側の南町・高岡町(松ヶ枝地区)に入っている可能性も十分あります。\n\nごみを出す建物の番地を上の一覧で確かめてください。番地が分からなければ、収集場所(ステーション)の掲示か、アプリ「5374」で確認できます。\n\n**出典の読み取りについて**\n市のページから取り出した表では、区分名と曜日の列がずれていました。「週2回の曜日=燃やすごみ」と読み替えています。金沢市の燃やすごみは週2回収集なので、この読み替えは合っているはずです。\n\nSources:\n- [2026年度地区別収集カレンダー(トップページ・町名別校下一覧)](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー(長町ほか)](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html)\n- [2026年度地区・校下別収集カレンダー(松ヶ枝ほか)](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html)\n- [金沢市 家庭ごみと資源の出し方ルール(PDF)](https://www4.city.kanazawa.lg.jp/material/files/group/68/2025gominowakekatadashikatapanhu.pdf)\n- [ごみの出し方のルール/金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html)\n- [OpenStreetMap Nominatim 逆ジオコーディング](https://nominatim.openstreetmap.org/reverse?lat=36.564839&lon=136.652852&format=json&zoom=18&accept-language=ja)",
+ "ttft_ms": 5650,
+ "type": "result",
+ "duration_ms": 179021,
+ "uuid": "3de5d711-2bdc-4819-86ae-bed86ba0fbe9",
+ "ttft_stream_ms": 2239,
+ "time_to_request_ms": 38,
+ "first_content_frame_ms": 2239,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 180.1,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.564839、経度 136.652852 です (スマートフォンの位置の精度は約30m)。ここで2026年10月27日(火)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

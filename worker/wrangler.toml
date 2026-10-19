@@ -1,0 +1,27 @@
+# gomisute-gps の MCP サーバー (Streamable HTTP)。account_id は書かない (wrangler login したアカウントを使う)
+name = "gomisute-gps"
+main = "src/index.ts"
+compatibility_date = "2026-09-25"
+workers_dev = true
+
+# 自治体ごとのデータパック (nationwide/packs/build_packs.py が worker/packs/ に作る。鍵は src/generated/manifest.ts)
+[[r2_buckets]]
+binding = "PACKS"
+bucket_name = "gomisute-packs"
+
+# 公式ページの変更監視の結果 (status:<lg_code>。monitor.py の out/source_status.json と同じ形を自治体ごとに)
+[[kv_namespaces]]
+binding = "STATUS"
+id = "00000000000000000000000000000000"   # 本番の KV を作ったら、その id に置き換える (手元の wrangler dev はこのままでよい)
+
+# 緯度経度 → 市区町村 (gps2city Worker)。手元で gps2city が動いていなければ GPS2CITY_URL に聞く
+[[services]]
+binding = "GPS2CITY"
+service = "gps2city"
+
+[vars]
+GPS2CITY_URL = "https://gps2city.firemio.workers.dev"
+ALLOWED_ORIGINS = ""
+
+[observability]
+enabled = true

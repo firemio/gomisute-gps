@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 217157,
+ "stop_reason": "end_turn",
+ "session_id": "6cb5851e-ea61-45ca-bc74-11ffa7f09f7c",
+ "total_cost_usd": 0.3489373,
+ "usage": {
+  "input_tokens": 28,
+  "cache_creation_input_tokens": 14868,
+  "cache_read_input_tokens": 139420,
+  "output_tokens": 7588,
+  "output_tokens_details": {
+   "thinking_tokens": 2881
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14868,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1595,
+    "cache_read_input_tokens": 17170,
+    "cache_creation_input_tokens": 1267,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1267
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 28,
+   "outputTokens": 7588,
+   "cacheReadInputTokens": 139420,
+   "cacheCreationInputTokens": 14868,
+   "webSearchRequests": 0,
+   "costUSD": 0.29869999999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2881,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 189933,
+   "outputTokens": 22488,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.0502373,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 16451,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 22,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**答え：おそらく「燃やすごみ」ですが、確定はできません。** 現在地がちょうど2つの収集地区の境目にあり、どちらの地区かで答えが変わります。\n\n**場所**\n国土地理院の逆ジオコーダで調べると、金沢市**西念四丁目**です。金沢市の資料では、この丁目は街区（番地）によって「戸板」と「西」の2つの校下（収集地区）に分かれています。\n\n- 一番近い街区は**23番**と**22番**で、どちらも約50m先です。30mの位置誤差を考えると、どちらにいるのか絞りきれません。\n- 22番は「西」です。\n- 23番は番地で分かれていて、1〜15番地と35〜40番地は「戸板」、16〜34番地は「西」です。\n\n**2026年10月27日（火）に出せるもの**\n\n| 校下 | 毎週の燃やすごみ | 10/27（火） |\n|---|---|---|\n| **戸板** | 火・金 | **燃やすごみ** |\n| **西** | 月・木 | **収集なし** |\n\n市のカレンダーの「火曜日・金曜日」「月曜日・木曜日」という毎週の欄は、燃やすごみの日だと判断しました。ページから取り出した表の列の並びが崩れていたためです。この判断は、金沢市では燃やすごみが週2回でほかの品目は月1〜2回であることと、年末の最終収集日の注記が合うことからです。\n\n参考までに、10月のそのほかの収集日です。\n- 戸板：燃やさないごみ 15日（木）、あき缶・ペットボトル・プラスチック資源など 8日・22日（木）、プラスチック資源のみ 29日（木）、びん 7日（水）\n- 西：燃やさないごみ 2日（金）、あき缶・ペットボトル・プラスチック資源など 9日・23日（金）、プラスチック資源のみ 30日（金）、びん 21日（水）\n\n**確かめ方**\n番地まで分かれば、市の住所別一覧（下のリンク）で校下が決まります。いちばん確実なのは、ごみ集積所の看板で曜日を見ることです。どちらの場合も、出すのは収集日の**朝8時30分まで**です。分からないときは、金沢市ごみ減量推進課（076-220-2302）か、金沢市LINE公式アカウントの「収集日を知りたい」で確認できます。\n\nSources:\n- [国土地理院 逆ジオコーダ](https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat=36.588343&lon=136.631963)\n- [国土地理院 住所検索（街区位置）](https://msearch.gsi.go.jp/address-search/AddressSearch?q=金沢市西念四丁目23番)\n- [金沢市 2026年度地区別収集カレンダー（住所→校下）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー（戸板）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html)\n- [2026年度地区・校下別収集カレンダー（西）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3672.html)\n- [収集日(地区別収集カレンダー)](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/7597.html)\n- [ごみの出し方のルール](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7608.html)\n- [金沢市LINEごみ出しサポート](https://www4.city.kanazawa.lg.jp/material/files/group/68/LINE202508chirasi.pdf)\n- [金沢市 計画資料（燃やすごみ週2回）](https://www4.city.kanazawa.lg.jp/material/files/group/68/20140226siryou4.pdf)",
+ "ttft_ms": 5652,
+ "type": "result",
+ "duration_ms": 180011,
+ "uuid": "e74c9c58-b766-4da0-bdd2-21461f7c2a6e",
+ "ttft_stream_ms": 2671,
+ "time_to_request_ms": 37,
+ "first_content_frame_ms": 2671,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 181.3,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.588343、経度 136.631963 です (スマートフォンの位置の精度は約30m)。ここで2026年10月27日(火)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

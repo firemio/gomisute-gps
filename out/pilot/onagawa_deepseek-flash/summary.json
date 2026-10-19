@@ -1,0 +1,289 @@
+{
+ "model": "deepseek-flash",
+ "months": {
+  "2026-04": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     "なし"
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-05": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-06": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-07": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-08": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-09": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-10": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-11": {
+   "A": {
+    "ok": 26,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {
+     "burnable|黄色の日": {
+      "truth": [
+       2,
+       5,
+       9,
+       12,
+       16,
+       19,
+       23,
+       26,
+       30
+      ],
+      "got": [
+       2,
+       5,
+       9,
+       12,
+       16,
+       19,
+       26,
+       30
+      ],
+      "ok": false
+     }
+    }
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2026-12": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2027-01": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2027-02": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  },
+  "2027-03": {
+   "A": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   },
+   "B": {
+    "ok": 27,
+    "cells": 27,
+    "unsure": [
+     "",
+     ""
+    ],
+    "wrong": {}
+   }
+  }
+ },
+ "usage": {
+  "prompt_tokens": 80688,
+  "completion_tokens": 104196,
+  "calls": 48
+ },
+ "reader_A": {
+  "ok": 323,
+  "cells": 324
+ },
+ "reader_B": {
+  "ok": 324,
+  "cells": 324
+ },
+ "two_reader": {
+  "agreed_cells": 323,
+  "agreed_and_correct": 323,
+  "agreed_but_wrong": 0,
+  "disagreed_cells": 1
+ }
+}

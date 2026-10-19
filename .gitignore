@@ -29,3 +29,9 @@ out/kanazawa_holdout_blocks_s*_ids.json
 out/kanazawa_holdout_parcels_ids.json
 out/kanazawa_holdout_parcels_split_ids.json
 out/kanazawa_holdout_parcels*_ids.json
+
+# discover.py --replay の結果 (キャッシュだけで探し直したもの。本番の結果と比べるため)
+out/discover/replay/
+
+# discover.py の自治体ごとの結果 (1,741 件・約 130MB)。一覧は summary.csv。キャッシュ (data/discover/) から --replay で作り直せる
+out/discover/[0-9][0-9][0-9][0-9][0-9][0-9].json

@@ -1,0 +1,444 @@
+{
+ "g06": {
+  "web": {
+   "answer_id": "A29",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [
+    {
+     "quote": "弥生：燃やさないごみ 10/5・19（第1・3月）、資源（缶・ペット等）10/28（第4水）、資源（プラ）10/14（第2水）",
+     "why": "The official 弥生 calendar has 資源 あき缶・ペットボトル on 10/19, 燃やさないごみ on 10/28 and びん on 10/14."
+    },
+    {
+     "quote": "三馬：燃やさないごみ 10/13・27（第2・4火）、資源（缶・ペット等）10/21（第3水）",
+     "why": "The official 三馬 calendar has 資源 あき缶・ペットボトル on 10/13 and 10/27, and 燃やさないごみ on 10/21. This also contradicts the answer's own main table."
+    }
+   ],
+   "graded": "adjudicated",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A28",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g08": {
+  "web": {
+   "answer_id": "A17",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A02",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g07": {
+  "web": {
+   "answer_id": "A10",
+   "outcome": "wrong",
+   "truth_among_options": false,
+   "district_named": "correct",
+   "problems": [
+    {
+     "quote": "あき缶・ペットボトルなど | 第3水曜日",
+     "why": "The official 長土塀 calendar has びん on 10/21 (3rd Wednesday). 資源 あき缶・ペットボトル is on the 2nd and 4th Tuesdays (10/13, 10/27)."
+    },
+    {
+     "quote": "びん | 第1水曜日",
+     "why": "The official 長土塀 calendar has 燃やさないごみ on 11/4 (1st Wednesday), not びん."
+    },
+    {
+     "quote": "長町地区の燃やさないごみは第2・第4金曜日で、10月は9日と23日です",
+     "why": "The official 長町 calendar has 資源 on 10/23 and 燃やさないごみ on 10/21 (Wednesday)."
+    }
+   ],
+   "graded": "adjudicated",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A07",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g01": {
+  "web": {
+   "answer_id": "A31",
+   "outcome": "wrong",
+   "truth_among_options": false,
+   "district_named": "wrong",
+   "problems": [
+    {
+     "quote": "緯度36.543267、経度136.657478 は、石川県金沢市泉野町5丁目です",
+     "why": "The reference puts these coordinates exactly at 金沢市若草町4番27号, which is in the 十一屋 district, not 泉野町5丁目."
+    }
+   ],
+   "graded": "adjudicated",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A16",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g05": {
+  "web": {
+   "answer_id": "A09",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A24",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g09": {
+  "web": {
+   "answer_id": "A40",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [
+    {
+     "quote": "この座標は**金沢市本多町一丁目**（上本多町二番丁あたり）です",
+     "why": "The reference puts these coordinates exactly at 金沢市菊川二丁目32番18号, not 本多町一丁目."
+    }
+   ],
+   "graded": "adjudicated",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A14",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g04": {
+  "mcp": {
+   "answer_id": "A27",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "web": {
+   "answer_id": "A03",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [
+    {
+     "quote": "10/28（水）：資源ごみ",
+     "why": "The official 菊川 calendar has びん on 10/28. びん is listed as a separate category from 資源 (あき缶・ペットボトル等), which 菊川 collects on Mondays such as 10/19, and the answer uses the same 資源ごみ label for 10/19."
+    }
+   ],
+   "graded": "adjudicated",
+   "judges_agreed": true
+  }
+ },
+ "g03": {
+  "web": {
+   "answer_id": "A05",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A23",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g10": {
+  "web": {
+   "answer_id": "A38",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A25",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g02": {
+  "web": {
+   "answer_id": "A06",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [
+    {
+     "quote": "この座標は**金沢市尾張町一丁目**",
+     "why": "The reference puts these coordinates exactly at 金沢市大手町4番6号, not 尾張町一丁目."
+    }
+   ],
+   "graded": "adjudicated",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A20",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g18": {
+  "mcp": {
+   "answer_id": "A22",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "web": {
+   "answer_id": "A13",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g11": {
+  "mcp": {
+   "answer_id": "A08",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "web": {
+   "answer_id": "A32",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g15": {
+  "web": {
+   "answer_id": "A19",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A26",
+   "outcome": "asked_back",
+   "truth_among_options": false,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g19": {
+  "web": {
+   "answer_id": "A33",
+   "outcome": "wrong",
+   "truth_among_options": false,
+   "district_named": "wrong",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A01",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g14": {
+  "web": {
+   "answer_id": "A11",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A15",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g12": {
+  "web": {
+   "answer_id": "A21",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "mcp": {
+   "answer_id": "A34",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g13": {
+  "mcp": {
+   "answer_id": "A35",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "web": {
+   "answer_id": "A36",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g20": {
+  "mcp": {
+   "answer_id": "A30",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "web": {
+   "answer_id": "A37",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g17": {
+  "mcp": {
+   "answer_id": "A04",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "web": {
+   "answer_id": "A18",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ },
+ "g16": {
+  "mcp": {
+   "answer_id": "A12",
+   "outcome": "asked_back",
+   "truth_among_options": true,
+   "district_named": "several",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  },
+  "web": {
+   "answer_id": "A39",
+   "outcome": "correct",
+   "truth_among_options": true,
+   "district_named": "correct",
+   "problems": [],
+   "graded": "agreed",
+   "judges_agreed": true
+  }
+ }
+}

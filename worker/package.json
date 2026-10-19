@@ -1,0 +1,22 @@
+{
+  "name": "gomisute-gps-worker",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "description": "gomisute-gps の MCP サーバー (Cloudflare Worker、Streamable HTTP)。Python (mcp_server.py) と同じ答えを返す",
+  "scripts": {
+    "build": "tsc --noEmit && wrangler deploy --dry-run --outdir dist",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --test-reporter=spec \"test/*.test.ts\"",
+    "dev": "wrangler dev --local",
+    "seed:local": "node scripts/put-data.mjs --local"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "typescript": "5.9.3",
+    "wrangler": "4.146.0"
+  }
+}

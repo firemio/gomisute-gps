@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 7632,
+ "stop_reason": "end_turn",
+ "session_id": "8e088a16-cc91-4249-89d8-6c79d2eb493c",
+ "total_cost_usd": 0.04127,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3403,
+  "cache_read_input_tokens": 11050,
+  "output_tokens": 591,
+  "output_tokens_details": {
+   "thinking_tokens": 27
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3403,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 471,
+    "cache_read_input_tokens": 6165,
+    "cache_creation_input_tokens": 2123,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2123
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 591,
+   "cacheReadInputTokens": 11050,
+   "cacheCreationInputTokens": 3403,
+   "webSearchRequests": 0,
+   "costUSD": 0.04127,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 27,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "2026年10月29日(木)にこの場所で出せるのは**資源 プラスチック資源**です（戸板地区の「第5木曜日」の収集）。\n\n- **出す時刻:** 収集日の午前8時30分まで\n- **場所:** 石川県金沢市 駅西本町六丁目10番2号の付近です。収集カレンダーでは**戸板地区**にあたります。\n- **確認:** 位置からの判定なので、念のため住所を確かめてください。駅西本町6丁目の1〜14番、または二宮町なら戸板地区です。15番は号によって違うので、住所がずれている場合は教えてください。\n\n参考に、この後の収集日は次のとおりです。\n- 10/30(金) 燃やすごみ\n- 11/4(水) びん\n- 11/12(木) 資源 あき缶・ペットボトル プラスチック資源など\n- 11/19(木) 燃やさないごみ\n\n分け方（袋や容器など）と集積所の場所は、このデータに含まれていません。分からないときは金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典: 金沢市「2026年度地区・校下別収集カレンダー(その4) — 戸板（東部管理センター）2026年度版」、「ごみの出し方のルール」",
+ "ttft_ms": 2457,
+ "type": "result",
+ "duration_ms": 12970,
+ "uuid": "afd796cd-1b1c-4be7-9784-6bbc38571a5b",
+ "ttft_stream_ms": 1909,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1909,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 14.5,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.58599、経度 136.628364 です。ここで2026年10月29日(木)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

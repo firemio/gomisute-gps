@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 136488,
+ "stop_reason": "end_turn",
+ "session_id": "5945e3ed-70e1-4ca0-a725-f0051ce15114",
+ "total_cost_usd": 0.22737739999999995,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 11218,
+  "cache_read_input_tokens": 51773,
+  "output_tokens": 4343,
+  "output_tokens_details": {
+   "thinking_tokens": 2082
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11218,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2334,
+    "cache_read_input_tokens": 11529,
+    "cache_creation_input_tokens": 1496,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1496
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 16,
+   "outputTokens": 4343,
+   "cacheReadInputTokens": 51773,
+   "cacheCreationInputTokens": 11218,
+   "webSearchRequests": 0,
+   "costUSD": 0.18702259999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2082,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 111503,
+   "outputTokens": 18409,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.0403548,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 13340,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "## 10月26日(月)に出せるのは「燃やすごみ」です（たぶん）\n\nこの座標は**金沢市尾張町一丁目**（〒920-0902、大手町との境界付近）でした。金沢市は校下ごとに収集日が決まっていて、尾張町一丁目は番地によって**味噌蔵・材木・松ヶ枝**の3つの校下に分かれます。番地の大半は味噌蔵校下です。\n\n| 校下 | 燃やすごみの曜日 | 10/26(月)に出せるもの |\n|---|---|---|\n| **味噌蔵**（尾張町1丁目の大半） | 月・木 | **燃やすごみ** |\n| 材木（1丁目7番10〜14） | 月・木 | **燃やすごみ** |\n| 松ヶ枝（1丁目1番1〜9、11番1〜6・26・27） | 火・金 | **なし**（10月の松ヶ枝の収集日は1・8・15・28・29日、それと毎週火・金） |\n\n10月26日は第4月曜日です。燃やさないごみや資源（びん・缶・ペットボトル・プラスチック資源など）の収集は、どの校下も月に1〜2回の水・火・木曜日なので、この日には入っていません。\n\n**注意点**\n- 座標は境界に近い道路上にあり、どの番地にあたるかまでは特定できていません。住所が上の松ヶ枝の番地に当てはまる場合、この日は収集がありません。\n- 市の公式ページでは、曜日の見出しと日付の列の対応が崩れて表示されていました。曜日と日付を照らし合わせて読み取ったので、正確に知りたい場合は公式カレンダー（Excel版）、金沢市のLINE公式アカウント、またはごみ減量推進課（076-220-2302）で確認してください。\n\nSources:\n- [2026年度地区別収集カレンダー(トップページ)／金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー（松ヶ枝・味噌蔵ほか）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html)\n- [2026年度地区・校下別収集カレンダー（材木ほか）](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3670.html)\n- [OpenStreetMap Nominatim 逆ジオコーディング](https://nominatim.openstreetmap.org/reverse?lat=36.568979&lon=136.661694&format=json&accept-language=ja&zoom=18)",
+ "ttft_ms": 4313,
+ "type": "result",
+ "duration_ms": 128129,
+ "uuid": "6f8f58d6-ffd4-4ade-91d8-4914b44282bd",
+ "ttft_stream_ms": 1382,
+ "time_to_request_ms": 42,
+ "first_content_frame_ms": 1383,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 129.4,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.568979、経度 136.661694 です。ここで2026年10月26日(月)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

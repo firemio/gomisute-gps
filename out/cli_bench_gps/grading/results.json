@@ -1,0 +1,853 @@
+[
+ {
+  "batch": "gps_1",
+  "judges": [
+   {
+    "grades": [
+     {
+      "answer_id": "A16",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be fixed from the location, gives 十一屋 = びん and 泉野 = no collection as conditional answers, and asks for the block number."
+     },
+     {
+      "answer_id": "A31",
+      "outcome": "wrong",
+      "truth_among_options": false,
+      "district_named": "wrong",
+      "problems": [
+       {
+        "quote": "石川県金沢市泉野町5丁目です",
+        "why": "The true location is 若草町4番27号, not 泉野町5丁目"
+       }
+      ],
+      "reason": "Commits to the 泉野 district and says nothing is collected, but the truth is 十一屋 with びん that day."
+     },
+     {
+      "answer_id": "A06",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [
+       {
+        "quote": "この座標は**金沢市尾張町一丁目**",
+        "why": "The true location is 大手町4番6号"
+       }
+      ],
+      "reason": "Gives 燃やすごみ as the answer (hedged 'たぶん') while listing 味噌蔵/材木/松ヶ枝 as possible districts; 燃やすごみ matches the truth for 味噌蔵."
+     },
+     {
+      "answer_id": "A20",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 味噌蔵 and 燃やすごみ, which matches the truth, and the later dates match the official calendar."
+     },
+     {
+      "answer_id": "A05",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 戸板 with only container plastic (プラスチック資源), which matches the truth."
+     },
+     {
+      "answer_id": "A23",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 戸板 and 資源 プラスチック資源, which matches the truth."
+     },
+     {
+      "answer_id": "A03",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [
+       {
+        "quote": "10/28（水）：資源ごみ",
+        "why": "菊川 collects びん on 10/28, not 資源ごみ"
+       }
+      ],
+      "reason": "Commits to 菊川 and 燃やすごみ, which matches the truth."
+     },
+     {
+      "answer_id": "A27",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 菊川 and 燃やすごみ, which matches the truth, and the listed later dates match the official calendar."
+     },
+     {
+      "answer_id": "A09",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 長町 and プラスチック資源 on the 5th Friday, which matches the truth."
+     },
+     {
+      "answer_id": "A24",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 長町 and 資源 プラスチック資源, which matches the truth."
+     },
+     {
+      "answer_id": "A28",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Declines to pick between 弥生 (燃やすごみ) and 三馬 (資源) and asks for the street number; the truth is among the options."
+     },
+     {
+      "answer_id": "A29",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [
+       {
+        "quote": "弥生：燃やさないごみ 10/5・19（第1・3月）、資源（缶・ペット等）10/28（第4水）、資源（プラ）10/14（第2水）",
+        "why": "For 弥生, 10/19 is 資源 あき缶 etc., 10/28 is 燃やさないごみ, and 10/14 is びん"
+       },
+       {
+        "quote": "三馬：燃やさないごみ 10/13・27（第2・4火）、資源（缶・ペット等）10/21（第3水）",
+        "why": "For 三馬, 10/13 and 10/27 are 資源 あき缶 etc. and 10/21 is 燃やさないごみ"
+       }
+      ],
+      "reason": "Gives conditional answers for 弥生 (燃やすごみ) and 三馬 (資源) and asks the user to check the street number; the truth is among them."
+     },
+     {
+      "answer_id": "A07",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 長土塀 and 資源 あき缶・ペットボトル プラスチック資源など, which matches the truth."
+     },
+     {
+      "answer_id": "A10",
+      "outcome": "wrong",
+      "truth_among_options": false,
+      "district_named": "correct",
+      "problems": [
+       {
+        "quote": "あき缶・ペットボトルなど | 第3水曜日",
+        "why": "長土塀 collects 資源 on the 2nd and 4th Tuesdays (10/13, 10/27); the 3rd Wednesday (10/21) is びん"
+       },
+       {
+        "quote": "びん | 第1水曜日",
+        "why": "For 長土塀, 11/4 (1st Wed) is 燃やさないごみ, not びん"
+       },
+       {
+        "quote": "長町地区の燃やさないごみは第2・第4金曜日で、10月は9日と23日",
+        "why": "For 長町, 10/23 is 資源 and 燃やさないごみ is 10/21"
+       }
+      ],
+      "reason": "Names the correct district 長土塀 but commits to 燃やさないごみ instead of 資源 あき缶・ペットボトル プラスチック資源など."
+     },
+     {
+      "answer_id": "A02",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 小立野 and 資源 プラスチック資源, which matches the truth."
+     },
+     {
+      "answer_id": "A17",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the block cannot be determined, gives conditional answers for 小立野/南小立野/菊川 (only leaning toward 小立野), and asks for the block number."
+     },
+     {
+      "answer_id": "A14",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 菊川 and びん, which matches the truth."
+     },
+     {
+      "answer_id": "A40",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [
+       {
+        "quote": "この座標は**金沢市本多町一丁目**",
+        "why": "The true location is 菊川二丁目32番18号"
+       }
+      ],
+      "reason": "Commits to 'ほぼ確実に びん' while listing 菊川 and 小立野 as possible districts; びん matches the truth."
+     },
+     {
+      "answer_id": "A25",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 馬場 and 燃やすごみ, which matches the truth."
+     },
+     {
+      "answer_id": "A38",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 馬場 and 燃やすごみ only, which matches the truth, and the October schedule it gives matches the official calendar."
+     }
+    ]
+   },
+   {
+    "grades": [
+     {
+      "answer_id": "A16",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be fixed and gives conditional answers (十一屋: びん, 泉野: 収集なし) and asks for the block number; the truth is one of the options."
+     },
+     {
+      "answer_id": "A31",
+      "outcome": "wrong",
+      "truth_among_options": false,
+      "district_named": "wrong",
+      "problems": [
+       {
+        "quote": "石川県金沢市泉野町5丁目です。市の町名一覧では「泉野」校下になります",
+        "why": "The true location is 若草町4番27号 in the 十一屋 district, not 泉野町5丁目 / 泉野."
+       }
+      ],
+      "reason": "Commits to the 泉野 district with no collection on 10/28, but the true 十一屋 district collects びん that day, and 十一屋 is never mentioned."
+     },
+     {
+      "answer_id": "A06",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [
+       {
+        "quote": "この座標は**金沢市尾張町一丁目**",
+        "why": "The true location is 大手町4番6号, not 尾張町一丁目."
+       }
+      ],
+      "reason": "The headline commits to 燃やすごみ, which matches the truth (味噌蔵), while it lists 味噌蔵, 材木 and 松ヶ枝 as possible districts."
+     },
+     {
+      "answer_id": "A20",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 燃やすごみ in the 味噌蔵 district, matching the truth; the later dates, put-out time and contact all match the reference."
+     },
+     {
+      "answer_id": "A05",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to plastic resources only (資源 プラスチック資源) in the 戸板 district, matching the truth; the 大徳 note is only a caveat."
+     },
+     {
+      "answer_id": "A23",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 資源 プラスチック資源 in the 戸板 district, matching the truth; its later dates match the official calendar."
+     },
+     {
+      "answer_id": "A03",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [
+       {
+        "quote": "10/28（水）：資源ごみ",
+        "why": "The official 菊川 calendar has びん on 10/28, not 資源ごみ."
+       }
+      ],
+      "reason": "Commits to 燃やすごみ in the 菊川 district, matching the truth, with 南小立野 given only as a caveat."
+     },
+     {
+      "answer_id": "A27",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 燃やすごみ in the 菊川 district, matching the truth; its later dates match the official calendar."
+     },
+     {
+      "answer_id": "A09",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to プラスチック資源 in the 長町 district, matching the truth; its schedule table agrees with the official window."
+     },
+     {
+      "answer_id": "A24",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 資源 プラスチック資源 in the 長町 district, matching the truth; its later dates, put-out time and contact are correct."
+     },
+     {
+      "answer_id": "A28",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Explicitly declines to pick a district, gives 弥生 (燃やすごみ) and 三馬 (資源) as options and asks for the block number; the truth is among the options."
+     },
+     {
+      "answer_id": "A29",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [
+       {
+        "quote": "弥生：燃やさないごみ 10/5・19（第1・3月）、資源（缶・ペット等）10/28（第4水）、資源（プラ）10/14（第2水）",
+        "why": "Officially 弥生 has 資源 on 10/19, 燃やさないごみ on 10/28 and びん on 10/14."
+       },
+       {
+        "quote": "三馬：燃やさないごみ 10/13・27（第2・4火）、資源（缶・ペット等）10/21（第3水）",
+        "why": "Officially 三馬 has 資源 on 10/13 and 10/27, and 燃やさないごみ on 10/21."
+       }
+      ],
+      "reason": "Gives conditional answers for 弥生 (燃やすごみ) and 三馬 (資源) and asks the user to check their block number, without committing to either; the truth is among the options."
+     },
+     {
+      "answer_id": "A07",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 資源 あき缶・ペットボトル プラスチック資源など in the 長土塀 district, matching the truth; its later dates match the official calendar."
+     },
+     {
+      "answer_id": "A10",
+      "outcome": "wrong",
+      "truth_among_options": false,
+      "district_named": "correct",
+      "problems": [
+       {
+        "quote": "あき缶・ペットボトルなど | 第3水曜日",
+        "why": "Officially 長土塀 has びん on the 3rd Wednesday (10/21); あき缶・ペットボトル is on the 2nd and 4th Tuesdays."
+       },
+       {
+        "quote": "びん | 第1水曜日",
+        "why": "Officially 長土塀 has 燃やさないごみ on the 1st Wednesday (11/4)."
+       },
+       {
+        "quote": "長町地区の燃やさないごみは第2・第4金曜日で、10月は9日と23日です",
+        "why": "Officially 長町 has 資源 on 10/23 and 燃やさないごみ on 10/21 (a Wednesday)."
+       }
+      ],
+      "reason": "Names the correct 長土塀 district but commits to 燃やさないごみ, while the truth is 資源 あき缶・ペットボトル プラスチック資源など."
+     },
+     {
+      "answer_id": "A02",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 資源 プラスチック資源 in the 小立野 district, matching the truth; its later dates are correct."
+     },
+     {
+      "answer_id": "A17",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the block cannot be determined, gives per-district answers for 小立野, 南小立野 and 菊川 (only leaning to 小立野) and asks for the block number; the truth is among the options."
+     },
+     {
+      "answer_id": "A14",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to びん in the 菊川 district, matching the truth; its later dates match the official calendar."
+     },
+     {
+      "answer_id": "A40",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [
+       {
+        "quote": "この座標は**金沢市本多町一丁目**（上本多町二番丁あたり）です",
+        "why": "The true location is 菊川二丁目32番18号, not 本多町一丁目."
+       }
+      ],
+      "reason": "Commits to びん as the main answer, which matches the truth (菊川), while it lists 菊川 and 小立野 as possible districts."
+     },
+     {
+      "answer_id": "A25",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 燃やすごみ in the 馬場 district, matching the truth; its later dates match the official calendar."
+     },
+     {
+      "answer_id": "A38",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 燃やすごみ in the 馬場 district, matching the truth; its schedule details match the official window."
+     }
+    ]
+   }
+  ],
+  "disputes": [
+   "A31",
+   "A06",
+   "A03",
+   "A29",
+   "A10",
+   "A40"
+  ],
+  "decisions": [
+   {
+    "answer_id": "A31",
+    "outcome": "wrong",
+    "truth_among_options": false,
+    "district_named": "wrong",
+    "confirmed_problems": [
+     {
+      "quote": "緯度36.543267、経度136.657478 は、石川県金沢市泉野町5丁目です",
+      "why": "The reference puts these coordinates exactly at 金沢市若草町4番27号, which is in the 十一屋 district, not 泉野町5丁目."
+     }
+    ],
+    "note": "Commits to the 泉野 district and says nothing is collected on 10/28. The truth is 十一屋 with びん that day, and 十一屋 is never offered. The 泉野 calendar details it gives (16日 燃やさないごみ, 23日 資源, 月木 燃やすごみ) match the official window, so only the location claim is confirmed."
+   },
+   {
+    "answer_id": "A06",
+    "outcome": "correct",
+    "truth_among_options": true,
+    "district_named": "several",
+    "confirmed_problems": [
+     {
+      "quote": "この座標は**金沢市尾張町一丁目**",
+      "why": "The reference puts these coordinates exactly at 金沢市大手町4番6号, not 尾張町一丁目."
+     }
+    ],
+    "note": "Its headline gives 燃やすごみ as the answer (hedged with たぶん), which matches the truth (味噌蔵). It lists 味噌蔵, 材木 and 松ヶ枝 as possible districts without committing to one. Its 松ヶ枝 dates (15, 28 and 29) and 味噌蔵 days match the official window."
+   },
+   {
+    "answer_id": "A03",
+    "outcome": "correct",
+    "truth_among_options": true,
+    "district_named": "correct",
+    "confirmed_problems": [
+     {
+      "quote": "10/28（水）：資源ごみ",
+      "why": "The official 菊川 calendar has びん on 10/28. びん is listed as a separate category from 資源 (あき缶・ペットボトル等), which 菊川 collects on Mondays such as 10/19, and the answer uses the same 資源ごみ label for 10/19."
+     }
+    ],
+    "note": "Commits to the 菊川 district and 燃やすごみ on 10/27, which matches the truth. 南小立野 appears only as a caveat."
+   },
+   {
+    "answer_id": "A29",
+    "outcome": "asked_back",
+    "truth_among_options": true,
+    "district_named": "several",
+    "confirmed_problems": [
+     {
+      "quote": "弥生：燃やさないごみ 10/5・19（第1・3月）、資源（缶・ペット等）10/28（第4水）、資源（プラ）10/14（第2水）",
+      "why": "The official 弥生 calendar has 資源 あき缶・ペットボトル on 10/19, 燃やさないごみ on 10/28 and びん on 10/14."
+     },
+     {
+      "quote": "三馬：燃やさないごみ 10/13・27（第2・4火）、資源（缶・ペット等）10/21（第3水）",
+      "why": "The official 三馬 calendar has 資源 あき缶・ペットボトル on 10/13 and 10/27, and 燃やさないごみ on 10/21. This also contradicts the answer's own main table."
+     }
+    ],
+    "note": "Gives conditional answers for 弥生 (燃やすごみ) and 三馬 (資源) and asks the user to check their block number without committing to either. The truth (弥生, 燃やすごみ) is among the options."
+   },
+   {
+    "answer_id": "A10",
+    "outcome": "wrong",
+    "truth_among_options": false,
+    "district_named": "correct",
+    "confirmed_problems": [
+     {
+      "quote": "あき缶・ペットボトルなど | 第3水曜日",
+      "why": "The official 長土塀 calendar has びん on 10/21 (3rd Wednesday). 資源 あき缶・ペットボトル is on the 2nd and 4th Tuesdays (10/13, 10/27)."
+     },
+     {
+      "quote": "びん | 第1水曜日",
+      "why": "The official 長土塀 calendar has 燃やさないごみ on 11/4 (1st Wednesday), not びん."
+     },
+     {
+      "quote": "長町地区の燃やさないごみは第2・第4金曜日で、10月は9日と23日です",
+      "why": "The official 長町 calendar has 資源 on 10/23 and 燃やさないごみ on 10/21 (Wednesday)."
+     }
+    ],
+    "note": "Names the correct 長土塀 district but commits to 燃やさないごみ. The truth is 資源 あき缶・ペットボトル プラスチック資源など, and that never appears as an option for 10/27."
+   },
+   {
+    "answer_id": "A40",
+    "outcome": "correct",
+    "truth_among_options": true,
+    "district_named": "several",
+    "confirmed_problems": [
+     {
+      "quote": "この座標は**金沢市本多町一丁目**（上本多町二番丁あたり）です",
+      "why": "The reference puts these coordinates exactly at 金沢市菊川二丁目32番18号, not 本多町一丁目."
+     }
+    ],
+    "note": "Commits to びん as the main answer (ほぼ確実に), which matches the truth (菊川). It lists 菊川 and 小立野 as possible districts. Its 菊川 dates in the window (10/19 資源, 火・金 燃やすごみ) are consistent with the official calendar."
+   }
+  ]
+ },
+ {
+  "batch": "gps_2",
+  "judges": [
+   {
+    "grades": [
+     {
+      "answer_id": "A08",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be determined, lists 松ヶ枝 (燃やすごみ), 長町 and 長土塀 as conditional options, and asks for the street address."
+     },
+     {
+      "answer_id": "A32",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Gives conditional answers for 松ヶ枝 (燃やすごみ) and 長町 (なし) and asks the user to check the 番地 without committing; its nearest-point estimate leans to 長町 but explicitly leaves 松ヶ枝 open."
+     },
+     {
+      "answer_id": "A21",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "States 「答え：おそらく燃やすごみ」 as its main answer, which matches truth, while noting that 戸板 and 西 cannot be fully separated."
+     },
+     {
+      "answer_id": "A34",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Declines to commit, lists 戸板 (燃やすごみ) and 西 (収集なし), and asks for the block and number."
+     },
+     {
+      "answer_id": "A35",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says it cannot pick one district, lists 弥生 (燃やさないごみ), 三馬 and 野町 (収集なし), and asks for the address."
+     },
+     {
+      "answer_id": "A36",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Gives 「たぶん燃やさないごみ」 as its main answer, which matches truth (弥生), with a hedge that some 番地 have no collection."
+     },
+     {
+      "answer_id": "A11",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 泉野 and 燃やすごみ on 10/26, which matches truth."
+     },
+     {
+      "answer_id": "A15",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says it cannot answer yet, lists 泉野 (燃やすごみ), 新竪町, 野町, 十一屋 and 菊川 as candidates, and asks for the address."
+     },
+     {
+      "answer_id": "A19",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the answer depends on the 番地 (泉野 → びん, 弥生 → none) and asks the user to check the house number, so it does not commit."
+     },
+     {
+      "answer_id": "A26",
+      "outcome": "asked_back",
+      "truth_among_options": false,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Names 泉野 and 長坂台 as candidate districts and asks for the address, but never states what either district collects on 11/4, so びん does not appear."
+     },
+     {
+      "answer_id": "A12",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be determined, lists 菊川, 新竪町 (資源 あき缶・ペットボトル等) and 小立野, and asks for the address."
+     },
+     {
+      "answer_id": "A39",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 新竪町 and 資源 (あき缶・ペットボトル・プラスチック資源など) as the expected answer, which matches truth, with a hedge to check the 番地."
+     },
+     {
+      "answer_id": "A04",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district is undetermined, lists 此花 (プラスチック資源), 諸江, 長田町 and 芳斎 as candidates, and asks for the address."
+     },
+     {
+      "answer_id": "A18",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 此花 and プラスチック資源 on 10/30, which matches truth."
+     },
+     {
+      "answer_id": "A13",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be determined, gives a per-番地 table for 芳斎 (燃やさないごみ), 松ヶ枝 and 此花, and asks the user to pick their row."
+     },
+     {
+      "answer_id": "A22",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says it cannot answer from the location, lists 松ヶ枝, 芳斎 (燃やさないごみ) and 此花 with conditions, and asks for the block and number."
+     },
+     {
+      "answer_id": "A01",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be determined, lists 泉野 (燃やすごみ), 野町 and 弥生, and asks for the address."
+     },
+     {
+      "answer_id": "A33",
+      "outcome": "wrong",
+      "truth_among_options": false,
+      "district_named": "wrong",
+      "problems": [],
+      "reason": "Commits to 野町 and 燃やさないごみ, but truth is 泉野 with 燃やすごみ, and no alternative is offered."
+     },
+     {
+      "answer_id": "A30",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says it cannot determine the district, lists 野町 (燃やさないごみ), 泉野 and 弥生, and asks for the address."
+     },
+     {
+      "answer_id": "A37",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 「ほぼ確実に野町校下」 and 燃やさないごみ, which matches truth, with a hedge to confirm the 番地."
+     }
+    ]
+   },
+   {
+    "grades": [
+     {
+      "answer_id": "A08",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be determined, lists 松ヶ枝 (燃やすごみ), 長町 (収集なし) and 長土塀 (資源) as conditional options, and asks for the address; the truth 松ヶ枝/燃やすごみ is among them."
+     },
+     {
+      "answer_id": "A32",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the answer depends on the block number and gives conditional answers for 松ヶ枝 (燃やすごみ) and 長町 (なし); its nearest-address estimate leans to 長町 but is framed as conditional, and the truth option is listed."
+     },
+     {
+      "answer_id": "A21",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Gives 「答え：おそらく燃やすごみ」 as its main answer, which matches truth (戸板, 燃やすごみ), while presenting 戸板 and 西 as candidate districts."
+     },
+     {
+      "answer_id": "A34",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Declines to commit, gives 戸板 (燃やすごみ) and 西 (収集なし) as conditional options, and asks for the block/number; truth is among them."
+     },
+     {
+      "answer_id": "A35",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be determined, lists 弥生 (燃やさないごみ), 三馬 and 野町 (収集なし), and asks for the address; truth 弥生/燃やさないごみ is listed."
+     },
+     {
+      "answer_id": "A36",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Commits to 「たぶん燃やさないごみ」 as its headline answer, which matches truth (弥生), while noting 野町 and 三馬 as possible exceptions."
+     },
+     {
+      "answer_id": "A11",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 泉野 and 燃やすごみ, matching truth; its other calendar dates agree with the official window."
+     },
+     {
+      "answer_id": "A15",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says it cannot answer yet, lists five candidate districts including 泉野 (燃やすごみ), and asks for the address."
+     },
+     {
+      "answer_id": "A19",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Gives conditional answers (泉野 → びん, 弥生 → 収集なし) and asks the user to check the block number; the truth 泉野/びん is one option."
+     },
+     {
+      "answer_id": "A26",
+      "outcome": "asked_back",
+      "truth_among_options": false,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Names 泉野 and 長坂台 as candidates and asks for the address, but never states what either collects on 11/4, so the truth categories do not appear."
+     },
+     {
+      "answer_id": "A12",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Declines to commit, lists 菊川 (収集なし), 新竪町 (資源) and 小立野 (収集なし), and asks for the address; truth 新竪町/資源 is listed."
+     },
+     {
+      "answer_id": "A39",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 新竪町 and 資源 (あき缶・ペットボトル・プラスチック資源など), matching truth; its stated schedule agrees with the official window."
+     },
+     {
+      "answer_id": "A04",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the items are unknown because the district is undetermined, lists 此花 (プラスチック資源) among four candidates, and asks for the address."
+     },
+     {
+      "answer_id": "A18",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 此花 and プラスチック資源 only, matching truth; the other 此花 and 諸江 dates it gives agree with the reference."
+     },
+     {
+      "answer_id": "A13",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says the district cannot be determined and gives per-district answers for 芳斎 (燃やさないごみ), 松ヶ枝 (資源) and 此花 (燃やすごみ), asking the user to pick by block number."
+     },
+     {
+      "answer_id": "A22",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Declines to answer, asks for the block/number, and lists 松ヶ枝, 芳斎 (燃やさないごみ) and 此花 as conditional options."
+     },
+     {
+      "answer_id": "A01",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says no single answer can be chosen, lists 泉野 (燃やすごみ), 野町 (燃やさないごみ) and 弥生 (収集なし), and asks for the address."
+     },
+     {
+      "answer_id": "A33",
+      "outcome": "wrong",
+      "truth_among_options": false,
+      "district_named": "wrong",
+      "problems": [],
+      "reason": "Commits to 野町 and 燃やさないごみ, but the truth is 泉野/燃やすごみ, and it offers no alternative."
+     },
+     {
+      "answer_id": "A30",
+      "outcome": "asked_back",
+      "truth_among_options": true,
+      "district_named": "several",
+      "problems": [],
+      "reason": "Says it cannot determine the district, lists 野町 (燃やさないごみ), 泉野 (燃やすごみ) and 弥生 (収集なし), and asks for the address."
+     },
+     {
+      "answer_id": "A37",
+      "outcome": "correct",
+      "truth_among_options": true,
+      "district_named": "correct",
+      "problems": [],
+      "reason": "Commits to 野町 (「ほぼ確実」) and 燃やさないごみ only, matching truth, while suggesting the user confirm the block number."
+     }
+    ]
+   }
+  ],
+  "decisions": []
+ }
+]

@@ -3,6 +3,7 @@
 
   python bench/cli_bench.py mcp [--jobs 1] [--only c01,O2]
   python bench/cli_bench.py web [--jobs 4]
+  python bench/cli_bench.py mcp --questions gps-hard-questions.json --out cli_bench_gps   # 緯度経度だけの難しい 20問
   → out/cli_bench/<mode>/<id>.json (claude -p --output-format json の出力そのもの) と out/cli_bench/<mode>.jsonl (1問1行の集計)
 
 質問は docs/mcp-bench-kanazawa.json (28問) と docs/mcp-bench-onagawa.json (10問)。どちらも Opus、追加の指示 (システムプロンプト) なし、1問ずつ新しいセッション。
@@ -16,9 +17,11 @@ OUT = os.path.join(ROOT, "out", "cli_bench")
 DROP_ENV = ("CLAUDECODE", "CLAUDE_CODE_CHILD_SESSION", "CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH", "CLAUDE_CODE_MESSAGING_SOCKET", "CLAUDE_CODE_ENTRYPOINT")
 MCP_TOOLS = ["mcp__gomisute__garbage_collection_by_address", "mcp__gomisute__garbage_collection_by_location", "mcp__gomisute__garbage_sorting"]
 
+QFILES = ["mcp-bench-kanazawa.json", "mcp-bench-onagawa.json"]
+
 def questions():
     qs = []
-    for f in ("mcp-bench-kanazawa.json", "mcp-bench-onagawa.json"):
+    for f in QFILES:
         for c in json.load(open(os.path.join(ROOT, "docs", f), encoding="utf-8"))["cases"]:
             qs.append({"id": c["id"], "question": c["question"]})
     return qs
@@ -34,8 +37,8 @@ def redact(o):
     if isinstance(o, list): return [redact(v) for v in o]
     return o
 
-def run(mode, q, workdir, cfg):
-    path = os.path.join(OUT, mode, q["id"] + ".json")
+def run(mode, q, workdir, cfg, out=None):
+    path = os.path.join(out or OUT, mode, q["id"] + ".json")
     if os.path.exists(path):
         try:
             d = json.load(open(path, encoding="utf-8"))
@@ -55,8 +58,8 @@ def run(mode, q, workdir, cfg):
     json.dump(redact(d), open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return q["id"], "error" if d.get("is_error") else "ok"
 
-def row(mode, qid):
-    d = json.load(open(os.path.join(OUT, mode, qid + ".json"), encoding="utf-8"))
+def row(mode, qid, out=None):
+    d = json.load(open(os.path.join(out or OUT, mode, qid + ".json"), encoding="utf-8"))
     u = d.get("usage") or {}
     stu = u.get("server_tool_use") or {}
     return {"id": qid, "mode": mode, "is_error": d.get("is_error"), "wall_seconds": d.get("wall_seconds"), "duration_ms": d.get("duration_ms"),
@@ -82,7 +85,11 @@ if __name__ == "__main__":
     ap.add_argument("--jobs", type=int, default=1)
     ap.add_argument("--only", default="")
     ap.add_argument("--rows-only", action="store_true", help="測り直さず、記録から 1問1行の集計だけ作り直す")
+    ap.add_argument("--questions", default="", help="docs/ の問題ファイル (カンマ区切り)。既定は金沢 28問と女川 10問")
+    ap.add_argument("--out", default="cli_bench", help="out/ の下の記録のフォルダ名 (既定 cli_bench)")
     a = ap.parse_args()
+    if a.questions: QFILES[:] = a.questions.split(",")
+    OUT = os.path.join(ROOT, "out", a.out)
     sys.stdout.reconfigure(encoding="utf-8")
     os.makedirs(os.path.join(OUT, a.mode), exist_ok=True)
     qs = [q for q in questions() if not a.only or q["id"] in a.only.split(",")]
@@ -91,9 +98,9 @@ if __name__ == "__main__":
     json.dump({"mcpServers": {"gomisute": {"command": sys.executable, "args": [os.path.join(ROOT, "mcp_server.py")]}}}, open(cfg, "w", encoding="utf-8"))
     if not a.rows_only:
         with cf.ThreadPoolExecutor(a.jobs) as ex:
-            for fut in cf.as_completed([ex.submit(run, a.mode, q, workdir, cfg) for q in qs]):
+            for fut in cf.as_completed([ex.submit(run, a.mode, q, workdir, cfg, OUT) for q in qs]):
                 print(*fut.result(), flush=True)
-    rows = [row(a.mode, q["id"]) for q in questions() if os.path.exists(os.path.join(OUT, a.mode, q["id"] + ".json"))]
+    rows = [row(a.mode, q["id"], OUT) for q in questions() if os.path.exists(os.path.join(OUT, a.mode, q["id"] + ".json"))]
     with open(os.path.join(OUT, a.mode + ".jsonl"), "w", encoding="utf-8") as f:
         for r in rows: f.write(json.dumps(r, ensure_ascii=False) + "\n")
     print("done", len(rows), "errors", sum(bool(r["is_error"]) for r in rows))

@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 8209,
+ "stop_reason": "end_turn",
+ "session_id": "5621d4b4-57c7-4f08-aa81-69adc8e6c60c",
+ "total_cost_usd": 0.049585599999999994,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4122,
+  "cache_read_input_tokens": 11068,
+  "output_tokens": 719,
+  "output_tokens_details": {
+   "thinking_tokens": 80
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4122,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 573,
+    "cache_read_input_tokens": 6183,
+    "cache_creation_input_tokens": 2824,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2824
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 719,
+   "cacheReadInputTokens": 11068,
+   "cacheCreationInputTokens": 4122,
+   "webSearchRequests": 0,
+   "costUSD": 0.049585599999999994,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 80,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**ごみの種類はまだ決められません。** その位置は金沢市の香林坊・南町・長町の境目近くです。このあたりは3つの収集地区が接していて、地区によって10月27日(火)に出せるごみが違います。\n\n| 地区の候補 | こんな住所なら | 10月27日(火) |\n|---|---|---|\n| 松ヶ枝地区 | 南町、または香林坊2丁目6〜8番 | 燃やすごみ |\n| 長町地区 | 香林坊2丁目11〜14番、または香林坊2丁目5番11〜17号 | 収集なし |\n| 長土塀地区 | 長町1丁目4番28〜53号 | 資源 あき缶・ペットボトル プラスチック資源など |\n\nどの地区でも出せるごみは、この日はありません。\n\n**お住まいの住所を教えてください**（例：「金沢市南町2番13号」）。町名・丁目・番・号まで分かれば、地区を決めて確かな答えを出せます。\n\n- 出す時刻：収集日の午前8時30分まで\n- 自分で確かめる場合は、金沢市 ごみ減量推進課（076-220-2302）に問い合わせてください。\n\n出典：金沢市「2026年度地区別収集カレンダー — 町名一覧表 (区域表)」、松ヶ枝・長町・長土塀の各地区の2026年度収集カレンダー、「ごみの出し方のルール」",
+ "ttft_ms": 1987,
+ "type": "result",
+ "duration_ms": 13555,
+ "uuid": "9546a064-73b0-472b-9a42-4205f3d11c4e",
+ "ttft_stream_ms": 841,
+ "time_to_request_ms": 41,
+ "first_content_frame_ms": 841,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 14.9,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.564839、経度 136.652852 です (スマートフォンの位置の精度は約30m)。ここで2026年10月27日(火)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 11709,
+ "stop_reason": "end_turn",
+ "session_id": "7a44cf65-cab8-41ea-ba70-026c740735d9",
+ "total_cost_usd": 0.048486,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3720,
+  "cache_read_input_tokens": 11050,
+  "output_tokens": 825,
+  "output_tokens_details": {
+   "thinking_tokens": 120
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3720,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 705,
+    "cache_read_input_tokens": 6165,
+    "cache_creation_input_tokens": 2440,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2440
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 825,
+   "cacheReadInputTokens": 11050,
+   "cacheCreationInputTokens": 3720,
+   "webSearchRequests": 0,
+   "costUSD": 0.048486,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 120,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**この位置からは収集の地区を1つに決められないので、10月27日(火)に出せるごみはまだお答えできません。**\n\nこの場所は石川県金沢市の泉二丁目です（一番近い住所は泉二丁目21番11号）。この辺りは、番地によって「弥生」地区と「三馬」地区に分かれています。10月27日の収集は地区によって違い、どちらでも出せる品目はありません。\n\n| 地区 | 10月27日(火)の収集 | 通常の収集日 |\n|---|---|---|\n| 弥生 | 燃やすごみ | 火曜日・金曜日 |\n| 三馬 | 資源 あき缶・ペットボトル プラスチック資源など | 第2・4火曜日 |\n\n**お住まいの住所の番地（「泉2丁目21番◯号」など）を教えてください。** 区域表では次のように分かれています。\n\n- **弥生地区**\n  - 泉2丁目 1〜20番\n  - 21番の1〜5号、7〜13号、22〜30号\n  - 22番の1〜8号、18〜21号\n- **三馬地区**\n  - 泉2丁目 21番の6号、14〜21号\n  - 22番の9〜17号\n\n**出す時刻：** どちらの地区も、収集日の午前8時30分までです。\n\n番地が分からない場合は、金沢市 ごみ減量推進課（076-220-2302）で確かめられます。\n\n出典：金沢市「2026年度地区別収集カレンダー(トップページ) — 町名一覧表 (区域表)」、「2026年度地区・校下別収集カレンダー(その7) — 弥生・三馬（西部管理センター）2026年度版」、「ごみの出し方のルール」",
+ "ttft_ms": 4171,
+ "type": "result",
+ "duration_ms": 16719,
+ "uuid": "957583ba-0968-4d12-9529-7d2327fd7085",
+ "ttft_stream_ms": 3257,
+ "time_to_request_ms": 59,
+ "first_content_frame_ms": 3257,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 18.0,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.547074、経度 136.640708 です。ここで2026年10月27日(火)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 128720,
+ "stop_reason": "end_turn",
+ "session_id": "13137a50-7abc-4335-b9e4-0774b563f48e",
+ "total_cost_usd": 0.21973789999999996,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 11892,
+  "cache_read_input_tokens": 58979,
+  "output_tokens": 3581,
+  "output_tokens_details": {
+   "thinking_tokens": 1343
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11892,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1543,
+    "cache_read_input_tokens": 12996,
+    "cache_creation_input_tokens": 703,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 703
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 16,
+   "outputTokens": 3581,
+   "cacheReadInputTokens": 58979,
+   "cacheCreationInputTokens": 11892,
+   "webSearchRequests": 0,
+   "costUSD": 0.17861579999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1343,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 115441,
+   "outputTokens": 19156,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.041122099999999995,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 13569,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 9,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "金沢市の公式データで確認できました。**2026年10月29日（木）に出せるのは「資源ごみ」のうち容器包装プラスチック（プラマークのついた容器・包装）だけです。** 燃やすごみ・燃やさないごみ・あきびんは出せません。\n\n**場所**\n- 緯度経度を住所に変換すると、**石川県金沢市駅西本町6丁目**でした（地図サービス OpenStreetMap の住所変換で確認）。\n- 6丁目は、ほぼ全域が **戸板（といた）地区** です。\n\n**戸板地区の2026年度の収集日**\n| 種類 | 収集日 |\n|---|---|\n| 燃やすごみ | 毎週 火曜・金曜 |\n| 燃やさないごみ | 第3木曜 |\n| 資源ごみ | 第2・第4木曜、第5木曜（4〜11月・2〜3月） |\n| あきびん | 第1水曜 |\n\n**10月29日について**\n- 10月の木曜日は1・8・15・22・29日なので、29日は**第5木曜**にあたります。\n- 市のデータには「資源ごみは29〜31日は容器包装プラスチックのみ」と書かれています。このため、この日は缶やペットボトルなどは出せず、容器包装プラスチックだけになります。\n\n**注意：6丁目15番6〜17だけは別の地区です**\nこの区画は **大徳地区** で、燃やすごみは火曜・金曜です。10月29日（木）は収集がありません。住所がここに当たるか、番地をご確認ください。\n\n正確な時刻や出し方は、各地区のごみステーションのルールに従ってください。\n\nSources:\n- [2026年度地区別収集カレンダー（町名一覧）｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー（その4：戸板・大徳・長田町）｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3671.html)\n- [金沢市 地区別ごみ収集カレンダー（オープンデータ）](https://catalog-data.city.kanazawa.ishikawa.jp/dataset/172014-chikubetu)\n- [OpenStreetMap Nominatim 住所変換](https://nominatim.openstreetmap.org/reverse?lat=36.58599&lon=136.628364&format=json&accept-language=ja&zoom=18)",
+ "ttft_ms": 3888,
+ "type": "result",
+ "duration_ms": 122746,
+ "uuid": "346781f0-f09e-4c22-b5e6-6f28ff52ce47",
+ "ttft_stream_ms": 1212,
+ "time_to_request_ms": 43,
+ "first_content_frame_ms": 1212,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 124.1,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.58599、経度 136.628364 です。ここで2026年10月29日(木)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 220330,
+ "stop_reason": "end_turn",
+ "session_id": "319776e9-4830-43f2-9a71-4614d408844f",
+ "total_cost_usd": 0.3373132999999999,
+ "usage": {
+  "input_tokens": 24,
+  "cache_creation_input_tokens": 16396,
+  "cache_read_input_tokens": 119722,
+  "output_tokens": 6485,
+  "output_tokens_details": {
+   "thinking_tokens": 2065
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16396,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1352,
+    "cache_read_input_tokens": 16786,
+    "cache_creation_input_tokens": 1417,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1417
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 24,
+   "outputTokens": 6485,
+   "cacheReadInputTokens": 119722,
+   "cacheCreationInputTokens": 16396,
+   "webSearchRequests": 0,
+   "costUSD": 0.28490839999999995,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2065,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  },
+  "claude-haiku-5-5": {
+   "inputTokens": 191764,
+   "outputTokens": 26457,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "webSearchRequests": 2,
+   "costUSD": 0.052404900000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 20015,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 22,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**答え：燃やすごみ（菊川校区の燃やすごみは毎週火曜・金曜）**\n\n1. **場所**：国土地理院とOpenStreetMapの逆ジオコーディングでは、石川県金沢市笠舞本町一丁目です。\n2. **校区の判定**：金沢市の町名対応表では、笠舞本町1丁目は番地によって収集区域が分かれています。\n   - 1〜7番：南小立野\n   - 10〜16番：菊川\n\n   国土地理院の住所検索で各番地の代表点を調べました。指定の座標（36.545504, 136.672494）は11番の代表点（36.545681, 136.672485）の約20m南にあり、7番の代表点より明らかに南です。このため**11番付近で、菊川校区**と判断しました。\n3. **菊川校区の2026年10月の予定**\n   - 毎週火曜・金曜：燃やすごみ（週2回の区分）\n   - 10/5・10/12・10/19（月）：燃やさないごみ・資源ごみ\n   - 10/28（水）：資源ごみ\n\n   10月27日は第4火曜日で、この日に該当するのは毎週火曜・金曜の区分だけです。\n\n**注意点**\n- 収集日の数字は市のページから取得しましたが、どの列がどのごみの種類かは表の文字列から正確に読み取れませんでした。「週2回」が燃やすごみという市の案内と曜日の並びから、火・金を燃やすごみと判断しています。\n- 南小立野校区（1〜7番）の場合は、燃やすごみが月曜・木曜なので、**27日（火）は何も出せません**。お住まいの番地が1〜7番なら、こちらになります。\n- 出す時間は**収集日の朝8時30分まで**です。\n\n念のため、住所の番地を確認するか、ごみ減量推進課（076-220-2302）に問い合わせると確実です。\n\nSources:\n- [2026年度地区別収集カレンダー(トップページ)｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/20102.html)\n- [2026年度地区・校下別収集カレンダー（菊川ほか）｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19364.html)\n- [2026年度地区・校下別収集カレンダー（南小立野ほか）｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html)\n- [燃やすごみ 週2回収集｜金沢市](https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/3/7591.html)\n- [国土地理院 逆ジオコーダ](https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat=36.545504&lon=136.672494) / [国土地理院 住所検索](https://msearch.gsi.go.jp/address-search/AddressSearch?q=金沢市笠舞本町一丁目11)\n- [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/reverse?lat=36.545504&lon=136.672494&format=json)",
+ "ttft_ms": 4451,
+ "type": "result",
+ "duration_ms": 172043,
+ "uuid": "ac68776c-2287-4a7b-959e-584a9abb2d61",
+ "ttft_stream_ms": 1498,
+ "time_to_request_ms": 46,
+ "first_content_frame_ms": 1498,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 173.2,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.545504、経度 136.672494 です。ここで2026年10月27日(火)に出せるごみ (家庭ごみの収集) は何ですか？"
+}

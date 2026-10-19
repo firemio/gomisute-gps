@@ -1,0 +1,102 @@
+{
+ "duration_api_ms": 9722,
+ "stop_reason": "end_turn",
+ "session_id": "83d13d65-3dfa-4268-bdb4-14688e5e17dc",
+ "total_cost_usd": 0.0516456,
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4172,
+  "cache_read_input_tokens": 11068,
+  "output_tokens": 802,
+  "output_tokens_details": {
+   "thinking_tokens": 86
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4172,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 656,
+    "cache_read_input_tokens": 6183,
+    "cache_creation_input_tokens": 2874,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2874
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 4,
+   "outputTokens": 802,
+   "cacheReadInputTokens": 11068,
+   "cacheCreationInputTokens": 4172,
+   "webSearchRequests": 0,
+   "costUSD": 0.0516456,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 86,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 2,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "**この場所の10月30日(金)の収集品目は、地区が1つに決まらないため分かりません。**\n\n**決まらない理由**\n- 一番近い住所は **金沢市堀川新町4番17号**（約8m）です。この町は市の区域表に載っていて、地区は「此花」です。\n- ところが約58m先に、区域表に載っていない町名「**木ノ新保町**」の住所（木ノ新保町1番61号）があります。位置の精度が約30mなので、今いる場所がどちらの町か決められません。\n\n**参考：地区ごとの10月30日(金)の収集（どれも確定ではありません）**\n| 地区の候補 | 10月30日(金) |\n|---|---|\n| 此花 | 資源 プラスチック資源（第5金曜日） |\n| 諸江 | 収集なし |\n| 長田町 | 収集なし |\n| 芳斎（旧町名からの推定で、区域表の根拠はありません） | 燃やすごみ |\n\n地区によって答えが変わり、全部の候補に共通する品目もありません。\n\n**確かめる方法**\n- 今いる建物の住所（町名と番地。例：「堀川新町4番17号」）を教えてください。住所でもう一度調べます。\n- 金沢市 ごみ減量推進課（電話 076-220-2302）に直接聞くこともできます。\n\nどの地区でも、ごみは**収集日の午前8時30分まで**に出してください。\n\n出典：金沢市「2026年度地区別収集カレンダー（町名一覧表）」、「2026年度地区・校下別収集カレンダー」（此花・諸江・長田町・芳斎）、「ごみの出し方のルール」",
+ "ttft_ms": 2574,
+ "type": "result",
+ "duration_ms": 14597,
+ "uuid": "bcdcc8c5-2d97-4ff1-a64a-d6a9352b3a70",
+ "ttft_stream_ms": 1436,
+ "time_to_request_ms": 40,
+ "first_content_frame_ms": 1436,
+ "queued_turn_count": 0,
+ "result_index": 0,
+ "wall_seconds": 16.1,
+ "stderr": "",
+ "question": "今いる場所は 緯度 36.580325、経度 136.649372 です (スマートフォンの位置の精度は約30m)。ここで2026年10月30日(金)に出せるごみ (家庭ごみの収集) は何ですか？"
+}
