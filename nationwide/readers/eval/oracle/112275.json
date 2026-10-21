@@ -1,0 +1,134 @@
+{
+ "format": "gomisute-oracle/0.1",
+ "lg_code": "112275",
+ "name": "埼玉県朝霞市",
+ "labeled_by": "claude-draft",
+ "human_checked": false,
+ "labeled_at": "2026-10-19",
+ "review": null,
+ "period_of_interest": {
+  "valid_from": "2026-04-01",
+  "valid_to": "2027-03-31"
+ },
+ "note": "印字の日付の資料は見つからない (「ごみをだすひ」の PDF は画像で、中を確かめていない)",
+ "documents": [
+  {
+   "doc_id": "d1",
+   "url": "https://www.city.asaka.lg.jp/soshiki/15/dust-syuusyuu.html",
+   "sha256": "afdb0382652021f2f887a71c2c34afb37d4ef3924552c891b574c229b8a2d36d",
+   "format": "html_table",
+   "role": "rules",
+   "m1_type": "B",
+   "last_modified": "Sun, 18 Oct 2026 19:00:54 GMT",
+   "fetched_at": "2026-10-19T04:22:42+09:00",
+   "time_evidence": [
+    "page_updated 2024-06-06 (Last-Modified は取った時刻とほぼ同じで動的なので数えない)"
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "label": "資源",
+   "coarse": [
+    "recyclable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "yes",
+    "holiday_covers": [
+     "national"
+    ],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "version_unproven",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "※祝日も収集します（年末年始を除く）"
+    }
+   ],
+   "district_overrides": [],
+   "note": "区域 × 曜日の表だけ。有効期間の記載が無く、ページの更新日は 2024-06-06。年末年始は「除く」だけで休みの期間の日付が無い (先方も 12/30〜1/3 を unknown にしている)"
+  },
+  {
+   "label": "プラスチック資源 燃やせないごみ",
+   "coarse": [
+    "plastic",
+    "non_burnable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "yes",
+    "holiday_covers": [
+     "national"
+    ],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "version_unproven",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "※祝日も収集します（年末年始を除く）"
+    }
+   ],
+   "district_overrides": [],
+   "note": "表の見出しで 2 つの品目が 1 つの列 (同じ曜日)。区域 × 曜日の表だけ。有効期間の記載が無く、ページの更新日は 2024-06-06。年末年始は「除く」だけで休みの期間の日付が無い (先方も 12/30〜1/3 を unknown にしている)"
+  },
+  {
+   "label": "燃やすごみ",
+   "coarse": [
+    "burnable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "yes",
+    "holiday_covers": [
+     "national"
+    ],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "version_unproven",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "※祝日も収集します（年末年始を除く）"
+    }
+   ],
+   "district_overrides": [],
+   "note": "区域 × 曜日の表だけ。有効期間の記載が無く、ページの更新日は 2024-06-06。年末年始は「除く」だけで休みの期間の日付が無い (先方も 12/30〜1/3 を unknown にしている)"
+  }
+ ]
+}

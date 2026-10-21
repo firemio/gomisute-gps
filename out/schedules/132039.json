@@ -1,0 +1,3398 @@
+{
+ "schema": "gomisute-schedule/0.2",
+ "lg_code": "132039",
+ "name": "武蔵野市",
+ "periods": [
+  {
+   "valid_from": "2026-10-19",
+   "valid_to": null,
+   "basis": {
+    "text": "期間の書いていない資料",
+    "ref": {
+     "source_id": "s1"
+    },
+    "kind": "undated"
+   },
+   "year_evidence": {
+    "token": null,
+    "anchor_tokens": [],
+    "time": [
+     {
+      "kind": "last_modified",
+      "value": "2025-03-05",
+      "source_id": "s1"
+     },
+     {
+      "kind": "pdf_modified",
+      "value": "2025-02-06",
+      "source_id": "s1"
+     }
+    ],
+    "conflict": null,
+    "ok": false,
+    "reasons": [
+     "undated"
+    ]
+   },
+   "period_id": "p1"
+  }
+ ],
+ "partitions": [
+  {
+   "partition_id": "all",
+   "label": "資料の表の地区 (品目すべて)",
+   "category_ids": [
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5",
+    "c6"
+   ],
+   "basis": "unknown",
+   "basis_span": null
+  }
+ ],
+ "districts": [
+  {
+   "district_id": "132039-s1-p1-t0",
+   "partition_id": "all",
+   "label": "武蔵野市",
+   "label_kind": "official",
+   "members": [
+    {
+     "text": "武蔵野市",
+     "unit": "unparsed",
+     "machiaza_id": null,
+     "match": "unchecked",
+     "conditions": [],
+     "geometry": "unresolved",
+     "extra": {
+      "name_verbatim": "武蔵野市"
+     }
+    }
+   ],
+   "place_resolution": "unresolved",
+   "ref": {
+    "source_id": "s1",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "district_key": "地区",
+    "course_label": null,
+    "members_state": "single"
+   }
+  },
+  {
+   "district_id": "132039-s2-p1-t0",
+   "partition_id": "all",
+   "label": "武蔵野市",
+   "label_kind": "official",
+   "members": [
+    {
+     "text": "武蔵野市",
+     "unit": "unparsed",
+     "machiaza_id": null,
+     "match": "unchecked",
+     "conditions": [],
+     "geometry": "unresolved",
+     "extra": {
+      "name_verbatim": "武蔵野市"
+     }
+    }
+   ],
+   "place_resolution": "unresolved",
+   "ref": {
+    "source_id": "s2",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "district_key": "地区",
+    "course_label": null,
+    "members_state": "single"
+   }
+  },
+  {
+   "district_id": "132039-s3-p1-t0",
+   "partition_id": "all",
+   "label": "武蔵野市",
+   "label_kind": "official",
+   "members": [
+    {
+     "text": "武蔵野市",
+     "unit": "unparsed",
+     "machiaza_id": null,
+     "match": "unchecked",
+     "conditions": [],
+     "geometry": "unresolved",
+     "extra": {
+      "name_verbatim": "武蔵野市"
+     }
+    }
+   ],
+   "place_resolution": "unresolved",
+   "ref": {
+    "source_id": "s3",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "district_key": "地区",
+    "course_label": null,
+    "members_state": "single"
+   }
+  },
+  {
+   "district_id": "132039-s4-p1-t0",
+   "partition_id": "all",
+   "label": "武蔵野市",
+   "label_kind": "official",
+   "members": [
+    {
+     "text": "武蔵野市",
+     "unit": "unparsed",
+     "machiaza_id": null,
+     "match": "unchecked",
+     "conditions": [],
+     "geometry": "unresolved",
+     "extra": {
+      "name_verbatim": "武蔵野市"
+     }
+    }
+   ],
+   "place_resolution": "unresolved",
+   "ref": {
+    "source_id": "s4",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "district_key": "地区",
+    "course_label": null,
+    "members_state": "single"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "category_id": "c1",
+   "official_label": "燃やすごみ",
+   "coarse": [
+    "burnable"
+   ],
+   "mode": "curbside",
+   "ref": {
+    "source_id": "s1",
+    "note": "表の見出し"
+   }
+  },
+  {
+   "category_id": "c2",
+   "official_label": "古紙・古着",
+   "coarse": [
+    "paper",
+    "cloth"
+   ],
+   "mode": "curbside",
+   "ref": {
+    "source_id": "s1",
+    "note": "表の見出し"
+   }
+  },
+  {
+   "category_id": "c3",
+   "official_label": "びん・缶",
+   "coarse": [
+    "beverage_can",
+    "glass_bottle"
+   ],
+   "mode": "curbside",
+   "ref": {
+    "source_id": "s1",
+    "note": "表の見出し"
+   }
+  },
+  {
+   "category_id": "c4",
+   "official_label": "ペットボトル",
+   "coarse": [
+    "pet_bottle"
+   ],
+   "mode": "curbside",
+   "ref": {
+    "source_id": "s1",
+    "note": "表の見出し"
+   }
+  },
+  {
+   "category_id": "c5",
+   "official_label": "燃やさないごみ",
+   "coarse": [
+    "non_burnable"
+   ],
+   "mode": "curbside",
+   "ref": {
+    "source_id": "s1",
+    "note": "表の見出し"
+   }
+  },
+  {
+   "category_id": "c6",
+   "official_label": "プラスチック製 容器包装",
+   "coarse": [
+    "plastic"
+   ],
+   "mode": "curbside",
+   "ref": {
+    "source_id": "s1",
+    "note": "表の見出し"
+   }
+  }
+ ],
+ "schedules": [
+  {
+   "district_id": "132039-s1-p1-t0",
+   "category_id": "c3",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s1:p1:t0",
+    "disputed:132039:p1:cell:132039-s1-p1-t0:c3"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "e1a6c31d0212b72b55312c18cb5482bf4075b7a4cb5f7b5bd53f0c5820eff5a9"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s1",
+      "page": 1,
+      "text": "びん・缶",
+      "bbox": [
+       274.9,
+       85.7,
+       342.7,
+       102.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s1",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　火曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s1-p1-t0",
+   "category_id": "c4",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s1:p1:t0",
+    "disputed:132039:p1:cell:132039-s1-p1-t0:c4"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "e1a6c31d0212b72b55312c18cb5482bf4075b7a4cb5f7b5bd53f0c5820eff5a9"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s1",
+      "page": 1,
+      "text": "ペットボトル",
+      "bbox": [
+       342.7,
+       85.7,
+       416.4,
+       119.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s1",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　火曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s1-p1-t0",
+   "category_id": "c5",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s1:p1:t0",
+    "disputed:132039:p1:cell:132039-s1-p1-t0:c5"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "e1a6c31d0212b72b55312c18cb5482bf4075b7a4cb5f7b5bd53f0c5820eff5a9"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s1",
+      "page": 1,
+      "text": "燃やさないごみ",
+      "bbox": [
+       416.4,
+       85.7,
+       490.1,
+       119.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s1",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　水曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s1-p1-t0",
+   "category_id": "c1",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "月曜日／ 木曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "MO",
+      "TH"
+     ]
+    },
+    "span": {
+     "source_id": "s1",
+     "page": 1,
+     "text": "月曜日／ 木曜日",
+     "bbox": [
+      121.6,
+      332.4,
+      195.3,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s1:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s1",
+      "page": 1,
+      "text": "月曜日／ 木曜日",
+      "bbox": [
+       121.6,
+       332.4,
+       195.3,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s1",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s1-p1-t0",
+   "category_id": "c2",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "火曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "TU"
+     ]
+    },
+    "span": {
+     "source_id": "s1",
+     "page": 1,
+     "text": "火曜日",
+     "bbox": [
+      195.3,
+      332.4,
+      274.9,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s1:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s1",
+      "page": 1,
+      "text": "火曜日",
+      "bbox": [
+       195.3,
+       332.4,
+       274.9,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s1",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s1-p1-t0",
+   "category_id": "c6",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "金曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "FR"
+     ]
+    },
+    "span": {
+     "source_id": "s1",
+     "page": 1,
+     "text": "金曜日",
+     "bbox": [
+      490.1,
+      332.4,
+      563.8,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s1:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s1",
+      "page": 1,
+      "text": "金曜日",
+      "bbox": [
+       490.1,
+       332.4,
+       563.8,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s1",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s2-p1-t0",
+   "category_id": "c3",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s2:p1:t0",
+    "disputed:132039:p1:cell:132039-s2-p1-t0:c3"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "2907dd1724d0036e85e1f38bcf28a119760e2ed7c7ccce9c6dba89b0f9194dc3"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s2",
+      "page": 1,
+      "text": "びん・缶",
+      "bbox": [
+       342.7,
+       85.7,
+       416.4,
+       102.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s2",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　水曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s2-p1-t0",
+   "category_id": "c4",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s2:p1:t0",
+    "disputed:132039:p1:cell:132039-s2-p1-t0:c4"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "2907dd1724d0036e85e1f38bcf28a119760e2ed7c7ccce9c6dba89b0f9194dc3"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s2",
+      "page": 1,
+      "text": "ペットボトル",
+      "bbox": [
+       416.4,
+       85.7,
+       490.1,
+       119.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s2",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　水曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s2-p1-t0",
+   "category_id": "c5",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s2:p1:t0",
+    "disputed:132039:p1:cell:132039-s2-p1-t0:c5"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "2907dd1724d0036e85e1f38bcf28a119760e2ed7c7ccce9c6dba89b0f9194dc3"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s2",
+      "page": 1,
+      "text": "燃やさないごみ",
+      "bbox": [
+       490.1,
+       85.7,
+       563.8,
+       119.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s2",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　金曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s2-p1-t0",
+   "category_id": "c1",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "月曜日／ 木曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "MO",
+      "TH"
+     ]
+    },
+    "span": {
+     "source_id": "s2",
+     "page": 1,
+     "text": "月曜日／ 木曜日",
+     "bbox": [
+      121.6,
+      332.4,
+      195.3,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s2:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s2",
+      "page": 1,
+      "text": "月曜日／ 木曜日",
+      "bbox": [
+       121.6,
+       332.4,
+       195.3,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s2",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s2-p1-t0",
+   "category_id": "c6",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "火曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "TU"
+     ]
+    },
+    "span": {
+     "source_id": "s2",
+     "page": 1,
+     "text": "火曜日",
+     "bbox": [
+      195.3,
+      332.4,
+      286.0,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s2:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s2",
+      "page": 1,
+      "text": "火曜日",
+      "bbox": [
+       195.3,
+       332.4,
+       286.0,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s2",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s2-p1-t0",
+   "category_id": "c2",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "水曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "WE"
+     ]
+    },
+    "span": {
+     "source_id": "s2",
+     "page": 1,
+     "text": "水曜日",
+     "bbox": [
+      286.0,
+      332.4,
+      342.7,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s2:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s2",
+      "page": 1,
+      "text": "水曜日",
+      "bbox": [
+       286.0,
+       332.4,
+       342.7,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s2",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s3-p1-t0",
+   "category_id": "c3",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "unconsumed_qualifier:q87c4af2757",
+    "unconsumed_qualifier:q2a23131f86",
+    "disputed:132039:p1:structure:s3:p1:t0",
+    "disputed:132039:p1:cell:132039-s3-p1-t0:c3"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "fa6b875de948abf9ee2099a48c7d4c2c5525bb361b121cdfccfd66acd0a3e668"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s3",
+      "page": 1,
+      "text": "びん・缶",
+      "bbox": [
+       274.9,
+       85.7,
+       342.7,
+       102.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s3",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　火曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s3-p1-t0",
+   "category_id": "c4",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "unconsumed_qualifier:q87c4af2757",
+    "unconsumed_qualifier:q2a23131f86",
+    "disputed:132039:p1:structure:s3:p1:t0",
+    "disputed:132039:p1:cell:132039-s3-p1-t0:c4"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "fa6b875de948abf9ee2099a48c7d4c2c5525bb361b121cdfccfd66acd0a3e668"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s3",
+      "page": 1,
+      "text": "ペットボトル",
+      "bbox": [
+       342.7,
+       85.7,
+       416.4,
+       119.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s3",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　火曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s3-p1-t0",
+   "category_id": "c5",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "unconsumed_qualifier:q87c4af2757",
+    "unconsumed_qualifier:q2a23131f86",
+    "disputed:132039:p1:structure:s3:p1:t0",
+    "disputed:132039:p1:cell:132039-s3-p1-t0:c5"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "fa6b875de948abf9ee2099a48c7d4c2c5525bb361b121cdfccfd66acd0a3e668"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s3",
+      "page": 1,
+      "text": "燃やさないごみ",
+      "bbox": [
+       416.4,
+       85.7,
+       490.1,
+       119.8
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s3",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　水曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s3-p1-t0",
+   "category_id": "c1",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "月曜日／ 木曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "MO",
+      "TH"
+     ]
+    },
+    "span": {
+     "source_id": "s3",
+     "page": 1,
+     "text": "月曜日／ 木曜日",
+     "bbox": [
+      121.6,
+      332.4,
+      195.3,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "unconsumed_qualifier:q87c4af2757",
+    "unconsumed_qualifier:q2a23131f86",
+    "disputed:132039:p1:structure:s3:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s3",
+      "page": 1,
+      "text": "月曜日／ 木曜日",
+      "bbox": [
+       121.6,
+       332.4,
+       195.3,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s3",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s3-p1-t0",
+   "category_id": "c2",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "火曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "TU"
+     ]
+    },
+    "span": {
+     "source_id": "s3",
+     "page": 1,
+     "text": "火曜日",
+     "bbox": [
+      195.3,
+      332.4,
+      274.9,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "unconsumed_qualifier:q87c4af2757",
+    "unconsumed_qualifier:q2a23131f86",
+    "disputed:132039:p1:structure:s3:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s3",
+      "page": 1,
+      "text": "火曜日",
+      "bbox": [
+       195.3,
+       332.4,
+       274.9,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s3",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s3-p1-t0",
+   "category_id": "c6",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "金曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "FR"
+     ]
+    },
+    "span": {
+     "source_id": "s3",
+     "page": 1,
+     "text": "金曜日",
+     "bbox": [
+      490.1,
+      332.4,
+      563.8,
+      740.6
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "unconsumed_qualifier:q87c4af2757",
+    "unconsumed_qualifier:q2a23131f86",
+    "disputed:132039:p1:structure:s3:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s3",
+      "page": 1,
+      "text": "金曜日",
+      "bbox": [
+       490.1,
+       332.4,
+       563.8,
+       740.6
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s3",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s4-p1-t0",
+   "category_id": "c5",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s4:p1:t0",
+    "disputed:132039:p1:cell:132039-s4-p1-t0:c5"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "6d932b3e2609b57f95df67ee3459859a837f2f0420507db3691678ee1bb5606c"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s4",
+      "page": 1,
+      "text": "燃やさないごみ",
+      "bbox": [
+       275.3,
+       90.2,
+       342.1,
+       124.2
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s4",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　水曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s4-p1-t0",
+   "category_id": "c3",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s4:p1:t0",
+    "disputed:132039:p1:cell:132039-s4-p1-t0:c3"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "6d932b3e2609b57f95df67ee3459859a837f2f0420507db3691678ee1bb5606c"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s4",
+      "page": 1,
+      "text": "びん・缶",
+      "bbox": [
+       415.8,
+       90.2,
+       489.5,
+       107.2
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s4",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　金曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s4-p1-t0",
+   "category_id": "c4",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": null,
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "pending_printed",
+    "disputed:132039:p1:structure:s4:p1:t0",
+    "disputed:132039:p1:cell:132039-s4-p1-t0:c4"
+   ],
+   "gate": {
+    "unit": "D",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.pdf_layout@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.cells.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "cells.B@1",
+      "inputs": {
+       "image_sha256": "6d932b3e2609b57f95df67ee3459859a837f2f0420507db3691678ee1bb5606c"
+      },
+      "agree": false
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s4",
+      "page": 1,
+      "text": "ペットボトル",
+      "bbox": [
+       489.5,
+       90.2,
+       563.2,
+       124.2
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s4",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "column_note": "隔週　金曜日",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "label": "agreed",
+     "category": "agreed",
+     "cells": "disputed"
+    },
+    "policies_reader": "code_llm"
+   }
+  },
+  {
+   "district_id": "132039-s4-p1-t0",
+   "category_id": "c1",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "月曜日／ 木曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "MO",
+      "TH"
+     ]
+    },
+    "span": {
+     "source_id": "s4",
+     "page": 1,
+     "text": "月曜日／ 木曜日",
+     "bbox": [
+      121.0,
+      336.8,
+      194.8,
+      745.0
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s4:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s4",
+      "page": 1,
+      "text": "月曜日／ 木曜日",
+      "bbox": [
+       121.0,
+       336.8,
+       194.8,
+       745.0
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s4",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s4-p1-t0",
+   "category_id": "c6",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "火曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "TU"
+     ]
+    },
+    "span": {
+     "source_id": "s4",
+     "page": 1,
+     "text": "火曜日",
+     "bbox": [
+      194.8,
+      336.8,
+      275.3,
+      745.0
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s4:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s4",
+      "page": 1,
+      "text": "火曜日",
+      "bbox": [
+       194.8,
+       336.8,
+       275.3,
+       745.0
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s4",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  },
+  {
+   "district_id": "132039-s4-p1-t0",
+   "category_id": "c2",
+   "period_id": "p1",
+   "dates_origin": null,
+   "rule": {
+    "text": "金曜日",
+    "ir": {
+     "kind": "weekly",
+     "weekdays": [
+      "FR"
+     ]
+    },
+    "span": {
+     "source_id": "s4",
+     "page": 1,
+     "text": "金曜日",
+     "bbox": [
+      342.1,
+      336.8,
+      415.8,
+      745.0
+     ]
+    }
+   },
+   "dates": [],
+   "unknown_ranges": [],
+   "answerable": false,
+   "blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing",
+    "pending_printed",
+    "disputed:132039:p1:structure:s4:p1:t0"
+   ],
+   "gate": {
+    "unit": "expanded",
+    "open": false
+   },
+   "published": false,
+   "caveats": [],
+   "expanded_with": [],
+   "rule_mismatches": [],
+   "provenance": {
+    "readers": [
+     {
+      "reader": "code.rules@1",
+      "kind": "code",
+      "inputs": {
+       "source_sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0",
+       "page": 1,
+       "table": 0
+      }
+     },
+     {
+      "reader": "llm.rules.B@1",
+      "kind": "llm",
+      "model": "deepseek-flash",
+      "prompt": "rules.B@1",
+      "inputs": {},
+      "agree": true
+     }
+    ],
+    "independence": "code_llm",
+    "status": "disputed",
+    "spans": [
+     {
+      "source_id": "s4",
+      "page": 1,
+      "text": "金曜日",
+      "bbox": [
+       342.1,
+       336.8,
+       415.8,
+       745.0
+      ]
+     }
+    ],
+    "adjudication": null
+   },
+   "ref": {
+    "source_id": "s4",
+    "page": 1,
+    "table": 0
+   },
+   "extra": {
+    "rule_status": "ok",
+    "states": {
+     "district_text": "single",
+     "month_headers": "agreed",
+     "members": "single",
+     "rule": "agreed"
+    },
+    "policies_reader": "code_llm",
+    "printed_evidence": [
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+     "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf"
+    ]
+   }
+  }
+ ],
+ "exceptions": [],
+ "sources": [
+  {
+   "source_id": "s1",
+   "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-2.pdf",
+   "source_key": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-2.pdf",
+   "found_from": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html",
+   "anchor_text": "収集日一覧表(吉祥寺本町1丁目、吉祥寺東町) （PDF 770.2KB） 新しいウィンドウで開きます",
+   "anchor_context": {
+    "anchor_text": "収集日一覧表(吉祥寺本町1丁目、吉祥寺東町) （PDF 770.2KB）",
+    "heading_path": [
+     "【令和7年度(2025年度)版】ごみと資源の収集カレンダー",
+     "C地区 吉祥寺本町1丁目、吉祥寺東町"
+    ],
+    "block_html": "<ul class=\"objectlink\"><li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7c-1.pdf\" target=\"_blank\">ごみと資源の収集カレンダー(吉祥寺本町1丁目、吉祥寺東町) （PDF 2.1MB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7c-2.pdf\" target=\"_blank\">収集日一覧表(吉祥寺本町1丁目、吉祥寺東町) （PDF 770.2KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/c-3.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺本町1丁目、吉祥寺東町)紺色 （PDF 167.3KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/c-4.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺本町1丁目、吉祥寺東町)白色 （PDF 79.6KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li></ul>",
+    "following_text": "このページの先頭へ戻る",
+    "selector": "body > div#wrapbg > div#wrap > div#pagebody > main > article#content > div#voice > ul:nth-of-type(3) > li:nth-of-type(2) > a",
+    "page": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html"
+   },
+   "title": null,
+   "publisher": "武蔵野市",
+   "format": "pdf_text",
+   "pages": 1,
+   "sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb",
+   "content_sha256": "708d810f689e9cf05070ccc089b4d1eec51d309683ae6ee782a6967ea22119c7",
+   "last_modified": "Wed, 05 Mar 2025 07:54:07 GMT",
+   "fetched_at": "2026-10-19T04:31:42+09:00",
+   "extra": {
+    "reader": "code.pdf_layout@1",
+    "date_table_pages": [
+     1
+    ],
+    "page_kinds": [
+     "date_table"
+    ],
+    "pages": [
+     {
+      "page": 1,
+      "policy_compare": {
+       "holiday_policy": "agreed",
+       "off_days": "agreed",
+       "closure_pairs": "agreed",
+       "others": "agreed",
+       "valid": "agreed",
+       "office": "agreed"
+      },
+      "policy_notes": [],
+      "loose": [],
+      "qualifiers_unconsumed": []
+     }
+    ]
+   }
+  },
+  {
+   "source_id": "s2",
+   "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-2.pdf",
+   "source_key": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-2.pdf",
+   "found_from": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html",
+   "anchor_text": "収集日一覧表(吉祥寺北町) （PDF 769.7KB） 新しいウィンドウで開きます",
+   "anchor_context": {
+    "anchor_text": "収集日一覧表(吉祥寺北町) （PDF 769.7KB）",
+    "heading_path": [
+     "【令和7年度(2025年度)版】ごみと資源の収集カレンダー",
+     "D地区 吉祥寺北町"
+    ],
+    "block_html": "<ul class=\"objectlink\"><li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7d-1.pdf\" target=\"_blank\">ごみと資源の収集カレンダー(吉祥寺北町) （PDF 2.0MB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7d-2.pdf\" target=\"_blank\">収集日一覧表(吉祥寺北町) （PDF 769.7KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/d-3.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺北町)紺色 （PDF 178.0KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/d-4.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺北町)白色 （PDF 178.1KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li></ul>",
+    "following_text": "このページの先頭へ戻る",
+    "selector": "body > div#wrapbg > div#wrap > div#pagebody > main > article#content > div#voice > ul:nth-of-type(4) > li:nth-of-type(2) > a",
+    "page": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html"
+   },
+   "title": null,
+   "publisher": "武蔵野市",
+   "format": "pdf_text",
+   "pages": 1,
+   "sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f",
+   "content_sha256": "a9fc85b09ae28ad34021a86bd2034ef671847d8f41e363452ab59ad565f36228",
+   "last_modified": "Wed, 05 Mar 2025 07:55:01 GMT",
+   "fetched_at": "2026-10-19T04:31:47+09:00",
+   "extra": {
+    "reader": "code.pdf_layout@1",
+    "date_table_pages": [
+     1
+    ],
+    "page_kinds": [
+     "date_table"
+    ],
+    "pages": [
+     {
+      "page": 1,
+      "policy_compare": {
+       "holiday_policy": "agreed",
+       "off_days": "agreed",
+       "closure_pairs": "agreed",
+       "others": "agreed",
+       "valid": "agreed",
+       "office": "agreed"
+      },
+      "policy_notes": [],
+      "loose": [],
+      "qualifiers_unconsumed": []
+     }
+    ]
+   }
+  },
+  {
+   "source_id": "s3",
+   "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-2.pdf",
+   "source_key": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-2.pdf",
+   "found_from": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html",
+   "anchor_text": "収集日一覧表(吉祥寺南町) （PDF 769.6KB） 新しいウィンドウで開きます",
+   "anchor_context": {
+    "anchor_text": "収集日一覧表(吉祥寺南町) （PDF 769.6KB）",
+    "heading_path": [
+     "【令和7年度(2025年度)版】ごみと資源の収集カレンダー",
+     "A地区 吉祥寺南町"
+    ],
+    "block_html": "<ul class=\"objectlink\"><li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7a-1.pdf\" target=\"_blank\">ごみと資源の収集カレンダー(吉祥寺南町) （PDF 2.0MB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7a-2.pdf\" target=\"_blank\">収集日一覧表(吉祥寺南町) （PDF 769.6KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/a-3.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺南町)紺色 （PDF 167.3KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/a-4.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺南町)白色 （PDF 79.6KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li></ul>",
+    "following_text": "このページの先頭へ戻る",
+    "selector": "body > div#wrapbg > div#wrap > div#pagebody > main > article#content > div#voice > ul:nth-of-type(1) > li:nth-of-type(2) > a",
+    "page": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html"
+   },
+   "title": null,
+   "publisher": "武蔵野市",
+   "format": "pdf_text",
+   "pages": 1,
+   "sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467",
+   "content_sha256": "d213b1b90c76019c4db42782e521b30e2a4d3749815f40ff0cf88a8a5068c9ce",
+   "last_modified": "Wed, 05 Mar 2025 07:52:10 GMT",
+   "fetched_at": "2026-10-19T04:31:31+09:00",
+   "extra": {
+    "reader": "code.pdf_layout@1",
+    "date_table_pages": [
+     1
+    ],
+    "page_kinds": [
+     "date_table"
+    ],
+    "pages": [
+     {
+      "page": 1,
+      "policy_compare": {
+       "holiday_policy": "agreed",
+       "off_days": "agreed",
+       "closure_pairs": "agreed",
+       "others": "agreed",
+       "valid": "agreed",
+       "office": "agreed"
+      },
+      "policy_notes": [],
+      "loose": [],
+      "qualifiers_unconsumed": [
+       {
+        "qualifier_id": "q87c4af2757",
+        "text": "隔週　火曜日",
+        "months": []
+       },
+       {
+        "qualifier_id": "q2a23131f86",
+        "text": "隔週　水曜日",
+        "months": []
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "source_id": "s4",
+   "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-2.pdf",
+   "source_key": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-2.pdf",
+   "found_from": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html",
+   "anchor_text": "収集日一覧表(吉祥寺本町2・3・4丁目、御殿山) （PDF 770.5KB） 新しいウィンドウで開きます",
+   "anchor_context": {
+    "anchor_text": "収集日一覧表(吉祥寺本町2・3・4丁目、御殿山) （PDF 770.5KB）",
+    "heading_path": [
+     "【令和7年度(2025年度)版】ごみと資源の収集カレンダー",
+     "B地区 吉祥寺本町2・3・4丁目、御殿山"
+    ],
+    "block_html": "<ul class=\"objectlink\"><li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7b-1.pdf\" target=\"_blank\">ごみと資源の収集カレンダー(吉祥寺本町2・3・4丁目、御殿山) （PDF 2.1MB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/7b-2.pdf\" target=\"_blank\">収集日一覧表(吉祥寺本町2・3・4丁目、御殿山) （PDF 770.5KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/b-3.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺本町2・3・4丁目、御殿山)紺色 （PDF 184.1KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li>\n<li class=\"pdf\">\n<a href=\"../../../_res/projects/default_project/_page_/001/049/393/b-4.pdf\" target=\"_blank\">集合住宅ごみ置き場用収集日一覧表(吉祥寺本町2・3・4丁目、御殿山)白色 （PDF 184.2KB）<img alt=\"新しいウィンドウで開きます\" class=\"external\" height=\"11\" src=\"../../../_template_/_site_/_default_/_res/images/parts/newwin1.gif\" width=\"12\"/></a>\n</li></ul>",
+    "following_text": "このページの先頭へ戻る",
+    "selector": "body > div#wrapbg > div#wrap > div#pagebody > main > article#content > div#voice > ul:nth-of-type(2) > li:nth-of-type(2) > a",
+    "page": "https://www.city.musashino.lg.jp/gomi_kankyo/gomi/gomi_shushubi/1049393.html"
+   },
+   "title": null,
+   "publisher": "武蔵野市",
+   "format": "pdf_text",
+   "pages": 1,
+   "sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0",
+   "content_sha256": "0a2cc8dce95ebc028ec6b8687f7598d404cdd8218fc2e454a423857edc2001e1",
+   "last_modified": "Wed, 05 Mar 2025 07:53:24 GMT",
+   "fetched_at": "2026-10-19T04:31:36+09:00",
+   "extra": {
+    "reader": "code.pdf_layout@1",
+    "date_table_pages": [
+     1
+    ],
+    "page_kinds": [
+     "date_table"
+    ],
+    "pages": [
+     {
+      "page": 1,
+      "policy_compare": {
+       "holiday_policy": "agreed",
+       "off_days": "agreed",
+       "closure_pairs": "agreed",
+       "others": "agreed",
+       "valid": "agreed",
+       "office": "agreed"
+      },
+      "policy_notes": [],
+      "loose": [],
+      "qualifiers_unconsumed": []
+     }
+    ]
+   }
+  }
+ ],
+ "watch": {
+  "sources": [
+   {
+    "source_id": "s1",
+    "content_sha256": "708d810f689e9cf05070ccc089b4d1eec51d309683ae6ee782a6967ea22119c7",
+    "sha256": "34ba8cf05de871b4fc8337684cec7194b6612fe1bc5aaa0e96beaa7b24ad3feb"
+   },
+   {
+    "source_id": "s2",
+    "content_sha256": "a9fc85b09ae28ad34021a86bd2034ef671847d8f41e363452ab59ad565f36228",
+    "sha256": "7c3f51fba59006f53291b7a94e5f4c3655f179457b1bd63e31b95920e6872b1f"
+   },
+   {
+    "source_id": "s3",
+    "content_sha256": "d213b1b90c76019c4db42782e521b30e2a4d3749815f40ff0cf88a8a5068c9ce",
+    "sha256": "bb9c8a920a643fa0b482f1edb43d0e1214285ad80a59eaf8fc59dc5e90612467"
+   },
+   {
+    "source_id": "s4",
+    "content_sha256": "0a2cc8dce95ebc028ec6b8687f7598d404cdd8218fc2e454a423857edc2001e1",
+    "sha256": "d9b803a8853fe42be34e11045c2a9b1e14c235b360f429761adc4cce3ba2aab0"
+   }
+  ]
+ },
+ "coverage": {
+  "answer_type": "rule_contact",
+  "by_district": {
+   "132039-s1-p1-t0": {
+    "answer_type": "rule_contact",
+    "why": "答えない系列がある",
+    "answerable": 0,
+    "series": 6
+   },
+   "132039-s2-p1-t0": {
+    "answer_type": "rule_contact",
+    "why": "答えない系列がある",
+    "answerable": 0,
+    "series": 6
+   },
+   "132039-s3-p1-t0": {
+    "answer_type": "rule_contact",
+    "why": "答えない系列がある",
+    "answerable": 0,
+    "series": 6
+   },
+   "132039-s4-p1-t0": {
+    "answer_type": "rule_contact",
+    "why": "答えない系列がある",
+    "answerable": 0,
+    "series": 6
+   }
+  },
+  "population_share": null,
+  "population_basis": null,
+  "blocked_series": {
+   "period_unknown": 24,
+   "pending_printed": 24,
+   "disputed": 36,
+   "holiday_policy_missing": 12,
+   "year_end_missing": 12,
+   "unconsumed_qualifier": 12
+  },
+  "gate_pending": {
+   "series": 0,
+   "population_share": null
+  },
+  "quality": null
+ },
+ "build": {
+  "builder": "build.py@1",
+  "series": 24,
+  "answerable": 0,
+  "published": 0,
+  "blocked_by": {
+   "period_unknown": 24,
+   "pending_printed": 24,
+   "disputed": 36,
+   "holiday_policy_missing": 12,
+   "year_end_missing": 12,
+   "unconsumed_qualifier": 12
+  },
+  "queue_size": 66,
+  "queue_kinds": {
+   "cell": 12,
+   "label": 24,
+   "members": 24,
+   "qualifier": 2,
+   "structure": 4
+  },
+  "queue_next": {
+   "strong_model": 60,
+   "human": 2,
+   "code3": 4
+  },
+  "decisions_used": 0,
+  "compare": {},
+  "cross_source_duplicates": {},
+  "llm": {
+   "cached": 16,
+   "prompt_tokens": 20991,
+   "completion_tokens": 79991,
+   "usd_new": 0.0,
+   "usd_all": 0.1023
+  },
+  "checks": {
+   "1": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "2": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "3": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "4": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "5": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "6": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "7": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {
+     "規則の IR を持つ印字の系列が無い": 1
+    }
+   },
+   "8": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "9": {
+    "applies_to": "all",
+    "ran": 1,
+    "failed": 0,
+    "examples": [],
+    "not_run": {
+     "もれ: 町字の一覧 (ABR) と address-normalize をまだつないでいない": 1
+    }
+   },
+   "10": {
+    "applies_to": "all",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {
+     "有人島の一覧に無い自治体": 1
+    }
+   },
+   "11": {
+    "applies_to": "all",
+    "ran": 1,
+    "failed": 0,
+    "examples": [],
+    "cross_source": {},
+    "not_run": {}
+   },
+   "12": {
+    "applies_to": "all",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "13": {
+    "applies_to": "expanded",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "14": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "15": {
+    "applies_to": "all",
+    "ran": 2,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "16": {
+    "applies_to": "all",
+    "ran": 1,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "17": {
+    "applies_to": "expanded",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "18": {
+    "applies_to": "printed",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "19": {
+    "applies_to": "all",
+    "ran": 1,
+    "failed": 0,
+    "examples": [],
+    "docs_not_fetched": 31,
+    "not_run": {}
+   },
+   "20": {
+    "applies_to": "all",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   },
+   "21": {
+    "applies_to": "all",
+    "ran": 0,
+    "failed": 0,
+    "examples": [],
+    "not_run": {}
+   }
+  },
+  "pdf_page_kinds": {
+   "month_grid": 91,
+   "date_table": 4,
+   "other": 2,
+   "pdf_outline": 21
+  },
+  "unread_pdfs": [
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7e-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7g-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7h-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7i-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7j-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026a-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026b-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026c-1-1.pdf",
+    "page_kinds": [
+     "month_grid"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/a-4.pdf",
+    "page_kinds": [
+     "other"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/c-4.pdf",
+    "page_kinds": [
+     "other"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/a-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/b-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/b-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/c-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/d-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/d-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/e-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/e-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/f-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/f-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/g-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/g-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/h-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/h-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/i-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/i-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/j-3.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/j-4.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/sticker2026a.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/sticker2026b.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/sticker2026c.pdf",
+    "page_kinds": [
+     "pdf_outline"
+    ]
+   }
+  ],
+  "printed_evidence": [
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7c-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7a-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7b-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7d-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7e-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7g-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7h-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7i-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7j-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026a-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026b-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026c-1-1.pdf",
+    "why": "month_grid (型 F。M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/a-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/b-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/b-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/c-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/d-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/d-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/e-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/e-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/f-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/f-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/g-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/g-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/h-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/h-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/i-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/i-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/j-3.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/j-4.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/sticker2026a.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/sticker2026b.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/sticker2026c.pdf",
+    "why": "pdf_outline (M1 では読まない)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/021/940/10tikuwari.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7e-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7f-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7g-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7h-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7i-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/049/393/7j-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026a-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026b-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026c-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026d-1.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026d-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026e-1-1.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026e-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026f-1.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   },
+   {
+    "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026f-2.pdf",
+    "why": "段 0 で取っていない (doc_not_fetched)"
+   }
+  ],
+  "printed_evidence_n": 65,
+  "notes": [],
+  "categories_mode_undecided": [],
+  "basis_state": "single",
+  "rule_contact_why": {
+   "gate_closed": "M1 では関門 (§4.4) がまだ開かない (published はどれも false)",
+   "reader_not_built": {
+    "page_kinds": {
+     "month_grid": 91,
+     "pdf_outline": 21
+    },
+    "note": "M1 では型 D の日付の表のほかの PDF は読まない (型 F・G・H は M2〜M4)"
+   },
+   "printed_not_read": 65,
+   "blocked_by": {
+    "disputed": 36,
+    "period_unknown": 24,
+    "pending_printed": 24,
+    "holiday_policy_missing": 12,
+    "year_end_missing": 12,
+    "unconsumed_qualifier": 12
+   }
+  },
+  "attribution": "M1 (型 A〜D)。関門 (§4.4) が開くまで published はどれも false"
+ }
+}

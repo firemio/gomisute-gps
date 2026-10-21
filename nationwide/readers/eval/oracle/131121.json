@@ -1,0 +1,202 @@
+{
+ "format": "gomisute-oracle/0.1",
+ "lg_code": "131121",
+ "name": "東京都世田谷区",
+ "labeled_by": "claude-draft",
+ "human_checked": false,
+ "labeled_at": "2026-10-19",
+ "review": null,
+ "period_of_interest": {
+  "valid_from": "2026-04-01",
+  "valid_to": "2027-03-31"
+ },
+ "note": "M1 では印字のカレンダーを読まない (型 H) ので、すべて答えない",
+ "documents": [
+  {
+   "doc_id": "d1",
+   "url": "https://www.city.setagaya.lg.jp/02241/416.html",
+   "sha256": "6f97d74c76a53744eb6ea6acc8d0d310aed4cf7cd33ad7af1528fc79df47f628",
+   "format": "html_table",
+   "role": "rules",
+   "m1_type": "B",
+   "last_modified": "Thu, 09 Jul 2026 01:30:05 GMT",
+   "fetched_at": "2026-10-19T04:29:59+09:00",
+   "time_evidence": [
+    "page_updated 2026-07-09"
+   ]
+  },
+  {
+   "doc_id": "d2",
+   "url": "https://www.city.setagaya.lg.jp/documents/416/27-08-26.csv",
+   "sha256": "f17a9f5a52e7d6031c3a8372b34bfab499bb64b0d24c4d2aeb4db24ec0ff9de7",
+   "format": "csv",
+   "role": "rules",
+   "m1_type": "A",
+   "last_modified": "Wed, 14 Aug 2024 02:47:04 GMT",
+   "fetched_at": "2026-10-19T04:30:04+09:00"
+  },
+  {
+   "doc_id": "d3",
+   "url": "https://www.city.setagaya.lg.jp/02241/27859.html",
+   "sha256": "8ee0e174534289f4e65bef11dd41f6d8b120ed6929343f90cc7c623881af2741",
+   "format": "html_text",
+   "role": "hub",
+   "m1_type": "B",
+   "last_modified": "Wed, 14 Oct 2026 15:00:54 GMT",
+   "fetched_at": "2026-10-19T04:29:58+09:00"
+  },
+  {
+   "doc_id": "d4",
+   "url": "https://www.city.setagaya.lg.jp/documents/27859/no22.pdf",
+   "sha256": "f34daab7287bcfe6cc9989afa8ed520516e314da08a1ee69f8c7ffbfd7071675",
+   "format": "pdf_image",
+   "role": "calendar",
+   "m1_type": "H",
+   "last_modified": "Fri, 31 Oct 2025 15:00:49 GMT",
+   "fetched_at": "2026-10-19T04:30:08+09:00",
+   "note": "町丁目ごとのカレンダー (令和8年(2026年)版、2025-12〜2026-12)。発見では pdf_image"
+  }
+ ],
+ "categories": [
+  {
+   "label": "資源 （週1回）",
+   "coarse": [
+    "recyclable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d3",
+     "quote": "※令和8年(2026年)12月から令和9年(2027年)12月の資源とごみの収集曜日については、令和8年(2026年)11月1日に更新予定です。"
+    }
+   ],
+   "district_overrides": [],
+   "printed_type": "H",
+   "note": "町丁目ごとの印字のカレンダー (令和8年版、2025年12月〜2026年12月) があり、M1 の型ではない → pending_printed。HTML・CSV の曜日の表には祝日・年末年始の扱いが無い。カレンダーの案内のページに、2026年12月からの収集曜日は2026年11月1日に更新予定とある (曜日の見直し)。「表紙に記載されている対象地区」が「ご利用の集積所の所在地」と合っているか → 区分けは集積所の場所 (collection_point)"
+  },
+  {
+   "label": "可燃ごみ （週2回）",
+   "coarse": [
+    "burnable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d3",
+     "quote": "※令和8年(2026年)12月から令和9年(2027年)12月の資源とごみの収集曜日については、令和8年(2026年)11月1日に更新予定です。"
+    }
+   ],
+   "district_overrides": [],
+   "printed_type": "H",
+   "note": "町丁目ごとの印字のカレンダー (令和8年版、2025年12月〜2026年12月) があり、M1 の型ではない → pending_printed。HTML・CSV の曜日の表には祝日・年末年始の扱いが無い。カレンダーの案内のページに、2026年12月からの収集曜日は2026年11月1日に更新予定とある (曜日の見直し)。「表紙に記載されている対象地区」が「ご利用の集積所の所在地」と合っているか → 区分けは集積所の場所 (collection_point)"
+  },
+  {
+   "label": "不燃ごみ （月2回）",
+   "coarse": [
+    "non_burnable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d3",
+     "quote": "※令和8年(2026年)12月から令和9年(2027年)12月の資源とごみの収集曜日については、令和8年(2026年)11月1日に更新予定です。"
+    },
+    {
+     "doc_id": "d1",
+     "quote": "2・4回目の 月曜日"
+    }
+   ],
+   "district_overrides": [],
+   "printed_type": "H",
+   "note": "町丁目ごとの印字のカレンダー (令和8年版、2025年12月〜2026年12月) があり、M1 の型ではない → pending_printed。HTML・CSV の曜日の表には祝日・年末年始の扱いが無い。カレンダーの案内のページに、2026年12月からの収集曜日は2026年11月1日に更新予定とある (曜日の見直し)。「表紙に記載されている対象地区」が「ご利用の集積所の所在地」と合っているか → 区分けは集積所の場所 (collection_point)"
+  },
+  {
+   "label": "ペットボトル （月2回）",
+   "coarse": [
+    "pet_bottle"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d3",
+     "quote": "※令和8年(2026年)12月から令和9年(2027年)12月の資源とごみの収集曜日については、令和8年(2026年)11月1日に更新予定です。"
+    },
+    {
+     "doc_id": "d1",
+     "quote": "1・3回目の 月曜日"
+    }
+   ],
+   "district_overrides": [],
+   "printed_type": "H",
+   "note": "町丁目ごとの印字のカレンダー (令和8年版、2025年12月〜2026年12月) があり、M1 の型ではない → pending_printed。HTML・CSV の曜日の表には祝日・年末年始の扱いが無い。カレンダーの案内のページに、2026年12月からの収集曜日は2026年11月1日に更新予定とある (曜日の見直し)。「表紙に記載されている対象地区」が「ご利用の集積所の所在地」と合っているか → 区分けは集積所の場所 (collection_point)"
+  }
+ ]
+}

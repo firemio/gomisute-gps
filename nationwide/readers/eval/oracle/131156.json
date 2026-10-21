@@ -1,0 +1,157 @@
+{
+ "format": "gomisute-oracle/0.1",
+ "lg_code": "131156",
+ "name": "東京都杉並区",
+ "labeled_by": "claude-draft",
+ "human_checked": false,
+ "labeled_at": "2026-10-19",
+ "review": null,
+ "period_of_interest": {
+  "valid_from": "2026-04-01",
+  "valid_to": "2027-03-31"
+ },
+ "note": "カレンダーの PDF の型は確かめていない (取っていない)",
+ "documents": [
+  {
+   "doc_id": "d1",
+   "url": "https://www.city.suginami.tokyo.jp/documents/12125/garbage.csv",
+   "sha256": "c8d1986d097d75ed25f847b96caeb9e92743c89c918293dc5c4829118a2a026b",
+   "format": "csv",
+   "role": "rules",
+   "m1_type": "A",
+   "last_modified": "Mon, 04 Nov 2024 08:47:26 GMT",
+   "fetched_at": "2026-10-19T04:30:47+09:00",
+   "time_evidence": [
+    "last_modified 2024-11-04"
+   ]
+  },
+  {
+   "doc_id": "d2",
+   "url": "https://www.city.suginami.tokyo.jp/shared/garbage/12.pdf",
+   "sha256": null,
+   "format": "pdf (未取得)",
+   "role": "calendar",
+   "m1_type": null,
+   "note": "CSV の pdf_url の列にある地域ごとのカレンダー。発見の結果には無く、取っていない"
+  }
+ ],
+ "categories": [
+  {
+   "label": "可燃ごみ",
+   "coarse": [
+    "burnable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "unknown",
+    "holiday_covers": [],
+    "year_end": "unknown",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "version_unproven"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "水曜日・土曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "CSV は曜日の規則 (Last-Modified 2024-11-04 で、2026 年度の時の証拠にならない)。地域ごとの収集カレンダーの PDF (pdf_url の列) がある → pending_printed。祝日・年末年始の扱いは CSV に無い (簡易版の冊子は見ていない)"
+  },
+  {
+   "label": "不燃ごみ",
+   "coarse": [
+    "non_burnable"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "unknown",
+    "holiday_covers": [],
+    "year_end": "unknown",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "version_unproven"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第1,3月曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "CSV は曜日の規則 (Last-Modified 2024-11-04 で、2026 年度の時の証拠にならない)。地域ごとの収集カレンダーの PDF (pdf_url の列) がある → pending_printed。祝日・年末年始の扱いは CSV に無い (簡易版の冊子は見ていない)"
+  },
+  {
+   "label": "びん・かん・プラ",
+   "coarse": [
+    "glass_bottle",
+    "beverage_can",
+    "plastic"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "unknown",
+    "holiday_covers": [],
+    "year_end": "unknown",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "version_unproven"
+   ],
+   "evidence": [],
+   "district_overrides": [],
+   "note": "CSV は曜日の規則 (Last-Modified 2024-11-04 で、2026 年度の時の証拠にならない)。地域ごとの収集カレンダーの PDF (pdf_url の列) がある → pending_printed。祝日・年末年始の扱いは CSV に無い (簡易版の冊子は見ていない)"
+  },
+  {
+   "label": "古紙・ペットボトル",
+   "coarse": [
+    "paper",
+    "pet_bottle"
+   ],
+   "mode": "curbside",
+   "printed_dates": "yes",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "unknown",
+    "holiday_covers": [],
+    "year_end": "unknown",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "pending_printed",
+    "version_unproven"
+   ],
+   "evidence": [],
+   "district_overrides": [],
+   "note": "CSV は曜日の規則 (Last-Modified 2024-11-04 で、2026 年度の時の証拠にならない)。地域ごとの収集カレンダーの PDF (pdf_url の列) がある → pending_printed。祝日・年末年始の扱いは CSV に無い (簡易版の冊子は見ていない)"
+  }
+ ]
+}

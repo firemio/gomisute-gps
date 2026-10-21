@@ -1,0 +1,322 @@
+{
+ "format": "gomisute-oracle/0.1",
+ "lg_code": "113697",
+ "name": "埼玉県秩父郡東秩父村",
+ "labeled_by": "claude-draft",
+ "human_checked": false,
+ "labeled_at": "2026-10-19",
+ "review": null,
+ "period_of_interest": {
+  "valid_from": "2026-04-01",
+  "valid_to": "2027-03-31"
+ },
+ "note": "罠の再現セットの東秩父 (年末年始の記載なし・5〜10月のみ) と同じ資料",
+ "documents": [
+  {
+   "doc_id": "d1",
+   "url": "https://www.vill.higashichichibu.saitama.jp/soshiki/05/gominodashikata.html",
+   "sha256": "e70f07a49245f04c407ccbf76818613f6967e67e01cef69905b7a128ae1e25e2",
+   "format": "html_table",
+   "role": "rules",
+   "m1_type": "B",
+   "last_modified": "Sun, 18 Oct 2026 19:00:23 GMT",
+   "fetched_at": "2026-10-19T04:26:40+09:00",
+   "time_evidence": [
+    "page_updated 2026-03-19"
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "label": "燃えるごみ （メタン発酵処理）",
+   "coarse": [
+    "burnable",
+    "kitchen"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "月・木曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "資源 プラスチック",
+   "coarse": [
+    "plastic"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第1・2・3・5 金曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "廃プラスチック",
+   "coarse": [
+    "plastic"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第4金曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "金属類",
+   "coarse": [
+    "metal"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第1火曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "スプレー缶等 有害ごみ",
+   "coarse": [
+    "spray_can",
+    "hazardous"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第2火曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "ガラス類・ ペットボトル",
+   "coarse": [
+    "glass_bottle",
+    "pet_bottle"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第3火曜日 ※ペットボトルは、5・6・7・8・9・10月のみ第1水曜日でも出せる"
+    }
+   ],
+   "district_overrides": [],
+   "note": "但し書き (5〜10 月の第1水曜日のペットボトル) は months の足す規則が使う。表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "びん類 （無色びん・茶びん）",
+   "coarse": [
+    "glass_bottle"
+   ],
+   "mode": "curbside",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第4火曜日"
+    }
+   ],
+   "district_overrides": [],
+   "note": "表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "資源回収",
+   "coarse": [
+    "paper",
+    "cloth",
+    "beverage_can"
+   ],
+   "mode": "station",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "yes",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "period_unknown",
+    "holiday_policy_missing",
+    "year_end_missing"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "第2水曜日 （役場前駐車場） / 第4水曜日 （各ステーション）"
+    }
+   ],
+   "district_overrides": [],
+   "note": "第2水曜日は役場前駐車場 (station)、第4水曜日は各ステーション。表に有効期間・祝日・年末年始の記載が無い (先方も年末年始は記載なしとして通常どおりにしている = 弱い正解)"
+  },
+  {
+   "label": "粗大ごみ",
+   "coarse": [
+    "oversized"
+   ],
+   "mode": "dropoff",
+   "printed_dates": "no",
+   "conditions": {
+    "rule": "no",
+    "period": "no",
+    "version": "no",
+    "holiday_policy": "no",
+    "holiday_covers": [],
+    "year_end": "no",
+    "qualifiers_unresolved": "no"
+   },
+   "all_conditions_written": false,
+   "expected": "not_answerable",
+   "expected_blocked_by": [
+    "mode_dropoff"
+   ],
+   "evidence": [
+    {
+     "doc_id": "d1",
+     "quote": "自己搬入"
+    }
+   ],
+   "district_overrides": [],
+   "note": "持ち込み (dropoff) なので日付で答えない"
+  }
+ ]
+}
