@@ -37,7 +37,7 @@ OUT_SHAPE_MAX = 3          # 同じ問い合わせの形 (kana.html?kana=… な
 SUMMARY_COLS = ["lg_code", "pref", "name", "format_class", "formats_seen", "best_url", "best_score", "best_kinds", "best_judge",
                 "best_fiscal_year", "schedule_candidates", "candidates", "apps", "related", "site_status", "start_url",
                 "stop_reason", "pages", "hub_pages", "related_pages", "requests", "blocked_url", "blocked_where", "llm",
-                "finished_at"]
+                "robots_ignored", "finished_at"]
 
 
 def say(*a):
@@ -86,6 +86,9 @@ def parse_args(argv=None):
                    help="同じ IP アドレス (共用のサーバー) への取り始めの間 (秒、既定 0.25 = 1 秒に 4 回まで。0 で見ない)")
     g.add_argument("--max-crawl-delay", type=float, default=60.0,
                    help="robots.txt の Crawl-delay がこれより長いホストは取らない (秒、既定 60)")
+    g.add_argument("--ignore-robots", action="store_true",
+                   help="robots.txt の禁止と長い Crawl-delay を守らない (作者の判断で使う。Crawl-delay は --max-crawl-delay の秒数までは守る。"
+                        "1 ホスト 1 秒 1 回・名乗り・ブロックされたら止めるのは変わらない。robots.txt に反して取った数は結果に残す)")
     g.add_argument("--timeout", type=float, default=30.0, help="1 回の接続・読み込みの待ち時間 (秒)")
     g.add_argument("--retries", type=int, default=2, help="時間切れ・5xx の取り直しの回数")
     g.add_argument("--backoff", type=float, default=5.0, help="取り直しまでの間 (秒。回ごとに 2 倍)")
@@ -270,6 +273,7 @@ def discover_one(m, f, opts, judge=None, judge_top=5):
         "requests": cnt["requests"],
         "llm": {"used": judge is not None, "judged": judged, "errors": errors},
         "params": params_of(opts),
+        **({"robots_ignored": cnt["robots_ignored"]} if f.ignore_robots else {}),   # robots.txt の禁止を破って取った数
         "started_at": fetcher.iso(t0), "finished_at": fetcher.iso(), "seconds": round(time.time() - t0, 1),
         "complete": not misses,                       # --offline でキャッシュに無いものがあれば済んでいない
         **({"offline_misses": misses} if misses else {}),
@@ -343,6 +347,7 @@ def summary_row(d):
             "related_pages": sum(s.get("offsite", 0) for s in d.get("sites") or []), "requests": d.get("requests", 0),
             "blocked_url": (site.get("blocked") or {}).get("url", ""), "blocked_where": (site.get("blocked") or {}).get("where", ""),
             "llm": "yes" if (d.get("llm") or {}).get("used") else "no",
+            "robots_ignored": d.get("robots_ignored", ""),
             "finished_at": d.get("finished_at", "")}
 
 
@@ -410,7 +415,7 @@ def main(argv=None, ask=None):
     f = fetcher.Fetcher(data / "cache", gap=args.gap, max_concurrency=args.max_concurrency, timeout=args.timeout,
                         retries=args.retries, backoff=args.backoff, max_age=args.max_age_hours * 3600,
                         max_requests=args.max_requests, log_path=data / "logs" / f"requests_{stamp}.jsonl", offline=args.offline,
-                        ip_gap=args.ip_gap, max_crawl_delay=args.max_crawl_delay)
+                        ip_gap=args.ip_gap, max_crawl_delay=args.max_crawl_delay, ignore_robots=args.ignore_robots)
     say(f"自治体 {len(rows)} (済み {len(rows) - len(todo)}、これから {len(todo)})。LLM: {'使う' if judge else '使わない'}")
     t0, done, classes, halted, not_written = time.time(), 0, Counter(), False, 0
     ex = cf.ThreadPoolExecutor(max_workers=max(1, args.workers))

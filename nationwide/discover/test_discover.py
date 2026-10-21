@@ -473,9 +473,10 @@ def build_outage(o):
 
 
 NAMES = ("main", "alt", "block", "slow", "chal", "rate", "app", "delay", "conc1", "conc2", "moved", "newsite", "idx",
-         "wp", "err5", "busy", "lazy", "kz", "town", "deep", "hubcap", "hasu", "kumiai", "outage")
+         "wp", "err5", "busy", "lazy", "kz", "town", "deep", "hubcap", "hasu", "kumiai", "outage", "imperva", "robo", "robo2", "redir403", "gz", "gzr", "rr", "r429", "oldpath", "xa")
 CODES = {"main": "990001", "app": "990002", "block": "990003", "slow": "990004", "chal": "990005", "rate": "990006",
-         "town": "990007", "kz": "990008", "deep": "990009", "hubcap": "990010", "hasu": "990011", "outage": "990012"}
+         "town": "990007", "kz": "990008", "deep": "990009", "hubcap": "990010", "hasu": "990011", "outage": "990012",
+         "imperva": "990014", "robo": "990015"}
 DEAD = {}                                              # 公式サイトの 1 つ目がつながらない自治体 (2 つ目は deep)
 
 
@@ -488,6 +489,56 @@ def dead_url():
     return f"http://127.0.0.1:{port}/"
 
 
+INCAPSULA_404 = (b'<html><head><META NAME="robots" CONTENT="noindex,nofollow"></head><body><h1>Not Found</h1>'
+                 b'<script src="/_Incapsula_Resource?SWJIYLWA=x"></script></body></html>')
+CAL_TABLE = ("<table><tr><th>地区</th><th>燃やせるごみ</th><th>資源ごみ</th><th>不燃ごみ</th></tr>" + "".join(
+    f"<tr><td>{t}</td><td>{a}</td><td>第1・3水</td><td>第2金</td></tr>" for t, a in
+    [("東町", "月・木"), ("西町", "火・金"), ("南町", "月・木"), ("北町", "火・金")]) + "</table>")
+
+
+def build_imperva_robo(imp, robo):
+    """imperva: robots.txt が弱い印つきの 403 (ファイルが無いだけ)、トップは読める。フォルダの一覧は 403、404 の飾りにも弱い印
+    robo: robots.txt で全部禁止 (--ignore-robots でだけ取れる)"""
+    forbidden = (403, {"Content-Type": "text/html"}, b"<html><body><h1>Forbidden</h1></body></html>")
+    imp.routes.update({
+        "/robots.txt": (403, {"Content-Type": "text/html"}, INCAPSULA_404.replace(b"Not Found", b"Forbidden")),
+        "/": ok(page("インペルバ町", '<a href="/kurashi/gomi/">ごみ・リサイクル</a> <a href="/download/">ダウンロード</a>')),
+        "/kurashi/gomi/": ok(page("ごみ・リサイクル", '<a href="calendar.html">ごみ収集カレンダー（令和8年度）</a>')),
+        "/kurashi/gomi/calendar.html": ok(page("ごみ収集カレンダー（令和8年度）", CAL_TABLE)),
+        "/download/": forbidden,
+        "/missing.xml": (404, {"Content-Type": "text/html"}, INCAPSULA_404),
+        **{f"/f{i}/x": forbidden for i in range(1, 5)}, **{f"/files/p{i}.pdf": forbidden for i in range(1, 13)}})
+    robo.routes.update({
+        "/robots.txt": ok(b"User-agent: *\nDisallow: /\n", "text/plain"),
+        "/": ok(page("ロボ村", '<a href="/gomi/calendar.html">ごみ収集カレンダー（令和8年度）</a>')),
+        "/gomi/calendar.html": ok(page("ごみ収集カレンダー（令和8年度）", CAL_TABLE))})
+
+
+def build_review_cases(S):
+    """403 の数え方の穴を突くサイト (レビューで見つかったもの)"""
+    forbidden = (403, {"Content-Type": "text/html"}, b"<html><body><h1>Forbidden</h1></body></html>")
+    allow = ok(b"User-agent: *\nAllow: /\n", "text/plain")
+    r = S["redir403"]                                                    # どのページも 403 のページへ転送する
+    r.routes.update({"/robots.txt": allow, "/denied": forbidden,
+                     **{f"/r{i}/": redirect(302, "/denied") for i in range(1, 6)},
+                     **{f"/d{i}/a": redirect(301, f"/d{i}/a/") for i in range(1, 6)}, **{f"/d{i}/a/": forbidden for i in range(1, 6)}})
+    cf = gzip.compress(b"<html><head><title>Attention Required! | Cloudflare</title></head><body>blocked</body></html>")
+    gz403 = (403, {"Content-Type": "text/html", "Content-Encoding": "gzip"}, cf)
+    S["gz"].routes.update({"/robots.txt": allow, "/": ok(page("gz", "x")), "/cf": gz403})
+    S["gzr"].routes.update({"/robots.txt": gz403, "/": ok(page("gzr", "x"))})
+    S["rr"].routes.update({"/robots.txt": redirect(302, "/err/403.html"), "/err/403.html": forbidden,
+                           **{f"/p{i}/": forbidden for i in range(1, 4)}})
+    S["r429"].routes.update({"/robots.txt": allow})
+    S["r429"].default = (429, {"Content-Type": "text/plain"}, b"Too Many Requests")
+    xa = S["xa"]                                                         # 別のホストのブロックへ転送する・転送のループ・AWS WAF
+    xa.routes.update({"/robots.txt": allow, **{f"/a{i}/": redirect(302, S["gz"].base + "/cf") for i in range(1, 5)},
+                      **{f"/l{i}/": redirect(302, f"/l{i}/") for i in range(1, 5)},
+                      "/waf": (202, {"Content-Type": "application/json", "x-amzn-waf-action": "challenge"}, b"{}")})
+    S["oldpath"].routes.update({"/robots.txt": allow, "/old/": forbidden,
+                                "/": ok(page("移転市", '<a href="/gomi/calendar.html">ごみ収集カレンダー（令和8年度）</a>')),
+                                "/gomi/calendar.html": ok(page("ごみ収集カレンダー（令和8年度）", CAL_TABLE))})
+
+
 def setUpModule():
     global S
     S = {n: Server(n, delay=1.0 if n == "slow" else 0.15 if n.startswith("conc") else 0.0,
@@ -497,6 +548,11 @@ def setUpModule():
     build_hubcap(S["hubcap"])
     build_union(S["hasu"], S["kumiai"])
     build_outage(S["outage"])
+    build_imperva_robo(S["imperva"], S["robo"])
+    S["robo2"].routes.update({"/robots.txt": ok(b"User-agent: *\nCrawl-delay: 3600\nDisallow: /private/\n", "text/plain"),
+                              "/": ok(page("ロボ町", "x")), "/private/x.html": ok(page("内部", "x"))})
+    build_review_cases(S)
+    DEAD["990016"] = [S["oldpath"].base + "/old/"]                       # 公式サイトの URL のパスが 403 (/ は読める)
     DEAD["990013"] = [dead_url(), S["deep"].base + "/"]
 
 
@@ -573,6 +629,18 @@ class TestParts(unittest.TestCase):
         self.assertTrue(fetcher.is_challenge({}, stub, 403))           # 200 以外なら弱い印も見る
         self.assertTrue(fetcher.is_challenge({}, stub, 503))
         self.assertTrue(fetcher.is_challenge({"x-amzn-waf-action": "challenge"}, b"", 202))
+        self.assertFalse(fetcher.is_challenge({}, stub, 404))          # 404 の飾りのスクリプトは確認ページではない
+        self.assertEqual(fetcher.challenge_kind({}, stub, 403), "weak")
+        self.assertEqual(fetcher.challenge_kind({}, b"Request unsuccessful. Incapsula incident ID: 1", 404), "strong")
+
+    def test_block_of_legacy_records(self):
+        self.assertEqual(fetcher._block_of({"blocked": "HTTP 403"}), ("url", "HTTP 403"))          # 前の版の 403 はそのページだけ
+        self.assertEqual(fetcher._block_of({"blocked": "ボット対策の確認ページ (HTTP 404)"}), (None, None))
+        self.assertEqual(fetcher._block_of({"blocked": "ボット対策の確認ページ (HTTP 200)"})[0], "host")
+        self.assertEqual(fetcher._block_of({"blocked": "ボット対策の確認ページ (HTTP 503)"})[0], "host")
+        self.assertEqual(fetcher._block_of({"blocked": "HTTP 429"})[0], "host")
+        self.assertEqual(fetcher._block_of({"blocked": "HTTP 403", "block_level": "host"})[0], "host")
+        self.assertEqual(fetcher._block_of({"forbidden": "HTTP 403"}), ("url", "HTTP 403"))
 
     def test_robots_rfc_over_robotparser(self):
         r = fetcher.Robots("User-agent: *\nDisallow: /\nAllow: /kurashi/\n")
@@ -803,14 +871,141 @@ class TestFetcher(TempDir):
         self.assertIn("/robots.txt", alt.paths())
         self.assertNotIn("/private/cal.html", alt.paths())
 
-    def test_blocked_403_stops_host(self):
-        b = S["block"]
+    def test_403_pages_then_host(self):
+        b = S["block"]                                                   # 何にでも 403 (robots.txt も)
         f = self.fetcher()
         n = len(b.log())
-        self.assertEqual(f.get(b.base + "/").kind, "blocked")
-        self.assertEqual(f.get(b.base + "/other.html").kind, "blocked")
-        self.assertEqual(len(b.log()) - n, 1)                            # robots.txt の 403 だけで止まる
+        self.assertEqual(f.get(b.base + "/").kind, "http_error")         # robots.txt の 403 は規則なし (RFC 9309)、ページの 403 はそのページだけ
+        self.assertEqual(f.get(b.base + "/x/a.html").kind, "http_error")
+        self.assertEqual(f.get(b.base + "/y/b.html").kind, "blocked")    # 3 つのフォルダで続いたら、そのホストに断られているとみなす
+        self.assertEqual(f.get(b.base + "/z/c.html").kind, "blocked")
+        self.assertEqual(len(b.log()) - n, 4)                            # robots.txt + 3 ページ。そのあとは取らない
         self.assertEqual(f.stopped[b.netloc]["kind"], "blocked")
+
+    def test_403_count_resets_after_a_good_page(self):
+        i = S["imperva"]
+        f = self.fetcher()
+        self.assertEqual(f.get(i.base + "/f1/x").kind, "http_error")
+        self.assertTrue(f.get(i.base + "/").ok)                          # 403 でない答えで数え直す
+        self.assertEqual(f.get(i.base + "/f2/x").kind, "http_error")
+        self.assertEqual(f.get(i.base + "/f3/x").kind, "http_error")
+        self.assertEqual(f.get(i.base + "/f4/x").kind, "blocked")
+        self.assertEqual(f.hosts[i.netloc]["forbidden"], 4)
+
+    def test_403_in_one_folder_needs_more_pages(self):
+        i = S["imperva"]
+        f = self.fetcher()
+        kinds = [f.get(f"{i.base}/files/p{k}.pdf").kind for k in range(1, 12)]   # ホットリンク禁止の PDF の置き場など
+        self.assertEqual(kinds[:9], ["http_error"] * 9)
+        self.assertEqual(kinds[9:], ["blocked"] * 2)                     # 同じフォルダなら 10 ページで止める
+
+    def test_cross_host_block_and_loops_count_for_the_asking_host(self):
+        xa, g = S["xa"], S["gz"]
+        f = self.fetcher()
+        kinds = [f.get(f"{xa.base}/a{k}/").kind for k in range(1, 5)]   # 302 → 別のホストの確認ページ (そのホストは止まる)
+        self.assertEqual(kinds, ["blocked"] * 4)
+        self.assertIn(g.netloc, f.stopped)
+        self.assertIn(xa.netloc, f.stopped)                              # 頼んだホストも 3 つ目で止める
+        self.assertEqual(len([x for x in xa.log() if x["path"] == "/a4/"]), 0)
+        f = self.fetcher()
+        kinds = [f.get(f"{xa.base}/l{k}/").kind for k in range(1, 5)]   # 転送のループ
+        self.assertEqual(kinds, ["error", "error", "blocked", "blocked"])
+        f = self.fetcher()
+        self.assertEqual(f.get(xa.base + "/waf").kind, "blocked")        # x-amzn-waf-action は HTML でなくても見る
+
+    def test_robots_403_with_weak_mark_is_no_rules(self):
+        i = S["imperva"]
+        f = self.fetcher()
+        self.assertTrue(f.get(i.base + "/").ok)                          # robots.txt は Incapsula の飾りつきの 403 (無いだけ)
+        self.assertIn("403", f.robots(i.base + "/").note)
+        self.assertNotIn(i.netloc, f.stopped)
+        r = f.get(i.base + "/missing.xml")                               # 404 の飾りのスクリプトでは止めない
+        self.assertEqual((r.kind, r.status), ("http_error", 404))
+        self.assertNotIn(i.netloc, f.stopped)
+
+    def test_legacy_cache_records_are_reread(self):
+        f = self.fetcher(offline=True)
+        host = "http://legacy.example"
+        f.cache.put(host + "/robots.txt", {"url": host + "/robots.txt", "status": 403, "headers": {}, "checked": time.time(),
+                                           "blocked": "HTTP 403"})
+        f.cache.put(host + "/x", {"url": host + "/x", "status": 404, "headers": {}, "checked": time.time(),
+                                  "blocked": "ボット対策の確認ページ (HTTP 404)"})
+        r = f.get(host + "/x")
+        self.assertEqual((r.kind, r.status), ("http_error", 404))
+        self.assertTrue(f.robots(host + "/").allowed(host + "/y"))
+        self.assertEqual(f.stopped, {})
+
+    def test_ignore_robots(self):
+        z = S["robo2"]                                                   # /private/ を禁止、Crawl-delay: 3600
+        self.assertEqual(self.fetcher().get(z.base + "/private/x.html").kind, "robots_disallowed")
+        f = self.fetcher(ignore_robots=True, max_crawl_delay=0.3)
+        t0 = time.monotonic()
+        r = f.get(z.base + "/private/x.html")                            # robots.txt で禁止されたページも取る
+        self.assertTrue(r.ok)
+        self.assertTrue(f.get(z.base + "/").ok)
+        self.assertEqual(f.hosts[z.netloc]["robots_ignored"], 2)          # 禁止を破った 1 + Crawl-delay を守りきらなかった 1
+        log = sorted((x for x in z.log() if x["start"] >= t0), key=lambda x: x["start"])
+        self.assertEqual([x["path"] for x in log], ["/private/x.html", "/"])     # robots.txt は前の取得のキャッシュ
+        for a, b in zip(log, log[1:]):
+            self.assertGreaterEqual(b["start"] - a["end"], 0.29)         # 長い Crawl-delay は守らないが、上限の秒数までは守る
+        self.assertLess(time.monotonic() - t0, 3)
+        self.assertTrue(all(x["ua"] == fetcher.UA for x in z.log()))     # 名乗りは変えない
+        f2 = self.fetcher(ignore_robots=True, max_crawl_delay=0.3)        # キャッシュから使ったものは数えない (取っていない)
+        self.assertTrue(f2.get(z.base + "/private/x.html").ok)
+        self.assertEqual(f2.hosts.get(z.netloc, {}).get("robots_ignored", 0), 0)
+
+    def test_403_behind_redirects_still_stops(self):
+        r = S["redir403"]
+        f = self.fetcher()
+        kinds = [f.get(f"{r.base}/r{i}/").kind for i in range(1, 6)]    # 302 → 同じ /denied (403)
+        self.assertEqual(kinds[:2], ["http_error"] * 2)
+        self.assertEqual(kinds[2:], ["blocked"] * 3)
+        self.assertEqual(len([x for x in r.log() if x["path"] == "/denied"]), 1)   # /denied はキャッシュ。頼んだ URL で数える
+        f = self.fetcher()
+        kinds = [f.get(f"{r.base}/d{i}/a").kind for i in range(1, 6)]   # 301 /dN/a → /dN/a/ (403): 転送で数え直さない
+        self.assertEqual(kinds[2:], ["blocked"] * 3)
+        self.assertEqual(len([x for x in r.log() if x["path"] in ("/d4/a/", "/d5/a/")]), 0)
+
+    def test_cached_answers_do_not_reset_403_count(self):
+        i = S["imperva"]
+        self.assertTrue(self.fetcher().get(i.base + "/kurashi/gomi/").ok)     # 前の実行のキャッシュ
+        f = self.fetcher()
+        got = []
+        for k in range(1, 4):
+            got.append(f.get(f"{i.base}/f{k}/x").kind)
+            if k < 3:                                                    # 3 ページ目でホストを止めたあとは取らない
+                self.assertEqual(f.get(i.base + "/kurashi/gomi/").from_cache, "fresh")
+        self.assertEqual(got, ["http_error", "http_error", "blocked"])
+
+    def test_gzip_challenge_pages_are_read(self):
+        g, gr = S["gz"], S["gzr"]
+        f = self.fetcher()
+        r = f.get(g.base + "/cf")                                        # gzip の 403 の確認ページ → すぐホストを止める
+        self.assertEqual(r.kind, "blocked")
+        self.assertIn("ボット対策", f.stopped[g.netloc]["reason"])
+        r = f.get(gr.base + "/")                                         # robots.txt が gzip の確認ページ → 規則なしにしない
+        self.assertEqual(r.kind, "blocked")
+        self.assertEqual(gr.paths(), ["/robots.txt"])
+
+    def test_robots_redirect_to_403_is_not_counted(self):
+        rr = S["rr"]
+        f = self.fetcher()
+        kinds = [f.get(f"{rr.base}/p{i}/").kind for i in range(1, 4)]
+        self.assertEqual(kinds, ["http_error", "http_error", "blocked"])  # robots.txt の転送先の 403 は数えない
+
+    def test_waiting_requests_skip_a_stopped_host(self):
+        h = S["r429"]
+        f = self.fetcher(gap=0.3)
+        f.robots(h.base + "/")
+        t0 = time.monotonic()
+        ts = [threading.Thread(target=f.get, args=(f"{h.base}/q{k}",)) for k in range(6)]
+        for t in ts:
+            t.start()
+        for t in ts:
+            t.join()
+        sent = [x for x in h.log() if x["start"] >= t0]
+        self.assertEqual(len(sent), 1)                                   # 429 のあと、順番を待っていたものは取らない
+        self.assertEqual(f.stopped[h.netloc]["kind"], "blocked")
 
     def test_slow_host_gives_up(self):
         s = S["slow"]
@@ -1029,6 +1224,26 @@ class TestCrawl(TempDir):
 # ---- 実行全体 (CLI) ----
 
 class TestCLI(TempDir):
+    def test_robots_403_site_is_crawled_and_ignore_robots(self):
+        self.assertEqual(self.run_cli(["imperva", "robo"]), 0)
+        imp, robo = self.result("imperva"), self.result("robo")
+        self.assertEqual(imp["format_class"], "html_table")              # robots.txt の 403 で止めない (前はブロック扱い)
+        self.assertEqual(robo["format_class"], "blocked")                # robots.txt で全部禁止
+        self.assertNotIn("robots_ignored", robo)
+        self.assertNotIn("/gomi/calendar.html", S["robo"].paths())
+        self.assertEqual(self.run_cli(["robo"], "--ignore-robots", "--out", str(pathlib.Path(self.tmp) / "out2")), 0)
+        robo2 = self.result("robo", out="out2")
+        self.assertEqual(robo2["format_class"], "html_table")            # --ignore-robots なら取る
+        self.assertGreaterEqual(robo2["robots_ignored"], 2)              # 禁止を破って取った数を残す
+        row = (pathlib.Path(self.tmp) / "out2" / "summary.csv").read_text("utf-8").splitlines()
+        self.assertIn("robots_ignored", row[0])
+
+    def test_start_path_403_falls_back_to_root(self):
+        self.assertEqual(self.run_cli(["990016"]), 0)
+        d = self.result("990016")
+        self.assertEqual(d["format_class"], "html_table")                # /old/ が 403 でも / から入る
+        self.assertEqual([a["url"].rsplit(":", 1)[1].split("/", 1)[1] for a in d["sites"][0]["start_attempts"]], ["old/", ""])
+
     def test_classes_resume_and_idempotent(self):
         names = ["main", "app", "block", "chal", "rate"]
         servers = [S[n] for n in names] + [S["alt"]]
@@ -1046,7 +1261,7 @@ class TestCLI(TempDir):
         self.assertEqual(res["app"]["format_class"], "app_only")
         self.assertEqual({a["vendor"] for a in res["app"]["apps"]}, {"gomisuke", "app_store"})
         self.assertEqual(res["block"]["format_class"], "blocked")
-        self.assertEqual(res["block"]["sites"][0]["blocked"]["where"], "robots")   # どこで止まったか (人が見るため)
+        self.assertEqual(res["block"]["sites"][0]["blocked"]["where"], "top")      # どこで止まったか (トップが 403)
         self.assertEqual(res["chal"]["format_class"], "blocked")
         self.assertEqual(res["rate"]["format_class"], "blocked")
         rate = sorted(S["rate"].log(), key=lambda r: r["start"])

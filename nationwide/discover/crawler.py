@@ -245,8 +245,10 @@ class SiteCrawl:
         self.start_attempts.append({"url": self.start, "result": (self.top_result or {}).get("result")})
         sp = urllib.parse.urlsplit(self.start)
         root = f"{sp.scheme}://{sp.netloc}/"
-        if top is None and self.status == "ok" and root not in self.done:
-            top = self._visit(root, 0, None, "html", top=True)    # 公式サイトの URL のパスが古いときは / から
+        top403 = self.status == "blocked" and (self.top_result or {}).get("http") == 403 and netloc_of(root) not in self.f.stopped
+        if top is None and (self.status == "ok" or top403) and root not in self.done:
+            self.status, self.blocked = "ok", None
+            top = self._visit(root, 0, None, "html", top=True)    # 公式サイトの URL のパスが古いとき (404・403) は / から
             self.start_attempts.append({"url": root, "result": (self.top_result or {}).get("result")})
         if top is not None:
             self.start_used = self.start_attempts[-1]["url"]
@@ -427,7 +429,7 @@ class SiteCrawl:
     def _visit(self, url, depth, parent, typ, top=False, priority=None, via_hub=False, via_related=False):
         self.done.add(url)
         r = self.f.get(url)
-        if r.kind != "robots_disallowed":                     # robots.txt で取らなかったものは数えない
+        if r.kind != "robots_disallowed" or r.redirects:      # robots.txt で取らなかったものは数えない (転送の途中まで取ったものは数える)
             self.fetched += 1
             if via_related:
                 self.offsite += 1                             # ほかのサイトのものは別に数える
@@ -449,6 +451,13 @@ class SiteCrawl:
                 self.bases.append(site_base(fnl))             # トップの転送先もサイトの内
             if r.ok:
                 self.main_host = fnl
+        forbidden = r.kind == "http_error" and r.status == 403   # 確認ページでない 403 (fetcher はそのページだけとみなす)
+        if forbidden and top:
+            self.status = "blocked"                           # トップが 403 なら、そのサイトに断られている (_top が / も試す)
+            self.blocked = {"url": final, "reason": "トップが HTTP 403", "where": "top"}
+            return None
+        if forbidden and typ == "doc":
+            self._unfetched_doc(url, depth, "blocked")        # 403 の資料は「取れない」(人が見る)
         if r.kind in ("blocked", "unreachable", "robots_disallowed", "timeout") and typ == "doc":
             self._unfetched_doc(url, depth, r.kind)
         if r.kind in ("blocked", "unreachable"):

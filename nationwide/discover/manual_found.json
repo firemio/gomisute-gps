@@ -1,0 +1,126 @@
+{
+ "about": "クローラで入れなかった自治体を、人 (作者 firemio のブラウザ) で確かめた記録。ボット対策の確認 (CAPTCHA) は解かない。解く必要があるときは作者が自分で解く",
+ "municipalities": [
+  {
+   "lg_code": "132136",
+   "pref": "東京都",
+   "name": "東村山市",
+   "checked_at": "2026-10-19",
+   "via": "Claude in Chrome (作者のブラウザ)",
+   "crawler": "CloudFront (AWS WAF) がブラウザ以外を 403 で断る (robots.txt もトップも)。ブラウザではふつうに開ける。CAPTCHA は出なかった",
+   "format_class": "html_text",
+   "pages": [
+    {
+     "url": "https://www.city.higashimurayama.tokyo.jp/kurashi/gomi/gomi/syuusyuuyoubi.html",
+     "kind": "districts",
+     "note": "町丁目ごとの収集曜日の一覧 (HTML、更新日 2026年9月15日)。町ごとの一覧表の PDF もある"
+    },
+    {
+     "url": "https://www.city.higashimurayama.tokyo.jp/kurashi/gomi/gomi/29gomi-calendar.html",
+     "kind": "calendar",
+     "note": "ごみ・資源収集カレンダー (2026年10月から2027年9月分、更新日 2026年9月27日)。地区ごとの PDF 16 (各 12MB ほど) と全地区共通の PDF"
+    }
+   ],
+   "docs": {
+    "base": "https://www.city.higashimurayama.tokyo.jp/kurashi/gomi/gomi/files/",
+    "2026-10_2027-09": {
+     "本町": "202608honcyou.pdf",
+     "久米川町": "202608kumegawa.pdf",
+     "秋津町": "202608akitu.pdf",
+     "青葉町": "202608aoba.pdf",
+     "恩多町": "202608onta.pdf",
+     "萩山町1・2丁目": "202608hagiyama12.pdf",
+     "萩山町3・4・5丁目": "202608hagiyama345.pdf",
+     "栄町1丁目": "202608sakae1.pdf",
+     "栄町2丁目": "202608sakae2.pdf",
+     "栄町3丁目": "202608sakae3.pdf",
+     "富士見町": "202608fujimi.pdf",
+     "美住町": "202608misumi.pdf",
+     "廻田町": "202608megurita.pdf",
+     "多摩湖町": "202608tamako.pdf",
+     "諏訪町": "202608suwa.pdf",
+     "野口町": "202608noguti.pdf",
+     "全地区共通": "202608kyoutuu.pdf"
+    }
+   },
+   "next": "PDF はクローラでは取れない (CloudFront が断る)。読むときは作者のブラウザで保存してもらう"
+  },
+  {
+   "lg_code": "392057",
+   "pref": "高知県",
+   "name": "土佐市",
+   "checked_at": "2026-10-19",
+   "via": "Claude in Chrome (作者のブラウザ)",
+   "crawler": "Imperva (Incapsula) の確認ページ「Request unsuccessful」",
+   "browser": "作者のブラウザでも Imperva の「Additional security check is required」と hCaptcha (私は人間です) が出た。hCaptcha は作者が自分で解き、そのあと探した",
+   "format_class": "pdf",
+   "pages": [
+    {
+     "url": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=6525",
+     "kind": "districts",
+     "note": "【土佐市】家庭ごみの出し方 (更新日 2026/10/08)。収集日は自治会ごとに異なり、地区ごとの「収集日一覧表」の PDF 3 つ。朝 7 時 30 分まで、1 回 4 袋まで"
+    },
+    {
+     "url": "https://www.city.tosa.lg.jp/life/detail.php?hdnKey=6384",
+     "kind": "how_to",
+     "note": "【令和８年度】土佐市ごみ出しポスター (更新日 2026/10/08)。表面は全地区、裏面は地区ごと。外国語版もある"
+    }
+   ],
+   "docs": {
+    "base": "https://www.city.tosa.lg.jp/download/?t=LD",
+    "収集日一覧表": {
+     "宇佐・新居地区": "&id=6525&fid=53122 (PDF 73KB)",
+     "高岡地区": "&id=6525&fid=53123 (PDF 107KB)",
+     "高石・蓮池・波介・北原・戸波地区": "&id=6525&fid=53124 (PDF 101KB)"
+    },
+    "令和8年度ごみ出しポスター": {
+     "全地区 (表面)": "&id=6384&fid=51448 (PDF 1.51MB)",
+     "宇佐・新居地区 (裏面)": "&id=6384&fid=51451 (PDF 1.17MB)",
+     "高岡地区 (裏面)": "&id=6384&fid=51449 (PDF 1.19MB)",
+     "高石・蓮池・波介・北原・戸波地区 (裏面)": "&id=6384&fid=51450 (PDF 1.22MB)"
+    }
+   },
+   "readings": {
+    "宇佐・新居地区": {
+     "status": "読んだ",
+     "file": "data/manual/392057/tosa_392057_usa_nii.pdf (作者の Chrome で保存、2026-10-19)",
+     "reading": "data/manual/392057/usa_nii_reading.json",
+     "summary": "部落 (自治会) 52。可燃ごみは毎週 月・木 か 火・金。不燃ごみ・プラ容器・発泡スチロール・びんは 第1月/第1金/第2金 のどれか、プラ容器・発泡スチロールは さらに 第3火/第4火。かん・ペットボトル・紙類・衣類は 第1水/第2水/第3水",
+     "checks": "2 人の読みが 3 つの表すべてで一致。部落名 52 はすべて PDF の文字の層にあり、各表に 1 回ずつ。文字の層の語で読み落としなし",
+     "not_on_document": "年度・期間、祝日・年末年始・第5週の扱い",
+     "readers": 2
+    },
+    "高岡地区": {
+     "status": "読んだ",
+     "file": "data/manual/392057/tosa_392057_takaoka.pdf (作者の Chrome で保存、2026-10-19)",
+     "reading": "data/manual/392057/takaoka_reading.json",
+     "readers": 2,
+     "summary": "部落 57。可燃ごみは毎週 月・木 (12) か 火・金 (45)。不燃ごみ等は 8 通り (例: 第1月 と プラは第3木)。かん・ペットボトル・紙類・衣類は 第1水 (34) か 第2水 (23)",
+     "checks": "2 人の読みが 3 つの表すべてで一致。部落名 57 はすべて文字の層にあり、各表に 1 回ずつ",
+     "not_on_document": "年度・期間、祝日・年末年始・第5週の扱い"
+    },
+    "高石・蓮池・波介・北原・戸波地区": {
+     "status": "読んだ",
+     "file": "data/manual/392057/tosa_392057_takaishi_hasuike_hake_kitabara_tonami.pdf (作者の Chrome で保存、2026-10-19)",
+     "reading": "data/manual/392057/takaishi_reading.json",
+     "readers": 2,
+     "summary": "部落 60。可燃ごみは毎週 月・木 か 火・金 (戸波地区は全部 火・金)。不燃ごみ等は 13 通り。かん・ペットボトル・紙類・衣類は 高石・蓮池・波介が 第3水、北原・戸波が 第4水",
+     "checks": "2 人の読みが 3 つの表すべてで一致。部落名 60 はすべて文字の層にあり、各表に 1 回ずつ",
+     "not_on_document": "年度・期間、祝日・年末年始・第5週の扱い"
+    }
+   },
+   "next": "収集日一覧表 3 つは読み終えた (部落 169)。祝日・年末年始・第5週の扱いは文書に無いので、ポスターか北原クリーンセンター (088-852-7610) で確かめる。部落 (自治会) と住所の対応は別に要る"
+  },
+  {
+   "lg_code": "015181",
+   "pref": "北海道",
+   "name": "利尻町",
+   "checked_at": "2026-10-19",
+   "via": "Claude in Chrome (作者のブラウザ)",
+   "crawler": "Imperva の 503「Request unsuccessful」(ボット対策と判定していた)",
+   "browser": "作者のブラウザでも Imperva の「エラー：Connection Failed — ご指定のサイトへアクセスできませんでした」。ボット対策ではなく、町のサーバーにつながらない障害とみられる",
+   "format_class": null,
+   "next": "時間を置いてやり直す"
+  }
+ ]
+}

@@ -43523,6 +43523,4380 @@
      "wait_s": 18.3
     }
    }
+  },
+  {
+   "started_at": "2026-10-19T12:57:42+09:00",
+   "finished_at": "2026-10-19T13:49:43+09:00",
+   "seconds": 3120.9,
+   "version": 4,
+   "user_agent": "gomisute-gps-discover (+https://github.com/firemio/gomisute-gps)",
+   "args": {
+    "pref": null,
+    "codes": "122190,122211,132110,322032,132136,352080,342131,112356,332038,082228,472107,122157,072133,402044,343021,322024,162086,192023,162108,392049,102105,372064,282138,322091,392111,312045,462179,152081,032034,032077,342106,343048,404471,042064,072141,352128,473260,062073,372072,292125,392057,343072,016926,214035,282227,414255,283657,012157,016616,453820,203858,394122,442071,384224,014001,016918,464929,054631,473251,464686,073083,016071,334456,113271,105228,014290,454061,324493,073229,203882,154822,073032,043249,345458,015849,303046,075612,254410,453838,016641,064017,325015,464902,383562,104264,465330,016420,434281,394017,353213,123421,325058,075035,104248,394114,465020,073628,013471,155811,363421,075051,393878,013706,015474,323861,155047,336637,203491,204226,016381,303437,015466,015164,015610,013323,013633,204307,394050,393444,053686,473022,406091,014303,014826,013927,204251,134210,013935,133639,454303,034851,015172,423831,363219,016489,015181,133647,053279,074454,014052,294535,216046,363022,074446,075485,204293,194425,473588,304271,155861,393649,473561,463035",
+    "limit": null,
+    "sample": null,
+    "seed": 20261019,
+    "no_llm": false,
+    "resume": false,
+    "no_retry_unreachable": false,
+    "include_no_service": false,
+    "depth": 4,
+    "budget": 400,
+    "max_docs": 25,
+    "after_strong": 60,
+    "site_minutes": 60.0,
+    "no_site_search": false,
+    "hub_budget": 40,
+    "related_budget": 15,
+    "judge_top": 5,
+    "llm_parallel": 8,
+    "offline": false,
+    "replay": false,
+    "workers": 32,
+    "max_concurrency": 16,
+    "gap": 1.0,
+    "ip_gap": 0.25,
+    "max_crawl_delay": 60.0,
+    "ignore_robots": true,
+    "timeout": 30.0,
+    "retries": 2,
+    "backoff": 5.0,
+    "max_age_hours": 72.0,
+    "max_requests": null
+   },
+   "selected": 153,
+   "skipped_by_resume": 0,
+   "done": 153,
+   "not_written": 0,
+   "halted": false,
+   "halt_reason": null,
+   "requests": 13182,
+   "hosts_contacted": 248,
+   "by_class": {
+    "app_only": 9,
+    "blocked": 5,
+    "html_table": 12,
+    "html_text": 8,
+    "not_found": 60,
+    "pdf_image": 6,
+    "pdf_text": 42,
+    "unreachable": 11
+   },
+   "llm": {
+    "model": "deepseek-flash",
+    "calls": 333,
+    "cached": 228,
+    "errors": 1,
+    "prompt_tokens": 497414,
+    "completion_tokens": 176997
+   },
+   "hosts": {
+    "aya-lib.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 45481,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "betsukai.jp": {
+     "requests": 423,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 421,
+      "302": 2
+     },
+     "bytes": 62281554,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 636.6
+    },
+    "carepro-navi.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "ccdc.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "choutatsuweb.pref.shimane.lg.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 23074,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.5
+    },
+    "city.kashima.ibaraki.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "city.kuji.iwate.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://city.kuji.iwate.jp/robots.txt"
+     }
+    },
+    "city.sanuki.kagawa.jp": {
+     "requests": 1,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 1,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "ssl: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1028)",
+      "url": "https://city.sanuki.kagawa.jp/robots.txt"
+     }
+    },
+    "city.tomioka.lg.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://city.tomioka.lg.jp/robots.txt"
+     }
+    },
+    "city.uda.nara.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://city.uda.nara.jp/robots.txt"
+     }
+    },
+    "city.yachiyo.chiba.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://city.yachiyo.chiba.jp/robots.txt"
+     }
+    },
+    "cms.city.unnan.shimane.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (timeout: [WinError 10060] 接続済みの呼び出し先が一定の時間を過ぎても正しく応答しなかったため、接続できませんでした。または接続済みのホストが応答しなかったため、確立された接続は失敗しました。)",
+      "url": "http://cms.city.unnan.shimane.jp/robots.txt"
+     }
+    },
+    "data.town.kadena.okinawa.jp": {
+     "requests": 194,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 193,
+      "404": 1
+     },
+     "bytes": 2098129,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 179.6
+    },
+    "hokkaido.shibecha.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "houmukyoku.moj.go.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 15731,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "iinan-papurika.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 68641,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "iinan.ed.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 31276,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 5.0
+    },
+    "iinanmai.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 96138,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "iju-tsukumi.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 28125,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "iju.pref.miyazaki.lg.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 124056,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "iwami-yogo.ed.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 37580,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 5.0
+    },
+    "kuromatsunai-news.sblo.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "lgpos.task-asp.net": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (conn: RemoteDisconnected: Remote end closed connection without response)",
+      "url": "https://lgpos.task-asp.net/robots.txt"
+     }
+    },
+    "mishimamura.com": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 66,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "nankaii.town.yoshika.lg.jp": {
+     "requests": 11,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 10,
+      "404": 1
+     },
+     "bytes": 826218,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 9.8
+    },
+    "nemurohokubu-kouikirengo.jp": {
+     "requests": 7,
+     "robots": 2,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 6,
+      "301": 1
+     },
+     "bytes": 426130,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 5.7
+    },
+    "nishiiburi.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 30241,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "ofunatokankyou-iwate.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 9,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "ohnan-kanko.com": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 224546,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "ohnan-shakyo.or.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 108625,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "ohnansmilenavi.com": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 68523,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "policies.env.go.jp": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 1
+     },
+     "bytes": 4998819,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "reiki.town.agematsu.nagano.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "reserve.town.suttu.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "sousei.town.kunitomi.miyazaki.jp": {
+     "requests": 4,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 3,
+      "404": 1
+     },
+     "bytes": 36754,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 2.0
+    },
+    "souzokubengo-line.com": {
+     "requests": 4,
+     "robots": 2,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 2,
+      "301": 2
+     },
+     "bytes": 56972,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 3.0
+    },
+    "ssp.kaigiroku.net": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 6933,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 1,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "sunrisecleancenter.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 6129,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "town.kochi-tsuno.lg.jp": {
+     "requests": 7,
+     "robots": 0,
+     "cache_fresh": 75,
+     "not_modified": 0,
+     "status": {
+      "200": 7
+     },
+     "bytes": 123004,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 5.7
+    },
+    "town.kudoyama.wakayama.jp": {
+     "requests": 1,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 1,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.2,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "ssl: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'town.kudoyama.wakayama.jp'. (_ssl.c:1028)",
+      "url": "https://town.kudoyama.wakayama.jp/robots.txt"
+     }
+    },
+    "town.kumano.hiroshima.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://town.kumano.hiroshima.jp/robots.txt"
+     }
+    },
+    "town.shibecha.hokkaido.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 4,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "town.takamori.kumamoto.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://town.takamori.kumamoto.jp/robots.txt"
+     }
+    },
+    "ttzk.graffer.jp": {
+     "requests": 2,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "301": 1
+     },
+     "bytes": 3341,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "vill.higashiyoshino.nara.jp": {
+     "requests": 175,
+     "robots": 0,
+     "cache_fresh": 212,
+     "not_modified": 0,
+     "status": {
+      "200": 172,
+      "301": 1,
+      "404": 2
+     },
+     "bytes": 5638670,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 153.6
+    },
+    "vill.kitadaito.okinawa.jp": {
+     "requests": 7,
+     "robots": 0,
+     "cache_fresh": 155,
+     "not_modified": 0,
+     "status": {
+      "200": 7
+     },
+     "bytes": 208504,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 5.8
+    },
+    "vill.kouzushima.tokyo.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 4,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "vill.ookuwa.nagano.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "http://vill.ookuwa.nagano.jp/robots.txt"
+     }
+    },
+    "web.pref.hyogo.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "web.town.taka.lg.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2,
+      "404": 1
+     },
+     "bytes": 11040,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 2.0
+    },
+    "www.aiaj.or.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.akamura.net": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 18,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.az9.or.jp": {
+     "requests": 3,
+     "robots": 0,
+     "cache_fresh": 19,
+     "not_modified": 0,
+     "status": {
+      "200": 3
+     },
+     "bytes": 664292,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.chatan.jp": {
+     "requests": 251,
+     "robots": 0,
+     "cache_fresh": 155,
+     "not_modified": 0,
+     "status": {
+      "200": 249,
+      "404": 2
+     },
+     "bytes": 5144829,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 237.0
+    },
+    "www.chiseki.go.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 11955,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.city-yanai.jp": {
+     "requests": 73,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 72,
+      "404": 1
+     },
+     "bytes": 13511543,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 68.5
+    },
+    "www.city.asahi.lg.jp": {
+     "requests": 100,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 97,
+      "404": 3
+     },
+     "bytes": 40786038,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 93.9
+    },
+    "www.city.bibai.hokkaido.jp": {
+     "requests": 80,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 79,
+      "404": 1
+     },
+     "bytes": 30000642,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 244.3
+    },
+    "www.city.fujimi.saitama.jp": {
+     "requests": 3,
+     "robots": 0,
+     "cache_fresh": 77,
+     "not_modified": 0,
+     "status": {
+      "200": 3
+     },
+     "bytes": 209272,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.1
+    },
+    "www.city.fujiyoshida.yamanashi.jp": {
+     "requests": 37,
+     "robots": 0,
+     "cache_fresh": 37,
+     "not_modified": 0,
+     "status": {
+      "200": 37
+     },
+     "bytes": 16654204,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 33.9
+    },
+    "www.city.fukushima-date.lg.jp": {
+     "requests": 86,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 85,
+      "404": 1
+     },
+     "bytes": 10261899,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 78.4
+    },
+    "www.city.hamada.shimane.jp": {
+     "requests": 116,
+     "robots": 1,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {
+      "200": 108,
+      "301": 2,
+      "302": 5,
+      "404": 1
+     },
+     "bytes": 31675941,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 148.5
+    },
+    "www.city.hatsukaichi.hiroshima.jp": {
+     "requests": 105,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 104,
+      "404": 1
+     },
+     "bytes": 86211635,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 100.8
+    },
+    "www.city.higashimurayama.tokyo.jp": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "403": 1
+     },
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 1,
+     "wait_s": 0.0
+    },
+    "www.city.ichihara.chiba.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 4,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.city.itoman.lg.jp": {
+     "requests": 69,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 65,
+      "301": 1,
+      "302": 1,
+      "404": 2
+     },
+     "bytes": 28193719,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 64.6
+    },
+    "www.city.iwakuni.lg.jp": {
+     "requests": 105,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 103,
+      "301": 1,
+      "404": 1
+     },
+     "bytes": 32804942,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 100.8
+    },
+    "www.city.izumo.shimane.jp": {
+     "requests": 337,
+     "robots": 1,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {
+      "200": 329,
+      "301": 2,
+      "302": 4,
+      "404": 2
+     },
+     "bytes": 68874034,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 363.4
+    },
+    "www.city.kaminoyama.yamagata.jp": {
+     "requests": 80,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 79,
+      "404": 1
+     },
+     "bytes": 17811238,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 72.5
+    },
+    "www.city.kashima.ibaraki.jp": {
+     "requests": 3,
+     "robots": 0,
+     "cache_fresh": 69,
+     "not_modified": 0,
+     "status": {
+      "200": 3
+     },
+     "bytes": 132300,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.3
+    },
+    "www.city.kochi-konan.lg.jp": {
+     "requests": 253,
+     "robots": 0,
+     "cache_fresh": 176,
+     "not_modified": 0,
+     "status": {
+      "200": 250,
+      "302": 3
+     },
+     "bytes": 10764565,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 237.0
+    },
+    "www.city.kodaira.tokyo.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.city.kuji.iwate.jp": {
+     "requests": 1,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 1,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "ssl: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028)",
+      "url": "https://www.city.kuji.iwate.jp/robots.txt"
+     }
+    },
+    "www.city.miyazaki.miyazaki.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.city.motomiya.lg.jp": {
+     "requests": 96,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 94,
+      "301": 1,
+      "404": 1
+     },
+     "bytes": 113175061,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 87.1
+    },
+    "www.city.nankoku.lg.jp": {
+     "requests": 26,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {
+      "200": 26
+     },
+     "bytes": 6834342,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 24.0
+    },
+    "www.city.nanto.toyama.jp": {
+     "requests": 12,
+     "robots": 0,
+     "cache_fresh": 114,
+     "not_modified": 0,
+     "status": {
+      "200": 12
+     },
+     "bytes": 14949525,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 10.6
+    },
+    "www.city.nishiwaki.lg.jp": {
+     "requests": 253,
+     "robots": 1,
+     "cache_fresh": 173,
+     "not_modified": 0,
+     "status": {
+      "200": 251,
+      "302": 2
+     },
+     "bytes": 9298382,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 237.3
+    },
+    "www.city.nogata.fukuoka.jp": {
+     "requests": 103,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 103
+     },
+     "bytes": 18203554,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 95.7
+    },
+    "www.city.ofunato.iwate.jp": {
+     "requests": 252,
+     "robots": 0,
+     "cache_fresh": 158,
+     "not_modified": 0,
+     "status": {
+      "200": 247,
+      "302": 4,
+      "404": 1
+     },
+     "bytes": 149350083,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 227.3
+    },
+    "www.city.ojiya.niigata.jp": {
+     "requests": 76,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 75,
+      "404": 1
+     },
+     "bytes": 20595119,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 71.3
+    },
+    "www.city.sakaiminato.lg.jp": {
+     "requests": 71,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 70,
+      "302": 1
+     },
+     "bytes": 17922338,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 71,
+     "robots_ignored": 71,
+     "forbidden": 0,
+     "wait_s": 348.3
+    },
+    "www.city.sanuki.kagawa.jp": {
+     "requests": 1,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 1,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "ssl: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028)",
+      "url": "https://www.city.sanuki.kagawa.jp/robots.txt"
+     }
+    },
+    "www.city.shiroishi.miyagi.jp": {
+     "requests": 70,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 68,
+      "301": 1,
+      "404": 1
+     },
+     "bytes": 34522990,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 62.7
+    },
+    "www.city.shobara.hiroshima.jp": {
+     "requests": 21,
+     "robots": 0,
+     "cache_fresh": 65,
+     "not_modified": 0,
+     "status": {
+      "200": 21
+     },
+     "bytes": 28128761,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 19.2
+    },
+    "www.city.soo.kagoshima.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 83,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.city.tomioka.lg.jp": {
+     "requests": 1,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 1,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "ssl: [SSL: TLSV1_ALERT_INSUFFICIENT_SECURITY] tlsv1 alert insufficient security (_ssl.c:1028)",
+      "url": "https://www.city.tomioka.lg.jp/robots.txt"
+     }
+    },
+    "www.city.tonami.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 4,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.city.tonami.toyama.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.city.tosa.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "blocked",
+      "reason": "ボット対策の確認ページ (HTTP 200)",
+      "url": "https://www.city.tosa.lg.jp/robots.txt"
+     }
+    },
+    "www.city.tsukumi.oita.jp": {
+     "requests": 82,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 79,
+      "302": 1,
+      "404": 2
+     },
+     "bytes": 9505277,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 75.1
+    },
+    "www.city.tsuyama.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.city.uda.nara.jp": {
+     "requests": 1,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 1,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "ssl: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028)",
+      "url": "https://www.city.uda.nara.jp/robots.txt"
+     }
+    },
+    "www.city.unnan.shimane.jp": {
+     "requests": 416,
+     "robots": 1,
+     "cache_fresh": 6,
+     "not_modified": 0,
+     "status": {
+      "200": 410,
+      "301": 1,
+      "302": 2,
+      "404": 3
+     },
+     "bytes": 173451074,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 463.6
+    },
+    "www.city.yabu.hyogo.jp": {
+     "requests": 250,
+     "robots": 1,
+     "cache_fresh": 158,
+     "not_modified": 0,
+     "status": {
+      "200": 243,
+      "302": 2,
+      "404": 5
+     },
+     "bytes": 15485566,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 230.7
+    },
+    "www.city.yachiyo.chiba.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://www.city.yachiyo.chiba.jp/robots.txt"
+     }
+    },
+    "www.coop-shimane.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 29042,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 5.0
+    },
+    "www.date-eisei.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 27,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.e-map.ne.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.env.go.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 67,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.ferpc.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 7,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.furusato-tax.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 226844,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.harp.lg.jp": {
+     "requests": 2,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "302": 1
+     },
+     "bytes": 54723,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 62.0
+    },
+    "www.higashikagawa.jp": {
+     "requests": 10,
+     "robots": 0,
+     "cache_fresh": 63,
+     "not_modified": 0,
+     "status": {
+      "200": 10
+     },
+     "bytes": 823892,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 7.7
+    },
+    "www.hozenkumiai.or.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 4,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.iinan.jp": {
+     "requests": 220,
+     "robots": 0,
+     "cache_fresh": 156,
+     "not_modified": 0,
+     "status": {
+      "200": 202,
+      "301": 3,
+      "302": 13,
+      "404": 2
+     },
+     "bytes": 3281368,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 274.3
+    },
+    "www.im.licsre-saas.jp": {
+     "requests": 2,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 41847,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.jarc.or.jp": {
+     "requests": 3,
+     "robots": 0,
+     "cache_fresh": 9,
+     "not_modified": 0,
+     "status": {
+      "200": 3
+     },
+     "bytes": 1683388,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.8
+    },
+    "www.jcpra.or.jp": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 11,
+     "not_modified": 0,
+     "status": {
+      "301": 1
+     },
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.jfema.or.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.jinsekigun.jp": {
+     "requests": 79,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 76
+     },
+     "bytes": 23378227,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 73.7
+    },
+    "www.jlma.or.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 20390,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.jwnet.or.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 41951,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.kamikatsu.jp": {
+     "requests": 46,
+     "robots": 0,
+     "cache_fresh": 160,
+     "not_modified": 0,
+     "status": {
+      "200": 43,
+      "301": 3
+     },
+     "bytes": 862544,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 43.1
+    },
+    "www.kankou-shimane.com": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 209361,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.katsurao.org": {
+     "requests": 402,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 401,
+      "404": 1
+     },
+     "bytes": 26070911,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 385.1
+    },
+    "www.kcj.or.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.kimotsuki-town.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.kuji-kouiki.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 16,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.kuromatsunai.com": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 38,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.maff.go.jp": {
+     "requests": 6,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 6
+     },
+     "bytes": 2012217,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 4.8
+    },
+    "www.marine-jbia.or.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 8,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.meti.go.jp": {
+     "requests": 5,
+     "robots": 0,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {
+      "301": 2,
+      "403": 3
+     },
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 3,
+     "wait_s": 2.0
+    },
+    "www.michi-no-eki.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 53982,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 10.0
+    },
+    "www.miyazaki-ebooks.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 48963,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.mlit.go.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 7,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.nakashibetsu.jp": {
+     "requests": 77,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 76,
+      "302": 1
+     },
+     "bytes": 25242664,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 239.3
+    },
+    "www.nanbuhiyama-eisei.jp": {
+     "requests": 2,
+     "robots": 0,
+     "cache_fresh": 14,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 36467,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.9
+    },
+    "www.niijima.com": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 50,
+     "not_modified": 0,
+     "status": {
+      "200": 1
+     },
+     "bytes": 15055,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.ohchihospital.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "404": 1
+     },
+     "bytes": 27137,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.pc3r.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.pref.fukushima.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.pref.hokkaido.lg.jp": {
+     "requests": 4,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 4
+     },
+     "bytes": 4021419,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.9
+    },
+    "www.pref.kagoshima.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.pref.kochi.lg.jp": {
+     "requests": 9,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 9
+     },
+     "bytes": 552699,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 7.8
+    },
+    "www.pref.saitama.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.pref.shimane.lg.jp": {
+     "requests": 37,
+     "robots": 1,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 31,
+      "301": 5,
+      "404": 1
+     },
+     "bytes": 10549853,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 36.5
+    },
+    "www.pref.yamaguchi.lg.jp": {
+     "requests": 2,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 1,
+      "301": 1
+     },
+     "bytes": 56354,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.renet.jp": {
+     "requests": 2,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 222230,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.rikubetsu.jp": {
+     "requests": 252,
+     "robots": 1,
+     "cache_fresh": 168,
+     "not_modified": 0,
+     "status": {
+      "200": 240,
+      "301": 2,
+      "302": 10
+     },
+     "bytes": 10872969,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 13,
+     "robots_ignored": 13,
+     "forbidden": 0,
+     "wait_s": 494.5
+    },
+    "www.rkc.aeha.or.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 54,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.sanpainet.or.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 38,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.satofull.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (conn: ConnectionResetError: [WinError 10054] 既存の接続はリモート ホストに強制的に切断されました。)",
+      "url": "https://www.satofull.jp/robots.txt"
+     }
+    },
+    "www.scinex.co.jp": {
+     "requests": 2,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 614,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.shimane-enmusubi.com": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 71560,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.shinchi-town.jp": {
+     "requests": 27,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 25,
+      "301": 1,
+      "404": 1
+     },
+     "bytes": 8103939,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 24.7
+    },
+    "www.tatebayashi-eisei.or.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 13,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.tourism-kamikatsu.jp": {
+     "requests": 2,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {
+      "200": 2
+     },
+     "bytes": 149325,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.0
+    },
+    "www.town-ono.jp": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 149,
+     "not_modified": 0,
+     "status": {
+      "200": 1
+     },
+     "bytes": 13958,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.agematsu.nagano.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 50,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.assabu.lg.jp": {
+     "requests": 26,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 24,
+      "404": 2
+     },
+     "bytes": 7119280,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 84.1
+    },
+    "www.town.aya.miyazaki.jp": {
+     "requests": 176,
+     "robots": 0,
+     "cache_fresh": 171,
+     "not_modified": 0,
+     "status": {
+      "200": 89,
+      "301": 19,
+      "302": 9,
+      "404": 59
+     },
+     "bytes": 46540158,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 165.7
+    },
+    "www.town.chikuzen.fukuoka.jp": {
+     "requests": 19,
+     "robots": 0,
+     "cache_fresh": 10,
+     "not_modified": 0,
+     "status": {
+      "200": 19
+     },
+     "bytes": 11491040,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 17.2
+    },
+    "www.town.fuchu.hiroshima.jp": {
+     "requests": 82,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 81,
+      "404": 1
+     },
+     "bytes": 19515075,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 79.8
+    },
+    "www.town.fukushima.hokkaido.jp": {
+     "requests": 5,
+     "robots": 0,
+     "cache_fresh": 28,
+     "not_modified": 0,
+     "status": {
+      "200": 4,
+      "301": 1
+     },
+     "bytes": 265026,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 1.7
+    },
+    "www.town.furudono.fukushima.jp": {
+     "requests": 269,
+     "robots": 0,
+     "cache_fresh": 193,
+     "not_modified": 0,
+     "status": {
+      "200": 239,
+      "301": 30
+     },
+     "bytes": 4367900,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 256.1
+    },
+    "www.town.hiroo.lg.jp": {
+     "requests": 51,
+     "robots": 1,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 48,
+      "301": 2,
+      "302": 1
+     },
+     "bytes": 23648834,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 164.6
+    },
+    "www.town.imakane.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 25,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "blocked",
+      "reason": "ボット対策の確認ページ (HTTP 503)",
+      "url": "https://www.town.imakane.lg.jp/modules/pico1/index.php/content0341.html"
+     }
+    },
+    "www.town.kadena.okinawa.jp": {
+     "requests": 57,
+     "robots": 0,
+     "cache_fresh": 154,
+     "not_modified": 0,
+     "status": {
+      "200": 57
+     },
+     "bytes": 2497467,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 42.3
+    },
+    "www.town.kagoshima-osaki.lg.jp": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 78,
+     "not_modified": 0,
+     "status": {
+      "200": 1
+     },
+     "bytes": 18183,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.kaita.lg.jp": {
+     "requests": 76,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 75,
+      "404": 1
+     },
+     "bytes": 16594149,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 76.2
+    },
+    "www.town.kamijima.lg.jp": {
+     "requests": 47,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 46,
+      "404": 1
+     },
+     "bytes": 7973038,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 44.8
+    },
+    "www.town.kamiyama.lg.jp": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 52,
+     "not_modified": 0,
+     "status": {
+      "200": 1
+     },
+     "bytes": 30795,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 1,
+     "robots_ignored": 1,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.kaneyama.fukushima.jp": {
+     "requests": 99,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 97,
+      "301": 1,
+      "404": 1
+     },
+     "bytes": 63611241,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 91.1
+    },
+    "www.town.kawamata.lg.jp": {
+     "requests": 72,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 71,
+      "404": 1
+     },
+     "bytes": 11344278,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 66.6
+    },
+    "www.town.kawasaki.miyagi.jp": {
+     "requests": 367,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 363,
+      "302": 3,
+      "404": 1
+     },
+     "bytes": 23132942,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 348.2
+    },
+    "www.town.kimino.wakayama.jp": {
+     "requests": 48,
+     "robots": 0,
+     "cache_fresh": 158,
+     "not_modified": 0,
+     "status": {
+      "200": 48
+     },
+     "bytes": 2135314,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 44.3
+    },
+    "www.town.kinko.lg.jp": {
+     "requests": 250,
+     "robots": 0,
+     "cache_fresh": 153,
+     "not_modified": 0,
+     "status": {
+      "200": 249,
+      "404": 1
+     },
+     "bytes": 6054941,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 238.3
+    },
+    "www.town.kiyosato.hokkaido.jp": {
+     "requests": 14,
+     "robots": 0,
+     "cache_fresh": 34,
+     "not_modified": 0,
+     "status": {
+      "200": 14
+     },
+     "bytes": 10005322,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 14,
+     "robots_ignored": 14,
+     "forbidden": 0,
+     "wait_s": 43.7
+    },
+    "www.town.koshimizu.hokkaido.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.kozaki.chiba.jp": {
+     "requests": 3,
+     "robots": 0,
+     "cache_fresh": 30,
+     "not_modified": 0,
+     "status": {
+      "403": 3
+     },
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 3,
+     "wait_s": 2.0,
+     "stopped": {
+      "kind": "blocked",
+      "reason": "断られた答え (403・転送の先のブロックなど) が 3 ページ続いた",
+      "url": "https://www.town.kozaki.chiba.jp/kurashi/download/living_bosai/"
+     }
+    },
+    "www.town.kudoyama.wakayama.jp": {
+     "requests": 1,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 1,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "ssl: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028)",
+      "url": "https://www.town.kudoyama.wakayama.jp/robots.txt"
+     }
+    },
+    "www.town.kumano.hiroshima.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://www.town.kumano.hiroshima.jp/robots.txt"
+     }
+    },
+    "www.town.kumenan.lg.jp": {
+     "requests": 250,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 247,
+      "404": 3
+     },
+     "bytes": 7215168,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 243.3
+    },
+    "www.town.kunimi.fukushima.jp": {
+     "requests": 411,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 410,
+      "404": 1
+     },
+     "bytes": 68899943,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 384.4
+    },
+    "www.town.kunitomi.miyazaki.jp": {
+     "requests": 223,
+     "robots": 0,
+     "cache_fresh": 70,
+     "not_modified": 0,
+     "status": {
+      "200": 211,
+      "301": 4,
+      "403": 1,
+      "404": 7
+     },
+     "bytes": 7401940,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 1,
+     "wait_s": 210.6
+    },
+    "www.town.kuriyama.hokkaido.jp": {
+     "requests": 69,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 63,
+      "301": 2,
+      "404": 4
+     },
+     "bytes": 9139102,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 223.3
+    },
+    "www.town.kusatsu.gunma.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 24,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.kushiro.lg.jp": {
+     "requests": 251,
+     "robots": 0,
+     "cache_fresh": 158,
+     "not_modified": 0,
+     "status": {
+      "200": 251
+     },
+     "bytes": 25972994,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 11,
+     "forbidden": 0,
+     "wait_s": 439.3
+    },
+    "www.town.kutchan.hokkaido.jp": {
+     "requests": 101,
+     "robots": 1,
+     "cache_fresh": 5,
+     "not_modified": 0,
+     "status": {
+      "200": 85,
+      "301": 16
+     },
+     "bytes": 71158302,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 274.2
+    },
+    "www.town.meiwa.gunma.jp": {
+     "requests": 1,
+     "robots": 0,
+     "cache_fresh": 78,
+     "not_modified": 0,
+     "status": {
+      "200": 1
+     },
+     "bytes": 57906,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.minamitane.kagoshima.jp": {
+     "requests": 24,
+     "robots": 0,
+     "cache_fresh": 128,
+     "not_modified": 0,
+     "status": {
+      "200": 24
+     },
+     "bytes": 348493,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 23.0
+    },
+    "www.town.mishima.fukushima.jp": {
+     "requests": 343,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 339,
+      "301": 1,
+      "302": 1,
+      "404": 2
+     },
+     "bytes": 16783725,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 325.5
+    },
+    "www.town.naganohara.gunma.jp": {
+     "requests": 4,
+     "robots": 0,
+     "cache_fresh": 27,
+     "not_modified": 0,
+     "status": {
+      "200": 4
+     },
+     "bytes": 14883837,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 4,
+     "robots_ignored": 4,
+     "forbidden": 0,
+     "wait_s": 2.4
+    },
+    "www.town.nakatosa.lg.jp": {
+     "requests": 31,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 30,
+      "404": 1
+     },
+     "bytes": 3153747,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 29.8
+    },
+    "www.town.niyodogawa.lg.jp": {
+     "requests": 168,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 168
+     },
+     "bytes": 9651068,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 161.0
+    },
+    "www.town.obira.hokkaido.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 90,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.ogose.saitama.jp": {
+     "requests": 229,
+     "robots": 0,
+     "cache_fresh": 178,
+     "not_modified": 0,
+     "status": {
+      "200": 228,
+      "301": 1
+     },
+     "bytes": 10713643,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 211.8
+    },
+    "www.town.oguni.yamagata.jp": {
+     "requests": 72,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 72
+     },
+     "bytes": 10593654,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 64.9
+    },
+    "www.town.ohnan.lg.jp": {
+     "requests": 206,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 188,
+      "302": 16,
+      "404": 2
+     },
+     "bytes": 12623237,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 247.6
+    },
+    "www.town.ojika.lg.jp": {
+     "requests": 9,
+     "robots": 0,
+     "cache_fresh": 7,
+     "not_modified": 0,
+     "status": {
+      "200": 9
+     },
+     "bytes": 17556716,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 7.5
+    },
+    "www.town.okoppe.lg.jp": {
+     "requests": 250,
+     "robots": 0,
+     "cache_fresh": 163,
+     "not_modified": 0,
+     "status": {
+      "200": 250
+     },
+     "bytes": 4693665,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 488.0
+    },
+    "www.town.oshamambe.lg.jp": {
+     "requests": 62,
+     "robots": 0,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 54,
+      "301": 3,
+      "404": 5
+     },
+     "bytes": 3173840,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 199.6
+    },
+    "www.town.otoyo.kochi.jp": {
+     "requests": 30,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 30
+     },
+     "bytes": 817673,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 25.9
+    },
+    "www.town.rebun.hokkaido.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 9,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.rishiri.hokkaido.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "blocked",
+      "reason": "ボット対策の確認ページ (HTTP 503)",
+      "url": "https://www.town.rishiri.hokkaido.jp/robots.txt"
+     }
+    },
+    "www.town.satosho.okayama.jp": {
+     "requests": 21,
+     "robots": 0,
+     "cache_fresh": 53,
+     "not_modified": 0,
+     "status": {
+      "200": 21
+     },
+     "bytes": 26869897,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 17.4
+    },
+    "www.town.shakotan.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 42,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.shimanto.lg.jp": {
+     "requests": 69,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 68,
+      "404": 1
+     },
+     "bytes": 6525390,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 63.5
+    },
+    "www.town.shimogo.fukushima.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 25,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.shiroishi.lg.jp": {
+     "requests": 8,
+     "robots": 0,
+     "cache_fresh": 65,
+     "not_modified": 0,
+     "status": {
+      "200": 8
+     },
+     "bytes": 10531821,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 8,
+     "robots_ignored": 8,
+     "forbidden": 0,
+     "wait_s": 6.4
+    },
+    "www.town.suttu.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 99,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.taka.lg.jp": {
+     "requests": 77,
+     "robots": 0,
+     "cache_fresh": 141,
+     "not_modified": 0,
+     "status": {
+      "200": 77
+     },
+     "bytes": 7039046,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 70.8
+    },
+    "www.town.takamori.kumamoto.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "https://www.town.takamori.kumamoto.jp/robots.txt"
+     }
+    },
+    "www.town.toyako.hokkaido.jp": {
+     "requests": 342,
+     "robots": 0,
+     "cache_fresh": 19,
+     "not_modified": 0,
+     "status": {
+      "200": 241,
+      "301": 1,
+      "302": 93,
+      "404": 7
+     },
+     "bytes": 25902589,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 550.0
+    },
+    "www.town.toyosato.shiga.jp": {
+     "requests": 11,
+     "robots": 0,
+     "cache_fresh": 71,
+     "not_modified": 0,
+     "status": {
+      "200": 11
+     },
+     "bytes": 6516481,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 9.7
+    },
+    "www.town.toyotomi.hokkaido.jp": {
+     "requests": 250,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 250
+     },
+     "bytes": 5960319,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 495.6
+    },
+    "www.town.tsukigata.hokkaido.jp": {
+     "requests": 156,
+     "robots": 0,
+     "cache_fresh": 159,
+     "not_modified": 0,
+     "status": {
+      "200": 147,
+      "301": 2,
+      "302": 7
+     },
+     "bytes": 3631977,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 369.3
+    },
+    "www.town.tsunan.niigata.jp": {
+     "requests": 83,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 82,
+      "404": 1
+     },
+     "bytes": 13721908,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 78.2
+    },
+    "www.town.tsuno.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.tsuwano.lg.jp": {
+     "requests": 79,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 77,
+      "302": 1,
+      "404": 1
+     },
+     "bytes": 20725503,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 111.5
+    },
+    "www.town.uchiko.ehime.jp": {
+     "requests": 106,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 74,
+      "301": 30,
+      "302": 1,
+      "404": 1
+     },
+     "bytes": 6723550,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 101.7
+    },
+    "www.town.ugo.lg.jp": {
+     "requests": 49,
+     "robots": 0,
+     "cache_fresh": 26,
+     "not_modified": 0,
+     "status": {
+      "200": 48,
+      "404": 1
+     },
+     "bytes": 10990533,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 14,
+     "robots_ignored": 14,
+     "forbidden": 0,
+     "wait_s": 44.7
+    },
+    "www.town.urakawa.hokkaido.jp": {
+     "requests": 99,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 99
+     },
+     "bytes": 13718320,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 6,
+     "robots_ignored": 6,
+     "forbidden": 0,
+     "wait_s": 278.6
+    },
+    "www.town.wadomari.lg.jp": {
+     "requests": 250,
+     "robots": 0,
+     "cache_fresh": 153,
+     "not_modified": 0,
+     "status": {
+      "200": 250
+     },
+     "bytes": 9973787,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 237.6
+    },
+    "www.town.waki.lg.jp": {
+     "requests": 75,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 73,
+      "404": 2
+     },
+     "bytes": 15877779,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 72.7
+    },
+    "www.town.yoshika.lg.jp": {
+     "requests": 396,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 390,
+      "404": 6
+     },
+     "bytes": 45172519,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 441.3
+    },
+    "www.town.yusuhara.kochi.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 4,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.town.yusuhara.lg.jp": {
+     "requests": 250,
+     "robots": 0,
+     "cache_fresh": 155,
+     "not_modified": 0,
+     "status": {
+      "200": 250
+     },
+     "bytes": 32886184,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 238.6
+    },
+    "www.vill.aoki.nagano.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 32,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.awashimaura.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 60,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.fudai.iwate.jp": {
+     "requests": 12,
+     "robots": 0,
+     "cache_fresh": 31,
+     "not_modified": 0,
+     "status": {
+      "200": 12
+     },
+     "bytes": 123344,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 8.3
+    },
+    "www.vill.higashiyoshino.nara.jp": {
+     "requests": 60,
+     "robots": 0,
+     "cache_fresh": 54,
+     "not_modified": 0,
+     "status": {
+      "301": 60
+     },
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 42.7
+    },
+    "www.vill.hirata.fukushima.jp": {
+     "requests": 69,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 68,
+      "404": 1
+     },
+     "bytes": 59353040,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 64.2
+    },
+    "www.vill.kamikoani.akita.jp": {
+     "requests": 21,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 19
+     },
+     "bytes": 316341,
+     "retries": 2,
+     "errors": 2,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 2,
+     "robots_ignored": 2,
+     "forbidden": 0,
+     "wait_s": 87.0
+    },
+    "www.vill.kariwa.niigata.jp": {
+     "requests": 50,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 49,
+      "404": 1
+     },
+     "bytes": 1304023,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 50,
+     "robots_ignored": 50,
+     "forbidden": 0,
+     "wait_s": 2938.9
+    },
+    "www.vill.kiso.nagano.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 53,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.kitayama.wakayama.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 86,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.kosuge.yamanashi.jp": {
+     "requests": 90,
+     "robots": 0,
+     "cache_fresh": 72,
+     "not_modified": 0,
+     "status": {
+      "200": 83,
+      "301": 7
+     },
+     "bytes": 63175760,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 85.2
+    },
+    "www.vill.kouzushima.tokyo.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 115,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.minamiminowa.lg.jp": {
+     "requests": 83,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 82,
+      "404": 1
+     },
+     "bytes": 50207598,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 77.7
+    },
+    "www.vill.miyada.nagano.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.nakasatsunai.hokkaido.jp": {
+     "requests": 74,
+     "robots": 1,
+     "cache_fresh": 2,
+     "not_modified": 0,
+     "status": {
+      "200": 71,
+      "301": 2,
+      "302": 1
+     },
+     "bytes": 51684813,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 229.7
+    },
+    "www.vill.ogasawara.tokyo.jp": {
+     "requests": 47,
+     "robots": 0,
+     "cache_fresh": 6,
+     "not_modified": 0,
+     "status": {
+      "200": 39,
+      "301": 8
+     },
+     "bytes": 24896539,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 42.8
+    },
+    "www.vill.ogata.akita.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.ogimi.okinawa.jp": {
+     "requests": 26,
+     "robots": 0,
+     "cache_fresh": 124,
+     "not_modified": 0,
+     "status": {
+      "200": 26
+     },
+     "bytes": 1106452,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 22.5
+    },
+    "www.vill.okawa.kochi.jp": {
+     "requests": 83,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 83
+     },
+     "bytes": 9964554,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 78.0
+    },
+    "www.vill.okuwa.lg.jp": {
+     "requests": 68,
+     "robots": 0,
+     "cache_fresh": 152,
+     "not_modified": 0,
+     "status": {
+      "200": 68
+     },
+     "bytes": 981440,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 64.4
+    },
+    "www.vill.ookuwa.nagano.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "http://www.vill.ookuwa.nagano.jp/robots.txt"
+     }
+    },
+    "www.vill.otaki.nagano.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 48,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www.vill.otama.fukushima.jp": {
+     "requests": 65,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 64,
+      "302": 1
+     },
+     "bytes": 13628767,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 59.7
+    },
+    "www.vill.sanagochi.lg.jp": {
+     "requests": 13,
+     "robots": 0,
+     "cache_fresh": 18,
+     "not_modified": 0,
+     "status": {
+      "200": 13
+     },
+     "bytes": 27970938,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 11.1
+    },
+    "www.vill.sekikawa.niigata.jp": {
+     "requests": 117,
+     "robots": 0,
+     "cache_fresh": 3,
+     "not_modified": 0,
+     "status": {
+      "200": 114,
+      "301": 1,
+      "403": 2
+     },
+     "bytes": 44820201,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 2,
+     "wait_s": 106.0
+    },
+    "www.vill.shiiba.miyazaki.jp": {
+     "requests": 14,
+     "robots": 0,
+     "cache_fresh": 1,
+     "not_modified": 0,
+     "status": {
+      "200": 14
+     },
+     "bytes": 2317205,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 14,
+     "forbidden": 0,
+     "wait_s": 779.7
+    },
+    "www.vill.shirakawa.lg.jp": {
+     "requests": 6,
+     "robots": 0,
+     "cache_fresh": 51,
+     "not_modified": 0,
+     "status": {
+      "200": 6
+     },
+     "bytes": 8633511,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 4.5
+    },
+    "www.vill.tonaki.okinawa.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 70,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    },
+    "www1.city.yabu.hyogo.jp": {
+     "requests": 3,
+     "robots": 1,
+     "cache_fresh": 0,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 2,
+     "errors": 3,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0,
+     "stopped": {
+      "kind": "unreachable",
+      "reason": "robots.txt を取れない (dns: [Errno 11001] getaddrinfo failed)",
+      "url": "http://www1.city.yabu.hyogo.jp/robots.txt"
+     }
+    },
+    "www2.town.taka.lg.jp": {
+     "requests": 0,
+     "robots": 0,
+     "cache_fresh": 12,
+     "not_modified": 0,
+     "status": {},
+     "bytes": 0,
+     "retries": 0,
+     "errors": 0,
+     "robots_disallowed": 0,
+     "robots_rfc_only": 0,
+     "robots_ignored": 0,
+     "forbidden": 0,
+     "wait_s": 0.0
+    }
+   }
   }
  ]
 }

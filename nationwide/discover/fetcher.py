@@ -32,6 +32,10 @@ REDIRECT_CODES = (301, 302, 303, 307, 308)
 MAX_REDIRECTS = 5
 RETRY_CODES = (500, 502, 503, 504)
 BLOCK_CODES = (403, 429)
+WEAK_STATUSES = (202, 403, 429, 503)                  # 弱い印を見る状態 (404 などの「無い」ページの飾りのスクリプトでは止めない)
+FORBID_STRIKES = 3                                    # 断られた答え (確認ページでない 403 など) がこの数の別のフォルダで続いたら、そのホストに断られているとみなす
+FORBID_URLS = 10                                      # 同じフォルダでも、この数のページで続いたら止める (ホットリンク禁止の PDF の置き場などでサイトごと止めないため)
+LOOP_ERRORS = ("転送がループした", "転送が 5 回を超えた")
 GIVE_UP_AFTER = 3                                     # つながらない・5xx の URL がこの数続いたホストはあきらめる
 MAX_RETRY_AFTER = 120                                 # これより長い Retry-After はその実行では待たない (ホストを止める)
 MAX_CRAWL_DELAY = 60.0                                # これより長い Crawl-delay のホストは取らない
@@ -327,6 +331,7 @@ class Result:
         self.size, self.sha256, self.body_file = size, sha256, body_file
         self.from_cache, self.error, self.fetched_at = from_cache, error, fetched_at
         self.final_url, self.redirects = url, []
+        self.forbidden = False                      # 確認ページでない 403 (そのページだけ。続けば get() がホストを止める)
 
     @property
     def ok(self):
@@ -376,21 +381,52 @@ def _binary(url, headers):
         path.endswith((".pdf", ".xlsx", ".xls", ".xlsm", ".zip"))
 
 
-def is_challenge(headers, head, status=None):
-    """ボット対策の確認ページか (head は本文の始め、status は HTTP の状態。None は分からない)"""
+def challenge_kind(headers, head, status=None):
+    """ボット対策の確認ページの印: "strong" (確かな印) / "weak" (弱い印だけ) / None (印なし)。
+    head は本文の始め、status は HTTP の状態 (None は分からない)"""
     if (headers.get("cf-mitigated") or "").lower() == "challenge":
-        return True
+        return "strong"
     if (headers.get("x-amzn-waf-action") or "").lower() in ("challenge", "captcha"):
-        return True
+        return "strong"
     t = head[:100_000].decode("utf-8", "replace").lower()
     if any(m in t for m in CHALLENGE_STRONG):
-        return True
-    if status is not None and 200 <= status < 300 and status != 202:
-        return False                                  # ふつうの 200 には弱い印を見ない (差し込まれたスクリプトで止めない)
+        return "strong"
+    if status is not None and status not in WEAK_STATUSES:
+        return None                                   # ふつうの 200 や 404 には弱い印を見ない (差し込まれたスクリプトで止めない)
     if len(head) >= 15_000 or not any(m in t for m in CHALLENGE_WEAK):
-        return False
+        return None
     visible = re.sub(r"<(script|style)\b.*?</\1>|<[^>]*>", " ", t, flags=re.S)
-    return len(re.sub(r"\s+", "", visible)) < 200
+    return "weak" if len(re.sub(r"\s+", "", visible)) < 200 else None
+
+
+def is_challenge(headers, head, status=None):
+    """ボット対策の確認ページか (強い印か弱い印)"""
+    return challenge_kind(headers, head, status) is not None
+
+
+def _folder(url):
+    """数えるときのフォルダ: /a/b.pdf → /a/、/a/ → /a/ (フォルダの一覧そのもの)"""
+    p = urllib.parse.urlsplit(url).path or "/"
+    return p if p.endswith("/") else p.rsplit("/", 1)[0] + "/"
+
+
+def _block_of(meta):
+    """キャッシュの記録 → ("host", わけ) そのホストに断られた / ("url", わけ) そのページだけ 403 / (None, None)。
+    block_level の無い前の版の記録は、「HTTP 403」をそのページだけの 403 とみなし、
+    404 などに付いた弱い印 (「ボット対策の確認ページ (HTTP 404)」) は確認ページとみなさない"""
+    if meta.get("forbidden"):
+        return "url", meta["forbidden"]
+    b = meta.get("blocked")
+    if not b:
+        return None, None
+    if meta.get("block_level") == "host":
+        return "host", b
+    if b == "HTTP 403":
+        return "url", b
+    m = re.search(r"\(HTTP (\d+)\)$", b)
+    if m and not (200 <= int(m.group(1)) < 300) and int(m.group(1)) not in WEAK_STATUSES:
+        return None, None
+    return "host", b
 
 
 def _int(v):
@@ -414,14 +450,20 @@ def retry_after(v):
         return None
 
 
+class _HostStopped(Exception):
+    """順番を待つあいだに、ほかのスレッドがそのホストを止めた"""
+
+
 class Fetcher:
     """ホストごとの間隔・全体の同時接続・robots.txt・キャッシュを守って取る (スレッドから同時に呼んでよい)"""
 
     def __init__(self, cache_dir, gap=1.0, max_concurrency=16, timeout=30.0, retries=2, backoff=5.0,
                  max_age=72 * 3600, robots_max_age=24 * 3600, max_requests=None, read_deadline=300.0,
-                 log_path=None, caps=None, offline=False, ip_gap=0.25, max_crawl_delay=MAX_CRAWL_DELAY):
+                 log_path=None, caps=None, offline=False, ip_gap=0.25, max_crawl_delay=MAX_CRAWL_DELAY,
+                 ignore_robots=False):
         self.cache = Cache(cache_dir)
         self.offline = offline                      # True: キャッシュだけを使い、ネットには出ない (古さは問わない)
+        self.ignore_robots = ignore_robots          # True: robots.txt の禁止と長い Crawl-delay を守らない (作者の判断。取ったものは記録する)
         self.gap, self.timeout, self.retries, self.backoff = gap, timeout, retries, backoff
         self.max_age, self.robots_max_age, self.max_requests = max_age, robots_max_age, max_requests
         self.read_deadline = read_deadline
@@ -436,6 +478,7 @@ class Fetcher:
         self._inflight = {}                         # URL → [Lock, 待っている数] (同じ URL を同時に取らない)
         self._fails = Counter()
         self._net_down = set()                      # 成功をはさまずにつながらなかったホスト
+        self._forbid = {}                           # ホスト → 続けて 403 (確認ページでない) だった URL
         self._local = threading.local()
         self.stopped = {}                           # netloc → {"kind": blocked/unreachable, "reason", "url"}
         self.hosts = {}                             # netloc → 数
@@ -454,7 +497,7 @@ class Fetcher:
         if st is None:
             st = self.hosts[netloc] = {"requests": 0, "robots": 0, "cache_fresh": 0, "not_modified": 0, "status": Counter(),
                                        "bytes": 0, "retries": 0, "errors": 0, "robots_disallowed": 0, "robots_rfc_only": 0,
-                                       "wait_s": 0.0}
+                                       "robots_ignored": 0, "forbidden": 0, "wait_s": 0.0}
         return st
 
     def _count(self, key, n=1):
@@ -553,6 +596,8 @@ class Fetcher:
             w = max(self._last.get(netloc, -1e9) + gap, self._hold.get(netloc, 0.0)) - now
             if w > 0:
                 self._sleep(w)
+            if netloc in self.stopped:                    # 待つあいだに止まった (ブロック・3 ページ続けての 403 など) なら取らない
+                raise _HostStopped()
             if ip:
                 with self._lock:
                     now = time.monotonic()
@@ -604,15 +649,23 @@ class Fetcher:
             resp = OPENER.open(req, timeout=self.timeout)
         except urllib.error.HTTPError as e:
             hdr = {k.lower(): v for k, v in (e.headers or {}).items()}
-            peek = b""
+            peek, undecodable = b"", False
             try:
                 if e.code not in REDIRECT_CODES and e.code != 304:
                     peek = e.read(64 * 1024)
             except Exception:
-                pass
+                undecodable = e.code in WEAK_STATUSES      # 403・429・503・202 の本文を読めない = 確認ページか分からない
             finally:
                 e.close()
-            return {"status": e.code, "headers": hdr, "peek": peek}
+            enc = (hdr.get("content-encoding") or "").lower().strip()
+            if peek and enc in ("gzip", "x-gzip"):
+                try:                                      # 途中までの gzip でもほどける分だけ
+                    peek = zlib.decompressobj(16 + zlib.MAX_WBITS).decompress(peek, 200_000)
+                except zlib.error:
+                    peek, undecodable = b"", True
+            elif peek and enc not in ("", "identity"):
+                undecodable = True                        # br など。中身を見られない
+            return {"status": e.code, "headers": hdr, "peek": peek, **({"undecodable": True} if undecodable else {})}
         with resp:
             hdr = {k.lower(): v for k, v in resp.headers.items()}
             status = resp.status
@@ -620,7 +673,7 @@ class Fetcher:
             clen = _int(hdr.get("content-length"))
             if clen is not None and clen > cap:
                 return {"status": status, "headers": hdr, "too_large": True, "size": clen}
-            stream = gzip.GzipFile(fileobj=resp) if (hdr.get("content-encoding") or "").lower() == "gzip" else resp
+            stream = gzip.GzipFile(fileobj=resp) if (hdr.get("content-encoding") or "").lower().strip() in ("gzip", "x-gzip") else resp
             tmp = self.cache.tmp(url)
             h, n, deadline = hashlib.sha256(), 0, time.monotonic() + self.read_deadline
             try:
@@ -670,6 +723,10 @@ class Fetcher:
                     raw = self._once(url, headers, cap)
             except Halted:
                 raise
+            except _HostStopped:
+                s = self.stopped.get(netloc) or {}
+                return {"status": None, "error_kind": "stopped", "stopped_kind": s.get("kind", "blocked"),
+                        "error": s.get("reason", "止めたホスト")}
             except urllib.error.URLError as e:
                 r = e.reason
                 kind = "timeout" if isinstance(r, (socket.timeout, TimeoutError)) else \
@@ -737,9 +794,17 @@ class Fetcher:
         st = meta.get("status")
         hdr = meta.get("headers") or {}
         netloc = netloc_of(url)
-        if meta.get("blocked"):
-            self._stop_host(netloc, "blocked", meta["blocked"], url)
-            return Result(url, "blocked", st, hdr, error=meta["blocked"], from_cache=from_cache, fetched_at=meta.get("fetched_at"))
+        level, why = _block_of(meta)
+        if level == "host":
+            self._stop_host(netloc, "blocked", why, url)
+            return Result(url, "blocked", st, hdr, error=why, from_cache=from_cache, fetched_at=meta.get("fetched_at"))
+        if level == "url":
+            # 確認ページでない 403 は、そのページだけ (フォルダの一覧の禁止など)。続いたかどうかは get() が数える。
+            # robots.txt は get() を通らないので数えない (RFC 9309: 403 の robots.txt は規則なし)
+            r = Result(url, "http_error", 403, hdr, error=f"{why} (このページだけ)", from_cache=from_cache,
+                       fetched_at=meta.get("fetched_at"))
+            r.forbidden = True
+            return r
         if st in REDIRECT_CODES and hdr.get("location"):
             return Result(url, "redirect", st, hdr, from_cache=from_cache, fetched_at=meta.get("fetched_at"))
         if st is not None and 200 <= st < 300:
@@ -751,6 +816,8 @@ class Fetcher:
 
     def _interpret(self, url, raw, meta):
         netloc = netloc_of(url)
+        if raw.get("error_kind") == "stopped":
+            return Result(url, raw.get("stopped_kind") or "blocked", error=raw.get("error"))
         if raw.get("status") is None:
             kind = "timeout" if raw.get("error_kind") == "timeout" else "error"
             if netloc in self.stopped and self.stopped[netloc]["kind"] == "unreachable":
@@ -773,10 +840,18 @@ class Fetcher:
             with open(raw["tmp"], "rb") as f:
                 head = f.read(100_000)
         ct = (hdr.get("content-type") or "").lower()
-        challenge = (hdr.get("cf-mitigated") or "").lower() == "challenge" or \
-            (("html" in ct or not ct) and is_challenge(hdr, head, st))
-        if st in BLOCK_CODES or challenge:
-            new["blocked"] = f"HTTP {st}" if st in BLOCK_CODES else f"ボット対策の確認ページ (HTTP {st})"
+        waf = (hdr.get("x-amzn-waf-action") or "").lower() in ("challenge", "captcha")
+        ck = "strong" if (hdr.get("cf-mitigated") or "").lower() == "challenge" or waf else \
+            challenge_kind(hdr, head, st) if ("html" in ct or not ct) else None
+        if st in BLOCK_CODES or ck:
+            if st == 429 or ck == "strong" or (ck == "weak" and st != 403) or raw.get("undecodable"):
+                # 429・確かな確認ページ・弱い印の 503 などは、そのホストに断られた (止める)
+                new["blocked"] = f"ボット対策の確認ページ (HTTP {st})" if ck else \
+                    f"HTTP {st} (中身を読めない)" if raw.get("undecodable") else f"HTTP {st}"
+                new["block_level"] = "host"
+            else:
+                # 確認ページでない 403 (弱い印だけのものも) は、そのページだけ (_from_meta が続けば止める)
+                new["forbidden"] = "HTTP 403" + (" (弱い印あり)" if ck else "")
             if raw.get("tmp"):
                 pathlib.Path(raw["tmp"]).unlink(missing_ok=True)
             self.cache.put(url, new)
@@ -860,10 +935,11 @@ class Fetcher:
 
     def get(self, url, max_age=None, cap=None):
         """url を取る (転送は 5 回まで自分で追う)。返すのは Result。投げる例外は Halted だけ"""
-        url0, chain = url, []
+        url0, chain, live = url, [], False
         for _ in range(MAX_REDIRECTS + 1):
             try:
                 r = self._get_one(url, max_age, cap)
+                live = live or (r.from_cache in (None, "304") and r.status is not None)   # 転送のどこかでネットに出たか
             except Halted:
                 raise
             except Exception as e:                       # キャッシュに書けないなど。1 つの URL の失敗で自治体ごと落とさない
@@ -873,17 +949,53 @@ class Fetcher:
                 return r
             if r.kind != "redirect":
                 r.url, r.final_url, r.redirects = url0, url, chain
-                return r
+                return self._account_403(r, url0, url, live)
             new = norm_url(urllib.parse.urljoin(url, r.headers.get("location", "")))
             chain.append(url)
             if not new or new in chain:
-                r = Result(url0, "error", r.status, error="転送がループした")
+                r = Result(url0, "error", r.status, error=LOOP_ERRORS[0])
                 r.final_url, r.redirects = url, chain
-                return r
+                return self._account_403(r, url0, url, live)
             url = new
-        r = Result(url0, "error", error="転送が 5 回を超えた")
+        r = Result(url0, "error", error=LOOP_ERRORS[1])
         r.final_url, r.redirects = url, chain
-        return r
+        return self._account_403(r, url0, url, live)
+
+    def _account_403(self, r, url0, final, live):
+        """断られた答えを数える: 確認ページでない 403、別のホストへの転送の先でのブロック (止めたホストを含む)、転送のループ・長すぎる転送。
+        この取得でネットに出たときだけ数え (転送のどこかで出ていれば、最後の答えがキャッシュでも数える)、頼んだ URL で数える
+        (転送先が同じ /denied でも別に数える)。数え直すのは、最後の答えそのものがネットから来た断られていない答えのときだけ
+        (転送やキャッシュでは数え直さない)。同じホストで FORBID_STRIKES の別のフォルダか FORBID_URLS ページ続いたら、そのホストを止める
+        (403 なら最後のホストと頼んだホストの両方、ほかは頼んだホスト)"""
+        fh, oh = netloc_of(final), netloc_of(url0)
+        cross_block = r.kind == "blocked" and fh != oh
+        loop = r.kind == "error" and r.error in LOOP_ERRORS
+        if not (r.forbidden or cross_block or loop):
+            if r.from_cache in (None, "304") and r.status is not None and r.status < 500:
+                with self._lock:
+                    self._forbid.pop(fh, None)                  # 断られていない答えが来たら数え直す
+            return r
+        if not live:
+            return r
+        hosts = {fh, oh} if r.forbidden else {oh}
+        stop, n = False, 0
+        with self._lock:
+            if r.forbidden:
+                self._host(fh)["forbidden"] += 1
+            for h in hosts:
+                st = self._forbid.setdefault(h, {"urls": set(), "dirs": set()})
+                st["urls"].add(url0)
+                st["dirs"].add(_folder(url0))
+                n = max(n, len(st["urls"]))
+                stop = stop or len(st["dirs"]) >= FORBID_STRIKES or len(st["urls"]) >= FORBID_URLS
+        if not stop:
+            return r
+        why = f"断られた答え (403・転送の先のブロックなど) が {n} ページ続いた"
+        for h in hosts:
+            self._stop_host(h, "blocked", why, final)
+        b = Result(url0, "blocked", r.status, r.headers, error=why, from_cache=r.from_cache, fetched_at=r.fetched_at)
+        b.final_url, b.redirects = r.final_url, r.redirects
+        return b
 
     def _get_one(self, url, max_age, cap):
         netloc = netloc_of(url)
@@ -897,18 +1009,24 @@ class Fetcher:
                 return Result(url, "error", error=rob.note)
             kind = "blocked" if rob.unavailable == "blocked" else "unreachable"
             return Result(url, kind, error=rob.note)
+        override = []                                          # --ignore-robots で robots.txt に反して取るわけ
         if not rob.allowed(url):
-            self._stat(netloc, "robots_disallowed")
-            self._write_log({"t": iso(), "url": url, "skipped": "robots.txt で禁止"})
-            return Result(url, "robots_disallowed", error="robots.txt で禁止")
+            if not self.ignore_robots:
+                self._stat(netloc, "robots_disallowed")
+                self._write_log({"t": iso(), "url": url, "skipped": "robots.txt で禁止"})
+                return Result(url, "robots_disallowed", error="robots.txt で禁止")
+            override.append("robots.txt で禁止")
         if rob.rp_disagrees(url):
             self._stat(netloc, "robots_rfc_only")              # robotparser (始めに当たった規則) では禁止。RFC 9309 に従って取る
         delay = rob.delay()
         if delay > self.max_crawl_delay:
-            self._stat(netloc, "robots_disallowed")
-            self._write_log({"t": iso(), "url": url, "skipped": f"Crawl-delay {delay:g} 秒"})
-            return Result(url, "robots_disallowed",
-                          error=f"robots.txt の Crawl-delay が {delay:g} 秒 ({self.max_crawl_delay:g} 秒を超えるので取らない)")
+            if not self.ignore_robots:
+                self._stat(netloc, "robots_disallowed")
+                self._write_log({"t": iso(), "url": url, "skipped": f"Crawl-delay {delay:g} 秒"})
+                return Result(url, "robots_disallowed",
+                              error=f"robots.txt の Crawl-delay が {delay:g} 秒 ({self.max_crawl_delay:g} 秒を超えるので取らない)")
+            override.append(f"Crawl-delay {delay:g} 秒 ({self.max_crawl_delay:g} 秒まで守った)")
+            delay = self.max_crawl_delay                       # 守りきれない長さは、上限の秒数まで守る
         gap = max(self.gap, delay)
         max_age = self.max_age if max_age is None else max_age
         with self._url_turn(url):
@@ -923,4 +1041,9 @@ class Fetcher:
                     return self._from_meta(url, meta, "fresh")
                 self._count("offline_miss")
                 return Result(url, "error", error="キャッシュに無い (--offline)")
-            return self._interpret(url, self._request(url, meta, gap, cap), meta)
+            r = self._interpret(url, self._request(url, meta, gap, cap), meta)
+        if override and r.status is not None:                  # 取りに行った (答えが来た) ものだけ数える
+            self._stat(netloc, "robots_ignored")
+            self._count("robots_ignored")
+            self._write_log({"t": iso(), "url": url, "robots_ignored": "、".join(override)})
+        return r
