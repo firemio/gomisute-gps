@@ -1,0 +1,2378 @@
+{
+ "doc_id": "112275-c3af1203",
+ "model": "claude-opus-5-5",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "0d67169cb7a4f609d19a9ce19ff6c11e90f608376ad370d4642fe9155dd39b17",
+ "started_at": "2026-10-21T10:50:39+00:00",
+ "images": 0,
+ "seconds": 69.9,
+ "answer": {
+  "municipality": null,
+  "period": {
+   "printed": null,
+   "from": null,
+   "to": null
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "青葉台",
+    "members": []
+   },
+   {
+    "id": "d2",
+    "label": "朝志ケ丘",
+    "members": []
+   },
+   {
+    "id": "d3",
+    "label": "岡・大字岡",
+    "members": []
+   },
+   {
+    "id": "d4",
+    "label": "大字上内間木",
+    "members": []
+   },
+   {
+    "id": "d5",
+    "label": "北原",
+    "members": []
+   },
+   {
+    "id": "d6",
+    "label": "幸町1～2丁目",
+    "members": []
+   },
+   {
+    "id": "d7",
+    "label": "幸町3丁目",
+    "members": []
+   },
+   {
+    "id": "d8",
+    "label": "栄町",
+    "members": []
+   },
+   {
+    "id": "d9",
+    "label": "自衛隊",
+    "members": []
+   },
+   {
+    "id": "d10",
+    "label": "大字下内間木",
+    "members": []
+   },
+   {
+    "id": "d11",
+    "label": "泉水",
+    "members": []
+   },
+   {
+    "id": "d12",
+    "label": "大字台",
+    "members": []
+   },
+   {
+    "id": "d13",
+    "label": "田島・大字田島",
+    "members": []
+   },
+   {
+    "id": "d14",
+    "label": "仲町",
+    "members": []
+   },
+   {
+    "id": "d15",
+    "label": "西原",
+    "members": []
+   },
+   {
+    "id": "d16",
+    "label": "西弁財",
+    "members": []
+   },
+   {
+    "id": "d17",
+    "label": "大字根岸",
+    "members": []
+   },
+   {
+    "id": "d18",
+    "label": "根岸台",
+    "members": []
+   },
+   {
+    "id": "d19",
+    "label": "浜崎",
+    "members": []
+   },
+   {
+    "id": "d20",
+    "label": "大字浜崎の一部（県道和光志木線北側）",
+    "members": []
+   },
+   {
+    "id": "d21",
+    "label": "大字浜崎の一部（東武東上線南側）",
+    "members": []
+   },
+   {
+    "id": "d22",
+    "label": "東弁財",
+    "members": []
+   },
+   {
+    "id": "d23",
+    "label": "膝折町1丁目",
+    "members": []
+   },
+   {
+    "id": "d24",
+    "label": "膝折町2丁目1～6番・7番の一部（黒目川右岸）・8～21番",
+    "members": []
+   },
+   {
+    "id": "d25",
+    "label": "膝折町2丁目7番の一部（黒目川左岸）",
+    "members": []
+   },
+   {
+    "id": "d26",
+    "label": "膝折町3丁目",
+    "members": []
+   },
+   {
+    "id": "d27",
+    "label": "膝折町4丁目1～11番",
+    "members": []
+   },
+   {
+    "id": "d28",
+    "label": "膝折町4丁目12～22番",
+    "members": []
+   },
+   {
+    "id": "d29",
+    "label": "膝折町5丁目",
+    "members": []
+   },
+   {
+    "id": "d30",
+    "label": "本町",
+    "members": []
+   },
+   {
+    "id": "d31",
+    "label": "大字溝沼の一部（東上線北側）",
+    "members": []
+   },
+   {
+    "id": "d32",
+    "label": "大字溝沼の一部（東上線南側・黒目川右岸）",
+    "members": []
+   },
+   {
+    "id": "d33",
+    "label": "大字溝沼の一部（東上線南側・黒目川左岸）",
+    "members": []
+   },
+   {
+    "id": "d34",
+    "label": "溝沼1～4丁目",
+    "members": []
+   },
+   {
+    "id": "d35",
+    "label": "溝沼5～6丁目",
+    "members": []
+   },
+   {
+    "id": "d36",
+    "label": "溝沼7丁目",
+    "members": []
+   },
+   {
+    "id": "d37",
+    "label": "三原",
+    "members": []
+   },
+   {
+    "id": "d38",
+    "label": "宮戸・大字宮戸",
+    "members": []
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "資源",
+    "coarse": [],
+    "note": "中身は資料に書かれていない"
+   },
+   {
+    "id": "c2",
+    "label": "プラスチック資源",
+    "coarse": [
+     "plastic"
+    ],
+    "note": "表の見出し「プラスチック資源 燃やせないごみ」の列"
+   },
+   {
+    "id": "c3",
+    "label": "燃やせないごみ",
+    "coarse": [
+     "non_burnable"
+    ],
+    "note": "表の見出し「プラスチック資源 燃やせないごみ」の列"
+   },
+   {
+    "id": "c4",
+    "label": "燃やすごみ",
+    "coarse": [
+     "burnable"
+    ]
+   },
+   {
+    "id": "c5",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ],
+    "note": "集積所には出せない。日の決まった収集は無い"
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": "水・土",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c1",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c2",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c3",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c1",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c2",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c3",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c4",
+    "text": "水・土",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c1",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c2",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c3",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c4",
+    "text": "水・土",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c2",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c3",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c4",
+    "text": "水・土",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c1",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c2",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c3",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c1",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c2",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c3",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c1",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c2",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c3",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c1",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c2",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c3",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c1",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c2",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c3",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c4",
+    "text": "水・土",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c1",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c2",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c3",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c1",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c2",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c3",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c4",
+    "text": "水・土",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c1",
+    "text": "水",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c2",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c3",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c1",
+    "text": "金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c2",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c3",
+    "text": "火",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c4",
+    "text": "月・木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c1",
+    "text": "木",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c2",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c3",
+    "text": "月",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c4",
+    "text": "火・金",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   }
+  ],
+  "exceptions": [
+   {
+    "kind": "holiday",
+    "scope": {
+     "districts": [
+      "*"
+     ],
+     "categories": [
+      "*"
+     ]
+    },
+    "policy": "collected",
+    "text": "※祝日も収集します（年末年始を除く）"
+   }
+  ],
+  "unsure": [
+   {
+    "about": "自治体の名前が本文に書かれていない (URL は city.asaka.lg.jp)",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "有効な期間の印字が無い",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "年末年始の収集しない期間の日付が書かれていない",
+    "district": null,
+    "category": null,
+    "text": "※祝日も収集します（年末年始を除く）"
+   },
+   {
+    "about": "表の見出し「プラスチック資源 燃やせないごみ」は 1 つの列なので、2 つの品目に分けて同じ曜日を当てた。1 つの品目かどうかは決められない",
+    "district": null,
+    "category": "c2",
+    "text": "プラスチック資源 燃やせないごみ"
+   },
+   {
+    "about": "資源の中身 (品目) が資料に書かれていないので coarse を空にした",
+    "district": null,
+    "category": "c1",
+    "text": "資源"
+   },
+   {
+    "about": "表の「あ」「か」「さ」などは五十音の見出しとみて、地区には入れなかった",
+    "district": null,
+    "category": null,
+    "text": "あ か さ た な は ま"
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7878,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 10161,
+  "output_tokens_details": {
+   "thinking_tokens": 1372
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7878,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 10161,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 7878,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7878
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 10161,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 7878,
+   "webSearchRequests": 0,
+   "costUSD": 0.26625200000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1372,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "num_turns": 1,
+ "duration_ms": 68552,
+ "duration_api_ms": 68040,
+ "permission_denials": [],
+ "cost": {
+  "usd": 0.26625200000000004,
+  "note": "claude -p の total_cost_usd (CLI が API の料金で数えた値)"
+ },
+ "error": null,
+ "raw_note": "試走 (生の文字を残す前の作り) の記録。answer は claude -p の result の文字を JSON として読んだもの"
+}

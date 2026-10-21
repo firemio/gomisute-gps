@@ -1,0 +1,4361 @@
+{
+ "doc_id": "131024-c038390a",
+ "model": "deepseek-flash",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "23531552501f8212d29cf38b0e6e2720b1d60747f53fe4c48b4b98c9d8bf54da",
+ "started_at": "2026-10-21T11:14:05+00:00",
+ "images": 0,
+ "answer": {
+  "municipality": "中央区",
+  "period": {
+   "printed": null,
+   "from": null,
+   "to": null
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "明石町全域",
+    "members": [
+     "明石町",
+     "全域"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d2",
+    "label": "入船全域",
+    "members": [
+     "入船",
+     "全域"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d3",
+    "label": "京橋全域",
+    "members": [
+     "京橋",
+     "全域"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d4",
+    "label": "銀座1～2丁目",
+    "members": [
+     "銀座",
+     "1～2丁目"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d5",
+    "label": "銀座3～4丁目",
+    "members": [
+     "銀座",
+     "3～4丁目"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d6",
+    "label": "銀座5～6丁目",
+    "members": [
+     "銀座",
+     "5～6丁目"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d7",
+    "label": "銀座7～8丁目",
+    "members": [
+     "銀座",
+     "7～8丁目"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d8",
+    "label": "新川全域",
+    "members": [
+     "新川",
+     "全域"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d9",
+    "label": "新富全域",
+    "members": [
+     "新富",
+     "全域"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d10",
+    "label": "築地全域",
+    "members": [
+     "築地",
+     "全域"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d11",
+    "label": "八丁堀1丁目",
+    "members": [
+     "八丁堀",
+     "1丁目"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d12",
+    "label": "八丁堀2～4丁目",
+    "members": [
+     "八丁堀",
+     "2～4丁目"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d13",
+    "label": "浜離宮庭園",
+    "members": [
+     "浜離宮庭園"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d14",
+    "label": "湊全域",
+    "members": [
+     "湊",
+     "全域"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d15",
+    "label": "八重洲2丁目",
+    "members": [
+     "八重洲",
+     "2丁目"
+    ],
+    "note": "京橋地域"
+   },
+   {
+    "id": "d16",
+    "label": "大伝馬町全域",
+    "members": [
+     "大伝馬町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d17",
+    "label": "蛎殻町1丁目",
+    "members": [
+     "蛎殻町",
+     "1丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d18",
+    "label": "蛎殻町2丁目",
+    "members": [
+     "蛎殻町",
+     "2丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d19",
+    "label": "兜町全域",
+    "members": [
+     "兜町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d20",
+    "label": "茅場町全域",
+    "members": [
+     "茅場町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d21",
+    "label": "小網町全域",
+    "members": [
+     "小網町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d22",
+    "label": "小伝馬町1～2番、7～21番",
+    "members": [
+     "小伝馬町",
+     "1～2番、7～21番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d23",
+    "label": "小伝馬町3～6番",
+    "members": [
+     "小伝馬町",
+     "3～6番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d24",
+    "label": "小舟町全域",
+    "members": [
+     "小舟町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d25",
+    "label": "富沢町全域",
+    "members": [
+     "富沢町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d26",
+    "label": "中洲全域",
+    "members": [
+     "中洲",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d27",
+    "label": "日本橋1～3丁目",
+    "members": [
+     "日本橋",
+     "1～3丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d28",
+    "label": "人形町1丁目",
+    "members": [
+     "人形町",
+     "1丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d29",
+    "label": "人形町2丁目1～14番",
+    "members": [
+     "人形町",
+     "2丁目1～14番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d30",
+    "label": "人形町2丁目15～37番",
+    "members": [
+     "人形町",
+     "2丁目15～37番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d31",
+    "label": "人形町3丁目",
+    "members": [
+     "人形町",
+     "3丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d32",
+    "label": "馬喰町全域",
+    "members": [
+     "馬喰町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d33",
+    "label": "箱崎町全域",
+    "members": [
+     "箱崎町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d34",
+    "label": "浜町1丁目",
+    "members": [
+     "浜町",
+     "1丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d35",
+    "label": "浜町2丁目",
+    "members": [
+     "浜町",
+     "2丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d36",
+    "label": "浜町3丁目",
+    "members": [
+     "浜町",
+     "3丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d37",
+    "label": "東日本橋全域",
+    "members": [
+     "東日本橋",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d38",
+    "label": "久松町全域",
+    "members": [
+     "久松町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d39",
+    "label": "堀留町全域",
+    "members": [
+     "堀留町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d40",
+    "label": "本石町全域",
+    "members": [
+     "本石町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d41",
+    "label": "本町1丁目1～ 5番",
+    "members": [
+     "本町",
+     "1丁目1～ 5番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d42",
+    "label": "本町1丁目6～ 9番",
+    "members": [
+     "本町",
+     "1丁目6～ 9番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d43",
+    "label": "本町1丁目10番",
+    "members": [
+     "本町",
+     "1丁目10番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d44",
+    "label": "本町2丁目1～ 5番",
+    "members": [
+     "本町",
+     "2丁目1～ 5番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d45",
+    "label": "本町2丁目6～ 8番",
+    "members": [
+     "本町",
+     "2丁目6～ 8番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d46",
+    "label": "本町3丁目1～ 5番",
+    "members": [
+     "本町",
+     "3丁目1～ 5番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d47",
+    "label": "本町3丁目6～ 11番",
+    "members": [
+     "本町",
+     "3丁目6～ 11番"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d48",
+    "label": "本町4丁目",
+    "members": [
+     "本町",
+     "4丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d49",
+    "label": "室町全域",
+    "members": [
+     "室町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d50",
+    "label": "八重洲1丁目",
+    "members": [
+     "八重洲",
+     "1丁目"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d51",
+    "label": "横山町全域",
+    "members": [
+     "横山町",
+     "全域"
+    ],
+    "note": "日本橋地域"
+   },
+   {
+    "id": "d52",
+    "label": "勝どき全域",
+    "members": [
+     "勝どき",
+     "全域"
+    ],
+    "note": "月島地域"
+   },
+   {
+    "id": "d53",
+    "label": "月島全域",
+    "members": [
+     "月島",
+     "全域"
+    ],
+    "note": "月島地域"
+   },
+   {
+    "id": "d54",
+    "label": "佃全域",
+    "members": [
+     "佃",
+     "全域"
+    ],
+    "note": "月島地域"
+   },
+   {
+    "id": "d55",
+    "label": "豊海町全域",
+    "members": [
+     "豊海町",
+     "全域"
+    ],
+    "note": "月島地域"
+   },
+   {
+    "id": "d56",
+    "label": "晴海全域",
+    "members": [
+     "晴海",
+     "全域"
+    ],
+    "note": "月島地域"
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やすごみ",
+    "coarse": [
+     "burnable"
+    ]
+   },
+   {
+    "id": "c2",
+    "label": "燃やさないごみ",
+    "coarse": [
+     "non_burnable"
+    ]
+   },
+   {
+    "id": "c3",
+    "label": "プラマーク",
+    "coarse": [
+     "plastic"
+    ]
+   },
+   {
+    "id": "c4",
+    "label": "資源",
+    "coarse": []
+   },
+   {
+    "id": "c5",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ]
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日・火曜日・水曜日 金曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TU",
+       "WE",
+       "TH",
+       "FR",
+       "SA"
+      ],
+      "text": "月曜日～土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日・金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ],
+      "text": "火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ],
+      "text": "土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ],
+      "text": "水曜日・土曜日"
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ],
+      "text": "金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ],
+      "text": "水曜日"
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "有効期間",
+    "text": null
+   },
+   {
+    "about": "祝日・年末年始の取扱い",
+    "text": null
+   },
+   {
+    "about": "資源の品目の中身",
+    "district": null,
+    "category": "c4",
+    "text": "資源"
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 6942,
+  "completion_tokens": 19785,
+  "total_tokens": 26727,
+  "prompt_tokens_details": {
+   "cached_tokens": 2816
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8396
+  },
+  "prompt_cache_hit_tokens": 2816,
+  "prompt_cache_miss_tokens": 4126,
+  "seconds": 58.1,
+  "model": "deepseek-flash"
+ },
+ "error": null,
+ "cost": {
+  "usd": 0.024997,
+  "usd_peak": 0.024997,
+  "offpeak": false,
+  "price_per_mtok": {
+   "input_miss": 0.3,
+   "input_hit": 0.006,
+   "output": 1.2
+  },
+  "offpeak_utc": "16:30-00:30 (料金表で要確認)",
+  "calls": 1
+ },
+ "raw": {
+  "attempts": [
+   {
+    "content": "{\"municipality\":\"中央区\",\"period\":{\"printed\":null,\"from\":null,\"to\":null},\"districts\":[{\"id\":\"d1\",\"label\":\"明石町全域\",\"members\":[\"明石町\",\"全域\"],\"note\":\"京橋地域\"},{\"id\":\"d2\",\"label\":\"入船全域\",\"members\":[\"入船\",\"全域\"],\"note\":\"京橋地域\"},{\"id\":\"d3\",\"label\":\"京橋全域\",\"members\":[\"京橋\",\"全域\"],\"note\":\"京橋地域\"},{\"id\":\"d4\",\"label\":\"銀座1～2丁目\",\"members\":[\"銀座\",\"1～2丁目\"],\"note\":\"京橋地域\"},{\"id\":\"d5\",\"label\":\"銀座3～4丁目\",\"members\":[\"銀座\",\"3～4丁目\"],\"note\":\"京橋地域\"},{\"id\":\"d6\",\"label\":\"銀座5～6丁目\",\"members\":[\"銀座\",\"5～6丁目\"],\"note\":\"京橋地域\"},{\"id\":\"d7\",\"label\":\"銀座7～8丁目\",\"members\":[\"銀座\",\"7～8丁目\"],\"note\":\"京橋地域\"},{\"id\":\"d8\",\"label\":\"新川全域\",\"members\":[\"新川\",\"全域\"],\"note\":\"京橋地域\"},{\"id\":\"d9\",\"label\":\"新富全域\",\"members\":[\"新富\",\"全域\"],\"note\":\"京橋地域\"},{\"id\":\"d10\",\"label\":\"築地全域\",\"members\":[\"築地\",\"全域\"],\"note\":\"京橋地域\"},{\"id\":\"d11\",\"label\":\"八丁堀1丁目\",\"members\":[\"八丁堀\",\"1丁目\"],\"note\":\"京橋地域\"},{\"id\":\"d12\",\"label\":\"八丁堀2～4丁目\",\"members\":[\"八丁堀\",\"2～4丁目\"],\"note\":\"京橋地域\"},{\"id\":\"d13\",\"label\":\"浜離宮庭園\",\"members\":[\"浜離宮庭園\"],\"note\":\"京橋地域\"},{\"id\":\"d14\",\"label\":\"湊全域\",\"members\":[\"湊\",\"全域\"],\"note\":\"京橋地域\"},{\"id\":\"d15\",\"label\":\"八重洲2丁目\",\"members\":[\"八重洲\",\"2丁目\"],\"note\":\"京橋地域\"},{\"id\":\"d16\",\"label\":\"大伝馬町全域\",\"members\":[\"大伝馬町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d17\",\"label\":\"蛎殻町1丁目\",\"members\":[\"蛎殻町\",\"1丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d18\",\"label\":\"蛎殻町2丁目\",\"members\":[\"蛎殻町\",\"2丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d19\",\"label\":\"兜町全域\",\"members\":[\"兜町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d20\",\"label\":\"茅場町全域\",\"members\":[\"茅場町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d21\",\"label\":\"小網町全域\",\"members\":[\"小網町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d22\",\"label\":\"小伝馬町1～2番、7～21番\",\"members\":[\"小伝馬町\",\"1～2番、7～21番\"],\"note\":\"日本橋地域\"},{\"id\":\"d23\",\"label\":\"小伝馬町3～6番\",\"members\":[\"小伝馬町\",\"3～6番\"],\"note\":\"日本橋地域\"},{\"id\":\"d24\",\"label\":\"小舟町全域\",\"members\":[\"小舟町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d25\",\"label\":\"富沢町全域\",\"members\":[\"富沢町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d26\",\"label\":\"中洲全域\",\"members\":[\"中洲\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d27\",\"label\":\"日本橋1～3丁目\",\"members\":[\"日本橋\",\"1～3丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d28\",\"label\":\"人形町1丁目\",\"members\":[\"人形町\",\"1丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d29\",\"label\":\"人形町2丁目1～14番\",\"members\":[\"人形町\",\"2丁目1～14番\"],\"note\":\"日本橋地域\"},{\"id\":\"d30\",\"label\":\"人形町2丁目15～37番\",\"members\":[\"人形町\",\"2丁目15～37番\"],\"note\":\"日本橋地域\"},{\"id\":\"d31\",\"label\":\"人形町3丁目\",\"members\":[\"人形町\",\"3丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d32\",\"label\":\"馬喰町全域\",\"members\":[\"馬喰町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d33\",\"label\":\"箱崎町全域\",\"members\":[\"箱崎町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d34\",\"label\":\"浜町1丁目\",\"members\":[\"浜町\",\"1丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d35\",\"label\":\"浜町2丁目\",\"members\":[\"浜町\",\"2丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d36\",\"label\":\"浜町3丁目\",\"members\":[\"浜町\",\"3丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d37\",\"label\":\"東日本橋全域\",\"members\":[\"東日本橋\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d38\",\"label\":\"久松町全域\",\"members\":[\"久松町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d39\",\"label\":\"堀留町全域\",\"members\":[\"堀留町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d40\",\"label\":\"本石町全域\",\"members\":[\"本石町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d41\",\"label\":\"本町1丁目1～ 5番\",\"members\":[\"本町\",\"1丁目1～ 5番\"],\"note\":\"日本橋地域\"},{\"id\":\"d42\",\"label\":\"本町1丁目6～ 9番\",\"members\":[\"本町\",\"1丁目6～ 9番\"],\"note\":\"日本橋地域\"},{\"id\":\"d43\",\"label\":\"本町1丁目10番\",\"members\":[\"本町\",\"1丁目10番\"],\"note\":\"日本橋地域\"},{\"id\":\"d44\",\"label\":\"本町2丁目1～ 5番\",\"members\":[\"本町\",\"2丁目1～ 5番\"],\"note\":\"日本橋地域\"},{\"id\":\"d45\",\"label\":\"本町2丁目6～ 8番\",\"members\":[\"本町\",\"2丁目6～ 8番\"],\"note\":\"日本橋地域\"},{\"id\":\"d46\",\"label\":\"本町3丁目1～ 5番\",\"members\":[\"本町\",\"3丁目1～ 5番\"],\"note\":\"日本橋地域\"},{\"id\":\"d47\",\"label\":\"本町3丁目6～ 11番\",\"members\":[\"本町\",\"3丁目6～ 11番\"],\"note\":\"日本橋地域\"},{\"id\":\"d48\",\"label\":\"本町4丁目\",\"members\":[\"本町\",\"4丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d49\",\"label\":\"室町全域\",\"members\":[\"室町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d50\",\"label\":\"八重洲1丁目\",\"members\":[\"八重洲\",\"1丁目\"],\"note\":\"日本橋地域\"},{\"id\":\"d51\",\"label\":\"横山町全域\",\"members\":[\"横山町\",\"全域\"],\"note\":\"日本橋地域\"},{\"id\":\"d52\",\"label\":\"勝どき全域\",\"members\":[\"勝どき\",\"全域\"],\"note\":\"月島地域\"},{\"id\":\"d53\",\"label\":\"月島全域\",\"members\":[\"月島\",\"全域\"],\"note\":\"月島地域\"},{\"id\":\"d54\",\"label\":\"佃全域\",\"members\":[\"佃\",\"全域\"],\"note\":\"月島地域\"},{\"id\":\"d55\",\"label\":\"豊海町全域\",\"members\":[\"豊海町\",\"全域\"],\"note\":\"月島地域\"},{\"id\":\"d56\",\"label\":\"晴海全域\",\"members\":[\"晴海\",\"全域\"],\"note\":\"月島地域\"}],\"categories\":[{\"id\":\"c1\",\"label\":\"燃やすごみ\",\"coarse\":[\"burnable\"]},{\"id\":\"c2\",\"label\":\"燃やさないごみ\",\"coarse\":[\"non_burnable\"]},{\"id\":\"c3\",\"label\":\"プラマーク\",\"coarse\":[\"plastic\"]},{\"id\":\"c4\",\"label\":\"資源\",\"coarse\":[]},{\"id\":\"c5\",\"label\":\"粗大ごみ\",\"coarse\":[\"oversized\"]}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d1\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d1\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d1\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d1\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d2\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d2\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d2\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d2\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d2\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d3\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d3\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d3\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d3\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d3\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d4\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d4\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d4\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d4\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d4\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d5\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d5\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d5\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d5\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d5\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d6\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d6\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d6\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d6\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d6\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d7\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d7\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d7\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d7\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d7\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d8\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d8\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d8\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d8\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d8\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d9\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d9\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d9\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d9\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d9\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d10\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d10\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d10\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d10\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d10\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d11\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d11\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d11\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d11\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d11\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d12\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d12\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d12\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d12\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d12\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d13\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d13\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d13\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d13\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d13\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d14\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d14\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d14\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d14\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d14\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d15\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d15\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d15\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d15\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d15\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d16\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d16\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d16\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d16\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d16\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d17\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d17\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d17\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d17\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d17\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d18\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d18\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d18\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d18\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d18\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d19\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d19\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d19\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d19\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d19\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d20\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d20\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d20\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d20\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d20\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d21\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d21\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d21\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d21\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d21\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d22\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d22\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d22\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d22\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d22\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d23\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d23\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d23\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d23\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d23\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d24\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d24\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d24\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d24\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d24\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d25\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d25\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d25\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d25\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d25\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d26\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d26\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d26\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d26\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d26\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d27\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d27\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d27\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d27\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d27\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d28\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d28\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d28\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d28\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d28\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d29\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"FR\",\"SA\"],\"text\":\"月曜日・火曜日・水曜日 金曜日・土曜日\"}]},{\"district\":\"d29\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d29\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d29\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d29\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d30\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d30\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d30\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d30\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d30\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d31\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d31\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d31\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d31\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d31\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d32\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d32\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d32\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d32\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d32\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d33\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d33\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d33\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d33\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d33\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d34\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d34\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d34\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d34\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d34\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d35\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d35\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d35\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d35\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d35\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d36\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d36\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d36\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d36\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d36\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d37\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d37\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d37\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d37\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d37\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d38\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d38\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d38\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d38\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d38\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d39\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d39\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d39\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d39\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d39\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d40\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d40\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d40\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d40\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d40\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d41\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d41\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d41\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d41\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d41\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d42\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d42\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d42\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d42\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d42\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d43\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d43\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d43\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d43\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d43\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d44\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d44\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d44\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d44\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d44\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d45\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d45\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d45\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d45\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d45\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d46\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d46\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d46\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d46\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d46\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d47\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d47\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d47\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d47\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d47\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d48\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d48\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d48\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d48\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d48\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d49\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d49\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d49\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d49\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d49\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d50\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"],\"text\":\"月曜日～土曜日\"}]},{\"district\":\"d50\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d50\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d50\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d50\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d51\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d51\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d51\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d51\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d51\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d52\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d52\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d52\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d52\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d52\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d53\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日・金曜日\"}]},{\"district\":\"d53\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d53\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d53\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]},{\"district\":\"d53\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d54\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d54\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d54\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d54\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d54\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d55\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・木曜日\"}]},{\"district\":\"d55\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"],\"text\":\"火曜日\"}]},{\"district\":\"d55\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"],\"text\":\"土曜日\"}]},{\"district\":\"d55\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d55\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d56\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]},{\"district\":\"d56\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d56\",\"category\":\"c3\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"],\"text\":\"金曜日\"}]},{\"district\":\"d56\",\"category\":\"c4\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d56\",\"category\":\"c5\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"],\"text\":\"水曜日\"}]}],\"exceptions\":[],\"unsure\":[{\"about\":\"有効期間\",\"text\":null},{\"about\":\"祝日・年末年始の取扱い\",\"text\":null},{\"about\":\"資源の品目の中身\",\"district\":null,\"category\":\"c4\",\"text\":\"資源\"}]}",
+    "reasoning_content": "We need answer JSON only. Need parse. We must infer district labels? Tables captioned 京橋地域, 日本橋地域, 月島地域. These are districts? The instruction: districts are collection day division names (区域/コース/地区/色). Here captions are regions and individual rows are towns with varying schedules. Need decide structure. We can treat each caption as district? But schedules differ per town, not uniform within region. However district label \"京橋地域\" contains many members with different schedules. Schedules keyed by district × category only, cannot represent different rules per member within same district. Thus if we create district per region, cannot encode differences. Alternatively create districts as each town/丁目 row? The schema members can hold town/chome; district label printed name. The \"地区\" division might be each row? But labels not printed as district names except town names. We need represent schedules for each row. The data table is by town/chome. The instruction says districts: \"収集日の分け方の地区 (区域・コース・地区・色の名前など)。... 地区の中身として町名・丁目・行政区などが並んでいれば members に 1 つずつ\". Here each row has town and chome and schedule; caption regions. Could create district for each unique row label (e.g., \"明石町 全域\") with members [\"明石町\",\"全域\"]? Label should be printed name. But label needs district name; town name could be label. For rows with same town multiple chome, should these be separate districts because schedules differ. We can define districts per row grouping by exact schedule? But label from printed maybe \"銀座1～2丁目\" etc. Need not invent label? We can use caption + row? Hmm.\n\nNeed be faithful. The source is a collection calendar table listing each town/chome and weekdays. For districts, actual collection districts are these town/chome units. We can create one district per row, label maybe town + chome (as printed). Members maybe [town, chome] or [chome]? Let's reason.\n\nSchema requires schedules district/category. To encode all rows, must create a district for each row with distinct schedule, or at least each row. We can label district as \"明石町（全域）\"? But \"印字の名前\" maybe not exact if combine. We can set label as town name, members [chome]? But duplicate labels possible (本町 multiple). Need unique id only; labels can duplicate? Probably okay but not ideal. But label should identify district. Could use \"本町1丁目1～ 5番\" etc. Is that \"印字のまま\"? The table has columns; not a single label. We can combine with no separator? Maybe label = town + chome string. Is that acceptable? The instruction says names as printed, don't paraphrase. Combining printed cell values is okay? Might be considered invention? Hmm.\n\nAlternative: Use three districts (京橋地域 etc.) with members all towns/chome, but then schedules cannot vary by member. We could only schedule categories if all members in region have same? Not true. We would need unsure for variation. But then fail to capture most. Better to represent each row as district.\n\nNeed parse all rows, categories: 燃やすごみ, 燃やさないごみ, プラマーク, 資源, 粗大ごみ. \"資源\" ambiguous: coarse maybe paper_cloth? Actually in Chuo ward, \"資源\" likely includes cans, bottles, PET? But source just says 資源. Coarse vocabulary: maybe beverage_can/glass_bottle/pet_bottle/paper_cloth/other. We cannot infer contents. Use coarse [\"other\"]? Is that appropriate? The label is \"資源\", coarse can be [] if unknown. The instruction says coarse is broad classification if contents apply; if unknown []. I think for 資源 unknown, use [] or [\"other\"]? \"other\" means ほか. Since it's a resource category, likely includes recyclables but no details. Better []? But schema requires array, can be empty. For プラマーク -> plastic. 燃やすごみ -> burnable. 燃やさないごみ -> non_burnable. 粗大ごみ -> oversized. 資源 -> maybe other? I'd use [\"other\"]? But \"other\" as category broad? The vocabulary includes other. Since label \"資源\" is not in list, unknown, maybe [] to avoid inference. Hmm. Maybe \"資源\" in Chuo city includes cans, bottles, PET, paper, cloth? The source only says 資源. We can set coarse [\"other\"] because it's a catch-all? But could be misleading. The instruction says coarse: \"資料が言う中身が当てはまる大まかな分類を下の語彙からすべて (分からなければ [])\". Since not specified, [] is safest. But category label \"資源\" itself is a category. We'll set coarse [].\n\nNeed handle \"月曜日～土曜日\" as weekly Monday through Saturday? Rule weekly with weekdays [\"MO\",\"TU\",\"WE\",\"TH\",\"FR\",\"SA\"]. It is a weekly rule on all six weekdays. Is that \"毎週\"? Yes. For categories with two weekdays e.g. 水曜日・土曜日 -> weekly [\"WE\",\"SA\"]. For single day -> weekly [\"TH\"]. For \"月曜日・火曜日・水曜日 金曜日・土曜日\" (人形町2丁目1～14番) has missing ・ between 水 and 金? Text: \"月曜日・火曜日・水曜日 金曜日・土曜日\" likely all Mon Tue Wed Fri Sat (no Thu). Need parse as weekdays [\"MO\",\"TU\",\"WE\",\"FR\",\"SA\"]. Is missing separator a typo; but printed \"月曜日・火曜日・水曜日 金曜日・土曜日\" could mean Mon Tue Wed and Fri Sat. We'll encode all five. Need maybe unsure? It is clear enough? Could include unsure about missing separator? But not necessary? Maybe mention? We'll not.\n\nNeed handle period: none printed. Set printed/from/to null and unsure about period not printed. The source page likely has no period in excerpt. Period not specified. Need set null and add unsure.\n\nNeed handle exceptions: no holiday/year-end text in excerpt. Add unsure about holiday/year-end not stated. Do not create exceptions.\n\nNeed create districts. Need decide if use each row as district. Let's enumerate all rows across 3 tables. We need unique ids d1... For each row with label and members. Need determine label exactly. Could use \"町名 + 丁目\" as printed. For rows where 丁目 blank, label town only. For \"全域\", label town + \"全域\"? Hmm. The district label should be printed name. The row's \"町名\" and \"丁目\" are printed. We can set label to town name if chome is \"全域\" maybe and members [\"全域\"]? But then for towns with multiple chome we need distinct labels. Maybe label = \"明石町\" and members [\"全域\"]; label = \"銀座1～2丁目\" for chome. But \"銀座1～2丁目\" not printed as a single string. Is that okay? It's constructed. Could set label = \"銀座\" and members [\"1～2丁目\"], but then multiple districts with same label \"銀座\" and different members. That is okay; label is printed town name, members capture chome. However schedules keyed by district id, so each row separate. The label duplicate is fine. But output loses chome in label but members distinguish. This seems more faithful to printed names: label is 町名 cell, members are 丁目 cell. For \"全域\", members [\"全域\"]. For \"浜離宮庭園\" with blank chome, members [] maybe. For \"八重洲\" appears in two regions with different chome (2丁目 in 京橋, 1丁目 in 日本橋) - label duplicate \"八重洲\", members differ. That is okay. But district label alone may be confusing. We can add note with caption? Schema permits note. But note optional. We can set note to caption? \"京橋地域\" etc. That helps. But label should be printed name (町名). Maybe district is each row, label = 町名. Members = 丁目 (e.g. [\"全域\"]). If multiple rows same label in same region, duplicate labels. Accept? There's no uniqueness requirement. Could be okay. But for district ids, d1 etc.\n\nAlternatively label = town name + \" \" + chome. But instruction says label is 印字の名前. Since town and chome are separate printed names, not a single label. For district, maybe the \"地区\" is the town/chome combination. We can set label = \"明石町 全域\"? I think combining is acceptable as a label for the row, but it's not exactly printed as one. The user explicitly says \"名前 ... は資料の字のまま書く。言い換えない・まとめない・略さない。\" Combining \"明石町\" and \"全域\" with a space isn't paraphrasing? It's creating a composite. But to identify district, label could be \"明石町全域\" maybe not printed. Hmm.\n\nMaybe better: districts: each caption region as district? No, schedules vary. Can't.\n\nWhat if we create districts for each unique schedule combination within a region, with label like \"京橋地域（水曜日・土曜日）\"? Not printed. No.\n\nThe schema likely expects district labels from table captions or color. But here town-level table: The \"district\" for schedule is each row (町名/丁目). So we can use label as the row's town+chome. Need choose. I'll use label = 町名 if 丁目 is \"全域\" or blank? But duplicate labels for 銀座 rows. If label duplicate, schedule mapping by id still. The evaluator might inspect label. Hmm.\n\nMaybe set label = 町名 + 丁目 (without space) exactly concatenating printed cell contents. For rows with \"全域\", \"明石町全域\". For blank, \"浜離宮庭園\". For chome \"1～2丁目\", \"銀座1～2丁目\". This is a natural district label. It uses printed characters only. Members can be [町名, 丁目] or just [丁目]. The instruction: \"地区の中身として町名・丁目・行政区などが並んでいれば members に 1 つずつ (印字のまま)\". So members should include town and chome each. Label can be a name for district. If no printed district name, label maybe the town+chome? I think label = town+chome is okay. But \"地区\" label should be printed name; no separate. We can set label = 町名 (and members [丁目]) to avoid composite. But duplicate labels. The id distinguishes. I lean label = town + chome concatenated; it's a row identifier. But \"名前は資料の字のまま\" means don't alter \"1～2丁目\" etc. Concatenating doesn't alter. We'll do that.\n\nNeed include caption note? District note can be \"京橋地域\" etc. That is printed. We can set note to caption. This helps disambiguate 八重洲. Good.\n\nNeed parse all rows. Let's list.\n\nTable 1 京橋地域:\n1 あ 明石町 全域: burnable WE SA; nonburn TH; plastic TU; resource MO; oversized SA.\n2 い 入船 全域: burn WE SA; nonburn TH; plastic TU; resource MO; oversized MO.\n3 き 京橋 全域: burn MO TU WE TH FR SA; nonburn FR; plastic TU; resource TU; oversized TU.\n4 銀座 1～2丁目: burn MO-Saturday; nonburn MO; plastic TH; resource TH; oversized TH.\n5 銀座 3～4丁目: burn MO-Saturday; nonburn SA; plastic WE; resource WE; oversized TH.\n6 銀座 5～6丁目: burn MO-Saturday; nonburn WE; plastic SA; resource SA; oversized TH.\n7 銀座 7～8丁目: burn MO-Saturday; nonburn TH; plastic MO; resource MO; oversized TH.\n8 し 新川 全域: burn TU FR; nonburn WE; plastic MO; resource SA; oversized WE.\n9 新富 全域: burn MO TH; nonburn FR; plastic WE; resource TU; oversized SA.\n10 つ 築地 全域: burn MO TH; nonburn FR; plastic WE; resource TU; oversized WE.\n11 は 八丁堀 1丁目: burn WE SA; nonburn TH; plastic TU; resource MO; oversized SA.\n12 八丁堀 2～4丁目: burn TU FR; nonburn WE; plastic MO; resource SA; oversized SA.\n13 浜離宮庭園 (blank): burn WE SA; nonburn TH; plastic TU; resource MO; oversized WE.\n14 み 湊 全域: burn WE SA; nonburn TH; plastic TU; resource MO; oversized MO.\n15 や 八重洲 2丁目: burn MO-Saturday; nonburn FR; plastic TU; resource TU; oversized TU.\n\nTable 2 日本橋地域:\n16 お 大伝馬町 全域: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n17 か 蛎殻町 1丁目: burn WE SA; nonburn MO; plastic FR; resource TH; oversized TU.\n18 蛎殻町 2丁目: burn WE SA; nonburn TH; plastic TU; resource MO; oversized TU.\n19 兜町 全域: burn WE SA; nonburn TH; plastic TU; resource MO; oversized TU.\n20 茅場町 全域: burn WE SA; nonburn TH; plastic TU; resource MO; oversized TU.\n21 こ 小網町 全域: burn WE SA; nonburn MO; plastic FR; resource TH; oversized TU.\n22 小伝馬町 1～2番、7～21番: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n23 小伝馬町 3～6番: burn MO TH; nonburn TU; plastic SA; resource FR; oversized FR.\n24 小舟町 全域: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n25 と 富沢町 全域: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n26 な 中洲 全域: burn WE SA; nonburn MO; plastic FR; resource TH; oversized TU.\n27 に 日本橋 1～3丁目: burn MO-Sat; nonburn TU; plastic FR; resource FR; oversized TU.\n28 人形町 1丁目: burn WE SA; nonburn MO; plastic FR; resource TH; oversized TU.\n29 人形町 2丁目1～14番: burn MO TU WE FR SA (no TH); nonburn MO; plastic TH; resource TH; oversized TU.\n30 人形町 2丁目15～37番: burn WE SA; nonburn MO; plastic FR; resource TH; oversized TU.\n31 人形町 3丁目: burn MO TH; nonburn FR; plastic WE; resource TU; oversized TU.\n32 は 馬喰町 全域: burn TU FR; nonburn WE; plastic MO; resource SA; oversized FR.\n33 箱崎町 全域: burn WE SA; nonburn TH; plastic TU; resource MO; oversized TU.\n34 浜町 1丁目: burn TU FR; nonburn WE; plastic MO; resource SA; oversized FR.\n35 浜町 2丁目: burn TU FR; nonburn SA; plastic TH; resource WE; oversized FR.\n36 浜町 3丁目: burn WE SA; nonburn MO; plastic FR; resource TH; oversized TU.\n37 ひ 東日本橋 全域: burn TU FR; nonburn WE; plastic MO; resource SA; oversized FR.\n38 久松町 全域: burn TU FR; nonburn WE; plastic MO; resource SA; oversized FR.\n39 ほ 堀留町 全域: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n40 本石町 全域: burn MO TH; nonburn TU; plastic SA; resource FR; oversized FR.\n41 本町 1丁目1～ 5番: burn MO TH; nonburn TU; plastic SA; resource FR; oversized FR.\n42 本町 1丁目6～ 9番: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n43 本町 1丁目10番: burn WE SA; nonburn MO; plastic FR; resource TH; oversized FR.\n44 本町 2丁目1～ 5番: burn MO TH; nonburn TU; plastic SA; resource FR; oversized FR.\n45 本町 2丁目6～ 8番: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n46 本町 3丁目1～ 5番: burn MO TH; nonburn TU; plastic SA; resource FR; oversized FR.\n47 本町 3丁目6～ 11番: burn MO TH; nonburn FR; plastic WE; resource TU; oversized FR.\n48 本町 4丁目: burn MO TH; nonburn TU; plastic SA; resource FR; oversized FR.\n49 む 室町 全域: burn MO TH; nonburn TU; plastic SA; resource FR; oversized FR.\n50 や 八重洲 1丁目: burn MO-Sat; nonburn TU; plastic FR; resource FR; oversized TU.\n51 よ 横山町 全域: burn TU FR; nonburn WE; plastic MO; resource SA; oversized FR.\n\nTable 3 月島地域:\n52 か 勝どき 全域: burn MO TH; nonburn TU; plastic SA; resource FR; oversized TH.\n53 つ 月島 全域: burn TU FR; nonburn SA; plastic TH; resource WE; oversized SA.\n54 佃 全域: burn WE SA; nonburn MO; plastic FR; resource TH; oversized MO.\n55 と 豊海町 全域: burn MO TH; nonburn TU; plastic SA; resource FR; oversized TH.\n56 は 晴海 全域: burn WE SA; nonburn MO; plastic FR; resource TH; oversized WE.\n\nNeed create schedules for each district × each category if day exists. 56 districts *5 = 280 schedules. That's a lot but doable. Need ensure JSON valid. Could we group rows with identical schedule into one district? Since district members can include many town/chome? But schedules same. For efficiency and correctness, we can group rows with identical schedules for all categories into one district, with members listing town/chome combos. But districts label? Would need label for group not printed. Better not.\n\nBut output huge. Desired oververbosity 5, but schema demands full. We can produce all. Need be careful. We have enough tokens.\n\nNeed decide districts labels. I'll use label = 町名 + 丁目 if not blank/全域? For 全域 maybe label = 町名 + \"全域\"? Hmm. To avoid duplicate labels for same town with multiple rows, label = town + chome. Members include both. For blank chome, label = town. For 全域, label = town + \"全域\". This is constructed but clear. We can set note = caption. Let's do. Members = [town, chome] if chome not empty; if blank, [town]. If 全域, [town,\"全域\"]. This matches \"members 1つずつ\". Good.\n\nNeed categories ids c1..c5:\nc1 燃やすごみ coarse [\"burnable\"]\nc2 燃やさないごみ coarse [\"non_burnable\"]\nc3 プラマーク coarse [\"plastic\"]\nc4 資源 coarse [] (or [\"other\"]?). Let's use [].\nc5 粗大ごみ coarse [\"oversized\"].\n\nNeed schedules: For each district, text? We can set text to original row's day cell for that category? The schedule object has text optional. We can set text to the printed day string for each category. This helps. But many. We can include text.\n\nNeed map weekdays Japanese:\n月 MO, 火 TU, 水 WE, 木 TH, 金 FR, 土 SA, 日 SU.\n\"月曜日～土曜日\" -> weekly MO TU WE TH FR SA. The rule type weekly with weekdays list. For two days -> weekly list. For single -> weekly.\n\nNeed for 人形町 2丁目1～14番 burn: \"月曜日・火曜日・水曜日 金曜日・土曜日\" -> weekdays [\"MO\",\"TU\",\"WE\",\"FR\",\"SA\"]. text original. Good.\n\nNeed period: null, unsure about \"資料に有効期間の印字がない\". Add.\n\nNeed unsure about holiday/year-end: \"祝日・年末年始の取扱いが資料に書いていない\" with district null category null text null? The schema requires text property? required about, text. text can null. Include.\n\nNeed unsure about 資源の中身? Maybe not because category label is 資源 and coarse empty. Could add unsure: about \"資源の品目の中身（何が資源に含まれるか）\", text \"資源\". district null category c4. This is useful. But instruction says unsure for things not in fixed shape. Since category exists, coarse empty. We can add unsure. Maybe also \"粗大ごみが収集日か持ち込みか\"?? The table has 粗大ごみ column with weekdays, so it's collection day. Fine.\n\nNeed unsure about period only. Could add about \"地区の分け方\" because table captions are 地域 and rows are towns; but we represented rows as districts. Is there any ambiguity? The source has 地域 captions and town rows. We can use note. No unsure needed? Maybe we should mention \"地域（京橋地域・日本橋地域・月島地域）と町名・丁目行の関係を、各行を地区として扱った\" but that's interpretation. Might be okay. But unsure should list things we couldn't decide. We decided. Maybe no.\n\nNeed validate JSON schema: schedules rules type \"weekly\", weekdays array. No additional properties. For each schedule object required district, category, rules. text optional. Good.\n\nNeed include all 56 districts. That's long. We need ensure no mistakes. Let's construct carefully.\n\nI'll assign d1..d56 in order above.\n\nDistrict definitions:\nd1 label \"明石町全域\" members [\"明石町\",\"全域\"] note \"京橋地域\"\nd2 \"入船全域\" [\"入船\",\"全域\"] note \"京橋地域\"\nd3 \"京橋全域\" [\"京橋\",\"全域\"]\nd4 \"銀座1～2丁目\" [\"銀座\",\"1～2丁目\"]\nd5 \"銀座3～4丁目\" [\"銀座\",\"3～4丁目\"]\nd6 \"銀座5～6丁目\" [\"銀座\",\"5～6丁目\"]\nd7 \"銀座7～8丁目\" [\"銀座\",\"7～8丁目\"]\nd8 \"新川全域\" [\"新川\",\"全域\"]\nd9 \"新富全域\" [\"新富\",\"全域\"]\nd10 \"築地全域\" [\"築地\",\"全域\"]\nd11 \"八丁堀1丁目\" [\"八丁堀\",\"1丁目\"]\nd12 \"八丁堀2～4丁目\" [\"八丁堀\",\"2～4丁目\"]\nd13 \"浜離宮庭園\" [\"浜離宮庭園\"] (chome blank)\nd14 \"湊全域\" [\"湊\",\"全域\"]\nd15 \"八重洲2丁目\" [\"八重洲\",\"2丁目\"] note 京橋地域\n\nd16 \"大伝馬町全域\" [\"大伝馬町\",\"全域\"] note 日本橋地域\nd17 \"蛎殻町1丁目\" [\"蛎殻町\",\"1丁目\"]\nd18 \"蛎殻町2丁目\" [\"蛎殻町\",\"2丁目\"]\nd19 \"兜町全域\" [\"兜町\",\"全域\"]\nd20 \"茅場町全域\" [\"茅場町\",\"全域\"]\nd21 \"小網町全域\" [\"小網町\",\"全域\"]\nd22 \"小伝馬町1～2番、7～21番\" [\"小伝馬町\",\"1～2番、7～21番\"]\nd23 \"小伝馬町3～6番\" [\"小伝馬町\",\"3～6番\"]\nd24 \"小舟町全域\" [\"小舟町\",\"全域\"]\nd25 \"富沢町全域\" [\"富沢町\",\"全域\"]\nd26 \"中洲全域\" [\"中洲\",\"全域\"]\nd27 \"日本橋1～3丁目\" [\"日本橋\",\"1～3丁目\"]\nd28 \"人形町1丁目\" [\"人形町\",\"1丁目\"]\nd29 \"人形町2丁目1～14番\" [\"人形町\",\"2丁目1～14番\"]\nd30 \"人形町2丁目15～37番\" [\"人形町\",\"2丁目15～37番\"]\nd31 \"人形町3丁目\" [\"人形町\",\"3丁目\"]\nd32 \"馬喰町全域\" [\"馬喰町\",\"全域\"]\nd33 \"箱崎町全域\" [\"箱崎町\",\"全域\"]\nd34 \"浜町1丁目\" [\"浜町\",\"1丁目\"]\nd35 \"浜町2丁目\" [\"浜町\",\"2丁目\"]\nd36 \"浜町3丁目\" [\"浜町\",\"3丁目\"]\nd37 \"東日本橋全域\" [\"東日本橋\",\"全域\"]\nd38 \"久松町全域\" [\"久松町\",\"全域\"]\nd39 \"堀留町全域\" [\"堀留町\",\"全域\"]\nd40 \"本石町全域\" [\"本石町\",\"全域\"]\nd41 \"本町1丁目1～ 5番\" [\"本町\",\"1丁目1～ 5番\"] Note space after ～? Source \"1丁目1～ 5番\" has space. Keep exactly? In table: \"1丁目1～ 5番\" yes. Use same.\nd42 \"本町1丁目6～ 9番\" [\"本町\",\"1丁目6～ 9番\"]\nd43 \"本町1丁目10番\" [\"本町\",\"1丁目10番\"]\nd44 \"本町2丁目1～ 5番\" [\"本町\",\"2丁目1～ 5番\"]\nd45 \"本町2丁目6～ 8番\" [\"本町\",\"2丁目6～ 8番\"]\nd46 \"本町3丁目1～ 5番\" [\"本町\",\"3丁目1～ 5番\"]\nd47 \"本町3丁目6～ 11番\" [\"本町\",\"3丁目6～ 11番\"]\nd48 \"本町4丁目\" [\"本町\",\"4丁目\"]\nd49 \"室町全域\" [\"室町\",\"全域\"]\nd50 \"八重洲1丁目\" [\"八重洲\",\"1丁目\"] note 日本橋地域\nd51 \"横山町全域\" [\"横山町\",\"全域\"]\n\nd52 \"勝どき全域\" [\"勝どき\",\"全域\"] note 月島地域\nd53 \"月島全域\" [\"月島\",\"全域\"]\nd54 \"佃全域\" [\"佃\",\"全域\"]\nd55 \"豊海町全域\" [\"豊海町\",\"全域\"]\nd56 \"晴海全域\" [\"晴海\",\"全域\"]\n\nCould note for all. Note optional but okay. Need maybe note null? Schema allows string|null. We can set note string.\n\nNow schedules. Need output each district/category. We'll use helper mentally. Need ensure weekdays mapping.\n\nI'll create schedules array with 5 per district. Each schedule: {\"district\":\"d1\",\"category\":\"c1\",\"text\":\"水曜日・土曜日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"],\"text\":\"水曜日・土曜日\"}]}. The rule's text optional. Include. For c2 etc.\n\nWe can reduce by setting text null? But rules text helpful. Include.\n\nLet's list per district category rules:\n\nd1:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 SA\n\nd2:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 MO\n\nd3:\nc1 MO TU WE TH FR SA\nc2 FR\nc3 TU\nc4 TU\nc5 TU\n\nd4:\nc1 MO-Sat\nc2 MO\nc3 TH\nc4 TH\nc5 TH\n\nd5:\nc1 MO-Sat\nc2 SA\nc3 WE\nc4 WE\nc5 TH\n\nd6:\nc1 MO-Sat\nc2 WE\nc3 SA\nc4 SA\nc5 TH\n\nd7:\nc1 MO-Sat\nc2 TH\nc3 MO\nc4 MO\nc5 TH\n\nd8:\nc1 TU FR\nc2 WE\nc3 MO\nc4 SA\nc5 WE\n\nd9:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 SA\n\nd10:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 WE\n\nd11:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 SA\n\nd12:\nc1 TU FR\nc2 WE\nc3 MO\nc4 SA\nc5 SA\n\nd13:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 WE\n\nd14:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 MO\n\nd15:\nc1 MO-Sat\nc2 FR\nc3 TU\nc4 TU\nc5 TU\n\nd16:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 FR\n\nd17:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 TU\n\nd18:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 TU\n\nd19:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 TU\n\nd20:\nsame d19.\n\nd21:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 TU\n\nd22:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 FR\n\nd23:\nc1 MO TH\nc2 TU\nc3 SA\nc4 FR\nc5 FR\n\nd24:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 FR\n\nd25:\nsame d24.\n\nd26:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 TU\n\nd27:\nc1 MO TU WE TH FR SA\nc2 TU\nc3 FR\nc4 FR\nc5 TU\n\nd28:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 TU\n\nd29:\nc1 MO TU WE FR SA\nc2 MO\nc3 TH\nc4 TH\nc5 TU\n\nd30:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 TU\n\nd31:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 TU\n\nd32:\nc1 TU FR\nc2 WE\nc3 MO\nc4 SA\nc5 FR\n\nd33:\nc1 WE SA\nc2 TH\nc3 TU\nc4 MO\nc5 TU\n\nd34:\nc1 TU FR\nc2 WE\nc3 MO\nc4 SA\nc5 FR\n\nd35:\nc1 TU FR\nc2 SA\nc3 TH\nc4 WE\nc5 FR\n\nd36:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 TU\n\nd37:\nc1 TU FR\nc2 WE\nc3 MO\nc4 SA\nc5 FR\n\nd38:\nsame d37.\n\nd39:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 FR\n\nd40:\nc1 MO TH\nc2 TU\nc3 SA\nc4 FR\nc5 FR\n\nd41:\nsame d40 (MO TH; TU; SA; FR; FR)\nd42:\nc1 MO TH\nc2 FR\nc3 WE\nc4 TU\nc5 FR\nd43:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 FR\nd44:\nsame d40\nd45:\nsame d42\nd46:\nsame d40\nd47:\nsame d42\nd48:\nsame d40\nd49:\nsame d40\nd50:\nc1 MO TU WE TH FR SA\nc2 TU\nc3 FR\nc4 FR\nc5 TU\nd51:\nsame d37\n\nd52:\nc1 MO TH\nc2 TU\nc3 SA\nc4 FR\nc5 TH\nd53:\nc1 TU FR\nc2 SA\nc3 TH\nc4 WE\nc5 SA\nd54:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 MO\nd55:\nc1 MO TH\nc2 TU\nc3 SA\nc4 FR\nc5 TH\nd56:\nc1 WE SA\nc2 MO\nc3 FR\nc4 TH\nc5 WE\n\nNeed ensure categories labels exactly: \"燃やすごみ\", \"燃やさないごみ\", \"プラマーク\", \"資源\", \"粗大ごみ\". Coarse for 資源 maybe [] and note null? Fine.\n\nNeed exceptions: [].\n\nUnsure:\n1 about \"有効期間\" text null? Actually text should be original? There is no printed. Set text null.\n2 about \"祝日・年末年始の取扱い\" text null.\n3 about \"資源の品目の中身\" district null category \"c4\" text \"資源\". Is that allowed? category id yes. Good.\nMaybe 4 about \"人形町2丁目1～14番の燃やすごみの曜日表記に区切り記号がない\" text \"月曜日・火曜日・水曜日 金曜日・土曜日\" district d29 category c1. But we encoded as Mon Tue Wed Fri Sat. Is there uncertainty? The missing ・ between 水 and 金 could be a line break or typo; but likely intended. Could include unsure to be safe? The instruction says if unclear, put in unsure. But if we include and also schedule, is that contradictory? It says \"迷ったもの...は、その部分を答えに入れず unsure に書く。答えを1つに決められないときも unsure。\" If unsure, should not include? Hmm. For this, we can decide it's clear enough: list of weekdays with missing separator. But maybe not. Since it's obvious all weekdays except Thursday? The table cell: \"月曜日・火曜日・水曜日 金曜日・土曜日\" There is a space not ・. It might be OCR missing ・. It lists five days. I think okay. No unsure.\n\nNeed period printed null from null to null. Good.\n\nNow need generate JSON. Need be careful with escaping. No slashes. Japanese characters fine. We must return only JSON. No code fences.\n\nThis will be long. Need ensure valid JSON no trailing commas. We can produce compact-ish but readable. Since final only JSON. Let's construct.\n\nWe need maybe not include \"note\" if null. For districts we include note strings. For categories no note. For schedules text and rule text.\n\nLet's write JSON.\n\nDouble-check district labels with spaces:\nd41 label \"本町1丁目1～ 5番\" includes space after ～. Members same. d42 \"本町1丁目6～ 9番\". d44 \"本町2丁目1～ 5番\". d45 \"本町2丁目6～ 8番\". d46 \"本町3丁目1～ 5番\". d47 \"本町3丁目6～ 11番\".\nd22 \"小伝馬町1～2番、7～21番\" no space.\nd29 \"人形町2丁目1～14番\" no space? Source \"2丁目1～14番\" no space. Good.\nd30 \"人形町2丁目15～37番\".\n\nNeed schedule text exactly. For c1 \"月曜日～土曜日\" for six-day. For d3 etc.\n\nLet's produce. Because of size, ensure all 56 districts and 280 schedules. I can reduce schedule objects by omitting text? It's optional. But rule text optional. If omit text, less risk. But schema allows. We can omit text in schedules and rules to reduce. However \"text\" in rules optional. The instruction says text: 元の文字. It's not required. But maybe better include? To save tokens, omit text? The schema has text optional. But the user asks \"text: 元の文字 (印字のまま)\" under rules. It might be expected if available. But not required by schema. Hmm. We can include in rule text for each. That doubles. But okay.\n\nMaybe include text only in rule, not schedule top-level. But rule text is useful. Schedule top-level text optional. I'll include rule text but omit schedule text. Or include both? Let's include rule text only. The schedule text not required. For exceptions none.\n\nNeed include all weekdays arrays. For \"月曜日～土曜日\", rule text \"月曜日～土曜日\". For single \"木曜日\".\n\nNow output.\n\nWait: Need \"period\" object with printed/from/to null. Good.\n\nLet's write final JSON. Need ensure no comments.",
+    "finish_reason": "stop",
+    "usage": {
+     "prompt_tokens": 6942,
+     "completion_tokens": 19785,
+     "total_tokens": 26727,
+     "prompt_tokens_details": {
+      "cached_tokens": 2816
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 8396
+     },
+     "prompt_cache_hit_tokens": 2816,
+     "prompt_cache_miss_tokens": 4126
+    },
+    "model": "deepseek-flash",
+    "seconds": 58.1
+   }
+  ],
+  "note": "API の生の答え (content は JSON の文字、reasoning_content は推論の文字)。最後のものを answer に読んだ"
+ },
+ "seconds": 58.1
+}

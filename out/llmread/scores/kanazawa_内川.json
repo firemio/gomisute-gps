@@ -1,0 +1,245 @@
+{
+ "deepseek": {
+  "answer_key": "out/kanazawa_schedules.json (K1 の 355 系列のうち、この地区の 5 系列)",
+  "district": "内川",
+  "summary": {
+   "units": 5,
+   "exact": 5,
+   "wrong_dates": 0,
+   "missing_dates": 0,
+   "gt_dates": 154,
+   "unmapped": 0,
+   "answered": 4,
+   "answered_exact": 4,
+   "answered_wrong": 0
+  },
+  "district_map": {
+   "ids": [
+    "d1"
+   ],
+   "how": "label"
+  },
+  "category_map": {
+   "c1": [
+    "burnable",
+    "label"
+   ],
+   "c2": [
+    "nonburnable",
+    "label"
+   ],
+   "c3": [
+    "recyclable",
+    "label"
+   ],
+   "c4": [
+    "plastic",
+    "label"
+   ],
+   "c5": [
+    "bottle",
+    "label"
+   ]
+  },
+  "units": [
+   {
+    "category": "burnable",
+    "label": "燃やすごみ",
+    "gt_n": 103,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "holiday_not_stated"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "nonburnable",
+    "label": "燃やさないごみ",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "why": [],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "recyclable",
+    "label": "資源 あき缶・ペットボトル プラスチック資源など",
+    "gt_n": 24,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "why": [],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "plastic",
+    "label": "資源 プラスチック資源",
+    "gt_n": 3,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "why": [],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "bottle",
+    "label": "びん",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "why": [],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "out/kanazawa_schedules.json (K1 の 355 系列のうち、この地区の 5 系列)",
+  "district": "内川",
+  "summary": {
+   "units": 5,
+   "exact": 5,
+   "wrong_dates": 0,
+   "missing_dates": 0,
+   "gt_dates": 154,
+   "unmapped": 0,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "district_map": {
+   "ids": [
+    "d1"
+   ],
+   "how": "label"
+  },
+  "category_map": {
+   "c1": [
+    "burnable",
+    "label"
+   ],
+   "c2": [
+    "nonburnable",
+    "label"
+   ],
+   "c3": [
+    "recyclable",
+    "label"
+   ],
+   "c4": [
+    "plastic",
+    "label"
+   ],
+   "c5": [
+    "bottle",
+    "label"
+   ]
+  },
+  "units": [
+   {
+    "category": "burnable",
+    "label": "燃やすごみ",
+    "gt_n": 103,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "holiday_not_stated",
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "nonburnable",
+    "label": "燃やさないごみ",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "recyclable",
+    "label": "資源 あき缶・ペットボトル プラスチック資源など",
+    "gt_n": 24,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "plastic",
+    "label": "資源 プラスチック資源",
+    "gt_n": 3,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "bottle",
+    "label": "びん",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   }
+  ]
+ }
+}

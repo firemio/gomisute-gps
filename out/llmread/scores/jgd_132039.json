@@ -1,0 +1,3363 @@
+{
+ "deepseek": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "132039",
+  "summary": {
+   "units": 80,
+   "exact": 16,
+   "wrong_dates": 72,
+   "missing_dates": 2522,
+   "gt_dates": 3537,
+   "unmapped": 56,
+   "answered": 8,
+   "answered_exact": 5,
+   "answered_wrong": 3
+  },
+  "courses": 10,
+  "courses_mapped": 3,
+  "district_map": {
+   "A": {
+    "132039-87f4c5e2:d1": "name"
+   },
+   "B": {
+    "132039-0d9d5b15:d1": "name"
+   },
+   "C": {
+    "132039-6d70506c:d1": "name"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c2",
+    "label": "古紙・古着",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c4",
+    "label": "びん 缶 危険有害",
+    "keys": [
+     "beverage_can",
+     "glass_bottle",
+     "hazardous"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c5",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c6",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c7",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c3",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c4",
+    "label": "古紙・古着",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c6",
+    "label": "びん",
+    "keys": [
+     "glass_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c7",
+    "label": "缶",
+    "keys": [
+     "beverage_can"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c8",
+    "label": "危険有害",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c9",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c2",
+    "label": "古紙・古着",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c4",
+    "label": "びん",
+    "keys": [
+     "glass_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c5",
+    "label": "缶",
+    "keys": [
+     "beverage_can"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c6",
+    "label": "危険・有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c7",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c8",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c9",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   }
+  ],
+  "units": [
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-08",
+       "2026-04-22",
+       "2026-05-06",
+       "2026-05-20",
+       "2026-06-03",
+       "2026-06-17"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 26,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 26,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "pet_bottle",
+    "gt_n": 44,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-08",
+       "2027-01-22",
+       "2027-02-05",
+       "2027-02-19",
+       "2027-03-05",
+       "2027-03-19"
+      ],
+      "missing": [
+       "2027-01-15",
+       "2027-01-29",
+       "2027-02-12",
+       "2027-02-26",
+       "2027-03-12",
+       "2027-03-26"
+      ],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 6,
+      "missing_n": 6
+     }
+    ],
+    "exact": false,
+    "wrong_n": 6,
+    "missing_n": 6,
+    "answered": true
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-08",
+       "2027-01-22",
+       "2027-02-05",
+       "2027-02-19",
+       "2027-03-05",
+       "2027-03-19"
+      ],
+      "missing": [
+       "2027-01-15",
+       "2027-01-29",
+       "2027-02-12",
+       "2027-02-26",
+       "2027-03-12",
+       "2027-03-26"
+      ],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 6,
+      "missing_n": 6
+     }
+    ],
+    "exact": false,
+    "wrong_n": 6,
+    "missing_n": 6,
+    "answered": true
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c8"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-08",
+       "2027-01-22",
+       "2027-02-05",
+       "2027-02-19",
+       "2027-03-05",
+       "2027-03-19"
+      ],
+      "missing": [
+       "2027-01-15",
+       "2027-01-29",
+       "2027-02-12",
+       "2027-02-26",
+       "2027-03-12",
+       "2027-03-26"
+      ],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 6,
+      "missing_n": 6
+     }
+    ],
+    "exact": false,
+    "wrong_n": 6,
+    "missing_n": 6,
+    "answered": true
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "pet_bottle",
+    "gt_n": 44,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-05",
+       "2027-01-19",
+       "2027-02-02",
+       "2027-02-16",
+       "2027-03-02",
+       "2027-03-16"
+      ],
+      "missing": [
+       "2027-01-12",
+       "2027-01-26",
+       "2027-02-09",
+       "2027-02-23",
+       "2027-03-09",
+       "2027-03-23"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 7,
+      "missing_n": 6
+     }
+    ],
+    "exact": false,
+    "wrong_n": 7,
+    "missing_n": 6,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-05",
+       "2027-01-19",
+       "2027-02-02",
+       "2027-02-16",
+       "2027-03-02",
+       "2027-03-16"
+      ],
+      "missing": [
+       "2027-01-12",
+       "2027-01-26",
+       "2027-02-09",
+       "2027-02-23",
+       "2027-03-09",
+       "2027-03-23"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 7,
+      "missing_n": 6
+     }
+    ],
+    "exact": false,
+    "wrong_n": 7,
+    "missing_n": 6,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-05",
+       "2027-01-19",
+       "2027-02-02",
+       "2027-02-16",
+       "2027-03-02",
+       "2027-03-16"
+      ],
+      "missing": [
+       "2027-01-12",
+       "2027-01-26",
+       "2027-02-09",
+       "2027-02-23",
+       "2027-03-09",
+       "2027-03-23"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 7,
+      "missing_n": 6
+     }
+    ],
+    "exact": false,
+    "wrong_n": 7,
+    "missing_n": 6,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-06",
+       "2027-01-20",
+       "2027-02-03",
+       "2027-02-17",
+       "2027-03-03",
+       "2027-03-17"
+      ],
+      "missing": [
+       "2027-01-13",
+       "2027-01-27",
+       "2027-02-10",
+       "2027-02-24",
+       "2027-03-10",
+       "2027-03-24"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 7,
+      "missing_n": 6
+     }
+    ],
+    "exact": false,
+    "wrong_n": 7,
+    "missing_n": 6,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c8"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "non_burnable",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "non_burnable",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "pet_bottle",
+    "gt_n": 46,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 46,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "non_burnable",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "pet_bottle",
+    "gt_n": 46,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 46,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "pet_bottle",
+    "gt_n": 44,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 44,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "beverage_can",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "glass_bottle",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "hazardous",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "132039",
+  "summary": {
+   "units": 80,
+   "exact": 23,
+   "wrong_dates": 0,
+   "missing_dates": 2505,
+   "gt_dates": 3537,
+   "unmapped": 56,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 10,
+  "courses_mapped": 3,
+  "district_map": {
+   "A": {
+    "132039-87f4c5e2:d1": "name"
+   },
+   "C": {
+    "132039-6d70506c:d1": "name"
+   },
+   "B": {
+    "132039-0d9d5b15:d1": "source_doc"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c2",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c3",
+    "label": "古紙・古着",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c4",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c5",
+    "label": "びん",
+    "keys": [
+     "glass_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c6",
+    "label": "缶",
+    "keys": [
+     "beverage_can"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c7",
+    "label": "危険有害",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c8",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-87f4c5e2",
+    "id": "c9",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c3",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c4",
+    "label": "古紙・古着",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c6",
+    "label": "びん",
+    "keys": [
+     "glass_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c7",
+    "label": "缶",
+    "keys": [
+     "beverage_can"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c8",
+    "label": "危険有害",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132039-0d9d5b15",
+    "id": "c9",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c2",
+    "label": "古紙・古着",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c4",
+    "label": "びん",
+    "keys": [
+     "glass_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c5",
+    "label": "缶",
+    "keys": [
+     "beverage_can"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c6",
+    "label": "危険有害",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c7",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c8",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132039-6d70506c",
+    "id": "c9",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   }
+  ],
+  "units": [
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "pet_bottle",
+    "gt_n": 44,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "A",
+    "course_name": "A地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-87f4c5e2:d1",
+      "how": "name",
+      "categories": [
+       "c8"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c8"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "pet_bottle",
+    "gt_n": 44,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "B",
+    "course_name": "B地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-0d9d5b15:d1",
+      "how": "source_doc",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 25
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "C",
+    "course_name": "C地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132039-6d70506c:d1",
+      "how": "name",
+      "categories": [
+       "c8"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "D",
+    "course_name": "D地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "non_burnable",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "E",
+    "course_name": "E地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "non_burnable",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "pet_bottle",
+    "gt_n": 46,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 46,
+    "answered": false
+   },
+   {
+    "course": "F",
+    "course_name": "F地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "non_burnable",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "pet_bottle",
+    "gt_n": 46,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 46,
+    "answered": false
+   },
+   {
+    "course": "G",
+    "course_name": "G地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "beverage_can",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "glass_bottle",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "hazardous",
+    "gt_n": 25,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 25,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "H",
+    "course_name": "H地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "beverage_can",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "glass_bottle",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "hazardous",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "paper_cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "pet_bottle",
+    "gt_n": 44,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 44,
+    "answered": false
+   },
+   {
+    "course": "I",
+    "course_name": "I地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "beverage_can",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "glass_bottle",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "hazardous",
+    "gt_n": 27,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "non_burnable",
+    "gt_n": 26,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 26,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "paper_cloth",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "pet_bottle",
+    "gt_n": 45,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 45,
+    "answered": false
+   },
+   {
+    "course": "J",
+    "course_name": "J地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   }
+  ]
+ }
+}

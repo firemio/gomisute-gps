@@ -1,0 +1,567 @@
+{
+ "doc_id": "045811-2026-07",
+ "model": "deepseek-flash",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "6bd66efb8194f3916c034d827e8e2edd388597d348833ae0608f5e1ec06b8b11",
+ "started_at": "2026-10-21T11:19:36+00:00",
+ "images": 2,
+ "answer": {
+  "municipality": "女川町",
+  "period": {
+   "printed": "令和８年 2026年 7月",
+   "from": "2026-07-01",
+   "to": "2026-07-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "大沢・浦宿全区・針浜",
+    "members": [
+     "大沢",
+     "浦宿全区",
+     "針浜"
+    ]
+   },
+   {
+    "id": "d2",
+    "label": "上全区・西・小乗",
+    "members": [
+     "上全区",
+     "西",
+     "小乗"
+    ]
+   },
+   {
+    "id": "d3",
+    "label": "女川全区・大原全区・清水",
+    "members": [
+     "女川全区",
+     "大原全区",
+     "清水"
+    ]
+   },
+   {
+    "id": "d4",
+    "label": "旭が丘・宮ケ崎・石浜",
+    "members": [
+     "旭が丘",
+     "宮ケ崎",
+     "石浜"
+    ]
+   },
+   {
+    "id": "d5",
+    "label": "高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取",
+    "members": [
+     "高白",
+     "横浦",
+     "大石原",
+     "野々浜",
+     "飯子浜",
+     "塚浜",
+     "小屋取"
+    ]
+   },
+   {
+    "id": "d6",
+    "label": "桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間",
+    "members": [
+     "桐ケ崎",
+     "竹浦",
+     "尾浦",
+     "御前",
+     "指ケ浜",
+     "出島",
+     "寺間"
+    ]
+   },
+   {
+    "id": "d7",
+    "label": "江島地区",
+    "members": [
+     "江島地区"
+    ]
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "coarse": [
+     "burnable"
+    ]
+   },
+   {
+    "id": "c2",
+    "label": "缶・びん ペットボトル",
+    "coarse": [
+     "beverage_can",
+     "glass_bottle",
+     "pet_bottle"
+    ]
+   },
+   {
+    "id": "c3",
+    "label": "ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "coarse": [
+     "plastic",
+     "paper",
+     "cloth",
+     "other"
+    ]
+   },
+   {
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "coarse": [
+     "non_burnable"
+    ]
+   },
+   {
+    "id": "c5",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ]
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "黄色の日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "黄色の日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": "7 21",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-07",
+       "2026-07-21"
+      ],
+      "text": "7 21"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": "14 28",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-14",
+       "2026-07-28"
+      ],
+      "text": "14 28"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": "1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-01"
+      ],
+      "text": "1"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c1",
+    "text": "黄色の日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "黄色の日"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c2",
+    "text": "3 17 31",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-03",
+       "2026-07-17",
+       "2026-07-31"
+      ],
+      "text": "3 17 31"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c3",
+    "text": "10 24",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-10",
+       "2026-07-24"
+      ],
+      "text": "10 24"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c4",
+    "text": "8",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-08"
+      ],
+      "text": "8"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c1",
+    "text": "水色の日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "水色の日"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c2",
+    "text": "1 15 29",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-01",
+       "2026-07-15",
+       "2026-07-29"
+      ],
+      "text": "1 15 29"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c3",
+    "text": "8 22",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-08",
+       "2026-07-22"
+      ],
+      "text": "8 22"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c4",
+    "text": "17",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-17"
+      ],
+      "text": "17"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c1",
+    "text": "水色の日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "水色の日"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c2",
+    "text": "9 23",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-09",
+       "2026-07-23"
+      ],
+      "text": "9 23"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c3",
+    "text": "2 16 30",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-02",
+       "2026-07-16",
+       "2026-07-30"
+      ],
+      "text": "2 16 30"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c4",
+    "text": "22",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-22"
+      ],
+      "text": "22"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c1",
+    "text": "黄色の日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "黄色の日"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c3",
+    "text": "13 27",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-13",
+       "2026-07-27"
+      ],
+      "text": "13 27"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c4",
+    "text": "3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-03"
+      ],
+      "text": "3"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c1",
+    "text": "水色の日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "水色の日"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c3",
+    "text": "6 20",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-06",
+       "2026-07-20"
+      ],
+      "text": "6 20"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c4",
+    "text": "10",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-07-10"
+      ],
+      "text": "10"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c1",
+    "text": "江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "FR"
+      ],
+      "text": "江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。"
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "祝日の取扱い",
+    "district": null,
+    "category": null,
+    "text": "資料に祝日の扱いについて明記されていない"
+   },
+   {
+    "about": "年末年始の取扱い",
+    "district": null,
+    "category": null,
+    "text": "資料に年末年始の取扱いについて明記されていない"
+   },
+   {
+    "about": "粗大ごみの収集日",
+    "district": null,
+    "category": "c5",
+    "text": "表の粗大ごみ欄に日付が印字されていない"
+   },
+   {
+    "about": "高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取の缶・びん・ペットボトル収集日",
+    "district": "d5",
+    "category": "c2",
+    "text": "表の該当欄が空欄で読み取れない"
+   },
+   {
+    "about": "桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間の缶・びん・ペットボトル収集日",
+    "district": "d6",
+    "category": "c2",
+    "text": "表の該当欄が空欄で読み取れない"
+   },
+   {
+    "about": "江島地区の資源ごみ等の収集日",
+    "district": "d7",
+    "category": null,
+    "text": "江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。"
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 6438,
+  "completion_tokens": 17975,
+  "total_tokens": 24413,
+  "prompt_tokens_details": {
+   "cached_tokens": 2816
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 16108
+  },
+  "prompt_cache_hit_tokens": 2816,
+  "prompt_cache_miss_tokens": 3622,
+  "seconds": 74.0,
+  "model": "deepseek-flash"
+ },
+ "error": null,
+ "cost": {
+  "usd": 0.022673,
+  "usd_peak": 0.022673,
+  "offpeak": false,
+  "price_per_mtok": {
+   "input_miss": 0.3,
+   "input_hit": 0.006,
+   "output": 1.2
+  },
+  "offpeak_utc": "16:30-00:30 (料金表で要確認)",
+  "calls": 1
+ },
+ "raw": {
+  "attempts": [
+   {
+    "content": "{\"municipality\":\"女川町\",\"period\":{\"printed\":\"令和８年 2026年 7月\",\"from\":\"2026-07-01\",\"to\":\"2026-07-31\"},\"districts\":[{\"id\":\"d1\",\"label\":\"大沢・浦宿全区・針浜\",\"members\":[\"大沢\",\"浦宿全区\",\"針浜\"]},{\"id\":\"d2\",\"label\":\"上全区・西・小乗\",\"members\":[\"上全区\",\"西\",\"小乗\"]},{\"id\":\"d3\",\"label\":\"女川全区・大原全区・清水\",\"members\":[\"女川全区\",\"大原全区\",\"清水\"]},{\"id\":\"d4\",\"label\":\"旭が丘・宮ケ崎・石浜\",\"members\":[\"旭が丘\",\"宮ケ崎\",\"石浜\"]},{\"id\":\"d5\",\"label\":\"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取\",\"members\":[\"高白\",\"横浦\",\"大石原\",\"野々浜\",\"飯子浜\",\"塚浜\",\"小屋取\"]},{\"id\":\"d6\",\"label\":\"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\",\"members\":[\"桐ケ崎\",\"竹浦\",\"尾浦\",\"御前\",\"指ケ浜\",\"出島\",\"寺間\"]},{\"id\":\"d7\",\"label\":\"江島地区\",\"members\":[\"江島地区\"]}],\"categories\":[{\"id\":\"c1\",\"label\":\"燃やせるごみ\",\"coarse\":[\"burnable\"]},{\"id\":\"c2\",\"label\":\"缶・びん ペットボトル\",\"coarse\":[\"beverage_can\",\"glass_bottle\",\"pet_bottle\"]},{\"id\":\"c3\",\"label\":\"ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\",\"coarse\":[\"plastic\",\"paper\",\"cloth\",\"other\"]},{\"id\":\"c4\",\"label\":\"燃やせないごみ\",\"coarse\":[\"non_burnable\"]},{\"id\":\"c5\",\"label\":\"粗大ごみ\",\"coarse\":[\"oversized\"]}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"text\":\"黄色の日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"黄色の日\"}]},{\"district\":\"d1\",\"category\":\"c2\",\"text\":\"7 21\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-07\",\"2026-07-21\"],\"text\":\"7 21\"}]},{\"district\":\"d1\",\"category\":\"c3\",\"text\":\"14 28\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-14\",\"2026-07-28\"],\"text\":\"14 28\"}]},{\"district\":\"d1\",\"category\":\"c4\",\"text\":\"1\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-01\"],\"text\":\"1\"}]},{\"district\":\"d2\",\"category\":\"c1\",\"text\":\"黄色の日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"黄色の日\"}]},{\"district\":\"d2\",\"category\":\"c2\",\"text\":\"3 17 31\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-03\",\"2026-07-17\",\"2026-07-31\"],\"text\":\"3 17 31\"}]},{\"district\":\"d2\",\"category\":\"c3\",\"text\":\"10 24\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-10\",\"2026-07-24\"],\"text\":\"10 24\"}]},{\"district\":\"d2\",\"category\":\"c4\",\"text\":\"8\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-08\"],\"text\":\"8\"}]},{\"district\":\"d3\",\"category\":\"c1\",\"text\":\"水色の日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"水色の日\"}]},{\"district\":\"d3\",\"category\":\"c2\",\"text\":\"1 15 29\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-01\",\"2026-07-15\",\"2026-07-29\"],\"text\":\"1 15 29\"}]},{\"district\":\"d3\",\"category\":\"c3\",\"text\":\"8 22\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-08\",\"2026-07-22\"],\"text\":\"8 22\"}]},{\"district\":\"d3\",\"category\":\"c4\",\"text\":\"17\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-17\"],\"text\":\"17\"}]},{\"district\":\"d4\",\"category\":\"c1\",\"text\":\"水色の日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"水色の日\"}]},{\"district\":\"d4\",\"category\":\"c2\",\"text\":\"9 23\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-09\",\"2026-07-23\"],\"text\":\"9 23\"}]},{\"district\":\"d4\",\"category\":\"c3\",\"text\":\"2 16 30\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-02\",\"2026-07-16\",\"2026-07-30\"],\"text\":\"2 16 30\"}]},{\"district\":\"d4\",\"category\":\"c4\",\"text\":\"22\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-22\"],\"text\":\"22\"}]},{\"district\":\"d5\",\"category\":\"c1\",\"text\":\"黄色の日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"黄色の日\"}]},{\"district\":\"d5\",\"category\":\"c3\",\"text\":\"13 27\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-13\",\"2026-07-27\"],\"text\":\"13 27\"}]},{\"district\":\"d5\",\"category\":\"c4\",\"text\":\"3\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-03\"],\"text\":\"3\"}]},{\"district\":\"d6\",\"category\":\"c1\",\"text\":\"水色の日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"水色の日\"}]},{\"district\":\"d6\",\"category\":\"c3\",\"text\":\"6 20\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-06\",\"2026-07-20\"],\"text\":\"6 20\"}]},{\"district\":\"d6\",\"category\":\"c4\",\"text\":\"10\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-07-10\"],\"text\":\"10\"}]},{\"district\":\"d7\",\"category\":\"c1\",\"text\":\"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"FR\"],\"text\":\"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\"}]}],\"exceptions\":[],\"unsure\":[{\"about\":\"祝日の取扱い\",\"district\":null,\"category\":null,\"text\":\"資料に祝日の扱いについて明記されていない\"},{\"about\":\"年末年始の取扱い\",\"district\":null,\"category\":null,\"text\":\"資料に年末年始の取扱いについて明記されていない\"},{\"about\":\"粗大ごみの収集日\",\"district\":null,\"category\":\"c5\",\"text\":\"表の粗大ごみ欄に日付が印字されていない\"},{\"about\":\"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取の缶・びん・ペットボトル収集日\",\"district\":\"d5\",\"category\":\"c2\",\"text\":\"表の該当欄が空欄で読み取れない\"},{\"about\":\"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間の缶・びん・ペットボトル収集日\",\"district\":\"d6\",\"category\":\"c2\",\"text\":\"表の該当欄が空欄で読み取れない\"},{\"about\":\"江島地区の資源ごみ等の収集日\",\"district\":\"d7\",\"category\":null,\"text\":\"江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。\"}]}",
+    "reasoning_content": "We need answer JSON only. Need parse resource. Need understand Japanese municipal waste calendar for Onagawa? 女川町. Need extract districts, categories, schedules, exceptions, unsure.\n\nWe have page 10 and page 11. Page 10 has July 2026 resource and nonburnable/oversized collection dates, plus burnable garbage groups yellow/water color. Page 11 July calendar shows colored days (yellow and light blue) presumably burnable collection dates for two groups. Need infer schedules from printed calendar dates. Need be careful: page 11 calendar has days colored yellow (2,3? Wait calendar colors: July 2026. It shows 7/1 Wed, 7/2 Thu, 7/3 Fri, 7/4 Sat. Need map colors. Let's inspect image: page-011: Calendar for July 2026 with 日 red, 月, 火, 水, 木, 金, 土. Date cells:\nRow1: Sun 28 (June?) pink/red? Mon 29 yellow? Tue 30 light blue? Wed 1 white, Thu 2 yellow, Fri 3 light blue, Sat 4 white.\nRow2: Sun 5 red, Mon 6 yellow, Tue 7 light blue, Wed 8 white, Thu 9 yellow, Fri 10 light blue, Sat 11 white.\nRow3: Sun 12 red, Mon 13 yellow, Tue 14 light blue, Wed 15 white, Thu 16 yellow, Fri 17 light blue, Sat 18 white.\nRow4: Sun 19 red, Mon 20 yellow (with 海の日 red text), Tue 21 light blue, Wed 22 white, Thu 23 yellow, Fri 24 light blue, Sat 25 white.\nRow5: Sun 26 red, Mon 27 yellow, Tue 28 light blue, Wed 29 white, Thu 30 yellow, Fri 31 light blue, Sat Aug1 white.\n\nSo burnable collections: Yellow days = July 2,6,9,13,16,20,23,27,30? Wait also maybe June 29 yellow? The calendar includes June 29,30 as previous month in first row. Page is July 2026, colors may include June 29? Need not include June dates? Period July? The calendar displays July. But colored June 29 and 30? Actually first row shows 28 (Sun, red), 29 (Mon, yellow shaded?), 30 (Tue, light blue shaded), 1 (Wed). These are June 28-30 maybe from previous month; calendar for July includes them as gray? They appear colored? In image 29 has yellow background, 30 light blue. Hmm Could be dates from June 29 and 30 are colored as burnable too? But page says 7月; calendar includes last days of June faded maybe but colored? Need decide. If period is July 2026, and printed dates include June 29/30? They are printed, but likely not July. We should maybe not include June dates because July calendar and collection dates for July. But schedule can use weekly rules, not dates. Need determine pattern: Yellow days: Mondays and Thursdays? Let's check July 2026: July 2 Thu, 6 Mon, 9 Thu, 13 Mon, 16 Thu, 20 Mon, 23 Thu, 27 Mon, 30 Thu. Yes yellow group = Monday and Thursday. Light blue = Tuesday and Friday: July 3 Fri, 7 Tue, 10 Fri, 14 Tue, 17 Fri, 21 Tue, 24 Fri, 28 Tue, 31 Fri. Also June 30 Tue light blue, July? Wait July 1 Wed no. So water color group = Tue/Fri. The page 10 text explicitly says \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\" That's separate for 江島. But yellow/water groups are for other districts. Page 10 says burnable garbage days are color-coded by district: Yellow days list districts: 大沢, 浦宿全区, 針浜, 上全区, 西, 小乗, 高白, 横浦, 大石原, 野々浜, 飯子浜, 塚浜, 小屋取. Water color: 旭が丘, 女川全区, 大原全区, 清水, 宮ケ崎, 石浜, 桐ケ崎, 竹浦, 尾浦, 御前, 指ケ浜, 出島, 寺間. Plus 江島地区: Monday and Friday. So burnable schedules: Yellow districts weekly MO,TH; water districts weekly TU,FR; 江島 weekly MO,FR. Need districts? The collection date categorization for resource/nonburnable/oversized uses \"行政区\" groups rows:\n1 大沢・浦宿全区・針浜 -> dates for 資源: 缶・びん/ペットボトル: 7,21; ペットボトル以外のプラスチック...:14,28; 燃やせないごみ:1; 粗大ごみ blank? Wait table columns: 行政区 | 資源ごみ (缶・びん ペットボトル | ペットボトル以外のプラスチック...) | 燃やせないごみ | 粗大ごみ. Row 1: 缶・びん/ペットボトル \"7 21\"; plastic \"14 28\"; nonburnable \"1\"; oversized blank? Need image: Row1 has 7 21 in first resource col; 14 28 second; 1 in nonburnable; oversized maybe blank? Actually table shows row1: after nonburnable 1, oversized blank? Let's inspect image: Table columns maybe: 行政区 | 資源ごみ (缶・びん ペットボトル) | 資源ごみ (ペットボトル以外のプラスチック...) | 燃やせないごみ | 粗大ごみ. Row1: 7 21 | 14 28 | 1 | (blank?) Wait there's \"1\" under 燃やせないごみ? In image row1: first numeric \"7 21\" in col2; \"14 28\" col3; \"1\" col4; col5 blank? But the text layer row \"大沢・浦宿全区・針浜 7 ⨫ ⨤ ⨲ 1\" maybe weird. Need map. Row2: 上全区・西・小乗: \"3 17 31\" in col2; \"10 24\" col3; \"8\" col4; col5? Maybe blank? Text \"3 ... 10 ... 8\" no oversized. Row3: 女川全区・大原全区・清水: \"1 15 29\" col2; \"8 22\" col3; \"17\" col4; col5? Hmm row3 oversized maybe 17? Wait image: Row3: under 燃やせないごみ: 17? under 粗大ごみ: blank? Let's look at image: row3 \"女川全区・大原全区・清水\": I see numbers: 1 15 29 in first resource; 8 22 in second; 17 under 燃やせないごみ? Actually image row has 17 in column \"燃やせないごみ\"? Then 粗大ごみ blank? But no, text layer row says \"女川全区・大原全区・清水1 ... 8 ... 17\" maybe 17 nonburnable. Wait the table header: \"燃やせないごみ\" and \"粗大ごみ\" as separate columns. In row1 maybe \"1\" under 燃やせないごみ, oversized blank? But that seems row1 has no oversized. Row2 has \"8\" under 燃やせないごみ. Row3 \"17\" under 燃やせないごみ. Row4 \"22\" under 燃やせないごみ? Row5 \"3\" under 燃やせないごみ. Row6 \"10\" under 燃やせないごみ. So all nonburnable dates are single dates per row, and oversized column maybe blank? Wait page says \"資源ごみと燃やせないごみ、粗大ごみの収集日\" but table may have 粗大ごみ column values? Let's re-evaluate image: In row1, after \"14 28\" there is \"1\" in the \"燃やせないごみ\" column. The \"粗大ごみ\" column appears empty for all rows? Hmm no, maybe row1 has 1 under 燃やせないごみ and no oversized. Row2 has 8 under \"燃やせないごみ\", no oversized. Row3: 17 under \"燃やせないごみ\"; no oversized. Row4: 22 under \"燃やせないごみ\"; no oversized. Row5: 3 under \"燃やせないごみ\"; no oversized. Row6: 10 under \"燃やせないごみ\"; no oversized. But title includes 粗大ごみ; maybe oversized dates are same as nonburnable? Wait maybe the last column \"粗大ごみ\" has values but due image: Row1 last column maybe blank? Let's zoom mentally: Page 10 image table: Header row: 行政区 (green), 資源ごみ spanning two columns (缶・びん ペットボトル; ペットボトル以外のプラスチック...), 燃やせないごみ, 粗大ごみ. Row1: 大沢・浦宿全区・針浜 | 7 21 | 14 28 | 1 | (blank). Row2: 上全区・西・小乗 | 3 17 31 | 10 24 | 8 | (blank). Row3: 女川全区・大原全区・清水 | 1 15 29 | 8 22 | 17 | (blank). Row4: 旭が丘・宮ケ崎・石浜 | 9 23 | 2 16 30 | 22 | (blank). Row5: 高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取 | (blank?) | 13 27 | 3 | (blank). Wait row5 first resource col blank? Text layer shows \"高白... ⨣ ⨱ 3\" maybe first col? In image row5: I see \"13 27\" under second resource (plastic), and \"3\" under nonburnable? But first resource column blank? Let's inspect: Row5 label long. I can see numbers 13 27 centered under second resource, 3 under nonburnable. First resource col blank? Maybe yes. Row6: 桐ケ崎... | (blank?) | 6 20 | 10 | (blank). Actually row6 first resource blank, second resource \"6 20\", nonburnable \"10\". But text layer row6 \"6 ... ⨠\" maybe. Hmm.\n\nWait the table in image: Row5 has \"13 27\" in \"ペットボトル以外のプラスチック...\" column and \"3\" in \"燃やせないごみ\" column; first resource column blank. Row6 has \"6 20\" in plastic column and \"10\" in nonburnable. That indicates for certain districts no cans/bottles? But maybe they have same? Need parse.\n\nAlso \"資源ごみ\" includes cans/bottles/pet bottles and other plastics separately. Categories should be separate: \"缶・びん・ペットボトル\" and \"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\" maybe label exactly? Need write label as printed. Could split into c1 \"缶・びん・ペットボトル\", c2 \"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\", c3 \"燃やせないごみ\", c4 \"粗大ごみ\", and burnable c0 \"燃やせるごみ\". But coarse classification: c1 includes beverage_can, glass_bottle, pet_bottle? It's one category label with multiple. Coarse array can include multiple: beverage_can, glass_bottle, pet_bottle. c2 includes plastic, paper, cloth, other? It includes plastic containers, white tray, paper, cloth, styrofoam, pruned branches, waste cooking oil. Coarse: plastic, paper, cloth, other maybe. c3 non_burnable. c4 oversized. Burnable coarse burnable. But maybe \"燃やせるごみ\" category separate.\n\nNeed decide schedules. For resource/nonburnable/oversized table: It gives dates in July only? Page is July 2026 calendar. Table title \"資源ごみと燃やせないごみ、粗大ごみの収集日\" likely for July. The dates are days of July. Need schedules as dates? Since only July printed, and perhaps monthly pattern not fully specified. We can use dates rules with those days in 2026-07. But maybe these are monthly collection days? Are dates recurring monthly? The table is one page for July, so only dates for July. The calendar likely annual with month pages; this page gives July dates. We only have July. The schedule should represent July 2026 dates? The period likely July 2026? Actually page 10 is July 2026 page. It contains collection dates for July. Need period: printed \"令和８年 ２０２６年 7月\"? Page 10 top has 令和8年 2026年 7月. Could period printed \"令和８年７月\" or \"2026年7月\"? The JSON period should be資料 that says valid period. Since page is month calendar, period likely 2026-07-01 to 2026-07-31. But maybe entire calendar is annual? Only page 10/11. The \"資料\" includes page 10 and 11; page 11 is July calendar. So period maybe 2026-07. Need set printed maybe \"令和８年７月\" or \"2026年7月\". The page 10 top: \"令和８年 2026年 7月 July\". Use printed \"令和８年 2026年 7月\" maybe. From 2026-07-01 to 2026-07-31. Need be careful: calendar displays June 28-30 too, but period is July.\n\nNeed parse resource table dates. Let's inspect page-010 image carefully. It has table \"資源ごみと燃やせないごみ、粗大ごみの収集日\" with columns:\n行政区委\n資源ごみ: \n- 缶・びん ペットボトル\n- ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\n燃やせないごみ\n粗大ごみ\n\nRows:\n1. 大沢・浦宿全区・針浜: col1 \"7 21\"; col2 \"14 28\"; nonburnable \"1\"; oversized blank? Actually I see in image row1: \"7 21\" under first, \"14 28\" under second, \"1\" under nonburnable. No value under oversized. But table title says oversized; maybe some rows have oversized? Wait row? Let's zoom the image mentally: The rightmost column \"粗大ごみ\" in row1 appears blank. Row2 blank. Row3 blank. Row4 blank. Row5 blank. Row6 blank? That can't be. Maybe the \"1\", \"8\", \"17\", \"22\", \"3\", \"10\" are actually under 粗大ごみ, and nonburnable column has values? Let's compare header positions: In image, columns after second resource: \"燃やせないごみ\" and \"粗大ごみ\". For row1, the number \"1\" is positioned under \"燃やせないごみ\" or under \"粗大ごみ\"? I can estimate: Table header \"燃やせないごみ\" is narrow column at x ~ 665? \"粗大ごみ\" at x ~ 750? The number \"1\" in row1 is at x ~ 690? Under 燃やせないごみ. There is no number at x ~ 760. So nonburnable only; oversized not given? But title includes oversized; maybe collection dates for oversized are same as nonburnable? Hmm.\n\nWait maybe I misread: The table columns: \"燃やせないごみ\" and \"粗大ごみ\" are combined? Let's inspect image: Header row has \"燃やせないごみ\" above a column, and \"粗大ごみ\" above a column. In row1, \"1\" appears under \"燃やせないごみ\". In row2, \"8\" under \"燃やせないごみ\". In row3, \"17\" under \"燃やせないごみ\". In row4, \"22\" under \"燃やせないごみ\". In row5, \"3\" under \"燃やせないごみ\". In row6, \"10\" under \"燃やせないごみ\". The last column is blank across all rows? But then why \"粗大ごみ\" header? Maybe because oversized garbage is collected on same date as nonburnable? No, if blank, no collection? Maybe there is a separate row? Hmm.\n\nLet's look at textual layer: It lists for row1 \"7 ⨫ ⨤ ⨲ 1\" and row2 \"3 ⨧ ⨵ ⨠ ⨮ 8\" etc. The symbols are circled numbers? They might correspond to font issues for dates? Wait text layer has \"7 ⨫ ⨤ ⨲ 1\" maybe actual \"7 21 14 28 1\" but 2,4,8? The symbols replace digits? Let's decode: The text layer uses weird private glyphs for digits? The visible image is better.\n\nMaybe \"粗大ごみ\" column has values in a separate row below? The table rows may include oversized dates in last column but image maybe blank because only one date per row under nonburnable? Let's inspect row1: I recall seeing \"1\" under 燃やせないごみ, and maybe \"1\" is actually under 粗大ごみ? Need more exact. Let's use visual coordinates from displayed image: Table starts at x=80. Columns:\n- 行政区 from x=80 to 260.\n- 資源ごみ first col from 260 to 380 (header \"缶・びん ペットボトル\")\n- second resource col from 380 to 560 (header long)\n- 燃やせないごみ from 560 to 665? \n- 粗大ごみ from 665 to 760?\nWait image width 1600. On page 10, table spans x=68 to 780 maybe. Header: \"燃やせないごみ\" at x around 650, \"粗大ごみ\" at x around 735. Row1: number \"1\" at x around 690? Hmm.\n\nActually in displayed image, row1: \"7 21\" at x ~ 340, \"14 28\" at x ~ 480, \"1\" at x ~ 700? Wait there is a vertical line between nonburnable and oversized. I can see \"1\" is just right of the vertical line? Let's think: The table header \"燃やせないごみ\" wraps two lines and is centered at x ~ 655; \"粗大ごみ\" centered at x ~ 735. In row1, the \"1\" appears at x ~ 700, maybe centered between? Hard.\n\nIf \"1\" is under 粗大ごみ, then nonburnable column blank? But header \"燃やせないごみ\" would have no values? That seems unlikely. Maybe row1 has nonburnable on 1 and oversized blank, but then title includes oversized maybe other districts? Wait every row has only one number after resource columns, likely nonburnable. There are no oversized dates maybe because oversized is \"申し込んでから日が決まる\" and not scheduled? But title says 粗大ごみの収集日; maybe collection dates are same as nonburnable? Actually in Onagawa, oversized garbage may be collected on same day as nonburnable? Let's not assume.\n\nCould be that the single number is under 粗大ごみ, and nonburnable column blank? But row? Hmm.\n\nLet's inspect page 10 text layer positions? The text layer includes symbols maybe for dates. For row1: \"7 ⨫ ⨤ ⨲ 1\" The visible numbers: 7,21,14,28,1. There are 5 numbers. Table has 4 date columns (first resource, second resource, nonburnable, oversized). So one column has two dates (7 and 21) etc. So after 7,21,14,28,1: that is first resource 7,21; second 14,28; then either nonburnable 1 or oversized 1. Which one? Text layer order follows left-to-right: after second resource dates, next is nonburnable, then oversized. It has only one number after, so nonburnable=1, oversized absent. Yes. So nonburnable only. Row2: 3,17,31; 10,24; 8. So nonburnable=8. Row3: 1,15,29; 8,22; 17. Nonburnable=17. Row4: 9,23; 2,16,30; 22. Nonburnable=22. Row5: maybe first resource blank; second resource 13,27; nonburnable 3. Row6: second resource 6,20; nonburnable 10. So indeed no oversized dates. But title includes 粗大ごみ; perhaps oversized collection dates are not on this table? Wait row? Maybe the last column is \"粗大ごみ\" but no values because oversized are collected on request? Then why title? Maybe \"粗大ごみ\" column header but values are in nonburnable column? Let's see if row1 \"1\" could be oversized and nonburnable blank? But then why nonburnable header? Could be both columns are combined? The header \"燃やせないごみ\" and \"粗大ごみ\" might be two rows? Actually maybe the table has columns: 資源ごみ (缶・びん ペットボトル), 資源ごみ (ペットボトル以外...), 燃やせないごみ・粗大ごみ (combined). The header text in image: \"燃やせないごみ\" and \"粗大ごみ\" are stacked? Wait I see in image header: after resource columns, there is \"燃やせないごみ\" in one cell, and \"粗大ごみ\" in next cell. They are separate. But maybe the single number is under \"燃やせないごみ\" and \"粗大ごみ\" column is blank because no oversized in July? That is possible; page title may mention but this month no oversized? But all rows blank? Unlikely.\n\nLet's look at row1 number \"1\": In image, I can see \"1\" is centered under the \"燃やせないごみ\" column? The \"粗大ごみ\" column is at far right; it's blank. Yes.\n\nThus no oversized schedule dates from this table. But maybe oversized garbage collection is same as nonburnable? No. Need put category c4 粗大ごみ in categories but no schedules? Rule says categories can include items with no scheduled collection (持ち込みだけ/申し込み) but schedules not. But here there is a column but no dates; maybe unsure. We can include category \"粗大ごみ\" with no schedules and note? But if table has header \"粗大ごみ\" and no dates, maybe unsure because no dates. Need not invent.\n\nNeed parse date columns with row5/6 missing first resource? Let's verify row5 and row6. Image row5 \"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取\": In first resource column, I think there are no numbers (blank). Second resource column has \"13 27\". Nonburnable \"3\". Row6: first resource blank; second \"6 20\"; nonburnable \"10\". But text layer for row5: \"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取 ⨣ ⨱ 3\" where symbols maybe 13,27? Actually no 7? It has two symbols and 3. So yes first resource blank. Row6: \"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間 6 ⨪ ⨠\" maybe 6,20,10? Wait text layer row6: \"6 ⨪ ⨠\" Maybe three numbers: 6,20,10? It likely first resource=6? Let's re-evaluate row6 image: I can see row6: after district label, there is \"6 20\" in the second resource column? Or first? The table columns: For row6, the numbers \"6 20\" appear centered under the \"ペットボトル以外のプラスチック...\" column (second resource), and \"10\" under nonburnable. But wait row6 label is long, and first resource column may contain \"6\"? Let's look at image: Row6 \"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\": Under first resource (缶・びん ペットボトル) column, I see no numbers? Under second resource, I see \"6 20\" maybe? Actually in image row6, there is \"6 20\" at x ~ 460 (second resource), and \"10\" at x ~ 700. So first resource blank. But text layer \"6 ⨪ ⨠\" maybe only two numbers? Hmm.\n\nWait row5: The first resource column might have \"13 27\"? No, second resource column has \"13 27\" at x ~ 460. First resource at x ~ 340 blank. Row6 second resource \"6 20\" at x ~ 460. So yes.\n\nBut row4: first resource \"9 23\", second resource \"2 16 30\", nonburnable \"22\". Row3: first \"1 15 29\", second \"8 22\", nonburnable \"17\". Good.\n\nNeed categories: The first resource column header \"缶・びん ペットボトル\" includes cans, bottles, PET bottles. Label as \"缶・びん ペットボトル\" maybe with line break. Coarse: beverage_can, glass_bottle, pet_bottle. The second \"ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\" includes plastic containers, white trays, paper, cloth, styrofoam, pruning branches, waste cooking oil. Coarse: plastic, paper, cloth, other? \"発泡スチロール\" plastic, \"剪定枝\" other, \"廃食油\" other. Use plastic, paper, cloth, other. Nonburnable: \"燃やせないごみ\" coarse non_burnable. Oversized: \"粗大ごみ\" coarse oversized. Burnable: \"燃やせるごみ\" coarse burnable.\n\nNeed districts. There are multiple groupings for different categories. The schema districts: \"収集日の分け方の地区 (区域・コース・地区・色の名前など)\" We need define districts used in schedules. For burnable, groups are \"黄色の日\" and \"水色の日\" and 江島地区? For resource/nonburnable, groups are table rows with combined district members. We need reconcile. Could create districts corresponding to resource table rows? Or burnable groups? The schedule is district × category. A district should represent a set of towns with same schedule across categories? But burnable grouping differs from resource grouping. If we create districts as resource table rows, burnable schedule cannot map neatly because resource rows combine districts with different burnable colors? Let's see resource row1 大沢・浦宿全区・針浜: All are yellow? Page 10 yellow list includes 大沢, 浦宿全区, 針浜 yes. Row2 上全区・西・小乗: Yellow list includes 上全区, 西, 小乗 yes. Row3 女川全区・大原全区・清水: Water list includes 女川全区, 大原全区, 清水 yes. Row4 旭が丘・宮ケ崎・石浜: Water list includes 旭が丘, 宮ケ崎, 石浜 yes. Row5 高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取: Yellow list includes all these yes. Row6 桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間: Water list includes all these yes. Great! Resource table rows align exactly with burnable color groups? Wait row5 yellow, row6 water. Row1,2 yellow; row3,4 water. So resource table rows are subsets of burnable groups. Thus we can define districts as these 6 rows plus maybe 江島? But burnable \"黄色の日\" includes both row1, row2, row5. If we define districts row1..row6, burnable schedule for row1 and row2 and row5 all same weekly MO,TH. That's okay: schedules district-specific. For water row3,row4,row6 same TU,FR. For 江島, not in resource table? Page says 江島地区の資源ごみ等は区長さんなどを通じ別途お知らせ; burnable for 江島 Mon/Fri. So add district 江島地区 with member 江島? Only burnable schedule; resource schedule none/unsure.\n\nBut the schema districts are \"収集日の分け方の地区\". We can create 7 districts: d1 row1, d2 row2, d3 row3, d4 row4, d5 row5, d6 row6, d7 江島地区. Labels: Use printed labels from table? e.g. \"大沢・浦宿全区・針浜\" as label? But that is not a district name, it's a group of members. The table uses \"行政区\" rows without a distinct label; the label could be the combined string. Members: split by \"・\". Need include \"浦宿全区\" as member, \"女川全区\", etc. For 江島: label \"江島地区\", members [\"江島地区\"]? The text says \"江島地区\"; member could be \"江島地区\" or \"江島\"? It says 江島地区. Use label \"江島地区\", members [\"江島地区\"] or maybe [\"江島\"]? The printed is \"江島地区\". Keep as \"江島地区\". But in resource text: \"江島地区の資源ごみ等は...\" yes.\n\nAlternatively create districts by burnable color groups \"黄色の日\", \"水色の日\", \"江島地区\". But then resource schedules differ within yellow group (row1 vs row2 vs row5), so need split. So resource rows best.\n\nNeed schedule for burnable: For each row district, weekly MO,TH for rows 1,2,5; weekly TU,FR for rows 3,4,6; 江島 weekly MO,FR. Text can be \"燃やせるごみの日は、次の地区毎にカレンダーで色分けしています。黄色の日...\" or \"月曜日と金曜日に収集（運搬）します。\" For row districts, text maybe \"黄色の日\" / \"水色の日\". Need include text optional. Use text string.\n\nNeed schedule for resources/nonburnable: For each district row, rules with type dates listing July dates. Since printed only July dates. Use dates with year 2026 and month 7. For resource col1 and col2 and nonburnable. For row1: c1 dates [2026-07-07, 2026-07-21]; c2 [2026-07-14, 2026-07-28]; c3 [2026-07-01]. Row2: c1 [03,17,31]; c2 [10,24]; c3 [08]. Row3: c1 [01,15,29]; c2 [08,22]; c3 [17]. Row4: c1 [09,23]; c2 [02,16,30]; c3 [22]. Row5: c1 none? If blank, no schedule for c1 for row5. c2 [13,27]; c3 [03]. Row6: c1 none; c2 [06,20]; c3 [10]. But wait row5 first resource blank? Need if no c1, maybe they have collection of cans/bottles on other dates? The table blank likely means no collection in July? But maybe row5 has no cans/bottles collection? Hmm could be because row5's cans/bottles dates are in another column? Let's verify with pattern: For six rows, first resource dates appear:\nrow1 7,21\nrow2 3,17,31\nrow3 1,15,29\nrow4 9,23\nrow5 blank\nrow6 blank? That seems odd: two districts have no cans/bottles? Maybe actually row5 and row6 first resource dates are in second column? Wait maybe the columns are not separate resource types? Let's examine table header: It says \"資源ごみ\" spanning two columns; first subcolumn \"缶・びん ペットボトル\", second \"ペットボトル以外のプラスチック...\". For row5, I see numbers \"13 27\" under second subcolumn. But maybe those are under first subcolumn? Let's look at x positions: Row1 \"7 21\" at x ~ 330 (first subcol), \"14 28\" at x ~ 480 (second). Row5 \"13 27\" appears at x ~ 480, same as row1 second. So yes second. Row6 \"6 20\" at x ~ 480. So first blank. Could be because for these districts, cans/bottles are collected on different dates not shown? But table would have blank; maybe they don't have cans/bottles? That can't be. Maybe the first subcolumn for row5/6 has dates in the row above? No.\n\nWait maybe row5 and row6 are not separate rows for resource categories? The table might have merged cells: Row5 label includes \"高白...\"; numbers \"13 27\" under first resource? Let's count columns: In image, for row5, the long label spans x=80-260. Then there is a vertical line at x=260. The first resource column x=260-380. The number \"13 27\" is at x ~ 470, which is second. So blank first. Hmm.\n\nCould be that the first resource (cans/bottles) for row5/6 is collected on same dates as row? Not listed because of merge? No.\n\nMaybe I misidentify header: The columns might be:\n- 缶・びん\n- ペットボトル\n- ペットボトル以外のプラスチック...\nBut header text \"缶・びん ペットボトル\" might span two columns? Wait image header: Under 資源ごみ, there are two columns: first header \"缶・びん ペットボトル\" (maybe two lines: 缶・びん / ペットボトル) and second \"ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\". So first column includes both cans/bottles and PET bottles. Not separate. Good.\n\nWhy row5/6 no first column? Maybe because for those districts, cans/bottles are included in the second resource collection? No.\n\nLet's look at row5 text layer: \"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取 ⨣ ⨱ 3\". It has two symbols after district, then 3. If first resource blank, second has two dates, nonburnable one. Symbols could be 13 and 27. Yes.\n\nRow6 text layer: \"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間 6 ⨪ ⨠\". It has \"6\" then symbols then? Maybe 6 could be first resource? Let's parse: row6 visible maybe first resource \"6\"? Wait text layer order: district, then \"6 ⨪ ⨠\" (three tokens). If first resource has \"6\", second has \"20\", nonburnable \"10\"? But image row6: I see \"6 20\" under second? Let's compare row5: text layer has \"⨣ ⨱ 3\" = two symbols + 3. Row6: \"6 ⨪ ⨠\" = three tokens. This suggests row6 has first resource \"6\", second resource \"20\", nonburnable \"10\"! Because three numbers. But image maybe I thought \"6 20\" under second; maybe actually \"6\" under first and \"20\" under second. Let's check row6 in image: The label \"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\" is long, ends around x=260. The first resource column x=260-380. I can see a \"6\" at x ~ 340? Wait in image row6, there is a \"6\" just after label? Let's recall: Row6: I see \"6 20\" maybe starting near x=330? The \"6\" could be in first resource column, \"20\" in second. And \"10\" under nonburnable. That makes sense: first resource dates for row6 = [6]? But typically cans/bottles are collected twice a month; row6 only one date? Hmm.\nRow5 text layer only two dates total? Could be first resource blank or maybe first resource \"13\"? Let's parse row5: \"⨣ ⨱ 3\" two symbols + 3. If first resource has one date and second has one date? But second resource usually two dates. Hmm.\n\nLet's zoom mentally: Row5: In image, after long label, I see \"13 27\" centered under second resource, and \"3\" under nonburnable. There is no number under first. So first blank. Row6: I see \"6\" under first resource? Wait at x ~ 340 there is \"6\"; x ~ 450 \"20\"; x ~ 700 \"10\". Yes maybe. So row6 first resource [6], second [20], nonburnable [10]. But row5 first blank? That would be inconsistent but possible? Let's inspect row5: Could there be a \"13\" under first and \"27\" under second? If row5 has first [13], second [27], nonburnable [3]. Text layer \"⨣ ⨱ 3\" only two date tokens? Wait if first [13], second [27], nonburn 3 => three tokens. It has two symbols + 3 = three tokens. So row5 could have first [13], second [27], nonburn 3. But visible x: \"13 27\" might be one in first one in second? The spacing might look like both in second because columns narrow? Need determine.\n\nRow1 text layer: \"7 ⨫ ⨤ ⨲ 1\" = 5 tokens. Visible \"7 21\" in first, \"14 28\" in second, \"1\" nonburn. So first has two, second two.\nRow2: \"3 ⨧ ⨵ ⨠ ⨮ 8\" = 6 tokens? Actually 3, (symbols) maybe 17,31,10,24,8 = six numbers. First 3 numbers, second 2, nonburn 1. Yes.\nRow3: \"1 ⨥ ⨳ 8 ⨬ ⨧\" maybe 1,15,29,8,22,17 = six.\nRow4: \"9 ⨭ 2 ⨦ ⨴ ⨬\" = 9,23,2,16,30,22 = six.\nRow5: \"⨣ ⨱ 3\" = maybe 13,27,3 = three numbers. If first resource has one (13), second one (27), nonburn 3. But resource second typically two dates; maybe this row only one? Let's look at image row5: I recall \"13 27\" are close together in the same column? They might be under second resource with two dates, leaving first blank. Which is more plausible? For row6: \"6 ⨪ ⨠\" = 6,20,10 = three numbers. Could be first [6], second [20], nonburn [10]. But then row5 and row6 each have only one date for one resource category, while other rows have two. Maybe possible due to monthly schedule? But resource collection often twice monthly; some rows have 3 dates because 5 weeks. Row5/6 may have only one date for one category? Hmm.\n\nLet's use visual coordinates in the provided image: I can zoom in my mind. Page 10 table row5: The long district label ends at x=260. Then there is a vertical line. The first resource column is from x=260 to x=380. I see no number in that column for row5. The second resource column from x=380 to x=560 has \"13 27\" centered. The nonburnable column x=560-680 has \"3\". The last column blank. So first blank, second two. Row6: label ends x=260. First resource column x=260-380: I see \"6\" maybe at x=340? Wait row6 image: Under first resource column, there is a \"6\" at x=340? Actually in the table, row6 numbers are \"6 20\" maybe starting at x=330 and x=430. If \"6\" is at x=340, it's first resource; \"20\" at x=430 second. So row6 first [6], second [20]. But row5 first blank? That seems odd but possible? Let's compare row6 label length: It ends at x=260. The number \"6\" in row6 appears at x=340, yes first column. The number \"20\" at x=430 second. So row6 first [6]. Row5: I see \"13\" at x=430? Wait row5 label is even longer but ends at x=260. The numbers \"13 27\" appear at x=430 and x=480? Both second column? If first column blank, why would row6 have first? Hmm.\n\nMaybe row5 first resource column has \"13\" at x=340? But I recall seeing \"13 27\" under second because they are close. Let's use text layer symbols: Row5 \"⨣ ⨱ 3\": two symbols and 3. If first resource had \"13\" and second \"27\", there would be two symbols. If first blank and second \"13 27\", also two symbols. Cannot decide. Row6 \"6 ⨪ ⨠\": three tokens, likely first \"6\", second \"20\", nonburn \"10\". So row6 first has one. Row5 could first \"13\", second \"27\", nonburn \"3\". That would make both row5 and row6 first resource one date, second one date? But row5 second maybe one? Hmm.\n\nLet's look at table header and typical pattern. Resource collection rows:\nRow1: cans/bottles 7,21 (1st & 3rd Tuesday? July 7 Tue? 21 Tue) Wait 7/7 is Tuesday, 7/21 Tuesday. But row1 burnable yellow Mon/Thu; resource cans/bottles on Tuesdays? Actually 7/7 Tue, 7/21 Tue. Plastic 14,28 Tue. Both Tuesdays. Row1: 1st/3rd Tues for cans, 2nd/4th Tues for plastic. Nonburn 1 Wed.\nRow2: cans 3,17,31 Fridays? July 3 Fri,17 Fri,31 Fri. Plastic 10,24 Fri. Nonburn 8 Wed. So row2 resource on Fridays.\nRow3: cans 1,15,29 Wednesdays; plastic 8,22 Wednesdays; nonburn 17 Wed? Wait row3 water burnable Tue/Fri; resource on Wed? 1,15,29 Wed; 8,22 Wed; nonburn 17 Wed. Interesting.\nRow4: cans 9,23 Thursdays; plastic 2,16,30 Thursdays; nonburn 22 Wed? 22 Wed. Row4 water.\nRow5: if cans 13,27 Mondays? 13 Mon,27 Mon. Plastic? maybe no? But row5 yellow burnable Mon/Thu. Resource on Mondays? Row6: if first 6,20 Mondays? July 6 Mon,20 Mon; second? 20? Wait 6 and 20 are Mondays. Row6 water burnable Tue/Fri; resource on Mondays? Hmm.\n\nWait the table dates likely grouped by collection route, not by burnable color. Let's list weekdays:\nRow1: 7 Tue,21 Tue; 14 Tue,28 Tue; nonburn 1 Wed.\nRow2: 3 Fri,17 Fri,31 Fri; 10 Fri,24 Fri; nonburn 8 Wed.\nRow3: 1 Wed,15 Wed,29 Wed; 8 Wed,22 Wed; nonburn 17 Wed.\nRow4: 9 Thu,23 Thu; 2 Thu,16 Thu,30 Thu; nonburn 22 Wed.\nRow5: 13 Mon,27 Mon? (if cans); plastic? maybe 13,27? nonburn 3 Wed.\nRow6: 6 Mon,20 Mon? nonburn 10 Wed.\nMaybe resource collection days are different weekdays per district. For row5/6, both on Mondays? Could be.\n\nLet's check row5 image: I can see \"13 27\" under the second resource column? But if row5 resource cans on 13,27 (Mondays), plastic maybe also? Wait row5 has only two dates \"13 27\" total? If first and second each one? That would be odd. Maybe the table columns for row5/6 are merged? Actually maybe row5 has no first resource because cans/bottles are collected together with plastic on 13,27? No.\n\nLet's consider table structure: The \"資源ごみ\" columns maybe not separate by type for each row? The header has two subcolumns, but rows might have merged cells if no distinction? No, vertical lines.\n\nCould the numbers in row5 \"13 27\" be under first resource, and second resource blank? Then row5 plastic blank. But row6 \"6 20\" under first? Hmm.\n\nLet's inspect page 10 image: Row5: Under second resource column, I clearly see \"13 27\" (two numbers). Under first resource column, there is a blank white cell. Row6: Under first resource column, I see \"6\" maybe? Wait actually row6: Under first resource column, maybe blank; under second resource column, \"6 20\". The \"6\" might be at x=430 (second column start) not x=340. Let's compare row5 \"13\" at x=430 and row6 \"6\" at x=430. Yes likely both second column. Then row5 second [13,27]; row6 second [6,20]; first blank for both. But row6 text layer has three tokens \"6 ⨪ ⨠\"; if second has two dates and nonburn one, that's three tokens. So first blank. Yes! That fits: row6 second [6,20], nonburn [10]. Row5 second [13,27], nonburn [3]. So first resource blank for row5 and row6. But why? Maybe because for these districts, cans/bottles are collected on same dates as plastic? Wait no.\n\nWait if first resource blank for row5/6, then these districts have no collection of cans/bottles/PET in July? That can't be true. But maybe the first resource column is not blank; the numbers \"13 27\" are actually in first resource, and second resource blank. Let's compare with row1: Row1 first \"7 21\" at x=330, second \"14 28\" at x=480. Row5 \"13 27\" at x=480 (same as row1 second). So second. So first blank. Maybe row5/6 have no cans/bottles because they are \"資源ごみ\" collected with plastic? Hmm.\n\nCould be that table has only two resource categories, and for row5/6 the first category dates are in the second column due to a column merge? No.\n\nMaybe the first resource column for row5/6 contains dates but they are omitted in image due to white text? No.\n\nLet's search memory: Onagawa town waste calendar July 2026. Resource collection: For districts, cans/bottles/PET and other plastics collected on different days. For some districts, maybe cans/bottles collected on same day as burnable? No.\n\nBut we only need transcribe what's visible. If blank, don't schedule c1 for those districts. But uncertain; we can put unsure about row5/6 first resource blank? The instructions: if unclear, don't include and unsure. But maybe if table clearly blank, it's not unsure. But is it clear? I'm leaning that row5/6 first resource blank, but that seems weird. Need decide. Could include unsure about \"高白... and 桐ケ崎... の缶・びん・ペットボトルの収集日が表で空欄\" with district/category. But if we omit schedule, that's okay? The answer must be accurate. We can include unsure to flag.\n\nNeed parse oversized. Table has column \"粗大ごみ\" but no dates for any row. Maybe no dates? Could be blank. Include category, no schedule, unsure \"粗大ごみの収集日が表に印字されていない\". But maybe the single numbers are actually oversized, and nonburnable blank? Need resolve. Let's check row1: Number \"1\" under nonburnable? If table header \"燃やせないごみ\" column and \"粗大ごみ\" column, maybe row1 \"1\" is under \"燃やせないごみ\". It is left of last column. So nonburnable yes. Oversized blank. So no oversized dates. Include unsure.\n\nNeed consider exceptions: None written about holidays/year-end. Page 11 has 海の日 on July 20; collection still occurs? The calendar shows 20 yellow (burnable collection) with 海の日 marker. Does that imply holiday collected? It doesn't explicitly say. The rule says if holiday handling not written, do not create exceptions, unsure \"書いていない\". But maybe the calendar showing yellow on 海の日 indicates collected on holiday? That's implicit. But instructions: \"資料に祝日の扱いや年末年始の扱いが書いていなければ、exceptions に作らず、unsure に「書いていない」と書く。\" We can note holiday handling not explicitly written. But the calendar has 海の日 and yellow on 20, so maybe that is evidence? It is a collection date on a holiday, but not textual policy. Could be considered printed date. Since we use weekly rule for burnable, 20 is Monday and holiday. If we don't create exception, weekly includes it. Is that okay? The calendar indicates yellow on 20, so yes collection on holiday. But no explicit policy. Could add exception? Kind holiday policy collected? The instructions say if not written, don't create; unsure. We can mention unsure about holiday policy. But our weekly rule includes 20 anyway. Is that inconsistent? We derived from calendar which marks 20 yellow. But holiday policy not text. Could note unsure. Maybe not add exception.\n\nYear-end not in July. No.\n\nNeed period: Page 10 top \"令和８年 2026年 7月 July\". So period printed maybe \"令和８年 2026年 7月\". From 2026-07-01 to 2026-07-31.\n\nNeed municipality: 女川町? The page has logo \"ONAGAWA 100th Anniversary\" and \"女川町制施行１００周年\". It doesn't explicitly say \"女川町\" in text? The PDF URL town.onagawa. Page 10 has \"女川町制施行１００周年\". The municipality is 女川町. But rule: municipality: 資料に書かれた自治体の名前 (無ければ null). The text has \"女川町制施行１００周年\" so name 女川町. Use \"女川町\". Good.\n\nNeed JSON structure with all fields. Need include note? Optional. We can omit note fields. Need ensure additionalProperties false? For district objects required id,label,members, optional note. We can include note null? It allows note optional? It has note type string/null but not required. We can omit. For category note optional. For schedule text optional. Use text.\n\nNeed decide districts IDs and members. District labels: Since table rows are combined, label could be \"大沢・浦宿全区・針浜\" etc. Members split:\nd1 label \"大沢・浦宿全区・針浜\", members [\"大沢\",\"浦宿全区\",\"針浜\"].\nd2 label \"上全区・西・小乗\", members [\"上全区\",\"西\",\"小乗\"].\nd3 label \"女川全区・大原全区・清水\", members [\"女川全区\",\"大原全区\",\"清水\"].\nd4 label \"旭が丘・宮ケ崎・石浜\", members [\"旭が丘\",\"宮ケ崎\",\"石浜\"].\nd5 label \"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取\", members [\"高白\",\"横浦\",\"大石原\",\"野々浜\",\"飯子浜\",\"塚浜\",\"小屋取\"].\nd6 label \"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\", members [\"桐ケ崎\",\"竹浦\",\"尾浦\",\"御前\",\"指ケ浜\",\"出島\",\"寺間\"].\nd7 label \"江島地区\", members [\"江島地区\"]? Maybe \"江島\" only? The text says \"江島地区\". Use label \"江島地区\", members [\"江島地区\"]. But \"江島地区\" is not a town name; maybe member \"江島\". Hmm. The page says \"江島地区の燃やせるごみは...\" and \"江島地区の資源ごみ等は...\" So the district name is 江島地区. Members could be [\"江島地区\"] or [\"江島\"]. To be safe, use label \"江島地区\", members [\"江島地区\"]. But members are \"町名・丁目・行政区など\"; \"江島地区\" is a district not a member. But okay.\n\nAlternatively create d7 label \"江島地区\", members []. But schema members array can be empty? It doesn't specify minItems. But better include [\"江島地区\"]? Hmm.\n\nNeed categories IDs:\nc1 \"燃やせるごみ\"\nc2 \"缶・びん ペットボトル\"\nc3 \"ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\"\nc4 \"燃やせないごみ\"\nc5 \"粗大ごみ\"\nOrder maybe burnable first. The table order resource first, but categories can be any. Use c1 burnable, c2 cans, c3 plastic, c4 nonburn, c5 oversized.\n\nCoarse:\nc1 [\"burnable\"]\nc2 [\"beverage_can\",\"glass_bottle\",\"pet_bottle\"]\nc3 [\"plastic\",\"paper\",\"cloth\",\"other\"]? \"紙・布\" yes paper, cloth; \"発泡スチロール\" plastic; \"剪定枝\" other; \"廃食油\" other. Good.\nc4 [\"non_burnable\"]\nc5 [\"oversized\"]\n\nNeed schedules:\nFor each district:\n- Burnable:\nd1 weekly MO,TH. text \"黄色の日\" maybe.\nd2 weekly MO,TH. text \"黄色の日\"\nd3 weekly TU,FR. text \"水色の日\"\nd4 weekly TU,FR. text \"水色の日\"\nd5 weekly MO,TH. text \"黄色の日\"\nd6 weekly TU,FR. text \"水色の日\"\nd7 weekly MO,FR. text \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\"\n\nBut note: Page 10 says yellow days list includes d1,d2,d5; water d3,d4,d6. Yes.\n\n- Resource c2 (cans/bottles/PET) dates for d1-d4; d5/d6 maybe blank. Need decide. Let's examine row5/6 again. We can include c2 schedules for d5/d6 based on visible? If blank, no. But if unsure, maybe include no schedule and unsure. However if actually row5 has \"13 27\" under c2? Wait c2 is first resource. I think row5/6 first resource blank. But is there a possibility that the numbers \"13 27\" are first resource and second blank? Let's compare row5 \"13 27\" x position: In image, row5 long label, then first resource column is narrow. I can see \"13 27\" maybe starting at x=430, which is second column. So no.\nRow6 \"6 20\" maybe x=430. So no.\n\nBut wait row6 text layer \"6 ⨪ ⨠\": If first resource blank, second has two dates (6,20), nonburn 10. That's three numbers. Yes.\n\nThus c2 for d5,d6 no dates. But that would mean no cans/bottles collection for two large groups in July. Could be because they are collected on dates not listed? Maybe the table's first resource column for d5/d6 might have \"13 27\" and \"6 20\" but those are actually under first resource? Let's use row5: If first resource has \"13 27\", second blank, nonburn 3. Row6 first \"6 20\", second blank, nonburn 10. Then c2 dates for d5/d6; c3 none. Which is more plausible? For row5/6, maybe they don't have \"ペットボトル以外のプラスチック\" collection? No, all districts should. But maybe the second resource column is for \"ペットボトル以外のプラスチック...\" and row5/6 have dates under first? Hmm.\n\nLet's look at header positions: Row1 first resource \"7 21\" at x=330; second \"14 28\" at x=480. Row3 first \"1 15 29\" at x=330; second \"8 22\" at x=480. Row5 \"13 27\" if at x=480 (second). Row6 \"6 20\" if at x=480 (second). So second. So d5/d6 c3 dates, c2 blank. That is plausible if cans/bottles collected by another route? But why only those rows? Maybe because they are \"資源ごみ\" with no cans? No.\n\nCould be that row5/6 first resource dates are actually in the row below? No.\n\nMaybe the table has merged rows for resource collection: The first resource column for row5/6 might be merged with row? No.\n\nLet's not overthink. Use visible: d5 c3 dates 13,27; d6 c3 dates 6,20. c2 no schedule for d5/d6. Add unsure about c2 for d5/d6 blank? But if we add unsure, okay.\n\nWhat about c4 nonburnable dates:\nd1 1\nd2 8\nd3 17\nd4 22\nd5 3\nd6 10\nUse dates rules.\n\nc5 oversized no schedules. Add unsure about no dates.\n\nNeed \"schedules\" rules type dates. For dates, text can be original printed string? Use text like \"7 21\" or \"13 27\". Good.\n\nNeed exceptions:\nNo explicit holiday/year-end. Could add unsure entries:\n- about \"祝日の取扱い\", text \"資料に祝日の扱いについて明記されていない\", district null category null.\n- about \"年末年始の取扱い\", text \"資料に年末年始の取扱いについて明記されていない\", null null.\n- about \"粗大ごみの収集日\", text \"表の粗大ごみ欄に日付が印字されていない\", district null category \"c5\". \n- about \"d5/d6の缶・びん・ペットボトル収集日\", text \"表の該当欄が空欄で読み取れない\", district d5/d6, category c2. Maybe two entries.\n- about \"江島地区の資源ごみ等\", text \"区長さんなどを通じ、別途お知らせいたします。日付なし\", district d7 category null? Or c2/c3/c4? Since resource etc. Add unsure.\n- about \"江島地区のburnable? Actually text gives Mon/Fri, so no unsure.\n\nNeed maybe period unsure? No.\n\nNeed schedule for d7 resource? None; unsure.\n\nNeed categories c5 粗大ごみ maybe no schedule. Good.\n\nNeed ensure JSON only, no markdown. Need valid JSON. Need no comments.\n\nLet's craft JSON.\n\nBut before final, let's revisit row5/6 c2/c3. We need be accurate. Let's try to mentally zoom page-010 table. The header second resource column text is long and narrow; numbers in second column for row1 are \"14 28\" centered. Row5: I see \"13 27\" centered in second column, yes. Row6: \"6 20\" centered in second column. So c3 dates. c2 blank. But wait row6 text layer \"6 ⨪ ⨠\": If second column has \"6 20\", nonburn \"10\", then first blank. Yes.\n\nBut row5 text layer \"⨣ ⨱ 3\": second column \"13 27\", nonburn \"3\". Good.\n\nWhat about d5 c2? Maybe blank. We can omit schedule and unsure. But maybe the table's first resource column for d5/d6 is not blank but has dates that are hidden by long label? No.\n\nNeed maybe c2 for d5/d6 not collected? But category exists. We can include unsure.\n\nNeed schedule text for d5 c3: \"13 27\" and d6 c3: \"6 20\". Use dates [2026-07-13,2026-07-27] and [2026-07-06,2026-07-20]. Note 7/20 is 海の日, but resource collection maybe still? Not specified. It's printed.\n\nNeed schedule c4 nonburn dates:\nd1 [2026-07-01]\nd2 [2026-07-08]\nd3 [2026-07-17]\nd4 [2026-07-22]\nd5 [2026-07-03]\nd6 [2026-07-10]\nAll Wednesdays? 7/1 Wed, 7/8 Wed, 7/17 Fri? Wait 2026-07-17 is Friday? Let's check: July 1 2026 Wednesday. July 17 Friday. But table row3 nonburn \"17\" maybe Friday. Hmm. Row4 22 Wednesday. Row5 3 Friday. Row6 10 Friday. Not all Wed. Fine.\n\nWait row1 nonburn 1 Wed; row2 8 Wed; row3 17 Fri; row4 22 Wed; row5 3 Fri; row6 10 Fri. Could be.\n\nNeed c2 dates:\nd1 7,21 (Tuesdays)\nd2 3,17,31 (Fridays)\nd3 1,15,29 (Wednesdays)\nd4 9,23 (Thursdays)\nNo d5/d6.\n\nNeed c3 dates:\nd1 14,28 (Tuesdays)\nd2 10,24 (Fridays)\nd3 8,22 (Wednesdays)\nd4 2,16,30 (Thursdays)\nd5 13,27 (Mondays)\nd6 6,20 (Mondays)\n\nNeed maybe d5/d6 c2 dates? Could be d5 13,27? But those are c3. No.\n\nPotential issue: Page 10 says \"資源ごみと燃やせないごみ、粗大ごみの収集日\" and table has \"粗大ごみ\" column blank. Could the single number under nonburnable actually be \"粗大ごみ\" and nonburnable dates omitted? Let's verify row3: If nonburnable column blank, then row3 nonburnable none, oversized 17. But title says nonburnable; no. The number is under nonburnable. So okay.\n\nNeed decide label for c3 exactly: The printed header: \"ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\". Use exactly with spaces? The image line break: \"ペットボトル以外のプラスチック\\n容器・白色トレイ・紙・布・発泡\\nスチロール・剪定枝・廃食油\". Text layer: \"ペットボトル以外のプラスチック\\n容器・白色トレイ・紙・布・発泡\\nスチロール・剪定枝・廃食油\". If we join with space, label \"ペットボトル以外のプラスチック 容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\". Good.\n\nc2 label: \"缶・びん ペットボトル\" from header. Use exactly \"缶・びん ペットボトル\" maybe no extra. Good.\n\nBurnable label: \"燃やせるごみ\" exactly.\n\nNonburn label: \"燃やせないごみ\" exact.\n\nOversized label: \"粗大ごみ\" exact.\n\nNeed municipality \"女川町\" maybe.\n\nNeed period printed: Could be \"令和８年 2026年 7月\". Use \"令和８年 2026年 7月\". from 2026-07-01 to 2026-07-31.\n\nNeed unsure about period? No.\n\nNeed exceptions: Since no explicit holiday/year-end, add unsure. The schema exceptions can be empty. Use [] and unsure with those.\n\nNeed ensure schedule for d7 burnable weekly MO,FR. Text from page: \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\"\n\nNeed possible d7 resource schedule? The page says \"江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。\" No dates. Add unsure about d7 resource/nonburn/oversized. Maybe about \"江島地区の資源ごみ等の収集日\", district d7, category null, text exact. Since \"等\" includes nonburn/oversized. Good.\n\nNeed maybe d7 members: The page says 江島地区. The member could be \"江島地区\" but if districts are by town, \"江島\" is town. But text only uses 江島地区. Use label \"江島地区\", members [\"江島地区\"]. Hmm.\n\nCould also include d7 label \"江島地区\", members []? But maybe better [\"江島地区\"]. The schema members array items string. Fine.\n\nNeed maybe district d1 label \"大沢・浦宿全区・針浜\" and members split. The label includes \"浦宿全区\"; member \"浦宿全区\" as printed. Good.\n\nNeed maybe d2 member \"西\" could be \"西\" exact. Good.\n\nNeed maybe \"小乗\" not \"小乗\"? Text layer says 小乗. Use 小乗.\n\nNeed \"指ケ浜\" exact (not 指ヶ浜). Use 指ケ浜.\n\nNeed \"宮ケ崎\" exact. Use 宮ケ崎.\n\nNeed \"塚浜\" etc.\n\nNeed \"飯子浜\" exact. Good.\n\nNeed \"野々浜\" exact.\n\nNeed \"小屋取\" exact.\n\nNeed \"御前\" exact.\n\nNeed \"寺間\" exact.\n\nNeed \"出島\" exact.\n\nNeed \"桐ケ崎\" exact.\n\nNeed \"竹浦\", \"尾浦\".\n\nNeed \"石浜\".\n\nNeed \"清水\".\n\nNeed \"大原全区\", \"女川全区\".\n\nNeed \"上全区\".\n\nNeed \"浦宿全区\".\n\nNeed \"大沢\".\n\nNeed \"針浜\".\n\nNeed \"高白\", \"横浦\", \"大石原\".\n\nNeed \"旭が丘\".\n\nNeed \"宮ケ崎\".\n\nNeed \"石浜\".\n\nNeed \"江島地区\".\n\nNeed schedule text for d1 c1 \"黄色の日\" maybe not necessary. Use text \"黄色の日\" for burnable schedules. For d3 c1 \"水色の日\". Good.\n\nNeed schedule for c2/c3/c4 text: Use original date strings like \"7 21\" etc. The schema text can be null/string. Use text.\n\nNeed dates year 2026 month 07. Ensure two-digit day.\n\nNeed JSON field order? Any. Need required all.\n\nLet's write final JSON. Need no markdown.\n\nDouble-check JSON validity: arrays, commas. Use null for no category etc.\n\nUnsure entries:\n1 about \"祝日の取扱い\", district null, category null, text \"資料に祝日の扱いについて明記されていない\"\n2 about \"年末年始の取扱い\", district null, category null, text \"資料に年末年始の取扱いについて明記されていない\"\n3 about \"粗大ごみの収集日\", district null, category \"c5\", text \"表の粗大ごみ欄に日付が印字されていない\"\n4 about \"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取の缶・びん・ペットボトル収集日\", district \"d5\", category \"c2\", text \"表の該当欄が空欄で読み取れない\"\n5 about \"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間の缶・びん・ペットボトル収集日\", district \"d6\", category \"c2\", text \"表の該当欄が空欄で読み取れない\"\n6 about \"江島地区の資源ごみ等の収集日\", district \"d7\", category null, text \"江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。\"\nMaybe also about row5/6 c2? Good.\nMaybe about \"海の日\" holiday? Covered.\n\nNeed exceptions maybe none. But wait page 11 calendar marks July 20 as 海の日 and yellow (burnable collection). If we add unsure \"holiday handling not written\", but our weekly rule includes 20. Is that okay? The weekly rule says every Monday/Thursday, includes 20. The calendar confirms. Fine.\n\nCould there be exception for d1,d2,d5 burnable on 20? No.\n\nNeed if holiday not collected, then 20 would be exception. But calendar yellow indicates collected. However no text. The instructions say don't create. We won't.\n\nNeed category c3 coarse: include \"plastic\",\"paper\",\"cloth\",\"other\". Good.\n\nNeed category c2 coarse: include \"beverage_can\",\"glass_bottle\",\"pet_bottle\". Good.\n\nNeed category c1 coarse: [\"burnable\"]. c4 [\"non_burnable\"]. c5 [\"oversized\"].\n\nNeed schedule arrays for d1: c1, c2, c3, c4. c5 no. d2 same. d3 same. d4 same. d5 c1,c3,c4. d6 c1,c3,c4. d7 c1 only.\n\nNeed d5 c2 no schedule; d6 c2 no schedule.\n\nPotential issue: d5/d6 c2 maybe actually have dates? If wrong, unsure flags. But omitting may be considered missing. Could include c2 dates guessed? No. Better omit and unsure.\n\nNeed include c5 no schedule. Good.\n\nNeed maybe c5 category note? Optional.\n\nNow final JSON.",
+    "finish_reason": "stop",
+    "usage": {
+     "prompt_tokens": 6438,
+     "completion_tokens": 17975,
+     "total_tokens": 24413,
+     "prompt_tokens_details": {
+      "cached_tokens": 2816
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 16108
+     },
+     "prompt_cache_hit_tokens": 2816,
+     "prompt_cache_miss_tokens": 3622
+    },
+    "model": "deepseek-flash",
+    "seconds": 74.0
+   }
+  ],
+  "note": "API の生の答え (content は JSON の文字、reasoning_content は推論の文字)。最後のものを answer に読んだ"
+ },
+ "seconds": 74.0
+}

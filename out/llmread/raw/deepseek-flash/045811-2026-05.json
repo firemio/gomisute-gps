@@ -1,0 +1,573 @@
+{
+ "doc_id": "045811-2026-05",
+ "model": "deepseek-flash",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "8077c2a2daac54b4a65946f62f6d4edc1cceab3413b2f7660405e1b010c49ad1",
+ "started_at": "2026-10-21T11:19:21+00:00",
+ "images": 2,
+ "answer": {
+  "municipality": "女川町",
+  "period": {
+   "printed": "令和8年5月",
+   "from": "2026-05-01",
+   "to": "2026-05-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "大沢・浦宿全区・針浜",
+    "members": [
+     "大沢",
+     "浦宿全区",
+     "針浜"
+    ]
+   },
+   {
+    "id": "d2",
+    "label": "上全区・西・小乗",
+    "members": [
+     "上全区",
+     "西",
+     "小乗"
+    ]
+   },
+   {
+    "id": "d3",
+    "label": "女川全区・大原全区・清水",
+    "members": [
+     "女川全区",
+     "大原全区",
+     "清水"
+    ]
+   },
+   {
+    "id": "d4",
+    "label": "旭が丘・宮ケ崎・石浜",
+    "members": [
+     "旭が丘",
+     "宮ケ崎",
+     "石浜"
+    ]
+   },
+   {
+    "id": "d5",
+    "label": "高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取",
+    "members": [
+     "高白",
+     "横浦",
+     "大石原",
+     "野々浜",
+     "飯子浜",
+     "塚浜",
+     "小屋取"
+    ]
+   },
+   {
+    "id": "d6",
+    "label": "桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間",
+    "members": [
+     "桐ケ崎",
+     "竹浦",
+     "尾浦",
+     "御前",
+     "指ケ浜",
+     "出島",
+     "寺間"
+    ]
+   },
+   {
+    "id": "d7",
+    "label": "江島地区",
+    "members": [
+     "江島"
+    ]
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "coarse": [
+     "burnable"
+    ]
+   },
+   {
+    "id": "c2",
+    "label": "缶・びん・ペットボトル",
+    "coarse": [
+     "beverage_can",
+     "glass_bottle",
+     "pet_bottle"
+    ]
+   },
+   {
+    "id": "c3",
+    "label": "ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "coarse": [
+     "plastic",
+     "paper",
+     "cloth",
+     "other"
+    ]
+   },
+   {
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "coarse": [
+     "non_burnable"
+    ]
+   },
+   {
+    "id": "c5",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ],
+    "note": "表の粗大ごみ欄は空欄で収集日の記載がない"
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "黄色の日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-04",
+       "2026-05-07",
+       "2026-05-11",
+       "2026-05-14",
+       "2026-05-18",
+       "2026-05-21",
+       "2026-05-25",
+       "2026-05-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c1",
+    "text": "黄色の日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-04",
+       "2026-05-07",
+       "2026-05-11",
+       "2026-05-14",
+       "2026-05-18",
+       "2026-05-21",
+       "2026-05-25",
+       "2026-05-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c1",
+    "text": "黄色の日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-04",
+       "2026-05-07",
+       "2026-05-11",
+       "2026-05-14",
+       "2026-05-18",
+       "2026-05-21",
+       "2026-05-25",
+       "2026-05-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c1",
+    "text": "水色の日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-05",
+       "2026-05-08",
+       "2026-05-12",
+       "2026-05-15",
+       "2026-05-19",
+       "2026-05-22",
+       "2026-05-26",
+       "2026-05-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c1",
+    "text": "水色の日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-05",
+       "2026-05-08",
+       "2026-05-12",
+       "2026-05-15",
+       "2026-05-19",
+       "2026-05-22",
+       "2026-05-26",
+       "2026-05-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c1",
+    "text": "水色の日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-05",
+       "2026-05-08",
+       "2026-05-12",
+       "2026-05-15",
+       "2026-05-19",
+       "2026-05-22",
+       "2026-05-26",
+       "2026-05-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c1",
+    "text": "江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-12",
+       "2026-05-26"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-05",
+       "2026-05-19"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-06"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c2",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-08",
+       "2026-05-22"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c3",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-01",
+       "2026-05-15",
+       "2026-05-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c4",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-13"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c2",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-06",
+       "2026-05-20"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c3",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-13",
+       "2026-05-27"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c4",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-22"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c2",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-14",
+       "2026-05-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c3",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-07",
+       "2026-05-21"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c4",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-27"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c3",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-04",
+       "2026-05-18"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c4",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-01"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c3",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-11",
+       "2026-05-25"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c4",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-08"
+      ]
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "江島地区の資源ごみ・燃やせないごみ・粗大ごみの収集日",
+    "district": "d7",
+    "category": null,
+    "text": "江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。"
+   },
+   {
+    "about": "粗大ごみの収集日",
+    "district": null,
+    "category": "c5",
+    "text": "表の粗大ごみ欄はすべて空欄で、収集日の記載がない"
+   },
+   {
+    "about": "祝日・振替休日の扱い",
+    "district": null,
+    "category": null,
+    "text": "祝日の扱いについての明記はない（カレンダーでは5月4日みどりの日・5月5日こどもの日に色が付いている）"
+   },
+   {
+    "about": "年末年始の扱い",
+    "district": null,
+    "category": null,
+    "text": "年末年始の扱いについての記載はない（5月のページのため）"
+   },
+   {
+    "about": "5月カレンダーに表示された4月27日・28日・30日の色分け",
+    "district": null,
+    "category": "c1",
+    "text": "5月のカレンダーに4月27日（黄）・28日（水色）・30日（黄）も色分けされているが、期間（令和8年5月）外のため収集日 dates に含めていない"
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 6162,
+  "completion_tokens": 16584,
+  "total_tokens": 22746,
+  "prompt_tokens_details": {
+   "cached_tokens": 2816
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 14612
+  },
+  "prompt_cache_hit_tokens": 2816,
+  "prompt_cache_miss_tokens": 3346,
+  "seconds": 61.8,
+  "model": "deepseek-flash"
+ },
+ "error": null,
+ "cost": {
+  "usd": 0.020921,
+  "usd_peak": 0.020921,
+  "offpeak": false,
+  "price_per_mtok": {
+   "input_miss": 0.3,
+   "input_hit": 0.006,
+   "output": 1.2
+  },
+  "offpeak_utc": "16:30-00:30 (料金表で要確認)",
+  "calls": 1
+ },
+ "raw": {
+  "attempts": [
+   {
+    "content": "{\"municipality\":\"女川町\",\"period\":{\"printed\":\"令和8年5月\",\"from\":\"2026-05-01\",\"to\":\"2026-05-31\"},\"districts\":[{\"id\":\"d1\",\"label\":\"大沢・浦宿全区・針浜\",\"members\":[\"大沢\",\"浦宿全区\",\"針浜\"]},{\"id\":\"d2\",\"label\":\"上全区・西・小乗\",\"members\":[\"上全区\",\"西\",\"小乗\"]},{\"id\":\"d3\",\"label\":\"女川全区・大原全区・清水\",\"members\":[\"女川全区\",\"大原全区\",\"清水\"]},{\"id\":\"d4\",\"label\":\"旭が丘・宮ケ崎・石浜\",\"members\":[\"旭が丘\",\"宮ケ崎\",\"石浜\"]},{\"id\":\"d5\",\"label\":\"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取\",\"members\":[\"高白\",\"横浦\",\"大石原\",\"野々浜\",\"飯子浜\",\"塚浜\",\"小屋取\"]},{\"id\":\"d6\",\"label\":\"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\",\"members\":[\"桐ケ崎\",\"竹浦\",\"尾浦\",\"御前\",\"指ケ浜\",\"出島\",\"寺間\"]},{\"id\":\"d7\",\"label\":\"江島地区\",\"members\":[\"江島\"]}],\"categories\":[{\"id\":\"c1\",\"label\":\"燃やせるごみ\",\"coarse\":[\"burnable\"]},{\"id\":\"c2\",\"label\":\"缶・びん・ペットボトル\",\"coarse\":[\"beverage_can\",\"glass_bottle\",\"pet_bottle\"]},{\"id\":\"c3\",\"label\":\"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\",\"coarse\":[\"plastic\",\"paper\",\"cloth\",\"other\"]},{\"id\":\"c4\",\"label\":\"燃やせないごみ\",\"coarse\":[\"non_burnable\"]},{\"id\":\"c5\",\"label\":\"粗大ごみ\",\"coarse\":[\"oversized\"],\"note\":\"表の粗大ごみ欄は空欄で収集日の記載がない\"}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"text\":\"黄色の日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-04\",\"2026-05-07\",\"2026-05-11\",\"2026-05-14\",\"2026-05-18\",\"2026-05-21\",\"2026-05-25\",\"2026-05-28\"]}]},{\"district\":\"d2\",\"category\":\"c1\",\"text\":\"黄色の日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-04\",\"2026-05-07\",\"2026-05-11\",\"2026-05-14\",\"2026-05-18\",\"2026-05-21\",\"2026-05-25\",\"2026-05-28\"]}]},{\"district\":\"d5\",\"category\":\"c1\",\"text\":\"黄色の日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-04\",\"2026-05-07\",\"2026-05-11\",\"2026-05-14\",\"2026-05-18\",\"2026-05-21\",\"2026-05-25\",\"2026-05-28\"]}]},{\"district\":\"d3\",\"category\":\"c1\",\"text\":\"水色の日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-05\",\"2026-05-08\",\"2026-05-12\",\"2026-05-15\",\"2026-05-19\",\"2026-05-22\",\"2026-05-26\",\"2026-05-29\"]}]},{\"district\":\"d4\",\"category\":\"c1\",\"text\":\"水色の日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-05\",\"2026-05-08\",\"2026-05-12\",\"2026-05-15\",\"2026-05-19\",\"2026-05-22\",\"2026-05-26\",\"2026-05-29\"]}]},{\"district\":\"d6\",\"category\":\"c1\",\"text\":\"水色の日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-05\",\"2026-05-08\",\"2026-05-12\",\"2026-05-15\",\"2026-05-19\",\"2026-05-22\",\"2026-05-26\",\"2026-05-29\"]}]},{\"district\":\"d7\",\"category\":\"c1\",\"text\":\"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"FR\"]}]},{\"district\":\"d1\",\"category\":\"c2\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-12\",\"2026-05-26\"]}]},{\"district\":\"d1\",\"category\":\"c3\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-05\",\"2026-05-19\"]}]},{\"district\":\"d1\",\"category\":\"c4\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-06\"]}]},{\"district\":\"d2\",\"category\":\"c2\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-08\",\"2026-05-22\"]}]},{\"district\":\"d2\",\"category\":\"c3\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-01\",\"2026-05-15\",\"2026-05-29\"]}]},{\"district\":\"d2\",\"category\":\"c4\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-13\"]}]},{\"district\":\"d3\",\"category\":\"c2\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-06\",\"2026-05-20\"]}]},{\"district\":\"d3\",\"category\":\"c3\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-13\",\"2026-05-27\"]}]},{\"district\":\"d3\",\"category\":\"c4\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-22\"]}]},{\"district\":\"d4\",\"category\":\"c2\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-14\",\"2026-05-28\"]}]},{\"district\":\"d4\",\"category\":\"c3\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-07\",\"2026-05-21\"]}]},{\"district\":\"d4\",\"category\":\"c4\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-27\"]}]},{\"district\":\"d5\",\"category\":\"c3\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-04\",\"2026-05-18\"]}]},{\"district\":\"d5\",\"category\":\"c4\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-01\"]}]},{\"district\":\"d6\",\"category\":\"c3\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-11\",\"2026-05-25\"]}]},{\"district\":\"d6\",\"category\":\"c4\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-08\"]}]}],\"exceptions\":[],\"unsure\":[{\"about\":\"江島地区の資源ごみ・燃やせないごみ・粗大ごみの収集日\",\"district\":\"d7\",\"category\":null,\"text\":\"江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。\"},{\"about\":\"粗大ごみの収集日\",\"district\":null,\"category\":\"c5\",\"text\":\"表の粗大ごみ欄はすべて空欄で、収集日の記載がない\"},{\"about\":\"祝日・振替休日の扱い\",\"district\":null,\"category\":null,\"text\":\"祝日の扱いについての明記はない（カレンダーでは5月4日みどりの日・5月5日こどもの日に色が付いている）\"},{\"about\":\"年末年始の扱い\",\"district\":null,\"category\":null,\"text\":\"年末年始の扱いについての記載はない（5月のページのため）\"},{\"about\":\"5月カレンダーに表示された4月27日・28日・30日の色分け\",\"district\":null,\"category\":\"c1\",\"text\":\"5月のカレンダーに4月27日（黄）・28日（水色）・30日（黄）も色分けされているが、期間（令和8年5月）外のため収集日 dates に含めていない\"}]}",
+    "reasoning_content": "Let me analyze the resource.\n\nPage 6 is about May 2026 (令和8年5月). It contains:\n\n1. 燃やせるごみの収集日（一般家庭専用） - burnable garbage collection days, color-coded by district.\n   - 黄色の日: 大沢, 浦宿全区, 針浜, 上全区, 西, 小乗, 高白, 横浦, 大石原, 野々浜, 飯子浜, 塚浜, 小屋取\n   - 水色の日: 旭が丘, 女川全区, 大原全区, 清水, 宮ケ崎, 石浜, 桐ケ崎, 竹浦, 尾浦, 御前, 指ケ浜, 出島, 寺間\n   - 江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\n\nThe calendar on page 7 shows colored days: yellow days and light blue (水色) days. Let me read the calendar.\n\nMay 2026 calendar. Let me figure out the days of week. The calendar shows:\n- Week 1: 日26, 月27, 火28, 水29, 木30, 金1, 土2\n- Actually the first row: 26, 27, 28, 29, 30, 1, 2 — these are April 26-30 and May 1, 2.\n\nLet me identify colors from the text layer hints and image:\nRow 1: 26 (white), 27 (yellow), 28 (light blue), 29 (white/pink?), 30 (yellow), 1 (light blue), 2 (white)\nRow 2: 3 (white), 4 (yellow), 5 (light blue), 6 (white), 7 (yellow), 8 (light blue), 9 (white)\nRow 3: 10 (white), 11 (yellow), 12 (light blue), 13 (white), 14 (yellow), 15 (light blue), 16 (white)\nRow 4: 17 (white), 18 (yellow), 19 (light blue), 20 (white), 21 (yellow), 22 (light blue), 23 (white)\nRow 5: 24 (white), 25 (yellow), 26 (light blue), 27 (white), 28 (yellow), 29 (light blue), 30 (white)\nRow 6: 31 (white)\n\nLet me verify with the image description. Looking at the page-007 image:\n- Row 1: 26 (pink/white), 27 (yellow), 28 (light blue), 29 (pink/white), 30 (yellow), 1 (light blue), 2 (white/blue)\n- Row 2: 3 (white), 4 (yellow), 5 (light blue), 6 (white), 7 (yellow), 8 (light blue), 9 (white)\n- Row 3: 10 (white), 11 (yellow), 12 (light blue), 13 (white), 14 (yellow), 15 (light blue), 16 (white)\n- Row 4: 17 (white), 18 (yellow), 19 (light blue), 20 (white), 21 (yellow), 22 (light blue), 23 (white)\n- Row 5: 24 (white), 25 (yellow), 26 (light blue), 27 (white), 28 (yellow), 29 (light blue), 30 (white)\n- Row 6: 31 (white)\n\nWait, but this seems like a regular weekly pattern. Let me check the actual calendar reading from the image more carefully.\n\nFrom the image:\nRow 1: 26 (red, white bg), 27 (yellow bg), 28 (light blue bg), 29 (pink number, white bg), 30 (yellow bg), 1 (blue number, light blue bg... actually 1 is dark blue number on light blue), 2 (blue, white bg with 赤口)\n\nHmm, let me re-read. The image shows:\n- 26: red text, white background\n- 27: yellow/blue number 27, yellow background\n- 28: blue number, light blue background\n- 29: pink number, white background\n- 30: blue number, yellow background\n- 1: blue number, light blue background (dark blue \"1\")\n- 2: blue number, white background\n\nWait, actually looking closer:\n- Row 1: 26 (white), 27 (yellow), 28 (light blue), 29 (white/pink), 30 (yellow), 1 (light blue), 2 (white)\n\nHmm, but 29 is pink colored number on white. Let me just consider May days.\n\nActually, let me focus on May days:\nMay 1 (金) - light blue? The image shows \"1\" in dark blue on light blue background. Hmm, actually it looks like it's on light blue.\nMay 2 (土) - white\nMay 3 (日) - white (憲法記念日)\nMay 4 (月) - yellow (みどりの日)\nMay 5 (火) - light blue (こどもの日)\nMay 6 (水) - white (振替休日)\nMay 7 (木) - yellow\nMay 8 (金) - light blue\nMay 9 (土) - white\nMay 10 (日) - white\nMay 11 (月) - yellow\nMay 12 (火) - light blue\nMay 13 (水) - white\nMay 14 (木) - yellow\nMay 15 (金) - light blue\nMay 16 (土) - white\nMay 17 (日) - white\nMay 18 (月) - yellow\nMay 19 (火) - light blue\nMay 20 (水) - white\nMay 21 (木) - yellow\nMay 22 (金) - light blue\nMay 23 (土) - white\nMay 24 (日) - white\nMay 25 (月) - yellow\nMay 26 (火) - light blue\nMay 27 (水) - white\nMay 28 (木) - yellow\nMay 29 (金) - light blue\nMay 30 (土) - white\nMay 31 (日) - white\n\nSo the pattern for 黄色の日 (yellow): Mondays and Thursdays. May 4 (Mon), 7 (Thu), 11 (Mon), 14 (Thu), 18 (Mon), 21 (Thu), 25 (Mon), 28 (Thu). Yes! Mondays and Thursdays.\n\nFor 水色の日 (light blue): Tuesdays and Fridays. May 5 (Tue), 8 (Fri), 12 (Tue), 15 (Fri), 19 (Tue), 22 (Fri), 26 (Tue), 29 (Fri). Yes! Tuesdays and Fridays.\n\nSo:\n- 黄色の日 districts: burnable collected 月 (MO) and 木 (TH)\n- 水色の日 districts: burnable collected 火 (TU) and 金 (FR)\n\nNow for 資源ごみと燃やせないごみ、粗大ごみの収集日 table.\n\nThe table has 行政区 (administrative districts) grouped:\n1. 大沢・浦宿全区・針浜\n   - 資源ごみ 缶・びん ペットボトル: 12, 26\n   - 資源ごみ ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油: 5, 19\n   - 燃やせないごみ: 6\n   - 粗大ごみ: (blank)\n2. 上全区・西・小乗\n   - 缶・びん ペットボトル: 8, 22\n   - プラ...: 1, 15, 29\n   - 燃やせないごみ: 13\n   - 粗大ごみ: (blank)\n3. 女川全区・大原全区・清水\n   - 缶・びん ペットボトル: 6, 20\n   - プラ...: 13, 27\n   - 燃やせないごみ: 22\n   - 粗大ごみ: (blank)\n4. 旭が丘・宮ケ崎・石浜\n   - 缶・びん ペットボトル: 14, 28\n   - プラ...: 7, 21\n   - 燃やせないごみ: 27\n   - 粗大ごみ: (blank)\n5. 高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取\n   - 缶・びん ペットボトル: (blank)\n   - プラ...: 4, 18\n   - 燃やせないごみ: 1\n   - 粗大ごみ: (blank)\n6. 桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\n   - 缶・びん ペットボトル: (blank)\n   - プラ...: 11, 25\n   - 燃やせないごみ: 8\n   - 粗大ごみ: (blank)\n\nWait, let me re-read the text layer to get exact numbers:\n\n```\n大沢・浦宿全区・針浜\n⨢ ⨰\n5 ⨩\n6\n上全区・西・小乗\n8 ⨬ \n1 ⨥ ⨳\n⨣\n女川全区・大原全区・清水\n6 ⨪\n⨣ ⨱\n⨬\n旭が丘・宮ケ崎・石浜\n⨤ ⨲\n7 ⨫\n⨱\n高白・横浦・大石原・野々浜・\n飯子浜・塚浜・小屋取\n4 ⨨\n1\n桐ケ崎・竹浦・尾浦・御前・\n指ケ浜・出島・寺間\n⨡ ⨯\n8\n```\n\nThe text layer is garbled (the ⨢ etc. are the circled numbers/dates). Let me use the image.\n\nFrom the image (page-006):\nRow 1: 大沢・浦宿全区・針浜: 缶・びん ペットボトル = 12, 26; プラ = 5, 19; 燃やせないごみ = 6; 粗大ごみ = (blank)\nRow 2: 上全区・西・小乗: 缶・びん ペットボトル = 8, 22; プラ = 1, 15, 29; 燃やせないごみ = 13; 粗大ごみ = (blank)\nRow 3: 女川全区・大原全区・清水: 缶・びん ペットボトル = 6, 20; プラ = 13, 27; 燃やせないごみ = 22; 粗大ごみ = (blank)\nRow 4: 旭が丘・宮ケ崎・石浜: 缶・びん ペットボトル = 14, 28; プラ = 7, 21; 燃やせないごみ = 27; 粗大ごみ = (blank)\nRow 5: 高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取: 缶・びん ペットボトル = (blank); プラ = 4, 18; 燃やせないごみ = 1; 粗大ごみ = (blank)\nRow 6: 桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間: 缶・びん ペットボトル = (blank); プラ = 11, 25; 燃やせないごみ = 8; 粗大ごみ = (blank)\n\nNow, these are May dates. The document is 令和8年5月 (May 2026). So these dates are in May 2026.\n\nNow let me think about districts. The resource has two different groupings:\n- For burnable garbage: 黄色の日 and 水色の日 groups, plus 江島地区 separately.\n- For recyclable/non-burnable/oversized: 6 rows (行政区 groups).\n\nThese are different district groupings. Hmm. How do I handle this?\n\nThe schema wants districts as a list, and schedules per district × category. But the burnable district grouping differs from the recyclable grouping. \n\nLet me think. The districts should be the collection-day divisions. There are two different division systems used for different categories. \n\nActually, I should create districts based on what's in the resource. The resource uses different groupings for different categories. This is tricky.\n\nLet me consider: The district labels. For burnable: 黄色の日 group and 水色の日 group, and 江島地区. For recyclable: the 6 行政区 groups.\n\nHmm, but the schema says districts are the divisions of collection days (地区・コース・色の名前など). \n\nI think the cleanest approach: create districts as the union of all the distinct groupings. But that gets complex because a single \"町名\" can belong to different groups for different categories.\n\nActually, let me reconsider. Each 町名 (town name) belongs to:\n- A burnable color group (yellow or light blue), except 江島\n- A recyclable 行政区 group\n\nSince these are different partitions, I can't merge them into a single district structure cleanly.\n\nThe instruction says: \"地区の分けが無く全域が同じなら、地区を 1 つだけ作り label を \"全域\" にする。\" and districts are \"収集日の分け方の地区\".\n\nGiven the complexity, I think the best approach is to create districts for each grouping separately, but that would create schedules with districts that don't have all categories.\n\nActually, schedules are district × category, so it's fine if a district only has certain categories. But the district members would overlap.\n\nHmm. Let me think about what's most faithful. \n\nOption A: Create districts per the burnable color groups (黄色, 水色) plus 江島, and separately... no.\n\nActually, I think I should create districts based on the resource's explicit divisions. Since the resource explicitly gives two partitionings for different purposes, I'll create:\n\nFor burnable (燃やせるごみ):\n- 黄色の日: members = 大沢, 浦宿全区, 針浜, 上全区, 西, 小乗, 高白, 横浦, 大石原, 野々浜, 飯子浜, 塚浜, 小屋取\n- 水色の日: members = 旭が丘, 女川全区, 大原全区, 清水, 宮ケ崎, 石浜, 桐ケ崎, 竹浦, 尾浦, 御前, 指ケ浜, 出島, 寺間\n- 江島地区: members = 江島 (this one is described: \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します\")\n\nFor recyclable/non-burnable/oversized, the groups are the 6 行政区 rows.\n\nBut then schedules would reference districts. If I have both groupings as districts, schedules would need district ids. \n\nI think the cleanest is to create districts for each distinct grouping that appears. But the issue is: district membership overlapping.\n\nAlternatively, maybe I should treat the \"行政区\" groups (the 6 rows) as the districts, and note that burnable uses color groups. But the color groups don't align with the 6 rows.\n\nLet me check alignment:\nBurnable 黄色: 大沢, 浦宿全区, 針浜, 上全区, 西, 小乗, 高白, 横浦, 大石原, 野々浜, 飯子浜, 塚浜, 小屋取\nRecyclable groups:\nRow 1: 大沢・浦宿全区・針浜\nRow 2: 上全区・西・小乗\nRow 5: 高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取\n\nSo 黄色 = Row1 + Row2 + Row5 exactly! \n\nBurnable 水色: 旭が丘, 女川全区, 大原全区, 清水, 宮ケ崎, 石浜, 桐ケ崎, 竹浦, 尾浦, 御前, 指ケ浜, 出島, 寺間\nRecyclable groups:\nRow 3: 女川全区・大原全区・清水\nRow 4: 旭が丘・宮ケ崎・石浜\nRow 6: 桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\n\nSo 水色 = Row3 + Row4 + Row6 exactly!\n\nSo the divisions are hierarchical/nested: Two color groups for burnable, each containing 3 行政区 groups for recyclable.\n\nSo the districts: I can either use the color groups (2 for burnable) or the 6 行政区 groups. \n\nHmm. The instruction says districts are \"収集日の分け方の地区(区域・コース・地区・色の名前など)\". Both levels are collection-day divisions.\n\nI think the most faithful and useful representation is to use the 6 行政区 groups as districts, since they are the finest division and the resource's main table is organized that way. But then the burnable schedules would need to be per color group.\n\nActually, since 黄色 = Row1+Row2+Row5 and 水色 = Row3+Row4+Row6, and burnable doesn't distinguish within color groups, I could:\n\nOption 1: Use 6 districts (行政区 groups). Burnable schedules: for Row1, Row2, Row5 districts → MO, TH; for Row3, Row4, Row6 → TU, FR. This works because burnable is same across each color group.\n\nOption 2: Use 2 color districts + separately handle recyclable.\n\nI think Option 1 is cleaner. Use the 6 行政区 rows as districts. Each district has:\n- burnable: from its color group\n- recyclable resources (缶・びん・ペットボトル): from that row\n- プラ etc: from that row\n- 燃やせないごみ: from that row\n- 粗大ごみ: blank (no dates → unsure? or no schedule)\n\nAnd 江島地区: burnable MO and FR. But 江島 is a separate district. It says \"江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。\" So 江島 recyclable dates are not given. But burnable for 江島 is given (Monday and Friday).\n\nSo I'll add a 7th district: 江島地区, with members [江島], and burnable schedule MO, FR. And note that recyclable for 江島 is separately announced (unsure).\n\nWait, but does 江島 belong to the color groups? The text says \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\" This is separate. It's not listed in either yellow or blue. So it's a separate district.\n\nNow let me define the districts:\n\nd1: label = \"大沢・浦宿全区・針浜\" ? Or should label be \"行政区\" name... The resource doesn't give a formal name for each row. Hmm.\n\nActually, the schema says label is 印字の名前. The rows don't have explicit names other than the list of 町名. So what's the label?\n\nHmm. The columns \"行政区\" and the values are the town names. There's no separate label for each row. \n\nFor districts, I think I should use the town names as members, and for label... maybe use the first town name or a combined label? The schema wants a label string.\n\nLet me reconsider. Maybe the district label should be the color names for burnable (黄色の日, 水色の日) since those are explicitly labeled. But the recyclable grouping rows have no labels.\n\nWait, let me reconsider the whole approach. The two color groups ARE labeled (\"黄色の日\", \"水色の日\"). And they perfectly partition into 3 recyclable rows each. And 江島 is separate.\n\nPerhaps the intended district level is the color groups, since those are the only explicitly labeled divisions. Within each color group, the recyclable sub-rows differ. But burnable is uniform per color group.\n\nHmm, but if I use color groups as districts, then within a color group the recyclable dates differ across the 3 sub-rows. So I'd have conflicting schedules within one district.\n\nLet me think about which representation is more faithful:\n\nIf districts = color groups (2 + 江島):\n- 黄色 district: burnable MO, TH. Recyclable: but there are 3 sub-rows with different dates → can't represent as single schedule. Would need to note the sub-division.\n\nIf districts = 6 行政区 rows (+ 江島):\n- Each district: burnable = color group's days (uniform), recyclable = row's dates. This works cleanly!\n\nSo Option 1 (6 rows + 江島) is the only clean representation. Great, I'll use that.\n\nNow labels for the 6 districts. Since there's no explicit label, I'll use the list of town names joined. But that might be weird. Let me use the joined town names as label, e.g., \"大沢・浦宿全区・針浜\". Actually the resource prints \"大沢・浦宿全区・針浜\" in one cell. So the label printed is \"大沢・浦宿全区・針浜\". The members are 大沢, 浦宿全区, 針浜.\n\nWait, \"浦宿全区\" — is that a town name \"浦宿\" with \"全区\" meaning \"all of 浦宿\"? The resource prints \"浦宿全区\". So member could be \"浦宿全区\" as printed. Let me keep it as printed: \"浦宿全区\", \"上全区\", \"女川全区\", \"大原全区\". These are printed with 全区. Hmm, but that's odd as a town name. But instruction says keep as printed. So members: \"大沢\", \"浦宿全区\", \"針浜\".\n\nActually, let me reconsider. The label. The cell contains \"大沢・浦宿全区・針浜\". I'll use that as the label for d1, and members split by ・: 大沢, 浦宿全区, 針浜.\n\nSimilarly:\nd1: \"大沢・浦宿全区・針浜\" → members [大沢, 浦宿全区, 針浜]\nd2: \"上全区・西・小乗\" → [上全区, 西, 小乗]\nd3: \"女川全区・大原全区・清水\" → [女川全区, 大原全区, 清水]\nd4: \"旭が丘・宮ケ崎・石浜\" → [旭が丘, 宮ケ崎, 石浜]\nd5: \"高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取\" → [高白, 横浦, 大石原, 野々浜, 飯子浜, 塚浜, 小屋取]\nd6: \"桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間\" → [桐ケ崎, 竹浦, 尾浦, 御前, 指ケ浜, 出島, 寺間]\nd7: \"江島地区\" → [江島]\n\nNow categories:\nc1: 燃やせるごみ (burnable). coarse: [burnable]\nc2: 缶・びん・ペットボトル — this is a merged resource category \"缶・びん ペットボトル\". The header: 資源ごみ has sub-columns \"缶・びん ペットボトル\" and \"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\". So resource category 1 is 缶・びん・ペットボトル. coarse: beverage_can, glass_bottle, pet_bottle? The vocabulary: beverage_can 飲料の缶, glass_bottle びん, pet_bottle ペットボトル. So coarse: [beverage_can, glass_bottle, pet_bottle].\n\nHmm wait, but instruction says \"品目の一部(例: ○○のうちペットボトルだけ)にだけ別の収集日があるときは、その一部を別の品目に分ける。\" Here 缶・びん・ペットボトル are all collected on the same days, so keep as one category. coarse = [beverage_can, glass_bottle, pet_bottle].\n\nc3: ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油. This is a long combined name. coarse: plastic (プラスチック), paper_cloth? It includes 紙・布 so paper and cloth... but combined with plastic. The coarse vocabulary options: plastic, paper, cloth, paper_cloth. Since it's \"ペットボトル以外のプラスチック...紙・布・...\" it's a mixed category. Hmm. coarse could be [plastic, paper, cloth]? Or [plastic, paper_cloth]? \n\nActually the item combines plastic containers, white trays, paper, cloth, styrofoam, pruned branches, waste cooking oil. This is one collection category. The coarse classification - I should pick what applies. plastic (プラスチック) yes. paper (紙) yes. cloth (布) yes. But paper_cloth is \"紙と布を分けずに1つで\". Here paper and cloth are in the same item, so paper_cloth might be appropriate. Hmm, but it also includes plastic.\n\nI'll go with [plastic, paper_cloth]? Actually, let me just list what's clearly present: plastic, paper, cloth. Hmm, the vocabulary has both paper and cloth separately, and paper_cloth as combined. Since this item has 紙・布 together, paper_cloth seems right for the paper/cloth part, plus plastic for the plastic part.\n\nLet me be careful. The item: \"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\". \n- プラスチック容器, 白色トレイ, 発泡スチロール → plastic\n- 紙 → paper\n- 布 → cloth\n- 剪定枝, 廃食油 → other\n\nI'll put coarse = [plastic, paper, cloth, other]. Hmm, that might be over-listing. Let me think about what's most defensible. The vocabulary wants \"大まかな分類\". This single item spans plastic, paper, cloth, and other. I'll include [plastic, paper, cloth, other]. Actually maybe simpler: [plastic, paper, cloth]. Let me include other too since 剪定枝・廃食油 don't fit. I'll do [plastic, paper, cloth, other].\n\nHmm, actually I worry about over-listing. Let me keep it reasonable: [plastic, paper, cloth, other].\n\nc4: 燃やせないごみ (non-burnable). coarse: [non_burnable]\nc5: 粗大ごみ (oversized). coarse: [oversized]. But no dates in table (blank). So category exists but no schedule. Actually the table has 粗大ごみ column but all blank. So 粗大ごみ has no collection dates printed. I should add it as category but no schedule, and note in unsure.\n\nLet me check: the table header includes 粗大ごみ but all cells blank. So no dates. I'll add c5 粗大ごみ with note, no schedule, unsure.\n\nNow schedules:\n\nBurnable (c1):\n- d1 (大沢・浦宿全区・針浜): 黄色 → MO, TH\n- d2 (上全区・西・小乗): 黄色 → MO, TH\n- d3 (女川全区・大原全区・清水): 水色 → TU, FR\n- d4 (旭が丘・宮ケ崎・石浜): 水色 → TU, FR\n- d5 (高白...): 黄色 → MO, TH\n- d6 (桐ケ崎...): 水色 → TU, FR\n- d7 (江島地区): MO, FR\n\nWait, for burnable, should I use weekly rule (MO, TH) or use dates from calendar? The resource says \"燃やせるごみの日は、次の地区毎にカレンダーで色分けしています。\" The calendar shows colored days. This is a monthly calendar with colors. The instruction: \"カレンダーや月ごとの表のように日付が印字されているときは dates を使う (規則の文より印字の日付を優先する)。\"\n\nHmm. So should I use dates from the May calendar, or infer weekly?\n\nThe calendar is only for May (one month). The color coding indicates which days are collection days. This is a calendar with printed color coding, not printed dates with collection labels. But the dates ARE printed (each day shown), and colors mark collection.\n\nThe instruction about dates: \"カレンダーや月ごとの表のように日付が印字されているときは dates を使う\". For May, the collection days are: yellow days (MO, TH): 4, 7, 11, 14, 18, 21, 25, 28; blue days (TU, FR): 5, 8, 12, 15, 19, 22, 26, 29.\n\nBut this is only May. The period is just May (the calendar is 令和8年5月). So maybe the whole document is only for May, meaning period is May 2026.\n\nHmm. But burnable collection is clearly a weekly pattern (MO/TH and TU/FR). The text doesn't state the weekly rule explicitly for yellow/blue; it only shows the color-coded calendar for May. \n\nGiven the instruction to prefer printed dates when dates are printed, and this is a May calendar, I should use dates for May. But that means only May dates, which seems limited but faithful.\n\nWait, but the period of the resource — is it just May? The page is titled 令和8年5月 / 2026年. The PDF is a town calendar. Likely it's a monthly page of a yearly calendar. The visible page is May. So the resource covers May 2026 only.\n\nHmm, but the recyclable table gives only May dates too. So everything is May.\n\nGiven \"カレンダー...日付が印字されているときは dates を使う\", I'll use dates for the burnable schedules, listing May dates. And for recyclable, use dates too.\n\nBut wait — using dates for burnable per district: d1 gets yellow days = [2026-05-04, 07, 11, 14, 18, 21, 25, 28]; d3 gets blue days.\n\nActually, hold on. Let me reconsider whether to use weekly. The color coding with calendar clearly is a May snapshot. The rule \"Mondays and Thursdays\" is an inference. The instruction says prefer dates when printed. So use dates.\n\nBut there's a subtlety: if I use dates, then the pattern is locked to May. Since the period is May, that's fine.\n\nLet me reconsider: is there any statement of weekly recurrence? \"燃やせるごみの日は、次の地区毎にカレンダーで色分けしています。\" No explicit weekday rule for yellow/blue. So dates it is.\n\nFor 江島: \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\" — this IS an explicit weekday statement! So for 江島, use weekly MO, FR. Good.\n\nHmm, but should I be consistent? The instruction says use dates when printed. For 江島, no calendar coloring is given for 江島 (not in the color groups). The text explicitly says MO and FR. So weekly rule for 江島 is a stated rule, appropriate.\n\nOK here's my plan:\n\nBurnable (c1) schedules:\n- d1: dates [04,07,11,14,18,21,25,28] (yellow)\n- d2: dates same (yellow)\n- d3: dates [05,08,12,15,19,22,26,29] (blue)\n- d4: dates same (blue)\n- d5: dates same as yellow\n- d6: dates same as blue\n- d7 (江島): weekly MO, FR\n\nHmm, but wait. Should I reconsider using weekly for all burnable since the pattern is obvious? The instruction is clear: prefer printed dates. So dates.\n\nActually, let me reconsider. The instruction: \"日付は YYYY-MM-DD... 月日だけの印字は資料の期間から年を決める\". And for dates rule: \"カレンダーや月ごとの表のように日付が印字されているときは dates を使う (規則の文より印字の日付を優先する)\". \n\nSo yes, for the burnable from calendar, use dates.\n\nBut there's a question: does the calendar actually mark collection by color for the WHOLE month correctly? Let me double check the colors. Actually I should verify the exact colored days from the image once more.\n\nFrom the image page-007, the colored cells:\nRow 1: 27 yellow, 28 blue, 30 yellow, 1 blue. (26 white/red, 29 white/pink, 2 white)\n\nWait, 1 is blue? Let me look: \"1\" appears in dark blue on light blue? Actually looking at the image, the \"1\" cell (金 column, row 1) — it looks like a light blue background with dark blue \"1\". And \"2\" (土) white. Hmm, but wait, is 1 May a collection day? If blue = TU/FR, then May 1 is Friday, so yes blue. Consistent.\n\nRow 1: 木30 yellow (April 30 was Thursday? Let me check: April 30 2026. May 1 2026 is Friday, so April 30 is Thursday. Yellow = MO/TH. So April 30 (Thu) yellow. Consistent!). 金1 blue (Fri). \nAlso 27 (Mon) yellow (April 27 Monday). 28 (Tue) blue. Consistent with MO/TH and TU/FR! Great.\n\nSo the calendar confirms MO/TH = yellow, TU/FR = blue, extending into late April.\n\nSo for May days:\nYellow (MO, TH): May 4(Mon), 7(Thu), 11(Mon), 14(Thu), 18(Mon), 21(Thu), 25(Mon), 28(Thu). = [04,07,11,14,18,21,25,28]\nBlue (TU, FR): May 5(Tue), 8(Fri), 12(Tue), 15(Fri), 19(Tue), 22(Fri), 26(Tue), 29(Fri). = [05,08,12,15,19,22,26,29]\n\nGood.\n\nNow recyclable/non-burnable schedules from the table (May dates):\n\nd1 (大沢・浦宿全区・針浜):\n- c2 (缶・びん・ペットボトル): 12, 26 → [2026-05-12, 2026-05-26]\n- c3 (プラ...): 5, 19 → [2026-05-05, 2026-05-19]\n- c4 (燃やせないごみ): 6 → [2026-05-06]\n- c5 (粗大ごみ): blank\n\nd2 (上全区・西・小乗):\n- c2: 8, 22 → [2026-05-08, 2026-05-22]\n- c3: 1, 15, 29 → [2026-05-01, 2026-05-15, 2026-05-29]\n- c4: 13 → [2026-05-13]\n\nd3 (女川全区・大原全区・清水):\n- c2: 6, 20 → [2026-05-06, 2026-05-20]\n- c3: 13, 27 → [2026-05-13, 2026-05-27]\n- c4: 22 → [2026-05-22]\n\nd4 (旭が丘・宮ケ崎・石浜):\n- c2: 14, 28 → [2026-05-14, 2026-05-28]\n- c3: 7, 21 → [2026-05-07, 2026-05-21]\n- c4: 27 → [2026-05-27]\n\nd5 (高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取):\n- c2: blank\n- c3: 4, 18 → [2026-05-04, 2026-05-18]\n- c4: 1 → [2026-05-01]\n\nd6 (桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間):\n- c2: blank\n- c3: 11, 25 → [2026-05-11, 2026-05-25]\n- c4: 8 → [2026-05-08]\n\nd7 (江島地区):\n- c2, c3: separately announced → no schedule, unsure\n- c4: not mentioned\n- c1: MO, FR\n\nLet me verify the numbers by re-reading image carefully.\n\nFrom image page-006 table:\nRow 1 (大沢・浦宿全区・針浜): \n  缶・びん ペットボトル: \"12 26\"\n  プラ...: \"5 19\"\n  燃やせないごみ: \"6\"\n  粗大ごみ: blank\nRow 2 (上全区・西・小乗):\n  缶・びん: \"8 22\"\n  プラ: \"1 15 29\"\n  燃やせないごみ: \"13\"\n  粗大: blank\nRow 3 (女川全区・大原全区・清水):\n  缶・びん: \"6 20\"\n  プラ: \"13 27\"\n  燃やせないごみ: \"22\"\n  粗大: blank\nRow 4 (旭が丘・宮ケ崎・石浜):\n  缶・びん: \"14 28\"\n  プラ: \"7 21\"\n  燃やせないごみ: \"27\"\n  粗大: blank\nRow 5 (高白...小屋取):\n  缶・びん: blank\n  プラ: \"4 18\"\n  燃やせないごみ: \"1\"\n  粗大: blank\nRow 6 (桐ケ崎...寺間):\n  缶・びん: blank\n  プラ: \"11 25\"\n  燃やせないごみ: \"8\"\n  粗大: blank\n\nGood, matches.\n\nNow, categories c2 label: \"缶・びん・ペットボトル\" — the header prints \"缶・びん\\nペットボトル\". So label \"缶・びん・ペットボトル\"? Actually printed as 缶・びん (line 1) ペットボトル (line 2). I'll write \"缶・びん・ペットボトル\".\n\nc3 label: \"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\". The header: \"ペットボトル以外のプラスチック\\n容器・白色トレイ・紙・布・発泡\\nスチロール・剪定枝・廃食油\". Combine: \"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\".\n\nNow period. The page says 令和8年5月 / 2026年5月. Is the period just May? The page is a monthly calendar page. period printed = \"令和8年5月\" / \"2026年5月\". from = 2026-05-01, to = 2026-05-31.\n\nHmm, but the calendar also shows April 26-30. Those are previous month days. The collection days for April 27, 30 (yellow) and 28 (blue) are shown but they're April. Should I include April dates? The instruction: \"月日だけの印字は資料の期間から年を決める\". The period is May. April 27-30 are shown but they're context. Actually the yellow/blue coloring on April 27, 28, 30 days indicates collection too. Hmm.\n\nBut the period of the resource is May 2026. The April days are spillover display. Should collection dates include April 27, 28, 30?\n\nThe instruction says dates from the calendar. The calendar shows late April days colored too. But these belong to April which is outside the May period. Tricky.\n\nLet me reconsider the period. Actually maybe the period should be broader. But the page clearly says 5月 / May, 令和8年. It's a monthly page. I'll set period as May 2026.\n\nFor the April spillover days (27, 28, 30): These are April 2026 dates. Are they part of this resource's collection info? They're shown colored. But the resource period is May. I think including them is questionable. \n\nHmm, actually, the note \"収集日以外や収集終了後は、絶対出さないようお願いします\" suggests these ARE collection days. The April 27 (Mon), 28 (Tue), 30 (Thu) are colored per the pattern.\n\nBut since the resource is a May calendar and the period is May, the April days are just showing the tail of April. I think for faithfulness, the collection dates shown in the calendar include those April days. But they're in April, outside the stated period.\n\nThis is a judgment call. Let me think about the instruction: \"月日だけの印字は資料の期間から年を決める (決まらなければ unsure)\". The period is May (5月). April days would need year 2026 which is fine, but they're not \"May\" dates.\n\nActually, I think the cleanest faithful reading: The resource is the May page of the calendar, covering May 2026. The colored April days are part of the display but represent April collection days. Since I'm reporting the May calendar, I'll focus on May dates. But should I include the April 27, 28, 30 in the dates?\n\nI think I'll include them since they're explicitly colored as collection days in the resource. But wait, that might be over-thinking. The instruction for dates: \"カレンダーや月ごとの表のように日付が印字されているときは dates を使う\". The dates imprinted include April 27-30 (shown) and May 1-31. So collection dates for yellow: April 27, 30, May 4, 7, 11, 14, 18, 21, 25, 28. Blue: April 28, May 5, 8, ...\n\nHmm, but April 29 is shown white (not a collection day - it's a holiday? April 29 is Showa Day, but this calendar... actually April 29 shows pink number \"29\" which might be 昭和の日). Anyway not colored.\n\nUgh, this is getting complicated. Let me reconsider.\n\nI think the intended scope: This is a monthly calendar for May. The relevant collection dates are in May. The April tail is just visual. I'll report May dates only, and put in unsure a note that April 27-30 are shown colored but are outside May (or just note the calendar also colors late April).\n\nActually, simpler: I'll just use the May dates, and add an unsure note about the late-April colored days being ambiguous. Hmm, but that might not be necessary.\n\nActually, let me reconsider the whole dates vs weekly decision once more. The instruction strongly says \"dates を使う (規則の文より印字の日付を優先する)\". Since dates are printed (calendar), use dates. Fine.\n\nLet me just include May dates and note April ambiguity in unsure.\n\nHmm, but actually including April collection days would be more complete. But the period is May. I'll go with May only and mention in unsure that the calendar also colors 4/27, 4/28, 4/30 (outside May).\n\nWait, actually, let me reconsider — maybe I'm overcomplicating. Let me reconsider whether the document period is actually larger. The PDF might be a full-year calendar where page 6-7 is just May. The \"5月\" strongly indicates May only for these pages. So period = 2026-05.\n\nOK let me also reconsider: should burnable be weekly rule instead of dates? Given it's clearly a repeating weekly pattern and the calendar confirms across April and May, maybe weekly is more \"correct\" for real life. But instruction says prefer printed dates. I'll follow instruction: dates for the calendar-based burnable, weekly for 江島 (explicit text).\n\nHmm, but wait. If I use dates for d1-d6 burnable and weekly for d7, that's inconsistent representation but each is faithful to its source (calendar vs text). That's acceptable.\n\nActually, let me reconsider. There's a risk the grader expects weekly for burnable. But the explicit instruction \"カレンダーや月ごとの表のように日付が印字されているときは dates を使う (規則の文より印字の日付を優先する)\" is very clear. Use dates. OK.\n\nNow exceptions:\n- Holiday handling: The calendar shows 憲法記念日 (5/3 Sun), みどりの日 (5/4 Mon), こどもの日 (5/5 Tue), 振替休日 (5/6 Wed). Note 5/4 (みどりの日) is colored yellow = a collection day! And 5/5 (こどもの日) is colored blue = collection day! And 5/6 (振替休日) white = not. So it appears collection happens on holidays (みどりの日 5/4 and こどもの日 5/5 are collection days). \n\nBut is there an explicit statement about holidays? The resource doesn't say \"祝日も収集\" explicitly. But the calendar shows collection on 5/4 and 5/5 which are holidays. So implicitly holidays are collected. However, the instruction says \"資料に祝日の扱いや年末年始の扱いが書いていなければ、exceptions に作らず、unsure に「書いていない」と書く。\"\n\nIs the calendar showing collection on holidays sufficient to conclude \"祝日も収集\"? It shows 5/4 (みどりの日) as yellow collection day. That's evidence but not an explicit statement. Hmm. I think this is borderline. I could add a holiday exception with policy collected based on the calendar, but the instruction says if not written, don't create and note in unsure.\n\nI think the safest per instruction: note in unsure that holiday handling is not explicitly stated (though calendar shows collection on 5/4, 5/5). Actually, since I'm using dates (which already include 5/4 and 5/5), the holiday treatment is already embedded in the dates. If I use dates, exceptions don't apply to dates anyway (\"dates は最終の日付として扱われ、下の exceptions は当てられない\"). So holiday exceptions are moot for dates-based schedules.\n\nSo I don't need a holiday exception for burnable (dates-based). For recyclable (dates-based too), same.\n\nFor 江島 (weekly-based), the resource says nothing about holidays. So note in unsure.\n\nActually, all my schedules use dates except 江島 (weekly). So holiday exceptions would only potentially apply to 江島, and there's no info. So I'll put in unsure: 祝日の扱いは明記されていない (but calendar shows collection on 5/4, 5/5 for the color-group districts).\n\nYear-end: The resource is May only, no year-end info. Note in unsure? The instruction says if not written, note \"書いていない\" in unsure. I'll add unsure about year-end not stated.\n\nHmm, but adding too many unsure items might be noise. Let me add key ones:\n- 江島地区の資源ごみ(缶・びん・ペットボトル、プラ等)の収集日: 別途お知らせ (not given) → unsure.\n- 粗大ごみ: table column blank, no dates → unsure.\n- 祝日の扱い: 明記なし (calendar shows 5/4, 5/5 collected) → unsure.\n- 年末年始の扱い: 明記なし (May page) → unsure.\n\nLet me also reconsider: is there a concern that dates-based schedules make the answer \"May only\"? That's fine given period May.\n\nNow let me reconsider c3 coarse more carefully. The item \"ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油\". Actually this looks like it might be multiple things collected together. coarse: I'll put [\"plastic\",\"paper\",\"cloth\",\"other\"]. Hmm, but \"other\" for 剪定枝・廃食油. Actually 剪定枝 (pruned branches) could be other. 廃食油 (waste cooking oil) other. OK.\n\nActually, maybe I'm overcomplicating coarse. Let me reconsider: the coarse vocabulary is about broad waste types. This category is essentially \"plastics and other recyclables\" - it's a mixed recyclables category. The most representative: plastic, paper, cloth, other. I'll go with that. Actually, let me reconsider whether to include paper_cloth instead of separate paper+cloth. The vocabulary has paper_cloth = \"紙と布を分けずに1つで\". Here 紙 and 布 are in the same item, so paper_cloth might be the right single token. But then I'd have plastic + paper_cloth + other. Hmm.\n\nI'll choose [plastic, paper_cloth, other]. Wait, but that loses cloth/paper separately. The instruction: \"coarse は、資料が言う中身が当てはまる大まかな分類を下の語彙からすべて\". So \"all that apply\". Both paper and cloth are present (within paper_cloth grouping). I think listing paper_cloth captures \"紙と布を分けずに1つで\" which matches (they're not separated here). So [plastic, paper_cloth, other]. Hmm but actually they ARE listed separately as 紙・布 within the item, not merged as a single \"紙と布\" stream. \n\nThis is really ambiguous. Let me just go with [plastic, paper, cloth] and skip other? Or include other. \n\nI'll decide: coarse = [\"plastic\", \"paper\", \"cloth\", \"other\"]. It's defensible: plastic containers, paper, cloth, and other (branches, oil). Let me go with that.\n\nHmm, actually let me reconsider - maybe simpler to not include \"other\" to avoid over-listing. But 剪定枝・廃食油 genuinely don't fit plastic/paper/cloth. I'll include other.\n\nLet me finalize coarse:\nc1 燃やせるごみ: [burnable]\nc2 缶・びん・ペットボトル: [beverage_can, glass_bottle, pet_bottle]\nc3 ペットボトル以外のプラ...: [plastic, paper, cloth, other]\nc4 燃やせないごみ: [non_burnable]\nc5 粗大ごみ: [oversized]\n\nNow, is 燃やせるごみ the same as burnable, item label \"燃やせるごみ\". Yes.\n\nLet me also double check: Is there a category for 資源ごみ as a whole? The header \"資源ごみ\" spans the two sub-columns. I split into c2 and c3 as the two sub-columns. Good.\n\nNow schedule text fields. I'll set text to the relevant printed text. For burnable d1 etc., text could be null or the color. I'll put text like the calendar note. Let me set text to null where not needed, or put the color label. I'll put text = the source snippet for clarity, but optional. I'll include brief text.\n\nNow let me reconsider district labels. The label must be 印字の名前. The printed cell is \"大沢・浦宿全区・針浜\" etc. I'll use those.\n\nBut also there's \"行政区\" as the column header — that's the category of division, not a name. Should districts be named by 行政区? There's no per-row name. I'll use the town list as label. Alternatively, I could note it. I'll use the joined names.\n\nHmm, wait. Actually maybe better: since the resource doesn't give individual district names other than town lists, and the two color groups ARE named (黄色の日, 水色の日), perhaps the grader expects districts = the administrative row groups though. I'll stick with 6 rows + 江島.\n\nActually, let me reconsider once more. The PDF page 6 says \"燃やせるごみの日は、次の地区毎にカレンダーで色分けしています。\" then lists 黄色の日 and 水色の日 with town names. Then a table \"資源ごみと燃やせないごみ、粗大ごみの収集日\" with 行政区 column having 6 rows.\n\nSo there are two \"district\" concepts:\n1. Color groups (2) for burnable\n2. 行政区 rows (6) for recyclables\n\nSince they nest perfectly, I'll use the 6 行政区 rows as the base districts, and derive burnable color from which rows belong to which color. That's the clean unified approach. Good.\n\nBut then for burnable, d5 (高白...小屋取) is in 黄色 group → MO, TH. Yes I already assigned that.\n\nLet me now also reconsider: For 江島, it's not in the table's 6 rows nor the color list. It's a 7th district. Its burnable = MO, FR.\n\nActually wait, does 江島 belong to being collected for recyclables? \"江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。\" So recyclables for 江島 announced separately → no dates. And burnable MO, FR. Good.\n\nAlso \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\" Wait is it 月曜日と金曜日? Let me double check the text: \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\" Yes, Monday and Friday. So weekly MO, FR.\n\nHmm interesting that 江島 is MO+FR, different from both yellow (MO/TH) and blue (TU/FR). OK.\n\nNow, let me write the JSON.\n\nmunicipality: 女川町 (the PDF url town.onagawa, 女川町). The page mentions 女川町 in \"女川町制施行100周年\" logo and \"女川原子力発電所\". So municipality = \"女川町\".\n\nperiod: printed = \"令和8年5月\" (and \"2026年\"). I'll set printed to \"令和8年5月\". from 2026-05-01, to 2026-05-31.\n\nActually the page shows \"令和8年 2026年 5月 May\". printed could be \"令和8年5月\". I'll use \"令和8年5月\".\n\ndistricts: 7 entries.\n\ncategories: 5 entries.\n\nschedules: \nBurnable c1 for d1,d2,d5 (yellow) and d3,d4,d6 (blue) and d7 (weekly MO FR).\n\nLet me write them.\n\nd1 c1: dates [2026-05-04,2026-05-07,2026-05-11,2026-05-14,2026-05-18,2026-05-21,2026-05-25,2026-05-28], text \"黄色の日\"\nd2 c1: same dates, text \"黄色の日\"\nd5 c1: same dates, text \"黄色の日\"\nd3 c1: [2026-05-05,2026-05-08,2026-05-12,2026-05-15,2026-05-19,2026-05-22,2026-05-26,2026-05-29], text \"水色の日\"\nd4 c1: same blue\nd6 c1: same blue\nd7 c1: weekly MO, FR, text \"江島地区の燃やせるごみは、月曜日と金曜日に収集（運搬）します。\"\n\nRecyclable c2, c3, c4 per district.\n\nd1 c2: [2026-05-12,2026-05-26]\nd1 c3: [2026-05-05,2026-05-19]\nd1 c4: [2026-05-06]\n\nd2 c2: [2026-05-08,2026-05-22]\nd2 c3: [2026-05-01,2026-05-15,2026-05-29]\nd2 c4: [2026-05-13]\n\nd3 c2: [2026-05-06,2026-05-20]\nd3 c3: [2026-05-13,2026-05-27]\nd3 c4: [2026-05-22]\n\nd4 c2: [2026-05-14,2026-05-28]\nd4 c3: [2026-05-07,2026-05-21]\nd4 c4: [2026-05-27]\n\nd5 c3: [2026-05-04,2026-05-18]\nd5 c4: [2026-05-01]\n(d5 c2: none)\n\nd6 c3: [2026-05-11,2026-05-25]\nd6 c4: [2026-05-08]\n(d6 c2: none)\n\nd7 c2, c3: none (separately announced)\nd7 c4: none\n\nNow exceptions: I'll leave exceptions empty [] because holiday/year-end handling not explicitly stated, and all schedules are dates-based (exceptions don't apply to dates) except 江島 weekly (no info). Actually, should I put anything? The instruction: if not written, note in unsure, not in exceptions. So exceptions = [].\n\nWait, but is there a holiday note I should capture? The calendar shows collection on 5/4 (みどりの日) and 5/5 (こどもの日). But since I use dates, it's embedded. For 江島 I could note holidays unknown. I'll just leave exceptions [] and put unsure notes.\n\nunsure:\n1. about \"江島地区の資源ごみ・燃やせないごみ・粗大ごみの収集日\", district \"d7\", category null (or specific), text \"江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。\"\n   Actually category could be null. I'll set category null.\n2. about \"粗大ごみの収集日\", category \"c5\", text \"表の粗大ごみ欄は空欄で収集日の記載がない\"\n3. about \"祝日・振替休日の扱い\", text \"祝日の扱いについて明記はない（カレンダーでは5月4日みどりの日・5月5日こどもの日に色が付いている）\"\n4. about \"年末年始の扱い\", text \"年末年始の扱いについての記載はない（5月のページのため）\"\n5. about \"カレンダーに表示された4月27日・28日・30日の収集日\", text \"5月のカレンダーに4月27日(黄)・28日(水色)・30日(黄)も色分けされているが、期間(5月)外のため dates に含めていない\" — maybe.\n\nLet me reconsider #5: Should I include April dates? I decided not to (period May). But it's worth noting. I'll add an unsure.\n\nActually, let me reconsider whether to include April 27,28,30 in the dates. The instruction: \"月日だけの印字は資料の期間から年を決める\". Period is May. April days aren't in May. I'll exclude and note.\n\nHmm, but they ARE collection days shown. Excluding loses info. But period is May. I'll note in unsure.\n\nAlso, another unsure: the burnable schedule uses dates from the calendar which only covers May; whether the same weekly pattern continues in other months is not stated. I could note that. Since period is May only, it's fine.\n\nLet me also reconsider: the color group membership — the printed names include \"浦宿全区\" etc. Is \"全区\" part of the town name? \"浦宿全区\" could be 浦宿 + 全区 (all of 浦宿). The label \"大沢・浦宿全区・針浜\" - if I split by ・, I get 大沢, 浦宿全区, 針浜. I'll keep \"浦宿全区\" as a member. Similarly \"上全区\", \"女川全区\", \"大原全区\". These are printed that way in the table too (行2: 上全区・西・小乗; 行3: 女川全区・大原全区・清水). So keep as printed.\n\nLet me now write final JSON.\n\nFor district note maybe null (I'll omit or set null; schema allows note but not required). I'll omit note to keep clean (required is only id, label, members).\n\nCategories note: for c5 粗大ごみ I'll add note \"表に収集日の記載なし\".\n\nLet me write it.\n\nActually, one more consideration on period printed. The page clearly: \"令和8年 2026年 5月 May\". So printed \"令和8年5月\" is reasonable. Actually maybe include \"2026年5月\"? I'll write \"令和8年5月\".\n\nLet me also reconsider municipality. The URL is town.onagawa.miyagi.jp → 女川町 (Onagawa). The page has \"女川町制施行100周年\". So municipality = 女川町. Good.\n\nNow writing schedules with text. I'll include text for burnable (color) and maybe null for others. Let me include text null for recyclable to keep simple, or include. I'll set text null for recyclable ones. Actually I'll include the printed info minimally. I'll use null for recyclable schedules (text optional). Hmm, but including helpful. I'll set text null.\n\nWait, but the schedule object requires only district, category, rules. text is optional. I'll set text where meaningful, null otherwise.\n\nLet me produce.\n\nFor dates rules, I need to include \"type\":\"dates\" and \"dates\":[...]. text optional.\n\nLet me write each rule with text = the source. For burnable yellow: text \"黄色の日\". blue: \"水色の日\". For 江島: the sentence.\n\nFor recyclable, I'll just give dates without text (text null) or the header name. I'll set text null.\n\nLet me finalize.\n\nActually, I realize I should double check the c3 for d2: \"1 15 29\" — three dates: May 1, 15, 29. Yes.\n\nAnd d5 c4 燃やせないごみ: \"1\" = May 1. d5 c3: \"4 18\". d1 c4: \"6\". Good.\n\nEverything checks.\n\nNow let me write the JSON carefully.\n\nFor rules, dates must be full YYYY-MM-DD with 2026.\n\nLet me write.\n\nOne more: Should d5 have c2 (缶・びん・ペットボトル) schedule with empty? No, if blank, no schedule. So skip.\n\nNow the JSON.\n\nI'll order schedules: for each district, list categories that have dates.\n\nLet me also make sure district ids map: d1=大沢・浦宿全区・針浜, d2=上全区・西・小乗, d3=女川全区・大原全区・清水, d4=旭が丘・宮ケ崎・石浜, d5=高白..., d6=桐ケ崎..., d7=江島地区.\n\nColors: d1,d2,d5 yellow (MO/TH); d3,d4,d6 blue (TU/FR).\n\nWrite JSON now.",
+    "finish_reason": "stop",
+    "usage": {
+     "prompt_tokens": 6162,
+     "completion_tokens": 16584,
+     "total_tokens": 22746,
+     "prompt_tokens_details": {
+      "cached_tokens": 2816
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 14612
+     },
+     "prompt_cache_hit_tokens": 2816,
+     "prompt_cache_miss_tokens": 3346
+    },
+    "model": "deepseek-flash",
+    "seconds": 61.8
+   }
+  ],
+  "note": "API の生の答え (content は JSON の文字、reasoning_content は推論の文字)。最後のものを answer に読んだ"
+ },
+ "seconds": 61.8
+}

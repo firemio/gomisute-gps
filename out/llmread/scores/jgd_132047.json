@@ -1,0 +1,6119 @@
+{
+ "deepseek": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "132047",
+  "summary": {
+   "units": 90,
+   "exact": 29,
+   "wrong_dates": 195,
+   "missing_dates": 1025,
+   "gt_dates": 4046,
+   "unmapped": 18,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 10,
+  "courses_mapped": 8,
+  "district_map": {
+   "095664": {
+    "132047-ef92a103:d1": "name"
+   },
+   "095666": {
+    "132047-5082a8fd:d1": "name"
+   },
+   "095667": {
+    "132047-071f035f:d1": "name"
+   },
+   "095671": {
+    "132047-5b262910:d1": "name"
+   },
+   "095674": {
+    "132047-518f8808:d1": "name"
+   },
+   "095677": {
+    "132047-e042b962:d1": "name"
+   },
+   "095685": {
+    "132047-f68ed35f:d1": "name"
+   },
+   "095687": {
+    "132047-f7cf4b5b:d1": "name"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "132047-ef92a103",
+    "id": "c1",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c2",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c3",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c5",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c6",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c7",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c1",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c2",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c3",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c4",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c6",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c7",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c2",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c3",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c5",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c6",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c7",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c2",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c3",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c5",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c6",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c7",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c2",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c4",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c2",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c4",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c1",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c2",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c4",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c1",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c2",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c3",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c4",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   }
+  ],
+  "units": [
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01",
+       "2027-01-15"
+      ],
+      "missing": [
+       "2027-01-08",
+       "2027-01-22"
+      ],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 2,
+      "missing_n": 2
+     }
+    ],
+    "exact": false,
+    "wrong_n": 2,
+    "missing_n": 2,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 51
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01",
+       "2027-01-15"
+      ],
+      "missing": [
+       "2027-01-08",
+       "2027-01-22"
+      ],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 2,
+      "missing_n": 2
+     }
+    ],
+    "exact": false,
+    "wrong_n": 2,
+    "missing_n": 2,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-08",
+       "2027-01-22"
+      ],
+      "missing": [
+       "2027-01-15",
+       "2027-01-29"
+      ],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 2,
+      "missing_n": 2
+     }
+    ],
+    "exact": false,
+    "wrong_n": 2,
+    "missing_n": 2,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-07",
+       "2026-04-21",
+       "2026-05-05",
+       "2026-05-19",
+       "2026-06-02",
+       "2026-06-16"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 28,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 28,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 27
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-07",
+       "2026-04-21",
+       "2026-05-05",
+       "2026-05-19",
+       "2026-06-02",
+       "2026-06-16"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 28,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 28,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 27
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 27,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-04-21",
+       "2026-05-05",
+       "2026-05-19",
+       "2026-06-02",
+       "2026-06-16"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 24,
+      "missing_n": 24
+     }
+    ],
+    "exact": false,
+    "wrong_n": 24,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-06",
+       "2026-04-20",
+       "2026-05-04",
+       "2026-05-18",
+       "2026-06-01",
+       "2026-06-15"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 28,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 28,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-13",
+       "2026-04-27",
+       "2026-05-11",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-22"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 28
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 28,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-06",
+       "2026-04-20",
+       "2026-05-04",
+       "2026-05-18",
+       "2026-06-01",
+       "2026-06-15"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 28,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 28,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-13",
+       "2026-04-27",
+       "2026-05-11",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-22"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 28
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 28,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-13",
+       "2026-04-27",
+       "2026-05-11",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-22"
+      ],
+      "missing": [
+       "2026-04-06",
+       "2026-04-20",
+       "2026-05-04",
+       "2026-05-18",
+       "2026-06-01",
+       "2026-06-15"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 24,
+      "missing_n": 24
+     }
+    ],
+    "exact": false,
+    "wrong_n": 24,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "132047",
+  "summary": {
+   "units": 90,
+   "exact": 37,
+   "wrong_dates": 38,
+   "missing_dates": 816,
+   "gt_dates": 4046,
+   "unmapped": 18,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 10,
+  "courses_mapped": 8,
+  "district_map": {
+   "095664": {
+    "132047-ef92a103:d1": "name"
+   },
+   "095666": {
+    "132047-5082a8fd:d1": "name"
+   },
+   "095667": {
+    "132047-071f035f:d1": "name"
+   },
+   "095671": {
+    "132047-5b262910:d1": "name"
+   },
+   "095674": {
+    "132047-518f8808:d1": "name"
+   },
+   "095677": {
+    "132047-e042b962:d1": "name"
+   },
+   "095685": {
+    "132047-f68ed35f:d1": "name"
+   },
+   "095687": {
+    "132047-f7cf4b5b:d1": "name"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "132047-ef92a103",
+    "id": "c1",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c2",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c3",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c5",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c6",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-ef92a103",
+    "id": "c7",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c1",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c2",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c3",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c4",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c6",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5082a8fd",
+    "id": "c7",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c2",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c3",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c5",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c6",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-071f035f",
+    "id": "c7",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c2",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c3",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c5",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c6",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-5b262910",
+    "id": "c7",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c2",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c4",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-518f8808",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c2",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c4",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-e042b962",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c1",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c2",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c3",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c4",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f68ed35f",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c1",
+    "label": "古紙・古着",
+    "keys": [
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c2",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c3",
+    "label": "空きびん・缶",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c4",
+    "label": "燃やせるごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c6",
+    "label": "プラスチック類",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "132047-f7cf4b5b",
+    "id": "c7",
+    "label": "有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "label"
+   }
+  ],
+  "units": [
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095664",
+    "course_name": "大沢3丁目・深大寺全域・井口全域・野崎2・3丁目地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-ef92a103:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095666",
+    "course_name": "野崎4丁目・大沢1・2・4・5・6丁目地区",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5082a8fd:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095667",
+    "course_name": "上連雀1丁目～5丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-071f035f:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01",
+       "2027-01-15"
+      ],
+      "missing": [
+       "2027-01-08",
+       "2027-01-22"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 2,
+      "missing_n": 2
+     }
+    ],
+    "exact": false,
+    "wrong_n": 2,
+    "missing_n": 2,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01",
+       "2027-01-15"
+      ],
+      "missing": [
+       "2027-01-08",
+       "2027-01-22"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 2,
+      "missing_n": 2
+     }
+    ],
+    "exact": false,
+    "wrong_n": 2,
+    "missing_n": 2,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-08",
+       "2027-01-22"
+      ],
+      "missing": [
+       "2027-01-15",
+       "2027-01-29"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 2,
+      "missing_n": 2
+     }
+    ],
+    "exact": false,
+    "wrong_n": 2,
+    "missing_n": 2,
+    "answered": false
+   },
+   {
+    "course": "095671",
+    "course_name": "下連雀1丁目～4丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-5b262910:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-30"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095674",
+    "course_name": "野崎1丁目・上連雀6丁目～9丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-518f8808:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095677",
+    "course_name": "新川6丁目・下連雀5丁目～9丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-e042b962:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095680",
+    "course_name": "井の頭全域",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 51,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "095682",
+    "course_name": "牟礼全域",
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095685",
+    "course_name": "北野全域・新川2・3丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f68ed35f:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2027-01-01"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c7"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "non_burnable",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "095687",
+    "course_name": "中原全域・新川1・4・5丁目地区",
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "132047-f7cf4b5b:d1",
+      "how": "name",
+      "categories": [
+       "c6"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-31"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,3949 @@
+{
+ "deepseek": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "113654",
+  "summary": {
+   "units": 48,
+   "exact": 2,
+   "wrong_dates": 859,
+   "missing_dates": 1229,
+   "gt_dates": 1636,
+   "unmapped": 6,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 8,
+  "courses_mapped": 7,
+  "district_map": {
+   "01": {
+    "113654-6ff96743:d1": "name"
+   },
+   "04": {
+    "113654-7957ef41:d1": "name"
+   },
+   "05": {
+    "113654-98338746:d1": "name"
+   },
+   "07": {
+    "113654-9cd92a1f:d1": "name"
+   },
+   "08": {
+    "113654-86f7803a:d1": "name"
+   },
+   "02": {
+    "113654-29f44caf:d1": "source_doc"
+   },
+   "06": {
+    "113654-4d18bd8c:d1": "source_doc"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "113654-6ff96743",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   }
+  ],
+  "units": [
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-08",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24",
+       "2026-07-08",
+       "2026-07-22"
+      ],
+      "missing": [
+       "2026-04-09",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-22",
+       "2026-07-09",
+       "2026-07-23"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 16,
+      "missing_n": 16
+     }
+    ],
+    "exact": false,
+    "wrong_n": 16,
+    "missing_n": 16,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-08",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24",
+       "2026-07-08",
+       "2026-07-22"
+      ],
+      "missing": [
+       "2026-04-09",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-22",
+       "2026-07-09",
+       "2026-07-23"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 16,
+      "missing_n": 16
+     }
+    ],
+    "exact": false,
+    "wrong_n": 16,
+    "missing_n": 16,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-15",
+       "2026-05-20",
+       "2026-06-17",
+       "2026-07-15",
+       "2026-08-19",
+       "2026-09-16"
+      ],
+      "missing": [
+       "2026-04-14",
+       "2026-05-18",
+       "2026-06-13",
+       "2026-07-14",
+       "2026-08-18",
+       "2026-09-14"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 12,
+      "missing_n": 12
+     }
+    ],
+    "exact": false,
+    "wrong_n": 12,
+    "missing_n": 12,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-03",
+       "2026-04-17",
+       "2026-05-01",
+       "2026-05-15",
+       "2026-06-05",
+       "2026-06-19"
+      ],
+      "missing": [
+       "2026-04-02",
+       "2026-04-16",
+       "2026-05-02",
+       "2026-05-20",
+       "2026-06-02",
+       "2026-06-16"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 22,
+      "missing_n": 23
+     }
+    ],
+    "exact": false,
+    "wrong_n": 22,
+    "missing_n": 23,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-11",
+       "2026-05-09",
+       "2026-05-23",
+       "2026-06-13",
+       "2026-06-27",
+       "2026-07-11"
+      ],
+      "missing": [
+       "2026-04-13",
+       "2026-05-16",
+       "2026-05-29",
+       "2026-06-12",
+       "2026-06-25",
+       "2026-07-13"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 19,
+      "missing_n": 19
+     }
+    ],
+    "exact": false,
+    "wrong_n": 19,
+    "missing_n": 19,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-09",
+       "2026-04-23",
+       "2026-05-14",
+       "2026-05-28",
+       "2026-06-11",
+       "2026-06-25"
+      ],
+      "missing": [
+       "2026-04-08",
+       "2026-04-21",
+       "2026-05-12",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-20"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "source_doc",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 52,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 52,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-09",
+       "2026-04-23",
+       "2026-05-14",
+       "2026-05-28",
+       "2026-06-11",
+       "2026-06-25"
+      ],
+      "missing": [
+       "2026-04-08",
+       "2026-04-21",
+       "2026-05-12",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-20"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "source_doc",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-15",
+       "2026-05-20",
+       "2026-06-17",
+       "2026-07-15",
+       "2026-08-19",
+       "2026-09-16"
+      ],
+      "missing": [
+       "2026-04-20",
+       "2026-05-23",
+       "2026-06-19",
+       "2026-07-21",
+       "2026-08-24",
+       "2026-09-19"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 11,
+      "missing_n": 11
+     }
+    ],
+    "exact": false,
+    "wrong_n": 11,
+    "missing_n": 11,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "source_doc",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-05-07",
+       "2026-05-21",
+       "2026-06-04",
+       "2026-06-18",
+       "2026-08-06",
+       "2026-09-03"
+      ],
+      "missing": [
+       "2026-05-02",
+       "2026-05-20",
+       "2026-06-02",
+       "2026-06-16",
+       "2026-08-03",
+       "2026-09-02"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 18,
+      "missing_n": 18
+     }
+    ],
+    "exact": false,
+    "wrong_n": 18,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "source_doc",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-08",
+       "2026-04-22",
+       "2026-05-13",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24"
+      ],
+      "missing": [
+       "2026-04-13",
+       "2026-04-25",
+       "2026-05-16",
+       "2026-05-29",
+       "2026-06-12",
+       "2026-06-25"
+      ],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 23,
+      "missing_n": 23
+     }
+    ],
+    "exact": false,
+    "wrong_n": 23,
+    "missing_n": 23,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 12,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-13",
+       "2026-04-25",
+       "2026-05-16",
+       "2026-05-29",
+       "2026-06-12",
+       "2026-06-25"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 24
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-07",
+       "2026-04-10",
+       "2026-04-14",
+       "2026-04-17",
+       "2026-04-21"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 103
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-13",
+       "2026-04-25",
+       "2026-05-16",
+       "2026-05-29",
+       "2026-06-12",
+       "2026-06-25"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 24
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-23",
+       "2026-05-27",
+       "2026-06-23",
+       "2026-07-24",
+       "2026-08-27",
+       "2026-09-26"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 12
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 12,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-04",
+       "2026-04-18",
+       "2026-05-08",
+       "2026-05-22",
+       "2026-06-04",
+       "2026-06-18"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 24
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-09",
+       "2026-04-22",
+       "2026-05-13",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-22"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 24
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-22",
+       "2026-05-13",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24",
+       "2026-08-12"
+      ],
+      "missing": [
+       "2026-04-21",
+       "2026-05-12",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-20",
+       "2026-08-08"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 20,
+      "missing_n": 20
+     }
+    ],
+    "exact": false,
+    "wrong_n": 20,
+    "missing_n": 20,
+    "answered": false
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-02",
+       "2026-04-06",
+       "2026-04-09",
+       "2026-04-13",
+       "2026-04-16",
+       "2026-04-20"
+      ],
+      "missing": [
+       "2026-04-03",
+       "2026-04-07",
+       "2026-04-10",
+       "2026-04-14",
+       "2026-04-17",
+       "2026-04-21"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 104,
+      "missing_n": 103
+     }
+    ],
+    "exact": false,
+    "wrong_n": 104,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-22",
+       "2026-05-13",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24",
+       "2026-08-12"
+      ],
+      "missing": [
+       "2026-04-21",
+       "2026-05-12",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-20",
+       "2026-08-08"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 20,
+      "missing_n": 20
+     }
+    ],
+    "exact": false,
+    "wrong_n": 20,
+    "missing_n": 20,
+    "answered": false
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-16",
+       "2026-05-21",
+       "2026-06-18",
+       "2026-07-16",
+       "2026-08-20",
+       "2026-09-17"
+      ],
+      "missing": [
+       "2026-04-15",
+       "2026-05-19",
+       "2026-06-15",
+       "2026-07-15",
+       "2026-08-19",
+       "2026-09-15"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 12,
+      "missing_n": 12
+     }
+    ],
+    "exact": false,
+    "wrong_n": 12,
+    "missing_n": 12,
+    "answered": false
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-05-06",
+       "2026-05-20",
+       "2026-06-03",
+       "2026-06-17",
+       "2026-08-05",
+       "2026-09-02"
+      ],
+      "missing": [
+       "2026-05-01",
+       "2026-05-19",
+       "2026-06-01",
+       "2026-06-15",
+       "2026-08-01",
+       "2026-09-01"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 18,
+      "missing_n": 18
+     }
+    ],
+    "exact": false,
+    "wrong_n": 18,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23",
+       "2026-08-11"
+      ],
+      "missing": [
+       "2026-04-27",
+       "2026-05-18",
+       "2026-05-30",
+       "2026-06-13",
+       "2026-06-26",
+       "2026-08-18"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-06",
+       "2026-05-04",
+       "2026-05-18",
+       "2026-06-01",
+       "2026-06-15",
+       "2026-07-06"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-05-11",
+       "2026-05-23",
+       "2026-06-06",
+       "2026-06-19",
+       "2026-07-07"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-06",
+       "2026-05-04",
+       "2026-05-18",
+       "2026-06-01",
+       "2026-06-15",
+       "2026-07-06"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-05-11",
+       "2026-05-23",
+       "2026-06-06",
+       "2026-06-19",
+       "2026-07-07"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-09",
+       "2026-05-14",
+       "2026-06-11",
+       "2026-07-09",
+       "2026-08-13",
+       "2026-09-10"
+      ],
+      "missing": [
+       "2026-04-17",
+       "2026-05-21",
+       "2026-06-17",
+       "2026-07-17",
+       "2026-08-21",
+       "2026-09-17"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 12,
+      "missing_n": 12
+     }
+    ],
+    "exact": false,
+    "wrong_n": 12,
+    "missing_n": 12,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-11",
+       "2026-04-25",
+       "2026-05-09",
+       "2026-05-23",
+       "2026-06-27",
+       "2026-07-11"
+      ],
+      "missing": [
+       "2026-04-14",
+       "2026-04-27",
+       "2026-05-18",
+       "2026-05-30",
+       "2026-06-26",
+       "2026-07-14"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 19,
+      "missing_n": 19
+     }
+    ],
+    "exact": false,
+    "wrong_n": 19,
+    "missing_n": 19,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-05-06",
+       "2026-05-20",
+       "2026-06-03",
+       "2026-06-17",
+       "2026-08-05",
+       "2026-09-02"
+      ],
+      "missing": [
+       "2026-05-01",
+       "2026-05-19",
+       "2026-06-01",
+       "2026-06-15",
+       "2026-08-01",
+       "2026-09-01"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 18,
+      "missing_n": 18
+     }
+    ],
+    "exact": false,
+    "wrong_n": 18,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-06",
+       "2026-05-04",
+       "2026-05-18",
+       "2026-06-01",
+       "2026-06-15",
+       "2026-07-06"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-05-11",
+       "2026-05-23",
+       "2026-06-06",
+       "2026-06-19",
+       "2026-07-07"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "burnable",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 52,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 52,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-06",
+       "2026-05-04",
+       "2026-05-18",
+       "2026-06-01",
+       "2026-06-15",
+       "2026-07-06"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-05-11",
+       "2026-05-23",
+       "2026-06-06",
+       "2026-06-19",
+       "2026-07-07"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-23",
+       "2026-05-28",
+       "2026-06-25",
+       "2026-07-23",
+       "2026-08-27",
+       "2026-09-24"
+      ],
+      "missing": [
+       "2026-04-17",
+       "2026-05-21",
+       "2026-06-17",
+       "2026-07-17",
+       "2026-08-21",
+       "2026-09-17"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 12,
+      "missing_n": 12
+     }
+    ],
+    "exact": false,
+    "wrong_n": 12,
+    "missing_n": 12,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-13",
+       "2026-05-11",
+       "2026-05-25",
+       "2026-06-08",
+       "2026-06-22",
+       "2026-07-13"
+      ],
+      "missing": [
+       "2026-04-14",
+       "2026-05-18",
+       "2026-05-30",
+       "2026-06-13",
+       "2026-06-26",
+       "2026-07-14"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 21,
+      "missing_n": 21
+     }
+    ],
+    "exact": false,
+    "wrong_n": 21,
+    "missing_n": 21,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-05-06",
+       "2026-05-20",
+       "2026-06-03",
+       "2026-06-17",
+       "2026-08-05",
+       "2026-09-02"
+      ],
+      "missing": [
+       "2026-05-01",
+       "2026-05-19",
+       "2026-06-01",
+       "2026-06-15",
+       "2026-08-01",
+       "2026-09-01"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 18,
+      "missing_n": 18
+     }
+    ],
+    "exact": false,
+    "wrong_n": 18,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-04-20",
+       "2026-05-11",
+       "2026-05-23",
+       "2026-06-06",
+       "2026-06-19"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 23,
+      "missing_n": 23
+     }
+    ],
+    "exact": false,
+    "wrong_n": 23,
+    "missing_n": 23,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-02",
+       "2026-04-06",
+       "2026-04-09",
+       "2026-04-13",
+       "2026-04-16",
+       "2026-04-20"
+      ],
+      "missing": [
+       "2026-04-03",
+       "2026-04-07",
+       "2026-04-10",
+       "2026-04-14",
+       "2026-04-17",
+       "2026-04-21"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 104,
+      "missing_n": 103
+     }
+    ],
+    "exact": false,
+    "wrong_n": 104,
+    "missing_n": 103,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "missing": [
+       "2026-04-07",
+       "2026-04-20",
+       "2026-05-11",
+       "2026-05-23",
+       "2026-06-06",
+       "2026-06-19"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 23,
+      "missing_n": 23
+     }
+    ],
+    "exact": false,
+    "wrong_n": 23,
+    "missing_n": 23,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-08",
+       "2026-04-22",
+       "2026-05-13",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24"
+      ],
+      "missing": [
+       "2026-04-13",
+       "2026-05-16",
+       "2026-06-12",
+       "2026-07-13",
+       "2026-08-17",
+       "2026-09-12"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 23,
+      "missing_n": 11
+     }
+    ],
+    "exact": false,
+    "wrong_n": 23,
+    "missing_n": 11,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-04-10",
+       "2026-04-24",
+       "2026-05-08",
+       "2026-05-22",
+       "2026-06-12",
+       "2026-07-10"
+      ],
+      "missing": [
+       "2026-04-14",
+       "2026-04-27",
+       "2026-05-18",
+       "2026-05-30",
+       "2026-06-13",
+       "2026-07-14"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 23,
+      "missing_n": 23
+     }
+    ],
+    "exact": false,
+    "wrong_n": 23,
+    "missing_n": 23,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-11-01"
+      ],
+      "missing": [
+       "2026-04-15",
+       "2026-05-19",
+       "2026-06-15",
+       "2026-07-15",
+       "2026-08-19",
+       "2026-09-15"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure"
+      ],
+      "wrong_n": 1,
+      "missing_n": 14
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 14,
+    "answered": false
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "113654",
+  "summary": {
+   "units": 48,
+   "exact": 48,
+   "wrong_dates": 0,
+   "missing_dates": 0,
+   "gt_dates": 1636,
+   "unmapped": 0,
+   "answered": 12,
+   "answered_exact": 12,
+   "answered_wrong": 0
+  },
+  "courses": 8,
+  "courses_mapped": 8,
+  "district_map": {
+   "01": {
+    "113654-6ff96743:d1": "name"
+   },
+   "02": {
+    "113654-29f44caf:d1": "name"
+   },
+   "04": {
+    "113654-7957ef41:d1": "name"
+   },
+   "05": {
+    "113654-98338746:d1": "name"
+   },
+   "07": {
+    "113654-9cd92a1f:d1": "name"
+   },
+   "08": {
+    "113654-86f7803a:d1": "name"
+   },
+   "03": {
+    "113654-8e27d502:d1": "source_doc"
+   },
+   "06": {
+    "113654-4d18bd8c:d1": "source_doc"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "113654-6ff96743",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-6ff96743",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-29f44caf",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-8e27d502",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-8e27d502",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-8e27d502",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-8e27d502",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-8e27d502",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-7957ef41",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-98338746",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-4d18bd8c",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-9cd92a1f",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c1",
+    "label": "可燃ごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c2",
+    "label": "不燃ごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c3",
+    "label": "紙・布類",
+    "keys": [
+     "paper_cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c4",
+    "label": "カン・ビン",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113654-86f7803a",
+    "id": "c5",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   }
+  ],
+  "units": [
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "01",
+    "course_name": "下小鹿野",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-6ff96743:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "02",
+    "course_name": "小鹿野・伊豆沢",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-29f44caf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-8e27d502:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-8e27d502:d1",
+      "how": "source_doc",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-8e27d502:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-8e27d502:d1",
+      "how": "source_doc",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-8e27d502:d1",
+      "how": "source_doc",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "03",
+    "course_name": "小鹿野（新井・腰の根）",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-8e27d502:d1",
+      "how": "source_doc",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "04",
+    "course_name": "長若",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-7957ef41:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "05",
+    "course_name": "三田川・倉尾",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-98338746:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "06",
+    "course_name": "薄",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-4d18bd8c:d1",
+      "how": "source_doc",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "burnable",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "07",
+    "course_name": "薄8区",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-9cd92a1f:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": [],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "beverage_can",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "glass_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "paper_cloth",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "08",
+    "course_name": "小森・薄（3区・須川）",
+    "key": "pet_bottle",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113654-86f7803a:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   }
+  ]
+ }
+}

@@ -1,6 +1,6 @@
 """候補が「家庭ごみの収集日の資料」かを LLM に判定させる (使わないときは --no-llm)
 
-nationwide/readers/llm.py (OpenAI 互換。モデルは GOMISUTE_LLM_MODEL、キーは GOMISUTE_LLM_API_KEY) で呼ぶ。
+nationwide/llmread/llm.py (OpenAI 互換。モデルは GOMISUTE_LLM_MODEL、キーは GOMISUTE_LLM_API_KEY) で呼ぶ。
 渡すのは短い抜粋だけ: 題名・見出し・収集日らしい表の中身 (800 字まで)・本文の始め (<main> か題名の h1 から約 2,000 字。
 ヘッダーやメニューの文字は入れない)、PDF なら 1 ページ目の文字 (ごみの収集のページ (page_hits) があれば、そのページの一覧と、
 1 ページ目の始め 400 字と、言葉の多いページ 4 つの始め 700 字ずつ)、文字の無い PDF なら 1 ページ目の画像、
@@ -70,8 +70,8 @@ def normalize(ans):
 class Judge:
     def __init__(self, cache_dir, ask=None, model=None, max_parallel=4):
         if ask is None:
-            sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "readers"))
-            import llm                                        # nationwide/readers/llm.py
+            sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "llmread"))
+            import llm                                        # nationwide/llmread/llm.py
             if not os.environ.get("GOMISUTE_LLM_API_KEY"):
                 raise RuntimeError("環境変数 GOMISUTE_LLM_API_KEY が無い (LLM を使わないときは --no-llm)")
             ask, model = llm.ask_json, model or llm.MODEL

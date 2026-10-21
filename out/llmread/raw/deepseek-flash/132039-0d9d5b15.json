@@ -1,0 +1,613 @@
+{
+ "doc_id": "132039-0d9d5b15",
+ "model": "deepseek-flash",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "decf71cf7a0249bc9dc0bcf56800bd3b9ae85f17d8078ef667044a6eb9c68113",
+ "started_at": "2026-10-21T11:16:57+00:00",
+ "images": 7,
+ "answer": {
+  "municipality": "武蔵野市",
+  "period": {
+   "printed": "2026年4月～2027年3月",
+   "from": "2026-04-01",
+   "to": "2027-03-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "B地区",
+    "members": [
+     "吉祥寺本町2・3・4丁目",
+     "御殿山"
+    ]
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やすごみ",
+    "coarse": [
+     "burnable"
+    ]
+   },
+   {
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "coarse": [
+     "plastic"
+    ]
+   },
+   {
+    "id": "c3",
+    "label": "燃やさないごみ",
+    "coarse": [
+     "non_burnable"
+    ]
+   },
+   {
+    "id": "c4",
+    "label": "古紙・古着",
+    "coarse": [
+     "paper_cloth"
+    ]
+   },
+   {
+    "id": "c5",
+    "label": "ペットボトル",
+    "coarse": [
+     "pet_bottle"
+    ]
+   },
+   {
+    "id": "c6",
+    "label": "びん",
+    "coarse": [
+     "glass_bottle"
+    ]
+   },
+   {
+    "id": "c7",
+    "label": "缶",
+    "coarse": [
+     "beverage_can"
+    ]
+   },
+   {
+    "id": "c8",
+    "label": "危険有害",
+    "coarse": [
+     "hazardous"
+    ]
+   },
+   {
+    "id": "c9",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ],
+    "note": "予約制"
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-02",
+       "2026-04-06",
+       "2026-04-09",
+       "2026-04-13",
+       "2026-04-16",
+       "2026-04-20",
+       "2026-04-23",
+       "2026-04-27",
+       "2026-04-30",
+       "2026-05-04",
+       "2026-05-07",
+       "2026-05-11",
+       "2026-05-14",
+       "2026-05-18",
+       "2026-05-21",
+       "2026-05-25",
+       "2026-05-28",
+       "2026-06-01",
+       "2026-06-04",
+       "2026-06-08",
+       "2026-06-11",
+       "2026-06-15",
+       "2026-06-18",
+       "2026-06-22",
+       "2026-06-25",
+       "2026-06-29",
+       "2026-07-02",
+       "2026-07-06",
+       "2026-07-09",
+       "2026-07-13",
+       "2026-07-16",
+       "2026-07-20",
+       "2026-07-23",
+       "2026-07-27",
+       "2026-07-30",
+       "2026-08-03",
+       "2026-08-06",
+       "2026-08-10",
+       "2026-08-13",
+       "2026-08-17",
+       "2026-08-20",
+       "2026-08-24",
+       "2026-08-27",
+       "2026-08-31",
+       "2026-09-03",
+       "2026-09-07",
+       "2026-09-10",
+       "2026-09-14",
+       "2026-09-17",
+       "2026-09-21",
+       "2026-09-24",
+       "2026-09-28",
+       "2026-10-01",
+       "2026-10-05",
+       "2026-10-08",
+       "2026-10-12",
+       "2026-10-15",
+       "2026-10-19",
+       "2026-10-22",
+       "2026-10-26",
+       "2026-10-29",
+       "2026-11-02",
+       "2026-11-05",
+       "2026-11-09",
+       "2026-11-12",
+       "2026-11-16",
+       "2026-11-19",
+       "2026-11-23",
+       "2026-11-26",
+       "2026-11-30",
+       "2026-12-03",
+       "2026-12-07",
+       "2026-12-10",
+       "2026-12-14",
+       "2026-12-17",
+       "2026-12-21",
+       "2026-12-24",
+       "2026-12-28",
+       "2027-01-04",
+       "2027-01-07",
+       "2027-01-11",
+       "2027-01-14",
+       "2027-01-18",
+       "2027-01-21",
+       "2027-01-25",
+       "2027-01-28",
+       "2027-02-01",
+       "2027-02-04",
+       "2027-02-08",
+       "2027-02-11",
+       "2027-02-15",
+       "2027-02-18",
+       "2027-02-22",
+       "2027-02-25",
+       "2027-03-01",
+       "2027-03-04",
+       "2027-03-08",
+       "2027-03-11",
+       "2027-03-15",
+       "2027-03-18",
+       "2027-03-22",
+       "2027-03-25",
+       "2027-03-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12",
+       "2026-05-19",
+       "2026-05-26",
+       "2026-06-02",
+       "2026-06-09",
+       "2026-06-16",
+       "2026-06-23",
+       "2026-06-30",
+       "2026-07-07",
+       "2026-07-14",
+       "2026-07-21",
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08",
+       "2026-09-15",
+       "2026-09-22",
+       "2026-09-29",
+       "2026-10-06",
+       "2026-10-13",
+       "2026-10-20",
+       "2026-10-27",
+       "2026-11-03",
+       "2026-11-10",
+       "2026-11-17",
+       "2026-11-24",
+       "2026-12-01",
+       "2026-12-08",
+       "2026-12-15",
+       "2026-12-22",
+       "2027-01-05",
+       "2027-01-12",
+       "2027-01-19",
+       "2027-01-26",
+       "2027-02-02",
+       "2027-02-09",
+       "2027-02-16",
+       "2027-02-23",
+       "2027-03-02",
+       "2027-03-09",
+       "2027-03-16",
+       "2027-03-23",
+       "2027-03-30"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-01",
+       "2026-04-15",
+       "2026-04-29",
+       "2026-05-13",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24",
+       "2026-07-08",
+       "2026-07-22",
+       "2026-08-05",
+       "2026-08-19",
+       "2026-09-02",
+       "2026-09-16",
+       "2026-09-30",
+       "2026-10-14",
+       "2026-10-28",
+       "2026-11-11",
+       "2026-11-25",
+       "2026-12-09",
+       "2026-12-23",
+       "2027-01-13",
+       "2027-01-27",
+       "2027-02-10",
+       "2027-02-24",
+       "2027-03-10",
+       "2027-03-24"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08",
+       "2026-05-15",
+       "2026-05-22",
+       "2026-05-29",
+       "2026-06-05",
+       "2026-06-12",
+       "2026-06-19",
+       "2026-06-26",
+       "2026-07-03",
+       "2026-07-10",
+       "2026-07-17",
+       "2026-07-24",
+       "2026-07-31",
+       "2026-08-07",
+       "2026-08-14",
+       "2026-08-21",
+       "2026-08-28",
+       "2026-09-04",
+       "2026-09-11",
+       "2026-09-18",
+       "2026-09-25",
+       "2026-10-02",
+       "2026-10-09",
+       "2026-10-16",
+       "2026-10-23",
+       "2026-10-30",
+       "2026-11-06",
+       "2026-11-13",
+       "2026-11-20",
+       "2026-11-27",
+       "2026-12-04",
+       "2026-12-11",
+       "2026-12-18",
+       "2026-12-25",
+       "2027-01-08",
+       "2027-01-15",
+       "2027-01-22",
+       "2027-01-29",
+       "2027-02-05",
+       "2027-02-12",
+       "2027-02-19",
+       "2027-02-26",
+       "2027-03-05",
+       "2027-03-12",
+       "2027-03-19",
+       "2027-03-26"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c5",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-10",
+       "2026-04-24",
+       "2026-05-08",
+       "2026-05-22",
+       "2026-06-05",
+       "2026-06-19",
+       "2026-07-03",
+       "2026-07-10",
+       "2026-07-17",
+       "2026-07-24",
+       "2026-07-31",
+       "2026-08-07",
+       "2026-08-14",
+       "2026-08-21",
+       "2026-08-28",
+       "2026-09-04",
+       "2026-09-11",
+       "2026-09-18",
+       "2026-09-25",
+       "2026-10-02",
+       "2026-10-09",
+       "2026-10-16",
+       "2026-10-23",
+       "2026-10-30",
+       "2026-11-06",
+       "2026-11-13",
+       "2026-11-20",
+       "2026-11-27",
+       "2026-12-04",
+       "2026-12-11",
+       "2026-12-18",
+       "2026-12-25",
+       "2027-01-08",
+       "2027-01-15",
+       "2027-01-22",
+       "2027-01-29",
+       "2027-02-05",
+       "2027-02-12",
+       "2027-02-19",
+       "2027-02-26",
+       "2027-03-05",
+       "2027-03-12",
+       "2027-03-19",
+       "2027-03-26"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c6",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-17",
+       "2026-05-01",
+       "2026-05-15",
+       "2026-05-29",
+       "2026-06-12",
+       "2026-06-26",
+       "2026-07-10",
+       "2026-07-24",
+       "2026-08-07",
+       "2026-08-21",
+       "2026-09-04",
+       "2026-09-18",
+       "2026-10-02",
+       "2026-10-16",
+       "2026-10-30",
+       "2026-11-13",
+       "2026-11-27",
+       "2026-12-11",
+       "2026-12-25",
+       "2027-01-08",
+       "2027-01-22",
+       "2027-02-05",
+       "2027-02-19",
+       "2027-03-05",
+       "2027-03-19"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c7",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-17",
+       "2026-05-01",
+       "2026-05-15",
+       "2026-05-29",
+       "2026-06-12",
+       "2026-06-26",
+       "2026-07-10",
+       "2026-07-24",
+       "2026-08-07",
+       "2026-08-21",
+       "2026-09-04",
+       "2026-09-18",
+       "2026-10-02",
+       "2026-10-16",
+       "2026-10-30",
+       "2026-11-13",
+       "2026-11-27",
+       "2026-12-11",
+       "2026-12-25",
+       "2027-01-08",
+       "2027-01-22",
+       "2027-02-05",
+       "2027-02-19",
+       "2027-03-05",
+       "2027-03-19"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c8",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-17",
+       "2026-05-01",
+       "2026-05-15",
+       "2026-05-29",
+       "2026-06-12",
+       "2026-06-26",
+       "2026-07-10",
+       "2026-07-24",
+       "2026-08-07",
+       "2026-08-21",
+       "2026-09-04",
+       "2026-09-18",
+       "2026-10-02",
+       "2026-10-16",
+       "2026-10-30",
+       "2026-11-13",
+       "2026-11-27",
+       "2026-12-11",
+       "2026-12-25",
+       "2027-01-08",
+       "2027-01-22",
+       "2027-02-05",
+       "2027-02-19",
+       "2027-03-05",
+       "2027-03-19"
+      ]
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "祝日・休日の収集日の扱い",
+    "district": null,
+    "category": null,
+    "text": "祝日法の改正などにより、カレンダー上の祝日・休日が一部変更になることがあります。掲載内容は令和8年1月現在のものです。"
+   },
+   {
+    "about": "年末年始の収集日の扱い",
+    "district": null,
+    "category": null,
+    "text": null
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 15366,
+  "completion_tokens": 18067,
+  "total_tokens": 33433,
+  "prompt_tokens_details": {
+   "cached_tokens": 2816
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 15004
+  },
+  "prompt_cache_hit_tokens": 2816,
+  "prompt_cache_miss_tokens": 12550,
+  "seconds": 67.7,
+  "model": "deepseek-flash"
+ },
+ "error": null,
+ "cost": {
+  "usd": 0.025462,
+  "usd_peak": 0.025462,
+  "offpeak": false,
+  "price_per_mtok": {
+   "input_miss": 0.3,
+   "input_hit": 0.006,
+   "output": 1.2
+  },
+  "offpeak_utc": "16:30-00:30 (料金表で要確認)",
+  "calls": 1
+ },
+ "raw": {
+  "attempts": [
+   {
+    "content": "{\"municipality\":\"武蔵野市\",\"period\":{\"printed\":\"2026年4月～2027年3月\",\"from\":\"2026-04-01\",\"to\":\"2027-03-31\"},\"districts\":[{\"id\":\"d1\",\"label\":\"B地区\",\"members\":[\"吉祥寺本町2・3・4丁目\",\"御殿山\"]}],\"categories\":[{\"id\":\"c1\",\"label\":\"燃やすごみ\",\"coarse\":[\"burnable\"]},{\"id\":\"c2\",\"label\":\"プラスチック製容器包装\",\"coarse\":[\"plastic\"]},{\"id\":\"c3\",\"label\":\"燃やさないごみ\",\"coarse\":[\"non_burnable\"]},{\"id\":\"c4\",\"label\":\"古紙・古着\",\"coarse\":[\"paper_cloth\"]},{\"id\":\"c5\",\"label\":\"ペットボトル\",\"coarse\":[\"pet_bottle\"]},{\"id\":\"c6\",\"label\":\"びん\",\"coarse\":[\"glass_bottle\"]},{\"id\":\"c7\",\"label\":\"缶\",\"coarse\":[\"beverage_can\"]},{\"id\":\"c8\",\"label\":\"危険有害\",\"coarse\":[\"hazardous\"]},{\"id\":\"c9\",\"label\":\"粗大ごみ\",\"coarse\":[\"oversized\"],\"note\":\"予約制\"}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-02\",\"2026-04-06\",\"2026-04-09\",\"2026-04-13\",\"2026-04-16\",\"2026-04-20\",\"2026-04-23\",\"2026-04-27\",\"2026-04-30\",\"2026-05-04\",\"2026-05-07\",\"2026-05-11\",\"2026-05-14\",\"2026-05-18\",\"2026-05-21\",\"2026-05-25\",\"2026-05-28\",\"2026-06-01\",\"2026-06-04\",\"2026-06-08\",\"2026-06-11\",\"2026-06-15\",\"2026-06-18\",\"2026-06-22\",\"2026-06-25\",\"2026-06-29\",\"2026-07-02\",\"2026-07-06\",\"2026-07-09\",\"2026-07-13\",\"2026-07-16\",\"2026-07-20\",\"2026-07-23\",\"2026-07-27\",\"2026-07-30\",\"2026-08-03\",\"2026-08-06\",\"2026-08-10\",\"2026-08-13\",\"2026-08-17\",\"2026-08-20\",\"2026-08-24\",\"2026-08-27\",\"2026-08-31\",\"2026-09-03\",\"2026-09-07\",\"2026-09-10\",\"2026-09-14\",\"2026-09-17\",\"2026-09-21\",\"2026-09-24\",\"2026-09-28\",\"2026-10-01\",\"2026-10-05\",\"2026-10-08\",\"2026-10-12\",\"2026-10-15\",\"2026-10-19\",\"2026-10-22\",\"2026-10-26\",\"2026-10-29\",\"2026-11-02\",\"2026-11-05\",\"2026-11-09\",\"2026-11-12\",\"2026-11-16\",\"2026-11-19\",\"2026-11-23\",\"2026-11-26\",\"2026-11-30\",\"2026-12-03\",\"2026-12-07\",\"2026-12-10\",\"2026-12-14\",\"2026-12-17\",\"2026-12-21\",\"2026-12-24\",\"2026-12-28\",\"2027-01-04\",\"2027-01-07\",\"2027-01-11\",\"2027-01-14\",\"2027-01-18\",\"2027-01-21\",\"2027-01-25\",\"2027-01-28\",\"2027-02-01\",\"2027-02-04\",\"2027-02-08\",\"2027-02-11\",\"2027-02-15\",\"2027-02-18\",\"2027-02-22\",\"2027-02-25\",\"2027-03-01\",\"2027-03-04\",\"2027-03-08\",\"2027-03-11\",\"2027-03-15\",\"2027-03-18\",\"2027-03-22\",\"2027-03-25\",\"2027-03-29\"]}]},{\"district\":\"d1\",\"category\":\"c2\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-07\",\"2026-04-14\",\"2026-04-21\",\"2026-04-28\",\"2026-05-05\",\"2026-05-12\",\"2026-05-19\",\"2026-05-26\",\"2026-06-02\",\"2026-06-09\",\"2026-06-16\",\"2026-06-23\",\"2026-06-30\",\"2026-07-07\",\"2026-07-14\",\"2026-07-21\",\"2026-07-28\",\"2026-08-04\",\"2026-08-11\",\"2026-08-18\",\"2026-08-25\",\"2026-09-01\",\"2026-09-08\",\"2026-09-15\",\"2026-09-22\",\"2026-09-29\",\"2026-10-06\",\"2026-10-13\",\"2026-10-20\",\"2026-10-27\",\"2026-11-03\",\"2026-11-10\",\"2026-11-17\",\"2026-11-24\",\"2026-12-01\",\"2026-12-08\",\"2026-12-15\",\"2026-12-22\",\"2027-01-05\",\"2027-01-12\",\"2027-01-19\",\"2027-01-26\",\"2027-02-02\",\"2027-02-09\",\"2027-02-16\",\"2027-02-23\",\"2027-03-02\",\"2027-03-09\",\"2027-03-16\",\"2027-03-23\",\"2027-03-30\"]}]},{\"district\":\"d1\",\"category\":\"c3\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-01\",\"2026-04-15\",\"2026-04-29\",\"2026-05-13\",\"2026-05-27\",\"2026-06-10\",\"2026-06-24\",\"2026-07-08\",\"2026-07-22\",\"2026-08-05\",\"2026-08-19\",\"2026-09-02\",\"2026-09-16\",\"2026-09-30\",\"2026-10-14\",\"2026-10-28\",\"2026-11-11\",\"2026-11-25\",\"2026-12-09\",\"2026-12-23\",\"2027-01-13\",\"2027-01-27\",\"2027-02-10\",\"2027-02-24\",\"2027-03-10\",\"2027-03-24\"]}]},{\"district\":\"d1\",\"category\":\"c4\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-03\",\"2026-04-10\",\"2026-04-17\",\"2026-04-24\",\"2026-05-01\",\"2026-05-08\",\"2026-05-15\",\"2026-05-22\",\"2026-05-29\",\"2026-06-05\",\"2026-06-12\",\"2026-06-19\",\"2026-06-26\",\"2026-07-03\",\"2026-07-10\",\"2026-07-17\",\"2026-07-24\",\"2026-07-31\",\"2026-08-07\",\"2026-08-14\",\"2026-08-21\",\"2026-08-28\",\"2026-09-04\",\"2026-09-11\",\"2026-09-18\",\"2026-09-25\",\"2026-10-02\",\"2026-10-09\",\"2026-10-16\",\"2026-10-23\",\"2026-10-30\",\"2026-11-06\",\"2026-11-13\",\"2026-11-20\",\"2026-11-27\",\"2026-12-04\",\"2026-12-11\",\"2026-12-18\",\"2026-12-25\",\"2027-01-08\",\"2027-01-15\",\"2027-01-22\",\"2027-01-29\",\"2027-02-05\",\"2027-02-12\",\"2027-02-19\",\"2027-02-26\",\"2027-03-05\",\"2027-03-12\",\"2027-03-19\",\"2027-03-26\"]}]},{\"district\":\"d1\",\"category\":\"c5\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-10\",\"2026-04-24\",\"2026-05-08\",\"2026-05-22\",\"2026-06-05\",\"2026-06-19\",\"2026-07-03\",\"2026-07-10\",\"2026-07-17\",\"2026-07-24\",\"2026-07-31\",\"2026-08-07\",\"2026-08-14\",\"2026-08-21\",\"2026-08-28\",\"2026-09-04\",\"2026-09-11\",\"2026-09-18\",\"2026-09-25\",\"2026-10-02\",\"2026-10-09\",\"2026-10-16\",\"2026-10-23\",\"2026-10-30\",\"2026-11-06\",\"2026-11-13\",\"2026-11-20\",\"2026-11-27\",\"2026-12-04\",\"2026-12-11\",\"2026-12-18\",\"2026-12-25\",\"2027-01-08\",\"2027-01-15\",\"2027-01-22\",\"2027-01-29\",\"2027-02-05\",\"2027-02-12\",\"2027-02-19\",\"2027-02-26\",\"2027-03-05\",\"2027-03-12\",\"2027-03-19\",\"2027-03-26\"]}]},{\"district\":\"d1\",\"category\":\"c6\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-03\",\"2026-04-17\",\"2026-05-01\",\"2026-05-15\",\"2026-05-29\",\"2026-06-12\",\"2026-06-26\",\"2026-07-10\",\"2026-07-24\",\"2026-08-07\",\"2026-08-21\",\"2026-09-04\",\"2026-09-18\",\"2026-10-02\",\"2026-10-16\",\"2026-10-30\",\"2026-11-13\",\"2026-11-27\",\"2026-12-11\",\"2026-12-25\",\"2027-01-08\",\"2027-01-22\",\"2027-02-05\",\"2027-02-19\",\"2027-03-05\",\"2027-03-19\"]}]},{\"district\":\"d1\",\"category\":\"c7\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-03\",\"2026-04-17\",\"2026-05-01\",\"2026-05-15\",\"2026-05-29\",\"2026-06-12\",\"2026-06-26\",\"2026-07-10\",\"2026-07-24\",\"2026-08-07\",\"2026-08-21\",\"2026-09-04\",\"2026-09-18\",\"2026-10-02\",\"2026-10-16\",\"2026-10-30\",\"2026-11-13\",\"2026-11-27\",\"2026-12-11\",\"2026-12-25\",\"2027-01-08\",\"2027-01-22\",\"2027-02-05\",\"2027-02-19\",\"2027-03-05\",\"2027-03-19\"]}]},{\"district\":\"d1\",\"category\":\"c8\",\"text\":null,\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-03\",\"2026-04-17\",\"2026-05-01\",\"2026-05-15\",\"2026-05-29\",\"2026-06-12\",\"2026-06-26\",\"2026-07-10\",\"2026-07-24\",\"2026-08-07\",\"2026-08-21\",\"2026-09-04\",\"2026-09-18\",\"2026-10-02\",\"2026-10-16\",\"2026-10-30\",\"2026-11-13\",\"2026-11-27\",\"2026-12-11\",\"2026-12-25\",\"2027-01-08\",\"2027-01-22\",\"2027-02-05\",\"2027-02-19\",\"2027-03-05\",\"2027-03-19\"]}]}],\"exceptions\":[],\"unsure\":[{\"about\":\"祝日・休日の収集日の扱い\",\"district\":null,\"category\":null,\"text\":\"祝日法の改正などにより、カレンダー上の祝日・休日が一部変更になることがあります。掲載内容は令和8年1月現在のものです。\"},{\"about\":\"年末年始の収集日の扱い\",\"district\":null,\"category\":null,\"text\":null}]}",
+    "reasoning_content": "We need answer only JSON. Need parse calendar. Need understand resource. Municipality 武蔵野市. Period printed 2026年4月～2027年3月 from 2026-04-01 to 2027-03-31. District only B地区 吉祥寺本町2・3・4丁目 御殿山. Need categories labels exactly from calendar. Need schedules per district/category. Need infer recurring weekdays from calendar. Need be careful dates printed, use dates rules maybe easiest: for each category list all collection dates from calendar? The instructions prioritize printed dates where calendar/table. Could use dates type for each category. Need extract collection dates across 12 months for each category. This is a lot but feasible. Need categories: 燃やすごみ (or 燃やす label in calendar? Program labels: 燃やすごみ, プラスチック製容器包装, 燃やさないごみ, 古紙・古着, ペットボトル, びん, 缶, 危険有害). Need note combined labels \"びん 缶 危険有害\" on same day? Calendar shows on same Friday: 古紙・古着, 缶, びん, 危険有害, sometimes ペットボトル. Need determine separate categories: 古紙・古着, ペットボトル, びん, 缶, 危険有害. The collection days: \n- 燃やすごみ: Mon and Thu? Plus? Calendar shows Monday and Thursday every week. Need confirm. Page 1 legend: 月 every week 燃やす; 木 every week 燃やす. Yes.\n- プラスチック製容器包装: Tuesday every week (page 1 legend 火 every week). Calendar: Tuesdays.\n- 燃やさないごみ: Wednesday every other week. Need dates. From calendar: Wednesdays alternate, which weeks? Page 1 March? For fiscal year start April: April 1 Wed 燃やさない, Apr15, Apr29; May13, May27; Jun10, Jun24; Jul8, Jul22; Aug5, Aug19; Sep2, Sep16, Sep30; Oct14, Oct28; Nov11, Nov25; Dec9, Dec23; Jan13, Jan27; Feb10, Feb24; Mar10, Mar24. This is every 2 weeks Wednesday. Need anchor first printed date 2026-04-01. type every_n_weeks weekdays WE n 2 anchor 2026-04-01. This may match. Need maybe holidays? There are dates omitted due holidays? Check calendar: May6 Wednesday? It's 燃やさない? Wait page 2 May 6? The calendar shows May 6 blank? Let's inspect page-002 April/May: April 1 Wed 燃やさない, 15 燃やさない, 29 燃やさない. May: Wed 6? It may be blank? Looking image: May row first week: 4 Mon 燃やす, 5 Tue plastic, 6 Wed blank? Actually page 2 May top row: 1 Fri resources, 2 Sat; then row 3 Sun 4 Mon 燃やす, 5 Tue plastic, 6 Wed blank? 7 Thu 燃やす, 8 Fri resources, 9 Sat. Wait May 6 maybe holiday? Japanese Constitution Day? May 6 2026 is Wednesday after Golden Week? Actually May 6 is substitute holiday? 2026 May 3 Sunday, May 4 Monday Constitution, May5 Tue Children's, May6 Wed substitute? Yes 振替休日? Calendar shows May 6 blank (white) perhaps no collection? The calendar likely uses pink/red background for holidays? In May, May 6 maybe blank because no collection due holiday? Need inspect: On May 6 in image, there is no icon? It appears row: 3 4 5 6 7 8 9. 4燃やす, 5 plastic, 6 blank, 7燃やす, 8 resources, 9. So 燃やさない would normally be May 6 but omitted due holiday? Hmm important. Page 2 legend? There is no legend on page 2 but same. \nNeed check other holiday occurrences: July? no. Sep 23? Wednesday maybe holiday and blank? Page 4 Sep 23 Wed: image row 20-26: 21燃やす,22 plastic,23 blank? It shows 23 blank (red number? maybe holiday) 24燃やす,25 resources,26. But 23 Sep 2026 is holiday? Autumnal Equinox maybe Wednesday. 燃やさない due Sep 16, then Sep30, so Sep23 not scheduled anyway. May6 definitely scheduled if every 2 weeks anchor Apr1: Apr1,15,29, May13,27. Wait May6 is 3rd Wednesday after Apr29? Sequence: Apr1, Apr15, Apr29, May13, May27. So May6 not scheduled! Good. May13 scheduled. No conflict. So no holiday issue? Good.\n- 古紙・古着: Friday every week? Page 1 legend Friday has 古紙・古着 plus 缶びん危険有害? Wait Friday column: items 古紙・古着, ペットボトル, びん缶危険有害? Actually page 1 top table: Friday \"毎週\" for 古紙・古着? Let's inspect table: columns: Mon burn, Tue plastic, Wed biweekly nonburn, Thu burn, Fri (6月まで隔週/7月から毎週) PET, Fri (隔週) びん缶危険? Hmm The top table layout: It shows 月,火,水,木,金,土? Let's parse page 1 header table: columns: 月 MON 毎週 燃やす; 火 TUE 毎週 plastic; 水 WED 隔週 nonburn; 木 THU 毎週 burn; 金 FRI 毎週? maybe 古紙・古着? then another 金 FRI? Actually table has 6 columns: 月,火,水,木,金,? Let's count image: Under header row: \"毎週 Every week\" at Mon; \"毎週\" Tue; \"隔週\" Wed; \"毎週\" Thu; \"毎週\" Fri; then maybe \"6月まで隔週 7月から毎週\" at Fri? Wait page1 table in image:\nTop row labels (black boxes): 月 MON | 火 TUE | 水 WED | 木 THU | 金 FRI | [no label?] maybe 金? Let's look: the top table spans 6 columns: 月,火,水,木,金,? Actually rightmost column may be \"金\"?? Hmm text: \"月 MON 火 TUE 水 WED 木 THU 金 FRI\" then a final column with \"隔週 Biweekly\" maybe for びん缶? It may be \"金\" duplicate? Wait page1 table: first row: 月 MON, 火 TUE, 水 WED, 木 THU, 金 FRI, [empty], and next row has every week under Mon/Tue/Thu, biweekly under Wed, \"6月まで隔週 7月から毎週\" under Fri? and biweekly under last? Let's inspect image: top table: columns:\n1 月 MON Every week icon 燃やす\n2 火 TUE Every week icon plastic\n3 水 WED Biweekly icon nonburn\n4 木 THU Every week icon burn\n5 金 FRI Every week? icon 古紙古着\n6 金? maybe \"6月まで隔週 7月から毎週\" icon ペットボトル\n7 ? \"隔週\" icon びん缶危険?\nActually there are 7 columns? The image top table has headers: 月, 火, 水, 木, 金, then blank? Let's count visible icons: burn bag, plastic, nonburn, burn, paper/cloth, pet bottle, bottles/cans. Under them labels: 燃やすごみ, プラスチック製容器包装, 燃やさないごみ, 燃やすごみ, 古紙・古着, ペットボトル, びん缶危険有害. Headers row maybe: 月, 火, 水, 木, 金, 金, ? Actually paper/cloth and pet and bottles all Friday? Wait calendar shows every Friday has 古紙・古着 AND either ペットボトル or びん缶危険有害 alternating? Let's analyze calendar:\nApril Fridays: Apr3: 古紙・古着, 缶, びん, 危険有害 (no PET). Apr10: 古紙・古着, ペットボトル. Apr17: 古紙・古着, 缶びん危険. Apr24: 古紙・古着, ペット. So 古紙・古着 weekly; ペットボトル biweekly (every other Friday) until June; びん缶危険有害 alternate Fridays. From July PET weekly, so Friday has 古紙古着 + PET every week, and bottles/cans/hazard? Wait July Fridays: July3 shows 古紙古着, ペットボトル only? No cans? Let's see page3 July: Jul3 Fri: 古紙・古着, ペットボトル (no bottles/cans). Jul10: 古紙古着, 缶びん, 危険有害, ペットボトル? Image row shows Jul10: icons paper/cloth, bottle, can, hazardous, PET? It shows \"古紙・古着 缶 びん 危険有害 ペットボトル\" maybe all? Let's inspect page3 July 10: yes has 古紙・古着, 缶, びん, 危険有害, ペットボトル. Wait labels from text: \"古紙・古着 缶 びん 危険有害 ペットボトル\" maybe. For Jul17: 古紙古着, ペットボトル only. Jul24: 古紙古着, 缶びん危険有害, ペットボトル. Jul31: 古紙古着, ペットボトル. So bottles/cans/hazard remain biweekly, and PET weekly from July. Thus Friday always 古紙古着 weekly; PET biweekly until June then weekly from July; びん缶危険有害 biweekly (alternate Fridays) all year? Need determine alternation. \nNeed maybe list dates for each category via printed dates. Could define schedules with rules:\n- 燃やすごみ: weekly MO, TH.\n- プラスチック製容器包装: weekly TU.\n- 燃やさないごみ: every_n_weeks WE n=2 anchor 2026-04-01.\n- 古紙・古着: weekly FR.\n- ペットボトル: every_n_weeks FR n=2 anchor 2026-04-10, months 4,5,6; plus weekly FR months 7-3? But from July to March every Friday. Need schedule maybe two rules: every_n_weeks for Apr-Jun (anchor 2026-04-10, to 2026-06-30) and weekly FR from 2026-07-01 to 2027-03-31. Could use months? For first rule months [4,5,6], every_n_weeks anchor 2026-04-10. For second weekly weekdays FR from 2026-07-01 (or months [7,8,9,10,11,12,1,2,3]) but months cannot span year? Can just use from 2026-07-01 to 2027-03-31 with weekly FR. Need no conflict because first only Apr-Jun. Good.\n- びん: every_n_weeks FR n=2 anchor 2026-04-03? Because Apr3 has bottles/cans/hazard; Apr17; May1; May15; May29; Jun12; Jun26; Jul10; Jul24; Aug7; Aug21; Sep4; Sep18; Oct2; Oct16; Oct30; Nov13; Nov27; Dec11; Dec25; Jan8; Jan22; Feb5; Feb19; Mar5; Mar19. Yes biweekly Friday anchor 2026-04-03. \n- 缶: same dates as びん (same combined). \n- 危険有害: same dates.\nNeed check if びん and 缶 separate labels; calendar combines \"びん 缶 危険有害\" on same day, with 古紙古着. Separate categories? The instructions say品目の名前そのまま; if same date but separate icons? It shows \"びん\", \"缶\", \"危険有害\" as distinct icons but same collection day. Categories can be separate. Label exactly \"びん\", \"缶\", \"危険有害\". Coarse: glass_bottle, beverage_can, hazardous. Note perhaps \"危険有害\" in calendar text \"危険有害\", sometimes \"危険・有害ごみ\"; use label as printed in legend? The table label is \"危険有害\" (no dot). Use that. \nNeed maybe \"びん 缶\" combined? There is no \"びん・缶\" separate. We'll make separate categories because distinct icons and labels.\nNeed exceptions: Does calendar mention holidays? Page 1 note: 祝日法の改正などにより、カレンダー上の祝日・休日が一部変更になることがあります。掲載内容は令和8年1月現在のものです. This is not holiday collection policy. No exception. Also no year-end? December 29-31? Calendar page6: Dec28 Mon burn; Dec29 Tue blank? Dec30 Wed blank? Dec31 Thu blank? Wait Dec has Dec28 Mon 燃やす, Dec29 Tue blank, Dec30 Wed blank, Dec31 Thu blank. January 1 Thu blank? Jan1 Fri holiday blank; Jan2 Sat; Jan3 Sun; Jan4 Mon burn. This indicates year-end/new year closure? Calendar shows Dec29,30,31 no collections? But Dec29 is Tuesday normally plastic, Dec30 Wednesday nonburn? Dec31 Thursday burn? In page6, Dec29,30,31 are blank (no icons). Jan1 also blank. This is a closure. Need derive from printed calendar. The text doesn't explicitly say \"年末年始休み\", but blank dates indicate no collection. However schedule rules would predict collections Dec29 (Tue plastic), Dec30 (Wed nonburn? Actually Dec30 not scheduled? Let's check nonburn schedule: Dec9, Dec23, Jan13; Dec30 not scheduled if every 2 weeks from Apr1? Sequence Dec23, Jan6? Wait compute Wed every two weeks from Apr1: Apr1; Apr15; Apr29; May13; May27; Jun10; Jun24; Jul8; Jul22; Aug5; Aug19; Sep2; Sep16; Sep30; Oct14; Oct28; Nov11; Nov25; Dec9; Dec23; Jan6? Wait Jan6 is Wednesday. But page6 Jan6 maybe blank? Let's see page6 Jan: Jan4 Mon burn, Jan5 Tue plastic, Jan6 Wed blank? Image shows Jan6 blank, Jan7 Thu burn, Jan8 Fri resources, Jan9 Sat. Hmm Jan6 blank maybe holiday? Actually Jan6 2027 Wednesday not holiday. Wait if nonburn every 2 weeks, Dec23 then Jan6 should be nonburn. But page6 Jan6 is blank! Could be because? Let's inspect page6 Jan: row Dec? Page6 right side Jan 2027: Dates 1 Fri holiday, 2 Sat, 3 Sun, 4 Mon burn, 5 Tue plastic, 6 Wed blank, 7 Thu burn, 8 Fri resources, 9 Sat. It indeed shows no 燃やさない on Jan6. Then Jan13? Row 10-16: 11 Mon burn, 12 Tue plastic, 13 Wed 燃やさない, 14 Thu burn, 15 Fri resources. So nonburn schedule shifts? Wait maybe nonburn is every other Wednesday but not exactly every 2 weeks? It may skip Jan6 due? There is no holiday Jan6. Could be my sequence wrong: Dec23, Jan13 (3 weeks gap). Why? Maybe Dec30 would have been nonburn? Let's list actual Wed nonburn from images:\nApr1, Apr15, Apr29\nMay13, May27? Wait May13? Page2 May: 13 Wed 燃やさない? Image row 10-16: May 13? It shows \"燃やさない\" under May13? Let's check page2 May: row with 10 Sun 11 Mon burn 12 Tue plastic 13 Wed 燃やさない 14 Thu burn 15 Fri resources 16 Sat. Yes.\nMay27? row 24-30: 24 Sun 25 Mon burn 26 Tue plastic 27 Wed 燃やさない? Image: May 27 shows 燃やさない? It has blue bag at Wed 27? It looks yes \"燃やさない\". Good.\nJun10, Jun24.\nJul8, Jul22.\nAug5, Aug19.\nSep2, Sep16, Sep30.\nOct14, Oct28.\nNov11, Nov25.\nDec9, Dec23.\nJan13? Page6 Jan13 燃やさない; Jan27? yes.\nFeb10, Feb24.\nMar10, Mar24.\nSo after Dec23 skip Jan6, then Jan13. This is every 2 weeks but an extra week gap over New Year? Actually Dec23 to Jan13 is 3 weeks. Maybe Jan6 is no collection due \"年始\"? Could be closure includes Jan1-6? But calendar Jan4/5 collections? Hmm Jan4 burn, Jan5 plastic, Jan6 no nonburn; maybe nonburn not collected during first week? This is not textual. But schedule rule with every_n_weeks would incorrectly include Jan6. Need exceptions. Since calendar printed dates are authoritative, using dates list avoids this issue. Given complexities, dates list is safe. Need list all dates for each category. We can extract from calendar. That satisfies instructions. But a lot. Need ensure accurate. Could use rules plus exceptions for closure? But dates list easier? Need list 40 burn dates, etc. Still manageable. Need no mistakes.\n\nNeed decide approach. The schema allows dates rules. For calendar with printed dates, use dates. We should list all collection dates for each category across 2026-04-01 to 2027-03-31 as printed. Need ensure holidays blank and other irregularities. Need extract all dates. Let's systematically build calendar for district B from pages. We'll list dates per weekday and category.\n\nLet's create month calendars from images. Need all collection dates per category:\nCategories:\nc1 燃やすごみ (燃やす)\nc2 プラスチック製容器包装\nc3 燃やさないごみ\nc4 古紙・古着\nc5 ペットボトル\nc6 びん\nc7 缶\nc8 危険有害\n\nNeed dates for each.\n\nLet's reconstruct each month.\n\nFiscal year 2026 Apr to 2027 Mar.\n\nMonth April 2026:\nCalendar page2 left.\nDays:\nWed Apr1: 燃やさない\nThu Apr2: 燃やす\nFri Apr3: 古紙・古着, 缶, びん, 危険有害\nSat4\nSun5\nMon6: 燃やす\nTue7: プラ\nWed8 blank\nThu9: 燃やす\nFri10: 古紙・古着, ペットボトル\nSat11\nSun12\nMon13: 燃やす\nTue14: プラ\nWed15: 燃やさない\nThu16: 燃やす\nFri17: 古紙古着, 缶びん危険\nSat18\nSun19\nMon20: 燃やす\nTue21: プラ\nWed22 blank\nThu23: 燃やす\nFri24: 古紙古着, ペット\nSat25\nSun26\nMon27: 燃やす\nTue28: プラ\nWed29: 燃やさない\nThu30: 燃やす\nFri May1? page2 May starts Fri1 resources (古紙古着,缶びん危険). April no Apr31. Good.\nApril burn: 2,6,9,13,16,20,23,27,30 = 9? Mondays 6,13,20,27; Thursdays 2,9,16,23,30. Yes.\nPlastic Tue: 7,14,21,28.\nNonburn: 1,15,29.\nPaper/cloth Fri: 3,10,17,24.\nPET: 10,24 (biweekly until Jun). \nBottles/cans/hazard: 3,17.\n\nMay 2026 page2 right:\nMay1 Fri: 古紙古着, 缶びん危険 (no PET? It shows paper, bottle, can, hazardous? Wait May1: page2 right top row Fri1: icons 古紙・古着, 缶, びん, 危険有害. It has no PET. Yes.)\nMay2 Sat\nMay3 Sun\nMay4 Mon: 燃やす\nMay5 Tue: プラ\nMay6 Wed: blank (no nonburn)\nMay7 Thu: 燃やす\nMay8 Fri: 古紙古着, ペットボトル\nMay9 Sat\nMay10 Sun\nMay11 Mon: 燃やす\nMay12 Tue: プラ\nMay13 Wed: 燃やさない\nMay14 Thu: 燃やす\nMay15 Fri: 古紙古着, 缶びん危険\nMay16 Sat\nMay17 Sun\nMay18 Mon: 燃やす\nMay19 Tue: プラ\nMay20 Wed blank\nMay21 Thu: 燃やす\nMay22 Fri: 古紙古着, ペット\nMay23 Sat\nMay24 Sun\nMay25 Mon: 燃やす\nMay26 Tue: プラ\nMay27 Wed: 燃やさない\nMay28 Thu: 燃やす\nMay29 Fri: 古紙古着, 缶びん危険\nMay30 Sat\nMay31 Sun\nBurn May: 4,7,11,14,18,21,25,28.\nPlastic: 5,12,19,26.\nNonburn: 13,27. (No 6)\nPaper/cloth: 1,8,15,22,29.\nPET: 8,22 (biweekly).\nBottles/cans/hazard: 1,15,29.\n\nJune 2026 page3 left:\nJune1 Mon: 燃やす\n2 Tue: プラ\n3 Wed blank\n4 Thu: 燃やす\n5 Fri: 古紙古着, ペットボトル? Wait page3 Jun5 shows 古紙古着 + ペットボトル only? It shows icons paper and PET, no cans? Let's inspect: June5 Friday: image shows 古紙・古着, ペットボトル (no bottles). Yes.\n6 Sat\n7 Sun\n8 Mon: 燃やす\n9 Tue: プラ\n10 Wed: 燃やさない\n11 Thu: 燃やす\n12 Fri: 古紙古着, 缶びん危険\n13 Sat\n14 Sun\n15 Mon: 燃やす\n16 Tue: プラ\n17 Wed blank\n18 Thu: 燃やす\n19 Fri: 古紙古着, ペット\n20 Sat\n21 Sun\n22 Mon: 燃やす\n23 Tue: プラ\n24 Wed: 燃やさない\n25 Thu: 燃やす\n26 Fri: 古紙古着, 缶びん危険\n27 Sat\n28 Sun\n29 Mon: 燃やす\n30 Tue: プラ\nBurn Jun: 1,4,8,11,15,18,22,25,29.\nPlastic: 2,9,16,23,30.\nNonburn: 10,24.\nPaper/cloth: 5,12,19,26.\nPET: 5,19? Wait biweekly Fridays from Apr10: Apr10, Apr24, May8, May22, Jun5, Jun19. Yes. \nBottles/cans/hazard: 12,26? Also June? May29, Jun12, Jun26. Yes.\n\nJuly 2026 page3 right:\nJuly1 Wed: blank? Page3 July: Jul1 Wed blank? Image top row: 1 Wed no icon? Wait page3 right: July 1 Wed blank? It shows at top \"7月から...\" message covering maybe? Row 1: (Jun29?) Wait July calendar: 1 Wed blank, 2 Thu 燃やす, 3 Fri 古紙古着, ペットボトル. Yes.\n2 Thu burn\n3 Fri paper/cloth + PET\n4 Sat\n5 Sun\n6 Mon burn\n7 Tue plastic\n8 Wed nonburn\n9 Thu burn\n10 Fri paper/cloth + can + bottle + hazardous + PET? Need check: Page3 July 10: icons: 古紙・古着, 缶, びん, 危険有害, ペットボトル. Yes all.\n11 Sat\n12 Sun\n13 Mon burn\n14 Tue plastic\n15 Wed blank\n16 Thu burn\n17 Fri paper/cloth + PET (no cans)\n18 Sat\n19 Sun\n20 Mon burn\n21 Tue plastic\n22 Wed nonburn\n23 Thu burn\n24 Fri paper/cloth + can bottle hazard + PET\n25 Sat\n26 Sun\n27 Mon burn\n28 Tue plastic\n29 Wed blank\n30 Thu burn\n31 Fri paper/cloth + PET (no cans)\nNeed check Jul8 nonburn yes.\nBurn Jul: 2,6,9,13,16,20,23,27,30.\nPlastic: 7,14,21,28.\nNonburn: 8,22.\nPaper/cloth: 3,10,17,24,31.\nPET: from July weekly: 3,10,17,24,31.\nBottles/cans/hazard: 10,24 only? Biweekly anchor Apr3: Apr3,17; May1,15,29; Jun12,26; Jul10,24; yes.\n\nAugust 2026 page4 left:\nAug1 Sat\nAug2 Sun\nAug3 Mon burn\nAug4 Tue plastic\nAug5 Wed nonburn\nAug6 Thu burn\nAug7 Fri paper/cloth + can bottle hazard + PET? Since PET weekly and cans alternate. Page4 Aug7: icons paper, bottle, can, hazardous, PET? Image shows 古紙・古着, 缶, びん, 危険有害, ペットボトル. Yes.\nAug8 Sat\nAug9 Sun\nAug10 Mon burn\nAug11 Tue plastic\nAug12 Wed blank\nAug13 Thu burn\nAug14 Fri paper/cloth + PET (no cans)\nAug15 Sat\nAug16 Sun\nAug17 Mon burn\nAug18 Tue plastic\nAug19 Wed nonburn\nAug20 Thu burn\nAug21 Fri paper/cloth + can bottle hazard + PET\nAug22 Sat\nAug23 Sun\nAug24 Mon burn\nAug25 Tue plastic\nAug26 Wed blank\nAug27 Thu burn\nAug28 Fri paper/cloth + PET\nAug29 Sat\nAug30 Sun\nAug31 Mon burn\nBurn Aug: 3,6,10,13,17,20,24,27,31.\nPlastic: 4,11,18,25.\nNonburn: 5,19.\nPaper/cloth: 7,14,21,28.\nPET: 7,14,21,28.\nBottles/cans/hazard: 7,21 (anchor sequence Jul10,24, Aug7,21).\n\nSeptember 2026 page4 right:\nSep1 Tue: plastic? Page4 right top: Sep1 Tue has plastic? Image shows Sep1 Tue icon plastic? Wait page4 right: top row 1 Tue,2 Wed,3 Thu,4 Fri,5 Sat. On Sep1: icon plastic (blue bag with containers) yes. Sep2 Wed: 燃やさない. Sep3 Thu: 燃やす. Sep4 Fri: paper/cloth + can bottle hazard + PET? Image shows paper, bottle, can, hazardous, PET. Yes.\nSep5 Sat\nSep6 Sun\nSep7 Mon burn\nSep8 Tue plastic\nSep9 Wed blank\nSep10 Thu burn\nSep11 Fri paper/cloth + PET\nSep12 Sat\nSep13 Sun\nSep14 Mon burn\nSep15 Tue plastic\nSep16 Wed nonburn\nSep17 Thu burn\nSep18 Fri paper/cloth + can bottle hazard + PET\nSep19 Sat\nSep20 Sun\nSep21 Mon burn\nSep22 Tue plastic\nSep23 Wed blank (holiday?) \nSep24 Thu burn\nSep25 Fri paper/cloth + PET\nSep26 Sat\nSep27 Sun\nSep28 Mon burn\nSep29 Tue plastic\nSep30 Wed nonburn\nBurn Sep: 3,7,10,14,17,21,24,28.\nPlastic: 1,8,15,22,29.\nNonburn: 2,16,30.\nPaper/cloth: 4,11,18,25.\nPET: 4,11,18,25.\nBottles/cans/hazard: 4,18? Wait anchor sequence Aug21, Sep4, Sep18, Oct2. Yes Sep4, Sep18.\n\nOctober 2026 page5 left:\nOct1 Thu: burn\nOct2 Fri: paper/cloth + can bottle hazard + PET\nOct3 Sat\nOct4 Sun\nOct5 Mon burn\nOct6 Tue plastic\nOct7 Wed blank\nOct8 Thu burn\nOct9 Fri paper/cloth + PET\nOct10 Sat\nOct11 Sun\nOct12 Mon burn\nOct13 Tue plastic\nOct14 Wed nonburn\nOct15 Thu burn\nOct16 Fri paper/cloth + can bottle hazard + PET\nOct17 Sat\nOct18 Sun\nOct19 Mon burn\nOct20 Tue plastic\nOct21 Wed blank\nOct22 Thu burn\nOct23 Fri paper/cloth + PET\nOct24 Sat\nOct25 Sun\nOct26 Mon burn\nOct27 Tue plastic\nOct28 Wed nonburn\nOct29 Thu burn\nOct30 Fri paper/cloth + can bottle hazard + PET\nOct31 Sat\nBurn Oct: 1,5,8,12,15,19,22,26,29.\nPlastic: 6,13,20,27.\nNonburn: 14,28.\nPaper/cloth: 2,9,16,23,30.\nPET: 2,9,16,23,30.\nBottles/cans/hazard: 2,16,30? Wait anchor Sep18, Oct2, Oct16, Oct30. yes.\n\nNovember 2026 page5 right:\nNov1 Sun\nNov2 Mon burn\nNov3 Tue plastic? Image Nov3 Tue shows plastic (blue) yes. Note Nov3 is holiday (Culture Day) but collection shown? It shows plastic. So holidays collected? Interesting. Calendar has red date number 3 (holiday) but collection icon present. So collected on holidays? There is no exception. Good.\nNov4 Wed blank\nNov5 Thu burn\nNov6 Fri paper/cloth + can bottle hazard + PET? Wait anchor sequence Oct30, Nov13? Let's compute: Oct30; Nov13. So Nov6 should be paper+PET only. Image page5 Nov6: shows paper/cloth, bottle/can/hazard, PET? Let's inspect: Nov6 Friday row: It shows 古紙・古着, 缶, びん, 危険有害, ペットボトル? Hmm In image page5 right: row 1-7: 1 Sun,2 Mon burn,3 Tue plastic,4 Wed blank,5 Thu burn,6 Fri: icons paper, bottle, can, hazardous, PET? Looking: at Nov6 I see paper stack, a bottle/can? It shows \"古紙・古着\", \"缶\", \"びん\", \"危険有害\", \"ペットボトル\" maybe yes? Wait anchor from Apr3 every 2 weeks: Apr3,17; May1,15,29; Jun12,26; Jul10,24; Aug7,21; Sep4,18; Oct2,16,30; Nov13,27. So Nov6 should NOT have cans. But image maybe shows? Need examine carefully. On page5 right, Nov6: The icons: paper stack, a bottle? There is an icon with bottle/can? I see at row: \"古紙・古着\" under paper, then \"ペットボトル\" under PET. There may be no can icons. The text layer for page 5 near November: \"びん 古紙・古着缶 危険有害 ペットボトル\" occurs multiple times. Hard to know. Look visually: Nov6 seems only 古紙・古着 and ペットボトル (paper stack + plastic bottle). No green can/bottle icons? At Nov6, I can see maybe a can? Hmm The image: Nov6 at Friday: there is paper stack icon and PET bottle icon. There is no additional bottle/can/hazard? Actually there is a small black bottle? Wait that small black bottle is on rows with bottles. On Nov6, I can see only paper and PET? Let's compare Nov13: It clearly has paper, can, bottle, hazardous, PET. Nov6 likely paper+PET. Good.\nNov7 Sat\nNov8 Sun\nNov9 Mon burn\nNov10 Tue plastic\nNov11 Wed nonburn\nNov12 Thu burn\nNov13 Fri paper/cloth + can bottle hazard + PET\nNov14 Sat\nNov15 Sun\nNov16 Mon burn\nNov17 Tue plastic\nNov18 Wed blank\nNov19 Thu burn\nNov20 Fri paper/cloth + PET (no cans? Wait anchor Nov13, Nov27, so Nov20 paper+PET)\nNov21 Sat\nNov22 Sun\nNov23 Mon burn? It is holiday (Labor Thanksgiving) but calendar shows 燃やす? Image Nov23 Mon: icon burn, date red. Yes collected.\nNov24 Tue plastic\nNov25 Wed nonburn\nNov26 Thu burn\nNov27 Fri paper/cloth + can bottle hazard + PET\nNov28 Sat\nNov29 Sun\nNov30 Mon burn\nBurn Nov: 2,5,9,12,16,19,23,26,30.\nPlastic: 3,10,17,24.\nNonburn: 11,25.\nPaper/cloth: 6,13,20,27.\nPET: 6,13,20,27.\nBottles/cans/hazard: 13,27.\n\nDecember 2026 page6 left:\nDec1 Tue: plastic\nDec2 Wed blank\nDec3 Thu burn\nDec4 Fri paper/cloth + PET? Also bottles? Anchor Nov27, Dec11. So Dec4 paper+PET only. Image Dec4: paper + PET, no cans. Yes.\nDec5 Sat\nDec6 Sun\nDec7 Mon burn\nDec8 Tue plastic\nDec9 Wed nonburn\nDec10 Thu burn\nDec11 Fri paper/cloth + can bottle hazard + PET\nDec12 Sat\nDec13 Sun\nDec14 Mon burn\nDec15 Tue plastic\nDec16 Wed blank\nDec17 Thu burn\nDec18 Fri paper/cloth + PET\nDec19 Sat\nDec20 Sun\nDec21 Mon burn\nDec22 Tue plastic\nDec23 Wed nonburn\nDec24 Thu burn\nDec25 Fri paper/cloth + can bottle hazard + PET\nDec26 Sat\nDec27 Sun\nDec28 Mon burn\nDec29 Tue blank (no plastic)\nDec30 Wed blank (no nonburn? would be? not scheduled? Actually Dec30 Wed maybe not nonburn because sequence Dec23, Jan13; so blank okay)\nDec31 Thu blank (no burn)\nBurn Dec: 3,7,10,14,17,21,24,28. (No 31)\nPlastic: 1,8,15,22. (No 29)\nNonburn: 9,23.\nPaper/cloth: 4,11,18,25. (Friday Dec25 collected yes; Dec? Friday Jan1 no)\nPET: 4,11,18,25.\nBottles/cans/hazard: 11,25.\n\nJanuary 2027 page6 right:\nJan1 Fri holiday blank\nJan2 Sat\nJan3 Sun\nJan4 Mon burn\nJan5 Tue plastic\nJan6 Wed blank (no nonburn)\nJan7 Thu burn\nJan8 Fri paper/cloth + can bottle hazard + PET? Need anchor Dec25, Jan8. Yes Jan8 has cans and PET. Image Jan8: paper, bottle, can, hazard, PET. Yes.\nJan9 Sat\nJan10 Sun\nJan11 Mon burn\nJan12 Tue plastic\nJan13 Wed nonburn\nJan14 Thu burn\nJan15 Fri paper/cloth + PET\nJan16 Sat\nJan17 Sun\nJan18 Mon burn\nJan19 Tue plastic\nJan20 Wed blank\nJan21 Thu burn\nJan22 Fri paper/cloth + can bottle hazard + PET\nJan23 Sat\nJan24 Sun\nJan25 Mon burn\nJan26 Tue plastic\nJan27 Wed nonburn\nJan28 Thu burn\nJan29 Fri paper/cloth + can bottle hazard + PET? Wait anchor Jan22? Sequence: Jan8, Jan22, Feb5. So Jan29 should paper+PET only, not cans. Need inspect page6 Jan29: It shows paper, bottle/can/hazard, PET? Image row 24-30: Jan29 Fri has paper, can, bottle, hazardous, PET? Actually looking: Jan29 appears paper/cloth + PET? Wait row: 25 Mon burn, 26 Tue plastic, 27 Wed nonburn, 28 Thu burn, 29 Fri: icons paper, bottle? There is can? Hmm At Jan29, image shows paper stack, a bottle, can, hazardous? Let's check anchor: Starting Apr3, biweekly Fridays: let's compute carefully: Apr3 (week 0), Apr17 (2), May1 (4), May15 (6), May29 (8), Jun12 (10), Jun26(12), Jul10(14), Jul24(16), Aug7(18), Aug21(20), Sep4(22), Sep18(24), Oct2(26), Oct16(28), Oct30(30), Nov13(32), Nov27(34), Dec11(36), Dec25(38), Jan8(40), Jan22(42), Feb5(44), Feb19(46), Mar5(48), Mar19(50). So Jan29 not. Thus only paper+PET. Good.\nJan30 Sat\nJan31 Sun\nBurn Jan: 4,7,11,14,18,21,25,28.\nPlastic: 5,12,19,26.\nNonburn: 13,27.\nPaper/cloth: 8,15,22,29.\nPET: 8,15,22,29 (weekly from July).\nBottles/cans/hazard: 8,22.\n\nFebruary 2027 page7 left:\nFeb1 Mon burn\nFeb2 Tue plastic\nFeb3 Wed blank\nFeb4 Thu burn\nFeb5 Fri paper/cloth + can bottle hazard + PET\nFeb6 Sat\nFeb7 Sun\nFeb8 Mon burn\nFeb9 Tue plastic\nFeb10 Wed nonburn\nFeb11 Thu burn (holiday? red 11 but collection)\nFeb12 Fri paper/cloth + PET\nFeb13 Sat\nFeb14 Sun\nFeb15 Mon burn\nFeb16 Tue plastic\nFeb17 Wed blank\nFeb18 Thu burn\nFeb19 Fri paper/cloth + can bottle hazard + PET\nFeb20 Sat\nFeb21 Sun\nFeb22 Mon burn\nFeb23 Tue plastic? Red 23 holiday but icon? Image Feb23 Tue: plastic icon (holiday but collected). Yes.\nFeb24 Wed nonburn\nFeb25 Thu burn\nFeb26 Fri paper/cloth + can bottle hazard + PET? Wait anchor Feb19, Mar5. So Feb26 should paper+PET only, not cans. Image Feb26: icons paper, bottle, can, hazardous, PET? Looking page7 left row 21-27: Feb26 Fri shows paper, bottle, can, hazard, PET? Hmm It looks like there are cans at Feb26? Let's verify visually: Feb26 Friday: I see paper stack, a bottle/can icon? Actually row: 22 Mon burn, 23 Tue plastic, 24 Wed nonburn, 25 Thu burn, 26 Fri: paper stack, a can, a bottle, hazardous, PET? There is red \"びん\" and can? The text layer includes many. But anchor sequence says Feb19 has cans, Mar5 next. So Feb26 no cans. Yet image? Let's compute from Apr3 every 2 weeks: Feb5, Feb19, Mar5. Yes. So Feb26 only paper+PET. Need trust printed. I need look at image: At Feb26, I see \"古紙・古着\" + \"ペットボトル\" only? The small black bottle maybe from next row? Hmm The row at Feb26 has paper stack and PET bottle icon, no green bottle. Good.\nFeb27 Sat\nFeb28 Sun\nBurn Feb: 1,4,8,11,15,18,22,25.\nPlastic: 2,9,16,23.\nNonburn: 10,24.\nPaper/cloth: 5,12,19,26.\nPET: 5,12,19,26.\nBottles/cans/hazard: 5,19.\n\nMarch 2027 page7 right:\nMar1 Mon burn\nMar2 Tue plastic\nMar3 Wed blank\nMar4 Thu burn\nMar5 Fri paper/cloth + can bottle hazard + PET\nMar6 Sat\nMar7 Sun\nMar8 Mon burn\nMar9 Tue plastic\nMar10 Wed nonburn\nMar11 Thu burn\nMar12 Fri paper/cloth + can bottle hazard + PET? Wait anchor Mar5, Mar19. So Mar12 should paper+PET only, not cans. Need check image page7 right Mar12: It shows paper, bottle, can, hazardous, PET? Looking at row 7-13: Mar12 Friday has paper, bottle, can, hazard, PET? Hmm Wait sequence: Mar5 has cans; Mar19 has cans. Mar12 no. Let's inspect image: March row: 8 Mon burn, 9 Tue plastic, 10 Wed nonburn, 11 Thu burn, 12 Fri: icons paper, bottle, can, hazardous, PET? I can see at Mar12 there is paper stack, a bottle, can, hazardous? Actually maybe not. But anchor says no. Need ensure no schedule shift due skipped Dec? The biweekly pattern may not strictly every 2 weeks? Could be every other Friday with possible holiday shift? Let's verify from images: Jan8 cans, Jan22 cans, Feb5 cans, Feb19 cans, Mar5 cans, Mar19 cans. Mar12 no. Yes.\nMar13 Sat\nMar14 Sun\nMar15 Mon burn\nMar16 Tue plastic\nMar17 Wed blank\nMar18 Thu burn\nMar19 Fri paper/cloth + can bottle hazard + PET\nMar20 Sat\nMar21 Sun\nMar22 Mon burn\nMar23 Tue plastic\nMar24 Wed nonburn\nMar25 Thu burn\nMar26 Fri paper/cloth + can bottle hazard + PET? Wait anchor Mar19, Apr2? So Mar26 should paper+PET only. Image Mar26: paper, can, bottle, hazard, PET? Hmm The text layer page7 March: \"びん 古紙・古着缶 危険有害 ペットボトル\" at bottom rows. Need check: March 26: row 21-27: 22 Mon burn, 23 Tue plastic, 24 Wed nonburn, 25 Thu burn, 26 Fri: paper, bottle, can, hazardous, PET? Wait If anchor pattern, Mar26 no cans. But image appears at Mar26: paper stack, bottle, can, hazard, PET? Let's look: In March right, row 21-27, Friday 26: I see paper stack, a can (green), a bottle? Actually I see two icons: paper and PET? There is a red can? Hmm Let's zoom mentally: At Mar26, under Friday, there is paper stack icon, then a bottle/can icon? The image shows \"古紙・古着\" and \"ペットボトル\" only? Wait I see a black bottle? The row at Mar26 in image: There is a paper stack, then a black bottle with cap? That's hazardous icon? Actually hazardous icon is a black spray can/bottle? The combination with cans includes a green bottle and red can. At Mar26, I can see a green bottle and red can? Hmm The icon next to paper at Mar26 looks like a green bottle? Let's compare Mar19 (has paper, green bottle, red can, black bottle, PET) vs Mar26. The image shows Mar19 row: paper, green bottle, red can, black bottle, PET. Mar26 row: paper, green bottle? red can? black bottle? PET? Wait maybe the biweekly pattern is actually every other week but anchored differently? Let's check all Friday cans pattern from calendar visually:\nApr3 yes\nApr10 no (paper+PET)\nApr17 yes\nApr24 no\nMay1 yes\nMay8 no\nMay15 yes\nMay22 no\nMay29 yes\nJun5 no? Wait Jun5 page3: It shows paper + PET; no cans. yes\nJun12 yes\nJun19 no\nJun26 yes\nJul3 no? page3 Jul3 paper+PET only. yes\nJul10 yes\nJul17 no\nJul24 yes\nJul31 no\nAug7 yes\nAug14 no\nAug21 yes\nAug28 no\nSep4 yes\nSep11 no\nSep18 yes\nSep25 no\nOct2 yes\nOct9 no\nOct16 yes\nOct23 no\nOct30 yes\nNov6 no\nNov13 yes\nNov20 no\nNov27 yes\nDec4 no\nDec11 yes\nDec18 no\nDec25 yes\nJan1 (holiday no)\nJan8 yes\nJan15 no\nJan22 yes\nJan29 no\nFeb5 yes\nFeb12 no\nFeb19 yes\nFeb26 no\nMar5 yes\nMar12 no\nMar19 yes\nMar26 no\nYes. So Mar26 no cans. Good.\n\nMarch Burn: 1,4,8,11,15,18,22,25. (No 29? Mar29 Mon? Page7 March row 28-31: 29 Mon 燃やす? Wait March 2027 ends Wed 31. Page7 March: row 28 Sun,29 Mon,30 Tue,31 Wed. Image shows Mar29 Mon icon 燃やす; Mar30 Tue plastic; Mar31 Wed blank. Yes include Mar29 burn. I missed row. Let's list March days:\nMar1 Mon burn\n2 Tue plastic\n3 Wed blank\n4 Thu burn\n5 Fri resources\n6 Sat\n7 Sun\n8 Mon burn\n9 Tue plastic\n10 Wed nonburn\n11 Thu burn\n12 Fri paper+PET\n13 Sat\n14 Sun\n15 Mon burn\n16 Tue plastic\n17 Wed blank\n18 Thu burn\n19 Fri cans+paper+PET\n20 Sat\n21 Sun\n22 Mon burn\n23 Tue plastic\n24 Wed nonburn\n25 Thu burn\n26 Fri paper+PET\n27 Sat\n28 Sun\n29 Mon burn\n30 Tue plastic\n31 Wed blank.\nBurn Mar: 1,4,8,11,15,18,22,25,29.\nPlastic Mar: 2,9,16,23,30.\nNonburn: 10,24.\nPaper/cloth: 5,12,19,26.\nPET: 5,12,19,26.\nBottles/cans/hazard: 5,19.\n\nNeed verify February burn includes Feb? Feb22 Mon? Yes. Feb? 2027 Feb has 28 days, no Feb29. Good.\n\nNow schedules can be dates rules listing above dates for each category. Need decide whether to use dates for all, or rules. Dates list exact and avoids exceptions. Use dates for each category. Need maybe c1 燃やすごみ dates. c2 plastic dates. c3 nonburn dates. c4 paper/cloth. c5 PET. c6 bottles. c7 cans. c8 hazardous.\n\nNeed include district label exactly: \"B地区\" or \"B 地区\"? Page says B地区 (pink badge B 地区) and text \"地区B\" in OCR bottom. Image has \"B地区\" then \"吉祥寺本町2・3・4丁目 御殿山\". Label likely \"B地区\". Members: \"吉祥寺本町2・3・4丁目\", \"御殿山\". Note maybe exact \"吉祥寺本町2・3・4丁目\" no spaces. Use as printed. District label \"B地区\". There is only one district. Could label \"B地区\" and members. Good.\n\nCategories labels exactly:\nFrom calendar icons: \"燃やすごみ\" (table full label), but icons in calendar say \"燃やす\". The category label from table: 燃やすごみ. Use \"燃やすごみ\".\n\"プラスチック製容器包装\" (table).\n\"燃やさないごみ\"\n\"古紙・古着\"\n\"ペットボトル\"\n\"びん\"\n\"缶\"\n\"危険有害\" maybe table has \"危険有害\" with no dot. But page text \"危険・有害ごみ\" and icon \"危険有害\". The item label in calendar is \"危険有害\" (two words) or \"危険・有害\"? At page1 table: red badge \"危険有害\" maybe no dot. The text layer: \"危険有害\". Use \"危険有害\". \ncoarse:\n燃やすごみ: burnable\nプラ: plastic\n燃やさない: non_burnable\n古紙・古着: paper_cloth? Since label includes paper and old clothes combined; coarse list has paper_cloth \"紙と布を分けずに1つで\". Yes.\nペットボトル: pet_bottle\nびん: glass_bottle\n缶: beverage_can\n危険有害: hazardous (includes batteries etc). Maybe spray_can? But label general hazardous, use hazardous.\n\nNeed exceptions. If using dates, exceptions not applied. But there are no explicit holiday exceptions. Unsure should mention holiday policy? The instructions: If not written, unsure \"書いていない\". We can add unsure for 祝日・年末年始の扱いが明記されていない? But calendar prints dates, so maybe not needed. Yet exceptions for closure? Since dates list, no. But should we note year-end blank? The calendar has blank Dec29-Jan1; but no explicit text. The dates list excludes them. We don't need exception. However unsure maybe \"祝日・年末年始の扱いについての文はない\" because no explicit exception. But if we use dates, okay. The question says \"資料に祝日の扱いや年末年始の扱いが書いていなければ、exceptions に作らず、unsure に「書いていない」と書く。\" Need include unsure entries for holiday and year-end? It says if not written, write in unsure. So we should include two unsure: about \"祝日・休日の収集扱い\", text maybe \"祝日法の改正などにより、カレンダー上の祝日・休日が一部変更になることがあります。掲載内容は令和8年1月現在のものです。\" This mentions holiday but no collection policy. We can put about \"祝日・休日の収集日の扱い\", text \"祝日法の改正などにより、カレンダー上の祝日・休日が一部変更になることがあります。掲載内容は令和8年1月現在のものです。\". District null? Category null.\nYear-end: \"年末年始の収集扱い\", text null? The calendar shows blank Dec29-Jan1 but no text. However instruction says if not written, unsure with \"書いていない\". Use text \"年末年始の扱いについての記載はない\" maybe not exactly original. But schema text can be null? Required text string/null. Use text null and about \"年末年始の収集日の扱い（記述なし）\". But \"text (元の文字)\" maybe if none null. Good.\nNeed also unsure about \"第N週\" not relevant. Maybe no.\nNeed maybe period printed exactly \"2026年4月～2027年3月\" and \"令和8年度版\". Use printed \"2026年4月～2027年3月\". from 2026-04-01 to 2027-03-31. Good.\n\nNeed ensure JSON only. Need not include markdown.\n\nNeed think if dates list huge but okay. Need include schedules array 8 entries. Each rules one dates object with dates. We can include text maybe null or original? The \"text\" for schedule optional. Could put text like \"カレンダーに印字された収集日\" but not original? Maybe omit or null. Use text null? The schema requires? Not required, but allowed. We can include \"text\": null. Fine. Or use printed text \"燃やす\" etc. But not necessary.\n\nNeed verify dates lists complete and no typos. Let's compile carefully.\n\nc1 燃やすごみ dates:\nApr 2026: 2,6,9,13,16,20,23,27,30\nMay: 4,7,11,14,18,21,25,28\nJun: 1,4,8,11,15,18,22,25,29\nJul: 2,6,9,13,16,20,23,27,30\nAug: 3,6,10,13,17,20,24,27,31\nSep: 3,7,10,14,17,21,24,28\nOct: 1,5,8,12,15,19,22,26,29\nNov: 2,5,9,12,16,19,23,26,30\nDec: 3,7,10,14,17,21,24,28\nJan: 4,7,11,14,18,21,25,28\nFeb: 1,4,8,11,15,18,22,25\nMar: 1,4,8,11,15,18,22,25,29\n\nCount months: Apr9, May8, Jun9, Jul9, Aug9, Sep8, Oct9, Nov9, Dec8, Jan8, Feb8, Mar9 = 113? Let's sum: 9+8=17; +9=26; +9=35; +9=44; +8=52; +9=61; +9=70; +8=78; +8=86; +8=94; +9=103. Wait I recalc: 9+8=17, +9=26, +9=35, +9=44, +8=52, +9=61, +9=70, +8=78, +8=86, +8=94, +9=103. 103 collection days for burn, ~2/week *52=104 minus one? plausible.\n\nNeed check December burn includes Dec31? Calendar page6 Dec31 Thu blank. Is Dec31 Thursday? 2026 Dec31 Thu. Yes no collection. Jan1 Fri holiday. So burn 8 in Dec.\n\nc2 plastic dates:\nApr: 7,14,21,28\nMay: 5,12,19,26\nJun: 2,9,16,23,30\nJul: 7,14,21,28\nAug: 4,11,18,25\nSep: 1,8,15,22,29\nOct: 6,13,20,27\nNov: 3,10,17,24\nDec: 1,8,15,22\nJan: 5,12,19,26\nFeb: 2,9,16,23\nMar: 2,9,16,23,30\nCount 4+4+5+4+4+5+4+4+4+4+4+5=51.\n\nc3 nonburn dates:\nApr: 1,15,29\nMay: 13,27\nJun: 10,24\nJul: 8,22\nAug: 5,19\nSep: 2,16,30\nOct: 14,28\nNov: 11,25\nDec: 9,23\nJan: 13,27\nFeb: 10,24\nMar: 10,24\nCount 3+2+2+2+2+3+2+2+2+2+2+2=26. Every 2 weeks 26.\n\nNeed check Apr? Nonburn Apr1 includes first day; Apr15,29. Good.\n\nc4 paper/cloth dates: every Friday except Jan1? Also possibly? List:\nApr: 3,10,17,24\nMay: 1,8,15,22,29\nJun: 5,12,19,26\nJul: 3,10,17,24,31\nAug: 7,14,21,28\nSep: 4,11,18,25\nOct: 2,9,16,23,30\nNov: 6,13,20,27\nDec: 4,11,18,25\nJan: 8,15,22,29 (Jan1 no)\nFeb: 5,12,19,26\nMar: 5,12,19,26\nCount 4+5+4+5+4+4+5+4+4+4+4+4=51? Sum 4+5=9; +4=13; +5=18; +4=22; +4=26; +5=31; +4=35; +4=39; +4=43; +4=47; +4=51. Fridays in FY: 52 Fridays? 2026 Apr1 to 2027 Mar31 has 52? Jan1 missing =51. Good.\n\nc5 PET dates:\nUntil Jun biweekly: Apr10,24; May8,22; Jun5,19.\nFrom Jul weekly Fridays: Jul3,10,17,24,31; Aug7,14,21,28; Sep4,11,18,25; Oct2,9,16,23,30; Nov6,13,20,27; Dec4,11,18,25; Jan8,15,22,29; Feb5,12,19,26; Mar5,12,19,26.\nWait July has 5 Fridays? July 2026 starts Wed, Fridays 3,10,17,24,31 yes. So list:\nApr: 10,24\nMay: 8,22\nJun: 5,19\nJul: 3,10,17,24,31\nAug: 7,14,21,28\nSep: 4,11,18,25\nOct: 2,9,16,23,30\nNov: 6,13,20,27\nDec: 4,11,18,25\nJan: 8,15,22,29\nFeb: 5,12,19,26\nMar: 5,12,19,26\nCount 2+2+2+5+4+4+5+4+4+4+4+4=44? Sum 2+2+2=6; +5=11; +4=15; +4=19; +5=24; +4=28; +4=32; +4=36; +4=40; +4=44. Good.\n\nc6 びん dates (biweekly Fridays with cans):\nApr: 3,17\nMay: 1,15,29\nJun: 12,26\nJul: 10,24\nAug: 7,21\nSep: 4,18\nOct: 2,16,30\nNov: 13,27\nDec: 11,25\nJan: 8,22\nFeb: 5,19\nMar: 5,19\nCount 2+3+2+2+2+2+3+2+2+2+2+2=26? Sum 2+3=5; +2=7;+2=9;+2=11;+2=13;+3=16;+2=18;+2=20;+2=22;+2=24;+2=26. Good.\nc7 缶 same dates.\nc8 危険有害 same dates.\n\nNeed consider \"びん\" and \"缶\" might be collected on same days as 古紙・古着 and PET? Yes.\n\nNow schedules with dates for each. Could also use weekly rules for c1,c2,c4 and every_n_weeks for c3,c6, and c5 combination, but dates safer. However listing dates many. The schema permits. Need ensure each schedule uses district id \"d1\", category \"c1\". Include text perhaps null. Good.\n\nNeed unsure: holiday and year-end. Also maybe \"粗大ごみ\" has no schedule? The calendar mentions 粗大ごみは予約制. Should categories include oversized? The instruction: categories are 収集の品目; \"日の決まった収集の無い品目 (持ち込みだけ、申し込んでから日が決まるもの) は categories に入れてよいが schedules には入れない.\" 粗大ごみ is 予約制 and mentioned. Should we include category \"粗大ごみ\" with coarse oversized, no schedule? It is a collection category, but not scheduled. It says 粗大ごみは予約制です. Could include c9 \"粗大ごみ\" coarse oversized, note \"予約制\". Is it \"家庭ごみの収集日\" not date. The categories array can include no-schedule items. It might be good. But the question is collection days; including no schedule category with note. Need label exactly \"粗大ごみ\". Coarse oversized. Add note \"予約制\". This doesn't harm. But does it count as 収集の品目? Yes. However instructions \"収集日でないもの (持ち込みの受付日、窓口の時間、行事) は入れない。日の決まった収集の無い品目 ... は categories に入れてよいが schedules には入れない.\" So include. Could also include \"電池・充電池...\" under hazardous? Already hazardous. \nNeed include \"粗大ごみ\" c9. Since schedule absent. Good.\nNeed maybe \"小型家電\" no. Not regular collection.\nNeed \"古紙・古着\" combined; okay.\n\nNeed district members maybe include \"吉祥寺本町2・3・4丁目\", \"御殿山\". Label B地区. Note maybe null or \"地区B\"? Use note null.\n\nNeed period printed exact: \"2026年4月～2027年3月\". Could also \"令和8年度版\" but printed period is \"2026年4月～2027年3月\". Good.\n\nNeed JSON schema requires no extra fields. For categories note optional. Include note null or omitted. We can include note for oversized. Districts note optional. We can omit note if null? Required fields id,label,members only; note optional. We can include note: null? Additional false allows note. Fine but not needed. Use no note for district. Categories note for oversized. For other categories no note.\n\nNeed exceptions array empty [] since no explicit holiday/year-end rules. But if dates list excludes closure, we don't need closure. But should we include closure for Dec29-Jan3? The calendar blank shows no collection; but explicit from dates. The instruction says exceptions for closure if written. It is not written as text. With dates, no exceptions. Use [] and unsure.\n\nNeed unsure entries:\n- about \"祝日・休日の収集日の扱い\", district null, category null, text \"祝日法の改正などにより、カレンダー上の祝日・休日が一部変更になることがあります。掲載内容は令和8年1月現在のものです。\"\n- about \"年末年始の収集日の扱い\", district null, category null, text null. Maybe mention \"年末年始の休業についての文はない\". But text should be original? Use null. \nCould also mention \"カレンダーで12月29日から1月1日まで収集印がないが、理由の記載はない\" in text? That's not original. But unsure text can be explanation? Schema says text (元の文字). Better text null. \nNeed maybe \"祝日も収集しているか\" because e.g., Nov3 and Nov23 have icons; but no policy. The calendar dates show collection on holidays. But not written. Unsure.\nNeed maybe \"年末年始も通常どおりか\" no.\n\nNeed final JSON. Need ensure valid JSON (double quotes). No markdown.\n\nLet's consider if using dates for every schedule means no exceptions; but if there are holiday dates with collection, dates include them. Good.\n\nNeed check category c1 label \"燃やすごみ\". In calendar icon label \"燃やす\" and table \"燃やすごみ\". Use table full label. Good.\nc2 label \"プラスチック製容器包装\". \nc3 \"燃やさないごみ\".\nc4 \"古紙・古着\".\nc5 \"ペットボトル\".\nc6 \"びん\".\nc7 \"缶\".\nc8 \"危険有害\".\nc9 \"粗大ごみ\".\nCould label \"危険有害\" vs \"危険・有害ごみ\": In page1 table red badge says \"危険有害\" and icon text \"危険有害\"; page text says \"危険・有害ごみは...\". The品目 name in table is \"危険有害\" (maybe \"危険有害\" no dot). Use \"危険有害\". But if strict \"資料の品目の名前そのまま\", there is also \"危険・有害ごみ\" in sentence. Hmm Which is item name? The calendar icon uses \"危険有害\" and page1 table \"危険有害\". Use that.\nc7 \"缶\" printed as \"缶\" with maybe \"空缶\"? Calendar says \"缶\". Good.\n\nNeed maybe schedule for c4 paper/cloth weekly includes Jan1? No. Dates list excludes. Good.\n\nNeed verify schedule c1 dates include 2026-04-30 Thursday? Yes. c1 no May? May 4 Monday holiday collected yes. Nov23 holiday collected yes. Feb11 holiday collected yes. Good.\n\nNeed maybe use \"dates\" type final; exceptions not applied. Good.\n\nNeed ensure no duplicate dates? c1 no. c2 no. c3 no. c4 no. c5 no. c6/c7/c8 same. Good.\n\nLet's formulate JSON. Need not include all text? It will be long. We can keep schedules each with rules: [{\"type\":\"dates\",\"dates\":[...]}] and \"text\": null. That is okay. For c9 no schedule.\n\nNeed JSON schema: schedules items require district, category, rules. text optional. We include text null. Rules item type dates requires type and dates. Additional properties false allows text? Yes rules properties include text. Good.\n\nNeed exceptions: [].\nUnsure: two entries. Required about,text. Include district/category? Optional? Required only about,text. But properties allow district/category. For clarity include both null? The schema requires about,text; district/category optional. We can include district null, category null. Good. However additionalProperties false okay. \nNeed municipality string \"武蔵野市\".\n\nNeed period from/to. \nNeed district id d1 label \"B地区\" members. \nNeed categories c1..c9.\n\nLet's ensure JSON no trailing commas. Long but okay.\n\nPotential issue: \"dates\" rule in schedule is final and exceptions not applied. Fine.\n\nNeed maybe not include \"粗大ごみ\" because no schedule? It's allowed. Good.\n\nLet's produce final exactly JSON.",
+    "finish_reason": "stop",
+    "usage": {
+     "prompt_tokens": 15366,
+     "completion_tokens": 18067,
+     "total_tokens": 33433,
+     "prompt_tokens_details": {
+      "cached_tokens": 2816
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 15004
+     },
+     "prompt_cache_hit_tokens": 2816,
+     "prompt_cache_miss_tokens": 12550
+    },
+    "model": "deepseek-flash",
+    "seconds": 67.7
+   }
+  ],
+  "note": "API の生の答え (content は JSON の文字、reasoning_content は推論の文字)。最後のものを answer に読んだ"
+ },
+ "seconds": 67.7
+}

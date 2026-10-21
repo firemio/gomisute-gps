@@ -1,0 +1,8587 @@
+{
+ "deepseek": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "112275",
+  "summary": {
+   "units": 54,
+   "exact": 48,
+   "wrong_dates": 0,
+   "missing_dates": 1134,
+   "gt_dates": 3098,
+   "unmapped": 0,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 6,
+  "courses_mapped": 6,
+  "district_map": {
+   "1": {
+    "112275-c3af1203:d1": "name",
+    "112275-c3af1203:d7": "name",
+    "112275-c3af1203:d8": "name",
+    "112275-c3af1203:d30": "name",
+    "112275-c3af1203:d35": "name"
+   },
+   "2": {
+    "112275-c3af1203:d2": "name",
+    "112275-c3af1203:d5": "name",
+    "112275-c3af1203:d15": "name",
+    "112275-c3af1203:d19": "name"
+   },
+   "3": {
+    "112275-c3af1203:d14": "name",
+    "112275-c3af1203:d18": "name"
+   },
+   "4": {
+    "112275-c3af1203:d6": "name",
+    "112275-c3af1203:d23": "name",
+    "112275-c3af1203:d29": "name",
+    "112275-c3af1203:d34": "name",
+    "112275-c3af1203:d36": "name"
+   },
+   "5": {
+    "112275-c3af1203:d9": "name"
+   },
+   "6": {
+    "112275-c3af1203:d11": "name",
+    "112275-c3af1203:d16": "name",
+    "112275-c3af1203:d22": "name",
+    "112275-c3af1203:d26": "name",
+    "112275-c3af1203:d37": "name"
+   }
+  },
+  "districts_unused": [
+   "112275-c3af1203:d10",
+   "112275-c3af1203:d12",
+   "112275-c3af1203:d13",
+   "112275-c3af1203:d17",
+   "112275-c3af1203:d20",
+   "112275-c3af1203:d21",
+   "112275-c3af1203:d24",
+   "112275-c3af1203:d25",
+   "112275-c3af1203:d27",
+   "112275-c3af1203:d28",
+   "112275-c3af1203:d3",
+   "112275-c3af1203:d31",
+   "112275-c3af1203:d32",
+   "112275-c3af1203:d33",
+   "112275-c3af1203:d38",
+   "112275-c3af1203:d4"
+  ],
+  "category_map": [
+   {
+    "doc": "112275-c3af1203",
+    "id": "c1",
+    "label": "資源",
+    "keys": [
+     "beverage_can",
+     "cloth",
+     "glass_bottle",
+     "paper",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112275-c3af1203",
+    "id": "c2",
+    "label": "プラスチック資源 燃やせないごみ",
+    "keys": [
+     "non_burnable",
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "112275-c3af1203",
+    "id": "c3",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 255,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 208,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-01",
+       "2026-04-08",
+       "2026-04-15",
+       "2026-04-22",
+       "2026-04-29",
+       "2026-05-06"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-01",
+       "2026-04-08",
+       "2026-04-15",
+       "2026-04-22",
+       "2026-04-29",
+       "2026-05-06"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 104,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 255,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-01",
+       "2026-04-08",
+       "2026-04-15",
+       "2026-04-22",
+       "2026-04-29",
+       "2026-05-06"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 260,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "112275",
+  "summary": {
+   "units": 54,
+   "exact": 48,
+   "wrong_dates": 0,
+   "missing_dates": 1134,
+   "gt_dates": 3098,
+   "unmapped": 0,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 6,
+  "courses_mapped": 6,
+  "district_map": {
+   "1": {
+    "112275-c3af1203:d1": "name",
+    "112275-c3af1203:d7": "name",
+    "112275-c3af1203:d8": "name",
+    "112275-c3af1203:d30": "name",
+    "112275-c3af1203:d35": "name"
+   },
+   "2": {
+    "112275-c3af1203:d2": "name",
+    "112275-c3af1203:d5": "name",
+    "112275-c3af1203:d15": "name",
+    "112275-c3af1203:d19": "name"
+   },
+   "3": {
+    "112275-c3af1203:d14": "name",
+    "112275-c3af1203:d18": "name"
+   },
+   "4": {
+    "112275-c3af1203:d6": "name",
+    "112275-c3af1203:d23": "name",
+    "112275-c3af1203:d29": "name",
+    "112275-c3af1203:d34": "name",
+    "112275-c3af1203:d36": "name"
+   },
+   "5": {
+    "112275-c3af1203:d9": "name"
+   },
+   "6": {
+    "112275-c3af1203:d11": "name",
+    "112275-c3af1203:d16": "name",
+    "112275-c3af1203:d22": "name",
+    "112275-c3af1203:d26": "name",
+    "112275-c3af1203:d37": "name"
+   }
+  },
+  "districts_unused": [
+   "112275-c3af1203:d10",
+   "112275-c3af1203:d12",
+   "112275-c3af1203:d13",
+   "112275-c3af1203:d17",
+   "112275-c3af1203:d20",
+   "112275-c3af1203:d21",
+   "112275-c3af1203:d24",
+   "112275-c3af1203:d25",
+   "112275-c3af1203:d27",
+   "112275-c3af1203:d28",
+   "112275-c3af1203:d3",
+   "112275-c3af1203:d31",
+   "112275-c3af1203:d32",
+   "112275-c3af1203:d33",
+   "112275-c3af1203:d38",
+   "112275-c3af1203:d4"
+  ],
+  "category_map": [
+   {
+    "doc": "112275-c3af1203",
+    "id": "c1",
+    "label": "資源",
+    "keys": [
+     "beverage_can",
+     "cloth",
+     "glass_bottle",
+     "paper",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112275-c3af1203",
+    "id": "c2",
+    "label": "プラスチック資源",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112275-c3af1203",
+    "id": "c3",
+    "label": "燃やせないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112275-c3af1203",
+    "id": "c4",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112275-c3af1203",
+    "id": "c5",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-02",
+       "2026-04-09",
+       "2026-04-16",
+       "2026-04-23",
+       "2026-04-30",
+       "2026-05-07"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 255,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d30",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d35",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d7",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d8",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-06",
+       "2026-04-13",
+       "2026-04-20",
+       "2026-04-27",
+       "2026-05-04",
+       "2026-05-11"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 208,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d15",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d19",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d2",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d5",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-01",
+       "2026-04-08",
+       "2026-04-15",
+       "2026-04-22",
+       "2026-04-29",
+       "2026-05-06"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-01",
+       "2026-04-08",
+       "2026-04-15",
+       "2026-04-22",
+       "2026-04-29",
+       "2026-05-06"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 104,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d14",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d18",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-03",
+       "2026-04-10",
+       "2026-04-17",
+       "2026-04-24",
+       "2026-05-01",
+       "2026-05-08"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 51
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 255,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d23",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d29",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d34",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d36",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d6",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-01",
+       "2026-04-08",
+       "2026-04-15",
+       "2026-04-22",
+       "2026-04-29",
+       "2026-05-06"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 52,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d9",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 103,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "category_unmapped": true,
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-07",
+       "2026-04-14",
+       "2026-04-21",
+       "2026-04-28",
+       "2026-05-05",
+       "2026-05-12"
+      ],
+      "answerable": false,
+      "wrong_n": 0,
+      "missing_n": 52
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 260,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 51,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112275-c3af1203:d11",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d16",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d22",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d26",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "112275-c3af1203:d37",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   }
+  ]
+ }
+}

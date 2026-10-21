@@ -1,0 +1,533 @@
+{
+ "doc_id": "045811-2026-04",
+ "model": "deepseek-flash",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "b3c8c41604d369204e41107e8789efccac6c239bfdd66878acc9172f59776e80",
+ "started_at": "2026-10-21T10:47:46+00:00",
+ "images": 2,
+ "answer": {
+  "municipality": "女川町",
+  "period": {
+   "printed": "令和8年 2026年 4月",
+   "from": "2026-04-01",
+   "to": "2026-04-30"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "黄色の日",
+    "members": [
+     "大沢",
+     "浦宿全区",
+     "針浜",
+     "上全区",
+     "西",
+     "小乗",
+     "高白",
+     "横浦",
+     "大石原",
+     "野々浜",
+     "飯子浜",
+     "塚浜",
+     "小屋取"
+    ],
+    "note": null
+   },
+   {
+    "id": "d2",
+    "label": "水色の日",
+    "members": [
+     "旭が丘",
+     "女川全区",
+     "大原全区",
+     "清水",
+     "宮ケ崎",
+     "石浜",
+     "桐ケ崎",
+     "竹浦",
+     "尾浦",
+     "御前",
+     "指ケ浜",
+     "出島",
+     "寺間"
+    ],
+    "note": null
+   },
+   {
+    "id": "d3",
+    "label": "江島地区",
+    "members": [
+     "江島地区"
+    ],
+    "note": null
+   },
+   {
+    "id": "d4",
+    "label": "大沢・浦宿全区・針浜",
+    "members": [
+     "大沢",
+     "浦宿全区",
+     "針浜"
+    ],
+    "note": null
+   },
+   {
+    "id": "d5",
+    "label": "上全区・西・小乗",
+    "members": [
+     "上全区",
+     "西",
+     "小乗"
+    ],
+    "note": null
+   },
+   {
+    "id": "d6",
+    "label": "女川全区・大原全区・清水",
+    "members": [
+     "女川全区",
+     "大原全区",
+     "清水"
+    ],
+    "note": null
+   },
+   {
+    "id": "d7",
+    "label": "旭が丘・宮ケ崎・石浜",
+    "members": [
+     "旭が丘",
+     "宮ケ崎",
+     "石浜"
+    ],
+    "note": null
+   },
+   {
+    "id": "d8",
+    "label": "高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取",
+    "members": [
+     "高白",
+     "横浦",
+     "大石原",
+     "野々浜",
+     "飯子浜",
+     "塚浜",
+     "小屋取"
+    ],
+    "note": null
+   },
+   {
+    "id": "d9",
+    "label": "桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間",
+    "members": [
+     "桐ケ崎",
+     "竹浦",
+     "尾浦",
+     "御前",
+     "指ケ浜",
+     "出島",
+     "寺間"
+    ],
+    "note": null
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "coarse": [
+     "burnable"
+    ],
+    "note": "一般家庭専用"
+   },
+   {
+    "id": "c2",
+    "label": "缶・びん ペットボトル",
+    "coarse": [
+     "beverage_can",
+     "glass_bottle",
+     "pet_bottle"
+    ],
+    "note": null
+   },
+   {
+    "id": "c3",
+    "label": "ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "coarse": [
+     "plastic",
+     "paper_cloth",
+     "other"
+    ],
+    "note": null
+   },
+   {
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "coarse": [
+     "non_burnable"
+    ],
+    "note": null
+   },
+   {
+    "id": "c5",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ],
+    "note": null
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-02",
+       "2026-04-06",
+       "2026-04-09",
+       "2026-04-13",
+       "2026-04-16",
+       "2026-04-20",
+       "2026-04-23",
+       "2026-04-27",
+       "2026-04-30"
+      ],
+      "text": "黄色の日"
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c1",
+    "text": null,
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-07",
+       "2026-04-10",
+       "2026-04-14",
+       "2026-04-17",
+       "2026-04-21",
+       "2026-04-24",
+       "2026-04-28"
+      ],
+      "text": "水色の日"
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c1",
+    "text": "月曜日と金曜日に収集（運搬）します",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "FR"
+      ],
+      "text": "月曜日と金曜日に収集（運搬）します"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c2",
+    "text": "14 28",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-14",
+       "2026-04-28"
+      ],
+      "text": "14 28"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c3",
+    "text": "7 21",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-07",
+       "2026-04-21"
+      ],
+      "text": "7 21"
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c4",
+    "text": "1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-01"
+      ],
+      "text": "1"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c2",
+    "text": "10 24",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-10",
+       "2026-04-24"
+      ],
+      "text": "10 24"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c3",
+    "text": "3 17",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-17"
+      ],
+      "text": "3 17"
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c4",
+    "text": "8",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-08"
+      ],
+      "text": "8"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c2",
+    "text": "8 22",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-08",
+       "2026-04-22"
+      ],
+      "text": "8 22"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c3",
+    "text": "1 15 29",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-01",
+       "2026-04-15",
+       "2026-04-29"
+      ],
+      "text": "1 15 29"
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c4",
+    "text": "17",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-17"
+      ],
+      "text": "17"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c2",
+    "text": "2 16 30",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-02",
+       "2026-04-16",
+       "2026-04-30"
+      ],
+      "text": "2 16 30"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c3",
+    "text": "9 23",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-09",
+       "2026-04-23"
+      ],
+      "text": "9 23"
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c4",
+    "text": "22",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-22"
+      ],
+      "text": "22"
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c3",
+    "text": "6 20",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-06",
+       "2026-04-20"
+      ],
+      "text": "6 20"
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c4",
+    "text": "3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03"
+      ],
+      "text": "3"
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c3",
+    "text": "13 27",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-13",
+       "2026-04-27"
+      ],
+      "text": "13 27"
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c4",
+    "text": "10",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-10"
+      ],
+      "text": "10"
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "祝日の扱い",
+    "district": null,
+    "category": null,
+    "text": "書いていない"
+   },
+   {
+    "about": "年末年始の扱い",
+    "district": null,
+    "category": null,
+    "text": "書いていない"
+   },
+   {
+    "about": "江島地区の資源ごみ等の収集日",
+    "district": "d3",
+    "category": null,
+    "text": "江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。"
+   },
+   {
+    "about": "粗大ごみの収集日",
+    "district": null,
+    "category": "c5",
+    "text": "表に収集日の記載がない"
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 6063,
+  "completion_tokens": 17052,
+  "total_tokens": 23115,
+  "prompt_tokens_details": {
+   "cached_tokens": 2816
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 15267
+  },
+  "prompt_cache_hit_tokens": 2816,
+  "prompt_cache_miss_tokens": 3247,
+  "seconds": 69.8,
+  "model": "deepseek-flash"
+ },
+ "cost": {
+  "usd": 0.021453,
+  "usd_peak": 0.021453,
+  "offpeak": false,
+  "price_per_mtok": {
+   "input_miss": 0.3,
+   "input_hit": 0.006,
+   "output": 1.2
+  },
+  "offpeak_utc": "16:30-00:30 (料金表で要確認)"
+ },
+ "error": null,
+ "seconds": 69.8,
+ "raw_note": "試走 (生の文字を残す前の作り) の記録。answer は API が返した JSON の文字を読んだもの (JSON モード)"
+}

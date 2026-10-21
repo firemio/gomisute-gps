@@ -1,0 +1,514 @@
+{
+ "doc_id": "045811-2026-12",
+ "model": "deepseek-flash",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "4364b9764f6905ced1feaf7a23dd6ca84b47bd8e8006c5e05efde4b191392eb0",
+ "started_at": "2026-10-21T10:48:56+00:00",
+ "images": 2,
+ "answer": {
+  "municipality": "女川町",
+  "period": {
+   "printed": "令和８年12月",
+   "from": "2026-12-01",
+   "to": "2026-12-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "大沢・浦宿全区・針浜",
+    "members": [
+     "大沢",
+     "浦宿全区",
+     "針浜"
+    ]
+   },
+   {
+    "id": "d2",
+    "label": "上全区・西・小乗",
+    "members": [
+     "上全区",
+     "西",
+     "小乗"
+    ]
+   },
+   {
+    "id": "d3",
+    "label": "女川全区・大原全区・清水",
+    "members": [
+     "女川全区",
+     "大原全区",
+     "清水"
+    ]
+   },
+   {
+    "id": "d4",
+    "label": "旭が丘・宮ケ崎・石浜",
+    "members": [
+     "旭が丘",
+     "宮ケ崎",
+     "石浜"
+    ]
+   },
+   {
+    "id": "d5",
+    "label": "高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取",
+    "members": [
+     "高白",
+     "横浦",
+     "大石原",
+     "野々浜",
+     "飯子浜",
+     "塚浜",
+     "小屋取"
+    ]
+   },
+   {
+    "id": "d6",
+    "label": "桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間",
+    "members": [
+     "桐ケ崎",
+     "竹浦",
+     "尾浦",
+     "御前",
+     "指ケ浜",
+     "出島",
+     "寺間"
+    ]
+   },
+   {
+    "id": "d7",
+    "label": "江島地区",
+    "members": [
+     "江島地区"
+    ]
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やせるごみ",
+    "coarse": [
+     "burnable"
+    ]
+   },
+   {
+    "id": "c2",
+    "label": "缶・びん・ペットボトル",
+    "coarse": [
+     "beverage_can",
+     "glass_bottle",
+     "pet_bottle"
+    ]
+   },
+   {
+    "id": "c3",
+    "label": "ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "coarse": [
+     "plastic",
+     "paper",
+     "cloth",
+     "other"
+    ]
+   },
+   {
+    "id": "c4",
+    "label": "燃やせないごみ",
+    "coarse": [
+     "non_burnable"
+    ]
+   },
+   {
+    "id": "c5",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ]
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-03",
+       "2026-12-07",
+       "2026-12-10",
+       "2026-12-14",
+       "2026-12-17",
+       "2026-12-21",
+       "2026-12-24",
+       "2026-12-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-03",
+       "2026-12-07",
+       "2026-12-10",
+       "2026-12-14",
+       "2026-12-17",
+       "2026-12-21",
+       "2026-12-24",
+       "2026-12-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-01",
+       "2026-12-04",
+       "2026-12-08",
+       "2026-12-11",
+       "2026-12-15",
+       "2026-12-18",
+       "2026-12-22",
+       "2026-12-25",
+       "2026-12-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-01",
+       "2026-12-04",
+       "2026-12-08",
+       "2026-12-11",
+       "2026-12-15",
+       "2026-12-18",
+       "2026-12-22",
+       "2026-12-25",
+       "2026-12-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-03",
+       "2026-12-07",
+       "2026-12-10",
+       "2026-12-14",
+       "2026-12-17",
+       "2026-12-21",
+       "2026-12-24",
+       "2026-12-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-01",
+       "2026-12-04",
+       "2026-12-08",
+       "2026-12-11",
+       "2026-12-15",
+       "2026-12-18",
+       "2026-12-22",
+       "2026-12-25",
+       "2026-12-29"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-08",
+       "2026-12-22"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-01",
+       "2026-12-15"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-02"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-04",
+       "2026-12-18"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-11",
+       "2026-12-25"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-09"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-02",
+       "2026-12-16"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-09",
+       "2026-12-23"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-18"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-10",
+       "2026-12-24"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-03",
+       "2026-12-17"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-23"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-14",
+       "2026-12-28"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-04"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-07",
+       "2026-12-21"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c5",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-12-11"
+      ]
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "祝日の収集日扱い",
+    "district": null,
+    "category": null,
+    "text": "書いていない"
+   },
+   {
+    "about": "年末年始の収集日扱い",
+    "district": null,
+    "category": null,
+    "text": "書いていない"
+   },
+   {
+    "about": "江島地区の資源ごみ・燃やせないごみ・粗大ごみの収集日",
+    "district": "d7",
+    "category": null,
+    "text": "江島地区の資源ごみ等は、区長さんなどを通じ、別途お知らせいたします。"
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 6158,
+  "completion_tokens": 11740,
+  "total_tokens": 17898,
+  "prompt_tokens_details": {
+   "cached_tokens": 2816
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 10090
+  },
+  "prompt_cache_hit_tokens": 2816,
+  "prompt_cache_miss_tokens": 3342,
+  "seconds": 48.0,
+  "model": "deepseek-flash"
+ },
+ "cost": {
+  "usd": 0.015107,
+  "usd_peak": 0.015107,
+  "offpeak": false,
+  "price_per_mtok": {
+   "input_miss": 0.3,
+   "input_hit": 0.006,
+   "output": 1.2
+  },
+  "offpeak_utc": "16:30-00:30 (料金表で要確認)"
+ },
+ "error": null,
+ "seconds": 48.0,
+ "raw_note": "試走 (生の文字を残す前の作り) の記録。answer は API が返した JSON の文字を読んだもの (JSON モード)"
+}

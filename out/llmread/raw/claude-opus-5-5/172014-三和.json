@@ -1,0 +1,299 @@
+{
+ "doc_id": "172014-三和",
+ "model": "claude-opus-5-5",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "210bdb7270710bd36ad195cfed3471de00833ce28334a6c40638aaecb3467e94",
+ "started_at": "2026-10-21T10:54:41+00:00",
+ "images": 0,
+ "seconds": 21.8,
+ "answer": {
+  "municipality": null,
+  "period": {
+   "printed": "2026年度版",
+   "from": "2026-04-01",
+   "to": "2027-03-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "三和",
+    "members": [],
+    "note": "見出しは「三和（西部管理センター）2026年度版」"
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やすごみ",
+    "coarse": [
+     "burnable"
+    ],
+    "note": null
+   },
+   {
+    "id": "c2",
+    "label": "燃やさないごみ",
+    "coarse": [
+     "non_burnable"
+    ],
+    "note": null
+   },
+   {
+    "id": "c3",
+    "label": "資源 あき缶・ペットボトル プラスチック資源など",
+    "coarse": [
+     "beverage_can",
+     "pet_bottle",
+     "plastic"
+    ],
+    "note": null
+   },
+   {
+    "id": "c4",
+    "label": "資源 プラスチック資源",
+    "coarse": [
+     "plastic"
+    ],
+    "note": null
+   },
+   {
+    "id": "c5",
+    "label": "びん",
+    "coarse": [
+     "glass_bottle"
+    ],
+    "note": null
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "月曜日・ 木曜日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・ 木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": "第1火曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-07",
+       "2026-05-05",
+       "2026-06-02",
+       "2026-07-07",
+       "2026-08-04",
+       "2026-09-01",
+       "2026-10-06",
+       "2026-11-03",
+       "2026-12-01",
+       "2027-01-05",
+       "2027-02-02",
+       "2027-03-02"
+      ],
+      "text": "第1火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": "第2・4火曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23",
+       "2026-07-14",
+       "2026-07-28",
+       "2026-08-11",
+       "2026-08-25",
+       "2026-09-08",
+       "2026-09-22",
+       "2026-10-13",
+       "2026-10-27",
+       "2026-11-10",
+       "2026-11-24",
+       "2026-12-08",
+       "2026-12-22",
+       "2027-01-12",
+       "2027-01-26",
+       "2027-02-09",
+       "2027-02-23",
+       "2027-03-09",
+       "2027-03-23"
+      ],
+      "text": "第2・4火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": "第5火曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-06-30",
+       "2026-09-29",
+       "2027-03-30"
+      ],
+      "text": "第5火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c5",
+    "text": "第3水曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-15",
+       "2026-05-20",
+       "2026-06-17",
+       "2026-07-15",
+       "2026-08-19",
+       "2026-09-16",
+       "2026-10-21",
+       "2026-11-18",
+       "2026-12-16",
+       "2027-01-20",
+       "2027-02-17",
+       "2027-03-17"
+      ],
+      "text": "第3水曜日"
+     }
+    ]
+   }
+  ],
+  "exceptions": [
+   {
+    "kind": "closure",
+    "scope": {
+     "districts": [
+      "d1"
+     ],
+     "categories": [
+      "c1"
+     ]
+    },
+    "from": "2026-12-29",
+    "to": "2027-01-03",
+    "year_end": true,
+    "text": "年末は 12月28日 (月曜日） まで 年始は 1月4日 （月曜日） から"
+   }
+  ],
+  "unsure": [
+   {
+    "about": "自治体の名前が資料の節の中に書かれていない",
+    "district": null,
+    "category": null,
+    "text": "三和（西部管理センター）2026年度版"
+   },
+   {
+    "about": "祝日・振替休日の扱いが書いていない",
+    "district": "d1",
+    "category": "c1",
+    "text": null
+   },
+   {
+    "about": "12月の第5火曜日（プラスチック資源）は「ー(※)」で、年末年始のため変更とあるが、変更後の日付が書かれていない",
+    "district": "d1",
+    "category": "c4",
+    "text": "ー(※) （※）年末年始の影響で、収集日を変更しています。ご注意ください。"
+   },
+   {
+    "about": "表の見出しに名前の無い列がある（燃やすごみの隣）。中身が分からない",
+    "district": "d1",
+    "category": null,
+    "text": "<th rowspan=\"2\"></th>"
+   },
+   {
+    "about": "品目名に「など」があり、中身のすべてが分からない。coarse は名前に書かれたものだけにした",
+    "district": "d1",
+    "category": "c3",
+    "text": "資源 あき缶・ペットボトル プラスチック資源など"
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5463,
+  "cache_read_input_tokens": 1174,
+  "output_tokens": 2462,
+  "output_tokens_details": {
+   "thinking_tokens": 1026
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5463,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2462,
+    "cache_read_input_tokens": 1174,
+    "cache_creation_input_tokens": 5463,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5463
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2462,
+   "cacheReadInputTokens": 1174,
+   "cacheCreationInputTokens": 5463,
+   "webSearchRequests": 0,
+   "costUSD": 0.09318680000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1026,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "num_turns": 1,
+ "duration_ms": 20721,
+ "duration_api_ms": 20683,
+ "permission_denials": [],
+ "cost": {
+  "usd": 0.09318680000000001,
+  "note": "claude -p の total_cost_usd (CLI が API の料金で数えた値)"
+ },
+ "error": null,
+ "raw_note": "試走 (生の文字を残す前の作り) の記録。answer は claude -p の result の文字を JSON として読んだもの"
+}

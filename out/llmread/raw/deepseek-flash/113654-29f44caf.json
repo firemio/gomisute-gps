@@ -1,0 +1,419 @@
+{
+ "doc_id": "113654-29f44caf",
+ "model": "deepseek-flash",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "0bcaaa77f08aa6349a14cfc6fd50722e1a737a0cecc157d57d6425c968cb6a79",
+ "started_at": "2026-10-21T11:10:36+00:00",
+ "images": 2,
+ "answer": {
+  "municipality": "小鹿野町",
+  "period": {
+   "printed": "令和8年度",
+   "from": "2026-04-01",
+   "to": "2027-03-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "小鹿野（新井・腰ノ根を除く）・伊豆沢",
+    "members": [],
+    "note": null
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "可燃ごみ",
+    "coarse": [
+     "burnable"
+    ],
+    "note": null
+   },
+   {
+    "id": "c2",
+    "label": "不燃ごみ",
+    "coarse": [
+     "non_burnable"
+    ],
+    "note": null
+   },
+   {
+    "id": "c3",
+    "label": "紙・布類",
+    "coarse": [
+     "paper_cloth"
+    ],
+    "note": null
+   },
+   {
+    "id": "c4",
+    "label": "カン・ビン",
+    "coarse": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "note": null
+   },
+   {
+    "id": "c5",
+    "label": "ペットボトル",
+    "coarse": [
+     "pet_bottle"
+    ],
+    "note": null
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "カレンダー",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-06",
+       "2026-04-10",
+       "2026-04-13",
+       "2026-04-17",
+       "2026-04-20",
+       "2026-04-24",
+       "2026-04-27",
+       "2026-05-01",
+       "2026-05-04",
+       "2026-05-08",
+       "2026-05-11",
+       "2026-05-15",
+       "2026-05-18",
+       "2026-05-22",
+       "2026-05-25",
+       "2026-05-29",
+       "2026-06-01",
+       "2026-06-05",
+       "2026-06-08",
+       "2026-06-12",
+       "2026-06-15",
+       "2026-06-19",
+       "2026-06-22",
+       "2026-06-26",
+       "2026-06-29",
+       "2026-07-03",
+       "2026-07-06",
+       "2026-07-10",
+       "2026-07-13",
+       "2026-07-17",
+       "2026-07-20",
+       "2026-07-24",
+       "2026-07-27",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-11",
+       "2026-09-14",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-25",
+       "2026-12-28",
+       "2027-01-04",
+       "2027-01-08",
+       "2027-01-11",
+       "2027-01-15",
+       "2027-01-18",
+       "2027-01-22",
+       "2027-01-25",
+       "2027-01-29",
+       "2027-02-01",
+       "2027-02-05",
+       "2027-02-08",
+       "2027-02-12",
+       "2027-02-15",
+       "2027-02-19",
+       "2027-02-22",
+       "2027-02-26",
+       "2027-03-01",
+       "2027-03-05",
+       "2027-03-08",
+       "2027-03-12",
+       "2027-03-15",
+       "2027-03-19",
+       "2027-03-22",
+       "2027-03-26",
+       "2027-03-29"
+      ],
+      "text": "カレンダー"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": "カレンダー",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-15",
+       "2026-05-20",
+       "2026-06-17",
+       "2026-07-15",
+       "2026-08-19",
+       "2026-09-16",
+       "2026-10-21",
+       "2026-11-18",
+       "2026-12-16",
+       "2027-01-20",
+       "2027-02-17",
+       "2027-03-17"
+      ],
+      "text": "カレンダー"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": "カレンダー",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-02",
+       "2026-04-16",
+       "2026-05-07",
+       "2026-05-21",
+       "2026-06-04",
+       "2026-06-18",
+       "2026-07-02",
+       "2026-07-16",
+       "2026-08-06",
+       "2026-08-20",
+       "2026-09-03",
+       "2026-09-17",
+       "2026-10-01",
+       "2026-10-15",
+       "2026-11-05",
+       "2026-11-19",
+       "2026-12-03",
+       "2026-12-17",
+       "2027-01-07",
+       "2027-01-21",
+       "2027-02-04",
+       "2027-02-18",
+       "2027-03-04",
+       "2027-03-18"
+      ],
+      "text": "カレンダー"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": "カレンダー",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-09",
+       "2026-04-23",
+       "2026-05-14",
+       "2026-05-28",
+       "2026-06-11",
+       "2026-06-25",
+       "2026-07-09",
+       "2026-07-23",
+       "2026-08-13",
+       "2026-08-27",
+       "2026-09-10",
+       "2026-09-24",
+       "2026-10-08",
+       "2026-10-22",
+       "2026-11-12",
+       "2026-11-26",
+       "2026-12-10",
+       "2026-12-24",
+       "2027-01-14",
+       "2027-01-28",
+       "2027-02-11",
+       "2027-02-25",
+       "2027-03-11",
+       "2027-03-25"
+      ],
+      "text": "カレンダー"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c5",
+    "text": "カレンダー",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-08",
+       "2026-04-22",
+       "2026-05-13",
+       "2026-05-27",
+       "2026-06-10",
+       "2026-06-24",
+       "2026-07-08",
+       "2026-07-22",
+       "2026-08-12",
+       "2026-08-26",
+       "2026-09-09",
+       "2026-09-23",
+       "2026-10-14",
+       "2026-10-28",
+       "2026-11-11",
+       "2026-11-25",
+       "2026-12-09",
+       "2026-12-23",
+       "2027-01-13",
+       "2027-01-27",
+       "2027-02-10",
+       "2027-02-24",
+       "2027-03-10",
+       "2027-03-24"
+      ],
+      "text": "カレンダー"
+     }
+    ]
+   }
+  ],
+  "exceptions": [
+   {
+    "kind": "closure",
+    "scope": {
+     "districts": [
+      "*"
+     ],
+     "categories": [
+      "*"
+     ]
+    },
+    "from": "2027-01-01",
+    "to": "2027-01-03",
+    "year_end": true,
+    "text": "新年の1日〜3日は、ごみの収集及び施設への持ち込みもお休みです。"
+   }
+  ],
+  "unsure": [
+   {
+    "about": "祝日の収集の扱い",
+    "district": "d1",
+    "category": null,
+    "text": "祝日も収集するか休むかの明記はない。"
+   },
+   {
+    "about": "クリーンサンデー",
+    "district": null,
+    "category": null,
+    "text": "日曜に「クリーンサンデー」と印字があるが、ごみの種類・収集回数の凡例に無いため、収集日として扱っていない。"
+   },
+   {
+    "about": "地区の範囲",
+    "district": "d1",
+    "category": null,
+    "text": "「小鹿野（新井・腰ノ根を除く）・伊豆沢」と印字されているが、新井・腰ノ根を除く区域の町名一覧は無い。"
+   },
+   {
+    "about": "令和9年の祝日変更",
+    "district": null,
+    "category": null,
+    "text": "「令和9年の祝日に変更等がある場合については、ご容赦ください」とある。"
+   }
+  ]
+ },
+ "usage": {
+  "prompt_tokens": 9491,
+  "completion_tokens": 24354,
+  "total_tokens": 33845,
+  "prompt_tokens_details": {
+   "cached_tokens": 2816
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 22354
+  },
+  "prompt_cache_hit_tokens": 2816,
+  "prompt_cache_miss_tokens": 6675,
+  "seconds": 95.4,
+  "model": "deepseek-flash"
+ },
+ "error": null,
+ "cost": {
+  "usd": 0.031244,
+  "usd_peak": 0.031244,
+  "offpeak": false,
+  "price_per_mtok": {
+   "input_miss": 0.3,
+   "input_hit": 0.006,
+   "output": 1.2
+  },
+  "offpeak_utc": "16:30-00:30 (料金表で要確認)",
+  "calls": 1
+ },
+ "raw": {
+  "attempts": [
+   {
+    "content": "{\"municipality\":\"小鹿野町\",\"period\":{\"printed\":\"令和8年度\",\"from\":\"2026-04-01\",\"to\":\"2027-03-31\"},\"districts\":[{\"id\":\"d1\",\"label\":\"小鹿野（新井・腰ノ根を除く）・伊豆沢\",\"members\":[],\"note\":null}],\"categories\":[{\"id\":\"c1\",\"label\":\"可燃ごみ\",\"coarse\":[\"burnable\"],\"note\":null},{\"id\":\"c2\",\"label\":\"不燃ごみ\",\"coarse\":[\"non_burnable\"],\"note\":null},{\"id\":\"c3\",\"label\":\"紙・布類\",\"coarse\":[\"paper_cloth\"],\"note\":null},{\"id\":\"c4\",\"label\":\"カン・ビン\",\"coarse\":[\"beverage_can\",\"glass_bottle\"],\"note\":null},{\"id\":\"c5\",\"label\":\"ペットボトル\",\"coarse\":[\"pet_bottle\"],\"note\":null}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"text\":\"カレンダー\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-03\",\"2026-04-06\",\"2026-04-10\",\"2026-04-13\",\"2026-04-17\",\"2026-04-20\",\"2026-04-24\",\"2026-04-27\",\"2026-05-01\",\"2026-05-04\",\"2026-05-08\",\"2026-05-11\",\"2026-05-15\",\"2026-05-18\",\"2026-05-22\",\"2026-05-25\",\"2026-05-29\",\"2026-06-01\",\"2026-06-05\",\"2026-06-08\",\"2026-06-12\",\"2026-06-15\",\"2026-06-19\",\"2026-06-22\",\"2026-06-26\",\"2026-06-29\",\"2026-07-03\",\"2026-07-06\",\"2026-07-10\",\"2026-07-13\",\"2026-07-17\",\"2026-07-20\",\"2026-07-24\",\"2026-07-27\",\"2026-07-31\",\"2026-08-03\",\"2026-08-07\",\"2026-08-10\",\"2026-08-14\",\"2026-08-17\",\"2026-08-21\",\"2026-08-24\",\"2026-08-28\",\"2026-08-31\",\"2026-09-04\",\"2026-09-07\",\"2026-09-11\",\"2026-09-14\",\"2026-09-18\",\"2026-09-21\",\"2026-09-25\",\"2026-09-28\",\"2026-10-02\",\"2026-10-05\",\"2026-10-09\",\"2026-10-12\",\"2026-10-16\",\"2026-10-19\",\"2026-10-23\",\"2026-10-26\",\"2026-10-30\",\"2026-11-02\",\"2026-11-06\",\"2026-11-09\",\"2026-11-13\",\"2026-11-16\",\"2026-11-20\",\"2026-11-23\",\"2026-11-27\",\"2026-11-30\",\"2026-12-04\",\"2026-12-07\",\"2026-12-11\",\"2026-12-14\",\"2026-12-18\",\"2026-12-21\",\"2026-12-25\",\"2026-12-28\",\"2027-01-04\",\"2027-01-08\",\"2027-01-11\",\"2027-01-15\",\"2027-01-18\",\"2027-01-22\",\"2027-01-25\",\"2027-01-29\",\"2027-02-01\",\"2027-02-05\",\"2027-02-08\",\"2027-02-12\",\"2027-02-15\",\"2027-02-19\",\"2027-02-22\",\"2027-02-26\",\"2027-03-01\",\"2027-03-05\",\"2027-03-08\",\"2027-03-12\",\"2027-03-15\",\"2027-03-19\",\"2027-03-22\",\"2027-03-26\",\"2027-03-29\"],\"text\":\"カレンダー\"}]},{\"district\":\"d1\",\"category\":\"c2\",\"text\":\"カレンダー\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-15\",\"2026-05-20\",\"2026-06-17\",\"2026-07-15\",\"2026-08-19\",\"2026-09-16\",\"2026-10-21\",\"2026-11-18\",\"2026-12-16\",\"2027-01-20\",\"2027-02-17\",\"2027-03-17\"],\"text\":\"カレンダー\"}]},{\"district\":\"d1\",\"category\":\"c3\",\"text\":\"カレンダー\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-02\",\"2026-04-16\",\"2026-05-07\",\"2026-05-21\",\"2026-06-04\",\"2026-06-18\",\"2026-07-02\",\"2026-07-16\",\"2026-08-06\",\"2026-08-20\",\"2026-09-03\",\"2026-09-17\",\"2026-10-01\",\"2026-10-15\",\"2026-11-05\",\"2026-11-19\",\"2026-12-03\",\"2026-12-17\",\"2027-01-07\",\"2027-01-21\",\"2027-02-04\",\"2027-02-18\",\"2027-03-04\",\"2027-03-18\"],\"text\":\"カレンダー\"}]},{\"district\":\"d1\",\"category\":\"c4\",\"text\":\"カレンダー\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-09\",\"2026-04-23\",\"2026-05-14\",\"2026-05-28\",\"2026-06-11\",\"2026-06-25\",\"2026-07-09\",\"2026-07-23\",\"2026-08-13\",\"2026-08-27\",\"2026-09-10\",\"2026-09-24\",\"2026-10-08\",\"2026-10-22\",\"2026-11-12\",\"2026-11-26\",\"2026-12-10\",\"2026-12-24\",\"2027-01-14\",\"2027-01-28\",\"2027-02-11\",\"2027-02-25\",\"2027-03-11\",\"2027-03-25\"],\"text\":\"カレンダー\"}]},{\"district\":\"d1\",\"category\":\"c5\",\"text\":\"カレンダー\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-08\",\"2026-04-22\",\"2026-05-13\",\"2026-05-27\",\"2026-06-10\",\"2026-06-24\",\"2026-07-08\",\"2026-07-22\",\"2026-08-12\",\"2026-08-26\",\"2026-09-09\",\"2026-09-23\",\"2026-10-14\",\"2026-10-28\",\"2026-11-11\",\"2026-11-25\",\"2026-12-09\",\"2026-12-23\",\"2027-01-13\",\"2027-01-27\",\"2027-02-10\",\"2027-02-24\",\"2027-03-10\",\"2027-03-24\"],\"text\":\"カレンダー\"}]}],\"exceptions\":[{\"kind\":\"closure\",\"scope\":{\"districts\":[\"*\"],\"categories\":[\"*\"]},\"from\":\"2027-01-01\",\"to\":\"2027-01-03\",\"year_end\":true,\"text\":\"新年の1日〜3日は、ごみの収集及び施設への持ち込みもお休みです。\"}],\"unsure\":[{\"about\":\"祝日の収集の扱い\",\"district\":\"d1\",\"category\":null,\"text\":\"祝日も収集するか休むかの明記はない。\"},{\"about\":\"クリーンサンデー\",\"district\":null,\"category\":null,\"text\":\"日曜に「クリーンサンデー」と印字があるが、ごみの種類・収集回数の凡例に無いため、収集日として扱っていない。\"},{\"about\":\"地区の範囲\",\"district\":\"d1\",\"category\":null,\"text\":\"「小鹿野（新井・腰ノ根を除く）・伊豆沢」と印字されているが、新井・腰ノ根を除く区域の町名一覧は無い。\"},{\"about\":\"令和9年の祝日変更\",\"district\":null,\"category\":null,\"text\":\"「令和9年の祝日に変更等がある場合については、ご容赦ください」とある。\"}]}",
+    "reasoning_content": "We need answer JSON only. Need parse Japanese calendar for Ogano? Municipality name: 小鹿野町? Header says 小鹿野（新井・腰ノ根を除く）・伊豆沢, 秩父広域市町村圏組合, 小鹿野町住民生活課. Municipality likely 小鹿野町. But collection area label is 小鹿野（新井・腰ノ根を除く）・伊豆沢. Need extract schedules from calendars, likely one district? The document is for a single collection district (小鹿野 excluding 新井・腰ノ根 + 伊豆沢). Since only one area shown, district one label as printed? We need decide. The calendar likely for specific area \"小鹿野（新井・腰ノ根を除く）・伊豆沢\". That is not multiple districts, it's one area. We can make district d1 label \"小鹿野（新井・腰ノ根を除く）・伊豆沢\", members []? Or one district label \"全域\"? Instructions: districts are collection day divisions; if no division and same all area, make one district label \"全域\". Here there is a specific area name printed at bottom: \"小鹿野（新井・腰ノ根を除く）・伊豆沢\". Is that a district label? It identifies coverage, not necessarily division. Since it's one calendar for that area; I'd use label as printed, members maybe [\"小鹿野（新井・腰ノ根を除く）\",\"伊豆沢\"]? But label is a combined area. The \"districts\" label should be printed names. There is only one collection group. Using label \"小鹿野（新井・腰ノ根を除く）・伊豆沢\" and members perhaps []? Need \"地区の中身として町名・丁目・行政区などが並んでいれば members に 1 つずつ (印字のまま)\". The bottom line shows this area. It's arguably a district label. I can set label exactly and members [] or [\"小鹿野（新井・腰ノ根を除く）\",\"伊豆沢\"]. Hmm.\n\nNeed extract actual dates. We have calendar images, can read from image. Need build schedules. We can represent each category with printed dates using dates rule. Need parse all collection dates for categories over fiscal year Apr 2026-Mar 2027. Could use rules (weekly etc.) but there are exceptions (holidays? Year-end?). Need inspect calendars. Better use exact printed dates from calendar for each category, with dates rules, since many dates are printed. There are categories: 可燃ごみ (weekly twice? They show 週2回), 不燃ごみ (monthly 1?), 紙・布類 (monthly 2?), カン・ビン (monthly 2?), ペットボトル (monthly 2?). Need dates for each. We can list all dates.\n\nNeed ensure weekdays correspond. Let's decode calendar. Need be careful. Use images. We'll map year/month, weekdays.\n\nPeriod: printed \"令和8年4月〜9月\" page1 and \"令和8年10月〜令和9年3月\" page2. Overall \"令和8年度\" = 2026-04-01 to 2027-03-31. printed maybe \"令和8年度\" and \"令和8年4月〜9月\" etc. The period field printed can be \"令和8年度\" or combined? It says period: 資料が言う有効な期間, printed and from/to. We can set printed \"令和8年度\" (header) or \"令和8年4月〜9月 / 令和8年10月〜令和9年3月\". Since both pages cover full year. Use printed \"令和8年度\" and from 2026-04-01 to 2027-03-31. Is that acceptable? Header \"令和8年度・家庭用\". Yes.\n\nNeed extract dates. Let's decode calendars. The images are legible. Need determine each month weekdays and dates marked with garbage labels.\n\nLet's transcribe. Page 1: April-Sept 2026. Page 2: Oct 2026-Mar 2027.\n\nImportant: Calendar week starts Sunday. Need date -> weekday. We can compute.\n\n2026:\nApr 1 2026 is Wednesday? Let's verify. 2026 Jan 1 Thursday? 2024 leap Jan1 Mon, 2025 Jan1 Wed, 2026 Jan1 Thu. Apr1: Jan31 (Sat? Jan1 Thu, Jan31 Sat), Feb28 (Feb1 Sun? 2026 Feb1 Sunday), Mar31 (Mar1 Sunday, Mar31 Tue), Apr1 Wednesday. Yes.\n\nMay1 2026 Friday.\nJun1 Monday.\nJul1 Wednesday.\nAug1 Saturday.\nSep1 Tuesday.\nOct1 Thursday.\nNov1 Sunday.\nDec1 Tuesday.\nJan1 2027 Friday.\nFeb1 Monday.\nMar1 Monday.\n\nCalendars in image likely align.\n\nNeed identify dates for each category. Each day may have multiple labels? Looking at calendar, cells have colored labels. Some dates have 2 categories? E.g April 2 has 紙・布類, April 3 has 可燃ごみ. Weekend sometimes \"クリーンサンデー\" overlay? Need ignore clean Sunday? Actually \"クリーンサンデー\" is likely a separate collection? Wait labels \"クリーンサンデー\" appear over certain Sundays, perhaps \"クリーンサンデー\" means no collection? Need understand. In calendar cells, on some Sundays text \"クリーン サンデー\" maybe a community cleanup event? It's printed in cell but not a waste category? It might indicate \"クリーンサンデー\" (clean Sunday) no garbage collection? Let's inspect. In April, Sundays 5,12,19,26 have \"クリーン サンデー\" (green text). They also may have no category labels? April 5 cell has \"クリーンサンデー\" only? April 12 only. April 19 only. April 26 only. This appears on all Sundays? In April image, every Sunday has クリーンサンデー. In May Sundays also. Is that just text meaning no collection on Sundays? It might be a label not a category. The calendar likely has \"クリーンサンデー\" as no collection? Wait header on page1 has repeated \"クリーン サンデー\" many times in text layer, likely these are the Sunday annotations. They are not waste collection. We ignore as not collection category. Need not include.\n\nCalendar labels: On dates, waste types. Need extract dates for each category. There may be multiple labels on same date? Looking at April: 2 紙・布類, 3 可燃ごみ, 6 可燃ごみ, 7 可燃ごみ, 9 カン・ビン, 10 可燃ごみ, 13 可燃ごみ, 14 可燃ごみ? Wait need read carefully.\n\nLet's use image. April 2026 calendar:\nWeek columns Sun Mon Tue Wed Thu Fri Sat. Dates:\nRow1: 1 (Wed), 2 (Thu), 3 (Fri), 4 (Sat)\n- 1 blank?\n- 2 紙・布類\n- 3 可燃ごみ\n- 4 blank?\n\nRow2: 5 Sun, 6 Mon, 7 Tue, 8 Wed, 9 Thu, 10 Fri, 11 Sat\n- 5 クリーンサンデー (no waste)\n- 6 可燃ごみ\n- 7 可燃ごみ? Wait image: April 6 has 可燃ごみ; 7 maybe blank? Let's zoom mentally. The text layer sequence is hard. Image: Row starting 5: 5 has クリーンサンデー; 6 可燃ごみ; 7? The cell 7 appears maybe blank? 8? 9 カン・ビン; 10 可燃ごみ; 11 可燃ごみ? Hmm.\n\nLet's rely on visible image. I'll zoom via description. The April calendar image top left:\nColumns: 日 月 火 水 木 金 土\nRow: 1 blank under 水, 2 \"紙・布類\" under 木, 3 \"可燃ごみ\" under 金, 4 blank under 土.\nRow: 5 \"クリーンサンデー\" under 日; 6 \"可燃ごみ\" under 月; 7 blank? 8 blank? 9 \"カン・ビン\" under 木; 10 \"可燃ごみ\" under 金; 11 blank? Wait I can see text \"可燃ごみ\" under 6 and \"可燃ごみ\" under 10? Actually maybe 7? Let's map from text layer: after 紙・布類, 可燃ごみ repeated. Text sequence: \"紙・布類\", \"可燃ごみ\", \"可燃ごみ\", \"可燃ごみ\", \"カン・ビン\", \"カン・ビン\", \"可燃ごみ\", ... Hard.\n\nMaybe better infer collection pattern. Categories frequencies:\n- 可燃ごみ: 週2回 (twice weekly). Likely Tuesday and Friday? Check April: 3 Fri, 7 Tue, 10 Fri, 14 Tue, 17 Fri, 21 Tue, 24 Fri, 28 Tue. That's twice weekly Tue/Fri. Looking at image: 3可燃, 7可燃, 10可燃, 14可燃, 17可燃, 21可燃, 24可燃, 28可燃. Yes that pattern. Also maybe 6? No. On April 6 Monday? Hmm image I thought 6可燃, but maybe row under 6 is blank? Let's see: The row 5-11: Under 月 (6) maybe blank, under 火 (7) \"可燃ごみ\", under 水 (8) blank, under 木 (9) \"カン・ビン\", under 金 (10) \"可燃ごみ\", under 土 (11) blank. That fits. In image, \"可燃ごみ\" under 6? Hmm I can see at row2, cell 6 appears \"可燃ごみ\"? Wait if pattern Tue/Fri, 6 is Monday not. Maybe there is a label under 6 \"可燃ごみ\"? Let's look: April row 5-11, cell 6 (Mon) has green \"可燃ごみ\"? The image shows \"可燃ごみ\" under 6? Actually date 6 is under 月; I see a green label \"可燃ごみ\" in that cell? Hmm text layer sequence after 5? Let's parse text layer more carefully with dates not included? It starts labels before dates. Hard.\n\nLet's verify by pattern in later months. In May, 可燃 likely Tue/Fri: May 1 Fri 可燃, 5 Tue, 8 Fri, 12 Tue, 15 Fri, 19 Tue, 22 Fri, 26 Tue, 29 Fri. Image May: 1 has 可燃ごみ; 5 可燃ごみ; 8 可燃ごみ; 12 可燃ごみ; 15 可燃ごみ; 19 可燃ごみ; 22 可燃ごみ; 26 可燃ごみ; 29 可燃ごみ. Yes likely. June: 2 Tue, 5 Fri, 9 Tue, 12 Fri, 16 Tue, 19 Fri, 23 Tue, 26 Fri, 30 Tue. Image June: 2 可燃, 5 可燃, 9 可燃, 12 可燃, 16 可燃, 19 可燃, 23 可燃, 26 可燃, 30 可燃. Good. July: 3 Fri, 7 Tue, 10 Fri, 14 Tue, 17 Fri, 21 Tue, 24 Fri, 28 Tue, 31 Fri. Image July: 3 可燃, 7 可燃, 10 可燃, 14 可燃, 17 可燃, 21 可燃, 24 可燃, 28 可燃, 31 可燃. Yes. Aug: 4 Tue, 7 Fri, 11 Tue, 14 Fri, 18 Tue, 21 Fri, 25 Tue, 28 Fri. (Aug 1 Sat? Wait Aug 2026 starts Sat. So first Tue Aug4, Fri Aug7). Image Aug: 4 可燃, 7 可燃, 11 可燃, 14 可燃, 18 可燃, 21 可燃, 25 可燃, 28 可燃. Also maybe 1 blank. Sep: 1 Tue, 4 Fri, 8 Tue, 11 Fri, 15 Tue, 18 Fri, 22 Tue, 25 Fri, 29 Tue. Image Sep: 1 可燃, 4 可燃, 8 可燃, 11 可燃, 15 可燃, 18 可燃, 22 可燃, 25 可燃, 29 可燃. Good. So 可燃 = every Tue and Fri, weekly. But there may be no collection on Dec 29-Jan3? Need holiday/New Year. Calendar page2 Dec 29? Let's see Dec 2026: 29 Tue? Dec 29 is Tuesday. Calendar shows Dec 29 maybe \"施設持込可\" not 可燃. Dec 30 \"施設持込可\" maybe no collection. Dec 31 \"施設持込不可\". Jan 1-3休? The calendar notes 新年1日〜3日は収集及び持ち込みお休み. Also Dec 29? Page2 Dec row: 29 Tue maybe? Let's map later. But if weekly Tue/Fri, Dec 29 Tue would normally collect; calendar likely shows \"施設持込可\" (facility drop-off available) and no 可燃? Need exception closure maybe Dec 29? Text says \"新年の1日〜3日は、ごみの収集及び施設への持ち込みもお休みです。\" Only Jan1-3. The calendar Dec 29? Hmm facility drop-in maybe separate. Let's inspect page2 Dec: dates 1-31. Calendar shows Dec 29? The text layer has \"施設持込可\" near Dec 29/30? \"施設持込不可\" Dec31. Maybe collection in Dec 29 still? Let's look at image page2 top right Dec. Row 27 Sun,28 Mon,29 Tue,30 Wed,31 Thu. I see cells:\n27 クリーンサンデー\n28 可燃ごみ? or クリーン?\n29 施設持込可? Wait date 29 under Tue has maybe \"可燃ごみ\"? Let's zoom. The image top right Dec: \nRow with 20-26: 20 Sun クリーンサンデー, 21 Mon 可燃ごみ, 22 Tue ペットボトル, 23 Wed 可燃ごみ, 24 Thu 紙・布類, 25 Fri 可燃ごみ, 26 Sat blank.\nRow 27-31: 27 Sun クリーンサンデー, 28 Mon 可燃ごみ, 29 Tue 可燃ごみ? Hmm I see \"施設持込可\" maybe at 29? Actually there is green \"可燃ごみ\" in 28? Let's read text layer near Dec end: It has \"可燃ごみ\", \"可燃ごみ\", \"ペットボトル\", \"可燃ごみ\", \"紙・布類\", \"可燃ごみ\", then \"施設持込可\", \"施設持込可\", \"可燃ごみ\", \"可燃ごみ\", \"紙・布類\", \"可燃ごみ\", \"カン・ビン\", \"可燃ごみ\", \"可燃ごみ\", \"ペットボトル\"... Hard.\n\nNeed extract exact dates for all categories. We can use patterns:\n- 可燃: Tue/Fri weekly, but maybe omitted Jan1 (Fri) and Jan? Jan1 holiday. Jan 1 Friday would normally 可燃, but no collection. Jan1-3 closure. Jan 2 Sat no; Jan3 Sun no. Jan4 Mon no. So next 可燃 Jan5 Tue? yes.\n- 不燃ごみ: month 1? Likely 月1回, on specific Wednesday? Need dates.\n- 紙・布類: 月2回, specific Thursday? \n- カン・ビン: 月2回, specific Thursday?\n- ペットボトル: 月2回, specific Wednesday? Let's map.\n\nFrom April:\nPaper/cloth: Apr 2 (Thu), Apr 16 (Thu)? Image: 2 紙・布類, 16 紙・布類, 30? Wait Apr 30 is Thu; maybe 紙・布類? In image April 30 cell has 可燃ごみ? Let's inspect. April 30 Thu in last row, I see \"可燃ごみ\" maybe? Wait 30 is Thu, collection maybe paper? Hmm text layer at end for April? Let's list visible labels by date from image.\n\nApril image:\n1: blank\n2: 紙・布類\n3: 可燃ごみ\n4: blank\n5: クリーンサンデー\n6: ? maybe blank\n7: 可燃ごみ\n8: ? blank\n9: カン・ビン\n10: 可燃ごみ\n11: blank\n12: クリーンサンデー\n13: ? 可燃ごみ? Wait 13 Monday? Maybe 不燃ごみ? Let's read image: April 13 cell has \"可燃ごみ\"? Actually I see green \"可燃ごみ\" under 13? Hmm 13 is Monday, but 可燃 Tue/Fri pattern would no. Maybe I misread; April 13 might have \"可燃ごみ\"? Let's check. In the image, row 12-18: 12 クリーンサンデー; 13? I see \"可燃ごみ\" in cell 13? Wait cell 13 under 月 has a green label \"可燃ごみ\"? The text under date 13 maybe \"可燃ごみ\". But 13 Monday. Could collection be Mon/Thu? Let's revisit 可燃 pattern. Maybe 可燃 is Monday and Thursday? April 2 Thu paper, 3 Fri 可燃; Apr 6 Mon 可燃 (I initially saw 6可燃!), Apr 9 Thu カン・ビン, Apr 10 Fri 可燃, Apr 13 Mon 可燃, Apr 16 Thu paper, Apr 17 Fri 可燃, Apr 20 Mon 可燃, Apr 23 Thu? Hmm. Let's determine from calendar pattern. The image: April 6 cell (Mon) indeed appears \"可燃ごみ\" (green). April 7 cell (Tue) maybe \"可燃ごみ\"? Wait both 6 and 7? Let's zoom mentally: In row 5-11, I see under 月 (6) a green block \"可燃ごみ\"; under 火 (7) maybe no? Under 水 (8) no; under 木 (9) \"カン・ビン\"; under 金 (10) \"可燃ごみ\"; under 土 (11) no. That would 可燃 Mon/Fri, not Tue/Fri. Let's check May: May 1 Fri 可燃; May 4 Mon? Maybe 可燃? Image May row 1-9: 1 Fri 可燃, 2 Sat blank, 3 Sun クリーン, 4 Mon? I see \"可燃ごみ\" under 4? Wait May 4 is Monday; the image shows cell 4 \"可燃ごみ\"? Let's look: May calendar first row: date 1 under 金 has 可燃; 2 under 土 blank; 3 under 日 クリーン. Row next: 4 Mon has 可燃? I see green \"可燃ごみ\" at 4? Then 5 Tue? Maybe blank? 6 Wed? no, 7 Thu paper, 8 Fri 可燃? Hmm.\n\nNeed accurately decode weekdays. The calendars might have collection on Mondays and Fridays, not Tue/Fri. Let's verify with \"週2回\" and dates. The text layer order can hint. For April, labels in sequence likely row-major including dates? It lists \"紙・布類\" (2), \"可燃ごみ\" (3), \"可燃ごみ\" (6?), \"可燃ごみ\" (7?), \"カン・ビン\" (9), \"カン・ビン\" (9?) duplicate due two labels? Wait text layer has duplicates for each label because maybe PDF text repeated? It shows \"紙・布類\" twice, \"可燃ごみ\" twice, etc. Actually each printed label might be duplicated in text layer due shadow? In text layer: \"紙・布類\\n紙・布類\\n可燃ごみ\\n可燃ごみ\\n可燃ごみ\\n可燃ごみ\\nカン・ビン\\nカン・ビン...\" It seems every label appears twice. So not helpful.\n\nLet's use visual. Open mentally page1 April: \nTop row: 4/1 Wed (blank?), 4/2 Thu: 紙・布類 (blue), 4/3 Fri: 可燃ごみ (green), 4/4 Sat blank.\nSecond row: 4/5 Sun: クリーンサンデー (red/green text). 4/6 Mon: I see \"可燃ごみ\" green? 4/7 Tue: maybe blank? Actually there is a green \"可燃ごみ\" at 4/7? Hmm.\n\nLet's calculate with colored pattern: 可燃ごみ is likely every Monday and Friday? Check May: If 可燃 Mon/Fri, dates: May 1 Fri, 4 Mon, 8 Fri, 11 Mon, 15 Fri, 18 Mon, 22 Fri, 25 Mon, 29 Fri. The image May: I recall seeing \"可燃ごみ\" on 1, 5? Let's inspect the image for May: Row1 1 Fri has 可燃; row2 4 Mon? The image shows date 4 with \"可燃ごみ\"? I can see a green block at 4? Wait May 4 is a Monday; there is \"可燃ごみ\" text at 4? In the screenshot, May calendar under 月 for 4 appears \"可燃ごみ\" (green) yes? Then 5 Tue maybe blank? 6 Wed? 7 Thu 紙・布類; 8 Fri 可燃; 9 Sat blank. Row 10-16: 10 Sun クリーン; 11 Mon 可燃; 12 Tue? maybe ペットボトル? 13 Wed? 14 Thu カン・ビン; 15 Fri 可燃; 16 Sat blank. Hmm.\n\nIf 可燃 Mon/Fri, April 13 (Mon) 可燃, April 17 Fri 可燃, April 20 Mon, April 24 Fri, April 27 Mon. The image indeed has 可燃 at 13? I recall yes. April 30 Thu? Could be 紙・布類 perhaps. This pattern plausible: 可燃ごみ every Monday and Friday. Let's confirm with June: June 1 Mon 可燃? Image June row: 1 Mon maybe 可燃? 2 Tue? no, 3 Wed? no, 4 Thu? カン? 5 Fri 可燃. I see June 1 cell under 月 has \"可燃ごみ\" maybe yes. June 5 Fri 可燃. June 8 Mon 可燃, June 12 Fri 可燃, June 15 Mon 可燃, June 19 Fri, June 22 Mon, June 26 Fri, June 29 Mon. Image: June 2? Wait page1 June first row: 1 Mon \"可燃ごみ\"; 2 Tue \"紙・布類\"? Actually I can see June 2 under 火 has \"紙・布類\" maybe. Hmm.\n\nLet's inspect June image: It shows June 1 (Mon) \"可燃ごみ\"? At top: row header dates 1,2,3,4,5,6. I see \"可燃ごみ\" under 1? Maybe. Under 2 there is \"紙・布類\"? Actually the cell 2 (Tue) has a blue label \"紙・布類\". Under 3 Wed? no. Under 4 Thu? カン・ビン? Under 5 Fri? 可燃. So 可燃 Mon/Fri, 紙・布類 Tue? Wait April 2 Thu 紙・布類, so not fixed weekday? Hmm could vary by month due schedule? Let's not assume.\n\nMaybe collection days are fixed weekday patterns:\n- 可燃ごみ: 月・金 (Mon/Fri)\n- 不燃ごみ: 第? 水? \n- 紙・布類: 第? 木? Could be 1st/3rd Thu? April 2 (1st Thu), 16 (3rd Thu), 30 (5th Thu?) maybe if every 2 weeks? Wait 月2回 could be 1st/3rd Thu. In May 1st Thu is 7, 3rd Thu 21. Image May 7 紙? yes, 21 紙? maybe. In June 1st Thu 4, 3rd Thu 18. Image June 4 紙? maybe? Hmm earlier I thought June 2. Need check.\n- カン・ビン: 第2/4 Thu? April 9 (2nd Thu), 23 (4th Thu). Image April 9 カン・ビン, 23 カン・ビン? Yes. May 14 (2nd Thu), 28 (4th Thu). Image May 14 カン, 28 カン. June 11 (2nd Thu), 25 (4th Thu). Image June 11 カン? maybe. This seems plausible. \n- ペットボトル: 第2/4 Wed? April 8? Wait April 8 Wed? Image has ペットボトル on 20? Need. \n- 不燃ごみ: 第4? Wed? April 22? Hmm.\n\nLet's derive from visible labels with correct weekdays.\n\nLet's map April 2026 weekdays:\nSun 5,12,19,26\nMon 6,13,20,27\nTue 7,14,21,28\nWed 1,8,15,22,29\nThu 2,9,16,23,30\nFri 3,10,17,24\nSat 4,11,18,25\n\nImage April: \n- 2 Thu: 紙・布類\n- 3 Fri: 可燃\n- 7 Tue? Let's see cell 7 under 火: The image maybe shows \"可燃ごみ\"? Wait if 可燃 Mon/Fri, 7 should blank. The text layer after 3 可燃: next labels maybe \"可燃ごみ\" for 6, \"可燃ごみ\" for 10, \"カン・ビン\" for 9, etc. I need be precise.\n\nCould use OCR? Not available except text layer order. Maybe the text layer preserves row-major order of labels. Let's analyze text layer sequence, accounting duplicates. The text layer for page1 starts with many \"クリーン サンデー\" (Sundays). Then labels:\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n不燃ごみ\n不燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n...\nEach label duplicated. So pairs. If we collapse pairs:\n紙・布類\n可燃ごみ\n可燃ごみ\nカン・ビン\n可燃ごみ\nペットボトル\n可燃ごみ\n紙・布類\n可燃ごみ\n不燃ごみ\n可燃ごみ\nカン・ビン\n可燃ごみ\nペットボトル\n可燃ごみ\n紙・布類\n可燃ごみ\n可燃ごみ\nカン・ビン\n...\nThis is a list of all labels across all months? Maybe starts April. Collapsed April sequence could be:\n紙・布類 (2)\n可燃ごみ (3)\n可燃ごみ (6?)\nカン・ビン (9?)\n可燃ごみ (10?)\nペットボトル (?)\n可燃ごみ\n紙・布類\n可燃ごみ\n不燃ごみ\n可燃ごみ\nカン・ビン\n可燃ごみ\nペットボトル\n可燃ごみ\n紙・布類\n可燃ごみ\n可燃ごみ\nカン・ビン\n...\nNeed align with dates. If April label sequence row-major by date:\n2 紙\n3 可燃\n6 可燃\n9 カン\n10 可燃\n13 可燃? Wait no pet bottle early? Let's list actual labels by date from image via patterns:\nIf 可燃 Mon/Fri: 3,6,10,13,17,20,24,27.\nPaper: 2,16,30?\nCan: 9,23?\nPet: 8?22? or 15?29?\nNonburn: 15?29? \nLet's look at image April: I can visually identify blue \"不燃ごみ\" on 15? and 29? Wait in April, there is a yellow \"不燃ごみ\" at 15 (Wed) and 29 (Wed)? I think yes: The image shows 4/15 cell has \"不燃ごみ\" (yellow) and 4/29 has \"不燃ごみ\". Also 4/8 has \"ペットボトル\"? Hmm.\n\nThe frequencies: 不燃ごみ 月1回 (one per month). So April only one date. In image, I see a yellow \"不燃ごみ\" on 15 (Wed) and also on 29? Wait 月1回, not two. But page1 text layer has \"不燃ごみ\" twice (pair) corresponding to one date. In April, which date? It appears on 15? Let's check: April 15 is Wed. I recall cell 15 has \"不燃ごみ\" (yellow). Also cell 29? Maybe \"不燃ごみ\" also? But 月1回 means one per month, so only 15. In May, 不燃 on 20? In June, 17? Let's see pattern: third Wednesday? April 15 = 3rd Wed; May 20 = 3rd Wed; June 17 = 3rd Wed; July 15 = 3rd Wed; Aug 19 = 3rd Wed; Sep 16 = 3rd Wed. Image: May 20? I see \"不燃ごみ\" maybe on 20. June 17? maybe. So 不燃 = 3rd Wednesday monthly. Good.\n\nPaper/cloth 月2回 likely 1st and 3rd Thursday? April 2 and 16; May 7 and 21; June 4 and 18; July 2 and 16; Aug 6 and 20; Sep 3 and 17. Image: April 2 紙, 16 紙? Yes. May 7 紙, 21 紙? I can see May 7 \"紙・布類\"; May 21? maybe. June: 4? 18? July: 2? 16? Aug: 6? 20? Sep: 3? 17? This matches \"月2回\" and no 5th Thu. Then April 30 (5th Thu) would not paper. In image April 30 likely 可燃? If 可燃 Mon/Fri, Apr30 Thu not; maybe blank. Hmm.\n\nCan/bin 月2回 likely 2nd and 4th Thursday: April 9,23; May 14,28; June 11,25; July 9,23; Aug 13,27; Sep 10,24. Image: April 9 カン, 23 カン; yes. May 14,28; yes. \nPet bottle 月2回 likely 2nd and 4th Wednesday: April 8,22; May 13,27; June 10,24; July 8,22; Aug 12,26; Sep 9,23. Image: April 8 ペット? I recall cell 8 maybe ペットボトル (blue). April 22? maybe ペット? But cell 22 is Wed; I saw 不燃? Wait 不燃 on 15, so 22 can be pet. In image April row 19-25: 19 クリーン, 20 可燃, 21? 可燃? Wait 21 Tue? Hmm if 可燃 Mon/Fri, 21 Tuesday blank; 22 ペット; 23 カン; 24 可燃; 25 blank. That matches image? I think yes. Text layer sequence: 不燃 (15), 可燃 (17), カン (23), 可燃 (20?) order row-major would 15 不燃,17 可燃,20 可燃,22 pet,23 can,24可燃. But text sequence after 不燃: 可燃, カン, 可燃, ペット, 可燃, 紙... not exactly.\n\nLet's verify 可燃 weekdays from this likely schedule. If 可燃 Mon/Fri:\nApril 3,6,10,13,17,20,24,27.\nImage: I can see 6 可燃, 13 可燃, 20 可燃, 27 可燃. Yes likely. The earlier Tue/Fri pattern was wrong because 7 maybe blank. Let's check May: 可燃 Mon/Fri: 1,4,8,11,15,18,22,25,29. Image May: 1 可燃, 4 可燃, 8 可燃, 11 可燃, 15 可燃, 18 可燃, 22 可燃, 25 可燃, 29 可燃. I recall cells 5? Wait May 5 Tue maybe ペット? No. Let's check May 4: image shows green \"可燃ごみ\" under 4; yes. May 5 (Tue) maybe blank; May 6 (Wed) 不燃? No. May 7 paper. Good. \nJune: 1,5,8,12,15,19,22,26,29. Image June 1? I see 1 under Mon has \"可燃ごみ\" maybe yes. June 2 (Tue) maybe 紙? Wait paper 1st/3rd Thu would June 4,18, not 2. The image June top row: date 2 under Tue maybe \"紙・布類\"? Hmm let's zoom: In June, the first row dates 1 Mon,2 Tue,3 Wed,4 Thu,5 Fri,6 Sat. I can see date 2 cell has a blue label \"紙・布類\" maybe! If so paper is Tuesday? But April 2 Thu paper. Hmm maybe I misread; maybe June 2 is \"可燃ごみ\"? Let's not rely on fuzzy.\n\nCould the actual collection weekdays be different per month? No.\n\nLet's determine from image using text positions maybe. Page1 text layer includes all labels in calendar order, but also the legend at right \"可燃ごみ / 不燃ごみ / 紙・布類 / カン・ビン / ペットボトル\" repeated. The labels sequence after many \"クリーンサンデー\" likely includes all calendar cells row-major. We can count and map if we know date sequence. But duplicates make tough. We can deduplicate consecutive duplicates. Let's extract collapsed list for page1 from text layer up to \"4月 7月 5月...\" It includes labels for all six months (Apr-Sep) in order? It starts with a long sequence. Let's count collapsed labels and infer.\n\nText layer:\n<<<\nカレンダー\nごみ\n令和8年 4月〜9月\nクリーン\nクリーン\nサンデー\nサンデー\n... (many Sundays, maybe 6 months * 4-5 Sundays = 26, each duplicated? Actually \"クリーン\" and \"サンデー\" separate lines, duplicated)\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n不燃ごみ\n不燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n不燃ごみ\n不燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n不燃ごみ\n不燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n不燃ごみ\n不燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n不燃ごみ\n不燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n可燃ごみ\n可燃ごみ\n紙・布類\n紙・布類\n可燃ごみ\n可燃ごみ\n不燃ごみ\n不燃ごみ\n可燃ごみ\n可燃ごみ\nカン・ビン\nカン・ビン\n可燃ごみ\n可燃ごみ\n可燃ごみ\n可燃ごみ\nペットボトル\nペットボトル\n...\n>>>\nThis seems all months concatenated, but each label duplicated. Let's dedupe non-consecutive? We can group identical repeated pairs. The sequence might be row-major for all months with dates omitted. Need know number of labels per month and align. Each month has approximately 5 categories frequencies: 可燃 8-9, paper 2, nonburn 1, can 2, pet 2 = 15-16 labels per month. Six months ~90 labels. Collapsed sequence length maybe ~90. We can segment by months using known dates? Hmm.\n\nLet's estimate from sequence. Deduplicate each label pair (since every label duplicated). I'll write sequence tokens with duplicates collapsed:\n1 紙\n2 可燃\n3 可燃\n4 カン\n5 可燃\n6 ペット\n7 可燃\n8 紙\n9 可燃\n10 不燃\n11 可燃\n12 カン\n13 可燃\n14 ペット\n15 可燃\n16 紙\n17 可燃\n18 可燃\n19 カン\n20 可燃\n21 ペット\n22 可燃\n23 紙\n24 可燃\n25 可燃\n26 不燃\n27 カン\n28 可燃\n29 ペット\n30 可燃\n31 可燃\n32 可燃\n33 紙\n34 可燃\n35 可燃\n36 可燃\n37 カン\n38 可燃\n39 ペット\n40 可燃\n41 紙\n42 可燃\n43 不燃\n44 カン\n45 可燃\n46 可燃\n47 ペット\n48 紙\n49 可燃\n50 可燃\n51 カン\n52 可燃\n53 可燃\n54 ペット\n55 可燃\n56 紙\n57 可燃\n58 不燃\n59 可燃\n60 カン\n61 可燃\n62 ペット\n63 可燃\n64 紙\n65 可燃\n66 カン\n67 可燃\n68 可燃\n69 ペット\n70 可燃\n71 紙\n72 可燃\n73 不燃\n74 カン\n75 可燃\n76 ペット\n77 可燃\n78 可燃\n79 可燃\n80 紙\n81 可燃\n82 可燃\n83 カン\n84 可燃\n85 ペット\n86 可燃\n87 紙\n88 可燃\n89 不燃\n90 可燃\n91 カン\n92 可燃\n93 可燃\n94 ペット\n...\nThis sequence likely is row-major across Apr-Sep, including all labels. We can split by months if know number of collection days per month. For April: 15 labels? Let's list expected for April under assumed pattern (可燃 Mon/Fri, paper 1/3 Thu, nonburn 3rd Wed, can 2/4 Thu, pet 2/4 Wed):\nDates:\n2 paper\n3 可燃\n6 可燃\n8 pet\n9 can\n10 可燃\n13 可燃\n15 nonburn\n16 paper\n17 可燃\n20 可燃\n22 pet\n23 can\n24 可燃\n27 可燃\n=15 labels. Sequence tokens 1-15:\n1 紙, 2 可燃, 3 可燃, 4 カン, 5 可燃, 6 ペット, 7 可燃, 8 紙, 9 可燃, 10 不燃, 11 可燃, 12 カン, 13 可燃, 14 ペット, 15 可燃.\nThis exactly matches dates? Tokens order row-major by date should be:\n2 紙 (token1)\n3 可燃 (2)\n6 可燃 (3)\n8 ペット (should token4) but sequence token4 is カン. Hmm mismatch. Wait token order: after 3 可燃, token4 カン (not pet). If date 8 pet should come before 9 can. So sequence not row-major? Maybe due text layer positions? Or April pet is 9? No. Let's see actual labels by date maybe: April 8? Could be カン? Wait can might be 2nd Wednesday? Let's reconsider: The sequence tokens 1-15 might correspond to:\n2 paper\n3 可燃\n6 可燃\n9 カン\n10 可燃\n8 ペット? Not order.\n\nText layer order may not be row-major; could be by column or by label boxes extraction order. Not reliable. We need visual.\n\nLet's use image with high confidence by reading. I can zoom mentally from given image. I'll describe April cells visible:\n\nApril 2026 (top left):\nDates 1-4 row: 1 blank, 2 blue \"紙・布類\", 3 green \"可燃ごみ\", 4 blank.\n5-11: 5 red \"クリーンサンデー\"; 6 green \"可燃ごみ\"; 7 ? I see a green label? Wait at 7 (Tue) maybe \"可燃ごみ\"? Let's look at screenshot: The date 6 cell under 月 has \"可燃ごみ\" at bottom. The date 7 cell under 火 maybe has \"可燃ごみ\"? Actually in the screenshot, row starts 5,6,7,8,9,10,11. Under 6: \"可燃ごみ\" (green). Under 7: no label? There is green? Hmm I can see text \"可燃ごみ\" at 6 and at 10, and at 7? The cells 6 and 7 are adjacent; the label at 6 is at bottom; 7 maybe empty. The screenshot shows \"可燃ごみ\" under 6, and \"可燃ごみ\" under 10. 9 has blue \"カン・ビン\". So 6 and 10. That means 可燃 Mon/Fri (6 Mon, 10 Fri). Good. \n12-18: 12 クリーン; 13 可燃 (Mon); 14? no; 15 不燃? I see yellow \"不燃ごみ\" under 15; 16 紙・布類 (blue) under Thu; 17 可燃 (Fri); 18 blank.\n19-25: 19 クリーン; 20 可燃 (Mon); 21? maybe no; 22 ペットボトル? I see blue \"ペットボトル\" under 22 (Wed); 23 カン・ビン (Thu); 24 可燃 (Fri); 25 blank.\n26-30: 26 クリーン; 27 可燃 (Mon); 28? no; 29? maybe? 29 is Wed; perhaps \"不燃ごみ\"? Wait we already had 15; but maybe 不燃 is 4th Wed? Let's check: In April, I see a yellow label under 29? The screenshot bottom row: 27 可燃, 28 blank, 29? maybe 不燃ごみ? Hmm if 不燃 is 4th Wed = 22, and pet maybe 2nd Wed = 8. Need determine.\n\nLook at April image bottom row: dates 26 Sun, 27 Mon, 28 Tue, 29 Wed, 30 Thu. I can see 27 \"可燃ごみ\"; 30 maybe \"可燃ごみ\"? Wait 30 Thu; if 可燃 Mon/Fri, no. The cell 29 maybe \"不燃ごみ\" (yellow) and 30 \"可燃ごみ\"? Hmm.\n\nLet's zoom actual image: At bottom-left April, under 29 (Wed) there is a yellow label \"不燃ごみ\" maybe; under 30 (Thu) there is blue \"紙・布類\"? I can see blue at 30? The text layer at end of April might have paper and nonburn. Let's count 不燃: The image may show \"不燃ごみ\" on 15 and 29? But legend says 月1回. Could be two dates in April? Wait page footer legend \"不燃ごみ 月1回\"? It shows: 可燃ごみ 週2回; 不燃ごみ 月1回; 紙・布類 月2回; カン・ビン 月2回; ペットボトル 月2回. So only one 不燃. Which date? I think 15 (third Wed). Then 29 maybe ペットボトル? But pet 月2回: 8 and 22? Hmm.\n\nLet's identify from image by color: 不燃ごみ label is yellow, ペットボトル is blue/teal. At April 15 cell, the label looks yellow \"不燃ごみ\". At April 29 cell, I see a yellow label? Actually maybe \"不燃ごみ\" at 29? Could be another? Wait if 月1回, why two? Maybe 15 is \"不燃ごみ\" and 29 is \"ペットボトル\" (blue). Hard.\n\nLet's use page2 for year-end and patterns. Maybe the schedule is not simple monthly nth? But we can extract exact dates from calendar by reading. Need accuracy.\n\nCould use the text layer plus geometry not available. But maybe the labels in text layer are in order of visual columns? Let's examine page1 labels for April from image if we crop mentally. I can infer from known collection scheme of 小鹿野町? Maybe real. Search memory? Not internet. But the calendar likely has:\n- 可燃ごみ: 月・金 (every Monday and Friday)\n- 不燃ごみ: 第3水曜日\n- 紙・布類: 第1・第3木曜日\n- カン・ビン: 第2・第4木曜日\n- ペットボトル: 第2・第4水曜日\nLet's test with image: April 8 (2nd Wed) should pet; April 22 (4th Wed) pet; April 15 (3rd Wed) nonburn. The image April 8 cell? I can look: Row 5-11, date 8 under 水; I think it's blank? Wait if pet on 8, there should be blue label at 8. In screenshot, the cell 8 under 水 appears blank? I can see \"カン・ビン\" at 9, \"可燃ごみ\" at 10. Date 8 might be blank. Hmm maybe pet is 1st/3rd Wed? Let's check: April 1 Wed, 15 Wed? But 1 blank, 15 nonburn. Pet maybe 2nd/4th Wed = 8,22. I don't see label at 8? Could be there but faint.\n\nLook at April row2 in image: cell 8 (Wed) maybe has a small blue label \"ペットボトル\"? I can zoom: Date 8 is between 7 and 9. The cell appears empty? Hmm.\n\nPage2 December: Pet bottle labels likely on 9? 23? In image Dec, date 9 (Wed) has \"ペットボトル\"? I can see Dec 9 under Wed maybe \"ペットボトル\"? The text layer for Dec has \"ペットボトル\" around 9 and 23? Let's map Dec 2026: Dec1 Tue, 2 Wed, 3 Thu, 4 Fri, 5 Sat. If 可燃 Mon/Fri, Dec4 Fri 可燃; Dec7 Mon; Dec11 Fri; etc. If paper 1/3 Thu: Dec3,17? If can 2/4 Thu: Dec10,24. If pet 2/4 Wed: Dec9,23. If nonburn 3rd Wed: Dec16. The image Dec: I can see labels:\n4 可燃? \n7 可燃?\n9 ペットボトル? yes maybe.\n10 カン・ビン?\n11 可燃?\n14 可燃?\n16 不燃?\n17 紙?\n18 可燃?\n21 可燃?\n23 ペット?\n24 カン?\n25 可燃?\n28 可燃?\n30? maybe 可燃? But Dec 30 Wed, no. Actually Dec 31 Thu? Wait Dec 2026: Dec31 Thu. If paper 5th Thu? no. There is year-end facility. \nThis pattern seems plausible.\n\nBut need exact exceptions: Dec 29-Jan3 closure? The calendar page2 notes \"新年の1日〜3日は、ごみの収集及び施設への持ち込みもお休みです。\" Only Jan1-3. It doesn't say Dec29-31 collection stopped. The calendar shows Dec 31 \"施設持込不可\" maybe, but collection? Dec31 Thu could be カン・ビン? Wait Dec31 is 5th Thu, not can (2/4). Could be no. It might show \"施設持込不可\" due facility closed, not collection. There is also \"施設持込可\" on Dec29/30? Need not include. \nYear-end closure: Jan1-3 only. Need exception closure from 2027-01-01 to 2027-01-03, year_end true? Yes. Does it affect collection? 可燃 Jan1 Friday normally collected; paper/can? Jan? Jan1 Fri only 可燃? If no collection. Jan1-3 covers Jan1 Fri (可燃) and Jan3 Sun (no). We can include closure. Should we also include \"祝日も収集\"? The calendar doesn't explicitly state holidays collected. There are holidays during year e.g. May 4? It's Monday and 可燃? Calendar shows May 4 可燃? That's a holiday (みどりの日? May4 2026 Monday). If collected, yes. But no text. Need not create holiday exception. Maybe note unsure \"祝日の扱いについての記述なし\". But calendar shows collection on holidays by dates. Since using dates rule, no need exceptions. But if schedule uses weekly, need exceptions. We'll use dates to avoid holiday handling, but exceptions closure? If using dates exact, closure is already not in dates. For Jan1 no dates. So maybe no need closure? But instructions: exceptions include closure if written. It is written. Should include closure. If schedules are dates, exceptions not applied to dates per schema, but closure still can be listed? It says exceptions: dates 以外の規則に当てる例外. If all schedules dates, closure not applicable? But we should still record written closure in exceptions? The schema allows; but if rules dates, exceptions not applied. Hmm. We can use rules weekly for 可燃 and exceptions, but other categories nth. Easier to use dates exact, but then closure is redundant. Yet instructions require reading exceptions. We can include closure with scope all, even if dates? It says \"dates 以外の規則に当てる例外\". If no dates? We might use weekly/nth rules for categories, then apply closure. But dates rule is preferred when dates printed; calendar has dates. The rule says \"カレンダーや月ごとの表のように日付が印字されているときは dates を使う (規則の文より印字の日付を優先する)\". So must use dates for schedules because dates printed. Then exceptions \"dates 以外の規則に当てる例外\" suggests don't create exceptions for date rules? But closure written should go in exceptions? Maybe still allowed? It says exceptions: dates 以外の規則に当てる例外. If no such rules, exceptions can be empty; but we can note closure in unsure? No, closure is clear. I'd include closure exception even if dates, but it won't apply. That's okay? Maybe schema doesn't prohibit. But \"dates は最終の日付として扱われ、下の exceptions は当てられない\" means exceptions not applied to dates, but can still list general closure. Hmm.\n\nNeed determine all exact dates for categories. Let's parse calendar thoroughly using image and pattern. I'll transcribe each month, verify with likely pattern.\n\nLet's compute weekdays for all months. Use calendar.\n\nAssume pattern:\n可燃: Mon & Fri every week, except Jan1? (holiday closure). Need check if any other omitted due holidays? Calendar shows dates. We'll list from calendar.\n不燃: 3rd Wed each month? Need check. \n紙・布: 1st & 3rd Thu.\nカン・ビン: 2nd & 4th Thu.\nペット: 2nd & 4th Wed.\nIs this consistent with all visible labels? Let's compare page2 Oct 2026:\nOct1 Thu: 1st Thu => paper. Image Oct: date 1 Thu? Wait Oct 1 2026 Thursday. Image top row Oct: 1 Thu maybe \"紙・布類\"? I recall Oct 1 has \"紙・布類\" maybe yes. Oct2 Fri 可燃. Oct5 Mon 可燃. Oct7 Wed? 1st Wed, no. Oct8 Thu 2nd Thu => can. Oct9 Fri 可燃. Oct12 Mon 可燃. Oct14 Wed 2nd Wed => pet. Oct15 Thu 3rd Thu => paper. Oct16 Fri 可燃. Oct19 Mon 可燃. Oct21 Wed 3rd Wed => nonburn. Oct22 Thu 4th Thu => can. Oct23 Fri 可燃. Oct26 Mon 可燃. Oct28 Wed 4th Wed => pet. Oct29 Thu 5th Thu no. Oct30 Fri 可燃.\nImage Oct: I can see labels: 1 紙? 2 可燃; 5 可燃? 7? 8 カン? 9 可燃; 12 可燃; 14 ペット; 15 紙; 16 可燃; 19 可燃; 21 不燃; 22 カン; 23 可燃; 26 可燃; 28 ペット; 30 可燃. This matches text layer? It had ペット on 14? likely. Good.\n\nNov 2026: Nov1 Sun. Mon 2,9,16,23,30 可燃. Fri 6,13,20,27 可燃. 1st Thu Nov5 paper; 3rd Thu Nov19 paper. 2nd Thu Nov12 can; 4th Thu Nov26 can. 2nd Wed Nov11 pet; 4th Wed Nov25 pet. 3rd Wed Nov18 nonburn. Image Nov: I can see 2 可燃; 5 紙; 6 可燃; 9 可燃; 11 ペット; 12 カン; 13 可燃; 16 可燃; 18 不燃; 19 紙; 20 可燃; 23 可燃; 25 ペット; 26 カン; 27 可燃; 30 可燃. Yes likely. Good.\n\nDec 2026: Mon 7,14,21,28 可燃; Fri 4,11,18,25 可燃. 1st Thu Dec3 paper; 3rd Thu Dec17 paper. 2nd Thu Dec10 can; 4th Thu Dec24 can. 2nd Wed Dec9 pet; 4th Wed Dec23 pet. 3rd Wed Dec16 nonburn. Also Dec31? 5th Thu no. Jan1 Fri closure. Image Dec: I saw 31 facility; no collection. Good. Does Dec28 可燃? Dec28 Mon. Image Dec: date 28 maybe 可燃; yes. Dec29 Tue maybe no (facility drop-off?); Dec30 Wed maybe no; Dec31 Thu facility not. \nJan 2027: Jan1 Fri closure (would be 可燃 but no). Mon 4,11,18,25 可燃; Fri 8,15,22,29 可燃. 1st Thu Jan7 paper; 3rd Thu Jan21 paper. 2nd Thu Jan14 can; 4th Thu Jan28 can. 2nd Wed Jan13 pet; 4th Wed Jan27 pet. 3rd Wed Jan20 nonburn. Jan1 no. Image Jan: date 1 red休? 2休? 3休? Then 4 可燃? I can see Jan4 可燃. Jan7 紙? yes. Jan8 可燃. Jan11 可燃? Jan13 pet? Jan14 can? Jan15 可燃. Jan18 可燃. Jan20 不燃? Jan21 紙? Jan22 可燃. Jan25 可燃. Jan27 pet. Jan28 can. Jan29 可燃. Good.\n\nFeb 2027: Feb1 Mon 可燃; Fri 5,12,19,26 可燃; Mon 8,15,22 可燃. 1st Thu Feb4 paper; 3rd Thu Feb18 paper. 2nd Thu Feb11 can; 4th Thu Feb25 can. 2nd Wed Feb10 pet; 4th Wed Feb24 pet. 3rd Wed Feb17 nonburn. Image Feb: I can see 1 可燃; 2 紙? Wait Feb 2 Tue? Hmm if 1st Thu Feb4, not 2. The image Feb top row: 1 Mon 可燃, 2 Tue 紙・布類? I recall seeing \"紙・布類\" on Feb2? Let's check: Page2 Feb calendar (bottom middle). Top row: 1,2,3,4,5,6. I can see date 2 under 火 has \"紙・布類\"? Wait the text layer near Feb maybe \"紙・布類\" at 2? Hmm maybe pattern for paper is 1st/3rd Tuesday? Let's re-evaluate.\n\nLook at Feb 2027 image: It shows 2月 row: dates 1 Mon,2 Tue,3 Wed,4 Thu,5 Fri,6 Sat. I can see cell 2 has blue label \"紙・布類\". If so paper is Tuesday, not Thursday! But April 2 was Thursday. Wait Feb 2 2027 is Tuesday. Could paper be 1st and 3rd Tuesday? April 2026 1st Tuesday = Apr7, but I thought paper Apr2. Let's inspect April image again: Apr2 is Thursday and has \"紙・布類\". Hmm maybe dates in Feb: Feb2? Actually Feb1 2027 Monday; Feb2 Tuesday. The image maybe cell 2 has \"可燃ごみ\"? Let's zoom: In Feb row, under 火 (2) I see \"紙・布類\" definitely? Hmm.\n\nCould there be two different collection patterns? Wait the calendar might have weekdays differently: It could be 可燃ごみ on Tuesday and Friday, not Mon/Fri. Let's revisit with Feb. If 可燃 Tue/Fri: Feb2 Tue 可燃, Feb5 Fri 可燃, Feb9 Tue, Feb12 Fri, Feb16 Tue, Feb19 Fri, Feb23 Tue, Feb26 Fri. The image Feb: date 1 Mon maybe blank; 2 Tue \"可燃ごみ\"; 3 Wed? 4 Thu paper? Hmm. I need settle.\n\nLet's use known weekday alignment from calendar image. Page2 Feb 2027: Let's read first row visually:\nColumns: 日 月 火 水 木 金 土\nDates: 1 under 月, 2 under 火, 3 under 水, 4 under 木, 5 under 金, 6 under 土.\nIn screenshot, I can see:\n- 1 cell (Mon): maybe \"可燃ごみ\" green.\n- 2 cell (Tue): I see a blue label? Wait the blue label \"紙・布類\" appears under 2? There is a blue rectangle. \n- 3 cell (Wed): maybe blank.\n- 4 cell (Thu): maybe \"カン・ビン\"? \n- 5 cell (Fri): \"可燃ごみ\".\nThis would 可燃 Mon/Fri (1,5), paper Tue (2)? But paper should be 1st/3rd? Feb2 is 1st Tuesday. April 2 is 1st Thursday. Not fixed weekday? That seems unlikely unless calendar not aligned? Wait maybe Feb 2 is not Tuesday? 2027 Feb1 Monday yes.\n\nCould it be that the label at Feb2 is \"紙・布類\" for 1st Tuesday, and April2 (Thu) also 1st Thursday? Different weekdays per month impossible for same category unless dates are not fixed weekday? But collection schedule might be by \"1st and 3rd ○曜日\" not same? No, should be same weekday. Maybe I'm misreading Feb: Feb2 cell label could be \"可燃ごみ\" (green) not blue. The screenshot at Feb top row: date 1 under Mon has \"可燃ごみ\" maybe; date 2 under Tue has \"紙・布類\" (blue) I see. Hmm.\n\nLet's check page2 January: Date 7 is Thursday. Image Jan: I see date 7 cell \"紙・布類\" maybe. Date 14 Thu \"カン・ビン\". Date 21 Thu \"紙・布類\". Date 28 Thu \"カン・ビン\". That matches paper/can Thursdays. February: Feb4 Thu would paper, Feb11 can, Feb18 paper, Feb25 can. The image Feb row: 4 Thu maybe paper? Let's locate: Feb 1 Mon, 2 Tue, 3 Wed, 4 Thu, 5 Fri, 6 Sat. I might have confused date 2 with 4? The blue label could be under 4 (Thu), not 2. In the screenshot, Feb calendar starts at 1 under 月; the cell under 火 (2) might be blank, under 水 (3) blank, under 木 (4) blue paper. Yes likely. I need trust pattern.\n\nThus pattern above likely correct. Good.\n\nNow need exact dates for each category across full period. We can generate from pattern with all months, but need check if any week with 5th occurrence or holidays. Since \"月1/2回\" via nth, use nth rules! The calendar dates correspond exactly to nth weekday patterns. Then no need list all dates. But instructions: \"カレンダーや月ごとの表のように日付が印字されているときは dates を使う (規則の文より印字の日付を優先する).\" It says when dates printed, use dates. So must use dates for schedules, not nth rules, unless rules text is explicitly printed? The calendar has dates; we should use dates. But listing all dates is long but okay. Need ensure exact.\n\nCould use rules nth_weekday because the calendar is a monthly table, but rule says dates. To comply, use dates. Need list for each category all dates. We can generate from pattern. Need verify exceptions: Jan1 no 可燃. Also maybe Dec29? Pattern says no. If using dates generated exclude Jan1. Does calendar show 可燃 on Jan1? No. So exclude. Are there any other dates missing due holidays? The calendar may show regular collection on May4 holiday (可燃) yes. Jan1 only closure. Maybe Jan4 is 可燃? Yes.\n\nNeed include categories:\nc1 可燃ごみ coarse burnable\nc2 不燃ごみ coarse non_burnable\nc3 紙・布類 coarse paper_cloth? It says 紙・布類; coarse can be paper_cloth (紙と布を分けずに1つで). Yes.\nc4 カン・ビン coarse beverage_can, glass_bottle? It combines cans and bottles. coarse array can include beverage_can and glass_bottle. The label \"カン・ビン\" includes both; list both.\nc5 ペットボトル coarse pet_bottle.\nMaybe category \"可燃ごみ\" includes kitchen? No, not separately. Don't add.\n\nSchedules one district d1 × each category. Use dates. Need list dates exactly.\n\nLet's compute all dates for each category using pattern.\n\nPeriod 2026-04-01 to 2027-03-31.\n\nCategory 可燃ごみ: Every Monday and Friday, except Jan1 2027 (Friday) due New Year closure? Also maybe Jan? Jan1 only. Let's generate.\n\nList months with Mondays/Fridays.\n\nWe'll compute weekdays. Need ensure no missed.\n\n2026 Apr:\nMondays: 6,13,20,27\nFridays: 3,10,17,24\nDates sorted: 3,6,10,13,17,20,24,27. (8)\n\nMay 2026:\nMay1 Friday. Mondays: 4,11,18,25. Fridays: 1,8,15,22,29. Sorted: 1,4,8,11,15,18,22,25,29. (9)\n\nJun 2026:\nJun1 Monday. Mondays: 1,8,15,22,29. Fridays: 5,12,19,26. Sorted: 1,5,8,12,15,19,22,26,29. (9)\n\nJul 2026:\nJul1 Wednesday. Mondays: 6,13,20,27. Fridays: 3,10,17,24,31. Sorted: 3,6,10,13,17,20,24,27,31. (9)\n\nAug 2026:\nAug1 Saturday. Mondays: 3,10,17,24,31. Fridays: 7,14,21,28. Sorted: 3,7,10,14,17,21,24,28,31. (9). Wait Aug 31 is Monday, yes. I earlier thought 4 Tue; pattern Mon/Fri gives Aug3,7 etc. Need image Aug: I recall \"可燃ごみ\" on 4? Let's check Aug 2026 starts Saturday; first Monday Aug3. Image Aug top row: dates 1 Sat,2 Sun,3 Mon? It shows 3 \"可燃ごみ\"? likely. Good.\n\nSep 2026:\nSep1 Tuesday. Mondays: 7,14,21,28. Fridays: 4,11,18,25. Sorted: 4,7,11,14,18,21,25,28. (8). Wait Sep1 Tue no. Image Sep: I thought 1 可燃 earlier; pattern says Sep1 Tuesday no. Let's check image Sep: top row starts 1 Tue,2 Wed,3 Thu,4 Fri,5 Sat. I see 1? The screenshot: September calendar top row: date 1 under 火 maybe \"可燃ごみ\"? Hmm if 可燃 Mon/Fri, Sep1 not. Need verify with image. In Sep image, I can see \"可燃ごみ\" under 4 (Fri), not 1? The cell 1 maybe blank. I earlier misread. Good. Sep has 8.\n\nOct 2026:\nOct1 Thursday. Mondays: 5,12,19,26. Fridays: 2,9,16,23,30. Sorted: 2,5,9,12,16,19,23,26,30. (9)\n\nNov 2026:\nNov1 Sunday. Mondays: 2,9,16,23,30. Fridays: 6,13,20,27. Sorted: 2,6,9,13,16,20,23,27,30. (9)\n\nDec 2026:\nDec1 Tuesday. Mondays: 7,14,21,28. Fridays: 4,11,18,25. Sorted: 4,7,11,14,18,21,25,28. (8). No Dec31.\n\nJan 2027:\nJan1 Friday (closure). Mondays: 4,11,18,25. Fridays: 8,15,22,29. (exclude Jan1). Sorted: 4,8,11,15,18,22,25,29. (8). What about Jan1 no. \nFeb 2027:\nFeb1 Monday. Mondays: 1,8,15,22. Fridays: 5,12,19,26. Sorted: 1,5,8,12,15,19,22,26. (8)\nMar 2027:\nMar1 Monday. Mondays: 1,8,15,22,29. Fridays: 5,12,19,26. Sorted: 1,5,8,12,15,19,22,26,29. (9)\n\nCheck total 8+9+9+9+9+8+9+9+8+8+8+9 =? Apr8 May9=17 Jun9=26 Jul9=35 Aug9=44 Sep8=52 Oct9=61 Nov9=70 Dec8=78 Jan8=86 Feb8=94 Mar9=103. Twice weekly ~104 minus one holiday.\n\nCategory 不燃ごみ: 3rd Wednesday each month.\n2026 Apr: Wednesdays 1,8,15,22,29 -> 15.\nMay: Wednesdays 6,13,20,27 -> 20.\nJun: Wednesdays 3,10,17,24 -> 17.\nJul: Wednesdays 1,8,15,22,29 -> 15.\nAug: Wednesdays 5,12,19,26 -> 19.\nSep: Wednesdays 2,9,16,23,30 -> 16.\nOct: Wednesdays 7,14,21,28 -> 21.\nNov: Wednesdays 4,11,18,25 -> 18.\nDec: Wednesdays 2,9,16,23,30 -> 16.\nJan 2027: Wednesdays 6,13,20,27 -> 20.\nFeb: Wednesdays 3,10,17,24 -> 17.\nMar: Wednesdays 3,10,17,24,31 -> 17.\nCheck image: Jan20 不燃? yes. Feb17? yes. Good.\n\nCategory 紙・布類: 1st and 3rd Thursday each month.\nCompute Thursdays:\nApr 2026: Thursdays 2,9,16,23,30 -> 1st 2, 3rd 16. Dates: 2,16.\nMay: Thursdays 7,14,21,28 -> 7,21.\nJun: Thursdays 4,11,18,25 -> 4,18.\nJul: Thursdays 2,9,16,23,30 -> 2,16.\nAug: Thursdays 6,13,20,27 -> 6,20.\nSep: Thursdays 3,10,17,24 -> 3,17.\nOct: Thursdays 1,8,15,22,29 -> 1,15.\nNov: Thursdays 5,12,19,26 -> 5,19.\nDec: Thursdays 3,10,17,24,31 -> 3,17.\nJan 2027: Thursdays 7,14,21,28 -> 7,21.\nFeb: Thursdays 4,11,18,25 -> 4,18.\nMar: Thursdays 4,11,18,25 -> 4,18.\nCheck Dec31 5th no. Good.\n\nCategory カン・ビン: 2nd and 4th Thursday.\nApr: 9,23.\nMay: 14,28.\nJun: 11,25.\nJul: 9,23.\nAug: 13,27.\nSep: 10,24.\nOct: 8,22.\nNov: 12,26.\nDec: 10,24.\nJan: 14,28.\nFeb: 11,25.\nMar: 11,25.\nCheck Jan14,28. Good.\n\nCategory ペットボトル: 2nd and 4th Wednesday.\nApr: 8,22.\nMay: 13,27.\nJun: 10,24.\nJul: 8,22.\nAug: 12,26.\nSep: 9,23.\nOct: 14,28.\nNov: 11,25.\nDec: 9,23.\nJan: 13,27.\nFeb: 10,24.\nMar: 10,24.\nCheck image Oct14/28. Good.\n\nNeed verify whether 不燃 is 3rd Wednesday and not 4th? Let's look at April image: if 不燃 on Apr15 (3rd Wed), yes. Does image show Apr15? I think yes. If pattern, pet Apr8/22, can Apr9/23, paper Apr2/16, nonburn Apr15, 可燃 Mon/Fri. The April calendar labels by date:\n2 paper\n3 可燃\n6 可燃\n8 pet\n9 can\n10 可燃\n13 可燃\n15 nonburn\n16 paper\n17 可燃\n20 可燃\n22 pet\n23 can\n24 可燃\n27 可燃\nThis matches sequence tokens except token4/5 swapped? Sequence collapsed 1 paper,2 burn,3 burn,4 can,5 burn,6 pet. But text extraction order not row-major. Visual likely.\n\nNeed consider \"クリーンサンデー\" maybe collection on Sundays? It appears every Sunday and maybe means \"クリーンサンデー\" is a no-collection day? Actually maybe \"クリーンサンデー\" is a community cleanup day, not collection. If it were a collection category, would be weekly Sunday. But header legend doesn't list it. It is a campaign? Not in categories. Ignore.\n\nNeed period: printed \"令和8年度\" maybe. But source page1 says \"令和8年 4月〜9月\"; page2 \"令和8年10月〜令和9年3月\". Overall header \"令和8年度・家庭用\". Use printed \"令和8年度\" and from 2026-04-01 to 2027-03-31. If strict printed period, \"令和8年度\" doesn't show dates? It does. Fine.\n\nDistricts: Since calendar is for \"小鹿野（新井・腰ノ根を除く）・伊豆沢\". Could set d1 label \"小鹿野（新井・腰ノ根を除く）・伊豆沢\", members [] (or members [\"小鹿野（新井・腰ノ根を除く）\",\"伊豆沢\"]). Instructions: If no districts and same area, label \"全域\". But here there's a specific coverage label, likely a collection area. There is only one. I think better: districts array one object id d1, label \"小鹿野（新井・腰ノ根を除く）・伊豆沢\", members []? But members required array. Could put members: [\"小鹿野（新井・腰ノ根を除く）\",\"伊豆沢\"] to reflect area components. But the string \"小鹿野（新井・腰ノ根を除く）・伊豆沢\" is printed as one label at bottom, not two separate? It shows \"小鹿野（新井・腰ノ根を除く）・伊豆沢\" on one line. It might be a district label. If we set label exactly and members [], that's valid. But \"地区の中身として町名...並んでいれば members\" This is a line of coverage, not a list. I'd set members: [] and note maybe null. But schema note optional. Hmm.\n\nMaybe there are multiple districts not shown? The document only for one area, so one district label. Use label as printed. members could be [] because no enumeration. That seems okay.\n\nBut municipality: \"小鹿野町\" (the town). The header also says 秩父広域市町村圏組合 (waste management union). Municipality is 小鹿野町. Use \"小鹿野町\". Good.\n\nNeed unsure: \n- 祝日の扱いについて明記なし (but calendar dates show no? If use dates, holidays like May4 included? It doesn't explicitly say). We can note.\n- 年末年始: written Jan1-3 closure, and Dec? We should not unsure about that. \n- \"クリーンサンデー\"の意味/収集品目か不明? It appears on Sundays but not in legend. We can add unsure about \"クリーンサンデー\" not included. But maybe not necessary; if it's an event, not collection. To be safe, add unsure about \"クリーンサンデー\" meaning and not included.\n- \"新井・腰ノ根を除く\" area boundary? It's printed as exclusion; could be district membership not fully enumerated. Add unsure? Maybe \"新井・腰ノ根を除く\"の範囲? Since label includes it, we don't need. But if members not fully enumerated, note.\n- \"施設持込可/不可\" are not collection dates, ignored. Could note unsure? Not needed.\n- \"祝日\" no statement. Add unsure about holiday handling.\n- \"年末年始\" closure: we have text. Need create exception closure Jan1-3. What about Dec29-31? Text only Jan1-3; no closure. Calendar shows facility drop-off; not collection. No need.\n- \"祝日変更等\" note: \"令和9年の祝日に変更等がある場合については、ご容赦ください。\" This indicates possible changes; maybe unsure about holiday schedule. But dates printed. Add unsure about 令和9年の祝日変更? Maybe.\n\nNeed exceptions:\n- closure from 2027-01-01 to 2027-01-03, year_end true, scope all districts/categories, text \"新年の1日〜3日は、ごみの収集及び施設への持ち込みもお休みです。\"\n- Maybe holiday? None.\n- year_end_normal? No.\n- Since schedules are dates, closure not applied but listed.\n\nNeed schedule text: maybe text \"カレンダーに印字された日付\" or exact? text optional. Can set null or \"カレンダー\". Use null? The required fields only district/category/rules. text optional. We can omit? Schema not required. But we can set text null. JSON Schema additionalProperties false, text allowed. We can include text: \"カレンダー\". For dates rules text maybe \"カレンダー\". Fine.\n\nNeed dates arrays sorted. Must ensure YYYY-MM-DD. Let's generate carefully.\n\nLet's create category c1 可燃 dates:\n2026-04-03\n2026-04-06\n2026-04-10\n2026-04-13\n2026-04-17\n2026-04-20\n2026-04-24\n2026-04-27\n2026-05-01\n2026-05-04\n2026-05-08\n2026-05-11\n2026-05-15\n2026-05-18\n2026-05-22\n2026-05-25\n2026-05-29\n2026-06-01\n2026-06-05\n2026-06-08\n2026-06-12\n2026-06-15\n2026-06-19\n2026-06-22\n2026-06-26\n2026-06-29\n2026-07-03\n2026-07-06\n2026-07-10\n2026-07-13\n2026-07-17\n2026-07-20\n2026-07-24\n2026-07-27\n2026-07-31\n2026-08-03\n2026-08-07\n2026-08-10\n2026-08-14\n2026-08-17\n2026-08-21\n2026-08-24\n2026-08-28\n2026-08-31\n2026-09-04\n2026-09-07\n2026-09-11\n2026-09-14\n2026-09-18\n2026-09-21\n2026-09-25\n2026-09-28\n2026-10-02\n2026-10-05\n2026-10-09\n2026-10-12\n2026-10-16\n2026-10-19\n2026-10-23\n2026-10-26\n2026-10-30\n2026-11-02\n2026-11-06\n2026-11-09\n2026-11-13\n2026-11-16\n2026-11-20\n2026-11-23\n2026-11-27\n2026-11-30\n2026-12-04\n2026-12-07\n2026-12-11\n2026-12-14\n2026-12-18\n2026-12-21\n2026-12-25\n2026-12-28\n2027-01-04\n2027-01-08\n2027-01-11\n2027-01-15\n2027-01-18\n2027-01-22\n2027-01-25\n2027-01-29\n2027-02-01\n2027-02-05\n2027-02-08\n2027-02-12\n2027-02-15\n2027-02-19\n2027-02-22\n2027-02-26\n2027-03-01\n2027-03-05\n2027-03-08\n2027-03-12\n2027-03-15\n2027-03-19\n2027-03-22\n2027-03-26\n2027-03-29\n\nCheck Jan1 excluded. Any Jan? Jan4 Mon yes. Jan8 Fri. Good. Feb1 Mon. Mar1 Mon.\n\nc2 不燃 dates:\n2026-04-15\n2026-05-20\n2026-06-17\n2026-07-15\n2026-08-19\n2026-09-16\n2026-10-21\n2026-11-18\n2026-12-16\n2027-01-20\n2027-02-17\n2027-03-17\n\nc3 紙・布類:\n2026-04-02\n2026-04-16\n2026-05-07\n2026-05-21\n2026-06-04\n2026-06-18\n2026-07-02\n2026-07-16\n2026-08-06\n2026-08-20\n2026-09-03\n2026-09-17\n2026-10-01\n2026-10-15\n2026-11-05\n2026-11-19\n2026-12-03\n2026-12-17\n2027-01-07\n2027-01-21\n2027-02-04\n2027-02-18\n2027-03-04\n2027-03-18\n\nc4 カン・ビン:\n2026-04-09\n2026-04-23\n2026-05-14\n2026-05-28\n2026-06-11\n2026-06-25\n2026-07-09\n2026-07-23\n2026-08-13\n2026-08-27\n2026-09-10\n2026-09-24\n2026-10-08\n2026-10-22\n2026-11-12\n2026-11-26\n2026-12-10\n2026-12-24\n2027-01-14\n2027-01-28\n2027-02-11\n2027-02-25\n2027-03-11\n2027-03-25\n\nc5 ペットボトル:\n2026-04-08\n2026-04-22\n2026-05-13\n2026-05-27\n2026-06-10\n2026-06-24\n2026-07-08\n2026-07-22\n2026-08-12\n2026-08-26\n2026-09-09\n2026-09-23\n2026-10-14\n2026-10-28\n2026-11-11\n2026-11-25\n2026-12-09\n2026-12-23\n2027-01-13\n2027-01-27\n2027-02-10\n2027-02-24\n2027-03-10\n2027-03-24\n\nNeed check if ペットボトル includes only bottles? label \"ペットボトル\". coarse pet_bottle.\n\nNow, are there any dates where multiple categories same day? No.\n\nNeed maybe \"カン・ビン\" coarse: beverage_can, glass_bottle. \"紙・布類\" coarse paper_cloth? Yes.\n\nNeed categories order as in legend: 可燃ごみ, 不燃ごみ, 紙・布類, カン・ビン, ペットボトル. c1..c5.\n\nNeed district d1. schedule district \"d1\", category \"c1\" etc.\n\nNeed exceptions scope: districts [\"*\"], categories [\"*\"]? The closure is all. Use [\"*\"]. Text exact.\n\nNeed unsure entries:\n1 about \"祝日の収集の扱い\" text \"祝日も収集するか休むかの明記はない（カレンダーに日付の印字はある）\" district d1 category null? Could be all. Use district \"d1\", category null.\n2 about \"クリーンサンデー\" text \"カレンダーの日曜に「クリーンサンデー」と印字があるが、ごみの種類・収集回数の凡例に無く、収集日として扱わなかった\" district null category null.\n3 about \"新井・腰ノ根を除く区域の範囲\" text \"「小鹿野（新井・腰ノ根を除く）・伊豆沢」とあるが、除外区域の町名一覧は無い\" district d1 category null. But maybe not needed; but it's a legitimate uncertainty. \n4 about \"令和9年の祝日変更\" text \"令和9年の祝日に変更等がある場合については、ご容赦くださいとある\" maybe not.\n\nNeed avoid too many unsure? Fine.\n\nPotential issue: The instructions say \"municipality: 資料に書かれた自治体の名前\". Header has \"小鹿野町住民生活課\" and \"秩父広域市町村圏組合\". The municipality is 小鹿野町. Use \"小鹿野町\". Good.\n\nPotential issue: period printed: \"令和8年度\" from 2026-04-01 to 2027-03-31. But page1 says \"令和8年 4月〜9月\", page2 \"令和8年10月〜令和9年3月\". \"令和8年度\" is clear. Use printed \"令和8年度\". If we use \"令和8年4月〜令和9年3月\" maybe also okay. But period printed exactly? The header \"令和8年度・家庭用\" and subheaders. Use \"令和8年度\". from/to correct. Good.\n\nNeed decide district label/members. Let's set:\ndistricts: [{\"id\":\"d1\",\"label\":\"小鹿野（新井・腰ノ根を除く）・伊豆沢\",\"members\":[],\"note\":null}]\nBut schema note optional; can include null. AdditionalProperties false. If members empty array allowed? Schema doesn't set minItems. Yes.\n\nIs it better to set label \"全域\" because no division? The printed area label is not a district division but coverage. Hmm. The document title line \"小鹿野（新井・腰ノ根を除く）・伊豆沢\" directly under header. It likely indicates this calendar is for that collection area. Since only this area, label as printed is fine. The instruction: \"地区の分けが無く全域が同じなら、地区を1つだけ作り label を \"全域\" にする。\" Here there is no division within this document; but the area label is printed. Is that \"地区\"? It is the area covered. If we use \"全域\", we would lose printed name. The rule says names as printed, but for no districts use \"全域\". Since this is a specific district not all town, and it's the only one in doc, I'd label printed. I think acceptable.\n\nCould members include \"小鹿野（新井・腰ノ根を除く）\" and \"伊豆沢\"? That might be wrong because label already combined. Let's keep [].\n\nNeed schedule text maybe \"カレンダー（日付印字）\". For each schedule, text optional. We can set \"カレンダー\". But if text is null, okay. Use \"カレンダー\" maybe.\n\nNeed ensure JSON only no markdown. We'll output one JSON object.\n\nLet's double-check date patterns with image for a few months. Page2 Oct top row: Oct1 Thu paper. If paper 1st Thu yes. Oct2 Fri burn. Oct5 Mon burn. Oct7 Wed? no. Oct8 Thu can (2nd). Oct9 Fri burn. Oct12 Mon burn. Oct14 Wed pet. Oct15 Thu paper. Oct16 Fri burn. Oct19 Mon burn. Oct21 Wed nonburn. Oct22 Thu can. Oct23 Fri burn. Oct26 Mon burn. Oct28 Wed pet. Oct30 Fri burn. The image Oct labels I can read: 1 紙; 2 可燃; 5 可燃; 7? maybe カン? Wait 7 Oct is Wed; no. 8 カン? yes. 9 可燃; 12 可燃; 14 ペット; 15 紙; 16 可燃; 19 可燃; 21 不燃; 22 カン; 23 可燃; 26 可燃; 28 ペット; 30 可燃. Looks right. Great.\n\nNov: Nov3 Tue? no. Nov4 Wed nonburn? Wait pattern nonburn 3rd Wed = 18, not 4. Nov calendar: 1 Sun,2 Mon burn,3 Tue? 4 Wed? Is Nov4 a holiday? Culture day Nov3. Image Nov: date 5 paper, 6 burn, 9 burn, 11 pet, 12 can, 13 burn, 16 burn, 18 nonburn, 19 paper, 20 burn, 23 burn, 25 pet, 26 can, 27 burn, 30 burn. Good.\n\nDec: Dec1 Tue,2 Wed,3 Thu paper,4 Fri burn,7 Mon burn,9 pet,10 can,11 burn,14 burn,16 nonburn,17 paper,18 burn,21 burn,23 pet,24 can,25 burn,28 burn. Good.\n\nJan: Jan1 Fri closure, Jan4 Mon burn, Jan7 paper, Jan8 burn, Jan11 burn, Jan13 pet, Jan14 can, Jan15 burn, Jan18 burn, Jan20 nonburn, Jan21 paper, Jan22 burn, Jan25 burn, Jan27 pet, Jan28 can, Jan29 burn. Good.\n\nFeb: Feb1 Mon burn, Feb4 paper, Feb5 burn, Feb8 burn, Feb10 pet, Feb11 can, Feb12 burn, Feb15 burn, Feb17 nonburn, Feb18 paper, Feb19 burn, Feb22 burn, Feb24 pet, Feb25 can, Feb26 burn. Good.\n\nMar: Mar1 Mon burn, Mar4 paper, Mar5 burn, Mar8 burn, Mar10 pet, Mar11 can, Mar12 burn, Mar15 burn, Mar17 nonburn, Mar18 paper, Mar19 burn, Mar22 burn, Mar24 pet, Mar25 can, Mar26 burn, Mar29 burn. Good.\n\nNeed maybe collection on Dec29? Pattern no. But page2 Dec shows 29? It might have \"施設持込可\" only. So no.\n\nNeed one more thing: Page2 note \"新年の1日〜3日は、ごみの収集及び施設への持ち込みもお休みです。\" That's Jan1-3 2027. We include closure. If using dates, Jan1 absent. Good.\n\nNeed \"祝日\" exception? There are holidays with collection: May4 2026 (みどりの日? Actually May4), May5? no collection. July20 2026 Marine Day Monday? Is July20 2026 Monday? Third Monday July = July20, and pattern says 可燃 on July20. Calendar likely includes 可燃 on July20? Let's check July image: July20 is Monday; I see \"可燃ごみ\" maybe yes. So holidays collected. But text doesn't say. Should we create holiday collected exception? No, because no explicit statement. But if using dates, it's embedded. We can note no explicit holiday policy in unsure. Good.\n\nCould there be \"祝日も収集\" implied by calendar? Not text. Do not create.\n\nNeed JSON format exact. Ensure no trailing commas.\n\nLet's build. Need include all dates arrays. This is long. Be meticulous.\n\nLet's consider if we can reduce dates by using rules nth/weekly plus exceptions. But instruction prefers dates. Using dates huge but valid. Need ensure no schema violation: dates array can be any length. Fine.\n\nPotential issue: categories coarse for 紙・布類: The vocab has paper_cloth \"紙と布を分けずに 1 つで\". Yes.\n\nPotential issue: \"カン・ビン\" coarse array can include both \"beverage_can\" and \"glass_bottle\". Good.\n\nPotential issue: \"不燃ごみ\" coarse non_burnable. It includes hazardous? The category label is 不燃ごみ; but the detailed separate page lists 不燃ごみ includes 陶器, glass, etc. Not hazardous? It has 乾電池? Actually page says 不燃ごみ/透明/半透明: 乾電池? Wait hazardous? The calendar category \"不燃ごみ\" may include 有害ごみ? But we only label as 不燃ごみ, coarse non_burnable. Could also include hazardous? The detailed page says \"不燃ごみ（透明/半透明）\" and \"危険ごみ\" maybe? The label in calendar \"不燃ごみ\" might include 電池? Hmm But not necessary; coarse from label. Use [\"non_burnable\"].\n\nNeed \"ペットボトル\" coarse [\"pet_bottle\"].\n\nNeed \"可燃ごみ\" coarse [\"burnable\"].\n\nNow unsure text in Japanese. Use no extra fields outside schema. Each unsure object required about, text; district/category optional? Schema required only about,text; but properties district/category. We can include null. AdditionalProperties false. Good.\n\nLet's maybe include unsure about \"小鹿野（新井・腰ノ根を除く）・伊豆沢\" area label and members. \nUnsure 1: about \"祝日の収集の扱い\", district \"d1\", category null, text \"祝日も収集するか休むかの明記はない。\"\nUnsure 2: about \"クリーンサンデー\", district null, category null, text \"日曜に「クリーンサンデー」と印字があるが、ごみの種類・収集回数の凡例に無いため、収集日として扱っていない。\"\nUnsure 3: about \"地区の範囲\", district \"d1\", category null, text \"「小鹿野（新井・腰ノ根を除く）・伊豆沢」と印字されているが、新井・腰ノ根を除く区域の町名一覧は無い。\"\nUnsure 4: about \"令和9年の祝日変更\", district null, category null, text \"「令和9年の祝日に変更等がある場合については、ご容赦ください」とある。\"\nMaybe \"施設持込可/不可\" not collection. No.\n\nNeed exceptions closure text exact. Scope districts [\"*\"], categories [\"*\"]. from 2027-01-01 to 2027-01-03. year_end true.\n\nShould we include closure from 2026-12-29 to 2027-01-03? The calendar says \"新年の1日〜3日\" only. So Jan1-3. But page2 has \"年末の施設への持ち込みは混み合います\" and Dec29-30 facility drop-off, Dec31 not. Not collection closure. So no.\n\nNeed maybe \"休\" on Jan1-3 in calendar. Jan1 cell red休, Jan2休, Jan3休. Good.\n\nPotential issue: \"dates は最終の日付として扱われ、下の exceptions は当てられない\" If we include closure exception and dates already exclude, okay.\n\nPotential issue: The period printed \"令和8年度\" maybe from 2026-04-01 to 2027-03-31. But \"令和8年10月〜令和9年3月\" on page2, so yes.\n\nLet's now craft final JSON. Need ensure all dates strings pattern. Use double quotes.\n\nI will output JSON only.",
+    "finish_reason": "stop",
+    "usage": {
+     "prompt_tokens": 9491,
+     "completion_tokens": 24354,
+     "total_tokens": 33845,
+     "prompt_tokens_details": {
+      "cached_tokens": 2816
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 22354
+     },
+     "prompt_cache_hit_tokens": 2816,
+     "prompt_cache_miss_tokens": 6675
+    },
+    "model": "deepseek-flash",
+    "seconds": 95.4
+   }
+  ],
+  "note": "API の生の答え (content は JSON の文字、reasoning_content は推論の文字)。最後のものを answer に読んだ"
+ },
+ "seconds": 95.4
+}

@@ -1,0 +1,234 @@
+{
+ "deepseek": {
+  "answer_key": "out/kanazawa_schedules.json (K1 の 355 系列のうち、この地区の 5 系列)",
+  "district": "南小立野",
+  "summary": {
+   "units": 5,
+   "exact": 4,
+   "wrong_dates": 0,
+   "missing_dates": 24,
+   "gt_dates": 154,
+   "unmapped": 1,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "district_map": {
+   "ids": [
+    "d1"
+   ],
+   "how": "label"
+  },
+  "category_map": {
+   "c1": [
+    "burnable",
+    "label"
+   ],
+   "c2": [
+    "nonburnable",
+    "label"
+   ],
+   "c4": [
+    "plastic",
+    "label"
+   ],
+   "c5": [
+    "bottle",
+    "label"
+   ]
+  },
+  "units": [
+   {
+    "category": "burnable",
+    "label": "燃やすごみ",
+    "gt_n": 103,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "holiday_not_stated",
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "nonburnable",
+    "label": "燃やさないごみ",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "recyclable",
+    "label": "資源 あき缶・ペットボトル プラスチック資源など",
+    "unmapped": true,
+    "gt_n": 24,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "category": "plastic",
+    "label": "資源 プラスチック資源",
+    "gt_n": 3,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "bottle",
+    "label": "びん",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "out/kanazawa_schedules.json (K1 の 355 系列のうち、この地区の 5 系列)",
+  "district": "南小立野",
+  "summary": {
+   "units": 5,
+   "exact": 4,
+   "wrong_dates": 0,
+   "missing_dates": 24,
+   "gt_dates": 154,
+   "unmapped": 1,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "district_map": {
+   "ids": [
+    "d1"
+   ],
+   "how": "label"
+  },
+  "category_map": {
+   "c1": [
+    "burnable",
+    "label"
+   ],
+   "c2": [
+    "nonburnable",
+    "label"
+   ],
+   "c4": [
+    "plastic",
+    "label"
+   ],
+   "c5": [
+    "bottle",
+    "label"
+   ]
+  },
+  "units": [
+   {
+    "category": "burnable",
+    "label": "燃やすごみ",
+    "gt_n": 103,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "holiday_not_stated",
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "nonburnable",
+    "label": "燃やさないごみ",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "recyclable",
+    "label": "資源 あき缶・ペットボトル プラスチック資源など",
+    "unmapped": true,
+    "gt_n": 24,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 24,
+    "answered": false
+   },
+   {
+    "category": "plastic",
+    "label": "資源 プラスチック資源",
+    "gt_n": 3,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   },
+   {
+    "category": "bottle",
+    "label": "びん",
+    "gt_n": 12,
+    "exact": true,
+    "wrong": [],
+    "missing": [],
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "why": [
+     "unsure"
+    ],
+    "wrong_n_all": 0,
+    "missing_n_all": 0
+   }
+  ]
+ }
+}

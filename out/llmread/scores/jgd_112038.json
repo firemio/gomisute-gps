@@ -1,0 +1,7398 @@
+{
+ "deepseek": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "112038",
+  "summary": {
+   "units": 162,
+   "exact": 64,
+   "wrong_dates": 8,
+   "missing_dates": 3056,
+   "gt_dates": 5436,
+   "unmapped": 90,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 18,
+  "courses_mapped": 8,
+  "district_map": {
+   "1": {
+    "112038-c853c1cf:d1": "name"
+   },
+   "2": {
+    "112038-c71473d4:d1": "name"
+   },
+   "3": {
+    "112038-79082c15:d1": "name"
+   },
+   "4": {
+    "112038-e231e69a:d1": "name"
+   },
+   "5": {
+    "112038-5f8f330c:d1": "name"
+   },
+   "6": {
+    "112038-345f5fae:d1": "name"
+   },
+   "7": {
+    "112038-20731caf:d1": "name"
+   },
+   "8": {
+    "112038-79ea5be8:d1": "name"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c6",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 18
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [
+       "2026-04-14",
+       "2026-04-28",
+       "2026-05-12",
+       "2026-05-26",
+       "2026-06-09",
+       "2026-06-23"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 18
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": false,
+      "wrong": [
+       "2026-12-29"
+      ],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 1,
+      "missing_n": 0
+     }
+    ],
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "112038",
+  "summary": {
+   "units": 162,
+   "exact": 72,
+   "wrong_dates": 0,
+   "missing_dates": 3020,
+   "gt_dates": 5436,
+   "unmapped": 90,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 18,
+  "courses_mapped": 8,
+  "district_map": {
+   "1": {
+    "112038-c853c1cf:d1": "name"
+   },
+   "2": {
+    "112038-c71473d4:d1": "name"
+   },
+   "3": {
+    "112038-79082c15:d1": "name"
+   },
+   "4": {
+    "112038-e231e69a:d1": "name"
+   },
+   "5": {
+    "112038-5f8f330c:d1": "name"
+   },
+   "6": {
+    "112038-345f5fae:d1": "name"
+   },
+   "7": {
+    "112038-20731caf:d1": "name"
+   },
+   "8": {
+    "112038-79ea5be8:d1": "name"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c853c1cf",
+    "id": "c6",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-c71473d4",
+    "id": "c6",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79082c15",
+    "id": "c6",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-e231e69a",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-5f8f330c",
+    "id": "c6",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-345f5fae",
+    "id": "c6",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-20731caf",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c1",
+    "label": "一般・有害ごみ",
+    "keys": [
+     "burnable",
+     "hazardous"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c2",
+    "label": "プラスチック製容器包装",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c3",
+    "label": "びん・飲料かん",
+    "keys": [
+     "beverage_can",
+     "glass_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c4",
+    "label": "金属類・紙類",
+    "keys": [
+     "metal",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "112038-79ea5be8",
+    "id": "c5",
+    "label": "ペットボトル・繊維類",
+    "keys": [
+     "cloth",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": "金山町、川口１丁目、幸町１〜３丁目、栄町１〜３丁目、舟戸町、本町１〜４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c853c1cf:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": "赤芝新田、赤山、新井宿、安行領在家、安行領根岸（根岸第１町会を除く）、石神、木曽呂（藤堤下を除く）、源左衛門新田（差間町会を除く）、神戸（神根）、里（コンフォール西鳩ヶ谷を除く）、西新井宿、東内野、道合",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": "伊刈（小谷場町会を除く）、芝下１〜３丁目、芝高木１・２丁目、芝塚原１・２丁目、芝西１・２丁目、芝東町、芝宮根町、八幡木１・２丁目、南鳩ヶ谷３・４丁目、南鳩ヶ谷８丁目、柳崎１〜５丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": "伊刈（小谷場町会）、小谷場、坂下町１・２丁目、芝１〜５丁目、芝新町、芝園町、芝中田１・２丁目、芝樋ノ爪１・２丁目、芝富士１・２丁目、南前川１・２丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": "安行、安行北谷、安行吉蔵、安行小山、安行慈林、安行出羽１〜５丁目、安行藤八、安行西立野、安行原、安行吉岡、安行領家、大竹、坂下町４丁目、新堀、新堀町、榛松、榛松１〜３丁目、東貝塚、前田、前野宿、南鳩ヶ谷５・６丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "14",
+    "course_name": "北原台１〜３丁目、久左衛門新田、行衛、源左衛門新田（差間町会）、差間、差間１〜３丁目、長蔵１〜３丁目、長蔵新田、藤兵衛新田、戸塚１〜６丁目、戸塚境町、戸塚鋏町、戸塚東１〜４丁目、戸塚南１〜５丁目、西立野（戸塚）、東川口１〜６丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "15",
+    "course_name": "コンフォール東鳩ヶ谷、鳩ヶ谷本町３・４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "16",
+    "course_name": "坂下町３丁目、三ツ和１〜３丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 77,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "17",
+    "course_name": "鳩ヶ谷緑町１・２丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "18",
+    "course_name": "桜町３〜５丁目（コンフォール東鳩ヶ谷を除く）、鳩ヶ谷本町１丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": "飯塚１〜４丁目、飯原町、川口２〜４丁目、桜町６丁目、鳩ヶ谷本町２丁目、南鳩ヶ谷７丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-c71473d4:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": "コンフォール西鳩ヶ谷、桜町１・２丁目、並木１〜４丁目、並木元町、南鳩ヶ谷１・２丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79082c15:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": "川口５・６丁目、仲町、西川口１〜６丁目、原町、緑町、南町１・２丁目、宮町",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-e231e69a:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": "上青木１〜６丁目、上青木西１〜５丁目、中青木１〜５丁目、西青木１〜５丁目、八幡木３丁目、本前川１・２丁目、本前川３丁目（根岸第１町会を除く）、前上町、前川１〜４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-5f8f330c:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": "青木１〜５丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-345f5fae:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": "赤井、赤井１〜４丁目、朝日１〜６丁目、江戸１〜３丁目、江戸袋１・２丁目、蓮沼、東本郷、東本郷１・２丁目、本蓮１〜４丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-20731caf:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "burnable",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "hazardous",
+    "gt_n": 77,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": "新井町、末広１〜３丁目、東領家１〜５丁目、元郷１〜６丁目、弥平１〜４丁目、領家１〜５丁目",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "112038-79ea5be8:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "beverage_can",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "burnable",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "cloth",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "glass_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "hazardous",
+    "gt_n": 78,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 78,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "metal",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "paper",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 18,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": "安行領根岸（根岸第１町会）、木曽呂（藤堤下）、北園町、在家町、本前川３丁目（根岸第１町会）、柳根町",
+    "key": "plastic",
+    "gt_n": 39,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 39,
+    "answered": false
+   }
+  ]
+ }
+}

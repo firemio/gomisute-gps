@@ -1,0 +1,4317 @@
+{
+ "deepseek": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "131024",
+  "summary": {
+   "units": 104,
+   "exact": 32,
+   "wrong_dates": 0,
+   "missing_dates": 3488,
+   "gt_dates": 5017,
+   "unmapped": 72,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 13,
+  "courses_mapped": 4,
+  "district_map": {
+   "1": {
+    "131024-c038390a:d1": "name",
+    "131024-c038390a:d11": "name",
+    "131024-c038390a:d13": "name"
+   },
+   "10": {
+    "131024-c038390a:d55": "name"
+   },
+   "11": {
+    "131024-c038390a:d50": "name"
+   },
+   "2": {
+    "131024-c038390a:d15": "name"
+   }
+  },
+  "districts_unused": [
+   "131024-c038390a:d10",
+   "131024-c038390a:d12",
+   "131024-c038390a:d14",
+   "131024-c038390a:d16",
+   "131024-c038390a:d17",
+   "131024-c038390a:d18",
+   "131024-c038390a:d19",
+   "131024-c038390a:d2",
+   "131024-c038390a:d20",
+   "131024-c038390a:d21",
+   "131024-c038390a:d22",
+   "131024-c038390a:d23",
+   "131024-c038390a:d24",
+   "131024-c038390a:d25",
+   "131024-c038390a:d26",
+   "131024-c038390a:d27",
+   "131024-c038390a:d28",
+   "131024-c038390a:d29",
+   "131024-c038390a:d3",
+   "131024-c038390a:d30",
+   "131024-c038390a:d31",
+   "131024-c038390a:d32",
+   "131024-c038390a:d33",
+   "131024-c038390a:d34",
+   "131024-c038390a:d35",
+   "131024-c038390a:d36",
+   "131024-c038390a:d37",
+   "131024-c038390a:d38",
+   "131024-c038390a:d39",
+   "131024-c038390a:d4",
+   "131024-c038390a:d40",
+   "131024-c038390a:d41",
+   "131024-c038390a:d42",
+   "131024-c038390a:d43",
+   "131024-c038390a:d44",
+   "131024-c038390a:d45",
+   "131024-c038390a:d46",
+   "131024-c038390a:d47",
+   "131024-c038390a:d48",
+   "131024-c038390a:d49",
+   "131024-c038390a:d5",
+   "131024-c038390a:d51",
+   "131024-c038390a:d52",
+   "131024-c038390a:d53",
+   "131024-c038390a:d54",
+   "131024-c038390a:d56",
+   "131024-c038390a:d6",
+   "131024-c038390a:d7",
+   "131024-c038390a:d8",
+   "131024-c038390a:d9"
+  ],
+  "category_map": [
+   {
+    "doc": "131024-c038390a",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c2",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c3",
+    "label": "プラマーク",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c4",
+    "label": "資源",
+    "keys": [
+     "beverage_can",
+     "glass_bottle",
+     "metal",
+     "paper",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c5",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d1",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d55",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 174,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 174,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 69,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 69,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 69,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 69,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 70,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 70,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "131024",
+  "summary": {
+   "units": 104,
+   "exact": 24,
+   "wrong_dates": 0,
+   "missing_dates": 3802,
+   "gt_dates": 5017,
+   "unmapped": 80,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 13,
+  "courses_mapped": 3,
+  "district_map": {
+   "1": {
+    "131024-c038390a:d11": "name",
+    "131024-c038390a:d13": "name"
+   },
+   "11": {
+    "131024-c038390a:d50": "name"
+   },
+   "2": {
+    "131024-c038390a:d15": "name"
+   }
+  },
+  "districts_unused": [
+   "131024-c038390a:d1",
+   "131024-c038390a:d10",
+   "131024-c038390a:d12",
+   "131024-c038390a:d14",
+   "131024-c038390a:d16",
+   "131024-c038390a:d17",
+   "131024-c038390a:d18",
+   "131024-c038390a:d19",
+   "131024-c038390a:d2",
+   "131024-c038390a:d20",
+   "131024-c038390a:d21",
+   "131024-c038390a:d22",
+   "131024-c038390a:d23",
+   "131024-c038390a:d24",
+   "131024-c038390a:d25",
+   "131024-c038390a:d26",
+   "131024-c038390a:d27",
+   "131024-c038390a:d28",
+   "131024-c038390a:d29",
+   "131024-c038390a:d3",
+   "131024-c038390a:d30",
+   "131024-c038390a:d31",
+   "131024-c038390a:d32",
+   "131024-c038390a:d33",
+   "131024-c038390a:d34",
+   "131024-c038390a:d35",
+   "131024-c038390a:d36",
+   "131024-c038390a:d37",
+   "131024-c038390a:d38",
+   "131024-c038390a:d39",
+   "131024-c038390a:d4",
+   "131024-c038390a:d40",
+   "131024-c038390a:d41",
+   "131024-c038390a:d42",
+   "131024-c038390a:d43",
+   "131024-c038390a:d44",
+   "131024-c038390a:d45",
+   "131024-c038390a:d46",
+   "131024-c038390a:d47",
+   "131024-c038390a:d48",
+   "131024-c038390a:d49",
+   "131024-c038390a:d5",
+   "131024-c038390a:d51",
+   "131024-c038390a:d52",
+   "131024-c038390a:d53",
+   "131024-c038390a:d54",
+   "131024-c038390a:d55",
+   "131024-c038390a:d56",
+   "131024-c038390a:d6",
+   "131024-c038390a:d7",
+   "131024-c038390a:d8",
+   "131024-c038390a:d9"
+  ],
+  "category_map": [
+   {
+    "doc": "131024-c038390a",
+    "id": "c1",
+    "label": "燃やすごみ",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c2",
+    "label": "燃やさないごみ",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c3",
+    "label": "プラマーク",
+    "keys": [
+     "plastic"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c4",
+    "label": "資源",
+    "keys": [
+     "beverage_can",
+     "glass_bottle",
+     "metal",
+     "paper",
+     "pet_bottle"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "131024-c038390a",
+    "id": "c5",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d11",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     },
+     {
+      "district": "131024-c038390a:d13",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 70,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "10",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "11",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d50",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 174,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 174,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "12",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 69,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 69,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "13",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "2",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 34,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "131024-c038390a:d15",
+      "how": "name",
+      "categories": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "3",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "4",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "5",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 209,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 209,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "6",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 69,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 69,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "7",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 70,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 34,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 34,
+    "answered": false
+   },
+   {
+    "course": "8",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 70,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 70,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   },
+   {
+    "course": "9",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 35,
+    "unmapped": true,
+    "per_district": [],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 35,
+    "answered": false
+   }
+  ]
+ }
+}

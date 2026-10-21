@@ -1,0 +1,925 @@
+{
+ "deepseek": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "113697",
+  "summary": {
+   "units": 10,
+   "exact": 10,
+   "wrong_dates": 0,
+   "missing_dates": 0,
+   "gt_dates": 270,
+   "unmapped": 0,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 1,
+  "courses_mapped": 1,
+  "district_map": {
+   "1": {
+    "113697-32692eee:d1": "source_doc"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "113697-32692eee",
+    "id": "c1",
+    "label": "燃えるごみ （メタン発酵処理）",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label_paren"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c2",
+    "label": "資源 プラスチック",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c3",
+    "label": "廃プラスチック",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c4",
+    "label": "金属類",
+    "keys": [
+     "metal"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c5",
+    "label": "スプレー缶等 有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c6",
+    "label": "ガラス類",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c7",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c8",
+    "label": "びん類 （無色びん・茶びん）",
+    "keys": [
+     "glass_bottle"
+    ],
+    "how": "label_paren"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c9",
+    "label": "新聞",
+    "keys": [
+     "paper"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c10",
+    "label": "雑誌",
+    "keys": [
+     "paper"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c11",
+    "label": "段ボール",
+    "keys": [
+     "paper"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c12",
+    "label": "雑がみ",
+    "keys": [
+     "paper"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c13",
+    "label": "牛乳パック",
+    "keys": [
+     "paper"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c14",
+    "label": "衣類",
+    "keys": [
+     "cloth"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c15",
+    "label": "アルミ缶",
+    "keys": [
+     "beverage_can"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c16",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c15"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 104,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c14"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c8"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c10",
+       "c11",
+       "c12",
+       "c13",
+       "c9"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c2",
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "正解: japan-gomi-data (https://github.com/tecolicom/japan-gomi-data、作者 tecolicom、CC BY 4.0)。コミット d786a985569e に固定し、比べるためだけに使っている",
+  "lg_code": "113697",
+  "summary": {
+   "units": 10,
+   "exact": 9,
+   "wrong_dates": 0,
+   "missing_dates": 12,
+   "gt_dates": 270,
+   "unmapped": 0,
+   "answered": 0,
+   "answered_exact": 0,
+   "answered_wrong": 0
+  },
+  "courses": 1,
+  "courses_mapped": 1,
+  "district_map": {
+   "1": {
+    "113697-32692eee:d1": "source_doc"
+   }
+  },
+  "districts_unused": [],
+  "category_map": [
+   {
+    "doc": "113697-32692eee",
+    "id": "c1",
+    "label": "燃えるごみ （メタン発酵処理）",
+    "keys": [
+     "burnable"
+    ],
+    "how": "label_paren"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c2",
+    "label": "資源 プラスチック",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c3",
+    "label": "廃プラスチック",
+    "keys": [
+     "plastic"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c4",
+    "label": "金属類",
+    "keys": [
+     "metal"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c5",
+    "label": "スプレー缶等 有害ごみ",
+    "keys": [
+     "hazardous"
+    ],
+    "how": "llm_coarse"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c6",
+    "label": "ガラス類",
+    "keys": [
+     "non_burnable"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c7",
+    "label": "ペットボトル",
+    "keys": [
+     "pet_bottle"
+    ],
+    "how": "label"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c8",
+    "label": "びん類 （無色びん・茶びん）",
+    "keys": [
+     "glass_bottle"
+    ],
+    "how": "label_paren"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c9",
+    "label": "資源回収",
+    "keys": [
+     "beverage_can",
+     "cloth",
+     "paper"
+    ],
+    "how": "label_group"
+   },
+   {
+    "doc": "113697-32692eee",
+    "id": "c10",
+    "label": "粗大ごみ",
+    "keys": [],
+    "how": "unmapped"
+   }
+  ],
+  "units": [
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "beverage_can",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c9"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "burnable",
+    "gt_n": 104,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "cloth",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c9"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "glass_bottle",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c8"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "hazardous",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "metal",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "non_burnable",
+    "gt_n": 12,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c6"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "paper",
+    "gt_n": 24,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c9"
+      ],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       "2026-04-08",
+       "2026-05-13",
+       "2026-06-10",
+       "2026-07-08",
+       "2026-08-12",
+       "2026-09-09"
+      ],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "unsure",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 12
+     }
+    ],
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 12,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "pet_bottle",
+    "gt_n": 18,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c7"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   },
+   {
+    "course": "1",
+    "course_name": null,
+    "key": "plastic",
+    "gt_n": 52,
+    "unmapped": false,
+    "per_district": [
+     {
+      "district": "113697-32692eee:d1",
+      "how": "source_doc",
+      "categories": [
+       "c2",
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "holiday_not_stated",
+       "period_missing",
+       "year_end_not_stated"
+      ],
+      "wrong_n": 0,
+      "missing_n": 0
+     }
+    ],
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false
+   }
+  ]
+ }
+}

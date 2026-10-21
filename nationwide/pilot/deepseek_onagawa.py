@@ -10,7 +10,7 @@
 """
 import argparse, concurrent.futures as cf, json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, os.path.join(ROOT, "nationwide", "readers"))
+sys.path.insert(0, os.path.join(ROOT, "nationwide", "llmread"))
 sys.stdout.reconfigure(encoding="utf-8")
 import fitz
 import llm

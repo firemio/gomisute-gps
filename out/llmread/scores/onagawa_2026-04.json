@@ -1,0 +1,1477 @@
+{
+ "deepseek": {
+  "answer_key": "out/onagawa_reading.json の final (O1 の 324 マス。Opus 2 人の読みが一致したもの)",
+  "month": "2026-04",
+  "summary": {
+   "units": 26,
+   "exact": 12,
+   "wrong_dates": 6,
+   "missing_dates": 23,
+   "gt_dates": 62,
+   "unmapped": 8,
+   "answered": 18,
+   "answered_exact": 12,
+   "answered_wrong": 6
+  },
+  "district_map": {
+   "burnable|黄色の日": [
+    [
+     "d1",
+     "label"
+    ]
+   ],
+   "burnable|水色の日": [
+    [
+     "d2",
+     "label"
+    ]
+   ],
+   "burnable|色分けなし（江島地区）": [],
+   "resource|大沢・浦宿全区・針浜": [
+    [
+     "d4",
+     "label"
+    ]
+   ],
+   "resource|上全区・西・小乗": [
+    [
+     "d5",
+     "label"
+    ]
+   ],
+   "resource|女川全区・大原全区・清水": [
+    [
+     "d6",
+     "label"
+    ]
+   ],
+   "resource|旭が丘・宮ケ崎・石浜": [
+    [
+     "d7",
+     "label"
+    ]
+   ],
+   "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取": [
+    [
+     "d8",
+     "label"
+    ]
+   ],
+   "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間": [
+    [
+     "d9",
+     "label"
+    ]
+   ]
+  },
+  "category_map": {
+   "c1": [
+    "burnable",
+    null
+   ],
+   "c2": [
+    "resource",
+    "缶・びん ペットボトル"
+   ],
+   "c3": [
+    "resource",
+    "ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油"
+   ],
+   "c4": [
+    "resource",
+    "燃やせないごみ"
+   ],
+   "c5": [
+    "resource",
+    "粗大ごみ"
+   ]
+  },
+  "skipped": [
+   "burnable|色分けなし（江島地区） (正解に印字の日付が無い)"
+  ],
+  "units": [
+   {
+    "cell": "burnable|黄色の日",
+    "gt_n": 9,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d1",
+      "how": "label",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "burnable|水色の日",
+    "gt_n": 8,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d2",
+      "how": "label",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|燃やせないごみ",
+    "gt_n": 2,
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 2,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       1
+      ],
+      "missing": [
+       7,
+       21
+      ],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|粗大ごみ",
+    "unmapped": true,
+    "gt_n": 1,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 1,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       1
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|燃やせないごみ",
+    "gt_n": 2,
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 2,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       8
+      ],
+      "missing": [
+       3,
+       17
+      ],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|粗大ごみ",
+    "unmapped": true,
+    "gt_n": 1,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 1,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       8
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 3,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|燃やせないごみ",
+    "gt_n": 3,
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 3,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       17
+      ],
+      "missing": [
+       1,
+       15,
+       29
+      ],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|粗大ごみ",
+    "unmapped": true,
+    "gt_n": 1,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 1,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       17
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|缶・びん ペットボトル",
+    "gt_n": 3,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d7",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d7",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|燃やせないごみ",
+    "gt_n": 2,
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 2,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d7",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       22
+      ],
+      "missing": [
+       9,
+       23
+      ],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|粗大ごみ",
+    "unmapped": true,
+    "gt_n": 1,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 1,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d7",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       22
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|缶・びん ペットボトル",
+    "unmapped": true,
+    "gt_n": 2,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 2,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d8",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       6,
+       20
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d8",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|燃やせないごみ",
+    "gt_n": 2,
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 2,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d8",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       3
+      ],
+      "missing": [
+       6,
+       20
+      ],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|粗大ごみ",
+    "unmapped": true,
+    "gt_n": 1,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 1,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d8",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       3
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|缶・びん ペットボトル",
+    "unmapped": true,
+    "gt_n": 2,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 2,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d9",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       13,
+       27
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d9",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|燃やせないごみ",
+    "gt_n": 2,
+    "exact": false,
+    "wrong_n": 1,
+    "missing_n": 2,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d9",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": false,
+      "wrong": [
+       10
+      ],
+      "missing": [
+       13,
+       27
+      ],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|粗大ごみ",
+    "unmapped": true,
+    "gt_n": 1,
+    "exact": false,
+    "wrong_n": 0,
+    "missing_n": 1,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d9",
+      "how": "label",
+      "series": [],
+      "exact": false,
+      "wrong": [],
+      "missing": [
+       10
+      ],
+      "answerable": false,
+      "why": [
+       "no_series"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "opus": {
+  "answer_key": "out/onagawa_reading.json の final (O1 の 324 マス。Opus 2 人の読みが一致したもの)",
+  "month": "2026-04",
+  "summary": {
+   "units": 26,
+   "exact": 26,
+   "wrong_dates": 0,
+   "missing_dates": 0,
+   "gt_dates": 62,
+   "unmapped": 0,
+   "answered": 18,
+   "answered_exact": 18,
+   "answered_wrong": 0
+  },
+  "district_map": {
+   "burnable|黄色の日": [
+    [
+     "d1",
+     "members_cover"
+    ],
+    [
+     "d2",
+     "members_cover"
+    ],
+    [
+     "d5",
+     "members_cover"
+    ]
+   ],
+   "burnable|水色の日": [
+    [
+     "d3",
+     "members_cover"
+    ],
+    [
+     "d4",
+     "members_cover"
+    ],
+    [
+     "d6",
+     "members_cover"
+    ]
+   ],
+   "burnable|色分けなし（江島地区）": [],
+   "resource|大沢・浦宿全区・針浜": [
+    [
+     "d1",
+     "label"
+    ]
+   ],
+   "resource|上全区・西・小乗": [
+    [
+     "d2",
+     "label"
+    ]
+   ],
+   "resource|女川全区・大原全区・清水": [
+    [
+     "d3",
+     "label"
+    ]
+   ],
+   "resource|旭が丘・宮ケ崎・石浜": [
+    [
+     "d4",
+     "label"
+    ]
+   ],
+   "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取": [
+    [
+     "d5",
+     "label"
+    ]
+   ],
+   "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間": [
+    [
+     "d6",
+     "label"
+    ]
+   ]
+  },
+  "category_map": {
+   "c1": [
+    "burnable",
+    null
+   ],
+   "c2": [
+    "resource",
+    "缶・びん ペットボトル"
+   ],
+   "c3": [
+    "resource",
+    "ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油"
+   ],
+   "c4": [
+    "resource",
+    "燃やせないごみ"
+   ],
+   "c5": [
+    "resource",
+    "粗大ごみ"
+   ]
+  },
+  "skipped": [
+   "burnable|色分けなし（江島地区） (正解に印字の日付が無い)"
+  ],
+  "units": [
+   {
+    "cell": "burnable|黄色の日",
+    "gt_n": 9,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d1",
+      "how": "members_cover",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     },
+     {
+      "district": "d2",
+      "how": "members_cover",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     },
+     {
+      "district": "d5",
+      "how": "members_cover",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "burnable|水色の日",
+    "gt_n": 8,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d3",
+      "how": "members_cover",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     },
+     {
+      "district": "d4",
+      "how": "members_cover",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     },
+     {
+      "district": "d6",
+      "how": "members_cover",
+      "series": [
+       "c1"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d1",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d1",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|燃やせないごみ",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d1",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|大沢・浦宿全区・針浜|粗大ごみ",
+    "gt_n": 1,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d1",
+      "how": "label",
+      "series": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d2",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d2",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|燃やせないごみ",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d2",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|上全区・西・小乗|粗大ごみ",
+    "gt_n": 1,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d2",
+      "how": "label",
+      "series": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d3",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 3,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d3",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|燃やせないごみ",
+    "gt_n": 3,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d3",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|女川全区・大原全区・清水|粗大ごみ",
+    "gt_n": 1,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d3",
+      "how": "label",
+      "series": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|缶・びん ペットボトル",
+    "gt_n": 3,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|燃やせないごみ",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|旭が丘・宮ケ崎・石浜|粗大ごみ",
+    "gt_n": 1,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d4",
+      "how": "label",
+      "series": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|燃やせないごみ",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|高白・横浦・大石原・野々浜・飯子浜・塚浜・小屋取|粗大ごみ",
+    "gt_n": 1,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d5",
+      "how": "label",
+      "series": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|缶・びん ペットボトル",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [
+       "c2"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|ペットボトル以外のプラスチック容器・白色トレイ・紙・布・発泡スチロール・剪定枝・廃食油",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [
+       "c3"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|燃やせないごみ",
+    "gt_n": 2,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": false,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [
+       "c4"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": false,
+      "why": [
+       "unsure"
+      ]
+     }
+    ]
+   },
+   {
+    "cell": "resource|桐ケ崎・竹浦・尾浦・御前・指ケ浜・出島・寺間|粗大ごみ",
+    "gt_n": 1,
+    "exact": true,
+    "wrong_n": 0,
+    "missing_n": 0,
+    "answered": true,
+    "per_district": [
+     {
+      "district": "d6",
+      "how": "label",
+      "series": [
+       "c5"
+      ],
+      "exact": true,
+      "wrong": [],
+      "missing": [],
+      "answerable": true,
+      "why": []
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -9,7 +9,7 @@
 """
 import argparse, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, os.path.join(ROOT, "nationwide", "readers")); sys.path.insert(0, os.path.join(ROOT, "nationwide", "pilot"))
+sys.path.insert(0, os.path.join(ROOT, "nationwide", "llmread")); sys.path.insert(0, os.path.join(ROOT, "nationwide", "pilot"))
 sys.stdout.reconfigure(encoding="utf-8")
 import fitz
 import llm

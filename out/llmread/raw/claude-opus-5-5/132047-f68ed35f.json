@@ -1,0 +1,304 @@
+{
+ "doc_id": "132047-f68ed35f",
+ "model": "claude-opus-5-5",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "8535c91eadc5db9ecc26cb796e576770a39f012c165c90ff52ad4e1e04401de9",
+ "started_at": "2026-10-21T11:18:11+00:00",
+ "images": 0,
+ "seconds": 16.3,
+ "answer": {
+  "municipality": null,
+  "period": {
+   "printed": "令和8年度版（2026年4月～2027年3月）",
+   "from": "2026-04-01",
+   "to": "2027-03-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "北野全域・新川2・3丁目地区",
+    "members": [
+     "北野全域",
+     "新川2・3丁目"
+    ],
+    "note": null
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "古紙・古着",
+    "coarse": [
+     "paper",
+     "cloth"
+    ],
+    "note": null
+   },
+   {
+    "id": "c2",
+    "label": "燃やせるごみ",
+    "coarse": [
+     "burnable"
+    ],
+    "note": null
+   },
+   {
+    "id": "c3",
+    "label": "ペットボトル",
+    "coarse": [
+     "pet_bottle"
+    ],
+    "note": null
+   },
+   {
+    "id": "c4",
+    "label": "空きびん・缶",
+    "coarse": [
+     "glass_bottle",
+     "beverage_can"
+    ],
+    "note": null
+   },
+   {
+    "id": "c5",
+    "label": "燃やせないごみ",
+    "coarse": [
+     "non_burnable"
+    ],
+    "note": null
+   },
+   {
+    "id": "c6",
+    "label": "プラスチック類",
+    "coarse": [
+     "plastic"
+    ],
+    "note": null
+   },
+   {
+    "id": "c7",
+    "label": "有害ごみ",
+    "coarse": [
+     "hazardous"
+    ],
+    "note": null
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "月曜日 古紙・古着",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ],
+      "text": "月曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": "火曜日 燃やせるごみ / 金曜日 燃やせるごみ",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ],
+      "text": "火曜日 / 金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": "水曜日 第1・3 ペットボトル",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ],
+      "text": "水曜日 第1・3（第1とは1～7日、第3とは15～21日）"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": "水曜日 第2・4 空きびん・缶",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ],
+      "text": "水曜日 第2・4（第2とは8～14日、第4とは22～28日）"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c5",
+    "text": "水曜日 第2・4 燃やせないごみ",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ],
+      "text": "水曜日 第2・4（第2とは8～14日、第4とは22～28日）"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c6",
+    "text": "木曜日 プラスチック類",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c7",
+    "text": "木曜日 有害ごみ",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ],
+      "text": "木曜日"
+     }
+    ]
+   }
+  ],
+  "exceptions": [
+   {
+    "kind": "holiday",
+    "scope": {
+     "districts": [
+      "*"
+     ],
+     "categories": [
+      "*"
+     ]
+    },
+    "policy": "collected",
+    "text": "祝日も収集します。（年末年始を除く）"
+   }
+  ],
+  "unsure": [
+   {
+    "about": "自治体名が本文に書かれていない（URLは city.mitaka.lg.jp）",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "年末年始の休みの日付が無い。添付ファイルのカレンダーPDFは資料に含まれず読めない",
+    "district": null,
+    "category": null,
+    "text": "祝日も収集します。（年末年始を除く） / 年末及び1月は収集日程、時間が異なることがあります。下記添付ファイルでご確認ください。"
+   },
+   {
+    "about": "月ごとのカレンダーPDF（日付の一覧）が資料に無く、変更日や追加の日を確認できない",
+    "district": null,
+    "category": null,
+    "text": "収集日程はページ下部の添付ファイルをご覧ください。"
+   },
+   {
+    "about": "第5水曜日の扱い（ペットボトル・空きびん・缶・燃やせないごみの収集なしと思われるが明記されていない）",
+    "district": "d1",
+    "category": null,
+    "text": "第1とは1～7日、第2とは8～14日、第3とは15～21日、第4とは22～28日になります。"
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5611,
+  "cache_read_input_tokens": 1174,
+  "output_tokens": 1888,
+  "output_tokens_details": {
+   "thinking_tokens": 466
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5611,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1888,
+    "cache_read_input_tokens": 1174,
+    "cache_creation_input_tokens": 5611,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5611
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 1888,
+   "cacheReadInputTokens": 1174,
+   "cacheCreationInputTokens": 5611,
+   "webSearchRequests": 0,
+   "costUSD": 0.0828908,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 466,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "num_turns": 1,
+ "duration_ms": 15036,
+ "duration_api_ms": 14992,
+ "permission_denials": [],
+ "cost": {
+  "usd": 0.0828908,
+  "note": "claude -p の total_cost_usd (CLI が API の料金で数えた値)"
+ },
+ "raw_result": "{\"municipality\":null,\"period\":{\"printed\":\"令和8年度版（2026年4月～2027年3月）\",\"from\":\"2026-04-01\",\"to\":\"2027-03-31\"},\"districts\":[{\"id\":\"d1\",\"label\":\"北野全域・新川2・3丁目地区\",\"members\":[\"北野全域\",\"新川2・3丁目\"],\"note\":null}],\"categories\":[{\"id\":\"c1\",\"label\":\"古紙・古着\",\"coarse\":[\"paper\",\"cloth\"],\"note\":null},{\"id\":\"c2\",\"label\":\"燃やせるごみ\",\"coarse\":[\"burnable\"],\"note\":null},{\"id\":\"c3\",\"label\":\"ペットボトル\",\"coarse\":[\"pet_bottle\"],\"note\":null},{\"id\":\"c4\",\"label\":\"空きびん・缶\",\"coarse\":[\"glass_bottle\",\"beverage_can\"],\"note\":null},{\"id\":\"c5\",\"label\":\"燃やせないごみ\",\"coarse\":[\"non_burnable\"],\"note\":null},{\"id\":\"c6\",\"label\":\"プラスチック類\",\"coarse\":[\"plastic\"],\"note\":null},{\"id\":\"c7\",\"label\":\"有害ごみ\",\"coarse\":[\"hazardous\"],\"note\":null}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"text\":\"月曜日 古紙・古着\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"],\"text\":\"月曜日\"}]},{\"district\":\"d1\",\"category\":\"c2\",\"text\":\"火曜日 燃やせるごみ / 金曜日 燃やせるごみ\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"],\"text\":\"火曜日 / 金曜日\"}]},{\"district\":\"d1\",\"category\":\"c3\",\"text\":\"水曜日 第1・3 ペットボトル\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3],\"text\":\"水曜日 第1・3（第1とは1～7日、第3とは15～21日）\"}]},{\"district\":\"d1\",\"category\":\"c4\",\"text\":\"水曜日 第2・4 空きびん・缶\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4],\"text\":\"水曜日 第2・4（第2とは8～14日、第4とは22～28日）\"}]},{\"district\":\"d1\",\"category\":\"c5\",\"text\":\"水曜日 第2・4 燃やせないごみ\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4],\"text\":\"水曜日 第2・4（第2とは8～14日、第4とは22～28日）\"}]},{\"district\":\"d1\",\"category\":\"c6\",\"text\":\"木曜日 プラスチック類\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]},{\"district\":\"d1\",\"category\":\"c7\",\"text\":\"木曜日 有害ごみ\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"],\"text\":\"木曜日\"}]}],\"exceptions\":[{\"kind\":\"holiday\",\"scope\":{\"districts\":[\"*\"],\"categories\":[\"*\"]},\"policy\":\"collected\",\"text\":\"祝日も収集します。（年末年始を除く）\"}],\"unsure\":[{\"about\":\"自治体名が本文に書かれていない（URLは city.mitaka.lg.jp）\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"年末年始の休みの日付が無い。添付ファイルのカレンダーPDFは資料に含まれず読めない\",\"district\":null,\"category\":null,\"text\":\"祝日も収集します。（年末年始を除く） / 年末及び1月は収集日程、時間が異なることがあります。下記添付ファイルでご確認ください。\"},{\"about\":\"月ごとのカレンダーPDF（日付の一覧）が資料に無く、変更日や追加の日を確認できない\",\"district\":null,\"category\":null,\"text\":\"収集日程はページ下部の添付ファイルをご覧ください。\"},{\"about\":\"第5水曜日の扱い（ペットボトル・空きびん・缶・燃やせないごみの収集なしと思われるが明記されていない）\",\"district\":\"d1\",\"category\":null,\"text\":\"第1とは1～7日、第2とは8～14日、第3とは15～21日、第4とは22～28日になります。\"}]}",
+ "stop_reason": "end_turn",
+ "error": null
+}

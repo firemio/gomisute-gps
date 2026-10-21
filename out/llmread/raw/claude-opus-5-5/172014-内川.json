@@ -1,0 +1,289 @@
+{
+ "doc_id": "172014-内川",
+ "model": "claude-opus-5-5",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "77f053df1f739f146655fb89c307d9d07f39d3bdfe2d832a91648f3d32a8dc43",
+ "started_at": "2026-10-21T11:22:34+00:00",
+ "images": 0,
+ "seconds": 21.9,
+ "answer": {
+  "municipality": null,
+  "period": {
+   "printed": "2026年度版",
+   "from": "2026-04-01",
+   "to": "2027-03-31"
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "内川",
+    "members": [],
+    "note": "見出し「内川（西部管理センター）2026年度版」"
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃やすごみ",
+    "coarse": [
+     "burnable"
+    ]
+   },
+   {
+    "id": "c2",
+    "label": "燃やさないごみ",
+    "coarse": [
+     "non_burnable"
+    ]
+   },
+   {
+    "id": "c3",
+    "label": "資源 あき缶・ペットボトル プラスチック資源など",
+    "coarse": [
+     "beverage_can",
+     "pet_bottle",
+     "plastic"
+    ]
+   },
+   {
+    "id": "c4",
+    "label": "資源 プラスチック資源",
+    "coarse": [
+     "plastic"
+    ]
+   },
+   {
+    "id": "c5",
+    "label": "びん",
+    "coarse": [
+     "glass_bottle"
+    ]
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "月曜日・ 木曜日 年末は 12月28日 （月曜日） まで 年始は 1月4日 （月曜日） から",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月曜日・ 木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": "第2金曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-10",
+       "2026-05-08",
+       "2026-06-12",
+       "2026-07-10",
+       "2026-08-14",
+       "2026-09-11",
+       "2026-10-09",
+       "2026-11-13",
+       "2026-12-11",
+       "2027-01-15",
+       "2027-02-12",
+       "2027-03-12"
+      ],
+      "text": "第2金曜日（月ごとの表の日付）"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": "第1・3金曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-03",
+       "2026-04-17",
+       "2026-05-01",
+       "2026-05-15",
+       "2026-06-05",
+       "2026-06-19",
+       "2026-07-03",
+       "2026-07-17",
+       "2026-08-07",
+       "2026-08-21",
+       "2026-09-04",
+       "2026-09-18",
+       "2026-10-02",
+       "2026-10-16",
+       "2026-11-06",
+       "2026-11-20",
+       "2026-12-04",
+       "2026-12-18",
+       "2027-01-08",
+       "2027-01-22",
+       "2027-02-05",
+       "2027-02-19",
+       "2027-03-05",
+       "2027-03-19"
+      ],
+      "text": "第1・3金曜日（月ごとの表の日付）"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": "第5金曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-05-29",
+       "2026-07-31",
+       "2026-10-30"
+      ],
+      "text": "第5金曜日（月ごとの表の日付）"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c5",
+    "text": "第4水曜日",
+    "rules": [
+     {
+      "type": "dates",
+      "dates": [
+       "2026-04-22",
+       "2026-05-27",
+       "2026-06-24",
+       "2026-07-22",
+       "2026-08-26",
+       "2026-09-23",
+       "2026-10-28",
+       "2026-11-25",
+       "2026-12-23",
+       "2027-01-27",
+       "2027-02-24",
+       "2027-03-24"
+      ],
+      "text": "第4水曜日（月ごとの表の日付）"
+     }
+    ]
+   }
+  ],
+  "exceptions": [
+   {
+    "kind": "closure",
+    "scope": {
+     "districts": [
+      "d1"
+     ],
+     "categories": [
+      "c1"
+     ]
+    },
+    "from": "2026-12-29",
+    "to": "2027-01-03",
+    "year_end": true,
+    "text": "年末は 12月28日 （月曜日） まで 年始は 1月4日 （月曜日） から"
+   }
+  ],
+  "unsure": [
+   {
+    "about": "祝日・振替休日に収集するかどうかが書いていない",
+    "district": "d1",
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "municipality: 節の中に自治体の名前が書いていない (出どころは kanazawa_cal だが、資料の字としては無い)",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "1月の燃やさないごみ・資源・プラスチック資源は年末年始のため収集日を変更したとある。印字された日付をそのまま使った",
+    "district": "d1",
+    "category": null,
+    "text": "（※）年末年始の影響で、収集日を変更しています。ご注意ください。"
+   },
+   {
+    "about": "「資源 あき缶・ペットボトル プラスチック資源など」の「など」に何が入るか書いていない。coarse には名前が出ている品目だけを入れた",
+    "district": "d1",
+    "category": "c3",
+    "text": "資源 あき缶・ペットボトル プラスチック資源など"
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5474,
+  "cache_read_input_tokens": 1174,
+  "output_tokens": 2259,
+  "output_tokens_details": {
+   "thinking_tokens": 809
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5474,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2259,
+    "cache_read_input_tokens": 1174,
+    "cache_creation_input_tokens": 5474,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5474
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 2259,
+   "cacheReadInputTokens": 1174,
+   "cacheCreationInputTokens": 5474,
+   "webSearchRequests": 0,
+   "costUSD": 0.08921480000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 809,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "num_turns": 1,
+ "duration_ms": 20886,
+ "duration_api_ms": 20847,
+ "permission_denials": [],
+ "cost": {
+  "usd": 0.08921480000000001,
+  "note": "claude -p の total_cost_usd (CLI が API の料金で数えた値)"
+ },
+ "raw_result": "{\"municipality\":null,\"period\":{\"printed\":\"2026年度版\",\"from\":\"2026-04-01\",\"to\":\"2027-03-31\"},\"districts\":[{\"id\":\"d1\",\"label\":\"内川\",\"members\":[],\"note\":\"見出し「内川（西部管理センター）2026年度版」\"}],\"categories\":[{\"id\":\"c1\",\"label\":\"燃やすごみ\",\"coarse\":[\"burnable\"]},{\"id\":\"c2\",\"label\":\"燃やさないごみ\",\"coarse\":[\"non_burnable\"]},{\"id\":\"c3\",\"label\":\"資源 あき缶・ペットボトル プラスチック資源など\",\"coarse\":[\"beverage_can\",\"pet_bottle\",\"plastic\"]},{\"id\":\"c4\",\"label\":\"資源 プラスチック資源\",\"coarse\":[\"plastic\"]},{\"id\":\"c5\",\"label\":\"びん\",\"coarse\":[\"glass_bottle\"]}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"text\":\"月曜日・ 木曜日 年末は 12月28日 （月曜日） まで 年始は 1月4日 （月曜日） から\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月曜日・ 木曜日\"}]},{\"district\":\"d1\",\"category\":\"c2\",\"text\":\"第2金曜日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-10\",\"2026-05-08\",\"2026-06-12\",\"2026-07-10\",\"2026-08-14\",\"2026-09-11\",\"2026-10-09\",\"2026-11-13\",\"2026-12-11\",\"2027-01-15\",\"2027-02-12\",\"2027-03-12\"],\"text\":\"第2金曜日（月ごとの表の日付）\"}]},{\"district\":\"d1\",\"category\":\"c3\",\"text\":\"第1・3金曜日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-03\",\"2026-04-17\",\"2026-05-01\",\"2026-05-15\",\"2026-06-05\",\"2026-06-19\",\"2026-07-03\",\"2026-07-17\",\"2026-08-07\",\"2026-08-21\",\"2026-09-04\",\"2026-09-18\",\"2026-10-02\",\"2026-10-16\",\"2026-11-06\",\"2026-11-20\",\"2026-12-04\",\"2026-12-18\",\"2027-01-08\",\"2027-01-22\",\"2027-02-05\",\"2027-02-19\",\"2027-03-05\",\"2027-03-19\"],\"text\":\"第1・3金曜日（月ごとの表の日付）\"}]},{\"district\":\"d1\",\"category\":\"c4\",\"text\":\"第5金曜日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-05-29\",\"2026-07-31\",\"2026-10-30\"],\"text\":\"第5金曜日（月ごとの表の日付）\"}]},{\"district\":\"d1\",\"category\":\"c5\",\"text\":\"第4水曜日\",\"rules\":[{\"type\":\"dates\",\"dates\":[\"2026-04-22\",\"2026-05-27\",\"2026-06-24\",\"2026-07-22\",\"2026-08-26\",\"2026-09-23\",\"2026-10-28\",\"2026-11-25\",\"2026-12-23\",\"2027-01-27\",\"2027-02-24\",\"2027-03-24\"],\"text\":\"第4水曜日（月ごとの表の日付）\"}]}],\"exceptions\":[{\"kind\":\"closure\",\"scope\":{\"districts\":[\"d1\"],\"categories\":[\"c1\"]},\"from\":\"2026-12-29\",\"to\":\"2027-01-03\",\"year_end\":true,\"text\":\"年末は 12月28日 （月曜日） まで 年始は 1月4日 （月曜日） から\"}],\"unsure\":[{\"about\":\"祝日・振替休日に収集するかどうかが書いていない\",\"district\":\"d1\",\"category\":null,\"text\":null},{\"about\":\"municipality: 節の中に自治体の名前が書いていない (出どころは kanazawa_cal だが、資料の字としては無い)\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"1月の燃やさないごみ・資源・プラスチック資源は年末年始のため収集日を変更したとある。印字された日付をそのまま使った\",\"district\":\"d1\",\"category\":null,\"text\":\"（※）年末年始の影響で、収集日を変更しています。ご注意ください。\"},{\"about\":\"「資源 あき缶・ペットボトル プラスチック資源など」の「など」に何が入るか書いていない。coarse には名前が出ている品目だけを入れた\",\"district\":\"d1\",\"category\":\"c3\",\"text\":\"資源 あき缶・ペットボトル プラスチック資源など\"}]}",
+ "stop_reason": "end_turn",
+ "error": null
+}

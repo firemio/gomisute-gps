@@ -231,7 +231,7 @@ Ctrl+C で止めると、終わった自治体だけを書き、`summary.csv` �
 
 ## LLM の判定 (judge.py、使わないときは --no-llm)
 
-候補 5 つ (`--judge-top`) について、短い抜粋だけを [`nationwide/readers/llm.py`](../readers/llm.py) で LLM に渡します。
+候補 5 つ (`--judge-top`) について、短い抜粋だけを [`nationwide/llmread/llm.py`](../llmread/llm.py) で LLM に渡します。
 モデルは `GOMISUTE_LLM_MODEL`、キーは環境変数 `GOMISUTE_LLM_API_KEY` (リポジトリには書かない)。
 
 - 選び方: 次の 3 つは必ず入れる (点数 10 以上。`--judge-top` を超えても入れる)

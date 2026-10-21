@@ -1,0 +1,389 @@
+{
+ "doc_id": "113697-32692eee",
+ "model": "claude-opus-5-5",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "74503256521f6c158d22c9efd770e00798c66c17902e44dee22cc7810e8dfa6e",
+ "started_at": "2026-10-21T11:12:28+00:00",
+ "images": 0,
+ "seconds": 25.3,
+ "answer": {
+  "municipality": null,
+  "period": {
+   "printed": null,
+   "from": null,
+   "to": null
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "全域",
+    "members": [],
+    "note": "ページに地区の分けが無い"
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "燃えるごみ （メタン発酵処理）",
+    "coarse": [
+     "burnable",
+     "kitchen"
+    ],
+    "note": "台所ごみ、食用油、 木（枝）等"
+   },
+   {
+    "id": "c2",
+    "label": "資源 プラスチック",
+    "coarse": [
+     "plastic"
+    ],
+    "note": "プラスチック製容器包装マークがあるもの、 お弁当の容器、 お菓子の袋、 薬錠剤シート、 洗剤などの容器、 歯ブラシ等"
+   },
+   {
+    "id": "c3",
+    "label": "廃プラスチック",
+    "coarse": [
+     "plastic",
+     "other"
+    ],
+    "note": "複合製品（プラスチック＋他素材）、 カバン、ベルト、 皮製品、スポンジ、 粘着テープ類、 ペンなどの文房具等"
+   },
+   {
+    "id": "c4",
+    "label": "金属類",
+    "coarse": [
+     "metal",
+     "beverage_can"
+    ],
+    "note": "金属類（金属の割合が多いもの含む）、 スチール缶、 小型家電等"
+   },
+   {
+    "id": "c5",
+    "label": "スプレー缶等 有害ごみ",
+    "coarse": [
+     "spray_can",
+     "hazardous"
+    ],
+    "note": "スプレー缶、電池、 ライター、蛍光管、 モバイルバッテリー、 ＬＥＤ電球等"
+   },
+   {
+    "id": "c6",
+    "label": "ガラス類",
+    "coarse": [
+     "glass_bottle",
+     "other"
+    ],
+    "note": "「ガラス類・ ペットボトル」のうちガラス類。緑や青等の 色付きびん （ワインボトル等）、 グラス、 食器（陶器製）、 植木鉢"
+   },
+   {
+    "id": "c7",
+    "label": "ペットボトル",
+    "coarse": [
+     "pet_bottle"
+    ],
+    "note": "「ガラス類・ ペットボトル」のうちペットボトル。5〜10月は第1水曜日にも出せる"
+   },
+   {
+    "id": "c8",
+    "label": "びん類 （無色びん・茶びん）",
+    "coarse": [
+     "glass_bottle"
+    ],
+    "note": "無色か茶色の 飲料・食用のびん"
+   },
+   {
+    "id": "c9",
+    "label": "資源回収",
+    "coarse": [
+     "paper",
+     "cloth",
+     "beverage_can"
+    ],
+    "note": "第4水曜日 （各ステーション）: 新聞、雑誌、 雑がみ、 牛乳パック、 段ボール、 衣類、 アルミ缶"
+   },
+   {
+    "id": "c10",
+    "label": "粗大ごみ",
+    "coarse": [
+     "oversized"
+    ],
+    "note": "自己搬入。日の決まった収集は無い"
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "text": "月・木曜日",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ],
+      "text": "月・木曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "text": "第1・2・3・5 金曜日",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       2,
+       3,
+       5
+      ],
+      "text": "第1・2・3・5 金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "text": "第4金曜日",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       4
+      ],
+      "text": "第4金曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "text": "第1火曜日",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1
+      ],
+      "text": "第1火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c5",
+    "text": "第2火曜日",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2
+      ],
+      "text": "第2火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c6",
+    "text": "第3火曜日",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       3
+      ],
+      "text": "第3火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c7",
+    "text": "第3火曜日 ※ペットボトルは、5・6・7・8・9・10月のみ第1水曜日でも出せる",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       3
+      ],
+      "text": "第3火曜日"
+     },
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1
+      ],
+      "months": [
+       5,
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "text": "※ペットボトルは、5・6・7・8・9・10月のみ第1水曜日でも出せる"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c8",
+    "text": "第4火曜日",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       4
+      ],
+      "text": "第4火曜日"
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c9",
+    "text": "第4水曜日 （各ステーション）",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       4
+      ],
+      "text": "第4水曜日 （各ステーション）"
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "自治体名がページの本文に書かれていない (出どころの URL は vill.higashichichibu.saitama.jp)",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "有効な期間の印字が無い。資源プラスチックの出し方は令和8年度から変わると書いてある",
+    "district": null,
+    "category": null,
+    "text": "管内では令和8年度よりこの法律に基づいた資源化を開始するため、新たな分別収集を実施し適正にリサイクルできるように資源プラスチックの出し方を変更します。"
+   },
+   {
+    "about": "資源回収の第2水曜日は役場前駐車場へ持ち込むものと読めて、ステーション収集か分からないため schedules に入れていない。出せる品目も第4水曜日と違う",
+    "district": "d1",
+    "category": "c9",
+    "text": "第2水曜日 （役場前駐車場） 新聞、雑誌 段ボール （衣類やアルミ缶は出せません）"
+   },
+   {
+    "about": "祝日・振替休日の扱いが書いていない",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "年末年始の扱いが書いていない",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "粗大ごみは自己搬入で、日の決まった収集が無い",
+    "district": "d1",
+    "category": "c10",
+    "text": "自己搬入 ・車に積んで「一般家庭による廃棄物搬入申込書」を持って小川地区衛生組合へ搬入する。"
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7226,
+  "cache_read_input_tokens": 1174,
+  "output_tokens": 3146,
+  "output_tokens_details": {
+   "thinking_tokens": 948
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7226,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3146,
+    "cache_read_input_tokens": 1174,
+    "cache_creation_input_tokens": 7226,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 7226
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 3146,
+   "cacheReadInputTokens": 1174,
+   "cacheCreationInputTokens": 7226,
+   "webSearchRequests": 0,
+   "costUSD": 0.12097079999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 948,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "num_turns": 1,
+ "duration_ms": 24172,
+ "duration_api_ms": 24127,
+ "permission_denials": [],
+ "cost": {
+  "usd": 0.12097079999999999,
+  "note": "claude -p の total_cost_usd (CLI が API の料金で数えた値)"
+ },
+ "raw_result": "{\"municipality\":null,\"period\":{\"printed\":null,\"from\":null,\"to\":null},\"districts\":[{\"id\":\"d1\",\"label\":\"全域\",\"members\":[],\"note\":\"ページに地区の分けが無い\"}],\"categories\":[{\"id\":\"c1\",\"label\":\"燃えるごみ （メタン発酵処理）\",\"coarse\":[\"burnable\",\"kitchen\"],\"note\":\"台所ごみ、食用油、 木（枝）等\"},{\"id\":\"c2\",\"label\":\"資源 プラスチック\",\"coarse\":[\"plastic\"],\"note\":\"プラスチック製容器包装マークがあるもの、 お弁当の容器、 お菓子の袋、 薬錠剤シート、 洗剤などの容器、 歯ブラシ等\"},{\"id\":\"c3\",\"label\":\"廃プラスチック\",\"coarse\":[\"plastic\",\"other\"],\"note\":\"複合製品（プラスチック＋他素材）、 カバン、ベルト、 皮製品、スポンジ、 粘着テープ類、 ペンなどの文房具等\"},{\"id\":\"c4\",\"label\":\"金属類\",\"coarse\":[\"metal\",\"beverage_can\"],\"note\":\"金属類（金属の割合が多いもの含む）、 スチール缶、 小型家電等\"},{\"id\":\"c5\",\"label\":\"スプレー缶等 有害ごみ\",\"coarse\":[\"spray_can\",\"hazardous\"],\"note\":\"スプレー缶、電池、 ライター、蛍光管、 モバイルバッテリー、 ＬＥＤ電球等\"},{\"id\":\"c6\",\"label\":\"ガラス類\",\"coarse\":[\"glass_bottle\",\"other\"],\"note\":\"「ガラス類・ ペットボトル」のうちガラス類。緑や青等の 色付きびん （ワインボトル等）、 グラス、 食器（陶器製）、 植木鉢\"},{\"id\":\"c7\",\"label\":\"ペットボトル\",\"coarse\":[\"pet_bottle\"],\"note\":\"「ガラス類・ ペットボトル」のうちペットボトル。5〜10月は第1水曜日にも出せる\"},{\"id\":\"c8\",\"label\":\"びん類 （無色びん・茶びん）\",\"coarse\":[\"glass_bottle\"],\"note\":\"無色か茶色の 飲料・食用のびん\"},{\"id\":\"c9\",\"label\":\"資源回収\",\"coarse\":[\"paper\",\"cloth\",\"beverage_can\"],\"note\":\"第4水曜日 （各ステーション）: 新聞、雑誌、 雑がみ、 牛乳パック、 段ボール、 衣類、 アルミ缶\"},{\"id\":\"c10\",\"label\":\"粗大ごみ\",\"coarse\":[\"oversized\"],\"note\":\"自己搬入。日の決まった収集は無い\"}],\"schedules\":[{\"district\":\"d1\",\"category\":\"c1\",\"text\":\"月・木曜日\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"],\"text\":\"月・木曜日\"}]},{\"district\":\"d1\",\"category\":\"c2\",\"text\":\"第1・2・3・5 金曜日\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,2,3,5],\"text\":\"第1・2・3・5 金曜日\"}]},{\"district\":\"d1\",\"category\":\"c3\",\"text\":\"第4金曜日\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[4],\"text\":\"第4金曜日\"}]},{\"district\":\"d1\",\"category\":\"c4\",\"text\":\"第1火曜日\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1],\"text\":\"第1火曜日\"}]},{\"district\":\"d1\",\"category\":\"c5\",\"text\":\"第2火曜日\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2],\"text\":\"第2火曜日\"}]},{\"district\":\"d1\",\"category\":\"c6\",\"text\":\"第3火曜日\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[3],\"text\":\"第3火曜日\"}]},{\"district\":\"d1\",\"category\":\"c7\",\"text\":\"第3火曜日 ※ペットボトルは、5・6・7・8・9・10月のみ第1水曜日でも出せる\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[3],\"text\":\"第3火曜日\"},{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1],\"months\":[5,6,7,8,9,10],\"text\":\"※ペットボトルは、5・6・7・8・9・10月のみ第1水曜日でも出せる\"}]},{\"district\":\"d1\",\"category\":\"c8\",\"text\":\"第4火曜日\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[4],\"text\":\"第4火曜日\"}]},{\"district\":\"d1\",\"category\":\"c9\",\"text\":\"第4水曜日 （各ステーション）\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[4],\"text\":\"第4水曜日 （各ステーション）\"}]}],\"exceptions\":[],\"unsure\":[{\"about\":\"自治体名がページの本文に書かれていない (出どころの URL は vill.higashichichibu.saitama.jp)\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"有効な期間の印字が無い。資源プラスチックの出し方は令和8年度から変わると書いてある\",\"district\":null,\"category\":null,\"text\":\"管内では令和8年度よりこの法律に基づいた資源化を開始するため、新たな分別収集を実施し適正にリサイクルできるように資源プラスチックの出し方を変更します。\"},{\"about\":\"資源回収の第2水曜日は役場前駐車場へ持ち込むものと読めて、ステーション収集か分からないため schedules に入れていない。出せる品目も第4水曜日と違う\",\"district\":\"d1\",\"category\":\"c9\",\"text\":\"第2水曜日 （役場前駐車場） 新聞、雑誌 段ボール （衣類やアルミ缶は出せません）\"},{\"about\":\"祝日・振替休日の扱いが書いていない\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"年末年始の扱いが書いていない\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"粗大ごみは自己搬入で、日の決まった収集が無い\",\"district\":\"d1\",\"category\":\"c10\",\"text\":\"自己搬入 ・車に積んで「一般家庭による廃棄物搬入申込書」を持って小川地区衛生組合へ搬入する。\"}]}",
+ "stop_reason": "end_turn",
+ "error": null
+}

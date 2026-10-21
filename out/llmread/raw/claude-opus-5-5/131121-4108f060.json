@@ -1,0 +1,7488 @@
+{
+ "doc_id": "131121-4108f060",
+ "model": "claude-opus-5-5",
+ "prompt_version": "llmread.p1",
+ "prompt_sha256": "06f8c8166414f4e4766b22f25e7ede9987f1d96a4a9d888f480ffc2c5b813a42",
+ "input_sha256": "b3835a1a896a6b98721cc7750cab68ceada82c56a8230519eed443f97c70a7c2",
+ "started_at": "2026-10-21T11:12:41+00:00",
+ "images": 0,
+ "seconds": 196.9,
+ "answer": {
+  "municipality": null,
+  "period": {
+   "printed": null,
+   "from": null,
+   "to": null
+  },
+  "districts": [
+   {
+    "id": "d1",
+    "label": "赤堤 1・3～5",
+    "members": []
+   },
+   {
+    "id": "d2",
+    "label": "赤堤 2",
+    "members": []
+   },
+   {
+    "id": "d3",
+    "label": "池尻 1・2",
+    "members": []
+   },
+   {
+    "id": "d4",
+    "label": "池尻 3",
+    "members": []
+   },
+   {
+    "id": "d5",
+    "label": "池尻 4",
+    "members": []
+   },
+   {
+    "id": "d6",
+    "label": "宇奈根 1～3",
+    "members": []
+   },
+   {
+    "id": "d7",
+    "label": "梅丘 1～3",
+    "members": []
+   },
+   {
+    "id": "d8",
+    "label": "大蔵 1～4",
+    "members": []
+   },
+   {
+    "id": "d9",
+    "label": "大蔵 5・6",
+    "members": []
+   },
+   {
+    "id": "d10",
+    "label": "大原 1",
+    "members": []
+   },
+   {
+    "id": "d11",
+    "label": "大原 2",
+    "members": []
+   },
+   {
+    "id": "d12",
+    "label": "岡本 1～3",
+    "members": []
+   },
+   {
+    "id": "d13",
+    "label": "奥沢 1・3・4",
+    "members": []
+   },
+   {
+    "id": "d14",
+    "label": "奥沢 2・5・6",
+    "members": []
+   },
+   {
+    "id": "d15",
+    "label": "奥沢 7",
+    "members": []
+   },
+   {
+    "id": "d16",
+    "label": "奥沢 8",
+    "members": []
+   },
+   {
+    "id": "d17",
+    "label": "尾山台 1～3",
+    "members": []
+   },
+   {
+    "id": "d18",
+    "label": "粕谷 1・2",
+    "members": []
+   },
+   {
+    "id": "d19",
+    "label": "粕谷 3・4",
+    "members": []
+   },
+   {
+    "id": "d20",
+    "label": "鎌田 1～4",
+    "members": []
+   },
+   {
+    "id": "d21",
+    "label": "上馬 1",
+    "members": []
+   },
+   {
+    "id": "d22",
+    "label": "上馬 2～5",
+    "members": []
+   },
+   {
+    "id": "d23",
+    "label": "上北沢 1～4",
+    "members": []
+   },
+   {
+    "id": "d24",
+    "label": "上北沢 5",
+    "members": []
+   },
+   {
+    "id": "d25",
+    "label": "上祖師谷 1・2・5～7",
+    "members": []
+   },
+   {
+    "id": "d26",
+    "label": "上祖師谷 3・4",
+    "members": []
+   },
+   {
+    "id": "d27",
+    "label": "上野毛 1・4",
+    "members": []
+   },
+   {
+    "id": "d28",
+    "label": "上野毛 2・3",
+    "members": []
+   },
+   {
+    "id": "d29",
+    "label": "上用賀 1～4",
+    "members": []
+   },
+   {
+    "id": "d30",
+    "label": "上用賀 5・6",
+    "members": []
+   },
+   {
+    "id": "d31",
+    "label": "北烏山 1・3",
+    "members": []
+   },
+   {
+    "id": "d32",
+    "label": "北烏山 2・4～9",
+    "members": []
+   },
+   {
+    "id": "d33",
+    "label": "北沢 1～5",
+    "members": []
+   },
+   {
+    "id": "d34",
+    "label": "喜多見 1～9",
+    "members": []
+   },
+   {
+    "id": "d35",
+    "label": "砧 1～5",
+    "members": []
+   },
+   {
+    "id": "d36",
+    "label": "砧 6・8",
+    "members": []
+   },
+   {
+    "id": "d37",
+    "label": "砧 7",
+    "members": []
+   },
+   {
+    "id": "d38",
+    "label": "砧公園",
+    "members": []
+   },
+   {
+    "id": "d39",
+    "label": "給田 1～3",
+    "members": []
+   },
+   {
+    "id": "d40",
+    "label": "給田 4・5",
+    "members": []
+   },
+   {
+    "id": "d41",
+    "label": "経堂 1・4・5",
+    "members": []
+   },
+   {
+    "id": "d42",
+    "label": "経堂 2・3",
+    "members": []
+   },
+   {
+    "id": "d43",
+    "label": "豪徳寺 1",
+    "members": []
+   },
+   {
+    "id": "d44",
+    "label": "豪徳寺 2",
+    "members": []
+   },
+   {
+    "id": "d45",
+    "label": "駒沢 1・2",
+    "members": []
+   },
+   {
+    "id": "d46",
+    "label": "駒沢 3",
+    "members": []
+   },
+   {
+    "id": "d47",
+    "label": "駒沢 4・5",
+    "members": []
+   },
+   {
+    "id": "d48",
+    "label": "駒沢公園",
+    "members": []
+   },
+   {
+    "id": "d49",
+    "label": "桜 1・2",
+    "members": []
+   },
+   {
+    "id": "d50",
+    "label": "桜 3",
+    "members": []
+   },
+   {
+    "id": "d51",
+    "label": "桜丘 1～5",
+    "members": []
+   },
+   {
+    "id": "d52",
+    "label": "桜新町 1・2",
+    "members": []
+   },
+   {
+    "id": "d53",
+    "label": "桜上水 1～5",
+    "members": []
+   },
+   {
+    "id": "d54",
+    "label": "三軒茶屋 1",
+    "members": []
+   },
+   {
+    "id": "d55",
+    "label": "三軒茶屋 2",
+    "members": []
+   },
+   {
+    "id": "d56",
+    "label": "下馬 1・3～6",
+    "members": []
+   },
+   {
+    "id": "d57",
+    "label": "下馬 2",
+    "members": []
+   },
+   {
+    "id": "d58",
+    "label": "新町 1",
+    "members": []
+   },
+   {
+    "id": "d59",
+    "label": "新町 2・3",
+    "members": []
+   },
+   {
+    "id": "d60",
+    "label": "成城 1～6",
+    "members": []
+   },
+   {
+    "id": "d61",
+    "label": "成城 7～9",
+    "members": []
+   },
+   {
+    "id": "d62",
+    "label": "瀬田 1・2",
+    "members": []
+   },
+   {
+    "id": "d63",
+    "label": "瀬田 3",
+    "members": []
+   },
+   {
+    "id": "d64",
+    "label": "瀬田 4・5",
+    "members": []
+   },
+   {
+    "id": "d65",
+    "label": "世田谷 1～4",
+    "members": []
+   },
+   {
+    "id": "d66",
+    "label": "祖師谷 1・2",
+    "members": []
+   },
+   {
+    "id": "d67",
+    "label": "祖師谷 3",
+    "members": []
+   },
+   {
+    "id": "d68",
+    "label": "祖師谷 4～6",
+    "members": []
+   },
+   {
+    "id": "d69",
+    "label": "太子堂 1・2",
+    "members": []
+   },
+   {
+    "id": "d70",
+    "label": "太子堂 3",
+    "members": []
+   },
+   {
+    "id": "d71",
+    "label": "太子堂 4・5",
+    "members": []
+   },
+   {
+    "id": "d72",
+    "label": "代沢 1～3・5",
+    "members": []
+   },
+   {
+    "id": "d73",
+    "label": "代沢 4",
+    "members": []
+   },
+   {
+    "id": "d74",
+    "label": "代田 1",
+    "members": []
+   },
+   {
+    "id": "d75",
+    "label": "代田 2・5",
+    "members": []
+   },
+   {
+    "id": "d76",
+    "label": "代田 3",
+    "members": []
+   },
+   {
+    "id": "d77",
+    "label": "代田 4",
+    "members": []
+   },
+   {
+    "id": "d78",
+    "label": "代田 6",
+    "members": []
+   },
+   {
+    "id": "d79",
+    "label": "玉川 1・2",
+    "members": []
+   },
+   {
+    "id": "d80",
+    "label": "玉川 3・4",
+    "members": []
+   },
+   {
+    "id": "d81",
+    "label": "玉川台 1・2",
+    "members": []
+   },
+   {
+    "id": "d82",
+    "label": "玉川田園調布 1・2",
+    "members": []
+   },
+   {
+    "id": "d83",
+    "label": "玉堤 1・2",
+    "members": []
+   },
+   {
+    "id": "d84",
+    "label": "千歳台 1～6",
+    "members": []
+   },
+   {
+    "id": "d85",
+    "label": "弦巻 1～5",
+    "members": []
+   },
+   {
+    "id": "d86",
+    "label": "等々力 1・2",
+    "members": []
+   },
+   {
+    "id": "d87",
+    "label": "等々力 3",
+    "members": []
+   },
+   {
+    "id": "d88",
+    "label": "等々力 4・5・6",
+    "members": []
+   },
+   {
+    "id": "d89",
+    "label": "等々力 7",
+    "members": []
+   },
+   {
+    "id": "d90",
+    "label": "等々力 8",
+    "members": []
+   },
+   {
+    "id": "d91",
+    "label": "中町 1・5",
+    "members": []
+   },
+   {
+    "id": "d92",
+    "label": "中町 2～4",
+    "members": []
+   },
+   {
+    "id": "d93",
+    "label": "野毛 1～3",
+    "members": []
+   },
+   {
+    "id": "d94",
+    "label": "野沢 1",
+    "members": []
+   },
+   {
+    "id": "d95",
+    "label": "野沢 2・3",
+    "members": []
+   },
+   {
+    "id": "d96",
+    "label": "野沢 4",
+    "members": []
+   },
+   {
+    "id": "d97",
+    "label": "八幡山 1～3",
+    "members": []
+   },
+   {
+    "id": "d98",
+    "label": "羽根木 1・2",
+    "members": []
+   },
+   {
+    "id": "d99",
+    "label": "東玉川 1・2",
+    "members": []
+   },
+   {
+    "id": "d100",
+    "label": "深沢 1～4",
+    "members": []
+   },
+   {
+    "id": "d101",
+    "label": "深沢 5",
+    "members": []
+   },
+   {
+    "id": "d102",
+    "label": "深沢 6・7",
+    "members": []
+   },
+   {
+    "id": "d103",
+    "label": "深沢 8",
+    "members": []
+   },
+   {
+    "id": "d104",
+    "label": "船橋 1～7",
+    "members": []
+   },
+   {
+    "id": "d105",
+    "label": "松原 1～5",
+    "members": []
+   },
+   {
+    "id": "d106",
+    "label": "松原 6",
+    "members": []
+   },
+   {
+    "id": "d107",
+    "label": "三宿 1",
+    "members": []
+   },
+   {
+    "id": "d108",
+    "label": "三宿 2",
+    "members": []
+   },
+   {
+    "id": "d109",
+    "label": "南烏山 1・2・5",
+    "members": []
+   },
+   {
+    "id": "d110",
+    "label": "南烏山 3・4・6",
+    "members": []
+   },
+   {
+    "id": "d111",
+    "label": "宮坂 1・2",
+    "members": []
+   },
+   {
+    "id": "d112",
+    "label": "宮坂 3",
+    "members": []
+   },
+   {
+    "id": "d113",
+    "label": "用賀 1",
+    "members": []
+   },
+   {
+    "id": "d114",
+    "label": "用賀 2",
+    "members": []
+   },
+   {
+    "id": "d115",
+    "label": "用賀 3・4",
+    "members": []
+   },
+   {
+    "id": "d116",
+    "label": "若林 1・2",
+    "members": []
+   },
+   {
+    "id": "d117",
+    "label": "若林 3・4",
+    "members": []
+   },
+   {
+    "id": "d118",
+    "label": "若林 5",
+    "members": []
+   }
+  ],
+  "categories": [
+   {
+    "id": "c1",
+    "label": "資源",
+    "coarse": [],
+    "note": "見出しは「資源（週1回）」。中身の品目は資料に書いていない"
+   },
+   {
+    "id": "c2",
+    "label": "可燃ごみ",
+    "coarse": [
+     "burnable"
+    ],
+    "note": "見出しは「可燃ごみ（週2回）」"
+   },
+   {
+    "id": "c3",
+    "label": "不燃ごみ",
+    "coarse": [
+     "non_burnable"
+    ],
+    "note": "見出しは「不燃ごみ（月2回）」"
+   },
+   {
+    "id": "c4",
+    "label": "ペットボトル",
+    "coarse": [
+     "pet_bottle"
+    ],
+    "note": "見出しは「ペットボトル（月2回）」"
+   }
+  ],
+  "schedules": [
+   {
+    "district": "d1",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d1",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d2",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d3",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d4",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d5",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d6",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d7",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d8",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d9",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d10",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d11",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d12",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d13",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d14",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d15",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d16",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d17",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d18",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d19",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d20",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d21",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d22",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d23",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d24",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d25",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d26",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d27",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d28",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d29",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d30",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d31",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d32",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d33",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d34",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d35",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d36",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d37",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d38",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d39",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d40",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d41",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d42",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d43",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d44",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d45",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d46",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d47",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d48",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d49",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d50",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d51",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d52",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d53",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d54",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d55",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d56",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d57",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d57",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d57",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d57",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d58",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d58",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d58",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d58",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d59",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d59",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d59",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d59",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d60",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d60",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d60",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d60",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d61",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d61",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d61",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d61",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d62",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d62",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d62",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d62",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d63",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d63",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d63",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d63",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d64",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d64",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d64",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d64",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d65",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d65",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d65",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d65",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d66",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d66",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d66",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d66",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d67",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d67",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d67",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d67",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d68",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d68",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d68",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d68",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d69",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d69",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d69",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d69",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d70",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d70",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d70",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d70",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d71",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d71",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d71",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d71",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d72",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d72",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d72",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d72",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d73",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d73",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d73",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d73",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d74",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d74",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d74",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d74",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d75",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d75",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d75",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d75",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d76",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d76",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d76",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d76",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d77",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d77",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d77",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d77",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d78",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d78",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d78",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d78",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d79",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d79",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d79",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d79",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d80",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d80",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d80",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d80",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d81",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d81",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d81",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d81",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d82",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d82",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d82",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d82",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d83",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d83",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d83",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d83",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d84",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d84",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d84",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d84",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d85",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d85",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d85",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d85",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d86",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d86",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d86",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d86",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d87",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d87",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d87",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d87",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d88",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d88",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d88",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d88",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d89",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d89",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d89",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d89",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d90",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d90",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d90",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d90",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d91",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d91",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d91",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d91",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d92",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d92",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d92",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d92",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d93",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d93",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d93",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d93",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d94",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d94",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d94",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d94",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d95",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d95",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d95",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d95",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d96",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d96",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d96",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d96",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d97",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d97",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d97",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d97",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d98",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d98",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d98",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d98",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d99",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d99",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d99",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d99",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d100",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d100",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d100",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d100",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d101",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d101",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d101",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d101",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d102",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d102",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d102",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d102",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d103",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d103",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d103",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d103",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d104",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d104",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d104",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d104",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d105",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d105",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d105",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d105",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d106",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d106",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d106",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d106",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d107",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d107",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d107",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d107",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d108",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d108",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d108",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d108",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "SA"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d109",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d109",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d109",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d109",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TU"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d110",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d110",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO",
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d110",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d110",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d111",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d111",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d111",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d111",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d112",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d112",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d112",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d112",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d113",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TH"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d113",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d113",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d113",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "MO"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d114",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d114",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d114",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d114",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d115",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d115",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d115",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d115",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "TH"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d116",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "MO"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d116",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d116",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d116",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d117",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d117",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "WE",
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d117",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d117",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "FR"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d118",
+    "category": "c1",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "SA"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d118",
+    "category": "c2",
+    "rules": [
+     {
+      "type": "weekly",
+      "weekdays": [
+       "TU",
+       "FR"
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d118",
+    "category": "c3",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       2,
+       4
+      ]
+     }
+    ]
+   },
+   {
+    "district": "d118",
+    "category": "c4",
+    "rules": [
+     {
+      "type": "nth_weekday",
+      "weekdays": [
+       "WE"
+      ],
+      "nth": [
+       1,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "exceptions": [],
+  "unsure": [
+   {
+    "about": "自治体名の印字が無い (出どころのURLは city.setagaya.lg.jp。表の「世田谷」は町名・管轄清掃事務所の名前で、自治体名としては書かれていない)",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "有効期間の印字が無い",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "祝日・振替休日の扱いが書いていない",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "年末年始の扱いが書いていない",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "「n回目の曜日」は月の中で何回目かのことと読み、nth_weekday にした。月の中で数えるとは明記されていない (見出しは「月2回」)。5回目の曜日の扱いは書いていない",
+    "district": null,
+    "category": null,
+    "text": "2回目・4回目の月曜日"
+   },
+   {
+    "about": "資源の中身の品目が書いていないので coarse を空にした",
+    "district": null,
+    "category": "c1",
+    "text": "資源（週1回）"
+   },
+   {
+    "about": "地区の label は町名と丁目の欄を印字のまま並べた。丁目は一つずつに分けていない。砧公園と駒沢公園は丁目の欄が空",
+    "district": null,
+    "category": null,
+    "text": null
+   },
+   {
+    "about": "出す時刻の決まり (収集日の朝8時まで) は収集日の規則に入れていない",
+    "district": null,
+    "category": null,
+    "text": "資源とごみは収集日の朝8時までにお出しください"
+   },
+   {
+    "about": "各地区の管轄清掃事務所 (世田谷・砧・玉川) は収集日ではないので入れていない",
+    "district": null,
+    "category": null,
+    "text": "管轄清掃事務所"
+   }
+  ]
+ },
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13136,
+  "cache_read_input_tokens": 1174,
+  "output_tokens": 30140,
+  "output_tokens_details": {
+   "thinking_tokens": 4282
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13136,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 30140,
+    "cache_read_input_tokens": 1174,
+    "cache_creation_input_tokens": 13136,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 13136
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-opus-5-5": {
+   "inputTokens": 2,
+   "outputTokens": 30140,
+   "cacheReadInputTokens": 1174,
+   "cacheCreationInputTokens": 13136,
+   "webSearchRequests": 0,
+   "costUSD": 0.7081308,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 4282,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "num_turns": 1,
+ "duration_ms": 195615,
+ "duration_api_ms": 195568,
+ "permission_denials": [],
+ "cost": {
+  "usd": 0.7081308,
+  "note": "claude -p の total_cost_usd (CLI が API の料金で数えた値)"
+ },
+ "raw_result": "{\"municipality\":null,\"period\":{\"printed\":null,\"from\":null,\"to\":null},\"districts\":[{\"id\":\"d1\",\"label\":\"赤堤 1・3～5\",\"members\":[]},{\"id\":\"d2\",\"label\":\"赤堤 2\",\"members\":[]},{\"id\":\"d3\",\"label\":\"池尻 1・2\",\"members\":[]},{\"id\":\"d4\",\"label\":\"池尻 3\",\"members\":[]},{\"id\":\"d5\",\"label\":\"池尻 4\",\"members\":[]},{\"id\":\"d6\",\"label\":\"宇奈根 1～3\",\"members\":[]},{\"id\":\"d7\",\"label\":\"梅丘 1～3\",\"members\":[]},{\"id\":\"d8\",\"label\":\"大蔵 1～4\",\"members\":[]},{\"id\":\"d9\",\"label\":\"大蔵 5・6\",\"members\":[]},{\"id\":\"d10\",\"label\":\"大原 1\",\"members\":[]},{\"id\":\"d11\",\"label\":\"大原 2\",\"members\":[]},{\"id\":\"d12\",\"label\":\"岡本 1～3\",\"members\":[]},{\"id\":\"d13\",\"label\":\"奥沢 1・3・4\",\"members\":[]},{\"id\":\"d14\",\"label\":\"奥沢 2・5・6\",\"members\":[]},{\"id\":\"d15\",\"label\":\"奥沢 7\",\"members\":[]},{\"id\":\"d16\",\"label\":\"奥沢 8\",\"members\":[]},{\"id\":\"d17\",\"label\":\"尾山台 1～3\",\"members\":[]},{\"id\":\"d18\",\"label\":\"粕谷 1・2\",\"members\":[]},{\"id\":\"d19\",\"label\":\"粕谷 3・4\",\"members\":[]},{\"id\":\"d20\",\"label\":\"鎌田 1～4\",\"members\":[]},{\"id\":\"d21\",\"label\":\"上馬 1\",\"members\":[]},{\"id\":\"d22\",\"label\":\"上馬 2～5\",\"members\":[]},{\"id\":\"d23\",\"label\":\"上北沢 1～4\",\"members\":[]},{\"id\":\"d24\",\"label\":\"上北沢 5\",\"members\":[]},{\"id\":\"d25\",\"label\":\"上祖師谷 1・2・5～7\",\"members\":[]},{\"id\":\"d26\",\"label\":\"上祖師谷 3・4\",\"members\":[]},{\"id\":\"d27\",\"label\":\"上野毛 1・4\",\"members\":[]},{\"id\":\"d28\",\"label\":\"上野毛 2・3\",\"members\":[]},{\"id\":\"d29\",\"label\":\"上用賀 1～4\",\"members\":[]},{\"id\":\"d30\",\"label\":\"上用賀 5・6\",\"members\":[]},{\"id\":\"d31\",\"label\":\"北烏山 1・3\",\"members\":[]},{\"id\":\"d32\",\"label\":\"北烏山 2・4～9\",\"members\":[]},{\"id\":\"d33\",\"label\":\"北沢 1～5\",\"members\":[]},{\"id\":\"d34\",\"label\":\"喜多見 1～9\",\"members\":[]},{\"id\":\"d35\",\"label\":\"砧 1～5\",\"members\":[]},{\"id\":\"d36\",\"label\":\"砧 6・8\",\"members\":[]},{\"id\":\"d37\",\"label\":\"砧 7\",\"members\":[]},{\"id\":\"d38\",\"label\":\"砧公園\",\"members\":[]},{\"id\":\"d39\",\"label\":\"給田 1～3\",\"members\":[]},{\"id\":\"d40\",\"label\":\"給田 4・5\",\"members\":[]},{\"id\":\"d41\",\"label\":\"経堂 1・4・5\",\"members\":[]},{\"id\":\"d42\",\"label\":\"経堂 2・3\",\"members\":[]},{\"id\":\"d43\",\"label\":\"豪徳寺 1\",\"members\":[]},{\"id\":\"d44\",\"label\":\"豪徳寺 2\",\"members\":[]},{\"id\":\"d45\",\"label\":\"駒沢 1・2\",\"members\":[]},{\"id\":\"d46\",\"label\":\"駒沢 3\",\"members\":[]},{\"id\":\"d47\",\"label\":\"駒沢 4・5\",\"members\":[]},{\"id\":\"d48\",\"label\":\"駒沢公園\",\"members\":[]},{\"id\":\"d49\",\"label\":\"桜 1・2\",\"members\":[]},{\"id\":\"d50\",\"label\":\"桜 3\",\"members\":[]},{\"id\":\"d51\",\"label\":\"桜丘 1～5\",\"members\":[]},{\"id\":\"d52\",\"label\":\"桜新町 1・2\",\"members\":[]},{\"id\":\"d53\",\"label\":\"桜上水 1～5\",\"members\":[]},{\"id\":\"d54\",\"label\":\"三軒茶屋 1\",\"members\":[]},{\"id\":\"d55\",\"label\":\"三軒茶屋 2\",\"members\":[]},{\"id\":\"d56\",\"label\":\"下馬 1・3～6\",\"members\":[]},{\"id\":\"d57\",\"label\":\"下馬 2\",\"members\":[]},{\"id\":\"d58\",\"label\":\"新町 1\",\"members\":[]},{\"id\":\"d59\",\"label\":\"新町 2・3\",\"members\":[]},{\"id\":\"d60\",\"label\":\"成城 1～6\",\"members\":[]},{\"id\":\"d61\",\"label\":\"成城 7～9\",\"members\":[]},{\"id\":\"d62\",\"label\":\"瀬田 1・2\",\"members\":[]},{\"id\":\"d63\",\"label\":\"瀬田 3\",\"members\":[]},{\"id\":\"d64\",\"label\":\"瀬田 4・5\",\"members\":[]},{\"id\":\"d65\",\"label\":\"世田谷 1～4\",\"members\":[]},{\"id\":\"d66\",\"label\":\"祖師谷 1・2\",\"members\":[]},{\"id\":\"d67\",\"label\":\"祖師谷 3\",\"members\":[]},{\"id\":\"d68\",\"label\":\"祖師谷 4～6\",\"members\":[]},{\"id\":\"d69\",\"label\":\"太子堂 1・2\",\"members\":[]},{\"id\":\"d70\",\"label\":\"太子堂 3\",\"members\":[]},{\"id\":\"d71\",\"label\":\"太子堂 4・5\",\"members\":[]},{\"id\":\"d72\",\"label\":\"代沢 1～3・5\",\"members\":[]},{\"id\":\"d73\",\"label\":\"代沢 4\",\"members\":[]},{\"id\":\"d74\",\"label\":\"代田 1\",\"members\":[]},{\"id\":\"d75\",\"label\":\"代田 2・5\",\"members\":[]},{\"id\":\"d76\",\"label\":\"代田 3\",\"members\":[]},{\"id\":\"d77\",\"label\":\"代田 4\",\"members\":[]},{\"id\":\"d78\",\"label\":\"代田 6\",\"members\":[]},{\"id\":\"d79\",\"label\":\"玉川 1・2\",\"members\":[]},{\"id\":\"d80\",\"label\":\"玉川 3・4\",\"members\":[]},{\"id\":\"d81\",\"label\":\"玉川台 1・2\",\"members\":[]},{\"id\":\"d82\",\"label\":\"玉川田園調布 1・2\",\"members\":[]},{\"id\":\"d83\",\"label\":\"玉堤 1・2\",\"members\":[]},{\"id\":\"d84\",\"label\":\"千歳台 1～6\",\"members\":[]},{\"id\":\"d85\",\"label\":\"弦巻 1～5\",\"members\":[]},{\"id\":\"d86\",\"label\":\"等々力 1・2\",\"members\":[]},{\"id\":\"d87\",\"label\":\"等々力 3\",\"members\":[]},{\"id\":\"d88\",\"label\":\"等々力 4・5・6\",\"members\":[]},{\"id\":\"d89\",\"label\":\"等々力 7\",\"members\":[]},{\"id\":\"d90\",\"label\":\"等々力 8\",\"members\":[]},{\"id\":\"d91\",\"label\":\"中町 1・5\",\"members\":[]},{\"id\":\"d92\",\"label\":\"中町 2～4\",\"members\":[]},{\"id\":\"d93\",\"label\":\"野毛 1～3\",\"members\":[]},{\"id\":\"d94\",\"label\":\"野沢 1\",\"members\":[]},{\"id\":\"d95\",\"label\":\"野沢 2・3\",\"members\":[]},{\"id\":\"d96\",\"label\":\"野沢 4\",\"members\":[]},{\"id\":\"d97\",\"label\":\"八幡山 1～3\",\"members\":[]},{\"id\":\"d98\",\"label\":\"羽根木 1・2\",\"members\":[]},{\"id\":\"d99\",\"label\":\"東玉川 1・2\",\"members\":[]},{\"id\":\"d100\",\"label\":\"深沢 1～4\",\"members\":[]},{\"id\":\"d101\",\"label\":\"深沢 5\",\"members\":[]},{\"id\":\"d102\",\"label\":\"深沢 6・7\",\"members\":[]},{\"id\":\"d103\",\"label\":\"深沢 8\",\"members\":[]},{\"id\":\"d104\",\"label\":\"船橋 1～7\",\"members\":[]},{\"id\":\"d105\",\"label\":\"松原 1～5\",\"members\":[]},{\"id\":\"d106\",\"label\":\"松原 6\",\"members\":[]},{\"id\":\"d107\",\"label\":\"三宿 1\",\"members\":[]},{\"id\":\"d108\",\"label\":\"三宿 2\",\"members\":[]},{\"id\":\"d109\",\"label\":\"南烏山 1・2・5\",\"members\":[]},{\"id\":\"d110\",\"label\":\"南烏山 3・4・6\",\"members\":[]},{\"id\":\"d111\",\"label\":\"宮坂 1・2\",\"members\":[]},{\"id\":\"d112\",\"label\":\"宮坂 3\",\"members\":[]},{\"id\":\"d113\",\"label\":\"用賀 1\",\"members\":[]},{\"id\":\"d114\",\"label\":\"用賀 2\",\"members\":[]},{\"id\":\"d115\",\"label\":\"用賀 3・4\",\"members\":[]},{\"id\":\"d116\",\"label\":\"若林 1・2\",\"members\":[]},{\"id\":\"d117\",\"label\":\"若林 3・4\",\"members\":[]},{\"id\":\"d118\",\"label\":\"若林 5\",\"members\":[]}],\"categories\":[{\"id\":\"c1\",\"label\":\"資源\",\"coarse\":[],\"note\":\"見出しは「資源（週1回）」。中身の品目は資料に書いていない\"},{\"id\":\"c2\",\"label\":\"可燃ごみ\",\"coarse\":[\"burnable\"],\"note\":\"見出しは「可燃ごみ（週2回）」\"},{\"id\":\"c3\",\"label\":\"不燃ごみ\",\"coarse\":[\"non_burnable\"],\"note\":\"見出しは「不燃ごみ（月2回）」\"},{\"id\":\"c4\",\"label\":\"ペットボトル\",\"coarse\":[\"pet_bottle\"],\"note\":\"見出しは「ペットボトル（月2回）」\"}],\"schedules\":[\n{\"district\":\"d1\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d1\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d1\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d1\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d2\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d2\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d2\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d2\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d3\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d3\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d3\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d3\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d4\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d4\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d4\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d4\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d5\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d5\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d5\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d5\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d6\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d6\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d6\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d6\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d7\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d7\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d7\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d7\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d8\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d8\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d8\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d8\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d9\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d9\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d9\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d9\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d10\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d10\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d10\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d10\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d11\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d11\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d11\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d11\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d12\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d12\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d12\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d12\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d13\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d13\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d13\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},{\"district\":\"d13\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},\n{\"district\":\"d14\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d14\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d14\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d14\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d15\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d15\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d15\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},{\"district\":\"d15\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},\n{\"district\":\"d16\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d16\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d16\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d16\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d17\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d17\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d17\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d17\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d18\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d18\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d18\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d18\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d19\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d19\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d19\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d19\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d20\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d20\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d20\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d20\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d21\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d21\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d21\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d21\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d22\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d22\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d22\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d22\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d23\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d23\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d23\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},{\"district\":\"d23\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},\n{\"district\":\"d24\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d24\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d24\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d24\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d25\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d25\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d25\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d25\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d26\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d26\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d26\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d26\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d27\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d27\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d27\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d27\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d28\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d28\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d28\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d28\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d29\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d29\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d29\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d29\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d30\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d30\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d30\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d30\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d31\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d31\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d31\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d31\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d32\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d32\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d32\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d32\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d33\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d33\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d33\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d33\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d34\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d34\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d34\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d34\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d35\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d35\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d35\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d35\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d36\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d36\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d36\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d36\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d37\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d37\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d37\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d37\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d38\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d38\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d38\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d38\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d39\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d39\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d39\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},{\"district\":\"d39\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},\n{\"district\":\"d40\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d40\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d40\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},{\"district\":\"d40\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},\n{\"district\":\"d41\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d41\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d41\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d41\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d42\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d42\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d42\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d42\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d43\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d43\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d43\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d43\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d44\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d44\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d44\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d44\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d45\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d45\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d45\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d45\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d46\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d46\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d46\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d46\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d47\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d47\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d47\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d47\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d48\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d48\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d48\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d48\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d49\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d49\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d49\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d49\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d50\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d50\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d50\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d50\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d51\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d51\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d51\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d51\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d52\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d52\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d52\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d52\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d53\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d53\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d53\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d53\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d54\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d54\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d54\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d54\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d55\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d55\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d55\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d55\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d56\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d56\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d56\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},{\"district\":\"d56\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},\n{\"district\":\"d57\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d57\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d57\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d57\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d58\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d58\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d58\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d58\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d59\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d59\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d59\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d59\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d60\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d60\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d60\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d60\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d61\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d61\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d61\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d61\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d62\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d62\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d62\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d62\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d63\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d63\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d63\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d63\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d64\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d64\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d64\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d64\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d65\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d65\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d65\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d65\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d66\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d66\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d66\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d66\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d67\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d67\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d67\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d67\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d68\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d68\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d68\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d68\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d69\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d69\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d69\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d69\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d70\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d70\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d70\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d70\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d71\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d71\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d71\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d71\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d72\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d72\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d72\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d72\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d73\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d73\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d73\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d73\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d74\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d74\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d74\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d74\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d75\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d75\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d75\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d75\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d76\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d76\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d76\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d76\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d77\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d77\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d77\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d77\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d78\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d78\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d78\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d78\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d79\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d79\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d79\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d79\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d80\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d80\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d80\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d80\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d81\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d81\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d81\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d81\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d82\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d82\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d82\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d82\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d83\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d83\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d83\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d83\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d84\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d84\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d84\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d84\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d85\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d85\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d85\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},{\"district\":\"d85\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},\n{\"district\":\"d86\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d86\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d86\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d86\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d87\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d87\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d87\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d87\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d88\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d88\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d88\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},{\"district\":\"d88\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},\n{\"district\":\"d89\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d89\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d89\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d89\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d90\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d90\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d90\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d90\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d91\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d91\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d91\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d91\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d92\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d92\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d92\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d92\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d93\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d93\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d93\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},{\"district\":\"d93\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},\n{\"district\":\"d94\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d94\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d94\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d94\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d95\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d95\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d95\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},{\"district\":\"d95\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},\n{\"district\":\"d96\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d96\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d96\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d96\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d97\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d97\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d97\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},{\"district\":\"d97\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},\n{\"district\":\"d98\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d98\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d98\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d98\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d99\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d99\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d99\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},{\"district\":\"d99\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},\n{\"district\":\"d100\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d100\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d100\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},{\"district\":\"d100\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},\n{\"district\":\"d101\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d101\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d101\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d101\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d102\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d102\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d102\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d102\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d103\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d103\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d103\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d103\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d104\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d104\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d104\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d104\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d105\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d105\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d105\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d105\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d106\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d106\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d106\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d106\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d107\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d107\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d107\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d107\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d108\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d108\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d108\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[1,3]}]},{\"district\":\"d108\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"SA\"],\"nth\":[2,4]}]},\n{\"district\":\"d109\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d109\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d109\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[2,4]}]},{\"district\":\"d109\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TU\"],\"nth\":[1,3]}]},\n{\"district\":\"d110\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\"]}]},{\"district\":\"d110\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\",\"TH\"]}]},{\"district\":\"d110\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},{\"district\":\"d110\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},\n{\"district\":\"d111\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d111\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d111\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d111\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d112\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d112\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d112\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},{\"district\":\"d112\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},\n{\"district\":\"d113\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TH\"]}]},{\"district\":\"d113\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d113\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[1,3]}]},{\"district\":\"d113\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"MO\"],\"nth\":[2,4]}]},\n{\"district\":\"d114\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d114\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d114\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},{\"district\":\"d114\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},\n{\"district\":\"d115\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"FR\"]}]},{\"district\":\"d115\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d115\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[1,3]}]},{\"district\":\"d115\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"TH\"],\"nth\":[2,4]}]},\n{\"district\":\"d116\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"MO\"]}]},{\"district\":\"d116\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d116\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d116\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]},\n{\"district\":\"d117\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\"]}]},{\"district\":\"d117\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"WE\",\"SA\"]}]},{\"district\":\"d117\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[2,4]}]},{\"district\":\"d117\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"FR\"],\"nth\":[1,3]}]},\n{\"district\":\"d118\",\"category\":\"c1\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"SA\"]}]},{\"district\":\"d118\",\"category\":\"c2\",\"rules\":[{\"type\":\"weekly\",\"weekdays\":[\"TU\",\"FR\"]}]},{\"district\":\"d118\",\"category\":\"c3\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[2,4]}]},{\"district\":\"d118\",\"category\":\"c4\",\"rules\":[{\"type\":\"nth_weekday\",\"weekdays\":[\"WE\"],\"nth\":[1,3]}]}\n],\"exceptions\":[],\"unsure\":[{\"about\":\"自治体名の印字が無い (出どころのURLは city.setagaya.lg.jp。表の「世田谷」は町名・管轄清掃事務所の名前で、自治体名としては書かれていない)\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"有効期間の印字が無い\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"祝日・振替休日の扱いが書いていない\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"年末年始の扱いが書いていない\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"「n回目の曜日」は月の中で何回目かのことと読み、nth_weekday にした。月の中で数えるとは明記されていない (見出しは「月2回」)。5回目の曜日の扱いは書いていない\",\"district\":null,\"category\":null,\"text\":\"2回目・4回目の月曜日\"},{\"about\":\"資源の中身の品目が書いていないので coarse を空にした\",\"district\":null,\"category\":\"c1\",\"text\":\"資源（週1回）\"},{\"about\":\"地区の label は町名と丁目の欄を印字のまま並べた。丁目は一つずつに分けていない。砧公園と駒沢公園は丁目の欄が空\",\"district\":null,\"category\":null,\"text\":null},{\"about\":\"出す時刻の決まり (収集日の朝8時まで) は収集日の規則に入れていない\",\"district\":null,\"category\":null,\"text\":\"資源とごみは収集日の朝8時までにお出しください\"},{\"about\":\"各地区の管轄清掃事務所 (世田谷・砧・玉川) は収集日ではないので入れていない\",\"district\":null,\"category\":null,\"text\":\"管轄清掃事務所\"}]}",
+ "stop_reason": "end_turn",
+ "error": null
+}

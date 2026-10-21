@@ -169,3 +169,10 @@ Kimi のサブスク (Kimi Code) は、規約が「非対話の自動実行・�
   JavaScript で作るサイトはブラウザで見る、アプリだけの 9 は公式の PDF がほかに無いか人が探す
 
 次は、形式ごとの読み取り (M1: 文字の PDF と HTML の表) を、人口の多い順に進める。
+
+## 8. 読み取りは LLM がする (2026-10-21、作者 firemio の決定)
+
+日本語の文の読み取り・解釈は LLM がする。Python の決まり (正規表現) で読む作り (`nationwide/readers/`) は、8 回直しても穴が残ったので消した。
+Python がするのは、資料の読み込み・PDF のページの画像化・モデルの呼び出し・JSON の形の確かめ・LLM が書いた規則からの日付の計算
+(祝日・第N曜日・休み)・読みどうしの比べ・正解との採点だけ (`nationwide/llmread/`)。同じ入力で Opus と DeepSeek を比べ、どちらも正しければ
+DeepSeek を使う。比べた結果は [llm-read-compare.md](llm-read-compare.md) (文字・画像の PDF では DeepSeek の読み違いが多く、Opus を使う)。

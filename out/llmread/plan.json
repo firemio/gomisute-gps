@@ -1,0 +1,3728 @@
+{
+ "about": "LLM が資料を読む本番の計画 (nationwide/llmread/)。資料はキャッシュと手元のファイルだけ。PDF はページの画像 (150dpi) と文字層、HTML は本文の範囲の文字 (表は簡単な HTML)、CSV・Excel は markdown の表",
+ "models": [
+  "deepseek-flash (llmread/llm.py)",
+  "claude-opus-5-5 (claude -p。道具は Read だけ)"
+ ],
+ "decision_rule": "同じ入力で Opus と DeepSeek を比べ、どちらも正しければ DeepSeek を使う (作者 firemio)",
+ "smoke": [
+  "jgd:112275",
+  "onagawa:2026-04",
+  "onagawa:2026-12",
+  "kanazawa:三和"
+ ],
+ "totals": {
+  "docs": 87,
+  "docs_jgd": 70,
+  "pdf_pages": 330,
+  "text_chars": 506507,
+  "docs_not_cached": 137,
+  "docs_onagawa": 12,
+  "docs_kanazawa": 5
+ },
+ "targets": [
+  {
+   "target": "jgd",
+   "lg_code": "112038",
+   "name": "川口市",
+   "format_class": "pdf_text",
+   "courses": 18,
+   "courses_with_cached_doc": 8,
+   "docs": [
+    {
+     "doc_id": "112038-c853c1cf",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---1.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "1"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 3053
+    },
+    {
+     "doc_id": "112038-cd65df79",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---10.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "10"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-384fccb8",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---11.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "11"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-8fc4c186",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---12.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "12"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-e02c3d81",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---13.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "13"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-bb5ad911",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---14.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "14"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-69554f26",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---15.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "15"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-e4f35a86",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---16.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "16"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-678adb51",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---17.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "17"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-f74986e3",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---18.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "18"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112038-c71473d4",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---2.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "2"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 3061
+    },
+    {
+     "doc_id": "112038-79082c15",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---3.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "3"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 3056
+    },
+    {
+     "doc_id": "112038-e231e69a",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---4.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "4"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 3043
+    },
+    {
+     "doc_id": "112038-5f8f330c",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---5.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "5"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 3157
+    },
+    {
+     "doc_id": "112038-345f5fae",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---6.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "6"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 2974
+    },
+    {
+     "doc_id": "112038-20731caf",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---7.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "7"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 3096
+    },
+    {
+     "doc_id": "112038-79ea5be8",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---8.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "8"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 3062
+    },
+    {
+     "doc_id": "112038-3bf138fd",
+     "target": "jgd",
+     "lg_code": "112038",
+     "name": "川口市",
+     "url": "https://www.city.kawaguchi.lg.jp/material/files/group/94/2026---9.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "9"
+     ],
+     "cached": false
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "112071",
+   "name": "秩父市",
+   "format_class": "pdf_text",
+   "courses": 43,
+   "courses_with_cached_doc": 0,
+   "docs": [
+    {
+     "doc_id": "112071-facbe3d5",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/01%20%E6%97%A5%E9%87%8E%E7%94%B0%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "01"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-af12e780",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/02%20%E9%87%8E%E5%9D%82%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "02"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-23c0289b",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/03%20%E7%86%8A%E6%9C%A8%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "03"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-c7ba8e2c",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/04%20%E4%B8%8A%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "04"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-9060618d",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/05%20%E4%B8%AD%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "05"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-e2bff9ff",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/06%20%E6%9C%AC%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "06"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-ac00ce8f",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/07%20%E5%AE%AE%E5%81%B4%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "07"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-cfe1e79b",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/08%20%E7%95%AA%E5%A0%B4%E3%83%BB%E6%9D%B1%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "08"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-3b532774",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/09%20%E4%B8%8A%E9%87%8E%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "09"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-8ff4498e",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/10%20%E9%81%93%E7%94%9F%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "10"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-ce656e15",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/11%20%E4%B8%AD%E6%9D%91%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "11"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-052321bd",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/12%20%E8%BF%91%E6%88%B8%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "12"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-40cf9dcb",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/13%20%E6%A1%9C%E6%9C%A8%E7%94%BA%E3%83%BB%E6%B0%B8%E7%94%B0%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "13"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-44de5d2e",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/14%20%E9%87%91%E5%AE%A4%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "14"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-27447522",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/15%20%E6%9F%B3%E7%94%B0%E7%94%BA%E3%83%BB%E9%98%BF%E4%BF%9D%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "15"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-c6e55a3a",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/16%20%E6%BB%9D%E3%81%AE%E4%B8%8A%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "16"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-12252745",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/17%20%E4%B8%8A%E5%AE%AE%E5%9C%B0%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "17"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-e50edd20",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/18%20%E4%B8%AD%E5%AE%AE%E5%9C%B0%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "18"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-cf3b817b",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/19%20%E5%A4%A7%E7%95%91%E7%94%BA%E3%83%BB%E4%B8%8B%E5%AE%AE%E5%9C%B0%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "19"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-94681341",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/20%20%E7%9B%B8%E7%94%9F%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "20"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-8adc16fe",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/21%20%E5%88%A5%E6%89%80.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "21"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-8ff97339",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/22%20%E5%AE%AE%E5%B4%8E%E3%83%BB%E8%AB%8F%E8%A8%AA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "22"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-f544d716",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/23%20%E5%A4%A7%E9%87%8E%E5%8E%9F%E7%94%BA%E4%BC%9A.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "23"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-905c779d",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/24%20%E9%BB%92%E8%B0%B7.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "24"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-c0dbc70b",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/25%20%E4%B9%85%E9%82%A3%E3%83%BB%E5%A4%AA%E7%94%B0%E3%83%BB%E4%BC%8A%E5%8F%A4%E7%94%B0%E3%83%BB%E5%A0%80%E5%88%87.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "25"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-90708fe4",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/26%20%E5%B0%BE%E7%94%B0%E8%92%94.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "26"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-2c5e5ac7",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/27%20%E5%B1%B1%E7%94%B0.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "27"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-73234ede",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/28%20%E6%A0%83%E8%B0%B7.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "28"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-aef4033b",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/29%20%E5%AE%9A%E5%B3%B0.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "29"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-f6552c85",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/30%20%E5%93%81%E6%B2%A2.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "30"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-e9f3f6b3",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/31%20%E5%B0%8F%E6%9F%B1.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "31"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-1e891a09",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/32%20%E5%AE%AE%E6%9C%AC%E3%83%BB%E6%A0%84%E3%83%BB%E5%A4%A7%E6%B2%BC%E3%83%BB%E5%85%AB%E5%B9%A1.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "32"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-cca38b0a",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/33%20%E6%97%AD%E7%94%BA%E3%83%BB%E5%B7%B4%E7%94%BA.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "33"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-d1933e11",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/34%20%E6%B5%A6%E5%B1%B1.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "34"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-68a465dd",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/35%20%E4%B9%85%E9%95%B7%E3%83%BB%E4%B8%8B%E5%90%89%E7%94%B0.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "35"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-f4a15ffd",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/36%20%E9%98%BF%E7%86%8A%E3%83%BB%E7%9F%B3%E9%96%93%EF%BC%88%E5%8D%8A%E7%B4%8D%E3%82%92%E9%99%A4%E3%81%8F%EF%BC%89%E3%83%BB%E4%B8%8A%E5%90%89%E7%94%B0.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "36"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-1b5dbfc5",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/37%20%E5%8D%8A%E7%B4%8D%EF%BC%88%E7%9F%B3%E9%96%93%EF%BC%89.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "37"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-fa16dd1a",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/38%20%E5%A4%AA%E7%94%B0%E9%83%A8.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "38"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-71845c80",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/39%20%E5%BC%B7%E7%9F%B3%E3%82%88%E3%82%8A%E8%90%BD%E5%90%88%E3%83%BB%E4%BA%8C%E7%80%AC%E3%83%BB%E6%A0%83%E6%9C%AC%E3%83%BB%E5%B7%9D%E5%8F%88%E3%83%BB%E4%B8%89%E5%B3%B0.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "39"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-5af21c37",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/40%20%E5%AE%AE%E5%B9%B3%E3%82%88%E3%82%8A%E4%B8%AD%E6%B4%A5%E5%B7%9D.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "40"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-bd943e68",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/41%20%E5%8D%8A%E7%B8%84%E3%83%BB%E5%9D%82%E5%8F%A3%E3%83%BB%E4%BA%8B%E4%B8%8A%E3%83%BB%E6%97%A5%E9%87%8E%E3%83%BB%E6%9F%B4%E5%8E%9F.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "41"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-85634d91",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/42%20%E7%99%BD%E4%B9%85%E3%83%BB%E8%B4%84%E5%B7%9D%E3%83%BB%E5%B0%8F%E9%87%8E%E5%8E%9F%E3%83%BB%E9%B7%BA%E3%81%AE%E5%B7%A3.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "42"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112071-22e81189",
+     "target": "jgd",
+     "lg_code": "112071",
+     "name": "秩父市",
+     "url": "https://city.chichibu.lg.jp/secure/22218/43%20%E4%B9%85%E9%82%A3%E3%83%BB%E4%B8%8B%E7%9F%B3%E5%8E%9F%E3%83%BB%E4%B8%8A%E7%9F%B3%E5%8E%9F%E3%83%BB%E6%A0%83%E4%B9%85%E4%BF%9D%E3%83%BB%E7%B3%80%E5%B1%8B%E3%83%BB%E8%88%B9%E5%B7%9D%E3%83%BB%E8%B6%8A.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "43"
+     ],
+     "cached": false
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "112097",
+   "name": "飯能市",
+   "format_class": "html_text",
+   "courses": 6,
+   "courses_with_cached_doc": 6,
+   "docs": [
+    {
+     "doc_id": "112097-f67784c7",
+     "target": "jgd",
+     "lg_code": "112097",
+     "name": "飯能市",
+     "url": "https://www.city.hanno.lg.jp/material/files/group/22/2026haraichibanaguri.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "A-1"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 0
+    },
+    {
+     "doc_id": "112097-6c364a6e",
+     "target": "jgd",
+     "lg_code": "112097",
+     "name": "飯能市",
+     "url": "https://www.city.hanno.lg.jp/material/files/group/22/2026chuuoiminami.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "A-2"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 0
+    },
+    {
+     "doc_id": "112097-62e0e032",
+     "target": "jgd",
+     "lg_code": "112097",
+     "name": "飯能市",
+     "url": "https://www.city.hanno.lg.jp/material/files/group/22/2026kaji.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "A-3"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 0
+    },
+    {
+     "doc_id": "112097-4a1112e9",
+     "target": "jgd",
+     "lg_code": "112097",
+     "name": "飯能市",
+     "url": "https://www.city.hanno.lg.jp/material/files/group/22/2026higashiaganoagano.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "B-1"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 0
+    },
+    {
+     "doc_id": "112097-417a518f",
+     "target": "jgd",
+     "lg_code": "112097",
+     "name": "飯能市",
+     "url": "https://www.city.hanno.lg.jp/material/files/group/22/2026chuuoukita.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "B-2"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 0
+    },
+    {
+     "doc_id": "112097-97d1a8ee",
+     "target": "jgd",
+     "lg_code": "112097",
+     "name": "飯能市",
+     "url": "https://www.city.hanno.lg.jp/material/files/group/22/2026seimei.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "B-3"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 0
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "112259",
+   "name": "入間市",
+   "format_class": "pdf_text",
+   "courses": 12,
+   "courses_with_cached_doc": 12,
+   "docs": [
+    {
+     "doc_id": "112259-6eb85a1d",
+     "target": "jgd",
+     "lg_code": "112259",
+     "name": "入間市",
+     "url": "https://opendata.pref.saitama.lg.jp/resource_download/1494",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "112259-058b888c",
+     "target": "jgd",
+     "lg_code": "112259",
+     "name": "入間市",
+     "url": "https://www.city.iruma.saitama.jp/material/files/group/21/R8wakedasihyou.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 4,
+     "text_chars": 10787
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "112275",
+   "name": "朝霞市",
+   "format_class": "html_table",
+   "courses": 6,
+   "courses_with_cached_doc": 6,
+   "docs": [
+    {
+     "doc_id": "112275-c3af1203",
+     "target": "jgd",
+     "lg_code": "112275",
+     "name": "朝霞市",
+     "url": "https://www.city.asaka.lg.jp/soshiki/15/dust-syuusyuu.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 2832
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "112429",
+   "name": "日高市",
+   "format_class": "pdf_text",
+   "courses": 20,
+   "courses_with_cached_doc": 20,
+   "docs": [
+    {
+     "doc_id": "112429-742153f2",
+     "target": "jgd",
+     "lg_code": "112429",
+     "name": "日高市",
+     "url": "https://www.city.hidaka.lg.jp/material/files/group/13/reiwa8nendogominitteihyou.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 4,
+     "text_chars": 16810
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "113620",
+   "name": "皆野町",
+   "format_class": "pdf_text",
+   "courses": 4,
+   "courses_with_cached_doc": 4,
+   "docs": [
+    {
+     "doc_id": "113620-822cc609",
+     "target": "jgd",
+     "lg_code": "113620",
+     "name": "皆野町",
+     "url": "https://www.town.minano.saitama.jp/wp-content/uploads/2010/07/f9eb63572d046a0170bc788b856f0c36-11.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "01"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5545
+    },
+    {
+     "doc_id": "113620-bb0d8f6d",
+     "target": "jgd",
+     "lg_code": "113620",
+     "name": "皆野町",
+     "url": "https://www.town.minano.saitama.jp/wp-content/uploads/2010/07/ad9f53afdff8f682d38752a8e8429111-11.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "02"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5539
+    },
+    {
+     "doc_id": "113620-280e7a72",
+     "target": "jgd",
+     "lg_code": "113620",
+     "name": "皆野町",
+     "url": "https://www.town.minano.saitama.jp/wp-content/uploads/2010/07/52a3509281a700734ff8299b52005ffb-11.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "03"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5527
+    },
+    {
+     "doc_id": "113620-e96a564d",
+     "target": "jgd",
+     "lg_code": "113620",
+     "name": "皆野町",
+     "url": "https://www.town.minano.saitama.jp/wp-content/uploads/2010/07/51ad3cd62cf1f3d84c5071fbea3ddf85-12.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "04"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5507
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "113638",
+   "name": "長瀞町",
+   "format_class": "pdf_text",
+   "courses": 3,
+   "courses_with_cached_doc": 3,
+   "docs": [
+    {
+     "doc_id": "113638-dda88151",
+     "target": "jgd",
+     "lg_code": "113638",
+     "name": "長瀞町",
+     "url": "https://www.town.nagatoro.saitama.jp/wp-content/uploads/2026/03/57ed490a93eec9c71df8b62f2ab64005-4.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "01"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5526
+    },
+    {
+     "doc_id": "113638-313ef305",
+     "target": "jgd",
+     "lg_code": "113638",
+     "name": "長瀞町",
+     "url": "https://www.town.nagatoro.saitama.jp/wp-content/uploads/2026/03/367199f249a96e1c30ce981700f5fbd0.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "02"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5536
+    },
+    {
+     "doc_id": "113638-42138161",
+     "target": "jgd",
+     "lg_code": "113638",
+     "name": "長瀞町",
+     "url": "https://www.town.nagatoro.saitama.jp/wp-content/uploads/2026/03/2558dd9b4136f66768cfcae6eec1b73f.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "03"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5532
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "113654",
+   "name": "小鹿野町",
+   "format_class": "pdf_text",
+   "courses": 8,
+   "courses_with_cached_doc": 8,
+   "docs": [
+    {
+     "doc_id": "113654-6ff96743",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8shimoogano_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "01"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5522
+    },
+    {
+     "doc_id": "113654-29f44caf",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8izusawa_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "02"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5546
+    },
+    {
+     "doc_id": "113654-8e27d502",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8araikoshinone_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "03"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5532
+    },
+    {
+     "doc_id": "113654-7957ef41",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8nagawaka_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "04"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5518
+    },
+    {
+     "doc_id": "113654-98338746",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8mitagawakurao_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "05"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5520
+    },
+    {
+     "doc_id": "113654-4d18bd8c",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8susuki_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "06"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5542
+    },
+    {
+     "doc_id": "113654-9cd92a1f",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8susuki8k_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "07"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5048
+    },
+    {
+     "doc_id": "113654-86f7803a",
+     "target": "jgd",
+     "lg_code": "113654",
+     "name": "小鹿野町",
+     "url": "https://www.town.ogano.lg.jp/cms/wp-content/uploads/2026/03/r8komorisusuki_gomicalendar.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "08"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 2,
+     "text_chars": 5536
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "113697",
+   "name": "東秩父村",
+   "format_class": "html_table",
+   "courses": 1,
+   "courses_with_cached_doc": 1,
+   "docs": [
+    {
+     "doc_id": "113697-32692eee",
+     "target": "jgd",
+     "lg_code": "113697",
+     "name": "東秩父村",
+     "url": "https://www.vill.higashichichibu.saitama.jp/soshiki/05/gominodashikata.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "1"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 2737
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "131024",
+   "name": "中央区",
+   "format_class": "html_table",
+   "courses": 13,
+   "courses_with_cached_doc": 13,
+   "docs": [
+    {
+     "doc_id": "131024-c038390a",
+     "target": "jgd",
+     "lg_code": "131024",
+     "name": "中央区",
+     "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/calendar/syuusyuuyoubi.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 6205
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "131121",
+   "name": "世田谷区",
+   "format_class": "html_table",
+   "courses": 37,
+   "courses_with_cached_doc": 37,
+   "docs": [
+    {
+     "doc_id": "131121-4108f060",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/416/27-08-26.csv",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "3",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ],
+     "cached": true,
+     "kind": "csv",
+     "text_chars": 7923
+    },
+    {
+     "doc_id": "131121-20ec8fb6",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no1.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "1"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-655e4932",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no10.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "10"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-9b5af1bc",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no11.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "11"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-e5a95319",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no12.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "12"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-7950ddd0",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no13.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "13"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-311bdf90",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no14.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "14"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-d626d1bd",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no15.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "15"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-835dcaec",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no16.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "16"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-85fbe569",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no17.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "17"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-ed9f9a0b",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no18.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "18"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-bd395149",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no19.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "19"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-76dd57af",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no2.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "2"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-17ecc4f3",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no20.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "20"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-d5ade35d",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no21.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "21"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-a72378fc",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no22.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "22"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 8,
+     "text_chars": 2
+    },
+    {
+     "doc_id": "131121-3d53a5b3",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no23.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "23"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-a419c8eb",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no24.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "24"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-fb2a152d",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no25.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "25"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-2922b410",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no26.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "26"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-1f90e1cb",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no27.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "27"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-2f1360e1",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no28.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "28"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-c20ad515",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no29.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "29"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-f2bd0571",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no3.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "3"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-9143c39b",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no30.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "30"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-4a17bc52",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no31.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "31"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-02a4ec02",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no32.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "32"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-29dc1d66",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no33.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "33"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-2f79b1b2",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no34.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "34"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-c3eb4943",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no35.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "35"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-a14cd086",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no36.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "36"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-8083c39e",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no37.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "37"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-32309cf8",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no4.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "4"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-072da768",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no5.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "5"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-e6db6e33",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no6.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "6"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-e1e7755f",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no7.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "7"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-f2c61a4a",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no8.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "8"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131121-491385d3",
+     "target": "jgd",
+     "lg_code": "131121",
+     "name": "世田谷区",
+     "url": "https://www.city.setagaya.lg.jp/documents/27859/no9.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "9"
+     ],
+     "cached": false
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "131156",
+   "name": "杉並区",
+   "format_class": "xlsx/csv",
+   "courses": 28,
+   "courses_with_cached_doc": 28,
+   "docs": [
+    {
+     "doc_id": "131156-1fd3b95e",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/documents/12125/garbage.csv",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ],
+     "cached": true,
+     "kind": "csv",
+     "text_chars": 5397
+    },
+    {
+     "doc_id": "131156-d590d0e9",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/1.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "1"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-cb968fe7",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/10.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "10"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-bba6ad7b",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/11.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "11"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-48dc856c",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/12.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "12"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-79ddb0e9",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/13.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "13"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-5e50c69d",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/14.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "14"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-5141426c",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/15.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "15"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-5d46c1c8",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/16.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "16"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-804470f5",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/17.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "17"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-f6afb6d3",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/18.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "18"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-fcbce780",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/19.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "19"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-ee2539a3",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/2.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "2"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-21e0c8e1",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/20.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "20"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-f638207f",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/21.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "21"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-34ba6996",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/22.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "22"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-e9308224",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/23.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "23"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-b3d81cba",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/24.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "24"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-cee1411c",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/25.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "25"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-1cc255a5",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/26.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "26"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-afa9ac31",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/27.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "27"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-ca135d5d",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/28.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "28"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-06352cc0",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/3.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "3"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-edc3cbb3",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/4.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "4"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-331f7b02",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/5.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "5"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-6e677dbd",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/6.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "6"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-f83e17b2",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/7.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "7"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-bfd69432",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/8.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "8"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131156-3817c130",
+     "target": "jgd",
+     "lg_code": "131156",
+     "name": "杉並区",
+     "url": "https://www.city.suginami.tokyo.jp/shared/garbage/9.pdf",
+     "roles": [
+      "pdf_url"
+     ],
+     "courses": [
+      "9"
+     ],
+     "cached": false
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "131199",
+   "name": "板橋区",
+   "format_class": "html_table",
+   "courses": 24,
+   "courses_with_cached_doc": 15,
+   "docs": [
+    {
+     "doc_id": "131199-bdc72702",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e01.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e1"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1926
+    },
+    {
+     "doc_id": "131199-6477d068",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e10.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e10"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1931
+    },
+    {
+     "doc_id": "131199-2e90ba06",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e11.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e11"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-70027657",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e12.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e12"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1939
+    },
+    {
+     "doc_id": "131199-abb33d56",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e02.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e2"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-49bc02f4",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e03.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e3"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1941
+    },
+    {
+     "doc_id": "131199-eeac40d7",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e04.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e4"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1928
+    },
+    {
+     "doc_id": "131199-615ee51e",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e05.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e5"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1940
+    },
+    {
+     "doc_id": "131199-a24f0b72",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e06.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e6"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1919
+    },
+    {
+     "doc_id": "131199-4ed012d3",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e07.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e7"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1949
+    },
+    {
+     "doc_id": "131199-1f48b4f4",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e08.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e8"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1925
+    },
+    {
+     "doc_id": "131199-aad6a43a",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/higashi/nishi/e09.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "e9"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1918
+    },
+    {
+     "doc_id": "131199-5aedbb21",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w01.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w1"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1928
+    },
+    {
+     "doc_id": "131199-ba4aaae6",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w10.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w10"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1923
+    },
+    {
+     "doc_id": "131199-8c0277a3",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w11.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w11"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-3c940e03",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w12.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w12"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-5426b90c",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w02.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w2"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-6cbdeb5f",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w03.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w3"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1920
+    },
+    {
+     "doc_id": "131199-fdac7c9c",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w04.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w4"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1924
+    },
+    {
+     "doc_id": "131199-cd795f56",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w05.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w5"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-33b3f279",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w06.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w6"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-353e2233",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w07.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w7"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-b7c62f4a",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w08.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w8"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "131199-39aa682a",
+     "target": "jgd",
+     "lg_code": "131199",
+     "name": "板橋区",
+     "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/038/152/r8/w09.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "w9"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 1,
+     "text_chars": 1930
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "132039",
+   "name": "武蔵野市",
+   "format_class": "pdf_text",
+   "courses": 10,
+   "courses_with_cached_doc": 3,
+   "docs": [
+    {
+     "doc_id": "132039-87f4c5e2",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026a-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "A"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 7,
+     "text_chars": 7004
+    },
+    {
+     "doc_id": "132039-0d9d5b15",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026b-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "B"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 7,
+     "text_chars": 7098
+    },
+    {
+     "doc_id": "132039-6d70506c",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026c-1-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "C"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 7,
+     "text_chars": 7071
+    },
+    {
+     "doc_id": "132039-cb9e04d1",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026d-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "D"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132039-1853e553",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026e-1-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "E"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132039-5b96c357",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026f-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "F"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132039-311eb089",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026g-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "G"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132039-4686b433",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026h-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "H"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132039-cd6e9e97",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026i-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "I"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132039-d881917b",
+     "target": "jgd",
+     "lg_code": "132039",
+     "name": "武蔵野市",
+     "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/053/782/2026j-1.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "J"
+     ],
+     "cached": false
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "132047",
+   "name": "三鷹市",
+   "format_class": "pdf_text",
+   "courses": 10,
+   "courses_with_cached_doc": 8,
+   "docs": [
+    {
+     "doc_id": "132047-ef92a103",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095664.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095664"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1160
+    },
+    {
+     "doc_id": "132047-5082a8fd",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095666.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095666"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1203
+    },
+    {
+     "doc_id": "132047-071f035f",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095667.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095667"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1209
+    },
+    {
+     "doc_id": "132047-5b262910",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095671.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095671"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1292
+    },
+    {
+     "doc_id": "132047-518f8808",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095674.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095674"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1228
+    },
+    {
+     "doc_id": "132047-e042b962",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095677.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095677"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1222
+    },
+    {
+     "doc_id": "132047-c91a412e",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095680.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095680"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132047-bac44186",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095682.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095682"
+     ],
+     "cached": false
+    },
+    {
+     "doc_id": "132047-f68ed35f",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095685.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095685"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1164
+    },
+    {
+     "doc_id": "132047-f7cf4b5b",
+     "target": "jgd",
+     "lg_code": "132047",
+     "name": "三鷹市",
+     "url": "https://www.city.mitaka.lg.jp/c_service/095/095687.html",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "095687"
+     ],
+     "cached": true,
+     "kind": "html",
+     "text_chars": 1182
+    }
+   ]
+  },
+  {
+   "target": "jgd",
+   "lg_code": "132055",
+   "name": "青梅市",
+   "format_class": "pdf_text",
+   "courses": 8,
+   "courses_with_cached_doc": 7,
+   "docs": [
+    {
+     "doc_id": "132055-155acf73",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77610.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "A"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 28,
+     "text_chars": 38304
+    },
+    {
+     "doc_id": "132055-346e033e",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77621.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "B"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 28,
+     "text_chars": 37512
+    },
+    {
+     "doc_id": "132055-25ad1919",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77611.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "C"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 28,
+     "text_chars": 37507
+    },
+    {
+     "doc_id": "132055-b1508aa8",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77615.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "D"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 28,
+     "text_chars": 37116
+    },
+    {
+     "doc_id": "132055-f922e988",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77665.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "E"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 28,
+     "text_chars": 37252
+    },
+    {
+     "doc_id": "132055-6fa36f01",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77667.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "F"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 28,
+     "text_chars": 37477
+    },
+    {
+     "doc_id": "132055-e3f03608",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77617.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "G"
+     ],
+     "cached": true,
+     "kind": "pdf",
+     "pages_total": 28,
+     "text_chars": 37500
+    },
+    {
+     "doc_id": "132055-0fba084d",
+     "target": "jgd",
+     "lg_code": "132055",
+     "name": "青梅市",
+     "url": "https://www.city.ome.tokyo.jp/uploaded/attachment/77679.pdf",
+     "roles": [
+      "source_url"
+     ],
+     "courses": [
+      "H"
+     ],
+     "cached": false
+    }
+   ]
+  },
+  {
+   "target": "onagawa",
+   "lg_code": "045811",
+   "name": "女川町",
+   "docs": [
+    {
+     "doc_id": "045811-2026-04",
+     "target": "onagawa",
+     "month": "2026-04",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      4,
+      5
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1114
+    },
+    {
+     "doc_id": "045811-2026-05",
+     "target": "onagawa",
+     "month": "2026-05",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      6,
+      7
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1212
+    },
+    {
+     "doc_id": "045811-2026-06",
+     "target": "onagawa",
+     "month": "2026-06",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      8,
+      9
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1165
+    },
+    {
+     "doc_id": "045811-2026-07",
+     "target": "onagawa",
+     "month": "2026-07",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      10,
+      11
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1629
+    },
+    {
+     "doc_id": "045811-2026-08",
+     "target": "onagawa",
+     "month": "2026-08",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      12,
+      13
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1378
+    },
+    {
+     "doc_id": "045811-2026-09",
+     "target": "onagawa",
+     "month": "2026-09",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      14,
+      15
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 2164
+    },
+    {
+     "doc_id": "045811-2026-10",
+     "target": "onagawa",
+     "month": "2026-10",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      16,
+      17
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1539
+    },
+    {
+     "doc_id": "045811-2026-11",
+     "target": "onagawa",
+     "month": "2026-11",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      18,
+      19
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 2193
+    },
+    {
+     "doc_id": "045811-2026-12",
+     "target": "onagawa",
+     "month": "2026-12",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      20,
+      21
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1253
+    },
+    {
+     "doc_id": "045811-2027-01",
+     "target": "onagawa",
+     "month": "2027-01",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      22,
+      23
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1190
+    },
+    {
+     "doc_id": "045811-2027-02",
+     "target": "onagawa",
+     "month": "2027-02",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      24,
+      25
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 2063
+    },
+    {
+     "doc_id": "045811-2027-03",
+     "target": "onagawa",
+     "month": "2027-03",
+     "url": "https://www.town.onagawa.miyagi.jp/pdf/calendar/r08_chomin_calendar.pdf",
+     "pages": [
+      26,
+      27
+     ],
+     "kind": "pdf",
+     "cached": true,
+     "pages_total": 2,
+     "text_chars": 1130
+    }
+   ]
+  },
+  {
+   "target": "kanazawa",
+   "lg_code": "172014",
+   "name": "金沢市",
+   "docs": [
+    {
+     "doc_id": "172014-三和",
+     "target": "kanazawa",
+     "district": "三和",
+     "path": "data/kanazawa_cal/3674.html",
+     "url_original": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html#miwa",
+     "section": "三和（西部管理センター）2026年度版",
+     "kind": "html",
+     "cached": true,
+     "text_chars": 1284
+    },
+    {
+     "doc_id": "172014-南小立野",
+     "target": "kanazawa",
+     "district": "南小立野",
+     "path": "data/kanazawa_cal/3674.html",
+     "url_original": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html#minamikodatsuno",
+     "section": "南小立野（西部管理センター）2026年度版",
+     "kind": "html",
+     "cached": true,
+     "text_chars": 1281
+    },
+    {
+     "doc_id": "172014-森山",
+     "target": "kanazawa",
+     "district": "森山",
+     "path": "data/kanazawa_cal/3674.html",
+     "url_original": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3674.html#moriyama",
+     "section": "森山（東部管理センター）2026年度版",
+     "kind": "html",
+     "cached": true,
+     "text_chars": 1250
+    },
+    {
+     "doc_id": "172014-三谷",
+     "target": "kanazawa",
+     "district": "三谷",
+     "path": "data/kanazawa_cal/3673.html",
+     "url_original": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/3673.html#mitani",
+     "section": "三谷（東部管理センター）2026年度版",
+     "kind": "html",
+     "cached": true,
+     "text_chars": 1250
+    },
+    {
+     "doc_id": "172014-内川",
+     "target": "kanazawa",
+     "district": "内川",
+     "path": "data/kanazawa_cal/19353.html",
+     "url_original": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/gomigenryosuishinka/gyomuannai/1/3/2/19353.html#uchikawa",
+     "section": "内川（西部管理センター）2026年度版",
+     "kind": "html",
+     "cached": true,
+     "text_chars": 1299
+    }
+   ]
+  }
+ ],
+ "estimate": {
+  "method": "費用 = a × (指示 + 資料の文字数) + b × PDF のページ数。a は文字だけの資料、b は PDF の資料の試走から (出力の費用を含めた比例)",
+  "instruction_chars": 6941,
+  "by_model": {
+   "deepseek": {
+    "a_usd_per_char": 1.67785309478831e-06,
+    "b_usd_per_page": 0.00232,
+    "price_basis": "cost_usd_peak",
+    "jgd_tier_a_usd": 2.34,
+    "onagawa_12_months_usd": 0.23,
+    "kanazawa_5_districts_usd": 0.07,
+    "total_usd": 2.63,
+    "calls": {
+     "jgd": 70,
+     "onagawa": 12,
+     "kanazawa": 5
+    },
+    "largest_docs": [
+     [
+      0.141,
+      "132055-155acf73"
+     ],
+     [
+      0.1397,
+      "132055-346e033e"
+     ],
+     [
+      0.1397,
+      "132055-25ad1919"
+     ],
+     [
+      0.1396,
+      "132055-e3f03608"
+     ],
+     [
+      0.1396,
+      "132055-6fa36f01"
+     ]
+    ],
+    "note": "混む時間の料金で数えた。混まない時間 (UTC 16:30〜00:30) に回せば半額。指示の部分がキャッシュに当たればさらに安い"
+   },
+   "opus": {
+    "a_usd_per_char": 1.997104122680298e-05,
+    "b_usd_per_page": 0.02538,
+    "price_basis": "cost_usd",
+    "jgd_tier_a_usd": 27.1,
+    "onagawa_12_months_usd": 2.63,
+    "kanazawa_5_districts_usd": 0.82,
+    "total_usd": 30.55,
+    "calls": {
+     "jgd": 70,
+     "onagawa": 12,
+     "kanazawa": 5
+    },
+    "largest_docs": [
+     [
+      1.6141,
+      "132055-155acf73"
+     ],
+     [
+      1.5983,
+      "132055-346e033e"
+     ],
+     [
+      1.5982,
+      "132055-25ad1919"
+     ],
+     [
+      1.598,
+      "132055-e3f03608"
+     ],
+     [
+      1.5976,
+      "132055-6fa36f01"
+     ]
+    ],
+    "note": "claude -p の total_cost_usd から。ページの多い PDF は Read の回数が増え、ページあたりの費用は試走より上がりうる"
+   }
+  }
+ }
+}
